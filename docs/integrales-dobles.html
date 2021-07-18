@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 6 Integrales dobles | Curso de Matemáticas Tres UCES</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.22.12 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 6 Integrales dobles | Curso de Matemáticas Tres UCES" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 6 Integrales dobles | Curso de Matemáticas Tres UCES" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="John Jairo Estrada Álvarez" />
+
+
+<meta name="date" content="2021-07-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="integrales-simples.html"/>
+<link rel="next" href="integrales-triples.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Curso de Matemáticas Tres</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> cover-image: “images/cover.png”</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>1.1</b> Comportamentales</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>1.2</b> Evaluativos</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#fechas-de-evaluación"><i class="fa fa-check"></i><b>1.3</b> Fechas de evaluación</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#grupoa"><i class="fa fa-check"></i><b>1.3.1</b> GrupoA</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#grupob"><i class="fa fa-check"></i><b>1.3.2</b> GrupoB</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>1.4</b> Video motivacional</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>1.5</b> Página para reforzar conceptos básicos</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#objetivo-general"><i class="fa fa-check"></i><b>1.6</b> Objetivo general</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#objetivos-específicos"><i class="fa fa-check"></i><b>1.7</b> Objetivos específicos</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#clase-a-clase"><i class="fa fa-check"></i><b>1.8</b> <strong>Clase a clase</strong></a></li>
+<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#bibliografía"><i class="fa fa-check"></i><b>1.9</b> Bibliografía</a></li>
+<li class="chapter" data-level="1.10" data-path="index.html"><a href="index.html#video-manejo-de-la-casio-f_x350ms"><i class="fa fa-check"></i><b>1.10</b> Video manejo de la Casio <span class="math inline">\(f_{x}350MS\)</span></a><ul>
+<li class="chapter" data-level="1.10.1" data-path="index.html"><a href="index.html#regla-de-cramer-sistemas-2-por-2"><i class="fa fa-check"></i><b>1.10.1</b> Regla de Cramer sistemas <span class="math inline">\(2\)</span> por <span class="math inline">\(2\)</span></a></li>
+<li class="chapter" data-level="1.10.2" data-path="index.html"><a href="index.html#regla-de-cramer-sistemas-3-por-3"><i class="fa fa-check"></i><b>1.10.2</b> Regla de Cramer sistemas <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="1.10.3" data-path="index.html"><a href="index.html#regla-de-sarrus-determinante-3-por-3"><i class="fa fa-check"></i><b>1.10.3</b> Regla de Sarrus determinante <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="1.10.4" data-path="index.html"><a href="index.html#solución-de-la-ecuación-cuadrática"><i class="fa fa-check"></i><b>1.10.4</b> Solución de la ecuación cuadrática</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introducción</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#función-de-dos-variables"><i class="fa fa-check"></i><b>2.1</b> Función de dos variables</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="métodos-para-derivar.html"><a href="métodos-para-derivar.html"><i class="fa fa-check"></i><b>3</b> Métodos para derivar</a></li>
+<li class="chapter" data-level="4" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html"><i class="fa fa-check"></i><b>4</b> Métodos para máximos y mínimos</a></li>
+<li class="chapter" data-level="5" data-path="integrales-simples.html"><a href="integrales-simples.html"><i class="fa fa-check"></i><b>5</b> Integrales simples</a></li>
+<li class="chapter" data-level="6" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>6</b> Integrales dobles</a><ul>
+<li class="chapter" data-level="6.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>6.1</b> Definición de integral doble</a></li>
+<li class="chapter" data-level="6.2" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-volumen-para-una-región-sólida"><i class="fa fa-check"></i><b>6.2</b> Definición de volumen para una región sólida</a></li>
+<li class="chapter" data-level="6.3" data-path="integrales-dobles.html"><a href="integrales-dobles.html#propiedades-de-las-integrales-dobles"><i class="fa fa-check"></i><b>6.3</b> Propiedades de las integrales dobles</a></li>
+<li class="chapter" data-level="6.4" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejemplo-integral-doble-usando-geogebra"><i class="fa fa-check"></i><b>6.4</b> Ejemplo integral doble usando geogebra</a></li>
+<li class="chapter" data-level="6.5" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble"><i class="fa fa-check"></i><b>6.5</b> Ejercicio integral doble</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="integrales-triples.html"><a href="integrales-triples.html"><i class="fa fa-check"></i><b>7</b> Integrales triples</a></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Curso de Matemáticas Tres UCES</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="integrales-dobles" class="section level1">
+<h1><span class="header-section-number">Capítulo 6</span> Integrales dobles</h1>
+<!-- <a href="https://www.lifeder.com/wp-content/uploads/2017/01/alan-turing.jpg"><div align="center"><img src="https://www.lifeder.com/wp-content/uploads/2017/01/alan-turing.jpg" width="350" height="460" alt="Buy from Amazon" class="cover" /></div></a> -->
+<div align="center">
+<figure>
+<p><img src="https://www.lifeder.com/wp-content/uploads/2017/01/alan-turing.jpg"
+       alt="Alan Turing (1912-1954);
+           nacionalidad inglés famoso por La computación moderna" width="400"
+       height="341"></p>
+<figcaption>
+Alan Turing (1912-1954).
+</figcaption>
+</figure>
+</div>
+<div id="definición-de-integral-doble" class="section level2">
+<h2><span class="header-section-number">6.1</span> Definición de integral doble</h2>
+
+<div class="definition">
+<span id="def:unnamed-chunk-1" class="definition"><strong>Definición 6.1  </strong></span>Si <span class="math inline">\(f\)</span> esta definida en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>, entonces la integral doble de f sobre <span class="math inline">\(D\)</span> esta dada por[Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
+</div>
+
+<p><span class="math display">\[
+\int_{D}\int{f(x,y)dA} =\lim_{\parallel \bigtriangleup\parallel \longrightarrow 0}\sum_{i=1}^{n}f(x_i,y_i){\bigtriangleup}A_i
+\]</span></p>
+<p>siempre que el límite exista. Si existe el límite, entonces <span class="math inline">\(f\)</span> es integrable sobre la región <span class="math inline">\(D\)</span> en el plano <span class="math inline">\(XY\)</span>.</p>
+</div>
+<div id="definición-de-volumen-para-una-región-sólida" class="section level2">
+<h2><span class="header-section-number">6.2</span> Definición de volumen para una región sólida</h2>
+
+<div class="definition">
+<span id="def:unnamed-chunk-2" class="definition"><strong>Definición 6.2  </strong></span>Si <span class="math inline">\(f\)</span> es integrable sobre una región <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span> y <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span>, entonces el volumen de la región sólida que se encuentra sobre <span class="math inline">\(D\)</span> y bajo la gráfica de <span class="math inline">\(f\)</span> se define como:[Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
+</div>
+
+<p><span class="math display">\[
+V(\text{región sólida})=\int_{D}\int{f(x,y)dA}
+\]</span></p>
+</div>
+<div id="propiedades-de-las-integrales-dobles" class="section level2">
+<h2><span class="header-section-number">6.3</span> Propiedades de las integrales dobles</h2>
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-3" class="theorem"><strong>Teorema 6.1  </strong></span>Sean <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> continuas en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>, y sea <span class="math inline">\(c\)</span> una constante. Cada una de las siguientes afirmaciones es verdadera: [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
+</div>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralDoble1"></span>
+<img src="images/Imagen_PdeIntegralDoble1.png" alt="Dos regiones no se sobreponen si su intersección es un conjunto de área cero. [Imagen tomada de [@larson2006calculo] pág $994$]" width="201" />
+<p class="caption">
+Figura 6.1: Dos regiones no se sobreponen si su intersección es un conjunto de área cero. [Imagen tomada de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
+</p>
+</div>
+<p>(1.) <span class="math inline">\(\int_{D}\int{cf(x,y)dA}=c\int_{D}\int{f(x,y)dA}\)</span></p>
+<p>(2.) <span class="math inline">\(\int_{D}\int{\left[f(x,y) \pm g(x,y) \right] dA} = \int_{D}\int{f(x,y)dA} \pm \int_{D}\int{g(x,y)dA}\)</span></p>
+<p>(3.) <span class="math inline">\(\int_{D}\int{f(x,y)dA}\geq 0\)</span>, si <span class="math inline">\(f(x,y)\geq 0\)</span></p>
+<p>(4.) <span class="math inline">\(\int_{D}\int{cf(x,y)dA}\geq \int_{D}\int{g(x,y)dA}\)</span>, si <span class="math inline">\(f(x,y) \geq g(x,y)\)</span></p>
+<p>(5.) Si <span class="math inline">\(D=R_1 \cup R_2\)</span>, entonces <span class="math inline">\(\int_{D}\int{cf(x,y)dA}=\int_{R_1}\int{f(x,y)dA}+\int_{R_2}\int{f(x,y)dA}\)</span></p>
+</div>
+<div id="ejemplo-integral-doble-usando-geogebra" class="section level2">
+<h2><span class="header-section-number">6.4</span> Ejemplo integral doble usando geogebra</h2>
+
+<div class="example">
+<span id="exm:unnamed-chunk-4" class="example"><strong>Ejemplo 6.1  (Volumen de un solido con región rectángular)  </strong></span>Sea <span class="math inline">\(D\)</span> el rectángulo definido como <span class="math inline">\(\left[0,1\right] \times \left[-3,3\right]\)</span> y <span class="math inline">\(f(x,y)=\dfrac{xy^2}{x^2+1}\)</span> una función integrable en <span class="math inline">\(D\)</span>. Obtener usando geogebra el volumén limitado arriba por <span class="math inline">\(f\)</span>, y abajo por el rectángulo <span class="math inline">\(D\)</span>. Observe que <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span> [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
+</div>
+
+<p><br></br></p>
+<p>Esta es una aplicación que generar un sólido y proporciona su volumen, inicialmente la realizó en youtube Matemática y Geogebra (<a href="https://www.youtube.com/watch?v=GfhDeC2lN88&amp;t=857s" class="uri">https://www.youtube.com/watch?v=GfhDeC2lN88&amp;t=857s</a>), y posteriormente la realizó John Jairo Estrada (<a href="https://www.geogebra.org/classic/f6guccy3" class="uri">https://www.geogebra.org/classic/f6guccy3</a>) la elaboro usando geogebra.</p>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementSuperficieC01">
+
+</div>
+<script>  
+       var ggbAppSuperficieC01 = new GGBApplet({"material_id":"f6guccy3",
+       "width": 900,
+       "height": 600,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppSuperficieC01.inject('ggb-elementSuperficieC01');
+      });
+</script>
+</div>
+<div id="ejercicio-integral-doble" class="section level2">
+<h2><span class="header-section-number">6.5</span> Ejercicio integral doble</h2>
+
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-5" class="exercise"><strong>Ejercicio 6.1  (Volumen de un solido con región rectángular)  </strong></span>Sea <span class="math inline">\(D\)</span> el rectángulo definido como <span class="math inline">\(\left[0,1\right] \times \left[0,1\right]\)</span> y <span class="math inline">\(f(x,y)=1-\dfrac{1}{2}x^2-\dfrac{1}{2}y^2\)</span> una función integrable en <span class="math inline">\(D\)</span>. Además
+<span class="math display">\[
+\left[0,1\right] \times \left[0,1\right]  \ \ \ \text{significa que:}  \ \ \  0\leq x \leq 1 \ \ \text{y} \ \ 0\leq y \leq 1
+\]</span></p>
+el volumén limitado arriba por <span class="math inline">\(f\)</span>, y abajo por el rectángulo <span class="math inline">\(D\)</span>. Observe que <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span> [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(996\)</span>]
+</div>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralDoble2"></span>
+<img src="images/EjercicioIntDoble1.png" alt="El volumen de la región rectángular. [Imagen tomada de [@larson2006calculo] pág $996$]" width="50%" />
+<p class="caption">
+Figura 6.2: El volumen de la región rectángular. [Imagen tomada de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(996\)</span>]
+</p>
+</div>
+
+<div class="solution">
+<p> <span class="solution"><em>Solución</em> (Volumen de un solido con región rectángular). </span> <span class="math display">\[
+  \int_{D}\int{1-\dfrac{1}{2}x^2-\dfrac{1}{2}y^2)dA}=\\
+\int_{0}^{1}\int_{0}^{1}\left(1-\dfrac{1}{2}x^2-\dfrac{1}{2}y^2)\right)dydx=\\
+\int_{0}^{1}\left[\left(1-\dfrac{1}{2}x^2\right)y -\dfrac{y^3}{6} \right]_{0}^{1}dx=\\
+\int_{0}^{1}\left(\dfrac{5}{6}-\dfrac{1}{2}x^2\right)dx=\\
+\left[\dfrac{5}{6}x-\dfrac{x^3}{6}\right]_{0}^{1}=\\
+=\dfrac{2}{3}
+\]</span></p>
+El ejercicio se puede ver solucionado en <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(996\)</span>]
+</div>
+
+la realizó John Jairo Estrada (<a href="https://www.geogebra.org/classic/fdpb6ym8" class="uri">https://www.geogebra.org/classic/fdpb6ym8</a>) la elaboro usando geogebra.
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementMate3SupeA01">
+
+</div>
+<script>  
+       var ggbAppMate3SupeA01 = new GGBApplet({"material_id":"fdpb6ym8",
+       "width": 1000,
+       "height": 500,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppMate3SupeA01.inject('ggb-elementMate3SupeA01');
+      });
+</script>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-larson2006calculo">
+<p>Larson, Ron. 2006. <em>Cálculo de Varias Variables</em>. QA303. l3718 2004.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="integrales-simples.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="integrales-triples.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["MatematicasTres.pdf", "MatematicasTres.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
