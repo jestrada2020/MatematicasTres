@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22.12 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
   
-  
+  <meta property="og:image" content="/images/cover.png" />
   <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
 
@@ -19,12 +19,12 @@
   <meta name="twitter:title" content="Curso de Matemáticas Tres UCES" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  
+  <meta name="twitter:image" content="/images/cover.png" />
 
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2020-06-27" />
+<meta name="date" content="2021-07-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 
-<link rel="next" href="intro.html"/>
+<link rel="next" href="desarrollo-temático.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,12 +50,15 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
@@ -64,14 +67,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -80,9 +85,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -115,6 +120,7 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -131,15 +137,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Curso de Matemáticas Tres</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prrequisitos</a></li>
-<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introducción</a></li>
-<li class="chapter" data-level="3" data-path="literatura.html"><a href="literatura.html"><i class="fa fa-check"></i><b>3</b> Literatura</a></li>
-<li class="chapter" data-level="4" data-path="métodos.html"><a href="métodos.html"><i class="fa fa-check"></i><b>4</b> Métodos</a></li>
-<li class="chapter" data-level="5" data-path="aplicaciones.html"><a href="aplicaciones.html"><i class="fa fa-check"></i><b>5</b> Aplicaciones</a><ul>
-<li class="chapter" data-level="5.1" data-path="aplicaciones.html"><a href="aplicaciones.html#ejemplo-uno"><i class="fa fa-check"></i><b>5.1</b> Ejemplo uno</a></li>
-<li class="chapter" data-level="5.2" data-path="aplicaciones.html"><a href="aplicaciones.html#ejemplo-dos"><i class="fa fa-check"></i><b>5.2</b> Ejemplo dos</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>1.1</b> Comportamentales</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>1.2</b> Evaluativos</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#fechas-de-evaluación"><i class="fa fa-check"></i><b>1.3</b> Fechas de evaluación</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#grupoa"><i class="fa fa-check"></i><b>1.3.1</b> GrupoA</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#grupob"><i class="fa fa-check"></i><b>1.3.2</b> GrupoB</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="palabras-finales.html"><a href="palabras-finales.html"><i class="fa fa-check"></i><b>6</b> Palabras Finales</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>1.4</b> Video motivacional</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>1.5</b> Página para reforzar conceptos básicos</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html"><i class="fa fa-check"></i><b>2</b> Desarrollo temático</a><ul>
+<li class="chapter" data-level="2.1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#objetivo-general"><i class="fa fa-check"></i><b>2.1</b> Objetivo general</a></li>
+<li class="chapter" data-level="2.2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#objetivos-específicos"><i class="fa fa-check"></i><b>2.2</b> Objetivos específicos</a></li>
+<li class="chapter" data-level="2.3" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#clase-a-clase"><i class="fa fa-check"></i><b>2.3</b> <strong>Clase a clase</strong></a></li>
+<li class="chapter" data-level="2.4" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#bibliografía"><i class="fa fa-check"></i><b>2.4</b> Bibliografía</a></li>
+<li class="chapter" data-level="2.5" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#video-manejo-de-la-casio-f_x350ms"><i class="fa fa-check"></i><b>2.5</b> Video manejo de la Casio <span class="math inline">\(f_{x}350MS\)</span></a><ul>
+<li class="chapter" data-level="2.5.1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-cramer-sistemas-2-por-2"><i class="fa fa-check"></i><b>2.5.1</b> Regla de Cramer sistemas <span class="math inline">\(2\)</span> por <span class="math inline">\(2\)</span></a></li>
+<li class="chapter" data-level="2.5.2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-cramer-sistemas-3-por-3"><i class="fa fa-check"></i><b>2.5.2</b> Regla de Cramer sistemas <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="2.5.3" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-sarrus-determinante-3-por-3"><i class="fa fa-check"></i><b>2.5.3</b> Regla de Sarrus determinante <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="2.5.4" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#solución-de-la-ecuación-cuadrática"><i class="fa fa-check"></i><b>2.5.4</b> Solución de la ecuación cuadrática</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>3</b> Introducción</a></li>
+<li class="chapter" data-level="4" data-path="literatura.html"><a href="literatura.html"><i class="fa fa-check"></i><b>4</b> Literatura</a></li>
+<li class="chapter" data-level="5" data-path="métodos.html"><a href="métodos.html"><i class="fa fa-check"></i><b>5</b> Métodos</a></li>
+<li class="chapter" data-level="6" data-path="aplicaciones.html"><a href="aplicaciones.html"><i class="fa fa-check"></i><b>6</b> Aplicaciones</a><ul>
+<li class="chapter" data-level="6.1" data-path="aplicaciones.html"><a href="aplicaciones.html#ejemplo-uno"><i class="fa fa-check"></i><b>6.1</b> Ejemplo uno</a></li>
+<li class="chapter" data-level="6.2" data-path="aplicaciones.html"><a href="aplicaciones.html#ejemplo-dos"><i class="fa fa-check"></i><b>6.2</b> Ejemplo dos</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="palabras-finales.html"><a href="palabras-finales.html"><i class="fa fa-check"></i><b>7</b> Palabras Finales</a></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -164,18 +191,103 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">Curso de Matemáticas Tres UCES</h1>
 <p class="author"><em>John Jairo Estrada Álvarez</em></p>
-<p class="date"><em>2020-06-27</em></p>
+<p class="date" style="margin-top: 1.5em;"><em>2021-07-18</em></p>
 </div>
-<div id="prrequisitos" class="section level1">
-<h1><span class="header-section-number">Capítulo 1</span> Prrequisitos</h1>
-<p>This is a <em>sample</em> book written in <strong>Markdown</strong>. You can use anything that Pandoc’s Markdown supports, e.g., a math equation <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
-<p>The <strong>bookdown</strong> package can be installed from CRAN or Github:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="co"># or the development version</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="co"># devtools::install_github(&quot;rstudio/bookdown&quot;)</span></a></code></pre></div>
-<p>Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading <code>#</code>.</p>
-<p>To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.org/tinytex/" class="uri">https://yihui.org/tinytex/</a>.</p>
+<div id="prerrequisitos" class="section level1">
+<h1><span class="header-section-number">Capítulo 1</span> Prerrequisitos</h1>
+<!-- https://www.geogebra.org/classic/yxwbfgbk -->
+<!-- https://www.geogebra.org/classic/py3nxdwq -->
+<p>El curso de matemáticas tres sólo tiene los siguientes prerrequisitios</p>
+<!-- <img src="images/GImagen1.png" width="350" height="460" alt="Buy from Amazon" class="cover" /> -->
+<!-- <div align="center"><img src="images/cover.png" width="350" height="460" alt="Buy from Amazon" class="cover" /></div> -->
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementSuperficieJJA01">
 
+</div>
+<script>
+       var ggbAppSuperficieJJA01 = new GGBApplet({"material_id":"yxwbfgbk",
+       "width": 700,
+       "height": 550,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+
+         window.addEventListener("load", function() {
+           ggbAppSuperficieJJA01.inject('ggb-elementSuperficieJJA01');
+      });
+</script>
+<div id="comportamentales" class="section level2">
+<h2><span class="header-section-number">1.1</span> Comportamentales</h2>
+<ul>
+<li><p>Tener disposición para hacer silencio y generar un buen ambiente de escucha en el aula de clase.</p></li>
+<li><p>Tener la capacidad de acatar sugerencias para mejorar las técnicas de estudio ya adquiridas en procesos educativos pasados.</p></li>
+<li><p>Saber tomar nota mientras el profesor explica los temas de ese día.</p></li>
+<li><p>Repasar las notas de clase y complementar con la lectura del texto guía
+según se avanza en el desarrollo temático del curso.</p></li>
+</ul>
+</div>
+<div id="evaluativos" class="section level2">
+<h2><span class="header-section-number">1.2</span> Evaluativos</h2>
+<p>Tener los implementos básicos para una evaluación:</p>
+<ul>
+<li><p>Lapicero.</p></li>
+<li><p>Lapiz.</p></li>
+<li><p>Borrador.</p></li>
+<li><p>Calculadora.</p></li>
+<li><p>Todos los celulares apagados.</p></li>
+<li><p>Ir al baño antes de iniciar la evalualción.</p></li>
+<li><p>No hay preguntas en el desarrollo de la evaluación.</p></li>
+<li><p>Todas la maletas deben estar adelante.</p></li>
+</ul>
+</div>
+<div id="fechas-de-evaluación" class="section level2">
+<h2><span class="header-section-number">1.3</span> Fechas de evaluación</h2>
+<div id="grupoa" class="section level3">
+<h3><span class="header-section-number">1.3.1</span> GrupoA</h3>
+<ul>
+<li><p>Primer parcial (25 <span class="math inline">\(\%\)</span>) - <strong>Fecha: Viernes <span class="math inline">\(26\)</span> de Febrero</strong></p></li>
+<li><p>Segundo Parcial (25 <span class="math inline">\(\%\)</span>) - <strong>Fecha: Viernes <span class="math inline">\(26\)</span> de Marzo</strong></p></li>
+<li><p>Tercer Parcial (25 <span class="math inline">\(\%\)</span>) - <strong>Fecha: Viernes <span class="math inline">\(30\)</span> de Abril</strong></p></li>
+<li><p>Fin de clases 28 de Mayo</p></li>
+<li><p>Cuarto Parcial (ó Parcial Final) (25 <span class="math inline">\(\%\)</span>) - <strong>Fecha: Viernes <span class="math inline">\(28\)</span> de Mayo</strong></p></li>
+</ul>
+</div>
+<div id="grupob" class="section level3">
+<h3><span class="header-section-number">1.3.2</span> GrupoB</h3>
+<ul>
+<li><p>Primer parcial (25 <span class="math inline">\(\%\)</span>) - <strong>Fecha: Jueves <span class="math inline">\(25\)</span> de Febrero</strong></p></li>
+<li><p>Segundo Parcial (25 <span class="math inline">\(\%\)</span>) - <strong>Fecha: Jueves <span class="math inline">\(25\)</span> de Marzo</strong></p></li>
+<li><p>Tercer Parcial (25 <span class="math inline">\(\%\)</span>) - <strong>Fecha: Jueves <span class="math inline">\(29\)</span> de Abril</strong></p></li>
+<li><p>Fin de clases 28 de Mayo</p></li>
+<li><p>Cuarto Parcial (ó Parcial Final) (25 <span class="math inline">\(\%\)</span>) - <strong>Fecha: Jueves <span class="math inline">\(27\)</span> de Mayo</strong></p></li>
+</ul>
+<pre><code>## ~~ Package calendR
+## Visit https://r-coder.com/ for R tutorials ~~</code></pre>
+<p><img src="MatematicasTres_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
+</div>
+<div id="video-motivacional" class="section level2">
+<h2><span class="header-section-number">1.4</span> Video motivacional</h2>
+<p><strong>Todos tenemos un matemático interno</strong></p>
+<p>Título del video en <strong>youTube</strong>:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BbA5dpS4CcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>Las matemáticas nos hacen libres y menos manipulables. <a href="https://www.youtube.com/watch?v=BbA5dpS4CcI">Página Web</a>.</p>
+<p><strong>Así ve el mundo un matemático</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eAcf73ulv9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>Así ve el mundo un matemático <a href="https://www.youtube.com/watch?v=eAcf73ulv9E">Página Web</a></p>
+<p><strong>El tipo que te convencerá de que las matemáticas son la profesión del futuro</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NILudp6hti8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</div>
+<div id="página-para-reforzar-conceptos-básicos" class="section level2">
+<h2><span class="header-section-number">1.5</span> Página para reforzar conceptos básicos</h2>
+<p>El siguiente link es una página para repasar conceptos basicos que requieras en tu formación.<a href="https://www.thatquiz.org/">Página Web</a></p>
+</div>
 </div>
             </section>
 
@@ -183,7 +295,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 
-<a href="intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="desarrollo-temático.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -206,6 +318,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -226,6 +339,10 @@ gitbook.start({
 "text": null
 },
 "download": ["MatematicasTres.pdf", "MatematicasTres.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
