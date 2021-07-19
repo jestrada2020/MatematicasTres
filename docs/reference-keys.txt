@@ -14,6 +14,8 @@ exr:unnamed-chunk-13
 def:unnamed-chunk-14
 thm:unnamed-chunk-15
 exr:unnamed-chunk-16
+exr:unnamed-chunk-18
+exr:unnamed-chunk-20
 prerrequisitos
 comportamentales
 evaluativos
@@ -48,11 +50,6 @@ regiones-que-generan-dos-integrales-dobles
 ejercicio-integral-doble-2
 integrales-triples
 definición-integral-triple
-def:unnamed-chunk-1
-thm:unnamed-chunk-2
-exr:unnamed-chunk-3
-exr:unnamed-chunk-5
-exr:unnamed-chunk-7
 ejercicio-integral-triple
 ejercicio-integral-triple-1
 ejercicio-integral-triple-2
