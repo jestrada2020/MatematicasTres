@@ -16,6 +16,8 @@ thm:unnamed-chunk-15
 exr:unnamed-chunk-16
 exr:unnamed-chunk-18
 exr:unnamed-chunk-20
+exr:unnamed-chunk-21
+exr:unnamed-chunk-22
 prerrequisitos
 comportamentales
 evaluativos
@@ -53,11 +55,5 @@ definición-integral-triple
 ejercicio-integral-triple
 ejercicio-integral-triple-1
 ejercicio-integral-triple-2
-def:unnamed-chunk-1
-thm:unnamed-chunk-2
-exr:unnamed-chunk-3
-exr:unnamed-chunk-5
-exr:unnamed-chunk-7
 ejercicio-integral-triple-3
-exr:unnamed-chunk-9
 ejercicio-integral-triple-4
