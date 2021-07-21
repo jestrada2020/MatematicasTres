@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 4 Métodos para derivar parcialmente | Curso de Matemáticas Tres UCES</title>
+  <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
+  <meta name="generator" content="bookdown 0.22.12 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 4 Métodos para derivar parcialmente | Curso de Matemáticas Tres UCES" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Este texto se realizo usando bookdown package para escribir libros." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 4 Métodos para derivar parcialmente | Curso de Matemáticas Tres UCES" />
+  
+  <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
+  
+
+<meta name="author" content="John Jairo Estrada Álvarez" />
+
+
+<meta name="date" content="2021-07-21" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="métodos-para-máximos-y-mínimos.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Curso de Matemáticas Tres</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>1.1</b> Comportamentales</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>1.2</b> Evaluativos</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#fechas-de-evaluación"><i class="fa fa-check"></i><b>1.3</b> Fechas de evaluación</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#grupoa"><i class="fa fa-check"></i><b>1.3.1</b> GrupoA</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>1.4</b> Video motivacional</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>1.5</b> Página para reforzar conceptos básicos</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html"><i class="fa fa-check"></i><b>2</b> Desarrollo temático</a><ul>
+<li class="chapter" data-level="2.1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#objetivo-general"><i class="fa fa-check"></i><b>2.1</b> Objetivo general</a></li>
+<li class="chapter" data-level="2.2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#objetivos-específicos"><i class="fa fa-check"></i><b>2.2</b> Objetivos específicos</a></li>
+<li class="chapter" data-level="2.3" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#clase-a-clase"><i class="fa fa-check"></i><b>2.3</b> <strong>Clase a clase</strong></a></li>
+<li class="chapter" data-level="2.4" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#bibliografía"><i class="fa fa-check"></i><b>2.4</b> Bibliografía</a></li>
+<li class="chapter" data-level="2.5" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#video-manejo-de-la-casio-f_x350ms"><i class="fa fa-check"></i><b>2.5</b> Video manejo de la Casio <span class="math inline">\(f_{x}350MS\)</span></a><ul>
+<li class="chapter" data-level="2.5.1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-cramer-sistemas-2-por-2"><i class="fa fa-check"></i><b>2.5.1</b> Regla de Cramer sistemas <span class="math inline">\(2\)</span> por <span class="math inline">\(2\)</span></a></li>
+<li class="chapter" data-level="2.5.2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-cramer-sistemas-3-por-3"><i class="fa fa-check"></i><b>2.5.2</b> Regla de Cramer sistemas <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="2.5.3" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-sarrus-determinante-3-por-3"><i class="fa fa-check"></i><b>2.5.3</b> Regla de Sarrus determinante <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="2.5.4" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#solución-de-la-ecuación-cuadrática"><i class="fa fa-check"></i><b>2.5.4</b> Solución de la ecuación cuadrática</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>3</b> Introducción</a><ul>
+<li class="chapter" data-level="3.1" data-path="intro.html"><a href="intro.html#función-de-dos-variables"><i class="fa fa-check"></i><b>3.1</b> Función de dos variables</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html"><i class="fa fa-check"></i><b>4</b> Métodos para derivar parcialmente</a><ul>
+<li class="chapter" data-level="4.1" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#definición-derivada-parcial"><i class="fa fa-check"></i><b>4.1</b> Definición derivada parcial</a></li>
+<li class="chapter" data-level="4.2" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-derivada-parcial-con-respecto-a-x"><i class="fa fa-check"></i><b>4.2</b> Ejercicio derivada parcial con respecto a <span class="math inline">\(x\)</span></a></li>
+<li class="chapter" data-level="4.3" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-derivada-parcial-con-respecto-a-y"><i class="fa fa-check"></i><b>4.3</b> Ejercicio derivada parcial con respecto a <span class="math inline">\(y\)</span></a></li>
+<li class="chapter" data-level="4.4" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#notación-ó-simbología-de-la-derivada-parcial"><i class="fa fa-check"></i><b>4.4</b> Notación (ó simbología) de la derivada parcial</a></li>
+<li class="chapter" data-level="4.5" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#significado-geométrico-de-la-derivada-parcial-con-respecto-a-x-y-y"><i class="fa fa-check"></i><b>4.5</b> Significado geométrico de la derivada parcial con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span></a></li>
+<li class="chapter" data-level="4.6" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-pendiente-de-una-superficie"><i class="fa fa-check"></i><b>4.6</b> Ejercicio Pendiente de una superficie</a></li>
+<li class="chapter" data-level="4.7" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#herramienta-para-evaluar-primeras-derivadas-parciales-en-ab"><i class="fa fa-check"></i><b>4.7</b> Herramienta para evaluar primeras derivadas parciales en <span class="math inline">\((a,b)\)</span></a></li>
+<li class="chapter" data-level="4.8" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>4.8</b> Derivadas parciales de orden superior</a></li>
+<li class="chapter" data-level="4.9" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>4.9</b> Ejercicio derivadas parciales de orden superior</a></li>
+<li class="chapter" data-level="4.10" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#herramienta-para-evaluar-derivadas-parciales-de-orden-dos-en-ab"><i class="fa fa-check"></i><b>4.10</b> Herramienta para evaluar derivadas parciales de orden dos en <span class="math inline">\((a,b)\)</span></a></li>
+<li class="chapter" data-level="4.11" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#regla-de-la-cadena-para-funciones-de-varias-variables"><i class="fa fa-check"></i><b>4.11</b> Regla de la cadena para funciones de varias variables</a><ul>
+<li class="chapter" data-level="4.11.1" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#una-variable-independiente"><i class="fa fa-check"></i><b>4.11.1</b> Una variable independiente</a></li>
+<li class="chapter" data-level="4.11.2" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#dos-variables-independientes"><i class="fa fa-check"></i><b>4.11.2</b> Dos variables independientes</a></li>
+</ul></li>
+<li class="chapter" data-level="4.12" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#herramienta-evalúa-rcadena2v-independientes"><i class="fa fa-check"></i><b>4.12</b> Herramienta evalúa RCadena2V independientes</a></li>
+<li class="chapter" data-level="4.13" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#derivación-parcial-implícita"><i class="fa fa-check"></i><b>4.13</b> Derivación parcial implícita</a></li>
+<li class="chapter" data-level="4.14" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#derivada-direccional"><i class="fa fa-check"></i><b>4.14</b> Derivada direccional</a></li>
+<li class="chapter" data-level="4.15" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#gradiente-de-una-función"><i class="fa fa-check"></i><b>4.15</b> Gradiente de una función</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html"><i class="fa fa-check"></i><b>5</b> Métodos para máximos y mínimos</a></li>
+<li class="chapter" data-level="6" data-path="integrales-simples.html"><a href="integrales-simples.html"><i class="fa fa-check"></i><b>6</b> Integrales simples</a></li>
+<li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
+<li class="chapter" data-level="7.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>7.1</b> Definición de integral doble</a></li>
+<li class="chapter" data-level="7.2" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-volumen-para-una-región-sólida"><i class="fa fa-check"></i><b>7.2</b> Definición de volumen para una región sólida</a></li>
+<li class="chapter" data-level="7.3" data-path="integrales-dobles.html"><a href="integrales-dobles.html#propiedades-de-las-integrales-dobles"><i class="fa fa-check"></i><b>7.3</b> Propiedades de las integrales dobles</a></li>
+<li class="chapter" data-level="7.4" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejemplo-integral-doble-usando-geogebra"><i class="fa fa-check"></i><b>7.4</b> Ejemplo integral doble usando geogebra</a></li>
+<li class="chapter" data-level="7.5" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble"><i class="fa fa-check"></i><b>7.5</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="7.6" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-1"><i class="fa fa-check"></i><b>7.6</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="7.7" data-path="integrales-dobles.html"><a href="integrales-dobles.html#regiones-que-generan-dos-integrales-dobles"><i class="fa fa-check"></i><b>7.7</b> Regiones que generan dos integrales dobles</a></li>
+<li class="chapter" data-level="7.8" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-2"><i class="fa fa-check"></i><b>7.8</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="7.9" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-3"><i class="fa fa-check"></i><b>7.9</b> Ejercicio integral doble</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="integrales-triples.html"><a href="integrales-triples.html"><i class="fa fa-check"></i><b>8</b> Integrales triples</a><ul>
+<li class="chapter" data-level="8.1" data-path="integrales-triples.html"><a href="integrales-triples.html#definición-integral-triple"><i class="fa fa-check"></i><b>8.1</b> Definición integral triple</a></li>
+<li class="chapter" data-level="8.2" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple"><i class="fa fa-check"></i><b>8.2</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="8.3" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-1"><i class="fa fa-check"></i><b>8.3</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="8.4" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-2"><i class="fa fa-check"></i><b>8.4</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="8.5" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-3"><i class="fa fa-check"></i><b>8.5</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="8.6" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-4"><i class="fa fa-check"></i><b>8.6</b> Ejercicio integral triple</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Curso de Matemáticas Tres UCES</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="métodos-para-derivar-parcialmente" class="section level1">
+<h1><span class="header-section-number">Capítulo 4</span> Métodos para derivar parcialmente</h1>
+<!-- https://www.lifeder.com/wp-content/uploads/2017/01/newton.jpg -->
+<div align="center">
+<figure>
+<p><img src="https://www.lifeder.com/wp-content/uploads/2017/01/newton.jpg"
+       alt="Isasac Newton (1642-1727);
+           nacionalidad inglés famoso por Principios Matemáticos de la Filosofía Natural" width="400"
+       height="341"></p>
+<figcaption>
+Isaac Newton (1642-1727).
+</figcaption>
+</figure>
+</div>
+<!-- <a href="https://www.lifeder.com/wp-content/uploads/2017/01/newton.jpg"><div align="center"><img src="https://www.lifeder.com/wp-content/uploads/2017/01/newton.jpg" width="350" height="460" alt="Buy from Amazon" class="cover" /></div></a> -->
+<div id="definición-derivada-parcial" class="section level2">
+<h2><span class="header-section-number">4.1</span> Definición derivada parcial</h2>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-4" class="definition"><strong>Definición 4.1  </strong></span>Si <span class="math inline">\(z=f(x,y)\)</span>, las primeras derivadas parciales de <span class="math inline">\(f\)</span> con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> son las funciones <span class="math inline">\(f_x\)</span> y <span class="math inline">\(f_y\)</span> definidas por:</p>
+<p><span class="math display">\[
+f_x(x,y)=\displaystyle\lim_{{\parallel \bigtriangleup{x}\parallel} \to 0}{\dfrac{f(x+\bigtriangleup{x},y)-f(x,y)}{ \bigtriangleup{x}}}
+\]</span>
+<span class="math display">\[
+f_y(x,y)=\displaystyle\lim_{{\parallel \bigtriangleup{y}\parallel} \to 0}{\dfrac{f(x,y+\bigtriangleup{y})-f(x,y)}{ \bigtriangleup{y}}}
+\]</span></p>
+Siempre y cuando el límite exista.
+</div>
+
+<p><br></br><br></br></p>
+</div>
+<div id="ejercicio-derivada-parcial-con-respecto-a-x" class="section level2">
+<h2><span class="header-section-number">4.2</span> Ejercicio derivada parcial con respecto a <span class="math inline">\(x\)</span></h2>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-5" class="exercise"><strong>Ejercicio 4.1  (Derivar parcialmente con respecto a x)  </strong></span>Sea
+<span class="math display">\[
+f(x,y)=5x-4x^3y^2-4sen(x)
+\]</span>
+Obtener la derivada parcial de <span class="math inline">\(f\)</span> con respecto a <span class="math inline">\(x\)</span>.
+</div>
+
+<p><br></br></p>
+
+<div class="solution">
+<p> <span class="solution"><em>Solución</em> (Derivada parcial con respecto a x). </span> Importante, y clave para realizar la derivada parcial con respecto a <span class="math inline">\(x\)</span> es que se debe, considerar que las expresiones en <span class="math inline">\(y\)</span> se comportan como constantes
+<span class="math display">\[
+f_x(x,y)=5-12x^2y^2-4cos(x)
+\]</span></p>
+Puede también ver la respuesta de este ejercicio en <span class="citation">(Larson et al. <a href="#ref-larson1999calculo" role="doc-biblioref">1999</a>)</span> pág <span class="math inline">\(908\)</span>]
+</div>
+
+<p><br></br></p>
+</div>
+<div id="ejercicio-derivada-parcial-con-respecto-a-y" class="section level2">
+<h2><span class="header-section-number">4.3</span> Ejercicio derivada parcial con respecto a <span class="math inline">\(y\)</span></h2>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-7" class="exercise"><strong>Ejercicio 4.2  (Derivar parcialmente con respecto a y)  </strong></span>Sea
+<span class="math display">\[
+f(x,y)=5x-4x^3y^2-4sen(x)
+\]</span>
+Obtener la derivada parcial de <span class="math inline">\(f\)</span> con respecto a <span class="math inline">\(y\)</span>.
+</div>
+
+<p><br></br></p>
+
+<div class="solution">
+<p> <span class="solution"><em>Solución</em> (Derivada parcial con respecto a y). </span> Importante, y clave para realizar la derivada parcial con respecto a <span class="math inline">\(y\)</span> es que se debe, considerar que las expresiones en <span class="math inline">\(x\)</span> se comportan como constantes
+<span class="math display">\[
+f_x(x,y)=-8x^3y^1
+\]</span></p>
+Puede también ver la respuesta de este ejercicio en <span class="citation">(Larson et al. <a href="#ref-larson1999calculo" role="doc-biblioref">1999</a>)</span> pág <span class="math inline">\(908\)</span>]
+</div>
+
+<p><br></br></p>
+</div>
+<div id="notación-ó-simbología-de-la-derivada-parcial" class="section level2">
+<h2><span class="header-section-number">4.4</span> Notación (ó simbología) de la derivada parcial</h2>
+
+<div class="remark">
+<p> <span class="remark"><em>Nota</em> (Notación de las derivadas parciales): </span> La derivadas parciales tienen la siguiente simbología (ó notación)</p>
+<p><span class="math display">\[
+f_x(x,y)=z_x=\dfrac{\partial z}{\partial x}=\dfrac{\partial}{\partial x}f(x,y)
+\]</span>
+<span class="math display">\[
+f_y(x,y)=z_y=\dfrac{\partial z}{\partial y}=\dfrac{\partial}{\partial y}f(x,y)
+\]</span></p>
+<p>Las primeras derivadas parciales evaluadas en el punto <span class="math inline">\((a,b)\)</span> se denotan por:</p>
+<span class="math display">\[
+\left.\dfrac{\partial z}{\partial x}\right|_{(a,b)}=f_{x}(a,b)
+\]</span>
+<span class="math display">\[
+\left.\dfrac{\partial z}{\partial y}\right|_{(a,b)}=f_{y}(a,b)
+\]</span>
+</div>
+
+<p><br></br></p>
+</div>
+<div id="significado-geométrico-de-la-derivada-parcial-con-respecto-a-x-y-y" class="section level2">
+<h2><span class="header-section-number">4.5</span> Significado geométrico de la derivada parcial con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span></h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigDerivadaParcialA1"></span>
+<img src="images/Grafica1DerivadaConRespectoA_XY.png" alt="Significado de la derivada parcial [Imagen tomada de [@larson2006calculo] pág $909$]" width="75%" />
+<p class="caption">
+Figura 4.1: Significado de la derivada parcial [Imagen tomada de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(909\)</span>]
+</p>
+</div>
+<p><br></br></p>
+</div>
+<div id="ejercicio-pendiente-de-una-superficie" class="section level2">
+<h2><span class="header-section-number">4.6</span> Ejercicio Pendiente de una superficie</h2>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-10" class="exercise"><strong>Ejercicio 4.3  (Pendiente de una superficie en la dirección de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>)  </strong></span>Sea
+<span class="math display">\[
+f(x,y)=-\dfrac{x^2}{2}-y^2+\dfrac{25}{8}
+\]</span>
+Hallar las pendientes en las direcciones de <span class="math inline">\(x\)</span> y de <span class="math inline">\(y\)</span> para la superficie dada por <span class="math inline">\(z=f(x,y)\)</span> en el punto <span class="math inline">\(\left(\dfrac{1}{2},1,2\right)\)</span>.
+</div>
+
+<p><br></br></p>
+
+<div class="solution">
+ <span class="solution"><em>Solución</em> (Pendiente de una superficie en la dirección de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>). </span> Las derivadas parciales de <span class="math inline">\(f\)</span> con respecto a <span class="math inline">\(x\)</span>, y a <span class="math inline">\(y\)</span> son:
+<span class="math display">\[
+f_{x}(x,y)=-x \ \ \ \ \ \ \text{ y } \ \ \ \ \ \ f_{y}(x,y)=-2y 
+\]</span>
+Las pendientes con respecto a <span class="math inline">\(x\)</span>, y a <span class="math inline">\(y\)</span> son:
+<span class="math display">\[
+f_{x}\left(\dfrac{1}{2},1\right)=-\dfrac{1}{2} \ \ \ \ \ \ \text{ y } \ \ \ \ \ \ f_{y}\left(\dfrac{1}{2},1\right)=-2 
+\]</span>
+Puede también ver la respuesta de este ejercicio en <span class="citation">(Larson et al. <a href="#ref-larson1999calculo" role="doc-biblioref">1999</a>)</span> pág <span class="math inline">\(908\)</span>]
+</div>
+
+<p><br></br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigPendienteDerivadaParcialA1"></span>
+<img src="images/EjemploDerivadaParcialPendientes_XY1.png" alt="Ejemplo de pendientes y significado de la derivada parcial [Imagen tomada de [@larson2006calculo] pág $910$]" width="75%" />
+<p class="caption">
+Figura 4.2: Ejemplo de pendientes y significado de la derivada parcial [Imagen tomada de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(910\)</span>]
+</p>
+</div>
+<p><br></br></p>
+</div>
+<div id="herramienta-para-evaluar-primeras-derivadas-parciales-en-ab" class="section level2">
+<h2><span class="header-section-number">4.7</span> Herramienta para evaluar primeras derivadas parciales en <span class="math inline">\((a,b)\)</span></h2>
+<p>Esta es una aplicación para generar derivadas parciales en un punto del plano <span class="math inline">\(XY\)</span>, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/vevfbdws" class="uri">https://www.geogebra.org/classic/vevfbdws</a>) la elaboro usando geogebra.</p>
+<div align='center'>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementDerivaParcialA01">
+
+</div>
+<script>  
+       var ggbAppDerivaParcialA01 = new GGBApplet({"material_id":"vevfbdws",
+       "width": 400,
+       "height": 300,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppDerivaParcialA01.inject('ggb-elementDerivaParcialA01');
+      });
+</script>
+</div>
+<p><br></br></p>
+</div>
+<div id="derivadas-parciales-de-orden-superior" class="section level2">
+<h2><span class="header-section-number">4.8</span> Derivadas parciales de orden superior</h2>
+
+<div class="remark">
+<p> <span class="remark"><em>Nota</em> (Derivadas parciales de orden superior): </span> Como sucede con las derivadas ordinarias, es posible hallar las segundas, terceras, etc., derivadas parciales de una función de varias variables, siempre que tales derivadas existan. Las derivadas de orden superior se denotan por el orden al que se hace la derivación.</p>
+<span class="math display">\[
+\dfrac{\partial}{\partial x}\left(\dfrac{\partial f}{\partial x}\right)=\dfrac{{\partial}^2f}{\partial x^2}=f_{xx} \ \ \ \ \ \ \text{ ; } \ \ \ \ \ \ \dfrac{\partial}{\partial y}\left(\dfrac{\partial f}{\partial y}\right)=\dfrac{{\partial}^2f}{\partial y^2}=f_{yy} 
+\]</span>
+<span class="math display">\[
+\dfrac{\partial}{\partial y}\left(\dfrac{\partial f}{\partial x}\right)=\dfrac{{\partial}^2f}{\partial{y}\partial{x} }=f_{xy} \ \ \ \ \ \ \text{ ; } \ \ \ \ \ \ \dfrac{\partial}{\partial x}\left(\dfrac{\partial f}{\partial y}\right)=\dfrac{{\partial}^2f}{\partial{x}\partial{y}}=f_{yx} 
+\]</span>
+</div>
+
+<p><br></br></p>
+</div>
+<div id="ejercicio-derivadas-parciales-de-orden-superior" class="section level2">
+<h2><span class="header-section-number">4.9</span> Ejercicio derivadas parciales de orden superior</h2>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-13" class="exercise"><strong>Ejercicio 4.4  (Derivadas parciales de orden superior)  </strong></span>Sea
+<span class="math display">\[
+f(x,y)=3xy^2-2y+5x^2y^2
+\]</span>
+Hallar las derivadas parciales de orden uno y dos para <span class="math inline">\(z=f(x,y)\)</span> en el punto <span class="math inline">\(\left(-1,2\right)\)</span>.
+</div>
+
+<p><br></br></p>
+
+<div class="solution">
+ <span class="solution"><em>Solución</em> (Derivadas parciales de orden superior). </span> Las derivadas parciales de primer orden para <span class="math inline">\(f\)</span> con respecto a <span class="math inline">\(x\)</span>, y a <span class="math inline">\(y\)</span> son:
+<span class="math display">\[
+f_{x}(x,y)=3y^2+10xy^2 \ \ \ \ \ \ \text{ y } \ \ \ \ \ \ f_{y}(x,y)=6xy-2+10x^2y 
+\]</span>
+Las derivadas parciales de orden dos para <span class="math inline">\(f\)</span> con respecto a <span class="math inline">\(x\)</span>, y a <span class="math inline">\(y\)</span> son:
+<span class="math display">\[
+f_{xx}(x,y)=10y^2 \ \ \ \ \ \ \text{ y } \ \ \ \ \ \ f_{yy}(x,y)=6x+10x^2 
+\]</span>
+<span class="math display">\[
+f_{xy}(x,y)=6y+20xy \ \ \ \ \ \ \text{ y } \ \ \ \ \ \ f_{yx}(x,y)=6y+20xy 
+\]</span>
+Puede también ver la respuesta de este ejercicio en <span class="citation">(Larson et al. <a href="#ref-larson1999calculo" role="doc-biblioref">1999</a>)</span> pág <span class="math inline">\(908\)</span>]
+</div>
+
+<p><br></br></p>
+</div>
+<div id="herramienta-para-evaluar-derivadas-parciales-de-orden-dos-en-ab" class="section level2">
+<h2><span class="header-section-number">4.10</span> Herramienta para evaluar derivadas parciales de orden dos en <span class="math inline">\((a,b)\)</span></h2>
+<p>Esta es una aplicación para generar derivadas parciales de segundo orden en un punto del plano <span class="math inline">\(XY\)</span>, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/derwhqkk" class="uri">https://www.geogebra.org/classic/derwhqkk</a>) la elaboro usando geogebra.</p>
+<div align='center'>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementDerivaParcialA02">
+
+</div>
+<script>  
+       var ggbAppDerivaParcialA02 = new GGBApplet({"material_id":"derwhqkk",
+       "width": 600,
+       "height": 300,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppDerivaParcialA02.inject('ggb-elementDerivaParcialA02');
+      });
+</script>
+</div>
+<p><br></br></p>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-15" class="theorem"><strong>Teorema 4.1  (Igualdad de las derivadas parciales mixtas)  </strong></span>Si <span class="math inline">\(f\)</span> es una función de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> tal que <span class="math inline">\(f_{xy}\)</span> y <span class="math inline">\(f_{yx}\)</span> son continuas en un disco abierto <span class="math inline">\(D\)</span>, entonces, para toda pareja <span class="math inline">\(()x,y\)</span> en <span class="math inline">\(D\)</span>,</p>
+<p><span class="math display">\[
+f_{xy}(x,y)=f_{yx}(x,y)  
+\]</span></p>
+[Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(913\)</span>]
+</div>
+
+<p><br></br></p>
+</div>
+<div id="regla-de-la-cadena-para-funciones-de-varias-variables" class="section level2">
+<h2><span class="header-section-number">4.11</span> Regla de la cadena para funciones de varias variables</h2>
+<div id="una-variable-independiente" class="section level3">
+<h3><span class="header-section-number">4.11.1</span> Una variable independiente</h3>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigPendienteDerivadaParcialA2"></span>
+<img src="images/ReglaCadenaCasoUno.png" alt="Esquema regla de la cadena: una variable independiente [Imagen tomada de [@larson2006calculo] pág $925$]" width="25%" />
+<p class="caption">
+Figura 4.3: Esquema regla de la cadena: una variable independiente [Imagen tomada de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(925\)</span>]
+</p>
+</div>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-16" class="theorem"><strong>Teorema 4.2  (Regla de la cadena: Una variable independiente)  </strong></span>Sea <span class="math inline">\(w=f(x,y)\)</span>, donde <span class="math inline">\(f\)</span> es una función derivable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>. Si <span class="math inline">\(x=g(t)\)</span> y <span class="math inline">\(y=h(t)\)</span>, donde <span class="math inline">\(g\)</span> y <span class="math inline">\(h\)</span> son funciones derivables en <span class="math inline">\(t\)</span>, entonces <span class="math inline">\(w\)</span> es una función diferenciable de <span class="math inline">\(t\)</span>, y</p>
+<p><span class="math display">\[
+\dfrac{dw}{dt}=\dfrac{\partial{w}}{\partial{x}}\dfrac{dx}{dt}+\dfrac{\partial{w}}{\partial{y}}\dfrac{dy}{dy}
+\]</span></p>
+[Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(925\)</span>]
+</div>
+
+<br></br>
+
+<div class="remark">
+<p> <span class="remark"><em>Nota</em> (Extension del caso una variable independiente): </span> Si <span class="math inline">\(w\)</span> es una función diferenciable de <span class="math inline">\(n\)</span> variables <span class="math inline">\(x_1,x_2,...,x_n\)</span>, y si cada <span class="math inline">\(x_i\)</span> es una función de una sola variable <span class="math inline">\(t\)</span>, entonces para <span class="math inline">\(w=f(x_1,x_2,...,x_n)\)</span> se tiene:</p>
+<span class="math display">\[
+\dfrac{dw}{dt}=\dfrac{\partial{w}}{\partial{x_1}}\dfrac{dx_1}{dt}+\dfrac{\partial{w}}{\partial{x_2}}\dfrac{dx_2}{dt}+...+\dfrac{\partial{w}}{\partial{x_n}}\dfrac{dx_n}{dt}
+\]</span>
+</div>
+
+<p><br></br></p>
+</div>
+<div id="dos-variables-independientes" class="section level3">
+<h3><span class="header-section-number">4.11.2</span> Dos variables independientes</h3>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigPendienteDerivadaParcialA3"></span>
+<img src="images/EsquemaReglaDeCadenaCaso2VInd_A1.png" alt="Esquema regla de la cadena: dos variables independientes [Imagen tomada de [@larson2006calculo] pág $927$]" width="45%" />
+<p class="caption">
+Figura 4.4: Esquema regla de la cadena: dos variables independientes [Imagen tomada de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(927\)</span>]
+</p>
+</div>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-18" class="theorem"><strong>Teorema 4.3  (Regla de la cadena: Dos variables independientes)  </strong></span>Sea <span class="math inline">\(w=f(x,y)\)</span>, donde <span class="math inline">\(f\)</span> es una función derivable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>. Si <span class="math inline">\(x=g(s,t)\)</span> y <span class="math inline">\(y=h(s,t)\)</span>, donde <span class="math inline">\(g\)</span> y <span class="math inline">\(h\)</span> son funciones tales que las derivadas parciales de primer orden con respecto a <span class="math inline">\(s\)</span> y <span class="math inline">\(t\)</span> existen, entonces <span class="math inline">\(\partial{w}/\partial{s}\)</span>,<span class="math inline">\(\partial{w}/\partial{t}\)</span> existen y estan dadas por:</p>
+<p><span class="math display">\[
+\dfrac{\partial{w}}{\partial{s}}=\dfrac{\partial{w}}{\partial{x}}\dfrac{\partial{x}}{\partial{s}}+\dfrac{\partial{w}}{\partial{y}}\dfrac{\partial{y}}{\partial{s}}
+\]</span>
+<span class="math display">\[
+\dfrac{\partial{w}}{\partial{t}}=\dfrac{\partial{w}}{\partial{x}}\dfrac{\partial{x}}{\partial{t}}+\dfrac{\partial{w}}{\partial{y}}\dfrac{\partial{y}}{\partial{t}}
+\]</span></p>
+[Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(925\)</span>]
+</div>
+
+<p><br></br></p>
+
+<div class="remark">
+<p> <span class="remark"><em>Nota</em> (Extensión del caso dos variables independientes): </span> Si <span class="math inline">\(w\)</span> es una función diferenciable de <span class="math inline">\(n\)</span> variables <span class="math inline">\(x_1,x_2,...,x_n\)</span>, donde cada <span class="math inline">\(x_i\)</span> es una función diferenciable de <span class="math inline">\(m\)</span> variables <span class="math inline">\(t_1,t_2,...,t_m\)</span>, entonces para <span class="math inline">\(w=f(x_1,x_2,...,x_n)\)</span> se tiene:</p>
+<p><span class="math display">\[
+\dfrac{dw}{dt_1}=\dfrac{\partial{w}}{\partial{x_1}}\dfrac{dx_1}{dt_1}+\dfrac{\partial{w}}{\partial{x_2}}\dfrac{dx_2}{dt_1}+...+\dfrac{\partial{w}}{\partial{x_n}}\dfrac{dx_n}{dt_1}
+\]</span>
+<span class="math display">\[
+\dfrac{dw}{dt_2}=\dfrac{\partial{w}}{\partial{x_2}}\dfrac{dx_1}{dt_2}+\dfrac{\partial{w}}{\partial{x_2}}\dfrac{dx_2}{dt_2}+...+\dfrac{\partial{w}}{\partial{x_n}}\dfrac{dx_n}{dt_2}
+\]</span>
+<span class="math display">\[
+\vdots
+\]</span></p>
+<span class="math display">\[
+\dfrac{dw}{dt_m}=\dfrac{\partial{w}}{\partial{x_2}}\dfrac{dx_1}{dt_m}+\dfrac{\partial{w}}{\partial{x_2}}\dfrac{dx_2}{dt_m}+...+\dfrac{\partial{w}}{\partial{x_n}}\dfrac{dx_n}{dt_m}
+\]</span>
+</div>
+
+<p><br></br></p>
+</div>
+</div>
+<div id="herramienta-evalúa-rcadena2v-independientes" class="section level2">
+<h2><span class="header-section-number">4.12</span> Herramienta evalúa RCadena2V independientes</h2>
+<!-- https://www.geogebra.org/classic/qr3hhmx4 -->
+<p>Esta es una aplicación para evaluar en un punto <span class="math inline">\((a,b)\)</span> en la regla de la cadena con dos variables independientes, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/qr3hhmx4" class="uri">https://www.geogebra.org/classic/qr3hhmx4</a>) la elaboro usando geogebra.</p>
+<div align='center'>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementDerivaParcialA03">
+
+</div>
+<script>  
+       var ggbAppDerivaParcialA03 = new GGBApplet({"material_id":"qr3hhmx4",
+       "width": 900,
+       "height": 450,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppDerivaParcialA03.inject('ggb-elementDerivaParcialA03');
+      });
+</script>
+</div>
+<p><br></br></p>
+</div>
+<div id="derivación-parcial-implícita" class="section level2">
+<h2><span class="header-section-number">4.13</span> Derivación parcial implícita</h2>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-20" class="theorem"><strong>Teorema 4.4  (Regla de la cadena: Derivación implícita)  </strong></span>Si la ecuación <span class="math inline">\(F(x,y)=0\)</span> define a <span class="math inline">\(y\)</span> implícitamente como función de <span class="math inline">\(x\)</span>, entonces</p>
+<p><span class="math display">\[
+\dfrac{dy}{dx}=-\dfrac{F_{x}(x,y)}{F_{y}(x,y)}, \ \ \ \ \ F_{y}(x,y) \neq 0
+\]</span></p>
+<p>Si la ecuación <span class="math inline">\(F(x,y,z)=0\)</span> define a <span class="math inline">\(z\)</span> implícitamente como una función diferenciable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, entonces<br />
+<span class="math display">\[
+\dfrac{\partial{z}}{\partial{x}}=-\dfrac{F_{x}(x,y,z)}{F_{z}(x,y,z)}, \ \ \ \text{ y } \ \ \ \ \dfrac{\partial{z}}{\partial{y}}=-\dfrac{F_{y}(x,y,z)}{F_{z}(x,y,z)},\ \ \ \ F_{z}(x,y,z) \neq 0
+\]</span></p>
+[Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(930\)</span>]
+</div>
+
+<p><br></br></p>
+</div>
+<div id="derivada-direccional" class="section level2">
+<h2><span class="header-section-number">4.14</span> Derivada direccional</h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigPendienteDerivadaParcialA4"></span>
+<img src="images/DefDerivadaDireccional1.png" alt="Definición derivada direccional [Imagen tomada de [@larson2006calculo] pág $933$]" width="75%" />
+<p class="caption">
+Figura 4.5: Definición derivada direccional [Imagen tomada de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(933\)</span>]
+</p>
+</div>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-21" class="definition"><strong>Definición 4.2  (Derivada direccional)  </strong></span>Sea <span class="math inline">\(f\)</span> una función de dos variables <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, y sea <span class="math inline">\(u=cos(\theta)i+sen(\theta)j\)</span> un vector unitario. Entonces la derivada direccional de f en la dirección del vector u, que se denota <span class="math inline">\(D_{u}f\)</span> es</p>
+<p><span class="math display">\[
+D_{u}f(x,y)=\displaystyle{\lim_{t \to 0}{\dfrac{f(x+tcos(\theta),y+tsen(\theta))-f(x,y)}{t}}}
+\]</span>
+siempre que este límite exista.</p>
+[Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(934\)</span>]
+</div>
+
+<p><br></br></p>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-22" class="theorem"><strong>Teorema 4.5  (Derivada direccional)  </strong></span>Si <span class="math inline">\(f\)</span> es una función diferenciable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, entonces la derivada direcional de <span class="math inline">\(f\)</span> con la dirección del vector unitrario <span class="math inline">\(u=cos(\theta)i+sen(\theta)j\)</span> es</p>
+<p><span class="math display">\[
+  D_{u}f(x,y)=f_{x}(x,y)cos(\theta)+f_{y}(x,y)sen(\theta)
+\]</span></p>
+[Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(934\)</span>]
+</div>
+
+<p><br></br></p>
+</div>
+<div id="gradiente-de-una-función" class="section level2">
+<h2><span class="header-section-number">4.15</span> Gradiente de una función</h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigPendienteDerivadaParcialA6"></span>
+<img src="images/DefGradienteDeUnaf1.png" alt="Definición gradiente de una función [Imagen tomada de [@larson2006calculo] pág $938$]" width="75%" />
+<p class="caption">
+Figura 4.6: Definición gradiente de una función [Imagen tomada de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(938\)</span>]
+</p>
+</div>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-23" class="definition"><strong>Definición 4.3  (Definición gradiente de una función con dos variables)  </strong></span>Sea <span class="math inline">\(z=f(x,y)\)</span> una función de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, tal que <span class="math inline">\(f_{x}\)</span> y <span class="math inline">\(f_{y}\)</span> existen. Entonces el gradiente de <span class="math inline">\(f\)</span>, denotado por <span class="math inline">\(\nabla{f(x,y)}\)</span> es el vector:</p>
+<p><span class="math display">\[
+\nabla{f(x,y)}=f_{x}(x,y)i+f_{y}(x,y)j
+\]</span></p>
+<p>El gradiente es un vector en el plano <span class="math inline">\(XY\)</span></p>
+[Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(936\)</span>]
+</div>
+
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-larson1999calculo">
+<p>Larson, Roland E, Robert P Hostetler, Bruce H Edwars, Lorenzo Abellanas Rapún, and others. 1999. <em>Cálculo Y Geometrı́a Analı́tica</em>.</p>
+</div>
+<div id="ref-larson2006calculo">
+<p>Larson, Ron. 2006. <em>Cálculo de Varias Variables</em>. QA303. l3718 2004.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="métodos-para-máximos-y-mínimos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["MatematicasTres.pdf", "MatematicasTres.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
