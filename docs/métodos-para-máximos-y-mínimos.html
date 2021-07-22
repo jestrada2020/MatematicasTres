@@ -117,7 +117,10 @@
 <li class="chapter" data-level="4.14" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#derivada-direccional"><i class="fa fa-check"></i><b>4.14</b> Derivada direccional</a></li>
 <li class="chapter" data-level="4.15" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#gradiente-de-una-función"><i class="fa fa-check"></i><b>4.15</b> Gradiente de una función</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html"><i class="fa fa-check"></i><b>5</b> Métodos para máximos y mínimos</a></li>
+<li class="chapter" data-level="5" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html"><i class="fa fa-check"></i><b>5</b> Métodos para máximos y mínimos</a><ul>
+<li class="chapter" data-level="5.1" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#significado-geométrico-de-la-derivada-parcial-con-respecto-a-x-y-y-1"><i class="fa fa-check"></i><b>5.1</b> Significado geométrico de la derivada parcial con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span></a></li>
+<li class="chapter" data-level="5.2" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#herramienta-para-obtener-el-hessiano"><i class="fa fa-check"></i><b>5.2</b> Herramienta para obtener el Hessiano</a></li>
+</ul></li>
 <li class="chapter" data-level="6" data-path="integrales-simples.html"><a href="integrales-simples.html"><i class="fa fa-check"></i><b>6</b> Integrales simples</a></li>
 <li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
 <li class="chapter" data-level="7.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>7.1</b> Definición de integral doble</a></li>
@@ -173,7 +176,100 @@ Srinivasa Ramanujan (1887-1920).
 </figcaption>
 </figure>
 </div>
+<p><br></br></p>
+<div id="significado-geométrico-de-la-derivada-parcial-con-respecto-a-x-y-y-1" class="section level2">
+<h2><span class="header-section-number">5.1</span> Significado geométrico de la derivada parcial con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span></h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigMaxMinA01"></span>
+<img src="images/GrafMaxMin_A1.png" alt="Concepto de máximo y mínimo local geometricamente [Imagen tomada de [@thomas2003thomas] pág $1028$]" width="65%" />
+<p class="caption">
+Figura 5.1: Concepto de máximo y mínimo local geometricamente [Imagen tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(1028\)</span>]
+</p>
+</div>
+<p><br></br></p>
 
+<div class="definition">
+<p><span id="def:unnamed-chunk-28" class="definition"><strong>Definición 5.1  (Máximos local, mínimo local)  </strong></span>
+Sea <span class="math inline">\(f(x,y)\)</span> definida en una región <span class="math inline">\(D\)</span> que contiene al punto <span class="math inline">\((a,b)\)</span>. Entonces</p>
+<p>(1.) <span class="math inline">\(f(a,b)\)</span> es un valor máximo local de <span class="math inline">\(f\)</span> si <span class="math inline">\(f(a,b) \geq f(x,y)\)</span> para todos los puntos del dominio <span class="math inline">\((x,y)\)</span> un disco abirto con centro en <span class="math inline">\((a,b)\)</span></p>
+<p>(2.) <span class="math inline">\(f(a,b)\)</span> es un valor mínimo local de <span class="math inline">\(f\)</span> si <span class="math inline">\(f(a,b) \leq f(x,y)\)</span> para todos los puntos del dominio <span class="math inline">\((x,y)\)</span> un disco abirto con centro en <span class="math inline">\((a,b)\)</span></p>
+tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(1028\)</span>
+</div>
+
+<p><br></br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigMaxMinA02"></span>
+<img src="images/GrafMaxMin_A2.png" alt="Criterio para determinar  máximo y mínimo local geometricamente [Imagen tomada de [@thomas2003thomas] pág $1028$]" width="65%" />
+<p class="caption">
+Figura 5.2: Criterio para determinar máximo y mínimo local geometricamente [Imagen tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(1028\)</span>]
+</p>
+</div>
+<p><br></br></p>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-29" class="theorem"><strong>Teorema 5.1  (Criterio de la primera derivada para valores extremos locales)  </strong></span>Si <span class="math inline">\(f(x,y)\)</span> tiene un valor máximo o mínimo local en un punto interior <span class="math inline">\((a,b)\)</span> de su dominio, y si las primeras derivadas parciales existen en el punto, entonces</p>
+<p><span class="math display">\[
+f_{x}(a,b)=0 \qquad  \qquad \text{ y } \qquad  \qquad f_{y}(a,b)=0
+\]</span></p>
+tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(1028\)</span>
+</div>
+
+<p><br></br></p>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-30" class="definition"><strong>Definición 5.2  (Punto crítico)  </strong></span>Un punto interior del dominio de una función <span class="math inline">\(f(x,y)\)</span> donde <span class="math inline">\(f_x\)</span> y <span class="math inline">\(f_y\)</span> se anulan, o bien donde alguna de estas derivadas no existen, es un punto crítico de <span class="math inline">\(f\)</span></p>
+tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(1029\)</span>
+</div>
+
+<p><br></br></p>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-31" class="definition"><strong>Definición 5.3  (Punto silla)  </strong></span>Una función diferenciable <span class="math inline">\(f(x,y)\)</span> tiene un punto silla en un punto crítico <span class="math inline">\((a,b)\)</span> si en cada disco abierto con centro en <span class="math inline">\((a,b)\)</span> existen punto del dominio <span class="math inline">\((x,y)\)</span> donde <span class="math inline">\(f(x,y)&gt;f(a,b)\)</span>, y puntos del dominio <span class="math inline">\((x,y)\)</span> donde <span class="math inline">\(f(x,y)&lt;f(a,b)\)</span>. El punto correspondiente <span class="math inline">\((a,b,f(a,b))\)</span> sobre la superficie <span class="math inline">\(z=f(x,y)\)</span> se conoce como punto silla de la superficie.</p>
+tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(1029\)</span>
+</div>
+
+<p><br></br></p>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-32" class="theorem"><strong>Teorema 5.2  (Criterio de la segunda derivada para valores extremos locales)  </strong></span>
+Suponga que <span class="math inline">\(f(x,y)\)</span> y sus primeras y segundas derivadas parciales son continuas en un disco con centro en <span class="math inline">\((a,b)\)</span> y que <span class="math inline">\(f_{x}(a,b)=f_{y}(a,b)=0\)</span>. Entonces</p>
+<p>(1.) <span class="math inline">\(f\)</span> tiene un máximo local en <span class="math inline">\((a,b)\)</span>, si <span class="math inline">\(f_{xx}&lt;0\)</span> y <span class="math inline">\(f_{xx}f_{yy}-\left(f_{xy}\right)^2&gt;0\)</span> en <span class="math inline">\((a,b)\)</span></p>
+<p>(2.) <span class="math inline">\(f\)</span> tiene un mínimo local en <span class="math inline">\((a,b)\)</span>, si <span class="math inline">\(f_{xx}&gt;0\)</span> y <span class="math inline">\(f_{xx}f_{yy}-\left(f_{xy}\right)^2&gt;0\)</span> en <span class="math inline">\((a,b)\)</span></p>
+<p>(3.) <span class="math inline">\(f\)</span> tiene un punto silla en <span class="math inline">\((a,b)\)</span>, si <span class="math inline">\(f_{xx}f_{yy}-\left(f_{xy}\right)^2&lt;0\)</span> en <span class="math inline">\((a,b)\)</span></p>
+<p>(4.) El criterio no es concluyente en <span class="math inline">\((a,b)\)</span>, si <span class="math inline">\(f_{xx}f_{yy}-\left(f_{xy}\right)^2=0\)</span> en <span class="math inline">\((a,b)\)</span>. En este caso, debemos buscar otra forma de determinar el comportamiento de <span class="math inline">\(f\)</span> en <span class="math inline">\((a,b)\)</span>.</p>
+</div>
+
+<p><br></br></p>
+</div>
+<div id="herramienta-para-obtener-el-hessiano" class="section level2">
+<h2><span class="header-section-number">5.2</span> Herramienta para obtener el Hessiano</h2>
+<p>Esta es una aplicación para obtener el valor de el Hessiano en un punto <span class="math inline">\((a,b)\)</span> de una función <span class="math inline">\(f(x,y)\)</span>, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/ebw5zjfr" class="uri">https://www.geogebra.org/classic/ebw5zjfr</a>) la elaboro usando geogebra.</p>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementMaxMinA01">
+
+</div>
+<script>  
+       var ggbAppMaxMinA01 = new GGBApplet({"material_id":"ebw5zjfr",
+       "width": 800,
+       "height": 600,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppMaxMinA01.inject('ggb-elementMaxMinA01');
+      });
+</script>
+<p><br></br></p>
+
+</div>
+</div>
+<h3>Referencias</h3>
+<div id="refs" class="references">
+<div id="ref-thomas2003thomas">
+<p>Thomas, George Brinton, Ross L Finney, Maurice D Weir, and Frank R Giordano. 2003. <em>Thomas’ Calculus</em>. Addison-Wesley Reading.</p>
+</div>
 </div>
             </section>
 
