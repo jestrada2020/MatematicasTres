@@ -181,6 +181,15 @@ Blaise Pascal (1623-1662).
 </figcaption>
 </figure>
 </div>
+<p><br></br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralSimpleA001"></span>
+<img src="images/DefIntegral_A1.png" alt="Concepto integral a partir del área bajo una curva [Imagen tomada de [@stewart2020single] pág $355$]" width="65%" />
+<p class="caption">
+Figura 6.1: Concepto integral a partir del área bajo una curva [Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a>)</span> pág <span class="math inline">\(355\)</span>]
+</p>
+</div>
+<p>El cálculo integral se base en el concepto de la integral. La definición de integral es motivada por el problema de definir y calcular el área de la región que se encuentra entre la gráfica de una funcíón <span class="math inline">\(y=f(x)\)</span> con valores positivos <span class="math inline">\(f\)</span> y el eje <span class="math inline">\(x\)</span> en un intervalo cerrado <span class="math inline">\([a,b]\)</span>.</p>
+<p><br></br></p>
 
 <div class="definition">
 <p><span id="def:unnamed-chunk-38" class="definition"><strong>Definición 6.1  (Antiderivada o primitiva)  </strong></span>Una antiderivada o primitiva de una función <span class="math inline">\(f\)</span> es una función <span class="math inline">\(F\)</span> tal que</p>
@@ -210,6 +219,7 @@ G(x)=F(x)+C
 </div>
 
 <p><br></br></p>
+<p><br></br></p>
 <div id="primera-tabla-de-antiderivas" class="section level2">
 <h2><span class="header-section-number">6.1</span> Primera tabla de antiderivas</h2>
 <p><strong><span class="math display">\[\text{ Recordar como se deriva implica saber integrar }\]</span></strong>
@@ -238,6 +248,35 @@ G(x)=F(x)+C
 (2.) &amp; \displaystyle\int{\left[f(x) \pm g(x)\right]dx}=\displaystyle\int{f(x)dx}\pm \displaystyle\int{g(x)dx} 
 \end{matrix}\]</span>
 <p><br></br></p>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-40" class="theorem"><strong>Teorema 6.2  (Teorema fundamental del cálculo, parte Uno)  </strong></span>
+Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces la función <span class="math inline">\(g\)</span> definida por</p>
+<p><span class="math display">\[
+g(x)=\int_{a}^{x}f(t)ft, \qquad a \leq x \leq b
+\]</span></p>
+<p>es continua en <span class="math inline">\([a,b]\)</span>, derivable en <span class="math inline">\((a,b)\)</span>, y <span class="math inline">\(g&#39;(x)=f(x)\)</span>.</p>
+tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a>)</span> pág <span class="math inline">\(381\)</span>]
+</div>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralSimpleA002"></span>
+<img src="images/DefIntegral_A2.png" alt="Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de [@stewart2020single] pág $380$]" width="65%" />
+<p class="caption">
+Figura 6.2: Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a>)</span> pág <span class="math inline">\(380\)</span>]
+</p>
+</div>
+<p><br></br></p>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-41" class="theorem"><strong>Teorema 6.3  (Teorema fundamental del cálculo, parte Dos)  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces</p>
+<p><span class="math display">\[
+\int_{a}^{b}{f(x)dx}=F(b)-F(a)
+\]</span></p>
+<p>donde <span class="math inline">\(F\)</span> es la antiderivada de <span class="math inline">\(f\)</span>, es decir, una función tal que <span class="math inline">\(F&#39;=f\)</span>.</p>
+tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a>)</span> pág <span class="math inline">\(384\)</span>]
+</div>
+
+<p><br></br></p>
 <p><br></br></p>
 <p><br></br></p>
 <p><br></br></p>
@@ -254,6 +293,12 @@ G(x)=F(x)+C
 <p><br></br></p>
 <p><br></br></p>
 
+</div>
+</div>
+<h3>Referencias</h3>
+<div id="refs" class="references">
+<div id="ref-stewart2020single">
+<p>Stewart, James, Daniel K Clegg, and Saleem Watson. 2020. <em>Single Variable Calculus: Early Transcendentals</em>. Cengage Learning.</p>
 </div>
 </div>
             </section>
