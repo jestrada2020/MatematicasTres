@@ -102,6 +102,8 @@ método-de-los-multiplicadore-de-lagrange-para-determinar-máximos-o-mínimos
 integrales-simples
 primera-tabla-de-antiderivas
 propiedades-de-las-antiderivas
+teorema-fundamental-del-cálculo-caso-uno
+teorema-fundamental-del-cálculo-caso-dos
 integrales-dobles
 definición-de-integral-doble
 definición-de-volumen-para-una-región-sólida
