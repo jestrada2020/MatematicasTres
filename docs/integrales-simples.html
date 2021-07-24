@@ -124,9 +124,10 @@
 </ul></li>
 <li class="chapter" data-level="6" data-path="integrales-simples.html"><a href="integrales-simples.html"><i class="fa fa-check"></i><b>6</b> Integrales simples</a><ul>
 <li class="chapter" data-level="6.1" data-path="integrales-simples.html"><a href="integrales-simples.html#primera-tabla-de-antiderivas"><i class="fa fa-check"></i><b>6.1</b> Primera tabla de antiderivas</a></li>
-<li class="chapter" data-level="6.2" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-las-antiderivas"><i class="fa fa-check"></i><b>6.2</b> Propiedades de las antiderivas</a></li>
-<li class="chapter" data-level="6.3" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-uno"><i class="fa fa-check"></i><b>6.3</b> Teorema fundamental del cálculo, caso Uno</a></li>
-<li class="chapter" data-level="6.4" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-dos"><i class="fa fa-check"></i><b>6.4</b> Teorema fundamental del cálculo, caso Dos</a></li>
+<li class="chapter" data-level="6.2" data-path="integrales-simples.html"><a href="integrales-simples.html#herramienta-para-obtener-antiderivadas"><i class="fa fa-check"></i><b>6.2</b> Herramienta para obtener antiderivadas</a></li>
+<li class="chapter" data-level="6.3" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-las-antiderivas"><i class="fa fa-check"></i><b>6.3</b> Propiedades de las antiderivas</a></li>
+<li class="chapter" data-level="6.4" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-uno"><i class="fa fa-check"></i><b>6.4</b> Teorema fundamental del cálculo, caso Uno</a></li>
+<li class="chapter" data-level="6.5" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-dos"><i class="fa fa-check"></i><b>6.5</b> Teorema fundamental del cálculo, caso Dos</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
 <li class="chapter" data-level="7.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>7.1</b> Definición de integral doble</a></li>
@@ -245,19 +246,92 @@ G(x)=F(x)+C
 \]</span>
 <br></br></p>
 </div>
+<div id="herramienta-para-obtener-antiderivadas" class="section level2">
+<h2><span class="header-section-number">6.2</span> Herramienta para obtener antiderivadas</h2>
+<p>Esta es una aplicación para obtener la antiderivada de <span class="math inline">\(f(x)\)</span>, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/b67q6hkq" class="uri">https://www.geogebra.org/classic/b67q6hkq</a>) la elaboro usando geogebra.</p>
+<div align="center">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementAntiDA01">
+
+</div>
+<script>  
+       var ggbAppAntiDA01 = new GGBApplet({"material_id":"b67q6hkq",
+       "width": 900,
+       "height": 200,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppAntiDA01.inject('ggb-elementAntiDA01');
+      });
+</script>
+</div>
+<p><br></br></p>
+</div>
 <div id="propiedades-de-las-antiderivas" class="section level2">
-<h2><span class="header-section-number">6.2</span> Propiedades de las antiderivas</h2>
+<h2><span class="header-section-number">6.3</span> Propiedades de las antiderivas</h2>
 <span class="math display">\[\begin{matrix}
 (1.) &amp; \displaystyle\int{cf(x)dx}=c\displaystyle\int{f(x)dx} \\
 (2.) &amp; \displaystyle\int{\left[f(x) \pm g(x)\right]dx}=\displaystyle\int{f(x)dx}\pm \displaystyle\int{g(x)dx} 
 \end{matrix}\]</span>
 <p><br></br></p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-40" class="example"><strong>Ejemplo 6.1  (Aplicación de antiderivadas y sus propiedades)  </strong></span>Determinar</p>
+<span class="math display">\[
+\displaystyle\int{\left(x^4+3\sqrt{x^5}-\dfrac{4}{x^3}\right)dx}  
+\]</span>
+</div>
+
+
+<div class="solution">
+ <span class="solution"><em>Solución. </em></span> <span class="math display">\[\begin{equation} \label{eq1}
+\begin{split}
+\displaystyle\int{\left(x^4+3\sqrt{x^5}-\dfrac{4}{x^3}\right)dx} &amp; = \displaystyle\int{x^4dx}+ \displaystyle\int{3\sqrt{x^5}dx}-\displaystyle\int{\dfrac{4}{x^3}dx}\\
+&amp;=\displaystyle\int{x^4dx}+ \displaystyle\int{3x^{5/2}dx}-\displaystyle\int{4{x^{-3}}dx}\\
+&amp;=\dfrac{x^{4+1}}{4+1}+3\displaystyle\int{x^{5/2}dx}-4\displaystyle\int{{x^{-3}}dx}\\
+&amp;=\dfrac{x^{4+1}}{4+1}+3\left(\dfrac{x^{5/2+1}}{5/2+1}\right)-4\left(\dfrac{x^{-3+1}}{-3+1}\right)+C\\
+&amp;=\dfrac{x^{5}}{5}+\left(\dfrac{3x^{7/2}}{7/2}\right)-4\left(\dfrac{x^{-2}}{-2}\right)+C\\
+&amp;=\dfrac{x^{5}}{5}+\left(\dfrac{6x^{7/2}}{7}\right)+2\left(\dfrac{x^{-2}}{1}\right)+C\\
+&amp;=\dfrac{x^{5}}{5}+\left(\dfrac{6}{7}\right)x^{7/2}+2\left(\dfrac{1}{x^{2}}\right)+C\\
+&amp;=\dfrac{1}{5}x^{5}+\dfrac{6}{7}\sqrt{x^{7}}+\dfrac{2}{x^{2}}+C\\
+\end{split}
+\end{equation}\]</span>
+</div>
+
+<p><br></br></p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-42" class="example"><strong>Ejemplo 6.2  (Aplicación de antiderivadas y sus propiedades)  </strong></span>Determinar</p>
+<span class="math display">\[
+\displaystyle\int{(2cos(3x)+5sen(4x))dx}
+\]</span>
+</div>
+
+
+<div class="solution">
+ <span class="solution"><em>Solución</em> (Aplicación de antiderivadas y sus propiedades). </span> <span class="math display">\[\begin{equation} \label{eq2}
+\begin{split}
+
+\displaystyle\int{(2cos(3x)+5sen(4x))dx} &amp;=\displaystyle\int{2cos(3x)dx}+\displaystyle\int{5sen(4x)dx}\\
+ &amp;=2\displaystyle\int{cos(3x)dx}+5\displaystyle\int{sen(4x)dx}\\
+ &amp;=2\left(\dfrac{sen(3x)}{3}\right)+5\left(\dfrac{-cos(4x)}{4}\right)+C\\
+&amp;=\dfrac{2}{3}sen(3x)-\dfrac{5}{4}cos(4x)+C\\
+\end{split}
+\end{equation}\]</span>
+</div>
+
+<p><br></br></p>
 </div>
 <div id="teorema-fundamental-del-cálculo-caso-uno" class="section level2">
-<h2><span class="header-section-number">6.3</span> Teorema fundamental del cálculo, caso Uno</h2>
+<h2><span class="header-section-number">6.4</span> Teorema fundamental del cálculo, caso Uno</h2>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-40" class="theorem"><strong>Teorema 6.2  (Teorema fundamental del cálculo, parte Uno)  </strong></span>
+<p><span id="thm:unnamed-chunk-44" class="theorem"><strong>Teorema 6.2  (Teorema fundamental del cálculo, parte Uno)  </strong></span>
 Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces la función <span class="math inline">\(g\)</span> definida por</p>
 <p><span class="math display">\[
 g(x)=\int_{a}^{x}f(t)ft, \qquad a \leq x \leq b
@@ -275,10 +349,10 @@ Figura 6.2: Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de <s
 <p><br></br></p>
 </div>
 <div id="teorema-fundamental-del-cálculo-caso-dos" class="section level2">
-<h2><span class="header-section-number">6.4</span> Teorema fundamental del cálculo, caso Dos</h2>
+<h2><span class="header-section-number">6.5</span> Teorema fundamental del cálculo, caso Dos</h2>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-41" class="theorem"><strong>Teorema 6.3  (Teorema fundamental del cálculo, parte Dos)  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces</p>
+<p><span id="thm:unnamed-chunk-45" class="theorem"><strong>Teorema 6.3  (Teorema fundamental del cálculo, parte Dos)  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces</p>
 <p><span class="math display">\[
 \int_{a}^{b}{f(x)dx}=F(b)-F(a)
 \]</span></p>
