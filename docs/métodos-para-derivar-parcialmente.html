@@ -24,7 +24,7 @@
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2021-07-23" />
+<meta name="date" content="2021-07-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -95,7 +95,9 @@
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>3</b> Introducción</a><ul>
-<li class="chapter" data-level="3.1" data-path="intro.html"><a href="intro.html#función-de-dos-variables"><i class="fa fa-check"></i><b>3.1</b> Función de dos variables</a></li>
+<li class="chapter" data-level="3.1" data-path="intro.html"><a href="intro.html#punto-frontera-y-punto-interior-en-el-plano"><i class="fa fa-check"></i><b>3.1</b> Punto frontera y punto interior en el plano</a></li>
+<li class="chapter" data-level="3.2" data-path="intro.html"><a href="intro.html#función-de-dos-variables"><i class="fa fa-check"></i><b>3.2</b> Función de dos variables</a></li>
+<li class="chapter" data-level="3.3" data-path="intro.html"><a href="intro.html#punto-frontera-y-punto-interior-en-el-espacio"><i class="fa fa-check"></i><b>3.3</b> Punto frontera y punto interior en el espacio</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html"><i class="fa fa-check"></i><b>4</b> Métodos para derivar parcialmente</a><ul>
 <li class="chapter" data-level="4.1" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#definición-derivada-parcial"><i class="fa fa-check"></i><b>4.1</b> Definición derivada parcial</a></li>
@@ -190,7 +192,7 @@ Isaac Newton (1642-1727).
 <h2><span class="header-section-number">4.1</span> Definición derivada parcial</h2>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-4" class="definition"><strong>Definición 4.1  </strong></span>Si <span class="math inline">\(z=f(x,y)\)</span>, las primeras derivadas parciales de <span class="math inline">\(f\)</span> con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> son las funciones <span class="math inline">\(f_x\)</span> y <span class="math inline">\(f_y\)</span> definidas por:</p>
+<p><span id="def:unnamed-chunk-9" class="definition"><strong>Definición 4.1  </strong></span>Si <span class="math inline">\(z=f(x,y)\)</span>, las primeras derivadas parciales de <span class="math inline">\(f\)</span> con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> son las funciones <span class="math inline">\(f_x\)</span> y <span class="math inline">\(f_y\)</span> definidas por:</p>
 <p><span class="math display">\[
 f_x(x,y)=\displaystyle\lim_{{\parallel \bigtriangleup{x}\parallel} \to 0}{\dfrac{f(x+\bigtriangleup{x},y)-f(x,y)}{ \bigtriangleup{x}}}
 \]</span>
@@ -206,7 +208,7 @@ Siempre y cuando el límite exista.
 <h2><span class="header-section-number">4.2</span> Ejercicio derivada parcial con respecto a <span class="math inline">\(x\)</span></h2>
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-5" class="exercise"><strong>Ejercicio 4.1  (Derivar parcialmente con respecto a x)  </strong></span>Sea
+<span id="exr:unnamed-chunk-10" class="exercise"><strong>Ejercicio 4.1  (Derivar parcialmente con respecto a x)  </strong></span>Sea
 <span class="math display">\[
 f(x,y)=5x-4x^3y^2-4sen(x)
 \]</span>
@@ -229,7 +231,7 @@ Puede también ver la respuesta de este ejercicio en <span class="citation">(Lar
 <h2><span class="header-section-number">4.3</span> Ejercicio derivada parcial con respecto a <span class="math inline">\(y\)</span></h2>
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-7" class="exercise"><strong>Ejercicio 4.2  (Derivar parcialmente con respecto a y)  </strong></span>Sea
+<span id="exr:unnamed-chunk-12" class="exercise"><strong>Ejercicio 4.2  (Derivar parcialmente con respecto a y)  </strong></span>Sea
 <span class="math display">\[
 f(x,y)=5x-4x^3y^2-4sen(x)
 \]</span>
@@ -284,7 +286,7 @@ Figura 4.1: Significado de la derivada parcial [Imagen tomada de <span class="ci
 <h2><span class="header-section-number">4.6</span> Ejercicio Pendiente de una superficie</h2>
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-10" class="exercise"><strong>Ejercicio 4.3  (Pendiente de una superficie en la dirección de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>)  </strong></span>Sea
+<span id="exr:unnamed-chunk-15" class="exercise"><strong>Ejercicio 4.3  (Pendiente de una superficie en la dirección de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>)  </strong></span>Sea
 <span class="math display">\[
 f(x,y)=-\dfrac{x^2}{2}-y^2+\dfrac{25}{8}
 \]</span>
@@ -341,7 +343,7 @@ Figura 4.2: Ejemplo de pendientes y significado de la derivada parcial [Imagen t
 <p><br></br></p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-12" class="theorem"><strong>Teorema 4.1  (Teorema del incremento para funciones de dos variables)  </strong></span>Suponga que las primeras derivadas parciales de <span class="math inline">\(f(x,y)\)</span> están definidas en una región abierta <span class="math inline">\(D\)</span> que contiene el punto <span class="math inline">\((x_0,y_0)\)</span> y que <span class="math inline">\(f_x\)</span> y <span class="math inline">\(f_y\)</span> son continuas en <span class="math inline">\((x_0,y_0)\)</span>. Entonces el cambio</p>
+<p><span id="thm:unnamed-chunk-17" class="theorem"><strong>Teorema 4.1  (Teorema del incremento para funciones de dos variables)  </strong></span>Suponga que las primeras derivadas parciales de <span class="math inline">\(f(x,y)\)</span> están definidas en una región abierta <span class="math inline">\(D\)</span> que contiene el punto <span class="math inline">\((x_0,y_0)\)</span> y que <span class="math inline">\(f_x\)</span> y <span class="math inline">\(f_y\)</span> son continuas en <span class="math inline">\((x_0,y_0)\)</span>. Entonces el cambio</p>
 <p><span class="math display">\[
 \bigtriangleup{z}=f(x_0+\bigtriangleup{x},y_0+\bigtriangleup{y})-f(x_0,y_0)  
 \]</span>
@@ -356,7 +358,7 @@ donde cada <span class="math inline">\({\epsilon}_1\)</span>,<span class="math i
 <p><br></br></p>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-13" class="definition"><strong>Definición 4.2  (Función diferenciable)  </strong></span>Una función <span class="math inline">\(z=f(x,y)\)</span> es diferenciable en <span class="math inline">\((x_0,y_0)\)</span> si <span class="math inline">\(f_{x}(x_0,y_0)\)</span> y <span class="math inline">\(f_{y}(x_0,y_0)\)</span> existen y <span class="math inline">\(\bigtriangleup{z}\)</span> satisface una ecuación de la forma</p>
+<p><span id="def:unnamed-chunk-18" class="definition"><strong>Definición 4.2  (Función diferenciable)  </strong></span>Una función <span class="math inline">\(z=f(x,y)\)</span> es diferenciable en <span class="math inline">\((x_0,y_0)\)</span> si <span class="math inline">\(f_{x}(x_0,y_0)\)</span> y <span class="math inline">\(f_{y}(x_0,y_0)\)</span> existen y <span class="math inline">\(\bigtriangleup{z}\)</span> satisface una ecuación de la forma</p>
 <p><span class="math display">\[
 \bigtriangleup{z}=f_{x}(x_0,y_0)\bigtriangleup{x}+f_{y}(x_0,y_0)\bigtriangleup{y}+{\epsilon}_{1}\bigtriangleup{x}+{\epsilon}_{2}\bigtriangleup{y}
 \]</span>
@@ -367,13 +369,13 @@ donde cada <span class="math inline">\({\epsilon}_1\)</span>,<span class="math i
 <br></br>
 
 <div class="corollary">
-<span id="cor:unnamed-chunk-14" class="corollary"><strong>Corolario 4.1  (La continuidad de las derivadas parciales)  </strong></span>Si las derivadas parciales de primer orden de una funcón <span class="math inline">\(f\)</span> en las variables <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> son continuas en toda una región abierta <span class="math inline">\(D\)</span>, entonces <span class="math inline">\(f\)</span> es diferenciable en cada punto de <span class="math inline">\(D\)</span>.
+<span id="cor:unnamed-chunk-19" class="corollary"><strong>Corolario 4.1  (La continuidad de las derivadas parciales)  </strong></span>Si las derivadas parciales de primer orden de una funcón <span class="math inline">\(f\)</span> en las variables <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> son continuas en toda una región abierta <span class="math inline">\(D\)</span>, entonces <span class="math inline">\(f\)</span> es diferenciable en cada punto de <span class="math inline">\(D\)</span>.
 </div>
 
 <p><br></br></p>
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-15" class="theorem"><strong>Teorema 4.2  (La diferenciabilidad implica continuidad)  </strong></span>Si una función <span class="math inline">\(f(x,y)\)</span> es diferenciable en <span class="math inline">\((x_0,y_0)\)</span>, entonces <span class="math inline">\(f\)</span> es continua en <span class="math inline">\((x_0,y_0)\)</span>.
+<span id="thm:unnamed-chunk-20" class="theorem"><strong>Teorema 4.2  (La diferenciabilidad implica continuidad)  </strong></span>Si una función <span class="math inline">\(f(x,y)\)</span> es diferenciable en <span class="math inline">\((x_0,y_0)\)</span>, entonces <span class="math inline">\(f\)</span> es continua en <span class="math inline">\((x_0,y_0)\)</span>.
 </div>
 
 <p><br></br></p>
@@ -397,7 +399,7 @@ donde cada <span class="math inline">\({\epsilon}_1\)</span>,<span class="math i
 <h2><span class="header-section-number">4.9</span> Ejercicio derivadas parciales de orden superior</h2>
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-17" class="exercise"><strong>Ejercicio 4.4  (Derivadas parciales de orden superior)  </strong></span>Sea
+<span id="exr:unnamed-chunk-22" class="exercise"><strong>Ejercicio 4.4  (Derivadas parciales de orden superior)  </strong></span>Sea
 <span class="math display">\[
 f(x,y)=3xy^2-2y+5x^2y^2
 \]</span>
@@ -450,7 +452,7 @@ Puede también ver la respuesta de este ejercicio en <span class="citation">(Lar
 <p><br></br></p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-19" class="theorem"><strong>Teorema 4.3  (Igualdad de las derivadas parciales mixtas)  </strong></span>Si <span class="math inline">\(f\)</span> es una función de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> tal que <span class="math inline">\(f_{xy}\)</span> y <span class="math inline">\(f_{yx}\)</span> son continuas en un disco abierto <span class="math inline">\(D\)</span>, entonces, para toda pareja <span class="math inline">\(()x,y\)</span> en <span class="math inline">\(D\)</span>,</p>
+<p><span id="thm:unnamed-chunk-24" class="theorem"><strong>Teorema 4.3  (Igualdad de las derivadas parciales mixtas)  </strong></span>Si <span class="math inline">\(f\)</span> es una función de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> tal que <span class="math inline">\(f_{xy}\)</span> y <span class="math inline">\(f_{yx}\)</span> son continuas en un disco abierto <span class="math inline">\(D\)</span>, entonces, para toda pareja <span class="math inline">\(()x,y\)</span> en <span class="math inline">\(D\)</span>,</p>
 <p><span class="math display">\[
 f_{xy}(x,y)=f_{yx}(x,y)  
 \]</span></p>
@@ -471,7 +473,7 @@ Figura 4.3: Esquema regla de la cadena: una variable independiente [Imagen tomad
 </div>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-20" class="theorem"><strong>Teorema 4.4  (Regla de la cadena: Una variable independiente)  </strong></span>Sea <span class="math inline">\(w=f(x,y)\)</span>, donde <span class="math inline">\(f\)</span> es una función derivable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>. Si <span class="math inline">\(x=g(t)\)</span> y <span class="math inline">\(y=h(t)\)</span>, donde <span class="math inline">\(g\)</span> y <span class="math inline">\(h\)</span> son funciones derivables en <span class="math inline">\(t\)</span>, entonces <span class="math inline">\(w\)</span> es una función diferenciable de <span class="math inline">\(t\)</span>, y</p>
+<p><span id="thm:unnamed-chunk-25" class="theorem"><strong>Teorema 4.4  (Regla de la cadena: Una variable independiente)  </strong></span>Sea <span class="math inline">\(w=f(x,y)\)</span>, donde <span class="math inline">\(f\)</span> es una función derivable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>. Si <span class="math inline">\(x=g(t)\)</span> y <span class="math inline">\(y=h(t)\)</span>, donde <span class="math inline">\(g\)</span> y <span class="math inline">\(h\)</span> son funciones derivables en <span class="math inline">\(t\)</span>, entonces <span class="math inline">\(w\)</span> es una función diferenciable de <span class="math inline">\(t\)</span>, y</p>
 <p><span class="math display">\[
 \dfrac{dw}{dt}=\dfrac{\partial{w}}{\partial{x}}\dfrac{dx}{dt}+\dfrac{\partial{w}}{\partial{y}}\dfrac{dy}{dy}
 \]</span></p>
@@ -499,7 +501,7 @@ Figura 4.4: Esquema regla de la cadena: dos variables independientes [Imagen tom
 </div>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-22" class="theorem"><strong>Teorema 4.5  (Regla de la cadena: Dos variables independientes)  </strong></span>Sea <span class="math inline">\(w=f(x,y)\)</span>, donde <span class="math inline">\(f\)</span> es una función derivable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>. Si <span class="math inline">\(x=g(s,t)\)</span> y <span class="math inline">\(y=h(s,t)\)</span>, donde <span class="math inline">\(g\)</span> y <span class="math inline">\(h\)</span> son funciones tales que las derivadas parciales de primer orden con respecto a <span class="math inline">\(s\)</span> y <span class="math inline">\(t\)</span> existen, entonces <span class="math inline">\(\partial{w}/\partial{s}\)</span>,<span class="math inline">\(\partial{w}/\partial{t}\)</span> existen y estan dadas por:</p>
+<p><span id="thm:unnamed-chunk-27" class="theorem"><strong>Teorema 4.5  (Regla de la cadena: Dos variables independientes)  </strong></span>Sea <span class="math inline">\(w=f(x,y)\)</span>, donde <span class="math inline">\(f\)</span> es una función derivable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>. Si <span class="math inline">\(x=g(s,t)\)</span> y <span class="math inline">\(y=h(s,t)\)</span>, donde <span class="math inline">\(g\)</span> y <span class="math inline">\(h\)</span> son funciones tales que las derivadas parciales de primer orden con respecto a <span class="math inline">\(s\)</span> y <span class="math inline">\(t\)</span> existen, entonces <span class="math inline">\(\partial{w}/\partial{s}\)</span>,<span class="math inline">\(\partial{w}/\partial{t}\)</span> existen y estan dadas por:</p>
 <p><span class="math display">\[
 \dfrac{\partial{w}}{\partial{s}}=\dfrac{\partial{w}}{\partial{x}}\dfrac{\partial{x}}{\partial{s}}+\dfrac{\partial{w}}{\partial{y}}\dfrac{\partial{y}}{\partial{s}}
 \]</span>
@@ -561,7 +563,7 @@ Figura 4.4: Esquema regla de la cadena: dos variables independientes [Imagen tom
 <h2><span class="header-section-number">4.13</span> Derivación parcial implícita</h2>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-24" class="theorem"><strong>Teorema 4.6  (Regla de la cadena: Derivación implícita)  </strong></span>Si la ecuación <span class="math inline">\(F(x,y)=0\)</span> define a <span class="math inline">\(y\)</span> implícitamente como función de <span class="math inline">\(x\)</span>, entonces</p>
+<p><span id="thm:unnamed-chunk-29" class="theorem"><strong>Teorema 4.6  (Regla de la cadena: Derivación implícita)  </strong></span>Si la ecuación <span class="math inline">\(F(x,y)=0\)</span> define a <span class="math inline">\(y\)</span> implícitamente como función de <span class="math inline">\(x\)</span>, entonces</p>
 <p><span class="math display">\[
 \dfrac{dy}{dx}=-\dfrac{F_{x}(x,y)}{F_{y}(x,y)}, \ \ \ \ \ F_{y}(x,y) \neq 0
 \]</span></p>
@@ -584,7 +586,7 @@ Figura 4.5: Definición derivada direccional [Imagen tomada de <span class="cita
 </div>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-25" class="definition"><strong>Definición 4.3  (Derivada direccional)  </strong></span>Sea <span class="math inline">\(f\)</span> una función de dos variables <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, y sea <span class="math inline">\(u=cos(\theta)i+sen(\theta)j\)</span> un vector unitario. Entonces la derivada direccional de f en la dirección del vector u, que se denota <span class="math inline">\(D_{u}f\)</span> es</p>
+<p><span id="def:unnamed-chunk-30" class="definition"><strong>Definición 4.3  (Derivada direccional)  </strong></span>Sea <span class="math inline">\(f\)</span> una función de dos variables <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, y sea <span class="math inline">\(u=cos(\theta)i+sen(\theta)j\)</span> un vector unitario. Entonces la derivada direccional de f en la dirección del vector u, que se denota <span class="math inline">\(D_{u}f\)</span> es</p>
 <p><span class="math display">\[
 D_{u}f(x,y)=\displaystyle{\lim_{t \to 0}{\dfrac{f(x+tcos(\theta),y+tsen(\theta))-f(x,y)}{t}}}
 \]</span>
@@ -595,7 +597,7 @@ siempre que este límite exista.</p>
 <p><br></br></p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-26" class="theorem"><strong>Teorema 4.7  (Derivada direccional)  </strong></span>Si <span class="math inline">\(f\)</span> es una función diferenciable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, entonces la derivada direcional de <span class="math inline">\(f\)</span> con la dirección del vector unitrario <span class="math inline">\(u=cos(\theta)i+sen(\theta)j\)</span> es</p>
+<p><span id="thm:unnamed-chunk-31" class="theorem"><strong>Teorema 4.7  (Derivada direccional)  </strong></span>Si <span class="math inline">\(f\)</span> es una función diferenciable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, entonces la derivada direcional de <span class="math inline">\(f\)</span> con la dirección del vector unitrario <span class="math inline">\(u=cos(\theta)i+sen(\theta)j\)</span> es</p>
 <p><span class="math display">\[
   D_{u}f(x,y)=f_{x}(x,y)cos(\theta)+f_{y}(x,y)sen(\theta)
 \]</span></p>
@@ -614,7 +616,7 @@ Figura 4.6: Definición gradiente de una función [Imagen tomada de <span class=
 </div>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-27" class="definition"><strong>Definición 4.4  (Definición gradiente de una función con dos variables)  </strong></span>Sea <span class="math inline">\(z=f(x,y)\)</span> una función de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, tal que <span class="math inline">\(f_{x}\)</span> y <span class="math inline">\(f_{y}\)</span> existen. Entonces el gradiente de <span class="math inline">\(f\)</span>, denotado por <span class="math inline">\(\nabla{f(x,y)}\)</span> es el vector:</p>
+<p><span id="def:unnamed-chunk-32" class="definition"><strong>Definición 4.4  (Definición gradiente de una función con dos variables)  </strong></span>Sea <span class="math inline">\(z=f(x,y)\)</span> una función de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, tal que <span class="math inline">\(f_{x}\)</span> y <span class="math inline">\(f_{y}\)</span> existen. Entonces el gradiente de <span class="math inline">\(f\)</span>, denotado por <span class="math inline">\(\nabla{f(x,y)}\)</span> es el vector:</p>
 <p><span class="math display">\[
 \nabla{f(x,y)}=f_{x}(x,y)i+f_{y}(x,y)j
 \]</span></p>

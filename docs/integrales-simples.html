@@ -24,7 +24,7 @@
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2021-07-23" />
+<meta name="date" content="2021-07-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -95,7 +95,9 @@
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>3</b> Introducción</a><ul>
-<li class="chapter" data-level="3.1" data-path="intro.html"><a href="intro.html#función-de-dos-variables"><i class="fa fa-check"></i><b>3.1</b> Función de dos variables</a></li>
+<li class="chapter" data-level="3.1" data-path="intro.html"><a href="intro.html#punto-frontera-y-punto-interior-en-el-plano"><i class="fa fa-check"></i><b>3.1</b> Punto frontera y punto interior en el plano</a></li>
+<li class="chapter" data-level="3.2" data-path="intro.html"><a href="intro.html#función-de-dos-variables"><i class="fa fa-check"></i><b>3.2</b> Función de dos variables</a></li>
+<li class="chapter" data-level="3.3" data-path="intro.html"><a href="intro.html#punto-frontera-y-punto-interior-en-el-espacio"><i class="fa fa-check"></i><b>3.3</b> Punto frontera y punto interior en el espacio</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html"><i class="fa fa-check"></i><b>4</b> Métodos para derivar parcialmente</a><ul>
 <li class="chapter" data-level="4.1" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#definición-derivada-parcial"><i class="fa fa-check"></i><b>4.1</b> Definición derivada parcial</a></li>
@@ -197,7 +199,7 @@ Figura 6.1: Concepto integral a partir del área bajo una curva [Imagen tomada d
 <p><br></br></p>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-38" class="definition"><strong>Definición 6.1  (Antiderivada o primitiva)  </strong></span>Una antiderivada o primitiva de una función <span class="math inline">\(f\)</span> es una función <span class="math inline">\(F\)</span> tal que</p>
+<p><span id="def:unnamed-chunk-43" class="definition"><strong>Definición 6.1  (Antiderivada o primitiva)  </strong></span>Una antiderivada o primitiva de una función <span class="math inline">\(f\)</span> es una función <span class="math inline">\(F\)</span> tal que</p>
 <span class="math display">\[
   F&#39;(x)=f(x)
 \]</span>
@@ -207,7 +209,7 @@ siempre y cuando la función <span class="math inline">\(f(x)\)</span> esté bie
 <p><br></br></p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-39" class="theorem"><strong>Teorema 6.1  (La primitiva más general)  </strong></span>Si <span class="math inline">\(F&#39;(x)=f(x)\)</span> en cada punto del intervalo abierto <span class="math inline">\(I\)</span>, entonces cada primitiva <span class="math inline">\(G\)</span> de <span class="math inline">\(f\)</span> en <span class="math inline">\(I\)</span> tiene la forma</p>
+<p><span id="thm:unnamed-chunk-44" class="theorem"><strong>Teorema 6.1  (La primitiva más general)  </strong></span>Si <span class="math inline">\(F&#39;(x)=f(x)\)</span> en cada punto del intervalo abierto <span class="math inline">\(I\)</span>, entonces cada primitiva <span class="math inline">\(G\)</span> de <span class="math inline">\(f\)</span> en <span class="math inline">\(I\)</span> tiene la forma</p>
 <p><span class="math display">\[
 G(x)=F(x)+C
 \]</span></p>
@@ -239,11 +241,12 @@ G(x)=F(x)+C
 (6.) &amp; D_{x}\left[-cos(x)+C\right]=sen(x) &amp; \Longrightarrow &amp; \displaystyle\int{sen(x)dx}=-cos(x)+C\\
 (7.) &amp; D_{x}\left[tan(x)+C\right]=sec^2(x) &amp; \Longrightarrow &amp; \displaystyle\int{sec^2(x)dx}=tan(x)+C\\
 (8.) &amp; D_{x}\left[sec(x)+C\right]=se(x)tan(x) &amp; \Longrightarrow &amp; \displaystyle\int{sec(x)tan(x)dx}=sec(x)+C\\
-(9.) &amp; D_{x}\left[-cot(x)+C\right]=csc^2(x) &amp; \Longrightarrow &amp; \displaystyle\int{csc^2(x)dx}=-cot(x)+C\\
-(10.) &amp; D_{x}\left[arcsen(x)+C\right]=\dfrac{1}{\sqrt{1-x^2}} &amp; \Longrightarrow &amp; \displaystyle\int{\dfrac{1dx}{\sqrt{1-x^2}}}=arcsen(x)+C\\
-(11.) &amp; D_{x}\left[arctan(x)+C\right]=\dfrac{1}{1+x^2} &amp; \Longrightarrow &amp; \displaystyle \int{\dfrac{1dx}{1+x^2}}=arctan(x)+C\\
-(12.) &amp; D_{x}\left[ln(x)+C\right]=\dfrac{1}{x} &amp; \Longrightarrow &amp; \displaystyle\int{x^{-1}dx}=\displaystyle\int{\dfrac{1}{x}dx}=ln(|x|)+C\\
-(13.) &amp; D_{x}\left[\dfrac{a^x}{ln(a)}+C\right]=a^{x} &amp; \Longrightarrow &amp; \displaystyle\int{a^{x}dx}=\dfrac{a^{x}}{ln(a)}+C\\
+(9.) &amp; D_{x}\left[-csc(x)+C\right]=csc(x)cot(x) &amp; \Longrightarrow &amp; \displaystyle\int{csc(x)cot(x)dx}=-csc(x)+C\\
+(10.) &amp; D_{x}\left[-cot(x)+C\right]=csc^2(x) &amp; \Longrightarrow &amp; \displaystyle\int{csc^2(x)dx}=-cot(x)+C\\
+(11.) &amp; D_{x}\left[arcsen(x)+C\right]=\dfrac{1}{\sqrt{1-x^2}} &amp; \Longrightarrow &amp; \displaystyle\int{\dfrac{1dx}{\sqrt{1-x^2}}}=arcsen(x)+C\\
+(12.) &amp; D_{x}\left[arctan(x)+C\right]=\dfrac{1}{1+x^2} &amp; \Longrightarrow &amp; \displaystyle \int{\dfrac{1dx}{1+x^2}}=arctan(x)+C\\
+(13.) &amp; D_{x}\left[ln(x)+C\right]=\dfrac{1}{x} &amp; \Longrightarrow &amp; \displaystyle\int{x^{-1}dx}=\displaystyle\int{\dfrac{1}{x}dx}=ln(|x|)+C\\
+(14.) &amp; D_{x}\left[\dfrac{a^x}{ln(a)}+C\right]=a^{x} &amp; \Longrightarrow &amp; \displaystyle\int{a^{x}dx}=\dfrac{a^{x}}{ln(a)}+C\\
 \end{matrix}
 \]</span>
 <br></br></p>
@@ -286,7 +289,7 @@ G(x)=F(x)+C
 <h2><span class="header-section-number">6.4</span> Ejemplo1 de antiderivada</h2>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-40" class="example"><strong>Ejemplo 6.1  (Aplicación de antiderivadas y sus propiedades)  </strong></span>Determinar</p>
+<p><span id="exm:unnamed-chunk-45" class="example"><strong>Ejemplo 6.1  (Aplicación de antiderivadas y sus propiedades)  </strong></span>Determinar</p>
 <span class="math display">\[
 \displaystyle\int{\left(x^4+3\sqrt{x^5}-\dfrac{4}{x^3}\right)dx}  
 \]</span>
@@ -314,7 +317,7 @@ G(x)=F(x)+C
 <h2><span class="header-section-number">6.5</span> Ejemplo2 de antiderivada</h2>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-42" class="example"><strong>Ejemplo 6.2  (Aplicación de antiderivadas y sus propiedades)  </strong></span>Determinar</p>
+<p><span id="exm:unnamed-chunk-47" class="example"><strong>Ejemplo 6.2  (Aplicación de antiderivadas y sus propiedades)  </strong></span>Determinar</p>
 <span class="math display">\[
 \displaystyle\int{(2cos(3x)+5sen(4x))dx}
 \]</span>
@@ -339,7 +342,7 @@ G(x)=F(x)+C
 <h2><span class="header-section-number">6.6</span> Teorema fundamental del cálculo, caso Uno</h2>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-44" class="theorem"><strong>Teorema 6.2  (Teorema fundamental del cálculo, parte Uno)  </strong></span>
+<p><span id="thm:unnamed-chunk-49" class="theorem"><strong>Teorema 6.2  (Teorema fundamental del cálculo, parte Uno)  </strong></span>
 Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces la función <span class="math inline">\(g\)</span> definida por</p>
 <p><span class="math display">\[
 g(x)=\int_{a}^{x}f(t)ft, \qquad a \leq x \leq b
@@ -360,7 +363,7 @@ Figura 6.2: Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de <s
 <h2><span class="header-section-number">6.7</span> Teorema fundamental del cálculo, caso Dos</h2>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-45" class="theorem"><strong>Teorema 6.3  (Teorema fundamental del cálculo, parte Dos)  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces</p>
+<p><span id="thm:unnamed-chunk-50" class="theorem"><strong>Teorema 6.3  (Teorema fundamental del cálculo, parte Dos)  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces</p>
 <p><span class="math display">\[
 \int_{a}^{b}{f(x)dx}=F(b)-F(a)
 \]</span></p>
