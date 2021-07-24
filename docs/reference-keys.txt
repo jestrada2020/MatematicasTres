@@ -98,7 +98,7 @@ derivación-parcial-implícita
 derivada-direccional
 gradiente-de-una-función
 métodos-para-máximos-y-mínimos
-significado-geométrico-de-la-derivada-parcial-con-respecto-a-x-y-y-1
+significado-geométrico-de-máximo-y-mínimo-local
 herramienta-para-obtener-el-hessiano-2por2
 método-de-los-multiplicadore-de-lagrange-para-determinar-máximos-o-mínimos
 integrales-simples
