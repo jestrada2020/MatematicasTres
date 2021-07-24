@@ -102,9 +102,11 @@ significado-geométrico-de-la-derivada-parcial-con-respecto-a-x-y-y-1
 herramienta-para-obtener-el-hessiano-2por2
 método-de-los-multiplicadore-de-lagrange-para-determinar-máximos-o-mínimos
 integrales-simples
-primera-tabla-de-antiderivas
+primera-tabla-de-antiderivadas
 herramienta-para-obtener-antiderivadas
-propiedades-de-las-antiderivas
+propiedades-de-las-antiderivadas
+ejemplo1-de-antiderivada
+ejemplo2-de-antiderivada
 teorema-fundamental-del-cálculo-caso-uno
 teorema-fundamental-del-cálculo-caso-dos
 integrales-dobles
