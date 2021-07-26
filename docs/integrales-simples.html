@@ -24,7 +24,7 @@
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2021-07-24" />
+<meta name="date" content="2021-07-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -132,6 +132,9 @@
 <li class="chapter" data-level="6.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-de-antiderivada"><i class="fa fa-check"></i><b>6.5</b> Ejemplo2 de antiderivada</a></li>
 <li class="chapter" data-level="6.6" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-uno"><i class="fa fa-check"></i><b>6.6</b> Teorema fundamental del cálculo, caso Uno</a></li>
 <li class="chapter" data-level="6.7" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-dos"><i class="fa fa-check"></i><b>6.7</b> Teorema fundamental del cálculo, caso Dos</a></li>
+<li class="chapter" data-level="6.8" data-path="integrales-simples.html"><a href="integrales-simples.html#técnicas-de-integración"><i class="fa fa-check"></i><b>6.8</b> Técnicas de integración</a><ul>
+<li class="chapter" data-level="6.8.1" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-partes"><i class="fa fa-check"></i><b>6.8.1</b> Integración por partes</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
 <li class="chapter" data-level="7.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>7.1</b> Definición de integral doble</a></li>
@@ -243,10 +246,12 @@ G(x)=F(x)+C
 (8.) &amp; D_{x}\left[sec(x)+C\right]=se(x)tan(x) &amp; \Longrightarrow &amp; \displaystyle\int{sec(x)tan(x)dx}=sec(x)+C\\
 (9.) &amp; D_{x}\left[-csc(x)+C\right]=csc(x)cot(x) &amp; \Longrightarrow &amp; \displaystyle\int{csc(x)cot(x)dx}=-csc(x)+C\\
 (10.) &amp; D_{x}\left[-cot(x)+C\right]=csc^2(x) &amp; \Longrightarrow &amp; \displaystyle\int{csc^2(x)dx}=-cot(x)+C\\
-(11.) &amp; D_{x}\left[arcsen(x)+C\right]=\dfrac{1}{\sqrt{1-x^2}} &amp; \Longrightarrow &amp; \displaystyle\int{\dfrac{1dx}{\sqrt{1-x^2}}}=arcsen(x)+C\\
-(12.) &amp; D_{x}\left[arctan(x)+C\right]=\dfrac{1}{1+x^2} &amp; \Longrightarrow &amp; \displaystyle \int{\dfrac{1dx}{1+x^2}}=arctan(x)+C\\
-(13.) &amp; D_{x}\left[ln(x)+C\right]=\dfrac{1}{x} &amp; \Longrightarrow &amp; \displaystyle\int{x^{-1}dx}=\displaystyle\int{\dfrac{1}{x}dx}=ln(|x|)+C\\
-(14.) &amp; D_{x}\left[\dfrac{a^x}{ln(a)}+C\right]=a^{x} &amp; \Longrightarrow &amp; \displaystyle\int{a^{x}dx}=\dfrac{a^{x}}{ln(a)}+C\\
+(11.) &amp; D_{x}\left[ln(|sec(x)|)+C\right]=tan(x) &amp; \Longrightarrow &amp; \displaystyle\int{tan(x)dx}=ln(|sec(x)|)+C\\
+(12.) &amp; D_{x}\left[ln(|sen(x)|)+C\right]=cot(x) &amp; \Longrightarrow &amp; \displaystyle\int{cot(x)dx}=ln(|sen(x)|)+C\\
+(13.) &amp; D_{x}\left[arcsen(x)+C\right]=\dfrac{1}{\sqrt{1-x^2}} &amp; \Longrightarrow &amp; \displaystyle\int{\dfrac{1dx}{\sqrt{1-x^2}}}=arcsen(x)+C\\
+(14.) &amp; D_{x}\left[arctan(x)+C\right]=\dfrac{1}{1+x^2} &amp; \Longrightarrow &amp; \displaystyle \int{\dfrac{1dx}{1+x^2}}=arctan(x)+C\\
+(15.) &amp; D_{x}\left[ln(x)+C\right]=\dfrac{1}{x} &amp; \Longrightarrow &amp; \displaystyle\int{x^{-1}dx}=\displaystyle\int{\dfrac{1}{x}dx}=ln(|x|)+C\\
+(16.) &amp; D_{x}\left[\dfrac{a^x}{ln(a)}+C\right]=a^{x} &amp; \Longrightarrow &amp; \displaystyle\int{a^{x}dx}=\dfrac{a^{x}}{ln(a)}+C\\
 \end{matrix}
 \]</span>
 <br></br></p>
@@ -373,9 +378,142 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 
 <p><br></br></p>
 <p><br></br></p>
+</div>
+<div id="técnicas-de-integración" class="section level2">
+<h2><span class="header-section-number">6.8</span> Técnicas de integración</h2>
+<div id="integración-por-partes" class="section level3">
+<h3><span class="header-section-number">6.8.1</span> Integración por partes</h3>
+<p><span class="math display">\[
+\boxed{
+\displaystyle\int{f(x)g&#39;(x)dx}=f(x)g(x)- \displaystyle\int{g(x)f&#39;(x)dx}}
+\]</span></p>
+<p>Una representación equivalente será haciendo el cambio de variable:</p>
+<p><span class="math inline">\(u=f(x)\)</span>, <span class="math inline">\(v=g(x)\)</span>, entonces <span class="math inline">\(du=f&#39;(x)dx\)</span>, y <span class="math inline">\(dv=g&#39;(x)dx\)</span></p>
+<p><span class="math display">\[
+\boxed{
+\displaystyle\int{udv}=uv- \displaystyle\int{vdu}}
+\]</span></p>
+<div id="ejemplo1-por-partes" class="section level4">
+<h4><span class="header-section-number">6.8.1.1</span> Ejemplo1 por partes</h4>
 <p><br></br></p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-51" class="example"><strong>Ejemplo 6.3  (Integración por partes caso1)  </strong></span>Encuentre</p>
+<span class="math display">\[
+\displaystyle\int{xsen(x)dx} 
+\]</span>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución</em> (Integración por partes caso1). </span> Sabemos que <span class="math inline">\(D_{x}\left[-cos(x)\right]=sen(x)\)</span>, o equivalentemente</p>
+<p><span class="math display">\[
+  \dfrac{d}{dx}\left[-cos(x)\right]=sen(x)   \qquad  \text{ ó equivalentemente } \qquad d\left[-cos(x)\right]=sen(x)dx
+\]</span></p>
+<p>Entonces</p>
+<p><span class="math display">\[\begin{equation} \label{eqdpp1}
+\begin{split}
+\displaystyle\int{xsen(x)dx} &amp;=  \displaystyle\int{xd\left[-cos(x)\right]}=-xcos(x)-\displaystyle\int{-cos(x)d[x]}\\
+&amp;=-xcos(x)+\displaystyle\int{cos(x)dx} \qquad \text{Recordar: } \quad d[x]=1dx=dx  \qquad \\
+&amp; = -xcos(x)+sen(x)+C
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta:</p>
+<span class="math display">\[
+  \displaystyle\int{xsen(x)dx} = -xcos(x)+sen(x)+C
+\]</span>
+</div>
+
+</div>
+<div id="ejemplo2-por-partes" class="section level4">
+<h4><span class="header-section-number">6.8.1.2</span> Ejemplo2 por partes</h4>
 <p><br></br></p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-53" class="example"><strong>Ejemplo 6.4  (Integración por partes caso2)  </strong></span>Encuentre</p>
+<span class="math display">\[
+\displaystyle\int{xe^{x}dx} 
+\]</span>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución</em> (Integración por partes caso2). </span> Para realizar la integración por partes lo haremos usando la fórmula:
+<span class="math display">\[
+\boxed{
+\displaystyle\int{udv}=uv- \displaystyle\int{vdu}}
+\]</span></p>
+<p>Aquí tomaremos <span class="math inline">\(u=x\)</span> y <span class="math inline">\(dv=e^{x}dx\)</span></p>
+<p>Sabemos que:</p>
+<p><span class="math display">\[
+\text{Como } \qquad dv=e^{x}dx \qquad \qquad \text{ entonces } \qquad  v=\displaystyle\int{e^{x}dx}=e^{x}  \qquad \text{ aquí la constante es cero.}
+\]</span>
+Por lo tanto</p>
+<p><span class="math display">\[\begin{equation} \label{eqdpp2}
+\begin{split}
+\displaystyle\int{udv} &amp;= uv- \displaystyle\int{vdu} \\
+&amp; = xe^{x}-\displaystyle\int{e^{x}dx}  \qquad \qquad  \text{ a quí }  \quad du=1dx\\
+&amp; = xe^{x}-e^{x}+C
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta:</p>
+<span class="math display">\[
+  \displaystyle\int{xe^{x}dx} = xe^{x}-e^{x}+C
+\]</span>
+</div>
+
+</div>
+<div id="ejemplo3-por-partes" class="section level4">
+<h4><span class="header-section-number">6.8.1.3</span> Ejemplo3 por partes</h4>
 <p><br></br></p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-55" class="example"><strong>Ejemplo 6.5  (Integración por partes caso3)  </strong></span>Encuentre</p>
+<span class="math display">\[
+\displaystyle\int{x^2e^{x}dx} 
+\]</span>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución</em> (Integración por partes caso3). </span> En el proceso de solución vamos a usar parte de la notación de antiderivada</p>
+<p>Sabemos que</p>
+<p><span class="math display">\[
+  D_{x}\left[e^{x}\right]=e^{x} \qquad \text{ es equivalente a } \qquad D\left[e^{x}\right]=e^{x}dx
+\]</span><br />
+Aplicando esta notación a la integral propuesta tenemos:</p>
+<p><span class="math display">\[\begin{equation} \label{eqdpp3}
+\begin{split}
+\displaystyle\int{x^2e^{x}dx} &amp;=\displaystyle\int{x^2D\left[e^{x}\right]}\\
+&amp; =x^2e^{x}-\displaystyle\int{e^{x}D\left[x^2\right]}\\
+&amp; =x^2e^{x}-2\displaystyle\int{xe^{x}dx}\\
+&amp; =x^2e^{x}-2\left[\displaystyle\int{xD\left[e^{x}\right]}\right]\\
+&amp; =x^2e^{x}-2\left[xe^{x}-\displaystyle\int{e^{x}D\left[x\right]}\right]\\
+&amp; =x^2e^{x}-2\left[xe^{x}-\displaystyle\int{e^{x}dx}\right]\\
+&amp; =x^2e^{x}-2\left[xe^{x}-e^{x}\right]+C\\
+&amp; =x^2e^{x}-2xe^{x}+2e^{x}+C\\
+&amp; =e^{x}\left(x^2-2x+2\right)+C
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta:</p>
+<span class="math display">\[
+  \displaystyle\int{x^2e^{x}dx} = e^{x}\left(x^2-2x+2\right)+C
+\]</span>
+</div>
+
+<p><br></br></p>
+</div>
+<div id="ejemplo4-por-partes" class="section level4">
+<h4><span class="header-section-number">6.8.1.4</span> Ejemplo4 por partes</h4>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-57" class="example"><strong>Ejemplo 6.6  (Integración por partes caso4)  </strong></span>Encuentre</p>
+<span class="math display">\[
+\displaystyle\int{(ax^2+bx+c)e^{x}dx} 
+\]</span>
+donde <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, y <span class="math inline">\(c\)</span> son consantes
+</div>
+
 <p><br></br></p>
 <p><br></br></p>
 <p><br></br></p>
@@ -388,6 +526,8 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 <p><br></br></p>
 <p><br></br></p>
 
+</div>
+</div>
 </div>
 </div>
 <h3>Referencias</h3>
