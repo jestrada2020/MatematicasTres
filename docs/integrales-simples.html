@@ -24,7 +24,7 @@
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2021-07-26" />
+<meta name="date" content="2021-07-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -148,7 +148,9 @@
 <li class="chapter" data-level="6.10.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo5-por-partes"><i class="fa fa-check"></i><b>6.10.5</b> Ejemplo5 por partes</a></li>
 <li class="chapter" data-level="6.10.6" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo6-por-partes"><i class="fa fa-check"></i><b>6.10.6</b> Ejemplo6 por partes</a></li>
 </ul></li>
-<li class="chapter" data-level="6.11" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>6.11</b> Integral definida</a></li>
+<li class="chapter" data-level="6.11" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>6.11</b> Integral definida</a><ul>
+<li class="chapter" data-level="6.11.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>6.11.1</b> Propiedades de la integral definida</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
 <li class="chapter" data-level="7.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>7.1</b> Definición de integral doble</a></li>
@@ -364,7 +366,7 @@ G(x)=F(x)+C
 <p><span id="thm:unnamed-chunk-51" class="theorem"><strong>Teorema 6.2  (Teorema fundamental del cálculo, parte Uno)  </strong></span>
 Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces la función <span class="math inline">\(g\)</span> definida por</p>
 <p><span class="math display">\[
-g(x)=\int_{a}^{x}f(t)ft, \qquad a \leq x \leq b
+g(x)=\displaystyle\int_{a}^{x}f(t)dt, \qquad a \leq x \leq b
 \]</span></p>
 <p>es continua en <span class="math inline">\([a,b]\)</span>, derivable en <span class="math inline">\((a,b)\)</span>, y <span class="math inline">\(g&#39;(x)=f(x)\)</span>.</p>
 tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a>)</span> pág <span class="math inline">\(381\)</span>]
@@ -377,12 +379,35 @@ Figura 6.2: Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de <s
 </p>
 </div>
 <p><br></br></p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-52" class="example"><strong>Ejemplo 6.3  (Aplicación TFC1 y regla de la cadena)  </strong></span>Encuentre</p>
+<p><span class="math display">\[
+  \dfrac{d}{dx}\left[\displaystyle\int_{a}^{x^4}sec(t)dt\right]
+\]</span></p>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución</em> (Aplicación TFC1 y regla de la cadena). </span> En este caso debe ser cuidadoso al usar la regla de la cadena junto con TFC1. Sea <span class="math inline">\(u=x^4\)</span>. Por lo tanto</p>
+<p><span class="math display">\[\begin{equation} \label{eqdSS0}
+\begin{split} 
+\dfrac{d}{dx}\left[\displaystyle\int_{a}^{x^4}sec(t)dt\right] &amp; = \dfrac{d}{dx}\left[\displaystyle\int_{a}^{u}sec(t)dt\right]\\
+&amp; = \dfrac{d}{du}\left[\displaystyle\int_{a}^{u}sec(t)dt\right]\dfrac{du}{dx}\\
+&amp; = sec(u)\dfrac{du}{dx}\\
+&amp; = sec(x^4).4x^3
+\end{split}
+\end{equation}\]</span></p>
+tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a>)</span> pág 384
+</div>
+
+<p><br></br></p>
 </div>
 <div id="teorema-fundamental-del-cálculo-caso-dos" class="section level2">
 <h2><span class="header-section-number">6.7</span> Teorema fundamental del cálculo, caso Dos</h2>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-52" class="theorem"><strong>Teorema 6.3  (Teorema fundamental del cálculo, parte Dos)  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces</p>
+<p><span id="thm:unnamed-chunk-54" class="theorem"><strong>Teorema 6.3  (Teorema fundamental del cálculo, parte Dos)  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces</p>
 <p><span class="math display">\[
 \int_{a}^{b}{f(x)dx}=F(b)-F(a)
 \]</span></p>
@@ -416,7 +441,7 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 <h3><span class="header-section-number">6.9.1</span> Ejemplo1 por sustitución</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-54" class="example"><strong>Ejemplo 6.3  (Integración por sustitución caso1)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-56" class="example"><strong>Ejemplo 6.4  (Integración por sustitución caso1)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{2x\sqrt{1+x^2}dx} 
 \]</span>
@@ -446,7 +471,7 @@ I &amp; =\left(\dfrac{2}{3}\right)w^3+C
 <h3><span class="header-section-number">6.9.2</span> Ejemplo2 por sustitución</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-56" class="example"><strong>Ejemplo 6.4  (Integración por sustitución caso2)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-58" class="example"><strong>Ejemplo 6.5  (Integración por sustitución caso2)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{\sqrt{2x+1}dx} 
 \]</span>
@@ -474,7 +499,7 @@ I &amp; = \displaystyle\int{\sqrt{2x+1}dx} \qquad \longleftrightarrow  \quad \di
 <h3><span class="header-section-number">6.9.3</span> Ejemplo3 por sustitución</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-58" class="example"><strong>Ejemplo 6.5  (Integración por sustitución caso3)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-60" class="example"><strong>Ejemplo 6.6  (Integración por sustitución caso3)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{x^3cos(x^4+2)dx} 
 \]</span>
@@ -504,7 +529,7 @@ I = \displaystyle\int{x^3cos(x^4+2)dx} =\displaystyle\int{cos(x^4+2)x^3dx} \ \lo
 <h3><span class="header-section-number">6.9.4</span> Ejemplo4 por sustitución</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-60" class="example"><strong>Ejemplo 6.6  (Integración por sustitución caso4)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-62" class="example"><strong>Ejemplo 6.7  (Integración por sustitución caso4)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{x^5\sqrt{x^2+1}dx} 
 \]</span>
@@ -552,7 +577,7 @@ I &amp; = \displaystyle\int{x^5\sqrt{x^2+1}dx} =\displaystyle\int{\left(x^2\righ
 <h3><span class="header-section-number">6.10.1</span> Ejemplo1 por partes</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-62" class="example"><strong>Ejemplo 6.7  (Integración por partes caso1)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-64" class="example"><strong>Ejemplo 6.8  (Integración por partes caso1)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{xsen(x)dx} 
 \]</span>
@@ -584,7 +609,7 @@ I &amp; = \displaystyle\int{x^5\sqrt{x^2+1}dx} =\displaystyle\int{\left(x^2\righ
 <h3><span class="header-section-number">6.10.2</span> Ejemplo2 por partes</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-64" class="example"><strong>Ejemplo 6.8  (Integración por partes caso2)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-66" class="example"><strong>Ejemplo 6.9  (Integración por partes caso2)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{xe^{x}dx} 
 \]</span>
@@ -622,7 +647,7 @@ Por lo tanto</p>
 <h3><span class="header-section-number">6.10.3</span> Ejemplo3 por partes</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-66" class="example"><strong>Ejemplo 6.9  (Integración por partes caso3)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-68" class="example"><strong>Ejemplo 6.10  (Integración por partes caso3)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{x^2e^{x}dx} 
 \]</span>
@@ -661,7 +686,7 @@ Aplicando esta notación a la integral propuesta tenemos:</p>
 <h3><span class="header-section-number">6.10.4</span> Ejemplo4 por partes</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-68" class="example"><strong>Ejemplo 6.10  (Integración por partes caso4)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-70" class="example"><strong>Ejemplo 6.11  (Integración por partes caso4)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{(ax^2+bx+c)e^{x}dx} 
 \]</span>
@@ -692,7 +717,7 @@ donde <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</s
 <h3><span class="header-section-number">6.10.5</span> Ejemplo5 por partes</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-70" class="example"><strong>Ejemplo 6.11  (Integral por partes ciclica caso1)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-72" class="example"><strong>Ejemplo 6.12  (Integral por partes ciclica caso1)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{sen(x)e^{x}dx} 
 \]</span>
@@ -729,7 +754,7 @@ I_{1} &amp; = \dfrac{e^{x}}{2}\left[sen(x)-cos(x)\right]+C\\
 <h3><span class="header-section-number">6.10.6</span> Ejemplo6 por partes</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-72" class="example"><strong>Ejemplo 6.12  (Integral por partes función inversa caso1)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-74" class="example"><strong>Ejemplo 6.13  (Integral por partes función inversa caso1)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{arcsen(x)dx} 
 \]</span>
@@ -768,28 +793,88 @@ I &amp; = xarcsen(x)+\sqrt{1-x^2}+C
 <h2><span class="header-section-number">6.11</span> Integral definida</h2>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-74" class="definition"><strong>Definición 6.2  (Integral definida)  </strong></span>Si <span class="math inline">\(f\)</span> es una función continua definida para <span class="math inline">\(a \leq x \leq b\)</span>, divida el intervalo <span class="math inline">\([a,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos de igual ancho <span class="math inline">\(\bigtriangleup{x}=(b-a)/n\)</span>. Haga que <span class="math inline">\(x_0(=a),x_1,x_2,...,x_n(=b)\)</span> sean los puntos extremos de estos subintervalos y elija <span class="math inline">\(x_{1}^{*},x_{2}^{*},...,x_{n}^{*}\)</span> como los puntos muestra en estos subintervalos, de modo que <span class="math inline">\(x_{i}^{*}\)</span> se encuentre en el i-ésimo subintervalo <span class="math inline">\([x_{i-1},x_{i}]\)</span>. Entonces la integral definida de <span class="math inline">\(f\)</span>, desde <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>, es</p>
-<span class="math display">\[
+<p><span id="def:unnamed-chunk-76" class="definition"><strong>Definición 6.2  (Integral definida)  </strong></span>Si <span class="math inline">\(f\)</span> es una función continua definida para <span class="math inline">\(a \leq x \leq b\)</span>, divida el intervalo <span class="math inline">\([a,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos de igual ancho <span class="math inline">\(\bigtriangleup{x}=(b-a)/n\)</span>. Haga que <span class="math inline">\(x_0(=a),x_1,x_2,...,x_n(=b)\)</span> sean los puntos extremos de estos subintervalos y elija <span class="math inline">\(x_{1}^{*},x_{2}^{*},...,x_{n}^{*}\)</span> como los puntos muestra en estos subintervalos, de modo que <span class="math inline">\(x_{i}^{*}\)</span> se encuentre en el i-ésimo subintervalo <span class="math inline">\([x_{i-1},x_{i}]\)</span>. Entonces la integral definida de <span class="math inline">\(f\)</span>, desde <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>, es</p>
+<p><span class="math display">\[
   \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i}^{*})\bigtriangleup{x}}
 \]</span>
-Siempre que exista este límite, <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>.
+Siempre que exista este límite, <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>.</p>
+tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a>)</span> pág 366
 </div>
 
 <p><br></br></p>
+<p>Esta es una aplicación para generar el área bajo una curva usando sumas de Riemann, el Autor:José Alejandro López Rentería (<a href="https://www.geogebra.org/classic/ex9zdr7e" class="uri">https://www.geogebra.org/classic/ex9zdr7e</a>) lo elaboro usando geogebra.</p>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementSumaRiemannA01">
+
+</div>
+<script>  
+       var ggbAppSumaRiemannA01 = new GGBApplet({"material_id":"ex9zdr7e",
+       "width": 1100,
+       "height": 800,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppSumaRiemannA01.inject('ggb-elementSumaRiemannA01');
+      });
+</script>
 <p><br></br></p>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-77" class="definition"><strong>Definición 6.3  (Definición formal de la integral definida)  </strong></span>Sea <span class="math inline">\(f(x)\)</span> una función definida en un intervalo cerrado <span class="math inline">\([a,b]\)</span>. Dicimos que un número <span class="math inline">\(J\)</span> es la integral definida de <span class="math inline">\(f\)</span> en <span class="math inline">\([a,b]\)</span> y que <span class="math inline">\(J\)</span> es el límite de las sumas de Riemann <span class="math inline">\(\sum_{k=1}^{n}f(c_{k})\bigtriangleup{x_k}\)</span> si se satisface la siguiente condición:</p>
+<p>Dado cualquier número <span class="math inline">\(\epsilon &gt;0\)</span> existe un número correspondiente <span class="math inline">\(\delta &gt;0\)</span>, tal que para toda partición <span class="math inline">\(P=\{x_0,x_1,...,x_n\}\)</span> de <span class="math inline">\([a,b]\)</span> con <span class="math inline">\(\left \| P \right \|&lt;\delta\)</span> y cualquier elección de <span class="math inline">\(c_k\)</span> en <span class="math inline">\([x_{k-1},x_k]\)</span>, tenemos</p>
+<p><span class="math display">\[
+  \left|\displaystyle{\sum_{k=1}^{n}f(c_k)\bigtriangleup{x_k}}-J\right|&lt; \epsilon.
+\]</span></p>
+<p>donde <span class="math inline">\(J=\displaystyle\int_{a}^{b}{f(x)dx}\)</span>.</p>
+tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág 366
+</div>
+
 <p><br></br></p>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-78" class="theorem"><strong>Teorema 6.4  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, o si <span class="math inline">\(f\)</span> tiene únicamente un número finito de saltos discontinuos, entonces <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>; es decir, la integral definida</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i})\bigtriangleup{x}}, \qquad \text{ existe.}
+\]</span>
+donde <span class="math inline">\(\bigtriangleup{x}=\dfrac{b-a}{n} \qquad \text{ y } \qquad x_{i}=a+i\bigtriangleup{x}\)</span></p>
+tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a>)</span> pág 368
+</div>
+
 <p><br></br></p>
+<div id="propiedades-de-la-integral-definida" class="section level3">
+<h3><span class="header-section-number">6.11.1</span> Propiedades de la integral definida</h3>
+<p><span class="math display">\[
+\begin{matrix}
+ (1.) &amp; \displaystyle\int_{a}^{b}{cdx}=c(b-a) &amp; \text{donde c es cualquier constante}\\
+ (2.) &amp; \displaystyle\int_{a}^{b}{\left[f(x)\pm g(x)\right]dx}=\displaystyle\int_{a}^{b}{f(x)dx}\pm\displaystyle\int_{a}^{b}{g(x)dx}\\
+ (3.) &amp; \displaystyle\int_{a}^{b}{cf(x)dx}=c\displaystyle\int_{a}^{b}{f(x)dx} &amp; \text{donde c es cualquier constante}\\
+ (4.) &amp; \displaystyle\int_{a}^{c}{f(x)dx}+\displaystyle\int_{c}^{b}{f(x)dx}=\displaystyle\int_{a}^{b}{f(x)dx}\\
+ (5.) &amp; \text{Si } f(x) \geq 0 \text{ para } a\leq x \leq b, \text{ entonces }  \displaystyle\int_{a}^{b}{f(x)dx}\geq 0.\\
+ (6.) &amp; \text{Si } f(x) \geq g(x) \text{ para } a\leq x \leq b, \text{ entonces }  \displaystyle\int_{a}^{b}{f(x)dx}\geq \displaystyle\int_{a}^{b}{g(x)dx}.\\
+ (7.) &amp; \text{Si } m \leq f(x) \leq M \text{ para } a\leq x \leq b, \text{ entonces }  m(b-a)\leq \displaystyle\int_{a}^{b}{f(x)dx}\leq M(b-a).\\
+\end{matrix}
+\]</span>
+<br></br></p>
 <p><br></br></p>
 <p><br></br></p>
 <p><br></br></p>
 <p><br></br></p>
 
+</div>
 </div>
 </div>
 <h3>Referencias</h3>
 <div id="refs" class="references">
 <div id="ref-stewart2020single">
 <p>Stewart, James, Daniel K Clegg, and Saleem Watson. 2020. <em>Single Variable Calculus: Early Transcendentals</em>. Cengage Learning.</p>
+</div>
+<div id="ref-thomas2003thomas">
+<p>Thomas, George Brinton, Ross L Finney, Maurice D Weir, and Frank R Giordano. 2003. <em>Thomas’ Calculus</em>. Addison-Wesley Reading.</p>
 </div>
 </div>
             </section>
