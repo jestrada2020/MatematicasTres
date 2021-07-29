@@ -66,6 +66,7 @@ fig:FigSustitucionTG1
 exm:unnamed-chunk-78
 fig:FigSustitucionTG2
 exm:unnamed-chunk-80
+fig:FigSustitucionTG3
 def:unnamed-chunk-82
 def:unnamed-chunk-83
 thm:unnamed-chunk-84

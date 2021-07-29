@@ -937,12 +937,28 @@ Primero:</p>
 <p>Sustituir (1)y(2) en la integral, así:</p>
 <span class="math display">\[\begin{equation} \label{eqST3}
 \begin{split}
-
+I &amp; =\displaystyle{\int{\dfrac{1}{\sqrt{\left(4sec^2(\theta)-4\right)}}2sec(\theta)tan(\theta)d\theta}}\\
+&amp; =\displaystyle{\int{\dfrac{1}{\sqrt{4(sec^2(\theta)-1)}}2sec(\theta)tan(\theta)d\theta}}\\
+&amp; =\displaystyle{\int{\dfrac{1}{\sqrt{4tan^2(\theta)}}2sec(\theta)tan(\theta)d\theta}}\\
+&amp; =\displaystyle{\int{\dfrac{1}{2tan(\theta)}2sec(\theta)tan(\theta)d\theta}}\\
+&amp; =\displaystyle{\int{sec(\theta)d\theta}}=ln|sec(\theta)+tan(\theta)|+C\\
 
 \end{split}
 \end{equation}\]</span>
 </div>
 
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigSustitucionTG3"></span>
+<img src="images/SustitucionTG3.png" alt="Triángulo rectángulo para la sustitución trigonométrica tres [Imagen tomada de [@stewart2009calculus] pág $469$]" width="35%" />
+<p class="caption">
+Figura 6.5: Triángulo rectángulo para la sustitución trigonométrica tres [Imagen tomada de <span class="citation">(Stewart <a href="#ref-stewart2009calculus" role="doc-biblioref">2009</a>)</span> pág <span class="math inline">\(469\)</span>]
+</p>
+</div>
+<p>Respuesta en la variable <span class="math inline">\(x\)</span>:</p>
+<p>(1.) Del triángulo rectángulo es claro que si <span class="math inline">\(a=2\)</span>, entonces <span class="math inline">\(tan(\theta)=\dfrac{\sqrt{x^2-4}}{2}\)</span>.</p>
+<p>(2.) Del triángulo rectángulo es claro que si <span class="math inline">\(a=2\)</span>, entonces <span class="math inline">\(sec(\theta)=\dfrac{x}{2}\)</span>.</p>
+<p><span class="math display">\[
+\displaystyle{\int{\dfrac{1}{\sqrt{x^2-4}}dx}}=ln\left|\dfrac{x}{2}+\dfrac{\sqrt{x^2-4}}{2}\right|+C
+\]</span></p>
 <p><br></br></p>
 </div>
 </div>
