@@ -24,7 +24,7 @@
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2021-07-27" />
+<meta name="date" content="2021-07-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -148,8 +148,13 @@
 <li class="chapter" data-level="6.10.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo5-por-partes"><i class="fa fa-check"></i><b>6.10.5</b> Ejemplo5 por partes</a></li>
 <li class="chapter" data-level="6.10.6" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo6-por-partes"><i class="fa fa-check"></i><b>6.10.6</b> Ejemplo6 por partes</a></li>
 </ul></li>
-<li class="chapter" data-level="6.11" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>6.11</b> Integral definida</a><ul>
-<li class="chapter" data-level="6.11.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>6.11.1</b> Propiedades de la integral definida</a></li>
+<li class="chapter" data-level="6.11" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-sustitución-trigonométrica"><i class="fa fa-check"></i><b>6.11</b> Integración por sustitución trigonométrica</a><ul>
+<li class="chapter" data-level="6.11.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1"><i class="fa fa-check"></i><b>6.11.1</b> Ejemplo1</a></li>
+<li class="chapter" data-level="6.11.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2"><i class="fa fa-check"></i><b>6.11.2</b> Ejemplo2</a></li>
+<li class="chapter" data-level="6.11.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3"><i class="fa fa-check"></i><b>6.11.3</b> Ejemplo3</a></li>
+</ul></li>
+<li class="chapter" data-level="6.12" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>6.12</b> Integral definida</a><ul>
+<li class="chapter" data-level="6.12.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>6.12.1</b> Propiedades de la integral definida</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
@@ -786,14 +791,166 @@ I &amp; = xarcsen(x)+\sqrt{1-x^2}+C
 \]</span></p>
 </div>
 
+</div>
+</div>
+<div id="integración-por-sustitución-trigonométrica" class="section level2">
+<h2><span class="header-section-number">6.11</span> Integración por sustitución trigonométrica</h2>
+<p><span class="math display">\[
+\boxed{
+\begin{matrix}
+\text{Expresión} &amp; \text{Sustitución}&amp;\text{Cond para }\theta &amp; \text{Identidad}\\
+\sqrt{a^2-x^2}; &amp; x=asen(\theta); &amp; -\dfrac{\pi}{2} \leq \theta \leq \dfrac{\pi}{2}; &amp; 1-sen^2(\theta)=cos^2(\theta)\\
+ \end{matrix}}
+\]</span></p>
+<div id="ejemplo1" class="section level3">
+<h3><span class="header-section-number">6.11.1</span> Ejemplo1</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-76" class="example"><strong>Ejemplo 6.14  (Sustitución trigonométrica uno)  </strong></span>Determine</p>
+<p><span class="math display">\[
+\displaystyle{\int{\dfrac{\sqrt{9-x^2}}{x^2}dx}}
+\]</span></p>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> 
+Primero:</p>
+<p>Asumir que <span class="math inline">\(a^2=9\)</span>, entonces <span class="math inline">\(a=3\)</span> y <span class="math inline">\(x=asen(\theta)\)</span> es equivalente a <span class="math inline">\(x=3sen(\theta)\)</span> (1).
+<span class="math inline">\(dx=3cos(\theta)d\theta\)</span> (2).</p>
+<p>Segundo:</p>
+<p>Sustituir (1)y(2) en la integral, así:</p>
+<p><span class="math display">\[\begin{equation} \label{eqST1}
+\begin{split}
+I &amp; =\displaystyle{\int{\dfrac{\sqrt{9-\left(3sen(\theta)\right)^2}}{\left(3sen(\theta)\right)^2}3cos(\theta)d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{\sqrt{9-\left(9sen^2(\theta)\right)}}{9sen^2(\theta)}3cos(\theta)d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{\sqrt{9\left(1-sen^2(\theta)\right)}}{9sen^2(\theta)}3cos(\theta)d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{\sqrt{9\left(cos(\theta)\right)^2}}{9sen^2(\theta)}3cos(\theta)d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{3cos(\theta)}{9sen^2(\theta)}3cos(\theta)d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{9cos^2(\theta)}{9sen^2(\theta)}d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{cos^2(\theta)}{sen^2(\theta)}d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{1-sen^2(\theta)}{sen^2(\theta)}d\theta}}\\
+&amp; = \displaystyle{\int{\left[\dfrac{1}{sen^2(\theta)}-\dfrac{sen^2(\theta)}{sen^2(\theta)}\right]d\theta}}\\
+&amp; = \displaystyle{\int{\left[csc^2(\theta)-1\right]d\theta}}=\displaystyle{\int{csc^2(\theta)d\theta}}-\displaystyle{\int{1d\theta}}\\
+&amp; = -cot(\theta)- \theta +C
+\end{split}
+\end{equation}\]</span></p>
+</div>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigSustitucionTG1"></span>
+<img src="images/SustitucionTG1.png" alt="Triángulo rectángulo para la sustitución trigonométrica uno [Imagen tomada de [@stewart2009calculus] pág $468$]" width="35%" />
+<p class="caption">
+Figura 6.3: Triángulo rectángulo para la sustitución trigonométrica uno [Imagen tomada de <span class="citation">(Stewart <a href="#ref-stewart2009calculus" role="doc-biblioref">2009</a>)</span> pág <span class="math inline">\(468\)</span>]
+</p>
+</div>
+<p>Respuesta:</p>
+<p>(1.) Del triángulo rectángulo es claro que <span class="math inline">\(sen(\theta)=\dfrac{x}{3}\)</span>, entonces <span class="math inline">\(\theta=sen^{-1}\left(\dfrac{x}{3}\right)\)</span></p>
+<p>(2.) Del triángulo rectángulo es claro que <span class="math inline">\(cot(\theta)=\dfrac{\sqrt{9-x^2}}{x}\)</span></p>
+<p><span class="math display">\[
+\displaystyle{\int{\dfrac{\sqrt{9-x^2}}{x^2}dx}}=-\dfrac{\sqrt{9-x^2}}{x}-sen^{-1}\left(\dfrac{x}{3}\right)+C
+\]</span></p>
+<p><br></br></p>
+<p><span class="math display">\[
+\boxed{
+\begin{matrix}
+\text{Expresión} &amp; \text{Sustitución}&amp;\text{Cond para }\theta &amp; \text{Identidad}\\
+\sqrt{a^2+x^2}; &amp; x=atan(\theta); &amp; -\dfrac{\pi}{2} &lt; \theta &lt; \dfrac{\pi}{2}; &amp; 1+tan^2(\theta)=sec^2(\theta)\\
+ \end{matrix}}
+\]</span></p>
+</div>
+<div id="ejemplo2" class="section level3">
+<h3><span class="header-section-number">6.11.2</span> Ejemplo2</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-78" class="example"><strong>Ejemplo 6.15  (Sustitución trigonométrica dos)  </strong></span>Determine</p>
+<p><span class="math display">\[
+\displaystyle{\int{\dfrac{1}{x^2\sqrt{x^2+4}}dx}}
+\]</span></p>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> 
+Primero:</p>
+<p>Asumir que <span class="math inline">\(a^2=4\)</span>, entonces <span class="math inline">\(a=2\)</span> y <span class="math inline">\(x=atan(\theta)\)</span> es equivalente a <span class="math inline">\(x=2tan(\theta)\)</span> (1).
+<span class="math inline">\(dx=2sec^2(\theta)d\theta\)</span> (2).</p>
+<p>Segundo:</p>
+<p>Sustituir (1)y(2) en la integral, así:</p>
+<p><span class="math display">\[\begin{equation} \label{eqST2}
+\begin{split}
+
+I &amp; = \displaystyle{\int{\dfrac{2sec^2(\theta)d\theta}{4tan^2(\theta)\sqrt{4tan^2(\theta)+4}}}}\\
+&amp; = \displaystyle{\int{\dfrac{2sec^2(\theta)d\theta}{4tan^2(\theta)\sqrt{4\left(tan^2(\theta)+1\right)}}}}\\
+&amp; = \displaystyle{\int{\dfrac{2sec^2(\theta)d\theta}{4tan^2(\theta)\sqrt{4sec^2(\theta)}}}}\\
+&amp; = \displaystyle{\int{\dfrac{2sec^2(\theta)d\theta}{4tan^2(\theta)2sec(\theta)}}}\\
+&amp; = \displaystyle{\int{\dfrac{sec(\theta)d\theta}{4tan^2(\theta)}}}\\
+&amp; = \displaystyle{\int{\dfrac{sec(\theta)d\theta}{4tan^2(\theta)}}}; \  \ \ \text{Sabemos que: } \qquad  \dfrac{sec(\theta)}{tan^2(\theta)}=\dfrac{1}{cos(\theta)}.\dfrac{cos^2(\theta)}{sen^2(\theta)}=\dfrac{cos(\theta)}{sen^2(\theta)}\\
+&amp; = \displaystyle{\int{\dfrac{sec(\theta)d\theta}{4tan^2(\theta)}}}= \displaystyle{\int{\dfrac{cos(\theta)d\theta}{4sen^2(\theta)}}}\\
+&amp; = \dfrac{1}{4}\displaystyle{\int{\dfrac{cos(\theta)d\theta}{sen^2(\theta)}}}\quad \text{Realizando el cambio }  u=sen(\theta), \ \  \text{entonces } \ \ du=cos(\theta)d\theta\\
+&amp;  \qquad \longleftrightarrow \dfrac{1}{4}\displaystyle{\int{\dfrac{du}{u^2}}}=\dfrac{1}{4}\displaystyle{\int{u^{-2}du}}=\dfrac{-1}{4u}+C\\
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta en la variable <span class="math inline">\(\theta\)</span>:</p>
+<p><span class="math display">\[
+  \dfrac{1}{4}\displaystyle{\int{\dfrac{cos(\theta)d\theta}{sen^2(\theta)}}}  = -\dfrac{1}{4sen(\theta)}+C=\dfrac{-csc(\theta)}{4}+C\\
+\]</span></p>
+</div>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigSustitucionTG2"></span>
+<img src="images/SustitucionTG2.png" alt="Triángulo rectángulo para la sustitución trigonométrica dos [Imagen tomada de [@stewart2009calculus] pág $469$]" width="35%" />
+<p class="caption">
+Figura 6.4: Triángulo rectángulo para la sustitución trigonométrica dos [Imagen tomada de <span class="citation">(Stewart <a href="#ref-stewart2009calculus" role="doc-biblioref">2009</a>)</span> pág <span class="math inline">\(469\)</span>]
+</p>
+</div>
+<p>Respuesta en la variable <span class="math inline">\(x\)</span>:</p>
+<p>Del triángulo rectángulo es claro que <span class="math inline">\(csc(\theta)=\dfrac{\sqrt{x^2+4}}{x}\)</span>, entonces</p>
+<p><span class="math display">\[
+\displaystyle{\int{\dfrac{1}{x^2\sqrt{x^2+4}}dx}}=-\dfrac{\sqrt{x^2+4}}{4x}+C
+\]</span></p>
+<p><br></br></p>
+<p><br></br></p>
+<p><span class="math display">\[
+\boxed{
+\begin{matrix}
+\text{Expresión} &amp; \text{Sustitución}&amp;\text{Cond para }\theta &amp; \text{Identidad}\\
+\sqrt{x^2-a^2}; &amp; x=asec(\theta); &amp; 0 \leq \theta &lt; \dfrac{\pi}{2} \text{ ó } \pi \leq \theta &lt; \dfrac{3\pi}{2}; &amp; sec^2(\theta)-1=tan^2(\theta)\\
+ \end{matrix}}
+\]</span></p>
+</div>
+<div id="ejemplo3" class="section level3">
+<h3><span class="header-section-number">6.11.3</span> Ejemplo3</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-80" class="example"><strong>Ejemplo 6.16  (Sustitución trigonométrica tres)  </strong></span>Determine</p>
+<p><span class="math display">\[
+\displaystyle{\int{\dfrac{1}{\sqrt{x^2-4}}dx}}
+\]</span></p>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> 
+Primero:</p>
+<p>Asumir que <span class="math inline">\(a^2=4\)</span>, entonces <span class="math inline">\(a=2\)</span> y <span class="math inline">\(x=asec(\theta)\)</span> es equivalente a <span class="math inline">\(x=2sec(\theta)\)</span> (1).
+<span class="math inline">\(dx=2sec(\theta)tan(\theta)d\theta\)</span> (2).</p>
+<p>Segundo:</p>
+<p>Sustituir (1)y(2) en la integral, así:</p>
+<span class="math display">\[\begin{equation} \label{eqST3}
+\begin{split}
+
+
+\end{split}
+\end{equation}\]</span>
+</div>
+
 <p><br></br></p>
 </div>
 </div>
 <div id="integral-definida" class="section level2">
-<h2><span class="header-section-number">6.11</span> Integral definida</h2>
+<h2><span class="header-section-number">6.12</span> Integral definida</h2>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-76" class="definition"><strong>Definición 6.2  (Integral definida)  </strong></span>Si <span class="math inline">\(f\)</span> es una función continua definida para <span class="math inline">\(a \leq x \leq b\)</span>, divida el intervalo <span class="math inline">\([a,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos de igual ancho <span class="math inline">\(\bigtriangleup{x}=(b-a)/n\)</span>. Haga que <span class="math inline">\(x_0(=a),x_1,x_2,...,x_n(=b)\)</span> sean los puntos extremos de estos subintervalos y elija <span class="math inline">\(x_{1}^{*},x_{2}^{*},...,x_{n}^{*}\)</span> como los puntos muestra en estos subintervalos, de modo que <span class="math inline">\(x_{i}^{*}\)</span> se encuentre en el i-ésimo subintervalo <span class="math inline">\([x_{i-1},x_{i}]\)</span>. Entonces la integral definida de <span class="math inline">\(f\)</span>, desde <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>, es</p>
+<p><span id="def:unnamed-chunk-82" class="definition"><strong>Definición 6.2  (Integral definida)  </strong></span>Si <span class="math inline">\(f\)</span> es una función continua definida para <span class="math inline">\(a \leq x \leq b\)</span>, divida el intervalo <span class="math inline">\([a,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos de igual ancho <span class="math inline">\(\bigtriangleup{x}=(b-a)/n\)</span>. Haga que <span class="math inline">\(x_0(=a),x_1,x_2,...,x_n(=b)\)</span> sean los puntos extremos de estos subintervalos y elija <span class="math inline">\(x_{1}^{*},x_{2}^{*},...,x_{n}^{*}\)</span> como los puntos muestra en estos subintervalos, de modo que <span class="math inline">\(x_{i}^{*}\)</span> se encuentre en el i-ésimo subintervalo <span class="math inline">\([x_{i-1},x_{i}]\)</span>. Entonces la integral definida de <span class="math inline">\(f\)</span>, desde <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>, es</p>
 <p><span class="math display">\[
   \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i}^{*})\bigtriangleup{x}}
 \]</span>
@@ -825,7 +982,7 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 <p><br></br></p>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-77" class="definition"><strong>Definición 6.3  (Definición formal de la integral definida)  </strong></span>Sea <span class="math inline">\(f(x)\)</span> una función definida en un intervalo cerrado <span class="math inline">\([a,b]\)</span>. Dicimos que un número <span class="math inline">\(J\)</span> es la integral definida de <span class="math inline">\(f\)</span> en <span class="math inline">\([a,b]\)</span> y que <span class="math inline">\(J\)</span> es el límite de las sumas de Riemann <span class="math inline">\(\sum_{k=1}^{n}f(c_{k})\bigtriangleup{x_k}\)</span> si se satisface la siguiente condición:</p>
+<p><span id="def:unnamed-chunk-83" class="definition"><strong>Definición 6.3  (Definición formal de la integral definida)  </strong></span>Sea <span class="math inline">\(f(x)\)</span> una función definida en un intervalo cerrado <span class="math inline">\([a,b]\)</span>. Dicimos que un número <span class="math inline">\(J\)</span> es la integral definida de <span class="math inline">\(f\)</span> en <span class="math inline">\([a,b]\)</span> y que <span class="math inline">\(J\)</span> es el límite de las sumas de Riemann <span class="math inline">\(\sum_{k=1}^{n}f(c_{k})\bigtriangleup{x_k}\)</span> si se satisface la siguiente condición:</p>
 <p>Dado cualquier número <span class="math inline">\(\epsilon &gt;0\)</span> existe un número correspondiente <span class="math inline">\(\delta &gt;0\)</span>, tal que para toda partición <span class="math inline">\(P=\{x_0,x_1,...,x_n\}\)</span> de <span class="math inline">\([a,b]\)</span> con <span class="math inline">\(\left \| P \right \|&lt;\delta\)</span> y cualquier elección de <span class="math inline">\(c_k\)</span> en <span class="math inline">\([x_{k-1},x_k]\)</span>, tenemos</p>
 <p><span class="math display">\[
   \left|\displaystyle{\sum_{k=1}^{n}f(c_k)\bigtriangleup{x_k}}-J\right|&lt; \epsilon.
@@ -837,7 +994,7 @@ tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" 
 <p><br></br></p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-78" class="theorem"><strong>Teorema 6.4  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, o si <span class="math inline">\(f\)</span> tiene únicamente un número finito de saltos discontinuos, entonces <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>; es decir, la integral definida</p>
+<p><span id="thm:unnamed-chunk-84" class="theorem"><strong>Teorema 6.4  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, o si <span class="math inline">\(f\)</span> tiene únicamente un número finito de saltos discontinuos, entonces <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>; es decir, la integral definida</p>
 <p><span class="math display">\[
 \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i})\bigtriangleup{x}}, \qquad \text{ existe.}
 \]</span>
@@ -847,7 +1004,7 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 
 <p><br></br></p>
 <div id="propiedades-de-la-integral-definida" class="section level3">
-<h3><span class="header-section-number">6.11.1</span> Propiedades de la integral definida</h3>
+<h3><span class="header-section-number">6.12.1</span> Propiedades de la integral definida</h3>
 <p><span class="math display">\[
 \begin{matrix}
  (1.) &amp; \displaystyle\int_{a}^{b}{cdx}=c(b-a) &amp; \text{donde c es cualquier constante}\\
@@ -870,6 +1027,9 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 </div>
 <h3>Referencias</h3>
 <div id="refs" class="references">
+<div id="ref-stewart2009calculus">
+<p>Stewart, James. 2009. <em>Calculus: Concepts and Contexts</em>. Cengage Learning.</p>
+</div>
 <div id="ref-stewart2020single">
 <p>Stewart, James, Daniel K Clegg, and Saleem Watson. 2020. <em>Single Variable Calculus: Early Transcendentals</em>. Cengage Learning.</p>
 </div>
