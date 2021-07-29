@@ -153,8 +153,12 @@
 <li class="chapter" data-level="6.11.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2"><i class="fa fa-check"></i><b>6.11.2</b> Ejemplo2</a></li>
 <li class="chapter" data-level="6.11.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3"><i class="fa fa-check"></i><b>6.11.3</b> Ejemplo3</a></li>
 </ul></li>
-<li class="chapter" data-level="6.12" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>6.12</b> Integral definida</a><ul>
-<li class="chapter" data-level="6.12.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>6.12.1</b> Propiedades de la integral definida</a></li>
+<li class="chapter" data-level="6.12" data-path="integrales-simples.html"><a href="integrales-simples.html#integación-por-fracciones-parciales"><i class="fa fa-check"></i><b>6.12</b> Integación por fracciones parciales</a><ul>
+<li class="chapter" data-level="6.12.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-1"><i class="fa fa-check"></i><b>6.12.1</b> Ejemplo1</a></li>
+<li class="chapter" data-level="6.12.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-1"><i class="fa fa-check"></i><b>6.12.2</b> Ejemplo2</a></li>
+</ul></li>
+<li class="chapter" data-level="6.13" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>6.13</b> Integral definida</a><ul>
+<li class="chapter" data-level="6.13.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>6.13.1</b> Propiedades de la integral definida</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
@@ -962,11 +966,91 @@ Figura 6.5: Triángulo rectángulo para la sustitución trigonométrica tres [Im
 <p><br></br></p>
 </div>
 </div>
-<div id="integral-definida" class="section level2">
-<h2><span class="header-section-number">6.12</span> Integral definida</h2>
+<div id="integación-por-fracciones-parciales" class="section level2">
+<h2><span class="header-section-number">6.12</span> Integación por fracciones parciales</h2>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-82" class="definition"><strong>Definición 6.2  (Integral definida)  </strong></span>Si <span class="math inline">\(f\)</span> es una función continua definida para <span class="math inline">\(a \leq x \leq b\)</span>, divida el intervalo <span class="math inline">\([a,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos de igual ancho <span class="math inline">\(\bigtriangleup{x}=(b-a)/n\)</span>. Haga que <span class="math inline">\(x_0(=a),x_1,x_2,...,x_n(=b)\)</span> sean los puntos extremos de estos subintervalos y elija <span class="math inline">\(x_{1}^{*},x_{2}^{*},...,x_{n}^{*}\)</span> como los puntos muestra en estos subintervalos, de modo que <span class="math inline">\(x_{i}^{*}\)</span> se encuentre en el i-ésimo subintervalo <span class="math inline">\([x_{i-1},x_{i}]\)</span>. Entonces la integral definida de <span class="math inline">\(f\)</span>, desde <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>, es</p>
+<p><span id="def:unnamed-chunk-82" class="definition"><strong>Definición 6.2  (Fracción propia)  </strong></span>Una fracción racional se dice fracción propia, si y sólo si el grado del numerador es menor que el grado del denominador, donde tanto el numerador como el denominador no tienen factores comunes.</p>
+<p><span class="math display">\[
+  f(x)=\dfrac{P(x)}{Q(x)}, \qquad \text{ es fracción propia si y sólo si } \qquad grado(P) &lt; grado(Q)
+\]</span></p>
+<p>Una fracción se dice impropia si no es propia. Más aún:</p>
+<p><span class="math display">\[
+  f(x)=\dfrac{P(x)}{Q(x)}, \qquad \text{ es fracción impropia si y sólo si } \qquad grado(P) \geq grado(Q)
+\]</span></p>
+<p>NOTA: Si <span class="math inline">\(f(x)\)</span> es una fracción racional impropia entonces es posible descomponer <span class="math inline">\(f(x)\)</span> como:</p>
+<span class="math display">\[
+  f(x)=\dfrac{P(x)}{Q(x)}=S(x)+\dfrac{R(x)}{Q(x)}, \qquad \text{ tal que } \qquad grado(R) &lt; grado(Q)
+\]</span>
+</div>
+
+<p><br></br></p>
+<div id="ejemplo1-1" class="section level3">
+<h3><span class="header-section-number">6.12.1</span> Ejemplo1</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-83" class="example"><strong>Ejemplo 6.17  (Fracción impropia caso uno)  </strong></span>Determinar</p>
+<span class="math display">\[
+\displaystyle\int{\dfrac{x^3+x}{x-1}dx} 
+\]</span>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución</em> (Fracción impropia caso uno). </span> Realizando la división de ambos polinomios se obtiene que:</p>
+<p><span class="math display">\[
+\dfrac{x^3+x}{x-1}=x^2+x+2+\dfrac{2}{x-1}
+\]</span><br />
+Entonces</p>
+<span class="math display">\[\begin{equation} \label{eqFP1}
+\begin{split}
+\displaystyle\int{\dfrac{x^3+x}{x-1}dx} &amp; = \displaystyle\int{x^2dx}+\displaystyle\int{xdx}+\displaystyle\int{2dx}+\displaystyle\int{\dfrac{2}{x-1}dx}\\
+&amp; = \dfrac{x^3}{3}+\dfrac{x^2}{2}+2x+2ln|x-1|+C
+\end{split}
+\end{equation}\]</span>
+</div>
+
+<p><br></br></p>
+</div>
+<div id="ejemplo2-1" class="section level3">
+<h3><span class="header-section-number">6.12.2</span> Ejemplo2</h3>
+<p><strong>El denominador <span class="math inline">\(Q(x)\)</span> es un producto de factores lineales distintos</strong></p>
+<p><span class="math display">\[
+Q(x)=(a_1x+b_1)(a_2x+b_2)...(a_kx+b_k)
+\]</span></p>
+<p>donde ningún factor se repite. Entonces por teorema de facciones parciales existen constantes <span class="math inline">\(A_1,A_2,...,A_k\)</span>, tales que</p>
+<p><span class="math display">\[
+f(x)=\dfrac{P(x)}{Q(x)}=\dfrac{A_1}{a_1x+b_1}+\dfrac{A_2}{a_2x+b_2}+...+\dfrac{A_1}{a_kx+b_k}, \qquad \text{ donde } \qquad grado(P(x))&lt;grado(Q(x))
+\]</span></p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-85" class="example"><strong>Ejemplo 6.18  (El denominador es producto de factores lineales distintos)  </strong></span>Determine</p>
+<span class="math display">\[
+\displaystyle\int{\dfrac{x^2+2x-1}{2x^3+3x^2-2x}dx} 
+\]</span>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución</em> (El denominador es producto de factores lineales distintos). </span> Sabemos que por factorización el denominador <span class="math inline">\(Q(x)\)</span> puede ser expresado equivalentemente como:</p>
+<p><span class="math display">\[
+Q(x)  =2x^3+3x^2-2x=x(2x^2+3x-2)=x(2x-1)(x+2)
+\]</span></p>
+<p>Por lo tanto</p>
+<p><span class="math display">\[
+\dfrac{x^2+2x-1}{2x^3+3x^2-2x}=\dfrac{x^2+2x-1}{x(2x-1)(x+2)}=\dfrac{A}{x}+\dfrac{B}{2x-1}+\dfrac{C}{x+2}
+\]</span></p>
+</div>
+
+<p><br></br></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="integral-definida" class="section level2">
+<h2><span class="header-section-number">6.13</span> Integral definida</h2>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-87" class="definition"><strong>Definición 6.3  (Integral definida)  </strong></span>Si <span class="math inline">\(f\)</span> es una función continua definida para <span class="math inline">\(a \leq x \leq b\)</span>, divida el intervalo <span class="math inline">\([a,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos de igual ancho <span class="math inline">\(\bigtriangleup{x}=(b-a)/n\)</span>. Haga que <span class="math inline">\(x_0(=a),x_1,x_2,...,x_n(=b)\)</span> sean los puntos extremos de estos subintervalos y elija <span class="math inline">\(x_{1}^{*},x_{2}^{*},...,x_{n}^{*}\)</span> como los puntos muestra en estos subintervalos, de modo que <span class="math inline">\(x_{i}^{*}\)</span> se encuentre en el i-ésimo subintervalo <span class="math inline">\([x_{i-1},x_{i}]\)</span>. Entonces la integral definida de <span class="math inline">\(f\)</span>, desde <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>, es</p>
 <p><span class="math display">\[
   \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i}^{*})\bigtriangleup{x}}
 \]</span>
@@ -998,7 +1082,7 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 <p><br></br></p>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-83" class="definition"><strong>Definición 6.3  (Definición formal de la integral definida)  </strong></span>Sea <span class="math inline">\(f(x)\)</span> una función definida en un intervalo cerrado <span class="math inline">\([a,b]\)</span>. Dicimos que un número <span class="math inline">\(J\)</span> es la integral definida de <span class="math inline">\(f\)</span> en <span class="math inline">\([a,b]\)</span> y que <span class="math inline">\(J\)</span> es el límite de las sumas de Riemann <span class="math inline">\(\sum_{k=1}^{n}f(c_{k})\bigtriangleup{x_k}\)</span> si se satisface la siguiente condición:</p>
+<p><span id="def:unnamed-chunk-88" class="definition"><strong>Definición 6.4  (Definición formal de la integral definida)  </strong></span>Sea <span class="math inline">\(f(x)\)</span> una función definida en un intervalo cerrado <span class="math inline">\([a,b]\)</span>. Dicimos que un número <span class="math inline">\(J\)</span> es la integral definida de <span class="math inline">\(f\)</span> en <span class="math inline">\([a,b]\)</span> y que <span class="math inline">\(J\)</span> es el límite de las sumas de Riemann <span class="math inline">\(\sum_{k=1}^{n}f(c_{k})\bigtriangleup{x_k}\)</span> si se satisface la siguiente condición:</p>
 <p>Dado cualquier número <span class="math inline">\(\epsilon &gt;0\)</span> existe un número correspondiente <span class="math inline">\(\delta &gt;0\)</span>, tal que para toda partición <span class="math inline">\(P=\{x_0,x_1,...,x_n\}\)</span> de <span class="math inline">\([a,b]\)</span> con <span class="math inline">\(\left \| P \right \|&lt;\delta\)</span> y cualquier elección de <span class="math inline">\(c_k\)</span> en <span class="math inline">\([x_{k-1},x_k]\)</span>, tenemos</p>
 <p><span class="math display">\[
   \left|\displaystyle{\sum_{k=1}^{n}f(c_k)\bigtriangleup{x_k}}-J\right|&lt; \epsilon.
@@ -1010,7 +1094,7 @@ tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" 
 <p><br></br></p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-84" class="theorem"><strong>Teorema 6.4  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, o si <span class="math inline">\(f\)</span> tiene únicamente un número finito de saltos discontinuos, entonces <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>; es decir, la integral definida</p>
+<p><span id="thm:unnamed-chunk-89" class="theorem"><strong>Teorema 6.4  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, o si <span class="math inline">\(f\)</span> tiene únicamente un número finito de saltos discontinuos, entonces <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>; es decir, la integral definida</p>
 <p><span class="math display">\[
 \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i})\bigtriangleup{x}}, \qquad \text{ existe.}
 \]</span>
@@ -1020,7 +1104,7 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 
 <p><br></br></p>
 <div id="propiedades-de-la-integral-definida" class="section level3">
-<h3><span class="header-section-number">6.12.1</span> Propiedades de la integral definida</h3>
+<h3><span class="header-section-number">6.13.1</span> Propiedades de la integral definida</h3>
 <p><span class="math display">\[
 \begin{matrix}
  (1.) &amp; \displaystyle\int_{a}^{b}{cdx}=c(b-a) &amp; \text{donde c es cualquier constante}\\
