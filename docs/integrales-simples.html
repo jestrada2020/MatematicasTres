@@ -156,6 +156,8 @@
 <li class="chapter" data-level="6.12" data-path="integrales-simples.html"><a href="integrales-simples.html#integación-por-fracciones-parciales"><i class="fa fa-check"></i><b>6.12</b> Integación por fracciones parciales</a><ul>
 <li class="chapter" data-level="6.12.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-1"><i class="fa fa-check"></i><b>6.12.1</b> Ejemplo1</a></li>
 <li class="chapter" data-level="6.12.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-1"><i class="fa fa-check"></i><b>6.12.2</b> Ejemplo2</a></li>
+<li class="chapter" data-level="6.12.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-1"><i class="fa fa-check"></i><b>6.12.3</b> Ejemplo3</a></li>
+<li class="chapter" data-level="6.12.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4"><i class="fa fa-check"></i><b>6.12.4</b> Ejemplo4</a></li>
 </ul></li>
 <li class="chapter" data-level="6.13" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>6.13</b> Integral definida</a><ul>
 <li class="chapter" data-level="6.13.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>6.13.1</b> Propiedades de la integral definida</a></li>
@@ -993,6 +995,7 @@ Figura 6.5: Triángulo rectángulo para la sustitución trigonométrica tres [Im
 <span class="math display">\[
 \displaystyle\int{\dfrac{x^3+x}{x-1}dx} 
 \]</span>
+tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a>)</span> pág <span class="math inline">\(474\)</span>.
 </div>
 
 
@@ -1020,14 +1023,15 @@ Q(x)=(a_1x+b_1)(a_2x+b_2)...(a_kx+b_k)
 \]</span></p>
 <p>donde ningún factor se repite. Entonces por teorema de facciones parciales existen constantes <span class="math inline">\(A_1,A_2,...,A_k\)</span>, tales que</p>
 <p><span class="math display">\[
-f(x)=\dfrac{P(x)}{Q(x)}=\dfrac{A_1}{a_1x+b_1}+\dfrac{A_2}{a_2x+b_2}+...+\dfrac{A_1}{a_kx+b_k}, \qquad \text{ donde } \qquad grado(P(x))&lt;grado(Q(x))
+f(x)=\dfrac{P(x)}{Q(x)}=\dfrac{A_1}{a_1x+b_1}+\dfrac{A_2}{a_2x+b_2}+...+\dfrac{A_k}{a_kx+b_k}, \ \ \ \text{ donde } \ \ \ grado(P(x))&lt;grado(Q(x))
 \]</span></p>
 
 <div class="example">
 <p><span id="exm:unnamed-chunk-85" class="example"><strong>Ejemplo 6.18  (El denominador es producto de factores lineales distintos)  </strong></span>Determine</p>
 <span class="math display">\[
-\displaystyle\int{\dfrac{x^2+2x-1}{2x^3+3x^2-2x}dx} 
+\displaystyle\int{\dfrac{1x^2+2x-1}{2x^3+3x^2-2x}dx} 
 \]</span>
+tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a>)</span> pág <span class="math inline">\(475\)</span>
 </div>
 
 
@@ -1038,10 +1042,182 @@ Q(x)  =2x^3+3x^2-2x=x(2x^2+3x-2)=x(2x-1)(x+2)
 \]</span></p>
 <p>Por lo tanto</p>
 <p><span class="math display">\[
-\dfrac{x^2+2x-1}{2x^3+3x^2-2x}=\dfrac{x^2+2x-1}{x(2x-1)(x+2)}=\dfrac{A}{x}+\dfrac{B}{2x-1}+\dfrac{C}{x+2}
+\dfrac{1x^2+2x-1}{2x^3+3x^2-2x}=\dfrac{1x^2+2x-1}{x(2x-1)(x+2)}=\dfrac{A}{x}+\dfrac{B}{2x-1}+\dfrac{C}{x+2} \ \ \ (a)
 \]</span></p>
+<p>Para determinar los valores correspondientes a <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, y <span class="math inline">\(C\)</span> multiplicamos al ecuación (a) por <span class="math inline">\(x(2x-1)(x+2)\)</span> en ambos lados el la igualdad
+de lo cual obtenemos:</p>
+<p><span class="math display">\[
+1x^2+2x-1= A(2x-1)(x+2)+Bx(x+2)+Cx(2x-1)  \ \ \ (b)
+\]</span></p>
+<p>Al desarrollar el lado izquierdo de (b) y reagrupar términos, se obtiene:</p>
+<p><span class="math display">\[
+1x^2+2x-1= (2A+B+2C)x^2+(3A+2B-C)x-2A  \ \ \ (c)
+\]</span></p>
+<p>Aplicando la definición de polinomios iguales, recordemos que dos polinomios son iguales, si y sólo si poseen el mismo grado y sus coeficientes correspondientes son iguales, entonces aplicando esto a la igualdad de polinomios expresada en (c), se obtiene el sistema <span class="math inline">\(3\times 3\)</span>:</p>
 </div>
 
+<p><span class="math display">\[
+\begin{matrix} 2A +B+2C &amp; = &amp; 1\\
+3A +2B-C &amp; = &amp; 2\\
+-2A  &amp; = &amp; -1\\ \end{matrix}
+\]</span></p>
+<p>Usando cualquier técnica para obtener la solución del sistema <span class="math inline">\(3\times 3\)</span>, se llega a los resultados:</p>
+<p><span class="math display">\[
+A=\dfrac{1}{2}, \qquad B=\dfrac{1}{5}, \qquad C=\dfrac{-1}{10}
+\]</span></p>
+<p>Por lo tanto</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP2}
+\begin{split}
+\displaystyle\int{\dfrac{1x^2+2x-1}{2x^3+3x^2-2x}dx} &amp; = \displaystyle\int{\left[\dfrac{1}{2}\dfrac{1}{x}+\dfrac{1}{5}\dfrac{1}{2x-1}-\dfrac{1}{10}\dfrac{1}{x+2}\right]dx}\\
+&amp; = \displaystyle\int{\dfrac{1}{2}\dfrac{1}{x}dx}+\displaystyle\int{\dfrac{1}{5}\dfrac{1}{2x-1}dx}-\displaystyle\int{\dfrac{1}{10}\dfrac{1}{x+2}dx}\\
+&amp; = \dfrac{1}{2}\displaystyle\int{\dfrac{1}{x}dx}+\dfrac{1}{5}\displaystyle\int{\dfrac{1}{2x-1}dx}-\dfrac{1}{10}\displaystyle\int{\dfrac{1}{x+2}dx}\\
+&amp; = \dfrac{1}{2}ln|x|+\dfrac{1}{5}ln|2x-1|-\dfrac{1}{10}ln|x+2|+C
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Respuesta en la variable <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+\displaystyle\int{\dfrac{1x^2+2x-1}{2x^3+3x^2-2x}dx}=\dfrac{1}{2}ln|x|+\dfrac{1}{5}ln|2x-1|-\dfrac{1}{10}ln|x+2|+C
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo3-1" class="section level3">
+<h3><span class="header-section-number">6.12.3</span> Ejemplo3</h3>
+<p><strong>El denominador <span class="math inline">\(Q(x)\)</span> es un producto de factores lineales, algunos de los cuales se repiten</strong></p>
+<p><span class="math display">\[
+Q(x)=(a_1x+b_1)^r(a_2x+b_2)^s...(a_kx+b_k)^t
+\]</span></p>
+<p>Entonces por teorema de facciones parciales existen constantes <span class="math inline">\(A_1,A_2,...,A_r\)</span>, tales que para el factor <span class="math inline">\((a_1x+b_1)^r\)</span>, se tiene:</p>
+<p><span class="math display">\[
+\dfrac{A_1}{a_1x+b_1}+\dfrac{A_2}{(a_1x+b_1)^2}+...+\dfrac{A_r}{(a_1x+b_1)^r}, \ \ \ \text{ donde } \ \ \ r\geq 2
+\]</span></p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-87" class="example"><strong>Ejemplo 6.19  </strong></span>Determinar</p>
+<p><span class="math display">\[
+\displaystyle\int{\dfrac{x^4-2x^2+4x+1}{x^3-x^2-x+1}dx}
+\]</span></p>
+tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a>)</span> pág <span class="math inline">\(477\)</span>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> Primero debe verse que <span class="math inline">\(grado(P(x))\geq grado(Q(x))\)</span>, lo que significa que se debe realizar la división entre ambos polinomios, obteniendo:</p>
+<p><span class="math display">\[
+  \dfrac{x^4-2x^2+4x+1}{x^3-x^2-x+1}=x+1+\dfrac{4x}{x^3-x^2-x+1}
+\]</span></p>
+<p>Además por factorización se puede ver que <span class="math inline">\(Q(x)\)</span> puede expresarse como:</p>
+<p><span class="math display">\[
+Q(x)=x^3-x^2-x+1=(x-1)^2(x+1)
+\]</span></p>
+<p>Si la descomposición para la fracción propia con factor lineal repetido tiene la forma:</p>
+<p><span class="math display">\[
+\dfrac{4x}{(x-1)^2(x+1)}=\dfrac{A}{x-1}+\dfrac{B}{(x-1)^2}+\dfrac{C}{x+1}   \ \ \ (1).
+\]</span></p>
+<p>Entonces el enunciado queda representado como:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP3}
+\begin{split}
+\displaystyle\int{\dfrac{x^4-2x^2+4x+1}{x^3-x^2-x+1}dx} &amp; =\displaystyle\int{\left[x+1+\dfrac{4x}{(x-1)^2(x+1)}\right]dx}\\
+&amp; =\displaystyle\int{\left[x+1+A\left(\dfrac{1}{x-1}\right)+B\left(\dfrac{1}{(x-1)^2}\right)+C\left(\dfrac{1}{x+1}\right)\right]dx}\\
+&amp; =\displaystyle\int{(x+1)dx}+A\displaystyle\int{\dfrac{1}{x-1}dx}+B\displaystyle\int{\dfrac{1}{(x-1)^2}dx}+C\displaystyle\int{\dfrac{1}{x+1}dx}\\
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Para determinar los valores de <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, y <span class="math inline">\(C\)</span>, se procede de la igualdad (1), multiplicando por <span class="math inline">\((x-1)^2(x+1)\)</span> en ambos lados de la ecuación (1), se obtiene:</p>
+<p><span class="math display">\[
+0x^2+4x+0=A(x-1)(x+1)+B(x+1)+c(x-1)^2 \ \ \ (2).  
+\]</span></p>
+<p>Desarrollando el lado izquierdo de (2), y reagrupando se tiene:</p>
+<p><span class="math display">\[
+0x^2+4x+0=(A+C)x^2+(B-2C)x+(B+C-A)  \ \ \ (3). 
+\]</span></p>
+Como ambos polinomios en (3) son de igual grado, entonces podemos igualar coeficiente a coeficiente, asi:
+</div>
+
+<p><span class="math display">\[
+\begin{matrix} 
+A + C &amp; = &amp; 0\\
+B - 2C &amp; = &amp; 4\\
+-A + B + C &amp; = &amp; 0\\ \end{matrix}
+\]</span></p>
+<p>Usando cualquier técnica para obtener la solución del sistema <span class="math inline">\(3\times 3\)</span>, se llega a los resultados:</p>
+<p><span class="math display">\[
+A=1, \qquad B=2, \qquad C=-1
+\]</span></p>
+<p>Por lo tanto</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP4}
+\begin{split}
+\displaystyle\int{\dfrac{x^4-2x^2+4x+1}{x^3-x^2-x+1}dx} &amp; = \displaystyle\int{(x+1)dx}+1\displaystyle\int{\dfrac{1}{x-1}dx}+2\displaystyle\int{\dfrac{1}{(x-1)^2}dx}+-1\displaystyle\int{\dfrac{1}{x+1}dx}\\
+&amp; =\dfrac{x^2}{2}+1x+ln|x-1|-\dfrac{2}{x-1}-ln|x+1|+C
+\end{split}
+\end{equation}
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo4" class="section level3">
+<h3><span class="header-section-number">6.12.4</span> Ejemplo4</h3>
+<p><strong>El denominador <span class="math inline">\(Q(x)\)</span> contiene factores cuadráticos irreducibles, ninguno de los cuales se repite</strong></p>
+<p>Una expresión cuadrática de la forma <span class="math inline">\(ax^2+bx+c\)</span> se dice irreducible en el conjunto de los número reales, si <span class="math inline">\(D=b^2-4ac&lt;0\)</span></p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-89" class="example"><strong>Ejemplo 6.20  </strong></span>Determinar</p>
+<span class="math display">\[
+\displaystyle\int{\dfrac{x^2-x+4}{x^3+4x}dx}
+\]</span>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> 
+Como el denominador <span class="math inline">\(Q(x)=x^3+4x\)</span>, se puede factorizar en la forma: <span class="math inline">\(Q(x)=x(x^2+4)\)</span> donde <span class="math inline">\(x^2+4\)</span> es una expresión cuadrática irreducible. Entonces</p>
+<p><span class="math display">\[
+\dfrac{x^2-x+4}{x^3+4x}=\dfrac{x^2-x+4}{x(x^2+4)} =\dfrac{A}{x}+\dfrac{Bx+C}{x^2+4} \ \ \ (1)
+\]</span></p>
+<p>de donde</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP5}
+\begin{split}
+\displaystyle\int{\dfrac{x^2-x+4}{x^3+4x}dx} &amp; =\displaystyle\int{\dfrac{A}{x}dx}+\displaystyle\int{\dfrac{Bx+C}{x^2+4}dx}\\
+&amp; =\displaystyle\int{\dfrac{A}{x}dx}+\displaystyle\int{\dfrac{Bx}{x^2+4}dx}+\displaystyle\int{\dfrac{C}{x^2+4}dx}\\
+&amp; =A\displaystyle\int{\dfrac{1}{x}dx}+B\displaystyle\int{\dfrac{x}{x^2+4}dx}+C\displaystyle\int{\dfrac{1}{x^2+4}dx}\\
+\end{split}
+\end{equation}
+\]</span></p>
+Para determinar los valores de <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, y <span class="math inline">\(C\)</span>, se procede de la igualdad (1), multiplicando en ambos lados por <span class="math inline">\(x(x^2+4)\)</span> dando como resultado:
+</div>
+
+<p><span class="math display">\[
+2x^2-x+4=A(x^2+4)+(Bx+C)x=(A+B)x^2+Cx+4A
+\]</span></p>
+<p>Al igualar los coeficientes correspondientes a sus respectivos grados se obtiene:</p>
+<p><span class="math display">\[
+\begin{matrix} 
+A + B &amp; = &amp; 2\\
+C &amp; = &amp; -1\\
+4A &amp; = &amp; 4\\ \end{matrix}
+\]</span></p>
+<p>Usando cualquier técnica para obtener la solución del sistema <span class="math inline">\(3\times 3\)</span>, se llega a los resultados:</p>
+<p><span class="math display">\[
+A=1, \qquad B=1, \qquad C=-1
+\]</span></p>
+<p>Por lo tanto</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP6}
+\begin{split}
+\displaystyle\int{\dfrac{x^2-x+4}{x^3+4x}dx} &amp; =1\displaystyle\int{\dfrac{1}{x}dx}+1\displaystyle\int{\dfrac{x}{x^2+4}dx}-1\displaystyle\int{\dfrac{1}{x^2+4}dx}\\
+&amp; = ln|x|+\dfrac{1}{2}ln(x^2+4)-\dfrac{1}{2}arctan\left(\dfrac{x}{2}\right)+C
+\end{split}
+\end{equation}
+\]</span></p>
+<p><br></br></p>
+<p><br></br></p>
+<p><br></br></p>
+<p><br></br></p>
+<p><br></br></p>
+<p><br></br></p>
 <p><br></br></p>
 <p><br></br></p>
 </div>
@@ -1050,7 +1226,7 @@ Q(x)  =2x^3+3x^2-2x=x(2x^2+3x-2)=x(2x-1)(x+2)
 <h2><span class="header-section-number">6.13</span> Integral definida</h2>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-87" class="definition"><strong>Definición 6.3  (Integral definida)  </strong></span>Si <span class="math inline">\(f\)</span> es una función continua definida para <span class="math inline">\(a \leq x \leq b\)</span>, divida el intervalo <span class="math inline">\([a,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos de igual ancho <span class="math inline">\(\bigtriangleup{x}=(b-a)/n\)</span>. Haga que <span class="math inline">\(x_0(=a),x_1,x_2,...,x_n(=b)\)</span> sean los puntos extremos de estos subintervalos y elija <span class="math inline">\(x_{1}^{*},x_{2}^{*},...,x_{n}^{*}\)</span> como los puntos muestra en estos subintervalos, de modo que <span class="math inline">\(x_{i}^{*}\)</span> se encuentre en el i-ésimo subintervalo <span class="math inline">\([x_{i-1},x_{i}]\)</span>. Entonces la integral definida de <span class="math inline">\(f\)</span>, desde <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>, es</p>
+<p><span id="def:unnamed-chunk-91" class="definition"><strong>Definición 6.3  (Integral definida)  </strong></span>Si <span class="math inline">\(f\)</span> es una función continua definida para <span class="math inline">\(a \leq x \leq b\)</span>, divida el intervalo <span class="math inline">\([a,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos de igual ancho <span class="math inline">\(\bigtriangleup{x}=(b-a)/n\)</span>. Haga que <span class="math inline">\(x_0(=a),x_1,x_2,...,x_n(=b)\)</span> sean los puntos extremos de estos subintervalos y elija <span class="math inline">\(x_{1}^{*},x_{2}^{*},...,x_{n}^{*}\)</span> como los puntos muestra en estos subintervalos, de modo que <span class="math inline">\(x_{i}^{*}\)</span> se encuentre en el i-ésimo subintervalo <span class="math inline">\([x_{i-1},x_{i}]\)</span>. Entonces la integral definida de <span class="math inline">\(f\)</span>, desde <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>, es</p>
 <p><span class="math display">\[
   \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i}^{*})\bigtriangleup{x}}
 \]</span>
@@ -1082,7 +1258,7 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 <p><br></br></p>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-88" class="definition"><strong>Definición 6.4  (Definición formal de la integral definida)  </strong></span>Sea <span class="math inline">\(f(x)\)</span> una función definida en un intervalo cerrado <span class="math inline">\([a,b]\)</span>. Dicimos que un número <span class="math inline">\(J\)</span> es la integral definida de <span class="math inline">\(f\)</span> en <span class="math inline">\([a,b]\)</span> y que <span class="math inline">\(J\)</span> es el límite de las sumas de Riemann <span class="math inline">\(\sum_{k=1}^{n}f(c_{k})\bigtriangleup{x_k}\)</span> si se satisface la siguiente condición:</p>
+<p><span id="def:unnamed-chunk-92" class="definition"><strong>Definición 6.4  (Definición formal de la integral definida)  </strong></span>Sea <span class="math inline">\(f(x)\)</span> una función definida en un intervalo cerrado <span class="math inline">\([a,b]\)</span>. Dicimos que un número <span class="math inline">\(J\)</span> es la integral definida de <span class="math inline">\(f\)</span> en <span class="math inline">\([a,b]\)</span> y que <span class="math inline">\(J\)</span> es el límite de las sumas de Riemann <span class="math inline">\(\sum_{k=1}^{n}f(c_{k})\bigtriangleup{x_k}\)</span> si se satisface la siguiente condición:</p>
 <p>Dado cualquier número <span class="math inline">\(\epsilon &gt;0\)</span> existe un número correspondiente <span class="math inline">\(\delta &gt;0\)</span>, tal que para toda partición <span class="math inline">\(P=\{x_0,x_1,...,x_n\}\)</span> de <span class="math inline">\([a,b]\)</span> con <span class="math inline">\(\left \| P \right \|&lt;\delta\)</span> y cualquier elección de <span class="math inline">\(c_k\)</span> en <span class="math inline">\([x_{k-1},x_k]\)</span>, tenemos</p>
 <p><span class="math display">\[
   \left|\displaystyle{\sum_{k=1}^{n}f(c_k)\bigtriangleup{x_k}}-J\right|&lt; \epsilon.
@@ -1094,7 +1270,7 @@ tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" 
 <p><br></br></p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-89" class="theorem"><strong>Teorema 6.4  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, o si <span class="math inline">\(f\)</span> tiene únicamente un número finito de saltos discontinuos, entonces <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>; es decir, la integral definida</p>
+<p><span id="thm:unnamed-chunk-93" class="theorem"><strong>Teorema 6.4  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, o si <span class="math inline">\(f\)</span> tiene únicamente un número finito de saltos discontinuos, entonces <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>; es decir, la integral definida</p>
 <p><span class="math display">\[
 \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i})\bigtriangleup{x}}, \qquad \text{ existe.}
 \]</span>
@@ -1107,9 +1283,9 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 <h3><span class="header-section-number">6.13.1</span> Propiedades de la integral definida</h3>
 <p><span class="math display">\[
 \begin{matrix}
- (1.) &amp; \displaystyle\int_{a}^{b}{cdx}=c(b-a) &amp; \text{donde c es cualquier constante}\\
+ (1.) &amp; \displaystyle\int_{a}^{b}{cdx}=c(b-a) &amp; c\in R\\
  (2.) &amp; \displaystyle\int_{a}^{b}{\left[f(x)\pm g(x)\right]dx}=\displaystyle\int_{a}^{b}{f(x)dx}\pm\displaystyle\int_{a}^{b}{g(x)dx}\\
- (3.) &amp; \displaystyle\int_{a}^{b}{cf(x)dx}=c\displaystyle\int_{a}^{b}{f(x)dx} &amp; \text{donde c es cualquier constante}\\
+ (3.) &amp; \displaystyle\int_{a}^{b}{cf(x)dx}=c\displaystyle\int_{a}^{b}{f(x)dx} &amp; c\in R\\
  (4.) &amp; \displaystyle\int_{a}^{c}{f(x)dx}+\displaystyle\int_{c}^{b}{f(x)dx}=\displaystyle\int_{a}^{b}{f(x)dx}\\
  (5.) &amp; \text{Si } f(x) \geq 0 \text{ para } a\leq x \leq b, \text{ entonces }  \displaystyle\int_{a}^{b}{f(x)dx}\geq 0.\\
  (6.) &amp; \text{Si } f(x) \geq g(x) \text{ para } a\leq x \leq b, \text{ entonces }  \displaystyle\int_{a}^{b}{f(x)dx}\geq \displaystyle\int_{a}^{b}{g(x)dx}.\\
