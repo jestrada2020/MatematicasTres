@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 7 Integrales dobles | Curso de Matemáticas Tres UCES</title>
+  <title>Capítulo 9 Métodos para Ec Diferenciales (EDO) | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
   <meta name="generator" content="bookdown 0.22.12 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 7 Integrales dobles | Curso de Matemáticas Tres UCES" />
+  <meta property="og:title" content="Capítulo 9 Métodos para Ec Diferenciales (EDO) | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 7 Integrales dobles | Curso de Matemáticas Tres UCES" />
+  <meta name="twitter:title" content="Capítulo 9 Métodos para Ec Diferenciales (EDO) | Curso de Matemáticas Tres UCES" />
   
   <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="integrales-simples.html"/>
-<link rel="next" href="integrales-triples.html"/>
+<link rel="prev" href="integrales-triples.html"/>
+<link rel="next" href="referencias.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -211,392 +211,51 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="integrales-dobles" class="section level1">
-<h1><span class="header-section-number">Capítulo 7</span> Integrales dobles</h1>
-<!-- <a href="https://www.lifeder.com/wp-content/uploads/2017/01/alan-turing.jpg"><div align="center"><img src="https://www.lifeder.com/wp-content/uploads/2017/01/alan-turing.jpg" width="350" height="460" alt="Buy from Amazon" class="cover" /></div></a> -->
-<div align="center">
-<figure>
-<p><img src="https://www.lifeder.com/wp-content/uploads/2017/01/alan-turing.jpg"
-       alt="Alan Turing (1912-1954);
-           nacionalidad inglés famoso por La computación moderna" width="400"
-       height="341"></p>
-<figcaption>
-Alan Turing (1912-1954).
-</figcaption>
-</figure>
-</div>
-<div id="definición-de-integral-doble" class="section level2">
-<h2><span class="header-section-number">7.1</span> Definición de integral doble</h2>
-
-<div class="definition">
-<span id="def:unnamed-chunk-98" class="definition"><strong>Definición 7.1  </strong></span>Si <span class="math inline">\(f\)</span> esta definida en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>, entonces la integral doble de f sobre <span class="math inline">\(D\)</span> esta dada por[Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
-</div>
-
-<p><span class="math display">\[
-\int_{D}\int{f(x,y)dA} =\lim_{{\parallel{\bigtriangleup}\parallel} \to 0}\sum_{i=1}^{n}f(x_i,y_i){\bigtriangleup}A_i
-\]</span></p>
-<p>siempre que el límite exista. Si existe el límite, entonces <span class="math inline">\(f\)</span> es integrable sobre la región <span class="math inline">\(D\)</span> en el plano <span class="math inline">\(XY\)</span>.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigDefVolumenA2"></span>
-<img src="images/VolumenIntegralDobleDef_A2.png" alt="Partición regular para obtener el volumen de un sólido [Imagen tomada de [@larson2006calculo] pág $992$]" width="95%" />
-<p class="caption">
-Figura 7.1: Partición regular para obtener el volumen de un sólido [Imagen tomada de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(992\)</span>]
-</p>
-</div>
+<div id="métodos-para-ec-diferenciales-edo" class="section level1">
+<h1><span class="header-section-number">Capítulo 9</span> Métodos para Ec Diferenciales (EDO)</h1>
+<!-- <a href="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg"><div align="center"><img src="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg" width="350" height="460" alt="Buy from Amazon" class="cover" /></div></a> -->
+<!-- <div align="center"> -->
+<!-- <figure> -->
+<!--   <img src="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg" -->
+<!--        alt="Srinivasa Ramanujan (1887-1920); -->
+<!--            nacionalidad india famoso por la constante de Landau-Ramanujan" width="400" -->
+<!--        height="341"> -->
+<!--   <figcaption>Srinivasa Ramanujan (1887-1920).</figcaption> -->
+<!-- </figure> -->
+<!-- </div> -->
 <p><br></br></p>
-<p>Esta es una aplicación para generar un sólido en 3D, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/nbzsjxsj" class="uri">https://www.geogebra.org/classic/nbzsjxsj</a>) la elaboro usando geogebra.</p>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta charset="utf-8"/>
-<script src="https://www.geogebra.org/apps/deployggb.js"></script>
-<div id="ggb-elementSuperficiejjN01">
+<!-- ## Significado geométrico de máximo y mínimo local -->
+<!-- ```{r FigMaxMinA01, fig.cap="Concepto de máximo y mínimo local geometricamente [Imagen tomada de [@thomas2003thomas] pág $1028$]", fig.align='center' ,echo=FALSE, message=FALSE,  warning=FALSE, out.width = "65%"} -->
+<!-- knitr::include_graphics("images/GrafMaxMin_A1.png") -->
+<!-- ``` -->
+<!-- Esta es una aplicación para obtener el valor de el Hessiano en un punto $(a,b)$ de una función $f(x,y)$, el Autor:John Jairo Estrada (https://www.geogebra.org/classic/ebw5zjfr) la elaboro usando geogebra. -->
+<!-- <div align="center"> -->
+<!-- <meta name=viewport content="width=device-width,initial-scale=1"> -->
+<!-- <meta charset="utf-8"/> -->
+<!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+<!-- <div id="ggb-elementMaxMinA01"></div>  -->
+<!-- <script>   -->
+<!--        var ggbAppMaxMinA01 = new GGBApplet({"material_id":"ebw5zjfr", -->
+<!--        "width": 800, -->
+<!--        "height": 600, -->
+<!--        "showToolBar": false, -->
+<!--        "showAlgebraInput": false, -->
+<!--        "showMenuBar": false }, -->
+<!--        true); -->
+<!--          window.addEventListener("load", function() {   -->
+<!--            ggbAppMaxMinA01.inject('ggb-elementMaxMinA01'); -->
+<!--       }); -->
+<!-- </script> -->
+<!-- </div> -->
 
-</div>
-<script>  
-       var ggbAppSuperficiejjN01 = new GGBApplet({"material_id":"nbzsjxsj",
-       "width": 800,
-       "height": 400,
-       "showToolBar": false,
-       "showAlgebraInput": false,
-       "showMenuBar": false },
-       true);
-       
-         window.addEventListener("load", function() {  
-           ggbAppSuperficiejjN01.inject('ggb-elementSuperficiejjN01');
-      });
-</script>
-<p><br></br></p>
-</div>
-<div id="definición-de-volumen-para-una-región-sólida" class="section level2">
-<h2><span class="header-section-number">7.2</span> Definición de volumen para una región sólida</h2>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigDefVolumenAN1"></span>
-<img src="images/DefVolIntegralDoble_A1.png" alt="Definición de volumen como integral doble [Imagen tomada de [@stewart2009calculus] pág $850$ y $851$]" width="95%" />
-<p class="caption">
-Figura 7.2: Definición de volumen como integral doble [Imagen tomada de <span class="citation">(Stewart <a href="#ref-stewart2009calculus" role="doc-biblioref">2009</a>)</span> pág <span class="math inline">\(850\)</span> y <span class="math inline">\(851\)</span>]
-</p>
-</div>
-
-<div class="definition">
-<p><span id="def:unnamed-chunk-99" class="definition"><strong>Definición 7.2  </strong></span>Si <span class="math inline">\(f\)</span> es integrable sobre una región <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span> y <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span>, entonces el volumen de la región sólida que se encuentra sobre <span class="math inline">\(D\)</span> y bajo la gráfica de <span class="math inline">\(f\)</span> se define como:</p>
-<p>Si
-<span class="math display">\[
-A(x)=\int_{c}^{d}{f(x,y)dy}
-\]</span></p>
-<p><span class="math display">\[
-V(\text{región sólida})=\int_{D}\int{f(x,y)dA}=\int_{a}^{b}{A(x)dx}=\int_{a}^{b}{\int_{c}^{d}{f(x,y)dy}dx}
-\]</span></p>
-donde <span class="math inline">\(D=[a,b]\times [c,d]\)</span>
-[Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
-</div>
-
-</div>
-<div id="propiedades-de-las-integrales-dobles" class="section level2">
-<h2><span class="header-section-number">7.3</span> Propiedades de las integrales dobles</h2>
-
-<div class="theorem">
-<span id="thm:unnamed-chunk-100" class="theorem"><strong>Teorema 7.1  </strong></span>Sean <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> continuas en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>, y sea <span class="math inline">\(c\)</span> una constante. Cada una de las siguientes afirmaciones es verdadera: [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
-</div>
-
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralDoble1"></span>
-<img src="images/Imagen_PdeIntegralDoble1.png" alt="Dos regiones no se sobreponen si su intersección es un conjunto de área cero. [Imagen tomada de [@larson2006calculo] pág $994$]" width="201" />
-<p class="caption">
-Figura 7.3: Dos regiones no se sobreponen si su intersección es un conjunto de área cero. [Imagen tomada de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
-</p>
-</div>
-<p>(1.) <span class="math inline">\(\int_{D}\int{cf(x,y)dA}=c\int_{D}\int{f(x,y)dA}\)</span></p>
-<p>(2.) <span class="math inline">\(\int_{D}\int{\left[f(x,y) \pm g(x,y) \right] dA} = \int_{D}\int{f(x,y)dA} \pm \int_{D}\int{g(x,y)dA}\)</span></p>
-<p>(3.) <span class="math inline">\(\int_{D}\int{f(x,y)dA}\geq 0\)</span>, si <span class="math inline">\(f(x,y)\geq 0\)</span></p>
-<p>(4.) <span class="math inline">\(\int_{D}\int{cf(x,y)dA}\geq \int_{D}\int{g(x,y)dA}\)</span>, si <span class="math inline">\(f(x,y) \geq g(x,y)\)</span></p>
-<p>(5.) Si <span class="math inline">\(D=R_1 \cup R_2\)</span>, entonces <span class="math inline">\(\int_{D}\int{cf(x,y)dA}=\int_{R_1}\int{f(x,y)dA}+\int_{R_2}\int{f(x,y)dA}\)</span></p>
-</div>
-<div id="ejemplo-integral-doble-usando-geogebra" class="section level2">
-<h2><span class="header-section-number">7.4</span> Ejemplo integral doble usando geogebra</h2>
-
-<div class="example">
-<span id="exm:unnamed-chunk-101" class="example"><strong>Ejemplo 7.1  (Volumen de un solido con región rectángular)  </strong></span>Sea <span class="math inline">\(D\)</span> el rectángulo definido como <span class="math inline">\(\left[0,1\right] \times \left[-3,3\right]\)</span> y <span class="math inline">\(f(x,y)=\dfrac{xy^2}{x^2+1}\)</span> una función integrable en <span class="math inline">\(D\)</span>. Obtener usando geogebra el volumén limitado arriba por <span class="math inline">\(f\)</span>, y abajo por el rectángulo <span class="math inline">\(D\)</span>. Observe que <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span> [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
-</div>
-
-<p><br></br></p>
-<p>Esta es una aplicación que generar un sólido y proporciona su volumen, inicialmente la realizó en youtube Matemática y Geogebra (<a href="https://www.youtube.com/watch?v=GfhDeC2lN88&amp;t=857s" class="uri">https://www.youtube.com/watch?v=GfhDeC2lN88&amp;t=857s</a>), y posteriormente la realizó John Jairo Estrada (<a href="https://www.geogebra.org/classic/f6guccy3" class="uri">https://www.geogebra.org/classic/f6guccy3</a>).</p>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta charset="utf-8"/>
-<script src="https://www.geogebra.org/apps/deployggb.js"></script>
-<div id="ggb-elementSuperficieC01">
-
-</div>
-<script>  
-       var ggbAppSuperficieC01 = new GGBApplet({"material_id":"f6guccy3",
-       "width": 900,
-       "height": 600,
-       "showToolBar": false,
-       "showAlgebraInput": false,
-       "showMenuBar": false },
-       true);
-       
-         window.addEventListener("load", function() {  
-           ggbAppSuperficieC01.inject('ggb-elementSuperficieC01');
-      });
-</script>
-</div>
-<div id="ejercicio-integral-doble" class="section level2">
-<h2><span class="header-section-number">7.5</span> Ejercicio integral doble</h2>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-102" class="exercise"><strong>Ejercicio 7.1  (Volumen de un solido con región rectángular)  </strong></span>Sea <span class="math inline">\(D\)</span> el rectángulo definido como <span class="math inline">\(\left[0,1\right] \times \left[0,1\right]\)</span> y <span class="math inline">\(f(x,y)=1-\dfrac{1}{2}x^2-\dfrac{1}{2}y^2\)</span> una función integrable en <span class="math inline">\(D\)</span>. Además
-<span class="math display">\[
-\left[0,1\right] \times \left[0,1\right]  \ \ \ \text{significa que:}  \ \ \  0\leq x \leq 1 \ \ \text{y} \ \ 0\leq y \leq 1
-\]</span></p>
-el volumén limitado arriba por <span class="math inline">\(f\)</span>, y abajo por el rectángulo <span class="math inline">\(D\)</span>. Observe que <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span> [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(996\)</span>]
-</div>
-
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralDoble2"></span>
-<img src="images/EjercicioIntDoble1.png" alt="El volumen de la región rectángular. [Imagen tomada de [@larson2006calculo] pág $996$]" width="50%" />
-<p class="caption">
-Figura 7.4: El volumen de la región rectángular. [Imagen tomada de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(996\)</span>]
-</p>
-</div>
-
-<div class="solution">
-<p> <span class="solution"><em>Solución</em> (Volumen de un solido con región rectángular). </span> <span class="math display">\[
-  \int_{D}\int{1-\dfrac{1}{2}x^2-\dfrac{1}{2}y^2)dA}=\\
-\int_{0}^{1}\int_{0}^{1}\left(1-\dfrac{1}{2}x^2-\dfrac{1}{2}y^2)\right)dydx=\\
-\int_{0}^{1}\left[\left(1-\dfrac{1}{2}x^2\right)y -\dfrac{y^3}{6} \right]_{0}^{1}dx=\\
-\int_{0}^{1}\left(\dfrac{5}{6}-\dfrac{1}{2}x^2\right)dx=\\
-\left[\dfrac{5}{6}x-\dfrac{x^3}{6}\right]_{0}^{1}=\\
-=\dfrac{2}{3}
-\]</span></p>
-El ejercicio se puede ver solucionado en <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(996\)</span>]
-</div>
-
-<p><br></br></p>
-
-<div class="theorem">
-<p><span id="thm:unnamed-chunk-104" class="theorem"><strong>Teorema 7.2  (Región verticalmente simple)  </strong></span>Supongamos que <span class="math inline">\(f(x,y)\)</span> es continuas en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>. Si <span class="math inline">\(D\)</span> es una región verticalmente simple, entonces <span class="math inline">\(D\)</span> se puede describir en términos de desigualdades de la forma:</p>
-<p><span class="math display">\[
-D=\left\{ \begin{array}{lcc}
-            \ \ \ \ \ a  \leq  x \leq b \\
-             \\g_1(x) \leq  y  \leq g_2(x)
-             \end{array}
-   \right.
-\]</span></p>
-<p>y</p>
-<p><span class="math display">\[
-\int_{D}\int{f(x,y)dA}=\int_{a}^{b}\int_{g_1(x)}^{g_2(x)}{f(x,y)dydx}  
-\]</span></p>
-[Tomado de <span class="citation">(Edwards, Penney, and Velasco <a href="#ref-edwards1996calculo" role="doc-biblioref">1996</a>)</span> pág <span class="math inline">\(838\)</span>]
-</div>
-
-<p><br></br></p>
-
-<div class="theorem">
-<p><span id="thm:unnamed-chunk-105" class="theorem"><strong>Teorema 7.3  (Región horizontalmente simple)  </strong></span>Supongamos que <span class="math inline">\(f(x,y)\)</span> es continuas en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>. Si <span class="math inline">\(D\)</span> es una región verticalmente simple, entonces <span class="math inline">\(D\)</span> se puede describir en términos de desigualdades de la forma:</p>
-<p><span class="math display">\[
-D=\left\{ \begin{array}{lcc}
-            \ \ \ \ \ c  \leq  y \leq d \\
-             \\h_1(y) \leq  x  \leq h_2(y)
-             \end{array}
-   \right.
-\]</span></p>
-<p>y</p>
-<p><span class="math display">\[
-\int_{D}\int{f(x,y)dA}=\int_{a}^{b}\int_{h_1(y)}^{h_2(y)}{f(x,y)dxdy}  
-\]</span></p>
-[Tomado de <span class="citation">(Edwards, Penney, and Velasco <a href="#ref-edwards1996calculo" role="doc-biblioref">1996</a>)</span> pág <span class="math inline">\(838\)</span>]
-</div>
-
-<p><br></br></p>
-</div>
-<div id="ejercicio-integral-doble-1" class="section level2">
-<h2><span class="header-section-number">7.6</span> Ejercicio integral doble</h2>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-106" class="exercise"><strong>Ejercicio 7.2  (Volumen de un solido con región no rectángular)  </strong></span>Sea <span class="math inline">\(D\)</span> la región no rectángular definida como:</p>
-<p><span class="math display">\[  
-0\leq x \leq 1 \\ 
--\sqrt(\dfrac{4-x^2}{2}) \leq y \leq \sqrt(\dfrac{4-x^2}{2})
-\]</span></p>
-y <span class="math inline">\(f(x,y)=4-x^2-2y^2\)</span> una función integrable en <span class="math inline">\(D\)</span>. Hallar el volumen del sólido limitado por abajo de la superficie <span class="math inline">\(f(x,y)\)</span>, y por arriba de la región <span class="math inline">\(D\)</span> usando integrales dobles. [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(997\)</span>]
-</div>
-
-<p><br></br></p>
-<p><strong>NOTA:</strong> Use la aplicación de geogebra para verificar su resultado.</p>
-Está es una aplicación de geogebra que realizó John Jairo Estrada (<a href="https://www.geogebra.org/classic/fdpb6ym8" class="uri">https://www.geogebra.org/classic/fdpb6ym8</a>).
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta charset="utf-8"/>
-<script src="https://www.geogebra.org/apps/deployggb.js"></script>
-<div id="ggb-elementMate3SupeA01">
-
-</div>
-<script>  
-       var ggbAppMate3SupeA01 = new GGBApplet({"material_id":"fdpb6ym8",
-       "width": 1000,
-       "height": 500,
-       "showToolBar": false,
-       "showAlgebraInput": false,
-       "showMenuBar": false },
-       true);
-       
-         window.addEventListener("load", function() {  
-           ggbAppMate3SupeA01.inject('ggb-elementMate3SupeA01');
-      });
-</script>
-<p><br></br></p>
-</div>
-<div id="regiones-que-generan-dos-integrales-dobles" class="section level2">
-<h2><span class="header-section-number">7.7</span> Regiones que generan dos integrales dobles</h2>
-</div>
-<div id="ejercicio-integral-doble-2" class="section level2">
-<h2><span class="header-section-number">7.8</span> Ejercicio integral doble</h2>
-
-<div class="exercise">
-<span id="exr:unnamed-chunk-107" class="exercise"><strong>Ejercicio 7.3  (Área entre dos curvas)  </strong></span>Determinar el área usando integrales dobles para la región <span class="math inline">\(D\)</span> limitada por las curvas <span class="math inline">\(x=-2\)</span>, <span class="math inline">\(x=2\)</span>, <span class="math inline">\(y=-x^2+2x\)</span>, y <span class="math inline">\(y=3x^3-x^2-10x\)</span>. [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(997\)</span>]
-</div>
-
-<p><br></br></p>
-
-<div class="solution">
-<p> <span class="solution"><em>Solución</em> (Área de una región que requiere de dos integrales dobles). </span> 
-<span class="math display">\[
-D_1=\left\lbrace (x,y) \in R^2, \ \ \text{tal que } \ \ -2 \leq x \leq 0; \ \ -x^2+2x \leq y \leq 3x^3-x^2-10x \right\rbrace 
-\]</span>
-Por lo tanto el área de la región <span class="math inline">\(D_1\)</span> es:
-<span class="math display">\[
-A(\text{Región }D_1)=\int_{-2}^{0}\int_{-x^2+2x}^{ 3x^3-x^2-10x}{1dydx}
-\]</span></p>
-<p><span class="math display">\[
-D_2=\left\lbrace (x,y) \in R^2, \ \ \text{tal que } \ \ 0 \leq x \leq 2; \ \ 3x^3-x^2-10x \leq y \leq -x^2+2x \right\rbrace 
-\]</span>
-Por lo tanto el área de la región <span class="math inline">\(D_2\)</span> es:
-<span class="math display">\[
-A(\text{Región }D_2)=\int_{0}^{2}\int_{ 3x^3-x^2-10x}^{-x^2+2x}{1dydx}
-\]</span>
-De donde el área total de la región <span class="math inline">\(D_1 \cup D_2\)</span> es:</p>
-<p><span class="math display">\[
-A(\text{Región }D_1 \cup D_2)=\int_{-2}^{0}\int_{-x^2+2x}^{ 3x^3-x^2-10x}{1dydx}+\int_{0}^{2}\int_{ 3x^3-x^2-10x}^{-x^2+2x}{1dydx}=24 \ \ \text{Unidades de área}
-\]</span></p>
-El ejercicio se puede ver solucionado en <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(996\)</span>]
-</div>
-
-<p><br></br></p>
-<p><br></br></p>
-Está es una aplicación de geogebra que realizó John Jairo Estrada (<a href="https://www.geogebra.org/classic/xbamdegy" class="uri">https://www.geogebra.org/classic/xbamdegy</a>).
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta charset="utf-8"/>
-<script src="https://www.geogebra.org/apps/deployggb.js"></script>
-<div id="ggb-elementMate3RegionC01">
-
-</div>
-<script>  
-       var ggbAppMate3RegionC01 = new GGBApplet({"material_id":"xbamdegy",
-       "width": 1000,
-       "height": 600,
-       "showToolBar": false,
-       "showAlgebraInput": false,
-       "showMenuBar": false },
-       true);
-       
-         window.addEventListener("load", function() {  
-           ggbAppMate3RegionC01.inject('ggb-elementMate3RegionC01');
-      });
-</script>
-<p><br></br></p>
-Está es una aplicación de geogebra que realizó John Jairo Estrada (<a href="https://www.geogebra.org/classic/wjkumhwb" class="uri">https://www.geogebra.org/classic/wjkumhwb</a>).
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta charset="utf-8"/>
-<script src="https://www.geogebra.org/apps/deployggb.js"></script>
-<div id="ggb-elementMate3RegionC02">
-
-</div>
-<script>  
-       var ggbAppMate3RegionC02 = new GGBApplet({"material_id":"wjkumhwb",
-       "width": 1000,
-       "height": 600,
-       "showToolBar": false,
-       "showAlgebraInput": false,
-       "showMenuBar": false },
-       true);
-       
-         window.addEventListener("load", function() {  
-           ggbAppMate3RegionC02.inject('ggb-elementMate3RegionC02');
-      });
-</script>
-<p><br></br></p>
-</div>
-<div id="ejercicio-integral-doble-3" class="section level2">
-<h2><span class="header-section-number">7.9</span> Ejercicio integral doble</h2>
-
-<div class="exercise">
-<p><span id="exr:unnamed-chunk-109" class="exercise"><strong>Ejercicio 7.4  (Volumen de un solido generado por la intersección de superficies)  </strong></span>Obtener la gráfica del sólido generado en el primer octante, por la intersección de las superficies en el espacio <span class="math inline">\(XYZ\)</span>:</p>
-<span class="math display">\[\begin{equation}
-z^2+y^2=9 \ \ \ \   : \text{Cilíndro}  \ \ \ \\
-y=2, \ \ y=4 \ \ \ \   : \text{Planos paralelos al plano } \ XZ  \ \ \ \\
-z=0, \ \ \ \   : \text{Plano} \ XY  \ \ \ \\
-\end{equation}\]</span>. [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(997\)</span>]
-</div>
-
-<p><br></br></p>
-<p>Esta es una aplicación para generar las gráficas de cada una de las superficies que plantea el ejemplo, realizado inicialmente por Mate.Math-University en youtube (<a href="https://www.youtube.com/watch?v=cqSPDNFZZ9U" class="uri">https://www.youtube.com/watch?v=cqSPDNFZZ9U</a>) el Autor en este ejemplo:John Jairo Estrada (<a href="https://www.geogebra.org/classic/rrswnzgr" class="uri">https://www.geogebra.org/classic/rrswnzgr</a>) la elaboro usando geogebra.</p>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta charset="utf-8"/>
-<script src="https://www.geogebra.org/apps/deployggb.js"></script>
-<div id="ggb-elementSuperficieB02">
-
-</div>
-<script>  
-       var ggbAppSuperficieB02 = new GGBApplet({"material_id":"rrswnzgr",
-       "width": 900,
-       "height": 600,
-       "showToolBar": false,
-       "showAlgebraInput": false,
-       "showMenuBar": false },
-       true);
-       
-         window.addEventListener("load", function() {  
-           ggbAppSuperficieB02.inject('ggb-elementSuperficieB02');
-      });
-</script>
-<p><br></br></p>
-<p>En este momento se puede ver el sólido después de retirar los planos y las otras superficies que generaron el sólido pedido en el ejercicio 6.3</p>
-<p>Esta es una aplicación para generar un sólido límitado por varias superficies, realizado inicialmente por Mate.Math-University en youtube (<a href="https://www.youtube.com/watch?v=cqSPDNFZZ9U" class="uri">https://www.youtube.com/watch?v=cqSPDNFZZ9U</a>) el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/baxbk5pz" class="uri">https://www.geogebra.org/classic/baxbk5pz</a>) la elaboro usando geogebra.</p>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta charset="utf-8"/>
-<script src="https://www.geogebra.org/apps/deployggb.js"></script>
-<div id="ggb-elementSuperficieB01">
-
-</div>
-<script>  
-       var ggbAppSuperficieB01 = new GGBApplet({"material_id":"baxbk5pz",
-       "width": 600,
-       "height": 600,
-       "showToolBar": false,
-       "showAlgebraInput": false,
-       "showMenuBar": false },
-       true);
-       
-         window.addEventListener("load", function() {  
-           ggbAppSuperficieB01.inject('ggb-elementSuperficieB01');
-      });
-</script>
-
-</div>
-</div>
-<h3>Referencias</h3>
-<div id="refs" class="references">
-<div id="ref-edwards1996calculo">
-<p>Edwards, Charles Henry, David E Penney, and Oscar Alfredo Palmas Velasco. 1996. <em>Cálculo Con Geometrı́a Analı́tica</em>. QA303 E3818. Prentice Hall Hispanoamericana.</p>
-</div>
-<div id="ref-larson2006calculo">
-<p>Larson, Ron. 2006. <em>Cálculo de Varias Variables</em>. QA303. l3718 2004.</p>
-</div>
-<div id="ref-stewart2009calculus">
-<p>Stewart, James. 2009. <em>Calculus: Concepts and Contexts</em>. Cengage Learning.</p>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="integrales-simples.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="integrales-triples.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="integrales-triples.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="referencias.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

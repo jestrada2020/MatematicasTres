@@ -178,6 +178,8 @@ sustitución-de-karl-weierstrass-1815-1897
 ejemplo1karl
 integral-definida
 propiedades-de-la-integral-definida
+propiedades-para-las-sumatorias
+sumatorias-para-evaluar-integrales-definidas
 integrales-dobles
 definición-de-integral-doble
 definición-de-volumen-para-una-región-sólida
@@ -195,3 +197,4 @@ ejercicio-integral-triple-1
 ejercicio-integral-triple-2
 ejercicio-integral-triple-3
 ejercicio-integral-triple-4
+métodos-para-ec-diferenciales-edo

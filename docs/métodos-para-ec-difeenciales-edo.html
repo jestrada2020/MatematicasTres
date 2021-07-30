@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 8 Métodos para Ec Difeenciales (EDO) | Curso de Matemáticas Tres UCES</title>
+  <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
+  <meta name="generator" content="bookdown 0.22.12 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 8 Métodos para Ec Difeenciales (EDO) | Curso de Matemáticas Tres UCES" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Este texto se realizo usando bookdown package para escribir libros." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 8 Métodos para Ec Difeenciales (EDO) | Curso de Matemáticas Tres UCES" />
+  
+  <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
+  
+
+<meta name="author" content="John Jairo Estrada Álvarez" />
+
+
+<meta name="date" content="2021-07-30" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="integrales-triples.html"/>
+<link rel="next" href="referencias.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Curso de Matemáticas Tres</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>1.1</b> Comportamentales</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>1.2</b> Evaluativos</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#fechas-de-evaluación"><i class="fa fa-check"></i><b>1.3</b> Fechas de evaluación</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#grupoa"><i class="fa fa-check"></i><b>1.3.1</b> GrupoA</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>1.4</b> Video motivacional</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>1.5</b> Página para reforzar conceptos básicos</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#objetivo-general"><i class="fa fa-check"></i><b>1.6</b> Objetivo general</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#objetivos-específicos"><i class="fa fa-check"></i><b>1.7</b> Objetivos específicos</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#clase-a-clase"><i class="fa fa-check"></i><b>1.8</b> <strong>Clase a clase</strong></a></li>
+<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#bibliografía"><i class="fa fa-check"></i><b>1.9</b> Bibliografía</a></li>
+<li class="chapter" data-level="1.10" data-path="index.html"><a href="index.html#video-manejo-de-la-casio-f_x350ms"><i class="fa fa-check"></i><b>1.10</b> Video manejo de la Casio <span class="math inline">\(f_{x}350MS\)</span></a><ul>
+<li class="chapter" data-level="1.10.1" data-path="index.html"><a href="index.html#regla-de-cramer-sistemas-2-por-2"><i class="fa fa-check"></i><b>1.10.1</b> Regla de Cramer sistemas <span class="math inline">\(2\)</span> por <span class="math inline">\(2\)</span></a></li>
+<li class="chapter" data-level="1.10.2" data-path="index.html"><a href="index.html#regla-de-cramer-sistemas-3-por-3"><i class="fa fa-check"></i><b>1.10.2</b> Regla de Cramer sistemas <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="1.10.3" data-path="index.html"><a href="index.html#regla-de-sarrus-determinante-3-por-3"><i class="fa fa-check"></i><b>1.10.3</b> Regla de Sarrus determinante <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="1.10.4" data-path="index.html"><a href="index.html#solución-de-la-ecuación-cuadrática"><i class="fa fa-check"></i><b>1.10.4</b> Solución de la ecuación cuadrática</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introducción</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#punto-frontera-y-punto-interior-en-el-plano"><i class="fa fa-check"></i><b>2.1</b> Punto frontera y punto interior en el plano</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#función-de-dos-variables"><i class="fa fa-check"></i><b>2.2</b> Función de dos variables</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#punto-frontera-y-punto-interior-en-el-espacio"><i class="fa fa-check"></i><b>2.3</b> Punto frontera y punto interior en el espacio</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#detalles-de-una-superficie-en-el-espacio-xyz"><i class="fa fa-check"></i><b>2.4</b> Detalles de una superficie en el espacio <span class="math inline">\(XYZ\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html"><i class="fa fa-check"></i><b>3</b> Métodos para derivar parcialmente</a><ul>
+<li class="chapter" data-level="3.1" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#definición-derivada-parcial"><i class="fa fa-check"></i><b>3.1</b> Definición derivada parcial</a></li>
+<li class="chapter" data-level="3.2" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-derivada-parcial-con-respecto-a-x"><i class="fa fa-check"></i><b>3.2</b> Ejercicio derivada parcial con respecto a <span class="math inline">\(x\)</span></a></li>
+<li class="chapter" data-level="3.3" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-derivada-parcial-con-respecto-a-y"><i class="fa fa-check"></i><b>3.3</b> Ejercicio derivada parcial con respecto a <span class="math inline">\(y\)</span></a></li>
+<li class="chapter" data-level="3.4" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#notación-ó-simbología-de-la-derivada-parcial"><i class="fa fa-check"></i><b>3.4</b> Notación (ó simbología) de la derivada parcial</a></li>
+<li class="chapter" data-level="3.5" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#significado-geométrico-de-la-derivada-parcial-con-respecto-a-x-y-y"><i class="fa fa-check"></i><b>3.5</b> Significado geométrico de la derivada parcial con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span></a></li>
+<li class="chapter" data-level="3.6" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-pendiente-de-una-superficie"><i class="fa fa-check"></i><b>3.6</b> Ejercicio Pendiente de una superficie</a></li>
+<li class="chapter" data-level="3.7" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#herramienta-para-evaluar-primeras-derivadas-parciales-en-ab"><i class="fa fa-check"></i><b>3.7</b> Herramienta para evaluar primeras derivadas parciales en <span class="math inline">\((a,b)\)</span></a></li>
+<li class="chapter" data-level="3.8" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>3.8</b> Derivadas parciales de orden superior</a></li>
+<li class="chapter" data-level="3.9" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>3.9</b> Ejercicio derivadas parciales de orden superior</a></li>
+<li class="chapter" data-level="3.10" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#herramienta-para-evaluar-derivadas-parciales-de-orden-dos-en-ab"><i class="fa fa-check"></i><b>3.10</b> Herramienta para evaluar derivadas parciales de orden dos en <span class="math inline">\((a,b)\)</span></a></li>
+<li class="chapter" data-level="3.11" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#regla-de-la-cadena-para-funciones-de-varias-variables"><i class="fa fa-check"></i><b>3.11</b> Regla de la cadena para funciones de varias variables</a><ul>
+<li class="chapter" data-level="3.11.1" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#una-variable-independiente"><i class="fa fa-check"></i><b>3.11.1</b> Una variable independiente</a></li>
+<li class="chapter" data-level="3.11.2" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#dos-variables-independientes"><i class="fa fa-check"></i><b>3.11.2</b> Dos variables independientes</a></li>
+</ul></li>
+<li class="chapter" data-level="3.12" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#herramienta-evalúa-rcadena2v-independientes"><i class="fa fa-check"></i><b>3.12</b> Herramienta evalúa RCadena2V independientes</a></li>
+<li class="chapter" data-level="3.13" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#derivación-parcial-implícita"><i class="fa fa-check"></i><b>3.13</b> Derivación parcial implícita</a></li>
+<li class="chapter" data-level="3.14" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#derivada-direccional"><i class="fa fa-check"></i><b>3.14</b> Derivada direccional</a></li>
+<li class="chapter" data-level="3.15" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#gradiente-de-una-función"><i class="fa fa-check"></i><b>3.15</b> Gradiente de una función</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html"><i class="fa fa-check"></i><b>4</b> Métodos para máximos y mínimos</a><ul>
+<li class="chapter" data-level="4.1" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#significado-geométrico-de-máximo-y-mínimo-local"><i class="fa fa-check"></i><b>4.1</b> Significado geométrico de máximo y mínimo local</a></li>
+<li class="chapter" data-level="4.2" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#herramienta-para-obtener-el-hessiano-2por2"><i class="fa fa-check"></i><b>4.2</b> Herramienta para obtener el Hessiano 2por2</a></li>
+<li class="chapter" data-level="4.3" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#método-de-los-multiplicadore-de-lagrange-para-determinar-máximos-o-mínimos"><i class="fa fa-check"></i><b>4.3</b> Método de los multiplicadore de Lagrange para determinar máximos o mínimos</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="integrales-simples.html"><a href="integrales-simples.html"><i class="fa fa-check"></i><b>5</b> Integrales simples</a><ul>
+<li class="chapter" data-level="5.1" data-path="integrales-simples.html"><a href="integrales-simples.html#primera-tabla-de-antiderivadas"><i class="fa fa-check"></i><b>5.1</b> Primera tabla de antiderivadas</a></li>
+<li class="chapter" data-level="5.2" data-path="integrales-simples.html"><a href="integrales-simples.html#herramienta-para-obtener-antiderivadas"><i class="fa fa-check"></i><b>5.2</b> Herramienta para obtener antiderivadas</a></li>
+<li class="chapter" data-level="5.3" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-las-antiderivadas"><i class="fa fa-check"></i><b>5.3</b> Propiedades de las antiderivadas</a></li>
+<li class="chapter" data-level="5.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-de-antiderivada"><i class="fa fa-check"></i><b>5.4</b> Ejemplo1 de antiderivada</a></li>
+<li class="chapter" data-level="5.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-de-antiderivada"><i class="fa fa-check"></i><b>5.5</b> Ejemplo2 de antiderivada</a></li>
+<li class="chapter" data-level="5.6" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-uno"><i class="fa fa-check"></i><b>5.6</b> Teorema fundamental del cálculo, caso Uno</a></li>
+<li class="chapter" data-level="5.7" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-dos"><i class="fa fa-check"></i><b>5.7</b> Teorema fundamental del cálculo, caso Dos</a></li>
+<li class="chapter" data-level="5.8" data-path="integrales-simples.html"><a href="integrales-simples.html#técnicas-de-integración"><i class="fa fa-check"></i><b>5.8</b> Técnicas de integración</a></li>
+<li class="chapter" data-level="5.9" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-sustitución-o-cambio-de-variable"><i class="fa fa-check"></i><b>5.9</b> Integración por sustitución o cambio de variable</a><ul>
+<li class="chapter" data-level="5.9.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-por-sustitución"><i class="fa fa-check"></i><b>5.9.1</b> Ejemplo1 por sustitución</a></li>
+<li class="chapter" data-level="5.9.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-por-sustitución"><i class="fa fa-check"></i><b>5.9.2</b> Ejemplo2 por sustitución</a></li>
+<li class="chapter" data-level="5.9.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-por-sustitución"><i class="fa fa-check"></i><b>5.9.3</b> Ejemplo3 por sustitución</a></li>
+<li class="chapter" data-level="5.9.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-por-sustitución"><i class="fa fa-check"></i><b>5.9.4</b> Ejemplo4 por sustitución</a></li>
+</ul></li>
+<li class="chapter" data-level="5.10" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-partes"><i class="fa fa-check"></i><b>5.10</b> Integración por partes</a><ul>
+<li class="chapter" data-level="5.10.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-por-partes"><i class="fa fa-check"></i><b>5.10.1</b> Ejemplo1 por partes</a></li>
+<li class="chapter" data-level="5.10.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-por-partes"><i class="fa fa-check"></i><b>5.10.2</b> Ejemplo2 por partes</a></li>
+<li class="chapter" data-level="5.10.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-por-partes"><i class="fa fa-check"></i><b>5.10.3</b> Ejemplo3 por partes</a></li>
+<li class="chapter" data-level="5.10.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-por-partes"><i class="fa fa-check"></i><b>5.10.4</b> Ejemplo4 por partes</a></li>
+<li class="chapter" data-level="5.10.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo5-por-partes"><i class="fa fa-check"></i><b>5.10.5</b> Ejemplo5 por partes</a></li>
+<li class="chapter" data-level="5.10.6" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo6-por-partes"><i class="fa fa-check"></i><b>5.10.6</b> Ejemplo6 por partes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.11" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-sustitución-trigonométrica"><i class="fa fa-check"></i><b>5.11</b> Integración por sustitución trigonométrica</a><ul>
+<li class="chapter" data-level="5.11.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1"><i class="fa fa-check"></i><b>5.11.1</b> Ejemplo1</a></li>
+<li class="chapter" data-level="5.11.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2"><i class="fa fa-check"></i><b>5.11.2</b> Ejemplo2</a></li>
+<li class="chapter" data-level="5.11.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3"><i class="fa fa-check"></i><b>5.11.3</b> Ejemplo3</a></li>
+</ul></li>
+<li class="chapter" data-level="5.12" data-path="integrales-simples.html"><a href="integrales-simples.html#integación-por-fracciones-parciales"><i class="fa fa-check"></i><b>5.12</b> Integación por fracciones parciales</a><ul>
+<li class="chapter" data-level="5.12.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-1"><i class="fa fa-check"></i><b>5.12.1</b> Ejemplo1</a></li>
+<li class="chapter" data-level="5.12.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-1"><i class="fa fa-check"></i><b>5.12.2</b> Ejemplo2</a></li>
+<li class="chapter" data-level="5.12.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-1"><i class="fa fa-check"></i><b>5.12.3</b> Ejemplo3</a></li>
+<li class="chapter" data-level="5.12.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4"><i class="fa fa-check"></i><b>5.12.4</b> Ejemplo4</a></li>
+<li class="chapter" data-level="5.12.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo5"><i class="fa fa-check"></i><b>5.12.5</b> Ejemplo5</a></li>
+</ul></li>
+<li class="chapter" data-level="5.13" data-path="integrales-simples.html"><a href="integrales-simples.html#fórmulas-de-reducción-para-integrar"><i class="fa fa-check"></i><b>5.13</b> Fórmulas de reducción para integrar</a></li>
+<li class="chapter" data-level="5.14" data-path="integrales-simples.html"><a href="integrales-simples.html#sustitución-de-karl-weierstrass-1815-1897"><i class="fa fa-check"></i><b>5.14</b> Sustitución de Karl Weierstrass (1815-1897)</a><ul>
+<li class="chapter" data-level="5.14.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1karl"><i class="fa fa-check"></i><b>5.14.1</b> Ejemplo1(Karl)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.15" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>5.15</b> Integral definida</a><ul>
+<li class="chapter" data-level="5.15.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>5.15.1</b> Propiedades de la integral definida</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>6</b> Integrales dobles</a><ul>
+<li class="chapter" data-level="6.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>6.1</b> Definición de integral doble</a></li>
+<li class="chapter" data-level="6.2" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-volumen-para-una-región-sólida"><i class="fa fa-check"></i><b>6.2</b> Definición de volumen para una región sólida</a></li>
+<li class="chapter" data-level="6.3" data-path="integrales-dobles.html"><a href="integrales-dobles.html#propiedades-de-las-integrales-dobles"><i class="fa fa-check"></i><b>6.3</b> Propiedades de las integrales dobles</a></li>
+<li class="chapter" data-level="6.4" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejemplo-integral-doble-usando-geogebra"><i class="fa fa-check"></i><b>6.4</b> Ejemplo integral doble usando geogebra</a></li>
+<li class="chapter" data-level="6.5" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble"><i class="fa fa-check"></i><b>6.5</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6.6" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-1"><i class="fa fa-check"></i><b>6.6</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6.7" data-path="integrales-dobles.html"><a href="integrales-dobles.html#regiones-que-generan-dos-integrales-dobles"><i class="fa fa-check"></i><b>6.7</b> Regiones que generan dos integrales dobles</a></li>
+<li class="chapter" data-level="6.8" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-2"><i class="fa fa-check"></i><b>6.8</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6.9" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-3"><i class="fa fa-check"></i><b>6.9</b> Ejercicio integral doble</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="integrales-triples.html"><a href="integrales-triples.html"><i class="fa fa-check"></i><b>7</b> Integrales triples</a><ul>
+<li class="chapter" data-level="7.1" data-path="integrales-triples.html"><a href="integrales-triples.html#definición-integral-triple"><i class="fa fa-check"></i><b>7.1</b> Definición integral triple</a></li>
+<li class="chapter" data-level="7.2" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple"><i class="fa fa-check"></i><b>7.2</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.3" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-1"><i class="fa fa-check"></i><b>7.3</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.4" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-2"><i class="fa fa-check"></i><b>7.4</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.5" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-3"><i class="fa fa-check"></i><b>7.5</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.6" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-4"><i class="fa fa-check"></i><b>7.6</b> Ejercicio integral triple</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="métodos-para-ec-difeenciales-edo.html"><a href="métodos-para-ec-difeenciales-edo.html"><i class="fa fa-check"></i><b>8</b> Métodos para Ec Difeenciales (EDO)</a></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Curso de Matemáticas Tres UCES</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="métodos-para-ec-difeenciales-edo" class="section level1">
+<h1><span class="header-section-number">Capítulo 8</span> Métodos para Ec Difeenciales (EDO)</h1>
+<!-- <a href="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg"><div align="center"><img src="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg" width="350" height="460" alt="Buy from Amazon" class="cover" /></div></a> -->
+<!-- <div align="center"> -->
+<!-- <figure> -->
+<!--   <img src="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg" -->
+<!--        alt="Srinivasa Ramanujan (1887-1920); -->
+<!--            nacionalidad india famoso por la constante de Landau-Ramanujan" width="400" -->
+<!--        height="341"> -->
+<!--   <figcaption>Srinivasa Ramanujan (1887-1920).</figcaption> -->
+<!-- </figure> -->
+<!-- </div> -->
+<p><br></br></p>
+<!-- ## Significado geométrico de máximo y mínimo local -->
+<!-- ```{r FigMaxMinA01, fig.cap="Concepto de máximo y mínimo local geometricamente [Imagen tomada de [@thomas2003thomas] pág $1028$]", fig.align='center' ,echo=FALSE, message=FALSE,  warning=FALSE, out.width = "65%"} -->
+<!-- knitr::include_graphics("images/GrafMaxMin_A1.png") -->
+<!-- ``` -->
+<!-- Esta es una aplicación para obtener el valor de el Hessiano en un punto $(a,b)$ de una función $f(x,y)$, el Autor:John Jairo Estrada (https://www.geogebra.org/classic/ebw5zjfr) la elaboro usando geogebra. -->
+<!-- <div align="center"> -->
+<!-- <meta name=viewport content="width=device-width,initial-scale=1"> -->
+<!-- <meta charset="utf-8"/> -->
+<!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+<!-- <div id="ggb-elementMaxMinA01"></div>  -->
+<!-- <script>   -->
+<!--        var ggbAppMaxMinA01 = new GGBApplet({"material_id":"ebw5zjfr", -->
+<!--        "width": 800, -->
+<!--        "height": 600, -->
+<!--        "showToolBar": false, -->
+<!--        "showAlgebraInput": false, -->
+<!--        "showMenuBar": false }, -->
+<!--        true); -->
+<!--          window.addEventListener("load", function() {   -->
+<!--            ggbAppMaxMinA01.inject('ggb-elementMaxMinA01'); -->
+<!--       }); -->
+<!-- </script> -->
+<!-- </div> -->
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="integrales-triples.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="referencias.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["MatematicasTres.pdf", "MatematicasTres.epub"],
+"search": {
+"engine": "lunr",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
