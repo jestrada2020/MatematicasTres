@@ -158,9 +158,12 @@
 <li class="chapter" data-level="6.12.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-1"><i class="fa fa-check"></i><b>6.12.2</b> Ejemplo2</a></li>
 <li class="chapter" data-level="6.12.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-1"><i class="fa fa-check"></i><b>6.12.3</b> Ejemplo3</a></li>
 <li class="chapter" data-level="6.12.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4"><i class="fa fa-check"></i><b>6.12.4</b> Ejemplo4</a></li>
+<li class="chapter" data-level="6.12.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo5"><i class="fa fa-check"></i><b>6.12.5</b> Ejemplo5</a></li>
 </ul></li>
-<li class="chapter" data-level="6.13" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>6.13</b> Integral definida</a><ul>
-<li class="chapter" data-level="6.13.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>6.13.1</b> Propiedades de la integral definida</a></li>
+<li class="chapter" data-level="6.13" data-path="integrales-simples.html"><a href="integrales-simples.html#fórmulas-de-reducción-para-integrar"><i class="fa fa-check"></i><b>6.13</b> Fórmulas de reducción para integrar</a></li>
+<li class="chapter" data-level="6.14" data-path="integrales-simples.html"><a href="integrales-simples.html#sustitución-de-karl-weierstrass-1815-1897"><i class="fa fa-check"></i><b>6.14</b> Sustitución de Karl Weierstrass (1815-1897)</a></li>
+<li class="chapter" data-level="6.15" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>6.15</b> Integral definida</a><ul>
+<li class="chapter" data-level="6.15.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>6.15.1</b> Propiedades de la integral definida</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
@@ -1164,9 +1167,10 @@ A=1, \qquad B=2, \qquad C=-1
 
 <div class="example">
 <p><span id="exm:unnamed-chunk-89" class="example"><strong>Ejemplo 6.20  </strong></span>Determinar</p>
-<span class="math display">\[
+<p><span class="math display">\[
 \displaystyle\int{\dfrac{x^2-x+4}{x^3+4x}dx}
-\]</span>
+\]</span></p>
+tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a>)</span> pág <span class="math inline">\(478\)</span>
 </div>
 
 
@@ -1213,20 +1217,105 @@ A=1, \qquad B=1, \qquad C=-1
 \end{equation}
 \]</span></p>
 <p><br></br></p>
-<p><br></br></p>
-<p><br></br></p>
-<p><br></br></p>
-<p><br></br></p>
-<p><br></br></p>
-<p><br></br></p>
+</div>
+<div id="ejemplo5" class="section level3">
+<h3><span class="header-section-number">6.12.5</span> Ejemplo5</h3>
+<p><strong>El denominador <span class="math inline">\(Q(x)\)</span> contiene un factor cuadrático irreducibles que se repitte</strong></p>
+<p>Si <span class="math inline">\(Q(x)\)</span> tiene un factor cuadrático que tiene multiplicidad <span class="math inline">\(r\)</span> <span class="math inline">\((ax^2+bx+c)^r\)</span>, entonces la descomposición parcial es de la forma:</p>
+<p><span class="math display">\[
+\dfrac{A_{1}x+B_{1}}{ax^2+bx+c}+\dfrac{A_{2}x+B_{2}}{(ax^2+bx+c)^2}+\dfrac{A_{3}x+B_{3}}{(ax^2+bx+c)^3}+...+\dfrac{A_{r}x+B_{r}}{(ax^2+bx+c)^r}
+\]</span></p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-91" class="example"><strong>Ejemplo 6.21  </strong></span>Determinar</p>
+<p><span class="math display">\[
+\displaystyle\int{\dfrac{1-x+x^2-x^3}{x(x^2+1)^2}dx}
+\]</span></p>
+tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a>)</span> pág <span class="math inline">\(480\)</span>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> La descomposición de la fracción propia del integrando es:</p>
+<p><span class="math display">\[
+\dfrac{1-x+x^2-x^3}{x(x^2+1)^2}=\dfrac{A}{x}+\dfrac{Bx+C}{x^2+1}+\dfrac{Dx+E}{(x^2+1)^2} \ \ \ (a)
+\]</span></p>
+<p>Multiplicando en ambos lados de (a) por <span class="math inline">\(x(x^2+1)^2\)</span>, se obtiene:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP7}
+\begin{split}
+0x^4-x^3+2x^2-x+1 &amp; =A(x^2+1)^2+(Bx+C)x(x^2+1)+(Dx+E)x \\
+&amp; = A(x^4+2x^2+1)+B(x^4+x^2)+C(x^3+x)+Dx^2+Ex\\
+&amp; = (A+B)x^4+Cx^3+(2A+B+D)x^2+(C+E)x+A
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Igualando los coeficientes de ambos lados según el grado correspondiente, tenemos el siguiente sistema:</p>
+<p><span class="math display">\[
+\begin{matrix} 
+A + B &amp; = &amp; 0\\
+C &amp; = &amp; -1\\
+A &amp; = &amp; 1\\
+2A + B + D &amp; = &amp; 2\\ 
+C + E &amp; = &amp; -1\\
+\end{matrix}
+\]</span></p>
+<p>Usando cualquier técnica para obtener la solución del sistema, se llega a los resultados:</p>
+<p><span class="math display">\[
+A=1, \qquad B=-1, \qquad C=-1, \qquad D=1, \qquad E=0
+\]</span></p>
+<p>Entonces se tiene la integral en fracciones parciales, así:</p>
+<span class="math display">\[
+\begin{equation} \label{eqFP8}
+\begin{split}  
+\displaystyle\int{\dfrac{1-x+x^2-x^3}{x(x^2+1)^2}dx} &amp; =  \displaystyle\int{\left[\dfrac{1}{x}-\dfrac{x+1}{x^2+1}+\dfrac{x}{(x^2+1)^2}\right]dx}\\
+&amp; = ln|x|-\dfrac{1}{2}ln(x^2+1)-arctan(x)-\dfrac{1}{2(x^2+1)}+C
+\end{split}
+\end{equation}
+\]</span>
+</div>
+
 <p><br></br></p>
 </div>
+</div>
+<div id="fórmulas-de-reducción-para-integrar" class="section level2">
+<h2><span class="header-section-number">6.13</span> Fórmulas de reducción para integrar</h2>
+[
+<span class="math display">\[\begin{matrix} 
+(1.) &amp; \displaystyle\int{\left(ln(x)\right)^ndx}=x\left(ln(x)\right)^n -n\displaystyle\int{\left(ln(x)\right)^{n-1}dx}\\
+(2.) &amp; \displaystyle\int{x^ne^xdx}=-n\displaystyle\int{x^{n-1}e^xdx} \\
+(3.) &amp; \displaystyle\int{tan^n(x)dx}=\dfrac{tan^{n-1}(x)}{n-1}-\displaystyle\int{tan^{n-2}(x)dx} \ \ \ n \neq 1  \\
+(4.) &amp; \displaystyle\int{sec^n(x)dx}=\dfrac{tan(x)sec^{n-2}(x)}{n-1}+\dfrac{n-2}{n-1}\displaystyle\int{sec^{n-2}(x)dx} \ \ \ n \neq 1  \\
+(5.) &amp; \displaystyle\int{sen^n(x)dx}=-\dfrac{1}{n}cos(x)sen^{n-1}(x)+\dfrac{n-1}{n}\displaystyle\int{sen^{n-2}(x)dx}\\
+(6.) &amp; \displaystyle\int{cos^n(x)dx}=\dfrac{1}{n}sen(x)cos^{n-1}(x)+\dfrac{n-1}{n}\displaystyle\int{cos^{n-2}(x)dx}\\
+\end{matrix}\]</span>
+<p>]</p>
+<p><br></br></p>
+</div>
+<div id="sustitución-de-karl-weierstrass-1815-1897" class="section level2">
+<h2><span class="header-section-number">6.14</span> Sustitución de Karl Weierstrass (1815-1897)</h2>
+<p>El matemático Karl Weierstrass observó que el sustitución:</p>
+<p><span class="math display">\[t=tan\left(\dfrac{x}{2}\right)\]</span></p>
+<p>convierte cualquier función racional de <span class="math inline">\(sen(x)\)</span> y <span class="math inline">\(cos(x)\)</span> en una función racional de la variable <span class="math inline">\(t\)</span>.
+Además obtuvo las siguientes relaciones:</p>
+<p><span class="math display">\[
+\begin{matrix} 
+cos\left(\dfrac{x}{2}\right)=\dfrac{1}{\sqrt{1+t^2}} &amp; sen\left(\dfrac{x}{2}\right)=\dfrac{t}{\sqrt{1+t^2}} \\
+cos(x)=\dfrac{1-t^2}{1+t^2} &amp; sen(x)=\dfrac{2t}{1+t^2}\\
+\text{donde se tiene que } &amp; dx=\dfrac{2dt}{1+t^2} \\
+\end{matrix}
+\]</span></p>
+<p><br></br></p>
+<p><br></br></p>
+<p><br></br></p>
+<p><br></br></p>
+<p><br></br></p>
 </div>
 <div id="integral-definida" class="section level2">
-<h2><span class="header-section-number">6.13</span> Integral definida</h2>
+<h2><span class="header-section-number">6.15</span> Integral definida</h2>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-91" class="definition"><strong>Definición 6.3  (Integral definida)  </strong></span>Si <span class="math inline">\(f\)</span> es una función continua definida para <span class="math inline">\(a \leq x \leq b\)</span>, divida el intervalo <span class="math inline">\([a,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos de igual ancho <span class="math inline">\(\bigtriangleup{x}=(b-a)/n\)</span>. Haga que <span class="math inline">\(x_0(=a),x_1,x_2,...,x_n(=b)\)</span> sean los puntos extremos de estos subintervalos y elija <span class="math inline">\(x_{1}^{*},x_{2}^{*},...,x_{n}^{*}\)</span> como los puntos muestra en estos subintervalos, de modo que <span class="math inline">\(x_{i}^{*}\)</span> se encuentre en el i-ésimo subintervalo <span class="math inline">\([x_{i-1},x_{i}]\)</span>. Entonces la integral definida de <span class="math inline">\(f\)</span>, desde <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>, es</p>
+<p><span id="def:unnamed-chunk-93" class="definition"><strong>Definición 6.3  (Integral definida)  </strong></span>Si <span class="math inline">\(f\)</span> es una función continua definida para <span class="math inline">\(a \leq x \leq b\)</span>, divida el intervalo <span class="math inline">\([a,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos de igual ancho <span class="math inline">\(\bigtriangleup{x}=(b-a)/n\)</span>. Haga que <span class="math inline">\(x_0(=a),x_1,x_2,...,x_n(=b)\)</span> sean los puntos extremos de estos subintervalos y elija <span class="math inline">\(x_{1}^{*},x_{2}^{*},...,x_{n}^{*}\)</span> como los puntos muestra en estos subintervalos, de modo que <span class="math inline">\(x_{i}^{*}\)</span> se encuentre en el i-ésimo subintervalo <span class="math inline">\([x_{i-1},x_{i}]\)</span>. Entonces la integral definida de <span class="math inline">\(f\)</span>, desde <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>, es</p>
 <p><span class="math display">\[
   \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i}^{*})\bigtriangleup{x}}
 \]</span>
@@ -1258,7 +1347,7 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 <p><br></br></p>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-92" class="definition"><strong>Definición 6.4  (Definición formal de la integral definida)  </strong></span>Sea <span class="math inline">\(f(x)\)</span> una función definida en un intervalo cerrado <span class="math inline">\([a,b]\)</span>. Dicimos que un número <span class="math inline">\(J\)</span> es la integral definida de <span class="math inline">\(f\)</span> en <span class="math inline">\([a,b]\)</span> y que <span class="math inline">\(J\)</span> es el límite de las sumas de Riemann <span class="math inline">\(\sum_{k=1}^{n}f(c_{k})\bigtriangleup{x_k}\)</span> si se satisface la siguiente condición:</p>
+<p><span id="def:unnamed-chunk-94" class="definition"><strong>Definición 6.4  (Definición formal de la integral definida)  </strong></span>Sea <span class="math inline">\(f(x)\)</span> una función definida en un intervalo cerrado <span class="math inline">\([a,b]\)</span>. Dicimos que un número <span class="math inline">\(J\)</span> es la integral definida de <span class="math inline">\(f\)</span> en <span class="math inline">\([a,b]\)</span> y que <span class="math inline">\(J\)</span> es el límite de las sumas de Riemann <span class="math inline">\(\sum_{k=1}^{n}f(c_{k})\bigtriangleup{x_k}\)</span> si se satisface la siguiente condición:</p>
 <p>Dado cualquier número <span class="math inline">\(\epsilon &gt;0\)</span> existe un número correspondiente <span class="math inline">\(\delta &gt;0\)</span>, tal que para toda partición <span class="math inline">\(P=\{x_0,x_1,...,x_n\}\)</span> de <span class="math inline">\([a,b]\)</span> con <span class="math inline">\(\left \| P \right \|&lt;\delta\)</span> y cualquier elección de <span class="math inline">\(c_k\)</span> en <span class="math inline">\([x_{k-1},x_k]\)</span>, tenemos</p>
 <p><span class="math display">\[
   \left|\displaystyle{\sum_{k=1}^{n}f(c_k)\bigtriangleup{x_k}}-J\right|&lt; \epsilon.
@@ -1270,7 +1359,7 @@ tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" 
 <p><br></br></p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-93" class="theorem"><strong>Teorema 6.4  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, o si <span class="math inline">\(f\)</span> tiene únicamente un número finito de saltos discontinuos, entonces <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>; es decir, la integral definida</p>
+<p><span id="thm:unnamed-chunk-95" class="theorem"><strong>Teorema 6.4  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, o si <span class="math inline">\(f\)</span> tiene únicamente un número finito de saltos discontinuos, entonces <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>; es decir, la integral definida</p>
 <p><span class="math display">\[
 \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i})\bigtriangleup{x}}, \qquad \text{ existe.}
 \]</span>
@@ -1280,7 +1369,7 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 
 <p><br></br></p>
 <div id="propiedades-de-la-integral-definida" class="section level3">
-<h3><span class="header-section-number">6.13.1</span> Propiedades de la integral definida</h3>
+<h3><span class="header-section-number">6.15.1</span> Propiedades de la integral definida</h3>
 <p><span class="math display">\[
 \begin{matrix}
  (1.) &amp; \displaystyle\int_{a}^{b}{cdx}=c(b-a) &amp; c\in R\\
