@@ -77,8 +77,10 @@ exm:unnamed-chunk-93
 def:unnamed-chunk-95
 def:unnamed-chunk-96
 thm:unnamed-chunk-97
-exm:unnamed-chunk-98
+fig:FigEvSumasA00
 fig:FigEvSumasA01
+exm:unnamed-chunk-98
+fig:FigEvSumasA02
 def:unnamed-chunk-100
 fig:FigDefVolumenA2
 fig:FigDefVolumenAN1
