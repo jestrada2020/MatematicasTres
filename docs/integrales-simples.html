@@ -168,6 +168,7 @@
 <li class="chapter" data-level="6.15.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>6.15.1</b> Propiedades de la integral definida</a></li>
 <li class="chapter" data-level="6.15.2" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-para-las-sumatorias"><i class="fa fa-check"></i><b>6.15.2</b> Propiedades para las sumatorias</a></li>
 <li class="chapter" data-level="6.15.3" data-path="integrales-simples.html"><a href="integrales-simples.html#sumatorias-para-evaluar-integrales-definidas"><i class="fa fa-check"></i><b>6.15.3</b> Sumatorias para evaluar integrales definidas</a></li>
+<li class="chapter" data-level="6.15.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-evaluación-por-sumatoria"><i class="fa fa-check"></i><b>6.15.4</b> Ejemplo evaluación por sumatoria</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
@@ -1459,6 +1460,55 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 \end{matrix}
 \]</span></p>
 <p><br></br></p>
+</div>
+<div id="ejemplo-evaluación-por-sumatoria" class="section level3">
+<h3><span class="header-section-number">6.15.4</span> Ejemplo evaluación por sumatoria</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-98" class="example"><strong>Ejemplo 6.23  </strong></span>Determinar la integral definida</p>
+<p><span class="math display">\[
+\displaystyle\int_{0}^{b}xdx  
+\]</span></p>
+usando las sumatorias de evaluación.
+</div>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEvSumasA01"></span>
+<img src="images/EjEvaluaPorSumas_A1.png" alt="Área bajo la recta $y=x$ en el intervalo $[0,b]$ [Imagen tomada de [@thomas2003thomas] pág $268$]" width="25%" />
+<p class="caption">
+Figura 6.6: Área bajo la recta <span class="math inline">\(y=x\)</span> en el intervalo <span class="math inline">\([0,b]\)</span> [Imagen tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(268\)</span>]
+</p>
+</div>
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> Para calcu la integral definida como el limite de sumas de Riemann, calulamos</p>
+<p><span class="math display">\[
+\displaystyle\lim_{\left\|P\right\| \to 0}\sum_{i=1}^{n}f(c_i)\triangle{x_i}=\displaystyle\int_{0}^{b}xdx 
+\]</span></p>
+<p>Así que consideremos la partición <span class="math inline">\(P\)</span> que divide el intervalo <span class="math inline">\([0,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos del mismo ancho <span class="math inline">\(\triangle{x}=(b-a)/n=b/n\)</span> y elegimos <span class="math inline">\(c_i\)</span> como el extremo derecho de cada subintervalo. La partición es:</p>
+<p><span class="math display">\[
+P=\left\{0,\dfrac{b}{n},\dfrac{2b}{n},\dfrac{3b}{n},\dfrac{4b}{n},,...,\dfrac{nb}{n},\right\}
+\]</span></p>
+<p>y <span class="math inline">\(c_i=\dfrac{ib}{n}\)</span>, entonces tenemos</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqSRimannA1}
+\begin{split} 
+\displaystyle\sum_{i=1}^{n}f(c_i)\triangle{x_i}&amp; =\sum_{i=1}^{n}\dfrac{ib}{n}.\dfrac{b}{n}\\
+&amp; =\sum_{i=1}^{n}\dfrac{ib^2}{n^2}=\dfrac{b^2}{n^2}\sum_{i=1}^{n}i\\
+&amp; = \dfrac{b^2}{n^2}\left[\dfrac{n(n+1)}{2}\right]\\
+&amp; = \dfrac{b^2}{2}\left(1+\dfrac{1}{n}\right)\\
+\displaystyle\lim_{\left\|P\right\| \to 0}\sum_{i=1}^{n}f(c_i)\triangle{x_i} &amp; =\lim_{n \to {+}\infty}\dfrac{b^2}{2}\left(1+\dfrac{1}{n}\right)\\
+&amp; =\dfrac{b^2}{2}\lim_{n \to {+}\infty}\left(1+\dfrac{1}{n}\right)\\
+&amp; = \dfrac{b^2}{2}.1\\
+&amp; = \dfrac{b^2}{2}
+\end{split}
+\end{equation} 
+\]</span></p>
+<p>Se concluye que</p>
+<p><span class="math display">\[
+\displaystyle\lim_{\left\|P\right\| \to 0}\sum_{i=1}^{n}f(c_i)\triangle{x_i}=\displaystyle\int_{0}^{b}xdx =\dfrac{b^2}{2} \ \ \text{U.A.}
+\]</span></p>
+</div>
+
 <p><br></br></p>
 <p><br></br></p>
 <p><br></br></p>
