@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 2 Desarrollo temático | Curso de Matemáticas Tres UCES</title>
+  <title>Capítulo 9 Métodos de solución para Ecuaciones Diferenciales (EDO) | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
   <meta name="generator" content="bookdown 0.22.12 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 2 Desarrollo temático | Curso de Matemáticas Tres UCES" />
+  <meta property="og:title" content="Capítulo 9 Métodos de solución para Ecuaciones Diferenciales (EDO) | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 2 Desarrollo temático | Curso de Matemáticas Tres UCES" />
+  <meta name="twitter:title" content="Capítulo 9 Métodos de solución para Ecuaciones Diferenciales (EDO) | Curso de Matemáticas Tres UCES" />
   
   <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="intro.html"/>
+<link rel="prev" href="integrales-triples.html"/>
+<link rel="next" href="referencias.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -225,173 +225,170 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="desarrollo-temático" class="section level1">
-<h1><span class="header-section-number">Capítulo 2</span> Desarrollo temático</h1>
-<div id="objetivo-general" class="section level2">
-<h2><span class="header-section-number">2.1</span> Objetivo general</h2>
-<p>Resolver problemas matemáticos en diferentes áreas del saber mediante el pensamiento lógico, utilizando las leyes y principios de la matemática, que le permita razonar de manera adecuada, con creatividad y responsabilidad.</p>
-</div>
-<div id="objetivos-específicos" class="section level2">
-<h2><span class="header-section-number">2.2</span> Objetivos específicos</h2>
-<ul>
-<li>Resolver problemas mediante el análisis y con la esperiencia obtenida de los cursos anteriores a matemáticas III.</li>
-<li>Resolver problemas mediante la el uso lógico del lenguaje de programación para R commander y geogebra, aplicados a complementar el desarrollo teórico en el curso.
-*Resolver problemas de ingeniería y optimizar su solución mediante el análisis y la aplicación de derivar e integrar, con creativa y de forma organizada.</li>
-</ul>
-</div>
-<div id="clase-a-clase" class="section level2">
-<h2><span class="header-section-number">2.3</span> <strong>Clase a clase</strong></h2>
-<ul>
-<li><p>Todas las reglas de derivación</p></li>
-<li><p>Regla 01 concepto de antiderivada</p></li>
-<li><p>Regla 02 integración por sustitución básica</p></li>
-<li><p>Regla 03 integración por partes (caso LIATE)</p></li>
-<li><p>Regla 03 integración por partes (caso TABLA)</p></li>
-<li><p>Regla 03 integración por partes (caso GENERAL)</p></li>
-<li><p>Repaso de trigonometría básica</p>
-<ul>
-<li>Trigonometria en un triángulo rectángulo</li>
-<li>Identidades básicas</li>
-<li>Ángulos dobles</li>
-</ul></li>
-<li><p>Sustituciones trigonometricas</p>
-<ul>
-<li>Caso Uno: <span class="math inline">\(u^2-a^2\)</span></li>
-<li>Caso Dos: <span class="math inline">\(a^2-u^2\)</span></li>
-<li>Caso Tres: <span class="math inline">\(a^2+u^2\)</span></li>
-</ul></li>
-<li><p>Fórmulas básicas de reducción</p></li>
-<li><p>Sustituciones trigonométricas especiales</p></li>
-<li><p>Fracciones parciales (Descomposición)</p>
-<ul>
-<li>Integración a partir de la descomposición en fracciones parciales</li>
-</ul></li>
-<li><p>Integral definida (definición canónica)</p></li>
-<li><p>Propiedades de las integrales definidas</p></li>
-<li><p>Teorema fundamental del cálculo</p>
-<ul>
-<li>Ejemplo función simple</li>
-<li>Ejemplo función compuesta</li>
-</ul></li>
-<li><p>Aplicación 01: Área bajo una curva</p></li>
-<li><p>Aplicación 02: Área entre curvas</p></li>
-<li><p>Vectores en <span class="math inline">\(R^2\)</span> y <span class="math inline">\(R^3\)</span></p>
-<ul>
-<li>Concepto de vector libre y coordenado</li>
-<li>Operaciones con vectores</li>
-<li>Distancia de un punto externo a un plano</li>
-<li>Conjunto generador</li>
-<li>Conjunto LI</li>
-<li>Base canónica en <span class="math inline">\(R^2\)</span> y <span class="math inline">\(R^3\)</span></li>
-</ul></li>
-<li><p>Funciones con varias variables</p>
-<ul>
-<li>Dominio y Rango</li>
-</ul></li>
-<li><p>Superficies básicas</p>
-<ul>
-<li>Concepto de traza</li>
-<li>Concepto curva de nivel</li>
-<li>Planos paralelos a los planos coordenados</li>
-<li>Esfera</li>
-<li>Elipsoide</li>
-<li>Paraboloide</li>
-<li>Cono</li>
-<li>Silla de montar</li>
-<li>Hiperboloide de una hoja y dos hojas</li>
-<li>Cilindros para cada eje coordenado en <span class="math inline">\(R^3\)</span></li>
-<li>Canoa con su curva generatriz</li>
-</ul></li>
-<li><p>Concepto de límite para funciones de varias variables</p>
-<ul>
-<li>Limite usando trayectorias</li>
-<li>Límite usando desigualdades</li>
-<li>Limite usando varios tipos de coordenadas en el plano y el espacio</li>
-</ul></li>
-<li><p>Concepto de derivada parcial como límite</p>
-<ul>
-<li>Notación de derivada parcial</li>
-</ul></li>
-<li><p>Plano tangente a una superficie</p>
-<ul>
-<li>Aplicaciónde plano tangente</li>
-<li>Linealización en dos y tres variables</li>
-</ul></li>
-<li><p>Concepto de gradiente en dos y tres variables</p>
-<ul>
-<li>Derivada direccional usando límite</li>
-<li>Derivada direccional usando el concepto de gradiente</li>
-</ul></li>
-<li><p>Concepto de máximos y mínimos para funciones con dos y tres variable</p>
-<ul>
-<li>Críterio de la segunda derivada parcial para máximos y mínimos</li>
-<li>Críterio de los multiplicadores de Lagrange para máximos y mínimos</li>
-</ul></li>
-<li><p>Concepto de integral doble</p>
-<ul>
-<li>Región de integración para una integral doble</li>
-<li>Propiedades de las integrales dobles</li>
-<li>Cambio de límites de integración en las integrales dobles</li>
-<li>Área como integral doble</li>
-<li>Volumen como integral doble</li>
-<li>Integral doble en coordenadas polares</li>
-</ul></li>
-<li><p>Concepto de integral triple</p>
-<ul>
-<li>Propiedades de las integrales triples</li>
-<li>Región de integración sólida en <span class="math inline">\(R^3\)</span></li>
-<li>Integrales triples en coordenadas cilindricas</li>
-<li>Integrales triples en coordenadas esféricas</li>
-</ul></li>
-</ul>
-</div>
-<div id="bibliografía" class="section level2">
-<h2><span class="header-section-number">2.4</span> Bibliografía</h2>
-<ul>
-<li><p>HOFFMANN, Bradley, Sobecki, Price Sandoval. Matemáticas aplicadas a la administración y los negocios. 8 ed. Mc Graw Hill, 2014, 905p</p></li>
-<li><p>POOLE, David. Álgebra Lineal. Una Introducción Moderna. 2ª ed. México: Thomson, 2007, 712p.</p></li>
-<li><p>STEWART, James. Cálculo de una Variable. 6a ed. Ciudad de México: Cengage Learning, 2008. 883p.</p></li>
-<li><p>THOMAS junior, George y FINNEY, Ross L. Cálculo: Una Variable. 9a ed. Ciudad de México: Pearson, 1998. 707p.</p></li>
-<li><p>LEITHOLD, Lois. El Cálculo con Geometría Analítica. 7ª ed. Ciudad de México: Harla, 1998. 1344p.</p></li>
-<li><p>EDWARDS junior, C. H. y PENNEY, David E. Cálculo: Con Geometría Analítica. 4ª ed. Juárez: Pearson, 1996, 956p.</p></li>
-</ul>
-</div>
-<div id="video-manejo-de-la-casio-f_x350ms" class="section level2">
-<h2><span class="header-section-number">2.5</span> Video manejo de la Casio <span class="math inline">\(f_{x}350MS\)</span></h2>
-<p>En este video se pretende dar unas pautas de como usar
-la calculadora Casio (incluyendo versiones como <span class="math inline">\(f_{x}82MS\)</span>)</p>
-<!-- ```{r Video1} -->
-<!-- library(knitr) -->
-<!-- knitr::include_url("https://www.youtube.com/watch?v=iwKqLbwDjgY") -->
+<div id="métodos-de-solución-para-ecuaciones-diferenciales-edo" class="section level1">
+<h1><span class="header-section-number">Capítulo 9</span> Métodos de solución para Ecuaciones Diferenciales (EDO)</h1>
+<!-- <a href="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg"><div align="center"><img src="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg" width="350" height="460" alt="Buy from Amazon" class="cover" /></div></a> -->
+<!-- <div align="center"> -->
+<!-- <figure> -->
+<!--   <img src="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg" -->
+<!--        alt="Srinivasa Ramanujan (1887-1920); -->
+<!--            nacionalidad india famoso por la constante de Landau-Ramanujan" width="400" -->
+<!--        height="341"> -->
+<!--   <figcaption>Srinivasa Ramanujan (1887-1920).</figcaption> -->
+<!-- </figure> -->
+<!-- </div> -->
+<p><br></br></p>
+<!-- ## Significado geométrico de máximo y mínimo local -->
+<!-- ```{r FigMaxMinA01, fig.cap="Concepto de máximo y mínimo local geometricamente [Imagen tomada de [@thomas2003thomas] pág $1028$]", fig.align='center' ,echo=FALSE, message=FALSE,  warning=FALSE, out.width = "65%"} -->
+<!-- knitr::include_graphics("images/GrafMaxMin_A1.png") -->
 <!-- ``` -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iwKqLbwDjgY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p><a href="https://www.youtube.com/watch?v=iwKqLbwDjgY">Calculadora Casio</a></p>
-<div id="regla-de-cramer-sistemas-2-por-2" class="section level3">
-<h3><span class="header-section-number">2.5.1</span> Regla de Cramer sistemas <span class="math inline">\(2\)</span> por <span class="math inline">\(2\)</span></h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hMEyOtdJdXo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p><a href="https://youtu.be/hMEyOtdJdXo">Regla de Cramer sistema 2 por 2</a></p>
+<!-- Esta es una aplicación para obtener el valor de el Hessiano en un punto $(a,b)$ de una función $f(x,y)$, el Autor:John Jairo Estrada (https://www.geogebra.org/classic/ebw5zjfr) la elaboro usando geogebra. -->
+<!-- <div align="center"> -->
+<!-- <meta name=viewport content="width=device-width,initial-scale=1"> -->
+<!-- <meta charset="utf-8"/> -->
+<!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+<!-- <div id="ggb-elementMaxMinA01"></div>  -->
+<!-- <script>   -->
+<!--        var ggbAppMaxMinA01 = new GGBApplet({"material_id":"ebw5zjfr", -->
+<!--        "width": 800, -->
+<!--        "height": 600, -->
+<!--        "showToolBar": false, -->
+<!--        "showAlgebraInput": false, -->
+<!--        "showMenuBar": false }, -->
+<!--        true); -->
+<!--          window.addEventListener("load", function() {   -->
+<!--            ggbAppMaxMinA01.inject('ggb-elementMaxMinA01'); -->
+<!--       }); -->
+<!-- </script> -->
+<!-- </div> -->
+<div id="definición-de-transformada" class="section level2">
+<h2><span class="header-section-number">9.1</span> Definición de transformada</h2>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-130" class="theorem"><strong>Teorema 9.1  (Definición de transformada de Laplace)  </strong></span>Sea <span class="math inline">\(f\)</span> una función definida para <span class="math inline">\(t \geq 0\)</span>. Entonces se dice que la integral</p>
+<p><span class="math display">\[
+\mathscr{L}\{f(t)\}=F(s)=\int_{0}^{\infty}{e^{-st}f(t)dt}
+\]</span></p>
+<p>es la transformada de Laplace de <span class="math inline">\(f\)</span>, siempre que la integral converja.</p>
+tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill2002ecuaciones" role="doc-biblioref">2002</a>)</span> pág <span class="math inline">\(256\)</span>
 </div>
-<div id="regla-de-cramer-sistemas-3-por-3" class="section level3">
-<h3><span class="header-section-number">2.5.2</span> Regla de Cramer sistemas <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SpRbyapGhtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p><a href="https://youtu.be/SpRbyapGhtk">Regla de Cramer sistemas 3 por 3</a></p>
+
+<p><br></br></p>
+<p><strong>NOTA:</strong> La transformada es una transformación lineal.</p>
+<p><span class="math display">\[
+\mathscr{L}\{\alpha f(t)+\beta g(t)\}=\alpha \mathscr{L}\{f(t)\} + \beta \mathscr{L}\{g(t)\}
+\]</span>
+<br></br></p>
+<div id="ejemplo1-transformada" class="section level3">
+<h3><span class="header-section-number">9.1.1</span> Ejemplo1 Transformada</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-131" class="example"><strong>Ejemplo 9.1  </strong></span>Obtener</p>
+<p><span class="math display">\[
+  \mathscr{L}\{1\}
+\]</span></p>
+tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill2002ecuaciones" role="doc-biblioref">2002</a>)</span> pág <span class="math inline">\(257\)</span>
 </div>
-<div id="regla-de-sarrus-determinante-3-por-3" class="section level3">
-<h3><span class="header-section-number">2.5.3</span> Regla de Sarrus determinante <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bdLfefNCt9c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p><a href="https://youtu.be/bdLfefNCt9c">Regla de Sarrus par obtener un determinantes 3 por 3</a></p>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> Por definición de transformada se tiene:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqTLA1}
+\begin{split}
+\mathscr{L}\{1\} &amp;= \int_{0}^{\infty}{e^{-st}1dt}=\displaystyle\lim_{b \to \infty}{\int_{0}^{b}{e^{-st}1dt}}\\
+&amp; = \displaystyle\lim_{b \to \infty}{\left. \dfrac{-e^{-st}}{s}\right|_{0}^{b}}\\
+&amp; = \displaystyle\lim_{b \to \infty}{\dfrac{-e^{-sb}+1}{s}}=\dfrac{1}{s}, \quad \text{siempre que } \ s&gt;0
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Ya que <span class="math inline">\(e^{-st} \to 0\)</span> conforme <span class="math inline">\(t \to \infty\)</span> para <span class="math inline">\(s&gt;0\)</span>.</p>
 </div>
-<div id="solución-de-la-ecuación-cuadrática" class="section level3">
-<h3><span class="header-section-number">2.5.4</span> Solución de la ecuación cuadrática</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DZa7OflVcB4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p><a href="https://youtu.be/DZa7OflVcB4">Ecuación cuadrática</a></p>
+
+<p><br></br></p>
+</div>
+<div id="ejemplo2-transformada" class="section level3">
+<h3><span class="header-section-number">9.1.2</span> Ejemplo2 Transformada</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-133" class="example"><strong>Ejemplo 9.2  </strong></span>Obtener</p>
+<p><span class="math display">\[
+  \mathscr{L}\{t\}
+\]</span></p>
+tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill2002ecuaciones" role="doc-biblioref">2002</a>)</span> pág <span class="math inline">\(257\)</span>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> Por definición de transformada se tiene:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqTLA2}
+\begin{split}
+\mathscr{L}\{t\} &amp;= \int_{0}^{\infty}{e^{-st}tdt}=\displaystyle\lim_{b \to \infty}{\int_{0}^{b}{e^{-st}tdt}}\\
+&amp; = \displaystyle\lim_{b \to \infty}{\left. \dfrac{-te^{-st}}{s}\right|_{0}^{b}}+\dfrac{1}{s}\int_{0}^{\infty}{e^{-st}dt}\\
+&amp; = \dfrac{1}{s}\mathscr{L}\{1\}=\dfrac{1}{s}\left(\dfrac{1}{s}\right)=\dfrac{1}{s^2}, \quad \text{siempre que } \ s&gt;0
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Ya que <span class="math inline">\(\displaystyle\lim_{t \to \infty}{te^{-st}}=0\)</span>, para <span class="math inline">\(s&gt;0\)</span>.</p>
+</div>
+
+<p><br></br></p>
+</div>
+<div id="ejemplo3-transformada" class="section level3">
+<h3><span class="header-section-number">9.1.3</span> Ejemplo3 Transformada</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-135" class="example"><strong>Ejemplo 9.3  </strong></span>Obtener</p>
+<p><span class="math display">\[
+  \mathscr{L}\{e^{-3t}\}
+\]</span></p>
+tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill2002ecuaciones" role="doc-biblioref">2002</a>)</span> pág <span class="math inline">\(257\)</span>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> Por definición de transformada se tiene:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqTLA3}
+\begin{split}
+\mathscr{L}\{e^{-3t}\} &amp;= \int_{0}^{\infty}{e^{-st}e^{-3t}dt}=\displaystyle\lim_{b \to \infty}{\int_{0}^{b}{e^{-(s+3)t}dt}}\\
+&amp; = \left.\dfrac{-e^{-(s+3)t}}{s+3}\right|_{0}^{\infty}\\
+&amp; = \dfrac{1}{s+3}, \quad s&gt;-3.
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Ya que <span class="math inline">\(\displaystyle\lim_{t \to \infty}{e^{-(s+3)t}}=0\)</span>, para <span class="math inline">\(s+3&gt;0\)</span>.</p>
+</div>
 
 </div>
+</div>
+<div id="tabla-de-transformadas" class="section level2">
+<h2><span class="header-section-number">9.2</span> Tabla de transformadas</h2>
+<p><span class="math display">\[
+\begin{matrix} 
+\text{Función} \ f(t) &amp; \text{Transformada} &amp; \\
+1 &amp; \dfrac{1}{s} &amp; \\
+t &amp; \dfrac{1}{s^2} &amp; \\
+t^{n} &amp; \dfrac{n!}{s^{n+1}} &amp; \\
+e^{at} &amp; \dfrac{1}{s-a} &amp; \\
+sen(kt) &amp; \dfrac{k}{s^2+k^2} &amp; \\
+cos(kt) &amp; \dfrac{s}{s^2+k^2} &amp; \\
+senh(kt) &amp; \dfrac{k}{s^2-k^2} &amp; \\
+cosh(kt) &amp; \dfrac{s}{s^2-k^2} &amp; \\
+f&#39;(t) &amp; sF(s)-f(0) &amp; \\
+f&#39;&#39;(t) &amp; s^2F(s)-sf(0)-f&#39;(0) &amp; \\
+e^{at}f(t) &amp; F(s-a) &amp; \\
+t^{n}f(t) &amp; (-1)^{n}\dfrac{d^n}{ds^n}{F(s)} &amp; \\
+\end{matrix}
+\]</span></p>
+
+</div>
+</div>
+<h3>Referencias</h3>
+<div id="refs" class="references">
+<div id="ref-zill2002ecuaciones">
+<p>Zill, Dennis G, Ana Elizabeth Garcı́a Hernández, and Ernesto Filio López. 2002. <em>Ecuaciones Diferenciales Con Aplicaciones de Modelado</em>. 970-686-487-3. Thomson Learning México.</p>
 </div>
 </div>
             </section>
@@ -399,8 +396,8 @@ la calculadora Casio (incluyendo versiones como <span class="math inline">\(f_{x
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="intro.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="integrales-triples.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="referencias.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
