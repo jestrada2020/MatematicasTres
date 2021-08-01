@@ -1577,11 +1577,12 @@ son convergentes, entonces por definición</p>
 \displaystyle\int_{-\infty}^{\infty}{f(x)dx}=\displaystyle\int_{-\infty}^{a}{f(x)dx}+\displaystyle\int_{a}^{\infty}{f(x)dx}
 \]</span></p>
 <p>se puede emplear cualquier número real <span class="math inline">\(a\)</span> en la parte (c).</p>
+Tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(429\)</span>
 </div>
 
 <p><strong>Interpretación geométrica de la integral impropia tipo Uno</strong></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA01"></span>
-<img src="images/IntImpropiaTipoUno_A1.png" alt="Interpretación geométrica Área bajo la curva de una integral impropia [Imagen tomada de [@stewart2020calculus] pág $429$]" width="50%" />
+<img src="images/IntImpropiaTipoUno_A1.png" alt="Interpretación geométrica Área bajo la curva de una integral impropia [Imagen tomada de [@stewart2020calculus] pág $429$]" width="60%" />
 <p class="caption">
 Figura 6.9: Interpretación geométrica Área bajo la curva de una integral impropia [Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(429\)</span>]
 </p>
@@ -1590,14 +1591,14 @@ Figura 6.9: Interpretación geométrica Área bajo la curva de una integral impr
 <h3><span class="header-section-number">6.16.1</span> Ejemplo1 integral impropia tipo Uno</h3>
 
 <div class="example">
-<span id="exm:unnamed-chunk-101" class="example"><strong>Ejemplo 6.24  (Integral impropia tipo Uno)  </strong></span>Evalúe la integral
+<p><span id="exm:unnamed-chunk-101" class="example"><strong>Ejemplo 6.24  (Integral impropia tipo Uno)  </strong></span>Evalúe la integral
 <span class="math display">\[
 \displaystyle\int_{-\infty}^{\infty}{\dfrac{1}{1+x^2}dx}
-\]</span>
+\]</span></p>
 </div>
 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA02"></span>
-<img src="images/IntImpropiaTipoUno_A2.png" alt="Ejemplo área bajo la curva de una integral impropia [Imagen tomada de [@stewart2020calculus] pág $431$]" width="65%" />
+<img src="images/IntImpropiaTipoUno_A2.png" alt="Ejemplo área bajo la curva de una integral impropia [Imagen tomada de [@stewart2020calculus] pág $431$]" width="45%" />
 <p class="caption">
 Figura 6.10: Ejemplo área bajo la curva de una integral impropia [Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(431\)</span>]
 </p>
@@ -1730,8 +1731,23 @@ Figura 6.11: Interpretación geométrica área bajo la curva de una integral imp
 <p><span id="def:unnamed-chunk-109" class="definition"><strong>Definición 6.6  (Integral impropia tipo 2)  </strong></span>
 (a.) Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b)\)</span> y discontinua en <span class="math inline">\(x=b\)</span>, entonces</p>
 <p><span class="math display">\[
-\displaystyle\int_{a}^{b}{f(x)dx}=\lim_{t \to b^{+}}{\int_{a}^{t}{f(x)dx}}
+\displaystyle\int_{a}^{b}{f(x)dx}=\lim_{t \to b^{-}}{\int_{a}^{t}{f(x)dx}}
+\]</span>
+Si este límite existe, como un número finito.</p>
+<p>(b.) Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\((a,b]\)</span> y discontinua en <span class="math inline">\(x=a\)</span>, entonces</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{b}{f(x)dx}=\lim_{t \to a^{+}}{\int_{t}^{b}{f(x)dx}}
+\]</span>
+Si este límite existe, como un número finito. Las integrales impropias se llaman convergentes si hay tal límite y divergentes si no existe.</p>
+<p>(c.) Si <span class="math inline">\(f\)</span> tiene una discontinuidad en <span class="math inline">\(x=c\)</span> y <span class="math inline">\(a&lt;c&lt;b\)</span>, y si son convergentes tanto</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{c}{f(x)dx} \quad \text{ como } \quad \displaystyle\int_{c}^{b}{f(x)dx}
+\]</span>
+por definición</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\int_{a}^{c}{f(x)dx}+\displaystyle\int_{c}^{b}{f(x)dx}
 \]</span></p>
+Tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(432\)</span>
 </div>
 
 
