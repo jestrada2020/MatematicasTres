@@ -24,7 +24,7 @@
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2021-08-01" />
+<meta name="date" content="2021-08-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -176,7 +176,12 @@
 <li class="chapter" data-level="6.16.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>6.16.3</b> Ejemplo3 integral impropia tipo Uno</a></li>
 <li class="chapter" data-level="6.16.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>6.16.4</b> Ejemplo4 integral impropia tipo Uno</a></li>
 </ul></li>
-<li class="chapter" data-level="6.17" data-path="integrales-simples.html"><a href="integrales-simples.html#integrales-impropias-tipo-2"><i class="fa fa-check"></i><b>6.17</b> Integrales impropias tipo 2</a></li>
+<li class="chapter" data-level="6.17" data-path="integrales-simples.html"><a href="integrales-simples.html#integrales-impropias-tipo-2"><i class="fa fa-check"></i><b>6.17</b> Integrales impropias tipo 2</a><ul>
+<li class="chapter" data-level="6.17.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-integral-impropia-tipo-2-caso-b"><i class="fa fa-check"></i><b>6.17.1</b> Ejemplo1 Integral impropia tipo 2 caso (b)</a></li>
+<li class="chapter" data-level="6.17.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-integral-impropia-tipo-2-caso-a"><i class="fa fa-check"></i><b>6.17.2</b> Ejemplo2 Integral impropia tipo 2 caso (a)</a></li>
+<li class="chapter" data-level="6.17.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-integral-impropia-tipo-2-caso-c"><i class="fa fa-check"></i><b>6.17.3</b> Ejemplo3 Integral impropia tipo 2 caso (c)</a></li>
+</ul></li>
+<li class="chapter" data-level="6.18" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>6.18</b> Teorema de comparacion para integrales impropias</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
 <li class="chapter" data-level="7.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>7.1</b> Definición de integral doble</a></li>
@@ -1748,6 +1753,133 @@ por definición</p>
 \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\int_{a}^{c}{f(x)dx}+\displaystyle\int_{c}^{b}{f(x)dx}
 \]</span></p>
 Tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(432\)</span>
+</div>
+
+<p><br></br></p>
+<div id="ejemplo1-integral-impropia-tipo-2-caso-b" class="section level3">
+<h3><span class="header-section-number">6.17.1</span> Ejemplo1 Integral impropia tipo 2 caso (b)</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-110" class="example"><strong>Ejemplo 6.28  (Integral impropia tipo 2 caso (b))  </strong></span>Evalúe la integral</p>
+<span class="math display">\[
+\displaystyle\int_{2}^{5}{\dfrac{1dx}{\sqrt{x-2}}}
+\]</span>
+Tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(433\)</span>
+</div>
+
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA04"></span>
+<img src="images/EjIntImpropiaTipo2_A1.png" alt="Interpretación geométrica área bajo la curva. Integral impropia tipo II parte (b)[Imagen tomada de [@stewart2020calculus] pág $433$]" width="45%" />
+<p class="caption">
+Figura 6.12: Interpretación geométrica área bajo la curva. Integral impropia tipo II parte (b)[Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(433\)</span>]
+</p>
+</div>
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> Es bueno resaltar que <span class="math inline">\(f(x)=1/\sqrt{x-2}\)</span> tiene una asíntota en <span class="math inline">\(x=2\)</span>. Es decir <span class="math inline">\(f\)</span> es discontinua en <span class="math inline">\((2,5]\)</span>. Entonces aplicando el caso (b) se tiene</p>
+<span class="math display">\[
+\begin{equation} \label{eqIntImpropiaA4}
+\begin{split}
+\displaystyle\int_{2}^{5}{\dfrac{1dx}{\sqrt{x-2}}} &amp; =\lim_{t \to 2^{+}}\int_{t}^{5}{\dfrac{1dx}{\sqrt{x-2}}}=\lim_{t \to 2^{+}}\left. 2\sqrt{x-2} \right]_{t}^{5} \\
+&amp; = 2\lim_{t \to 2^{+}}\left(\sqrt{3}-\sqrt{t-2}\right)\\
+&amp; = 2\sqrt{3}
+\end{split}
+\end{equation} 
+\]</span>
+</div>
+
+<p><br></br></p>
+</div>
+<div id="ejemplo2-integral-impropia-tipo-2-caso-a" class="section level3">
+<h3><span class="header-section-number">6.17.2</span> Ejemplo2 Integral impropia tipo 2 caso (a)</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-112" class="example"><strong>Ejemplo 6.29  (Integral impropia tipo 2 caso (a))  </strong></span>Evalúe la integral</p>
+<span class="math display">\[
+\displaystyle\int_{0}^{1}{\dfrac{1dx}{\sqrt{1-x^2}}}
+\]</span>
+Tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(485\)</span>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> Es bueno resaltar que <span class="math inline">\(f(x)=1/\sqrt{1-x^2}\)</span> tiene una asíntota en <span class="math inline">\(x=1\)</span>. Es decir <span class="math inline">\(f\)</span> es discontinua en <span class="math inline">\([0,1)\)</span>. Entonces aplicando el caso (a) se tiene</p>
+<span class="math display">\[
+\begin{equation} \label{eqIntImpropiaA5}
+\begin{split}
+\displaystyle\int_{0}^{1}{\dfrac{1dx}{\sqrt{1-x^2}}} &amp; =\lim_{t \to 1^{-}}\int_{0}^{t}{\dfrac{1dx}{\sqrt{1-x^2}}}=\lim_{t \to 1^{-}}\left[arcsen(x) \right]_{0}^{t}\\
+&amp; = \lim_{t \to 1^{-}}\left(arcsen(t)-arcsen(0)\right)\\
+&amp; = \dfrac{\pi}{2}-0=\dfrac{\pi}{2}
+\end{split}
+\end{equation} 
+\]</span>
+</div>
+
+<p><br></br></p>
+</div>
+<div id="ejemplo3-integral-impropia-tipo-2-caso-c" class="section level3">
+<h3><span class="header-section-number">6.17.3</span> Ejemplo3 Integral impropia tipo 2 caso (c)</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-114" class="example"><strong>Ejemplo 6.30  (Integral impropia tipo 2 caso (c))  </strong></span>Evalúe la integral</p>
+<p><span class="math display">\[
+\displaystyle\int_{0}^{3}{\dfrac{1dx}{x-1}}
+\]</span></p>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> Es bueno resaltar que <span class="math inline">\(f(x)=1/(x-1)\)</span> tiene una asíntota en <span class="math inline">\(x=1\)</span>. Es decir <span class="math inline">\(f\)</span> es discontinua en <span class="math inline">\([0,3]\)</span>. Entonces aplicando el caso (c) se tiene</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqIntImpropiaA6}
+\begin{split}
+\displaystyle\int_{0}^{3}{\dfrac{1dx}{x-1}} &amp;=\displaystyle\int_{0}^{1}{\dfrac{1dx}{x-1}}+\displaystyle\int_{1}^{3}{\dfrac{1dx}{x-1}}\\
+&amp; \\
+\text{Resolviendo la primera integral así:} &amp;\\
+\displaystyle\int_{0}^{1}{\dfrac{1dx}{x-1}} &amp; =\lim_{t \to 1^{-}}\int_{0}^{t}{\dfrac{1dx}{x-1}}=\lim_{t \to 1^{-}}\left[ln|x-1| \right]_{0}^{t}\\
+&amp; = \lim_{t \to 1^{-}}\left(ln|t-1|-ln|-1|\right) = \lim_{t \to 1^{-}}\left(ln|t-1|\right) =-\infty\\ 
+\text{Se concluye que la primera integral diverge} &amp;\\
+\end{split}
+\end{equation} 
+\]</span>
+Por lo tanto la integral planteada</p>
+<span class="math display">\[
+\displaystyle\int_{0}^{3}{\dfrac{1dx}{x-1}} 
+\]</span>
+Es divergente y no es necesario evaluar la inegral <span class="math inline">\(\displaystyle\int_{1}^{3}{\dfrac{1dx}{x-1}}\)</span>
+</div>
+
+<p><br></br></p>
+</div>
+</div>
+<div id="teorema-de-comparacion-para-integrales-impropias" class="section level2">
+<h2><span class="header-section-number">6.18</span> Teorema de comparacion para integrales impropias</h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA05"></span>
+<img src="images/IntImpropiaTmaCOMPARACION.png" alt="Teorema de comparación de integrales impropias [Imagen tomada de [@stewart2020calculus] pág $434$]" width="45%" />
+<p class="caption">
+Figura 6.13: Teorema de comparación de integrales impropias [Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(434\)</span>]
+</p>
+</div>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-116" class="theorem"><strong>Teorema 6.5  (Teorema de comparación para integrales impropias)  </strong></span>Supongamos que <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> son funciones continuas con la propiedad de que <span class="math inline">\(f(x) \geq g(x) \geq 0\)</span> para <span class="math inline">\(x \geq a\)</span>.</p>
+<p>(a.) Si</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{\infty}{f(x)dx}
+\]</span></p>
+<p>es convergente, entonces</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{\infty}{g(x)dx}
+\]</span>
+es convergente.</p>
+<p>(b.) Si</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{\infty}{g(x)dx}
+\]</span></p>
+<p>es divergente, entonces</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{\infty}{f(x)dx}
+\]</span></p>
+es divergente.
 </div>
 
 
