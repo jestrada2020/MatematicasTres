@@ -205,12 +205,15 @@
 <li class="chapter" data-level="8.6" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-4"><i class="fa fa-check"></i><b>8.6</b> Ejercicio integral triple</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><i class="fa fa-check"></i><b>9</b> Métodos de solución para Ecuaciones Diferenciales (EDO)</a><ul>
-<li class="chapter" data-level="9.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-de-transformada"><i class="fa fa-check"></i><b>9.1</b> Definición de transformada</a><ul>
-<li class="chapter" data-level="9.1.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-transformada"><i class="fa fa-check"></i><b>9.1.1</b> Ejemplo1 Transformada</a></li>
-<li class="chapter" data-level="9.1.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-transformada"><i class="fa fa-check"></i><b>9.1.2</b> Ejemplo2 Transformada</a></li>
-<li class="chapter" data-level="9.1.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo3-transformada"><i class="fa fa-check"></i><b>9.1.3</b> Ejemplo3 Transformada</a></li>
+<li class="chapter" data-level="9.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-para-una-ecuación-diferencial"><i class="fa fa-check"></i><b>9.1</b> Definición para una Ecuación Diferencial</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplos-de-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>9.1.1</b> Ejemplos de ecuaciones diferenciales</a></li>
 </ul></li>
-<li class="chapter" data-level="9.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#tabla-de-transformadas"><i class="fa fa-check"></i><b>9.2</b> Tabla de transformadas</a></li>
+<li class="chapter" data-level="9.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-de-transformada"><i class="fa fa-check"></i><b>9.2</b> Definición de transformada</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-transformada"><i class="fa fa-check"></i><b>9.2.1</b> Ejemplo1 Transformada</a></li>
+<li class="chapter" data-level="9.2.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-transformada"><i class="fa fa-check"></i><b>9.2.2</b> Ejemplo2 Transformada</a></li>
+<li class="chapter" data-level="9.2.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo3-transformada"><i class="fa fa-check"></i><b>9.2.3</b> Ejemplo3 Transformada</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#tabla-de-transformadas"><i class="fa fa-check"></i><b>9.3</b> Tabla de transformadas</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
 <li class="divider"></li>
@@ -269,11 +272,92 @@
 <!--       }); -->
 <!-- </script> -->
 <!-- </div> -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEDOA01"></span>
+<img src="images/EsquemaModeladoEDO_A1.png" alt="Modelado matemático [Imagen tomada de [@stewart2020calculus] pág $24$]" width="110%" />
+<p class="caption">
+Figura 9.1: Modelado matemático [Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(24\)</span>]
+</p>
+</div>
+<div id="definición-para-una-ecuación-diferencial" class="section level2">
+<h2><span class="header-section-number">9.1</span> Definición para una Ecuación Diferencial</h2>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-140" class="definition"><strong>Definición 9.1  (Definición de ecuación diferencial)  </strong></span>Es una ecuación que contiene una función desconocida <span class="math inline">\(y\)</span> y algunas de sus derivadas.
+Un ejemplo de ecuación diferencial es el modelado matemático que con frecuencia toma está forma. Esto no es sorprendente, porque en los problemas del mundo real, es común observar que ocurran cambios y se desea predecir el comportamiento futuro con respecto a como cambian los valores actuales.</p>
+tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(24\)</span> y <span class="math inline">\(567\)</span>
+</div>
+
+<div id="ejemplos-de-ecuaciones-diferenciales" class="section level3">
+<h3><span class="header-section-number">9.1.1</span> Ejemplos de ecuaciones diferenciales</h3>
+<p><strong>Modelos de crecimiento poblacional</strong></p>
+<p><span class="math display">\[
+\boxed{
+\dfrac{dP}{dt}=kP}
+\]</span>
+donde <span class="math inline">\(t\)</span> represente al tiempo (variable independiente), y <span class="math inline">\(P\)</span> representa el número de individuos en la población (variable dependiente).</p>
+<p><br></br></p>
+<p><strong>Modelo logístico</strong></p>
+<p>Existe evidencia considerable para apoyar la teoría de que para <strong>algunas especies</strong> hay una población mínima <span class="math inline">\(m\)</span> tal que las especies se extinguirán si el tamaño de la población cae por debajo de <span class="math inline">\(m\)</span>.</p>
+<p><span class="math display">\[
+\boxed{
+\dfrac{dP}{dt}=kP\left(1-\dfrac{Ṕ}{K}\right)\left(1-\dfrac{m}{P}\right)}
+\]</span></p>
+<p>donde <span class="math inline">\(P\)</span> es creciente si <span class="math inline">\(m&lt;P&lt;K\)</span>, y <span class="math inline">\(P\)</span> es decreciente si <span class="math inline">\(0&lt;P&lt;m\)</span>. Recordar que su <strong>capacidad de soporte</strong> es <span class="math inline">\(K\)</span>.</p>
+<p><br></br></p>
+<p><strong>Modelo de la pesca para el hipogloso del Pacífico</strong></p>
+<p>Esta pesca ha sido representada por</p>
+<p><span class="math display">\[
+\boxed{
+\dfrac{dy}{dt}=ky\left(1-\dfrac{y}{K}\right)}
+\]</span></p>
+<p>donde <span class="math inline">\(y(t)\)</span> es la biomasa (la masa total de los integrantes de la población) en kilogramos en el tiempo <span class="math inline">\(t\)</span> (medido en años), la capacidad de soporte se estima como <span class="math inline">\(K=8 \times 10^{7}kg\)</span>, y <span class="math inline">\(k=0.71\)</span> por año.</p>
+<p><br></br></p>
+<p><strong>Modelo depredador presa</strong></p>
+<p>Aquí <span class="math inline">\(R\)</span> respresenta la población de conejos, y <span class="math inline">\(W\)</span> representa la población de depredadores. El sistema de ecuaciones diferenciales que modela ambas poblaciones es:</p>
+<p><span class="math display">\[
+\begin{matrix} 
+(1.) &amp;  \dfrac{dR}{dt}=kR-aRW \\ 
+(2.) &amp; \dfrac{dW}{dt}=-rW+bRW 
+\end{matrix}
+\]</span></p>
+<p>donde <span class="math inline">\(k,r,a,b\)</span> son constantes positivas. Observe que el término <span class="math inline">\(-aRW\)</span> disminuye la rapidez de crecimiento natural de la presa, y el término <span class="math inline">\(bRW\)</span> incrementa la rapidez de crecimiento natural de los depredadores</p>
+<p><br></br></p>
+<p><strong>Modelos de mezclas</strong></p>
+<p><span class="math display">\[
+\boxed{
+\dfrac{dy}{dt}=(\text{ proporción de entrada})-(\text{proporción de salida})}
+\]</span></p>
+<p><strong>Proporción de entrada</strong> es la relación a la que la sal entra al recipiente y <strong>proporción de salida</strong> es la relación a la que la sal sale del recipiente.</p>
+<p><br></br></p>
+<p><strong>Modelos de la química</strong></p>
+<p>En una reacción química elemental, las moléculas simples de dos reactivos <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> forman una molécula del producto <span class="math inline">\(C\)</span>:</p>
+<p><span class="math display">\[
+A+B \ \longmapsto \ C
+\]</span>
+La ley de acción de masas establece que la velocidad de reacción es proporcional al producto de las concentraciones de <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span>:</p>
+<p><span class="math display">\[
+\boxed{
+\dfrac{d[C]}{dt}=k[A][B]}
+\]</span></p>
+<p><br></br></p>
+<p><strong>Modelos de la ley de Newton para la gravitación universal</strong></p>
+<p>Sabemos que la <span class="math inline">\(F\)</span> sobre un objeto de masa <span class="math inline">\(m\)</span> que ha sido proyectado verticalmente hacia arriba desde l superficie terrestre es:</p>
+<p><span class="math display">\[
+F=\dfrac{mgR^2}{(x+R)^2}
+\]</span></p>
+<p>donde <span class="math inline">\(x=x(t)\)</span> es la distancia del objeto arriba de la superficie en el tiempo <span class="math inline">\(t\)</span>, <span class="math inline">\(R\)</span> es el radio de la Tierra y <span class="math inline">\(g\)</span> es la aceleración debida a la gravedad. Por la segundo ley de Newton <span class="math inline">\(F=ma=m(dv/dt)\)</span> y, por lo tanto,</p>
+<p><span class="math display">\[
+\boxed{
+m\dfrac{dv}{dt}=-\dfrac{mgR^2}{(x+R)^2}}
+\]</span></p>
+<p><br></br></p>
+</div>
+</div>
 <div id="definición-de-transformada" class="section level2">
-<h2><span class="header-section-number">9.1</span> Definición de transformada</h2>
+<h2><span class="header-section-number">9.2</span> Definición de transformada</h2>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-140" class="theorem"><strong>Teorema 9.1  (Definición de transformada de Laplace)  </strong></span>Sea <span class="math inline">\(f\)</span> una función definida para <span class="math inline">\(t \geq 0\)</span>. Entonces se dice que la integral</p>
+<p><span id="thm:unnamed-chunk-141" class="theorem"><strong>Teorema 9.1  (Definición de transformada de Laplace)  </strong></span>Sea <span class="math inline">\(f\)</span> una función definida para <span class="math inline">\(t \geq 0\)</span>. Entonces se dice que la integral</p>
 <p><span class="math display">\[
 \mathscr{L}\{f(t)\}=F(s)=\int_{0}^{\infty}{e^{-st}f(t)dt}
 \]</span></p>
@@ -285,13 +369,13 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 <p><strong>NOTA:</strong> La transformada es una transformación lineal.</p>
 <p><span class="math display">\[
 \mathscr{L}\{\alpha f(t)+\beta g(t)\}=\alpha \mathscr{L}\{f(t)\} + \beta \mathscr{L}\{g(t)\}
-\]</span>
-<br></br></p>
+\]</span></p>
+<p><br></br></p>
 <div id="ejemplo1-transformada" class="section level3">
-<h3><span class="header-section-number">9.1.1</span> Ejemplo1 Transformada</h3>
+<h3><span class="header-section-number">9.2.1</span> Ejemplo1 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-141" class="example"><strong>Ejemplo 9.1  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-142" class="example"><strong>Ejemplo 9.1  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{1\}
 \]</span></p>
@@ -316,10 +400,10 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 <p><br></br></p>
 </div>
 <div id="ejemplo2-transformada" class="section level3">
-<h3><span class="header-section-number">9.1.2</span> Ejemplo2 Transformada</h3>
+<h3><span class="header-section-number">9.2.2</span> Ejemplo2 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-143" class="example"><strong>Ejemplo 9.2  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-144" class="example"><strong>Ejemplo 9.2  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{t\}
 \]</span></p>
@@ -344,10 +428,10 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 <p><br></br></p>
 </div>
 <div id="ejemplo3-transformada" class="section level3">
-<h3><span class="header-section-number">9.1.3</span> Ejemplo3 Transformada</h3>
+<h3><span class="header-section-number">9.2.3</span> Ejemplo3 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-145" class="example"><strong>Ejemplo 9.3  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-146" class="example"><strong>Ejemplo 9.3  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{e^{-3t}\}
 \]</span></p>
@@ -372,7 +456,7 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 </div>
 </div>
 <div id="tabla-de-transformadas" class="section level2">
-<h2><span class="header-section-number">9.2</span> Tabla de transformadas</h2>
+<h2><span class="header-section-number">9.3</span> Tabla de transformadas</h2>
 <p><span class="math display">\[
 \begin{matrix} 
 \text{Función} \ f(t) &amp; \text{Transformada} &amp; \\
@@ -395,6 +479,9 @@ t^{n}f(t) &amp; (-1)^{n}\dfrac{d^n}{ds^n}{F(s)} &amp; \\
 </div>
 <h3>Referencias</h3>
 <div id="refs" class="references">
+<div id="ref-stewart2020calculus">
+<p>Stewart, James, Daniel K Clegg, and Saleem Watson. 2020a. <em>Calculus: Early Transcendentals</em>. Cengage Learning.</p>
+</div>
 <div id="ref-zill2002ecuaciones">
 <p>Zill, Dennis G, Ana Elizabeth Garcı́a Hernández, and Ernesto Filio López. 2002. <em>Ecuaciones Diferenciales Con Aplicaciones de Modelado</em>. 970-686-487-3. Thomson Learning México.</p>
 </div>
