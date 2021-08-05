@@ -122,10 +122,12 @@ exr:unnamed-chunk-138
 exr:unnamed-chunk-139
 fig:FigEDOA01
 def:unnamed-chunk-140
-thm:unnamed-chunk-141
+def:unnamed-chunk-141
 exm:unnamed-chunk-142
-exm:unnamed-chunk-144
-exm:unnamed-chunk-146
+thm:unnamed-chunk-144
+exm:unnamed-chunk-145
+exm:unnamed-chunk-147
+exm:unnamed-chunk-149
 prerrequisitos
 comportamentales
 evaluativos
@@ -240,6 +242,8 @@ ejercicio-integral-triple-4
 métodos-de-solución-para-ecuaciones-diferenciales-edo
 definición-para-una-ecuación-diferencial
 ejemplos-de-ecuaciones-diferenciales
+método-para-separar-variables
+ejemplo1-ec-diferencial-separable
 definición-de-transformada
 ejemplo1-transformada
 ejemplo2-transformada

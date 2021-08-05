@@ -24,7 +24,7 @@
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2021-08-02" />
+<meta name="date" content="2021-08-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -208,12 +208,15 @@
 <li class="chapter" data-level="9.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-para-una-ecuación-diferencial"><i class="fa fa-check"></i><b>9.1</b> Definición para una Ecuación Diferencial</a><ul>
 <li class="chapter" data-level="9.1.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplos-de-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>9.1.1</b> Ejemplos de ecuaciones diferenciales</a></li>
 </ul></li>
-<li class="chapter" data-level="9.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-de-transformada"><i class="fa fa-check"></i><b>9.2</b> Definición de transformada</a><ul>
-<li class="chapter" data-level="9.2.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-transformada"><i class="fa fa-check"></i><b>9.2.1</b> Ejemplo1 Transformada</a></li>
-<li class="chapter" data-level="9.2.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-transformada"><i class="fa fa-check"></i><b>9.2.2</b> Ejemplo2 Transformada</a></li>
-<li class="chapter" data-level="9.2.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo3-transformada"><i class="fa fa-check"></i><b>9.2.3</b> Ejemplo3 Transformada</a></li>
+<li class="chapter" data-level="9.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-para-separar-variables"><i class="fa fa-check"></i><b>9.2</b> Método para separar variables</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-ec-diferencial-separable"><i class="fa fa-check"></i><b>9.2.1</b> Ejemplo1 Ec Diferencial separable</a></li>
 </ul></li>
-<li class="chapter" data-level="9.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#tabla-de-transformadas"><i class="fa fa-check"></i><b>9.3</b> Tabla de transformadas</a></li>
+<li class="chapter" data-level="9.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-de-transformada"><i class="fa fa-check"></i><b>9.3</b> Definición de transformada</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-transformada"><i class="fa fa-check"></i><b>9.3.1</b> Ejemplo1 Transformada</a></li>
+<li class="chapter" data-level="9.3.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-transformada"><i class="fa fa-check"></i><b>9.3.2</b> Ejemplo2 Transformada</a></li>
+<li class="chapter" data-level="9.3.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo3-transformada"><i class="fa fa-check"></i><b>9.3.3</b> Ejemplo3 Transformada</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#tabla-de-transformadas"><i class="fa fa-check"></i><b>9.4</b> Tabla de transformadas</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
 <li class="divider"></li>
@@ -353,11 +356,97 @@ m\dfrac{dv}{dt}=-\dfrac{mgR^2}{(x+R)^2}}
 <p><br></br></p>
 </div>
 </div>
+<div id="método-para-separar-variables" class="section level2">
+<h2><span class="header-section-number">9.2</span> Método para separar variables</h2>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-141" class="definition"><strong>Definición 9.2  (Ec diferencial separable)  </strong></span>Una ecuación diferencial de la forma:</p>
+<p><span class="math display">\[
+\dfrac{dy}{dx}=f(x,y)
+\]</span>
+Se dice separable si <span class="math inline">\(f\)</span> puede ser expresado como</p>
+<p><span class="math display">\[
+f(x,y)=\dfrac{g(x)}{h(y)} \qquad \text{ ó } \qquad f(x,y)=g(x).h(y)
+\]</span></p>
+<p>Además</p>
+<p><span class="math display">\[
+\dfrac{dy}{dx}=f(x,y) \qquad \text{ es equivalente a } \qquad H(y)dy=G(x)dx
+\]</span></p>
+</div>
+
+<p><br></br></p>
+<div id="ejemplo1-ec-diferencial-separable" class="section level3">
+<h3><span class="header-section-number">9.2.1</span> Ejemplo1 Ec Diferencial separable</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-142" class="example"><strong>Ejemplo 9.1  (Ec Diferencial separable)  </strong></span>Resuelva la ecuación diferencial</p>
+<p><span class="math display">\[
+\dfrac{dy}{dx}=\dfrac{x^2}{y^2}
+\]</span></p>
+y determine el valor de la constante <span class="math inline">\(C\)</span> bajo la condición inicial <span class="math inline">\(y(0)=2\)</span>.
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> Como la ecuación diferencial es separable, ya que <span class="math inline">\(f(x,y)=\dfrac{x^2}{y^2}\)</span> tiene la forma f(x,y)=, entonce se puede separar o reespresar en la forma:</p>
+<p><span class="math display">\[
+H(y)dy=G(x)dx  
+\]</span>
+Es decir:</p>
+<p><span class="math display">\[
+y^2dy=x^2dx  \qquad \text{ Se ve que la variable} \ \ y \ \ \text{ quedo del lado izquierdo,}\\
+\qquad \qquad \text{y a la} \ \ x \ \ \text{del lado derecho}
+\]</span><br />
+Integramos en ambos lados así:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqDifA01}
+\begin{split}
+\int{y^2dy} &amp;= \int{x^2dx}+ C\\
+\dfrac{x^3}{3} &amp; = \dfrac{y^3}{3}+C
+\end{split}
+\end{equation} 
+\]</span></p>
+<p>Esta forma de presentación para la solución de la EDO se conoce como:
+<span class="math display">\[
+\boxed{
+  \dfrac{x^3}{3} = \dfrac{y^3}{3}+C} \quad \text{Solución implícita}
+\]</span>
+Ahora se determinara el valor de <span class="math inline">\(C\)</span> usando la condición inicial <span class="math inline">\(y((0)=2\)</span>. Importante dar interpretación a la condición inicial así:</p>
+<p><span class="math display">\[
+y(0)=2 \qquad \text{ es equivalente a afirmar que } \qquad x=0, \quad \text{ y } \quad y=2
+\]</span></p>
+<p>Reemplazando estos valores de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> en la solución implícita se obtiene:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqDifA02}
+\begin{split}
+\dfrac{(0)^3}{3} &amp; = \dfrac{(2)^3}{3}+C\\
+0 &amp; =\dfrac{8}{3}+C\\
+\dfrac{-8}{3} &amp; =C
+\end{split}
+\end{equation} 
+\]</span>
+Reemplazando en la solución implícta el valor de la constante <span class="math inline">\(C\)</span> tenemos:</p>
+<span class="math display">\[
+\begin{equation} \label{eqDifA03}
+\begin{split}
+\dfrac{x^3}{3} &amp; = \dfrac{y^3}{3}-\dfrac{8}{3}\\
+3.\left(\dfrac{x^3}{3}\right) &amp; =3.\left(\dfrac{y^3}{3}-\dfrac{8}{3}\right)\\
+x^3 &amp; = y^3-8\\
+x^3+8 &amp; = y^3\\
+\sqrt[3]{x^3+8} &amp; = y  \quad \text{esta presentación se conoce com solución explícita}
+\end{split}
+\end{equation} 
+\]</span>
+</div>
+
+<p><br></br></p>
+</div>
+</div>
 <div id="definición-de-transformada" class="section level2">
-<h2><span class="header-section-number">9.2</span> Definición de transformada</h2>
+<h2><span class="header-section-number">9.3</span> Definición de transformada</h2>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-141" class="theorem"><strong>Teorema 9.1  (Definición de transformada de Laplace)  </strong></span>Sea <span class="math inline">\(f\)</span> una función definida para <span class="math inline">\(t \geq 0\)</span>. Entonces se dice que la integral</p>
+<p><span id="thm:unnamed-chunk-144" class="theorem"><strong>Teorema 9.1  (Definición de transformada de Laplace)  </strong></span>Sea <span class="math inline">\(f\)</span> una función definida para <span class="math inline">\(t \geq 0\)</span>. Entonces se dice que la integral</p>
 <p><span class="math display">\[
 \mathscr{L}\{f(t)\}=F(s)=\int_{0}^{\infty}{e^{-st}f(t)dt}
 \]</span></p>
@@ -372,10 +461,10 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 \]</span></p>
 <p><br></br></p>
 <div id="ejemplo1-transformada" class="section level3">
-<h3><span class="header-section-number">9.2.1</span> Ejemplo1 Transformada</h3>
+<h3><span class="header-section-number">9.3.1</span> Ejemplo1 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-142" class="example"><strong>Ejemplo 9.1  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-145" class="example"><strong>Ejemplo 9.2  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{1\}
 \]</span></p>
@@ -400,10 +489,10 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 <p><br></br></p>
 </div>
 <div id="ejemplo2-transformada" class="section level3">
-<h3><span class="header-section-number">9.2.2</span> Ejemplo2 Transformada</h3>
+<h3><span class="header-section-number">9.3.2</span> Ejemplo2 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-144" class="example"><strong>Ejemplo 9.2  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-147" class="example"><strong>Ejemplo 9.3  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{t\}
 \]</span></p>
@@ -428,10 +517,10 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 <p><br></br></p>
 </div>
 <div id="ejemplo3-transformada" class="section level3">
-<h3><span class="header-section-number">9.2.3</span> Ejemplo3 Transformada</h3>
+<h3><span class="header-section-number">9.3.3</span> Ejemplo3 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-146" class="example"><strong>Ejemplo 9.3  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-149" class="example"><strong>Ejemplo 9.4  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{e^{-3t}\}
 \]</span></p>
@@ -456,7 +545,7 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 </div>
 </div>
 <div id="tabla-de-transformadas" class="section level2">
-<h2><span class="header-section-number">9.3</span> Tabla de transformadas</h2>
+<h2><span class="header-section-number">9.4</span> Tabla de transformadas</h2>
 <p><span class="math display">\[
 \begin{matrix} 
 \text{Función} \ f(t) &amp; \text{Transformada} &amp; \\
