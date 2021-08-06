@@ -211,12 +211,16 @@
 <li class="chapter" data-level="9.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-para-separar-variables"><i class="fa fa-check"></i><b>9.2</b> Método para separar variables</a><ul>
 <li class="chapter" data-level="9.2.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-ec-diferencial-separable"><i class="fa fa-check"></i><b>9.2.1</b> Ejemplo1 Ec Diferencial separable</a></li>
 </ul></li>
-<li class="chapter" data-level="9.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-de-transformada"><i class="fa fa-check"></i><b>9.3</b> Definición de transformada</a><ul>
-<li class="chapter" data-level="9.3.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-transformada"><i class="fa fa-check"></i><b>9.3.1</b> Ejemplo1 Transformada</a></li>
-<li class="chapter" data-level="9.3.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-transformada"><i class="fa fa-check"></i><b>9.3.2</b> Ejemplo2 Transformada</a></li>
-<li class="chapter" data-level="9.3.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo3-transformada"><i class="fa fa-check"></i><b>9.3.3</b> Ejemplo3 Transformada</a></li>
+<li class="chapter" data-level="9.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ec-diferencial-lineal"><i class="fa fa-check"></i><b>9.3</b> Ec Diferencial lineal</a><ul>
+<li class="chapter" data-level="9.3.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-ec-dif-lineal"><i class="fa fa-check"></i><b>9.3.1</b> Ejemplo1 Ec Dif lineal</a></li>
+<li class="chapter" data-level="9.3.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-ec-dif-lineal"><i class="fa fa-check"></i><b>9.3.2</b> Ejemplo2 Ec Dif lineal</a></li>
 </ul></li>
-<li class="chapter" data-level="9.4" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#tabla-de-transformadas"><i class="fa fa-check"></i><b>9.4</b> Tabla de transformadas</a></li>
+<li class="chapter" data-level="9.4" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-de-transformada"><i class="fa fa-check"></i><b>9.4</b> Definición de transformada</a><ul>
+<li class="chapter" data-level="9.4.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-transformada"><i class="fa fa-check"></i><b>9.4.1</b> Ejemplo1 Transformada</a></li>
+<li class="chapter" data-level="9.4.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-transformada"><i class="fa fa-check"></i><b>9.4.2</b> Ejemplo2 Transformada</a></li>
+<li class="chapter" data-level="9.4.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo3-transformada"><i class="fa fa-check"></i><b>9.4.3</b> Ejemplo3 Transformada</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#tabla-de-transformadas"><i class="fa fa-check"></i><b>9.5</b> Tabla de transformadas</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
 <li class="divider"></li>
@@ -442,11 +446,57 @@ x^3+8 &amp; = y^3\\
 <p><br></br></p>
 </div>
 </div>
+<div id="ec-diferencial-lineal" class="section level2">
+<h2><span class="header-section-number">9.3</span> Ec Diferencial lineal</h2>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-144" class="definition"><strong>Definición 9.3  (Ecuación diferencial lineal)  </strong></span>Una ecuación diferencial se dice lineal si tiene la forma:</p>
+<p><span class="math display">\[
+\dfrac{dy}{dx}+P(x)y=Q(x)
+\]</span>
+donde <span class="math inline">\(P\)</span> y <span class="math inline">\(Q\)</span> son funciones continuas en un intervalo <span class="math inline">\(I\)</span>.</p>
+<p>Además la solución de toda ecuación lineal tiene la forma:</p>
+<span class="math display">\[
+y(x)=\dfrac{1}{F(x)}\left[\int{F(x)Q(x)dx+C}\right], \quad \text{ donde }  \quad F(x)=e^{\int{P(x)dx}}\\
+F \ \text{ se conoce como factor de integración. }
+\]</span>
+</div>
+
+<p><br></br></p>
+<div id="ejemplo1-ec-dif-lineal" class="section level3">
+<h3><span class="header-section-number">9.3.1</span> Ejemplo1 Ec Dif lineal</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-145" class="example"><strong>Ejemplo 9.2  </strong></span>Considere una población <span class="math inline">\(P=P(t)\)</span> con rapidez de nacimiento y de mortalidad constante <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\beta\)</span>, respectivamente y una relación <span class="math inline">\(m\)</span> de migración constante, donde <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span>, y <span class="math inline">\(m\)</span> son constantes positivas. Considere que <span class="math inline">\(\alpha &gt; \beta\)</span>. En tal caso la relación de cambio de la población en el tiempo <span class="math inline">\(t\)</span> se representa mediante la ecuación diferencial lineal:
+<span class="math display">\[
+\dfrac{dP}{dt}=kP-m \qquad \text{donde } \qquad k=\alpha-\beta  
+\]</span></p>
+<p>Hallar la solución de esta ecuación que satisface la condición inicial <span class="math inline">\(P(0)=P_0\)</span>.</p>
+tomada de <span class="citation">(Zill and Wright <a href="#ref-zill2014calculo" role="doc-biblioref">2014</a>)</span> pág <span class="math inline">\(599\)</span> ejercicio <span class="math inline">\(13\)</span>
+</div>
+
+<p><br></br></p>
+</div>
+<div id="ejemplo2-ec-dif-lineal" class="section level3">
+<h3><span class="header-section-number">9.3.2</span> Ejemplo2 Ec Dif lineal</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-146" class="example"><strong>Ejemplo 9.3  </strong></span>Sea <span class="math inline">\(P(t)\)</span> el nivel de desempeño de alguien que aprende una habilidad como función de tiempo de capacitación <span class="math inline">\(t\)</span>. La gráfica de <span class="math inline">\(P\)</span> se llama curva de aprendizaje. Resolver la ecuación diferencial lineal</p>
+<p><span class="math display">\[
+\dfrac{dP}{dt}=k\left[M-P(t)\right], \qquad \text{Modelo razonable para el aprendizaje}
+\]</span>
+donde <span class="math inline">\(k\)</span> es una constante positiva.</p>
+tomada de <span class="citation">(Zill and Wright <a href="#ref-zill2014calculo" role="doc-biblioref">2014</a>)</span> pág <span class="math inline">\(607\)</span> ejercicio <span class="math inline">\(31\)</span>
+</div>
+
+<p><br></br></p>
+</div>
+</div>
 <div id="definición-de-transformada" class="section level2">
-<h2><span class="header-section-number">9.3</span> Definición de transformada</h2>
+<h2><span class="header-section-number">9.4</span> Definición de transformada</h2>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-144" class="theorem"><strong>Teorema 9.1  (Definición de transformada de Laplace)  </strong></span>Sea <span class="math inline">\(f\)</span> una función definida para <span class="math inline">\(t \geq 0\)</span>. Entonces se dice que la integral</p>
+<p><span id="thm:unnamed-chunk-147" class="theorem"><strong>Teorema 9.1  (Definición de transformada de Laplace)  </strong></span>Sea <span class="math inline">\(f\)</span> una función definida para <span class="math inline">\(t \geq 0\)</span>. Entonces se dice que la integral</p>
 <p><span class="math display">\[
 \mathscr{L}\{f(t)\}=F(s)=\int_{0}^{\infty}{e^{-st}f(t)dt}
 \]</span></p>
@@ -461,10 +511,10 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 \]</span></p>
 <p><br></br></p>
 <div id="ejemplo1-transformada" class="section level3">
-<h3><span class="header-section-number">9.3.1</span> Ejemplo1 Transformada</h3>
+<h3><span class="header-section-number">9.4.1</span> Ejemplo1 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-145" class="example"><strong>Ejemplo 9.2  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-148" class="example"><strong>Ejemplo 9.4  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{1\}
 \]</span></p>
@@ -489,10 +539,10 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 <p><br></br></p>
 </div>
 <div id="ejemplo2-transformada" class="section level3">
-<h3><span class="header-section-number">9.3.2</span> Ejemplo2 Transformada</h3>
+<h3><span class="header-section-number">9.4.2</span> Ejemplo2 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-147" class="example"><strong>Ejemplo 9.3  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-150" class="example"><strong>Ejemplo 9.5  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{t\}
 \]</span></p>
@@ -517,10 +567,10 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 <p><br></br></p>
 </div>
 <div id="ejemplo3-transformada" class="section level3">
-<h3><span class="header-section-number">9.3.3</span> Ejemplo3 Transformada</h3>
+<h3><span class="header-section-number">9.4.3</span> Ejemplo3 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-149" class="example"><strong>Ejemplo 9.4  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-152" class="example"><strong>Ejemplo 9.6  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{e^{-3t}\}
 \]</span></p>
@@ -545,7 +595,7 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 </div>
 </div>
 <div id="tabla-de-transformadas" class="section level2">
-<h2><span class="header-section-number">9.4</span> Tabla de transformadas</h2>
+<h2><span class="header-section-number">9.5</span> Tabla de transformadas</h2>
 <p><span class="math display">\[
 \begin{matrix} 
 \text{Función} \ f(t) &amp; \text{Transformada} &amp; \\
@@ -573,6 +623,9 @@ t^{n}f(t) &amp; (-1)^{n}\dfrac{d^n}{ds^n}{F(s)} &amp; \\
 </div>
 <div id="ref-zill2002ecuaciones">
 <p>Zill, Dennis G, Ana Elizabeth Garcı́a Hernández, and Ernesto Filio López. 2002. <em>Ecuaciones Diferenciales Con Aplicaciones de Modelado</em>. 970-686-487-3. Thomson Learning México.</p>
+</div>
+<div id="ref-zill2014calculo">
+<p>Zill, Dennis G, and Warren S Wright. 2014. <em>Cálculo de Una Variable: Trascendentes Tempranas</em>. 515.33 Z651c Ej. 1 025039. McGraw-Hill,</p>
 </div>
 </div>
             </section>

@@ -124,10 +124,13 @@ fig:FigEDOA01
 def:unnamed-chunk-140
 def:unnamed-chunk-141
 exm:unnamed-chunk-142
-thm:unnamed-chunk-144
+def:unnamed-chunk-144
 exm:unnamed-chunk-145
-exm:unnamed-chunk-147
-exm:unnamed-chunk-149
+exm:unnamed-chunk-146
+thm:unnamed-chunk-147
+exm:unnamed-chunk-148
+exm:unnamed-chunk-150
+exm:unnamed-chunk-152
 prerrequisitos
 comportamentales
 evaluativos
@@ -244,6 +247,9 @@ definición-para-una-ecuación-diferencial
 ejemplos-de-ecuaciones-diferenciales
 método-para-separar-variables
 ejemplo1-ec-diferencial-separable
+ec-diferencial-lineal
+ejemplo1-ec-dif-lineal
+ejemplo2-ec-dif-lineal
 definición-de-transformada
 ejemplo1-transformada
 ejemplo2-transformada
