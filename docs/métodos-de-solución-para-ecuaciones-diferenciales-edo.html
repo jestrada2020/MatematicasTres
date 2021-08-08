@@ -24,7 +24,7 @@
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2021-08-05" />
+<meta name="date" content="2021-08-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -475,18 +475,60 @@ F \ \text{ se conoce como factor de integración. }
 tomada de <span class="citation">(Zill and Wright <a href="#ref-zill2014calculo" role="doc-biblioref">2014</a>)</span> pág <span class="math inline">\(599\)</span> ejercicio <span class="math inline">\(13\)</span>
 </div>
 
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> 
+<span class="math display">\[\begin{equation} \label{eqDifA04}
+\begin{split}
+\dfrac{dP}{dt} &amp; =kP-m\\
+\dfrac{dP}{dt}-kP &amp; =-m, \qquad \text{de donde}
+&amp;\\
+F(t)=e^{\int{-kdt}}=e^{-kt}; &amp; \qquad \qquad Q(t)=-m
+&amp; \\
+\text{Entonces} \qquad \qquad &amp; \qquad \qquad  \\
+P(t)= &amp;  \dfrac{1}{e^{-kt}}\left[\int{-e^{-kt}mdt}+C\right]\\
+P(t)= &amp;  \dfrac{me^{-kt}}{ke^{-kt}}+e^{kt}C\\
+P(t)= &amp;  \dfrac{m}{k}+e^{kt}C \qquad \text{Forma explícita}\\
+&amp; \\
+\text{Aplicando la condición inicial, se obtiene:} \qquad \qquad &amp; \qquad \qquad  \\
+P_0= &amp;  \dfrac{m}{k}+C\\
+P_0-\dfrac{m}{k} &amp; = C
+\end{split}
+\end{equation}\]</span></p>
+</div>
+
 <p><br></br></p>
 </div>
 <div id="ejemplo2-ec-dif-lineal" class="section level3">
 <h3><span class="header-section-number">9.3.2</span> Ejemplo2 Ec Dif lineal</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-146" class="example"><strong>Ejemplo 9.3  </strong></span>Sea <span class="math inline">\(P(t)\)</span> el nivel de desempeño de alguien que aprende una habilidad como función de tiempo de capacitación <span class="math inline">\(t\)</span>. La gráfica de <span class="math inline">\(P\)</span> se llama curva de aprendizaje. Resolver la ecuación diferencial lineal</p>
+<p><span id="exm:unnamed-chunk-147" class="example"><strong>Ejemplo 9.3  </strong></span>Sea <span class="math inline">\(P(t)\)</span> el nivel de desempeño de alguien que aprende una habilidad como función de tiempo de capacitación <span class="math inline">\(t\)</span>. La gráfica de <span class="math inline">\(P\)</span> se llama curva de aprendizaje. Resolver la ecuación diferencial lineal</p>
 <p><span class="math display">\[
 \dfrac{dP}{dt}=k\left[M-P(t)\right], \qquad \text{Modelo razonable para el aprendizaje}
 \]</span>
 donde <span class="math inline">\(k\)</span> es una constante positiva.</p>
 tomada de <span class="citation">(Zill and Wright <a href="#ref-zill2014calculo" role="doc-biblioref">2014</a>)</span> pág <span class="math inline">\(607\)</span> ejercicio <span class="math inline">\(31\)</span>
+</div>
+
+
+<div class="solution">
+<p> <span class="solution"><em>Solución. </em></span> 
+<span class="math display">\[\begin{equation} \label{eqDifA05}
+\begin{split}
+\dfrac{dP}{dt} &amp; =k\left[M-P(t)\right]\\
+&amp; = kM-kP(t)\\
+\dfrac{dP}{dt}+kP &amp; =kM, \qquad \text{de donde}
+&amp;\\
+F(t)=e^{\int{kdt}}=e^{kt}; &amp; \qquad \qquad Q(t)=kM
+&amp; \\
+\text{Entonces} \qquad \qquad &amp; \qquad \qquad  \\
+P(t)= &amp;  \dfrac{1}{e^{kt}}\left[\int{e^{kt}kMdt}+C\right]\\
+P(t)= &amp;  \dfrac{kM}{e^{kt}}\left[\int{e^{kt}dt}+C\right]\\
+P(t)= &amp;  \dfrac{kM}{e^{kt}}\left[\dfrac{e^{kt}}{k}+C\right]\\
+P(t)= &amp;  M+C_1 \qquad \text{Presentación de la solución en forma explícita}\\
+\end{split}
+\end{equation}\]</span></p>
 </div>
 
 <p><br></br></p>
@@ -496,7 +538,7 @@ tomada de <span class="citation">(Zill and Wright <a href="#ref-zill2014calculo"
 <h2><span class="header-section-number">9.4</span> Definición de transformada</h2>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-147" class="theorem"><strong>Teorema 9.1  (Definición de transformada de Laplace)  </strong></span>Sea <span class="math inline">\(f\)</span> una función definida para <span class="math inline">\(t \geq 0\)</span>. Entonces se dice que la integral</p>
+<p><span id="thm:unnamed-chunk-149" class="theorem"><strong>Teorema 9.1  (Definición de transformada de Laplace)  </strong></span>Sea <span class="math inline">\(f\)</span> una función definida para <span class="math inline">\(t \geq 0\)</span>. Entonces se dice que la integral</p>
 <p><span class="math display">\[
 \mathscr{L}\{f(t)\}=F(s)=\int_{0}^{\infty}{e^{-st}f(t)dt}
 \]</span></p>
@@ -514,7 +556,7 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 <h3><span class="header-section-number">9.4.1</span> Ejemplo1 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-148" class="example"><strong>Ejemplo 9.4  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-150" class="example"><strong>Ejemplo 9.4  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{1\}
 \]</span></p>
@@ -542,7 +584,7 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 <h3><span class="header-section-number">9.4.2</span> Ejemplo2 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-150" class="example"><strong>Ejemplo 9.5  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-152" class="example"><strong>Ejemplo 9.5  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{t\}
 \]</span></p>
@@ -570,7 +612,7 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 <h3><span class="header-section-number">9.4.3</span> Ejemplo3 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-152" class="example"><strong>Ejemplo 9.6  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-154" class="example"><strong>Ejemplo 9.6  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{e^{-3t}\}
 \]</span></p>

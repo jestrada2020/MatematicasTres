@@ -126,11 +126,11 @@ def:unnamed-chunk-141
 exm:unnamed-chunk-142
 def:unnamed-chunk-144
 exm:unnamed-chunk-145
-exm:unnamed-chunk-146
-thm:unnamed-chunk-147
-exm:unnamed-chunk-148
+exm:unnamed-chunk-147
+thm:unnamed-chunk-149
 exm:unnamed-chunk-150
 exm:unnamed-chunk-152
+exm:unnamed-chunk-154
 prerrequisitos
 comportamentales
 evaluativos
