@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 3 Introducción | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
-  <meta name="generator" content="bookdown 0.22.12 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 3 Introducción | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2021-08-08" />
+<meta name="date" content="2021-08-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="desarrollo-temático.html"/>
 <link rel="next" href="métodos-para-derivar-parcialmente.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -53,6 +53,14 @@
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
 
 
 
@@ -99,6 +107,8 @@
 <li class="chapter" data-level="3.2" data-path="intro.html"><a href="intro.html#función-de-dos-variables"><i class="fa fa-check"></i><b>3.2</b> Función de dos variables</a></li>
 <li class="chapter" data-level="3.3" data-path="intro.html"><a href="intro.html#punto-frontera-y-punto-interior-en-el-espacio"><i class="fa fa-check"></i><b>3.3</b> Punto frontera y punto interior en el espacio</a></li>
 <li class="chapter" data-level="3.4" data-path="intro.html"><a href="intro.html#detalles-de-una-superficie-en-el-espacio-xyz"><i class="fa fa-check"></i><b>3.4</b> Detalles de una superficie en el espacio <span class="math inline">\(XYZ\)</span></a></li>
+<li class="chapter" data-level="3.5" data-path="intro.html"><a href="intro.html#curvas-de-nivel-para-el-pueblito-paisa-de-medellín"><i class="fa fa-check"></i><b>3.5</b> Curvas de nivel para el Pueblito Paisa de Medellín</a></li>
+<li class="chapter" data-level="3.6" data-path="intro.html"><a href="intro.html#curvas-de-nivel-para-la-uces-de-medellín"><i class="fa fa-check"></i><b>3.6</b> Curvas de nivel para la UCES de Medellín</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html"><i class="fa fa-check"></i><b>4</b> Métodos para derivar parcialmente</a><ul>
 <li class="chapter" data-level="4.1" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#definición-derivada-parcial"><i class="fa fa-check"></i><b>4.1</b> Definición derivada parcial</a></li>
@@ -269,7 +279,7 @@ Figura 3.1: Gráfica punto frontera y punto interior de una región en el plano 
 <h2><span class="header-section-number">3.1</span> Punto frontera y punto interior en el plano</h2>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-3" class="definition"><strong>Definición 3.1  </strong></span>Un punto <span class="math inline">\((x_0,y_0)\)</span> en una región (conjunto) <span class="math inline">\(R\)</span> del plano <span class="math inline">\(XY\)</span> es un punto interior de <span class="math inline">\(R\)</span> si es el centro de un disco de radio positivo que está completamente dentro de <span class="math inline">\(R\)</span>. Un punto <span class="math inline">\((x_0,y_0)\)</span> es un punto frontera de <span class="math inline">\(R\)</span> si cada disco con centro en <span class="math inline">\((x_0,y_0)\)</span> contiene puntos que están fuera de <span class="math inline">\(R\)</span> y puntos que están en <span class="math inline">\(R\)</span>. (El punto frontera no tiene que pertenecer a <span class="math inline">\(R\)</span>).</p>
+<p><span id="def:unnamed-chunk-4" class="definition"><strong>Definición 3.1  </strong></span>Un punto <span class="math inline">\((x_0,y_0)\)</span> en una región (conjunto) <span class="math inline">\(R\)</span> del plano <span class="math inline">\(XY\)</span> es un punto interior de <span class="math inline">\(R\)</span> si es el centro de un disco de radio positivo que está completamente dentro de <span class="math inline">\(R\)</span>. Un punto <span class="math inline">\((x_0,y_0)\)</span> es un punto frontera de <span class="math inline">\(R\)</span> si cada disco con centro en <span class="math inline">\((x_0,y_0)\)</span> contiene puntos que están fuera de <span class="math inline">\(R\)</span> y puntos que están en <span class="math inline">\(R\)</span>. (El punto frontera no tiene que pertenecer a <span class="math inline">\(R\)</span>).</p>
 <p>Los puntos interiores de una región conforman (como conjunto) el interior de la región. Los puntos frontera de una región conforman su frontera. Una región es abierta si consta sólo de puntos interiores. Una región es cerrada si contiene todos sus puntos frontera.</p>
 tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(967\)</span>
 </div>
@@ -282,7 +292,7 @@ Figura 3.2: Puntos interiores y puntos frontera del disco unitario en el plano <
 </div>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-4" class="definition"><strong>Definición 3.2  (Regiones acotadas y no acotadas en el plano <span class="math inline">\(XY\)</span>)  </strong></span>Una región en el plano está acotada si está dentro de un disco de radio fijo. Una región es no acotada si no tiene fronteras.</p>
+<p><span id="def:unnamed-chunk-5" class="definition"><strong>Definición 3.2  (Regiones acotadas y no acotadas en el plano <span class="math inline">\(XY\)</span>)  </strong></span>Una región en el plano está acotada si está dentro de un disco de radio fijo. Una región es no acotada si no tiene fronteras.</p>
 tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(967\)</span>
 </div>
 
@@ -297,7 +307,7 @@ Figura 3.3: Gráfica de una función de dos variables en el espacio <span class=
 </div>
 
 <div class="definition">
-<span id="def:unnamed-chunk-5" class="definition"><strong>Definición 3.3  </strong></span>Sea <span class="math inline">\(D\)</span> un conjunto de pares ordenados donde cada par ordenado esta compuesto de números reales. Si a cada par ordenado <span class="math inline">\((x,y)\)</span> en <span class="math inline">\(D\)</span> le corresponde un único real <span class="math inline">\(f(x,y)\)</span>, entonces se dice que <span class="math inline">\(f\)</span> es una <strong>función</strong> de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>. El conjunto <span class="math inline">\(D\)</span> es el dominio de <span class="math inline">\(f\)</span>, y el correspondiente conjunto de valores <span class="math inline">\(f(x,y)\)</span> es el <strong>rango</strong> de <span class="math inline">\(f\)</span> [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(886\)</span>]
+<span id="def:unnamed-chunk-6" class="definition"><strong>Definición 3.3  </strong></span>Sea <span class="math inline">\(D\)</span> un conjunto de pares ordenados donde cada par ordenado esta compuesto de números reales. Si a cada par ordenado <span class="math inline">\((x,y)\)</span> en <span class="math inline">\(D\)</span> le corresponde un único real <span class="math inline">\(f(x,y)\)</span>, entonces se dice que <span class="math inline">\(f\)</span> es una <strong>función</strong> de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>. El conjunto <span class="math inline">\(D\)</span> es el dominio de <span class="math inline">\(f\)</span>, y el correspondiente conjunto de valores <span class="math inline">\(f(x,y)\)</span> es el <strong>rango</strong> de <span class="math inline">\(f\)</span> [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(886\)</span>]
 </div>
 
 <p><span class="math display">\[
@@ -306,7 +316,7 @@ D\subseteq R^2 \longrightarrow R\\
 \]</span></p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-6" class="example"><strong>Ejemplo 3.1  (Dominio de una función)  </strong></span>Describa el dominio de la función</p>
+<p><span id="exm:unnamed-chunk-7" class="example"><strong>Ejemplo 3.1  (Dominio de una función)  </strong></span>Describa el dominio de la función</p>
 <p><span class="math display">\[
 f(x,y)=2\sqrt{y-x^2}  
 \]</span></p>
@@ -334,7 +344,7 @@ Figura 3.5: Gráfica punto frontera y punto interior de una región en el espaci
 </div>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-8" class="definition"><strong>Definición 3.4  </strong></span>Un punto <span class="math inline">\((x_0,y_0,z_0)\)</span> en una región (conjunto) <span class="math inline">\(R\)</span> del espacio <span class="math inline">\(XYZ\)</span> es un punto interior de <span class="math inline">\(R\)</span> si es el centro de una bola sólida de radio positivo que está completamente dentro de <span class="math inline">\(R\)</span>. Un punto <span class="math inline">\((x_0,y_0,z_0)\)</span> es un punto frontera de <span class="math inline">\(R\)</span> si toda esfera con centro en <span class="math inline">\((x_0,y_0,z_0)\)</span> contiene puntos que están fuera de <span class="math inline">\(R\)</span> y puntos que están en <span class="math inline">\(R\)</span>. (El punto frontera no tiene que pertenecer a <span class="math inline">\(R\)</span>).</p>
+<p><span id="def:unnamed-chunk-9" class="definition"><strong>Definición 3.4  </strong></span>Un punto <span class="math inline">\((x_0,y_0,z_0)\)</span> en una región (conjunto) <span class="math inline">\(R\)</span> del espacio <span class="math inline">\(XYZ\)</span> es un punto interior de <span class="math inline">\(R\)</span> si es el centro de una bola sólida de radio positivo que está completamente dentro de <span class="math inline">\(R\)</span>. Un punto <span class="math inline">\((x_0,y_0,z_0)\)</span> es un punto frontera de <span class="math inline">\(R\)</span> si toda esfera con centro en <span class="math inline">\((x_0,y_0,z_0)\)</span> contiene puntos que están fuera de <span class="math inline">\(R\)</span> y puntos que están en <span class="math inline">\(R\)</span>. (El punto frontera no tiene que pertenecer a <span class="math inline">\(R\)</span>).</p>
 <p>Los puntos interiores de una región conforman (como conjunto) el interior de la región. Los puntos frontera de una región conforman su frontera. Una región es abierta si consta sólo de puntos interiores. Una región es cerrada si contiene todos sus puntos frontera.</p>
 tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(970\)</span>
 </div>
@@ -344,7 +354,7 @@ tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" 
 <h2><span class="header-section-number">3.4</span> Detalles de una superficie en el espacio <span class="math inline">\(XYZ\)</span></h2>
 
 <div class="definition">
-<span id="def:unnamed-chunk-9" class="definition"><strong>Definición 3.5  (Traza de una superficie)  </strong></span>La traza de una superficie en cualquier plano es la curva formada por la intersección de la superficie con el plano correspondiente.
+<span id="def:unnamed-chunk-10" class="definition"><strong>Definición 3.5  (Traza de una superficie)  </strong></span>La traza de una superficie en cualquier plano es la curva formada por la intersección de la superficie con el plano correspondiente.
 </div>
 
 <meta name=viewport content="width=device-width,initial-scale=1">
@@ -369,7 +379,7 @@ tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" 
 <p><br></br></p>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-10" class="definition"><strong>Definición 3.6  (Curva de nivel para una superficie)  </strong></span>El conjunto de puntos <span class="math inline">\((x,y,z)\)</span> en el espacio donde una función de tres variables independientes tiene un valor constante <span class="math inline">\(f(x,y,z)=c\)</span>, es una superficie de nivel de <span class="math inline">\(f\)</span></p>
+<p><span id="def:unnamed-chunk-11" class="definition"><strong>Definición 3.6  (Curva de nivel para una superficie)  </strong></span>El conjunto de puntos <span class="math inline">\((x,y,z)\)</span> en el espacio donde una función de tres variables independientes tiene un valor constante <span class="math inline">\(f(x,y,z)=c\)</span>, es una superficie de nivel de <span class="math inline">\(f\)</span></p>
 NOTA: También se puede definir como la proyección perpendicular de una traza en uno de los planos coordenados del espacio <span class="math inline">\(XYZ\)</span>.
 </div>
 
@@ -393,6 +403,26 @@ NOTA: También se puede definir como la proyección perpendicular de una traza e
            ggbAppSuperficie06.inject('ggb-elementSuperficie06');
       });
 </script>
+</div>
+<div id="curvas-de-nivel-para-el-pueblito-paisa-de-medellín" class="section level2">
+<h2><span class="header-section-number">3.5</span> Curvas de nivel para el Pueblito Paisa de Medellín</h2>
+<div class="figure" style="text-align: center">
+<div id="htmlwidget-b4f406b706fb75cd9677" style="width:80%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b4f406b706fb75cd9677">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.opentopomap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addMarkers","args":[6.236098766,-75.580085754,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Pueblito Paisa de Medellín",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[6.236098766,6.236098766],"lng":[-75.580085754,-75.580085754]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+(#fig:pueblito paisa de medellín)Carta topografica del Pueblito Paisa Medellín
+</p>
+</div>
+</div>
+<div id="curvas-de-nivel-para-la-uces-de-medellín" class="section level2">
+<h2><span class="header-section-number">3.6</span> Curvas de nivel para la UCES de Medellín</h2>
+<div class="figure" style="text-align: center">
+<div id="htmlwidget-abf583e5243f46a3e3ad" style="width:80%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-abf583e5243f46a3e3ad">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.opentopomap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addMarkers","args":[6.20859975,-75.5526154108008,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Pueblito Paisa de Medellín",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[6.20859975,6.20859975],"lng":[-75.5526154108008,-75.5526154108008]}},"evals":[],"jsHooks":[]}</script>
+<p class="caption">
+(#fig:Universidad CES de medellín)Carta topografica de la Universidad CES de Medellín
+</p>
+</div>
 
 </div>
 </div>

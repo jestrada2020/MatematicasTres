@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 7 Integrales dobles | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
-  <meta name="generator" content="bookdown 0.22.12 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 7 Integrales dobles | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2021-08-08" />
+<meta name="date" content="2021-08-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="integrales-simples.html"/>
 <link rel="next" href="integrales-triples.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -53,6 +53,14 @@
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
 
 
 
@@ -99,6 +107,8 @@
 <li class="chapter" data-level="3.2" data-path="intro.html"><a href="intro.html#función-de-dos-variables"><i class="fa fa-check"></i><b>3.2</b> Función de dos variables</a></li>
 <li class="chapter" data-level="3.3" data-path="intro.html"><a href="intro.html#punto-frontera-y-punto-interior-en-el-espacio"><i class="fa fa-check"></i><b>3.3</b> Punto frontera y punto interior en el espacio</a></li>
 <li class="chapter" data-level="3.4" data-path="intro.html"><a href="intro.html#detalles-de-una-superficie-en-el-espacio-xyz"><i class="fa fa-check"></i><b>3.4</b> Detalles de una superficie en el espacio <span class="math inline">\(XYZ\)</span></a></li>
+<li class="chapter" data-level="3.5" data-path="intro.html"><a href="intro.html#curvas-de-nivel-para-el-pueblito-paisa-de-medellín"><i class="fa fa-check"></i><b>3.5</b> Curvas de nivel para el Pueblito Paisa de Medellín</a></li>
+<li class="chapter" data-level="3.6" data-path="intro.html"><a href="intro.html#curvas-de-nivel-para-la-uces-de-medellín"><i class="fa fa-check"></i><b>3.6</b> Curvas de nivel para la UCES de Medellín</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html"><i class="fa fa-check"></i><b>4</b> Métodos para derivar parcialmente</a><ul>
 <li class="chapter" data-level="4.1" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#definición-derivada-parcial"><i class="fa fa-check"></i><b>4.1</b> Definición derivada parcial</a></li>
@@ -261,7 +271,7 @@ Alan Turing (1912-1954).
 <h2><span class="header-section-number">7.1</span> Definición de integral doble</h2>
 
 <div class="definition">
-<span id="def:unnamed-chunk-119" class="definition"><strong>Definición 7.1  </strong></span>Si <span class="math inline">\(f\)</span> esta definida en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>, entonces la integral doble de f sobre <span class="math inline">\(D\)</span> esta dada por[Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
+<span id="def:unnamed-chunk-120" class="definition"><strong>Definición 7.1  </strong></span>Si <span class="math inline">\(f\)</span> esta definida en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>, entonces la integral doble de f sobre <span class="math inline">\(D\)</span> esta dada por[Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
 </div>
 
 <p><span class="math display">\[
@@ -307,7 +317,7 @@ Figura 7.2: Definición de volumen como integral doble [Imagen tomada de <span c
 </div>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-120" class="definition"><strong>Definición 7.2  </strong></span>Si <span class="math inline">\(f\)</span> es integrable sobre una región <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span> y <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span>, entonces el volumen de la región sólida que se encuentra sobre <span class="math inline">\(D\)</span> y bajo la gráfica de <span class="math inline">\(f\)</span> se define como:</p>
+<p><span id="def:unnamed-chunk-121" class="definition"><strong>Definición 7.2  </strong></span>Si <span class="math inline">\(f\)</span> es integrable sobre una región <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span> y <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span>, entonces el volumen de la región sólida que se encuentra sobre <span class="math inline">\(D\)</span> y bajo la gráfica de <span class="math inline">\(f\)</span> se define como:</p>
 <p>Si
 <span class="math display">\[
 A(x)=\int_{c}^{d}{f(x,y)dy}
@@ -324,7 +334,7 @@ donde <span class="math inline">\(D=[a,b]\times [c,d]\)</span>
 <h2><span class="header-section-number">7.3</span> Propiedades de las integrales dobles</h2>
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-121" class="theorem"><strong>Teorema 7.1  </strong></span>Sean <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> continuas en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>, y sea <span class="math inline">\(c\)</span> una constante. Cada una de las siguientes afirmaciones es verdadera: [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
+<span id="thm:unnamed-chunk-122" class="theorem"><strong>Teorema 7.1  </strong></span>Sean <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> continuas en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>, y sea <span class="math inline">\(c\)</span> una constante. Cada una de las siguientes afirmaciones es verdadera: [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
 </div>
 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralDoble1"></span>
@@ -343,7 +353,7 @@ Figura 7.3: Dos regiones no se sobreponen si su intersección es un conjunto de 
 <h2><span class="header-section-number">7.4</span> Ejemplo integral doble usando geogebra</h2>
 
 <div class="example">
-<span id="exm:unnamed-chunk-122" class="example"><strong>Ejemplo 7.1  (Volumen de un solido con región rectángular)  </strong></span>Sea <span class="math inline">\(D\)</span> el rectángulo definido como <span class="math inline">\(\left[0,1\right] \times \left[-3,3\right]\)</span> y <span class="math inline">\(f(x,y)=\dfrac{xy^2}{x^2+1}\)</span> una función integrable en <span class="math inline">\(D\)</span>. Obtener usando geogebra el volumén limitado arriba por <span class="math inline">\(f\)</span>, y abajo por el rectángulo <span class="math inline">\(D\)</span>. Observe que <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span> [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
+<span id="exm:unnamed-chunk-123" class="example"><strong>Ejemplo 7.1  (Volumen de un solido con región rectángular)  </strong></span>Sea <span class="math inline">\(D\)</span> el rectángulo definido como <span class="math inline">\(\left[0,1\right] \times \left[-3,3\right]\)</span> y <span class="math inline">\(f(x,y)=\dfrac{xy^2}{x^2+1}\)</span> una función integrable en <span class="math inline">\(D\)</span>. Obtener usando geogebra el volumén limitado arriba por <span class="math inline">\(f\)</span>, y abajo por el rectángulo <span class="math inline">\(D\)</span>. Observe que <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span> [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(994\)</span>]
 </div>
 
 <p><br></br></p>
@@ -372,7 +382,7 @@ Figura 7.3: Dos regiones no se sobreponen si su intersección es un conjunto de 
 <h2><span class="header-section-number">7.5</span> Ejercicio integral doble</h2>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-123" class="exercise"><strong>Ejercicio 7.1  (Volumen de un solido con región rectángular)  </strong></span>Sea <span class="math inline">\(D\)</span> el rectángulo definido como <span class="math inline">\(\left[0,1\right] \times \left[0,1\right]\)</span> y <span class="math inline">\(f(x,y)=1-\dfrac{1}{2}x^2-\dfrac{1}{2}y^2\)</span> una función integrable en <span class="math inline">\(D\)</span>. Además
+<p><span id="exr:unnamed-chunk-124" class="exercise"><strong>Ejercicio 7.1  (Volumen de un solido con región rectángular)  </strong></span>Sea <span class="math inline">\(D\)</span> el rectángulo definido como <span class="math inline">\(\left[0,1\right] \times \left[0,1\right]\)</span> y <span class="math inline">\(f(x,y)=1-\dfrac{1}{2}x^2-\dfrac{1}{2}y^2\)</span> una función integrable en <span class="math inline">\(D\)</span>. Además
 <span class="math display">\[
 \left[0,1\right] \times \left[0,1\right]  \ \ \ \text{significa que:}  \ \ \  0\leq x \leq 1 \ \ \text{y} \ \ 0\leq y \leq 1
 \]</span></p>
@@ -407,7 +417,7 @@ Figura 7.5: Tipo de regiones en el plano cartesiano <span class="math inline">\(
 </div>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-125" class="theorem"><strong>Teorema 7.2  (Región verticalmente simple)  </strong></span>Supongamos que <span class="math inline">\(f(x,y)\)</span> es continuas en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>. Si <span class="math inline">\(D\)</span> es una región verticalmente simple, entonces <span class="math inline">\(D\)</span> se puede describir en términos de desigualdades de la forma:</p>
+<p><span id="thm:unnamed-chunk-126" class="theorem"><strong>Teorema 7.2  (Región verticalmente simple)  </strong></span>Supongamos que <span class="math inline">\(f(x,y)\)</span> es continuas en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>. Si <span class="math inline">\(D\)</span> es una región verticalmente simple, entonces <span class="math inline">\(D\)</span> se puede describir en términos de desigualdades de la forma:</p>
 <p><span class="math display">\[
 D=\left\{ \begin{array}{lcc}
             \ \ \ \ \ a  \leq  x \leq b \\
@@ -425,7 +435,7 @@ D=\left\{ \begin{array}{lcc}
 <p><br></br></p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-126" class="theorem"><strong>Teorema 7.3  (Región horizontalmente simple)  </strong></span>Supongamos que <span class="math inline">\(f(x,y)\)</span> es continuas en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>. Si <span class="math inline">\(D\)</span> es una región verticalmente simple, entonces <span class="math inline">\(D\)</span> se puede describir en términos de desigualdades de la forma:</p>
+<p><span id="thm:unnamed-chunk-127" class="theorem"><strong>Teorema 7.3  (Región horizontalmente simple)  </strong></span>Supongamos que <span class="math inline">\(f(x,y)\)</span> es continuas en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>. Si <span class="math inline">\(D\)</span> es una región verticalmente simple, entonces <span class="math inline">\(D\)</span> se puede describir en términos de desigualdades de la forma:</p>
 <p><span class="math display">\[
 D=\left\{ \begin{array}{lcc}
             \ \ \ \ \ c  \leq  y \leq d \\
@@ -446,7 +456,7 @@ D=\left\{ \begin{array}{lcc}
 <h2><span class="header-section-number">7.6</span> Ejercicio integral doble</h2>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-127" class="exercise"><strong>Ejercicio 7.2  (Volumen de un solido con región no rectángular)  </strong></span>Sea <span class="math inline">\(D\)</span> la región no rectángular definida como:</p>
+<p><span id="exr:unnamed-chunk-128" class="exercise"><strong>Ejercicio 7.2  (Volumen de un solido con región no rectángular)  </strong></span>Sea <span class="math inline">\(D\)</span> la región no rectángular definida como:</p>
 <p><span class="math display">\[  
 0\leq x \leq 1 \\ 
 -\sqrt(\dfrac{4-x^2}{2}) \leq y \leq \sqrt(\dfrac{4-x^2}{2})
@@ -485,7 +495,7 @@ Está es una aplicación de geogebra que realizó John Jairo Estrada (<a href="h
 <h2><span class="header-section-number">7.8</span> Ejercicio integral doble</h2>
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-128" class="exercise"><strong>Ejercicio 7.3  (Área entre dos curvas)  </strong></span>Determinar el área usando integrales dobles para la región <span class="math inline">\(D\)</span> limitada por las curvas <span class="math inline">\(x=-2\)</span>, <span class="math inline">\(x=2\)</span>, <span class="math inline">\(y=-x^2+2x\)</span>, y <span class="math inline">\(y=3x^3-x^2-10x\)</span>. [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(997\)</span>]
+<span id="exr:unnamed-chunk-129" class="exercise"><strong>Ejercicio 7.3  (Área entre dos curvas)  </strong></span>Determinar el área usando integrales dobles para la región <span class="math inline">\(D\)</span> limitada por las curvas <span class="math inline">\(x=-2\)</span>, <span class="math inline">\(x=2\)</span>, <span class="math inline">\(y=-x^2+2x\)</span>, y <span class="math inline">\(y=3x^3-x^2-10x\)</span>. [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(997\)</span>]
 </div>
 
 <p><br></br></p>
@@ -562,7 +572,7 @@ Está es una aplicación de geogebra que realizó John Jairo Estrada (<a href="h
 <h2><span class="header-section-number">7.9</span> Ejercicio integral doble</h2>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-130" class="exercise"><strong>Ejercicio 7.4  (Volumen de un solido generado por la intersección de superficies)  </strong></span>Obtener la gráfica del sólido generado en el primer octante, por la intersección de las superficies en el espacio <span class="math inline">\(XYZ\)</span>:</p>
+<p><span id="exr:unnamed-chunk-131" class="exercise"><strong>Ejercicio 7.4  (Volumen de un solido generado por la intersección de superficies)  </strong></span>Obtener la gráfica del sólido generado en el primer octante, por la intersección de las superficies en el espacio <span class="math inline">\(XYZ\)</span>:</p>
 <span class="math display">\[\begin{equation}
 z^2+y^2=9 \ \ \ \   : \text{Cilíndro}  \ \ \ \\
 y=2, \ \ y=4 \ \ \ \   : \text{Planos paralelos al plano } \ XZ  \ \ \ \\

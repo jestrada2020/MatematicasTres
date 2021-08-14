@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 5 Métodos para máximos y mínimos | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
-  <meta name="generator" content="bookdown 0.22.12 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 5 Métodos para máximos y mínimos | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2021-08-08" />
+<meta name="date" content="2021-08-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="métodos-para-derivar-parcialmente.html"/>
 <link rel="next" href="integrales-simples.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -53,6 +53,14 @@
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
 
 
 
@@ -99,6 +107,8 @@
 <li class="chapter" data-level="3.2" data-path="intro.html"><a href="intro.html#función-de-dos-variables"><i class="fa fa-check"></i><b>3.2</b> Función de dos variables</a></li>
 <li class="chapter" data-level="3.3" data-path="intro.html"><a href="intro.html#punto-frontera-y-punto-interior-en-el-espacio"><i class="fa fa-check"></i><b>3.3</b> Punto frontera y punto interior en el espacio</a></li>
 <li class="chapter" data-level="3.4" data-path="intro.html"><a href="intro.html#detalles-de-una-superficie-en-el-espacio-xyz"><i class="fa fa-check"></i><b>3.4</b> Detalles de una superficie en el espacio <span class="math inline">\(XYZ\)</span></a></li>
+<li class="chapter" data-level="3.5" data-path="intro.html"><a href="intro.html#curvas-de-nivel-para-el-pueblito-paisa-de-medellín"><i class="fa fa-check"></i><b>3.5</b> Curvas de nivel para el Pueblito Paisa de Medellín</a></li>
+<li class="chapter" data-level="3.6" data-path="intro.html"><a href="intro.html#curvas-de-nivel-para-la-uces-de-medellín"><i class="fa fa-check"></i><b>3.6</b> Curvas de nivel para la UCES de Medellín</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html"><i class="fa fa-check"></i><b>4</b> Métodos para derivar parcialmente</a><ul>
 <li class="chapter" data-level="4.1" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#definición-derivada-parcial"><i class="fa fa-check"></i><b>4.1</b> Definición derivada parcial</a></li>
@@ -269,7 +279,7 @@ Figura 5.1: Concepto de máximo y mínimo local geometricamente [Imagen tomada d
 <p><br></br></p>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-35" class="definition"><strong>Definición 5.1  (Máximos local, mínimo local)  </strong></span>
+<p><span id="def:unnamed-chunk-36" class="definition"><strong>Definición 5.1  (Máximos local, mínimo local)  </strong></span>
 Sea <span class="math inline">\(f(x,y)\)</span> definida en una región <span class="math inline">\(D\)</span> que contiene al punto <span class="math inline">\((a,b)\)</span>. Entonces</p>
 <p>(1.) <span class="math inline">\(f(a,b)\)</span> es un valor máximo local de <span class="math inline">\(f\)</span> si <span class="math inline">\(f(a,b) \geq f(x,y)\)</span> para todos los puntos del dominio <span class="math inline">\((x,y)\)</span> un disco abirto con centro en <span class="math inline">\((a,b)\)</span></p>
 <p>(2.) <span class="math inline">\(f(a,b)\)</span> es un valor mínimo local de <span class="math inline">\(f\)</span> si <span class="math inline">\(f(a,b) \leq f(x,y)\)</span> para todos los puntos del dominio <span class="math inline">\((x,y)\)</span> un disco abirto con centro en <span class="math inline">\((a,b)\)</span></p>
@@ -286,7 +296,7 @@ Figura 5.2: Criterio para determinar máximo y mínimo local geometricamente [Im
 <p><br></br></p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-36" class="theorem"><strong>Teorema 5.1  (Criterio de la primera derivada para valores extremos locales)  </strong></span>Si <span class="math inline">\(f(x,y)\)</span> tiene un valor máximo o mínimo local en un punto interior <span class="math inline">\((a,b)\)</span> de su dominio, y si las primeras derivadas parciales existen en el punto, entonces</p>
+<p><span id="thm:unnamed-chunk-37" class="theorem"><strong>Teorema 5.1  (Criterio de la primera derivada para valores extremos locales)  </strong></span>Si <span class="math inline">\(f(x,y)\)</span> tiene un valor máximo o mínimo local en un punto interior <span class="math inline">\((a,b)\)</span> de su dominio, y si las primeras derivadas parciales existen en el punto, entonces</p>
 <p><span class="math display">\[
 f_{x}(a,b)=0 \qquad  \qquad \text{ y } \qquad  \qquad f_{y}(a,b)=0
 \]</span></p>
@@ -296,21 +306,21 @@ tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" 
 <p><br></br></p>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-37" class="definition"><strong>Definición 5.2  (Punto crítico)  </strong></span>Un punto interior del dominio de una función <span class="math inline">\(f(x,y)\)</span> donde <span class="math inline">\(f_x\)</span> y <span class="math inline">\(f_y\)</span> se anulan, o bien donde alguna de estas derivadas no existen, es un punto crítico de <span class="math inline">\(f\)</span></p>
+<p><span id="def:unnamed-chunk-38" class="definition"><strong>Definición 5.2  (Punto crítico)  </strong></span>Un punto interior del dominio de una función <span class="math inline">\(f(x,y)\)</span> donde <span class="math inline">\(f_x\)</span> y <span class="math inline">\(f_y\)</span> se anulan, o bien donde alguna de estas derivadas no existen, es un punto crítico de <span class="math inline">\(f\)</span></p>
 tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(1029\)</span>
 </div>
 
 <p><br></br></p>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-38" class="definition"><strong>Definición 5.3  (Punto silla)  </strong></span>Una función diferenciable <span class="math inline">\(f(x,y)\)</span> tiene un punto silla en un punto crítico <span class="math inline">\((a,b)\)</span> si en cada disco abierto con centro en <span class="math inline">\((a,b)\)</span> existen punto del dominio <span class="math inline">\((x,y)\)</span> donde <span class="math inline">\(f(x,y)&gt;f(a,b)\)</span>, y puntos del dominio <span class="math inline">\((x,y)\)</span> donde <span class="math inline">\(f(x,y)&lt;f(a,b)\)</span>. El punto correspondiente <span class="math inline">\((a,b,f(a,b))\)</span> sobre la superficie <span class="math inline">\(z=f(x,y)\)</span> se conoce como punto silla de la superficie.</p>
+<p><span id="def:unnamed-chunk-39" class="definition"><strong>Definición 5.3  (Punto silla)  </strong></span>Una función diferenciable <span class="math inline">\(f(x,y)\)</span> tiene un punto silla en un punto crítico <span class="math inline">\((a,b)\)</span> si en cada disco abierto con centro en <span class="math inline">\((a,b)\)</span> existen punto del dominio <span class="math inline">\((x,y)\)</span> donde <span class="math inline">\(f(x,y)&gt;f(a,b)\)</span>, y puntos del dominio <span class="math inline">\((x,y)\)</span> donde <span class="math inline">\(f(x,y)&lt;f(a,b)\)</span>. El punto correspondiente <span class="math inline">\((a,b,f(a,b))\)</span> sobre la superficie <span class="math inline">\(z=f(x,y)\)</span> se conoce como punto silla de la superficie.</p>
 tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(1029\)</span>
 </div>
 
 <p><br></br></p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-39" class="theorem"><strong>Teorema 5.2  (Criterio de la segunda derivada para valores extremos locales)  </strong></span>
+<p><span id="thm:unnamed-chunk-40" class="theorem"><strong>Teorema 5.2  (Criterio de la segunda derivada para valores extremos locales)  </strong></span>
 Suponga que <span class="math inline">\(f(x,y)\)</span> y sus primeras y segundas derivadas parciales son continuas en un disco con centro en <span class="math inline">\((a,b)\)</span> y que <span class="math inline">\(f_{x}(a,b)=f_{y}(a,b)=0\)</span>. Entonces</p>
 <p>(1.) <span class="math inline">\(f\)</span> tiene un máximo local en <span class="math inline">\((a,b)\)</span>, si <span class="math inline">\(f_{xx}&lt;0\)</span> y <span class="math inline">\(f_{xx}f_{yy}-\left(f_{xy}\right)^2&gt;0\)</span> en <span class="math inline">\((a,b)\)</span></p>
 <p>(2.) <span class="math inline">\(f\)</span> tiene un mínimo local en <span class="math inline">\((a,b)\)</span>, si <span class="math inline">\(f_{xx}&gt;0\)</span> y <span class="math inline">\(f_{xx}f_{yy}-\left(f_{xy}\right)^2&gt;0\)</span> en <span class="math inline">\((a,b)\)</span></p>
@@ -350,7 +360,7 @@ Suponga que <span class="math inline">\(f(x,y)\)</span> y sus primeras y segunda
 <h2><span class="header-section-number">5.3</span> Método de los multiplicadore de Lagrange para determinar máximos o mínimos</h2>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-40" class="theorem"><strong>Teorema 5.3  (Multiplicadores de Lagrange)  </strong></span>Sean <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> funciones con primeras derivadas parciales continuas, y tales que <span class="math inline">\(f\)</span> tiene un extremo en un punto <span class="math inline">\((x_0,y_0)\)</span> sobre la curva suave de restricción <span class="math inline">\(g(x,y)=c\)</span>. Si <span class="math inline">\(\nabla{g(x_0,y_0)} \neq 0\)</span>, entonces existe un número real <span class="math inline">\(\lambda\)</span> tal que</p>
+<p><span id="thm:unnamed-chunk-41" class="theorem"><strong>Teorema 5.3  (Multiplicadores de Lagrange)  </strong></span>Sean <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> funciones con primeras derivadas parciales continuas, y tales que <span class="math inline">\(f\)</span> tiene un extremo en un punto <span class="math inline">\((x_0,y_0)\)</span> sobre la curva suave de restricción <span class="math inline">\(g(x,y)=c\)</span>. Si <span class="math inline">\(\nabla{g(x_0,y_0)} \neq 0\)</span>, entonces existe un número real <span class="math inline">\(\lambda\)</span> tal que</p>
 <p><span class="math display">\[
 \nabla{f(x_0,y_0)}=\lambda \nabla{g(x_0,y_0)}
 \]</span></p>
@@ -379,7 +389,7 @@ Tomada de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="
 <p><br></br></p>
 
 <div class="example">
-<span id="exm:unnamed-chunk-42" class="example"><strong>Ejemplo 5.1  (Multiplicadores de Lagrange con una restricción o ligadura)  </strong></span>Hallar el valor máximo de <span class="math inline">\(f(x,y)=4xy\)</span> donde <span class="math inline">\(x&gt;0\)</span> y <span class="math inline">\(y&gt;0\)</span>, sujeto a la restricción <span class="math inline">\(x^2/9+y^2/16=1\)</span>
+<span id="exm:unnamed-chunk-43" class="example"><strong>Ejemplo 5.1  (Multiplicadores de Lagrange con una restricción o ligadura)  </strong></span>Hallar el valor máximo de <span class="math inline">\(f(x,y)=4xy\)</span> donde <span class="math inline">\(x&gt;0\)</span> y <span class="math inline">\(y&gt;0\)</span>, sujeto a la restricción <span class="math inline">\(x^2/9+y^2/16=1\)</span>
 </div>
 
 <p><br></br></p>
@@ -418,7 +428,7 @@ Esta solución puede verse en <span class="citation">(Larson <a href="#ref-larso
 <p><br></br></p>
 
 <div class="example">
-<span id="exm:unnamed-chunk-44" class="example"><strong>Ejemplo 5.2  (Multiplicadores de Lagrange con dos restricciones o ligaduras)  </strong></span>Sea <span class="math inline">\(T(x,y,z)=20+2x+2y+z^2\)</span> la temperatura en cada punto en una esfera <span class="math inline">\(x^2+y^2+z^2=11\)</span>. Hallar las temperaturas extremas en la curva formada por la intersección del plano <span class="math inline">\(x+y+z=3\)</span> y la esfera.
+<span id="exm:unnamed-chunk-45" class="example"><strong>Ejemplo 5.2  (Multiplicadores de Lagrange con dos restricciones o ligaduras)  </strong></span>Sea <span class="math inline">\(T(x,y,z)=20+2x+2y+z^2\)</span> la temperatura en cada punto en una esfera <span class="math inline">\(x^2+y^2+z^2=11\)</span>. Hallar las temperaturas extremas en la curva formada por la intersección del plano <span class="math inline">\(x+y+z=3\)</span> y la esfera.
 </div>
 
 <p><br></br></p>
