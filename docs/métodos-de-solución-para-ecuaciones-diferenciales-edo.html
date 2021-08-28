@@ -24,7 +24,7 @@
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2021-08-16" />
+<meta name="date" content="2021-08-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -194,6 +194,10 @@
 <li class="chapter" data-level="6.18" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>6.18</b> Teorema de comparacion para integrales impropias</a><ul>
 <li class="chapter" data-level="6.18.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>6.18.1</b> Ejemplo teorema de comparacion para integrales impropias</a></li>
 </ul></li>
+<li class="chapter" data-level="6.19" data-path="integrales-simples.html"><a href="integrales-simples.html#aproximación-numérica-de-la-integral-definida"><i class="fa fa-check"></i><b>6.19</b> Aproximación numérica de la integral definida</a><ul>
+<li class="chapter" data-level="6.19.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-regla-de-trapecios"><i class="fa fa-check"></i><b>6.19.1</b> Ejemplo Regla de Trapecios$</a></li>
+<li class="chapter" data-level="6.19.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-regla-de-simpson-13"><i class="fa fa-check"></i><b>6.19.2</b> Ejemplo Regla de Simpson <span class="math inline">\(1/3\)</span></a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
 <li class="chapter" data-level="7.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>7.1</b> Definición de integral doble</a></li>
@@ -299,7 +303,7 @@ Figura 9.1: Modelado matemático [Imagen tomada de <span class="citation">(Stewa
 <h2><span class="header-section-number">9.1</span> Definición para una Ecuación Diferencial</h2>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-141" class="definition"><strong>Definición 9.1  (Definición de ecuación diferencial)  </strong></span>Es una ecuación que contiene una función desconocida <span class="math inline">\(y\)</span> y algunas de sus derivadas.
+<p><span id="def:unnamed-chunk-143" class="definition"><strong>Definición 9.1  (Definición de ecuación diferencial)  </strong></span>Es una ecuación que contiene una función desconocida <span class="math inline">\(y\)</span> y algunas de sus derivadas.
 Un ejemplo de ecuación diferencial es el modelado matemático que con frecuencia toma está forma. Esto no es sorprendente, porque en los problemas del mundo real, es común observar que ocurran cambios y se desea predecir el comportamiento futuro con respecto a como cambian los valores actuales.</p>
 tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(24\)</span> y <span class="math inline">\(567\)</span>
 </div>
@@ -374,7 +378,7 @@ m\dfrac{dv}{dt}=-\dfrac{mgR^2}{(x+R)^2}}
 <h2><span class="header-section-number">9.2</span> Método para separar variables</h2>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-142" class="definition"><strong>Definición 9.2  (Ec diferencial separable)  </strong></span>Una ecuación diferencial de la forma:</p>
+<p><span id="def:unnamed-chunk-144" class="definition"><strong>Definición 9.2  (Ec diferencial separable)  </strong></span>Una ecuación diferencial de la forma:</p>
 <p><span class="math display">\[
 \dfrac{dy}{dx}=f(x,y)
 \]</span>
@@ -393,7 +397,7 @@ f(x,y)=\dfrac{g(x)}{h(y)} \qquad \text{ ó } \qquad f(x,y)=g(x).h(y)
 <h3><span class="header-section-number">9.2.1</span> Ejemplo1 Ec Diferencial separable</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-143" class="example"><strong>Ejemplo 9.1  (Ec Diferencial separable)  </strong></span>Resuelva la ecuación diferencial</p>
+<p><span id="exm:unnamed-chunk-145" class="example"><strong>Ejemplo 9.1  (Ec Diferencial separable)  </strong></span>Resuelva la ecuación diferencial</p>
 <p><span class="math display">\[
 \dfrac{dy}{dx}=\dfrac{x^2}{y^2}
 \]</span></p>
@@ -460,7 +464,7 @@ x^3+8 &amp; = y^3\\
 <h2><span class="header-section-number">9.3</span> Ec Diferencial lineal</h2>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-145" class="definition"><strong>Definición 9.3  (Ecuación diferencial lineal)  </strong></span>Una ecuación diferencial se dice lineal si tiene la forma:</p>
+<p><span id="def:unnamed-chunk-147" class="definition"><strong>Definición 9.3  (Ecuación diferencial lineal)  </strong></span>Una ecuación diferencial se dice lineal si tiene la forma:</p>
 <p><span class="math display">\[
 \dfrac{dy}{dx}+P(x)y=Q(x)
 \]</span>
@@ -477,7 +481,7 @@ F \ \text{ se conoce como factor de integración. }
 <h3><span class="header-section-number">9.3.1</span> Ejemplo1 Ec Dif lineal</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-146" class="example"><strong>Ejemplo 9.2  </strong></span>Considere una población <span class="math inline">\(P=P(t)\)</span> con rapidez de nacimiento y de mortalidad constante <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\beta\)</span>, respectivamente y una relación <span class="math inline">\(m\)</span> de migración constante, donde <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span>, y <span class="math inline">\(m\)</span> son constantes positivas. Considere que <span class="math inline">\(\alpha &gt; \beta\)</span>. En tal caso la relación de cambio de la población en el tiempo <span class="math inline">\(t\)</span> se representa mediante la ecuación diferencial lineal:
+<p><span id="exm:unnamed-chunk-148" class="example"><strong>Ejemplo 9.2  </strong></span>Considere una población <span class="math inline">\(P=P(t)\)</span> con rapidez de nacimiento y de mortalidad constante <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\beta\)</span>, respectivamente y una relación <span class="math inline">\(m\)</span> de migración constante, donde <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span>, y <span class="math inline">\(m\)</span> son constantes positivas. Considere que <span class="math inline">\(\alpha &gt; \beta\)</span>. En tal caso la relación de cambio de la población en el tiempo <span class="math inline">\(t\)</span> se representa mediante la ecuación diferencial lineal:
 <span class="math display">\[
 \dfrac{dP}{dt}=kP-m \qquad \text{donde } \qquad k=\alpha-\beta  
 \]</span></p>
@@ -513,7 +517,7 @@ P_0-\dfrac{m}{k} &amp; = C
 <h3><span class="header-section-number">9.3.2</span> Ejemplo2 Ec Dif lineal</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-148" class="example"><strong>Ejemplo 9.3  </strong></span>Sea <span class="math inline">\(P(t)\)</span> el nivel de desempeño de alguien que aprende una habilidad como función de tiempo de capacitación <span class="math inline">\(t\)</span>. La gráfica de <span class="math inline">\(P\)</span> se llama curva de aprendizaje. Resolver la ecuación diferencial lineal</p>
+<p><span id="exm:unnamed-chunk-150" class="example"><strong>Ejemplo 9.3  </strong></span>Sea <span class="math inline">\(P(t)\)</span> el nivel de desempeño de alguien que aprende una habilidad como función de tiempo de capacitación <span class="math inline">\(t\)</span>. La gráfica de <span class="math inline">\(P\)</span> se llama curva de aprendizaje. Resolver la ecuación diferencial lineal</p>
 <p><span class="math display">\[
 \dfrac{dP}{dt}=k\left[M-P(t)\right], \qquad \text{Modelo razonable para el aprendizaje}
 \]</span>
@@ -548,7 +552,7 @@ P(t)= &amp;  M+C_1 \qquad \text{Presentación de la solución en forma explícit
 <h2><span class="header-section-number">9.4</span> Definición de transformada</h2>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-150" class="theorem"><strong>Teorema 9.1  (Definición de transformada de Laplace)  </strong></span>Sea <span class="math inline">\(f\)</span> una función definida para <span class="math inline">\(t \geq 0\)</span>. Entonces se dice que la integral</p>
+<p><span id="thm:unnamed-chunk-152" class="theorem"><strong>Teorema 9.1  (Definición de transformada de Laplace)  </strong></span>Sea <span class="math inline">\(f\)</span> una función definida para <span class="math inline">\(t \geq 0\)</span>. Entonces se dice que la integral</p>
 <p><span class="math display">\[
 \mathscr{L}\{f(t)\}=F(s)=\int_{0}^{\infty}{e^{-st}f(t)dt}
 \]</span></p>
@@ -566,7 +570,7 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 <h3><span class="header-section-number">9.4.1</span> Ejemplo1 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-151" class="example"><strong>Ejemplo 9.4  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-153" class="example"><strong>Ejemplo 9.4  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{1\}
 \]</span></p>
@@ -594,7 +598,7 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 <h3><span class="header-section-number">9.4.2</span> Ejemplo2 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-153" class="example"><strong>Ejemplo 9.5  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-155" class="example"><strong>Ejemplo 9.5  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{t\}
 \]</span></p>
@@ -622,7 +626,7 @@ tomada <span class="citation">(Zill, Hernández, and López <a href="#ref-zill20
 <h3><span class="header-section-number">9.4.3</span> Ejemplo3 Transformada</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-155" class="example"><strong>Ejemplo 9.6  </strong></span>Obtener</p>
+<p><span id="exm:unnamed-chunk-157" class="example"><strong>Ejemplo 9.6  </strong></span>Obtener</p>
 <p><span class="math display">\[
   \mathscr{L}\{e^{-3t}\}
 \]</span></p>

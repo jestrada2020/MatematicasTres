@@ -24,7 +24,7 @@
 <meta name="author" content="John Jairo Estrada Álvarez" />
 
 
-<meta name="date" content="2021-08-16" />
+<meta name="date" content="2021-08-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -194,6 +194,10 @@
 <li class="chapter" data-level="6.18" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>6.18</b> Teorema de comparacion para integrales impropias</a><ul>
 <li class="chapter" data-level="6.18.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>6.18.1</b> Ejemplo teorema de comparacion para integrales impropias</a></li>
 </ul></li>
+<li class="chapter" data-level="6.19" data-path="integrales-simples.html"><a href="integrales-simples.html#aproximación-numérica-de-la-integral-definida"><i class="fa fa-check"></i><b>6.19</b> Aproximación numérica de la integral definida</a><ul>
+<li class="chapter" data-level="6.19.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-regla-de-trapecios"><i class="fa fa-check"></i><b>6.19.1</b> Ejemplo Regla de Trapecios$</a></li>
+<li class="chapter" data-level="6.19.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-regla-de-simpson-13"><i class="fa fa-check"></i><b>6.19.2</b> Ejemplo Regla de Simpson <span class="math inline">\(1/3\)</span></a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
 <li class="chapter" data-level="7.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>7.1</b> Definición de integral doble</a></li>
@@ -271,7 +275,7 @@ Evariste Galois (1811-1832).
 <h2><span class="header-section-number">8.1</span> Definición integral triple</h2>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-132" class="definition"><strong>Definición 8.1  </strong></span>Si <span class="math inline">\(f\)</span> es continua sobre una región sólida acotada <span class="math inline">\(Q\)</span> del espacio <span class="math inline">\(XYZ\)</span>, entonces la integral tripe de f sobre <span class="math inline">\(Q\)</span> se define como:</p>
+<p><span id="def:unnamed-chunk-134" class="definition"><strong>Definición 8.1  </strong></span>Si <span class="math inline">\(f\)</span> es continua sobre una región sólida acotada <span class="math inline">\(Q\)</span> del espacio <span class="math inline">\(XYZ\)</span>, entonces la integral tripe de f sobre <span class="math inline">\(Q\)</span> se define como:</p>
 <p><span class="math display">\[
 \displaystyle{{\int\int\int}_{Q}}{f(x,y,z)dV}=\displaystyle\lim_{{\parallel{\bigtriangleup}\parallel} \to 0}{\sum_{i=1}^{n}{f(x_i,y_i,z_i){\bigtriangleup}V_i}}
 \]</span></p>
@@ -285,7 +289,7 @@ Evariste Galois (1811-1832).
 <p><br></br></p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-133" class="theorem"><strong>Teorema 8.1  (Evaluación mediante integrales iteradas)  </strong></span>Sea <span class="math inline">\(f\)</span> continua en una región sólida definida por <span class="math inline">\(Q\)</span>
+<p><span id="thm:unnamed-chunk-135" class="theorem"><strong>Teorema 8.1  (Evaluación mediante integrales iteradas)  </strong></span>Sea <span class="math inline">\(f\)</span> continua en una región sólida definida por <span class="math inline">\(Q\)</span>
 <span class="math display">\[
 Q=\left\{ \begin{array}{lcc}
          \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a \leq  x \leq b \\
@@ -307,7 +311,7 @@ Q=\left\{ \begin{array}{lcc}
 <h2><span class="header-section-number">8.2</span> Ejercicio integral triple</h2>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-134" class="exercise"><strong>Ejercicio 8.1  (Evaluación de una integral triple iterada)  </strong></span>Evaluar la integral iterada triple</p>
+<p><span id="exr:unnamed-chunk-136" class="exercise"><strong>Ejercicio 8.1  (Evaluación de una integral triple iterada)  </strong></span>Evaluar la integral iterada triple</p>
 <p><span class="math display">\[
 \int_{0}^{2}\int_{0}^{x}\int_{0}^{x+y}{e^{x}(y+2z)dzdydx}
 \]</span></p>
@@ -336,7 +340,7 @@ Puede también ver la respuesta de este ejercicio en <span class="citation">(Lar
 <h2><span class="header-section-number">8.3</span> Ejercicio integral triple</h2>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-136" class="exercise"><strong>Ejercicio 8.2  (Obtener el volumen usando integral triple iterada)  </strong></span>Hallar el volumen del elipsoide dado por <span class="math inline">\(4x^2+4y^2+z^2=16\)</span></p>
+<p><span id="exr:unnamed-chunk-138" class="exercise"><strong>Ejercicio 8.2  (Obtener el volumen usando integral triple iterada)  </strong></span>Hallar el volumen del elipsoide dado por <span class="math inline">\(4x^2+4y^2+z^2=16\)</span></p>
 <p><span class="math display">\[
   V(\text{sólido  }Q)={\int\int\int}_{Q}{1dV}
 \]</span></p>
@@ -386,7 +390,7 @@ Puede también ver la respuesta de este ejercicio en <span class="citation">(Lar
 <h2><span class="header-section-number">8.4</span> Ejercicio integral triple</h2>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-138" class="exercise"><strong>Ejercicio 8.3  (Volumen de un solido generado por la intersección de superficies)  </strong></span>Obtener la gráfica del sólido generado en el primer octante, por la intersección de las superficies en el espacio <span class="math inline">\(XYZ\)</span>:</p>
+<p><span id="exr:unnamed-chunk-140" class="exercise"><strong>Ejercicio 8.3  (Volumen de un solido generado por la intersección de superficies)  </strong></span>Obtener la gráfica del sólido generado en el primer octante, por la intersección de las superficies en el espacio <span class="math inline">\(XYZ\)</span>:</p>
 <span class="math display">\[\begin{equation}
 z^2+y^2=9 \ \ \ \   : \text{Cilíndro}  \ \ \ \\
 y=2, \ \ y=4 \ \ \ \   : \text{Planos paralelos al plano } \ XZ  \ \ \ \\
@@ -421,7 +425,7 @@ z=0, \ \ \ \   : \text{Plano} \ XY  \ \ \ \\
 <h2><span class="header-section-number">8.5</span> Ejercicio integral triple</h2>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-139" class="exercise"><strong>Ejercicio 8.4  (Volumen de un solido generado por la intersección de superficies)  </strong></span>Obtener la gráfica del sólido generado a partir de la intersección de las superficies en el espacio <span class="math inline">\(XYZ\)</span>:</p>
+<p><span id="exr:unnamed-chunk-141" class="exercise"><strong>Ejercicio 8.4  (Volumen de un solido generado por la intersección de superficies)  </strong></span>Obtener la gráfica del sólido generado a partir de la intersección de las superficies en el espacio <span class="math inline">\(XYZ\)</span>:</p>
 <span class="math display">\[\begin{equation}
 x^2+z^2+y^2=8 \ \ \ \   : \text{Esfera}  \ \ \ \\
 y^2+x^2=z^2, \ \ \ \   : \text{Cono arribal del plano } \ XY  \ \ \ \\
@@ -455,7 +459,7 @@ y^2+x^2=z^2, \ \ \ \   : \text{Cono arribal del plano } \ XY  \ \ \ \\
 <h2><span class="header-section-number">8.6</span> Ejercicio integral triple</h2>
 
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-140" class="exercise"><strong>Ejercicio 8.5  (Volumen de un solido generado por la intersección de superficies)  </strong></span>Determine el volumen del segmento oblicuo de paraboloide acotado por el paraboloide <span class="math inline">\(z=x^2+y^2\)</span> y el plano <span class="math inline">\(z=y+2\)</span> en el espacio <span class="math inline">\(XYZ\)</span>:</p>
+<p><span id="exr:unnamed-chunk-142" class="exercise"><strong>Ejercicio 8.5  (Volumen de un solido generado por la intersección de superficies)  </strong></span>Determine el volumen del segmento oblicuo de paraboloide acotado por el paraboloide <span class="math inline">\(z=x^2+y^2\)</span> y el plano <span class="math inline">\(z=y+2\)</span> en el espacio <span class="math inline">\(XYZ\)</span>:</p>
 [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(872\)</span>]
 </div>
 
