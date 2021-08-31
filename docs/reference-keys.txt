@@ -260,3 +260,7 @@ ejemplo1-transformada
 ejemplo2-transformada
 ejemplo3-transformada
 tabla-de-transformadas
+métodos-numéricos-para-resolver-edo
+método-de-euler
+método-de-euler-mejorado
+método-de-runge-kutta-4-rk4
