@@ -253,6 +253,7 @@ ejemplos-de-ecuaciones-diferenciales
 método-para-separar-variables
 ejemplo1-ec-diferencial-separable
 ec-diferencial-lineal
+ejemplo1-mezclas
 ejemplo1-ec-dif-lineal
 ejemplo2-ec-dif-lineal
 definición-de-transformada
