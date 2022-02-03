@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 6 Integrales simples | Curso de Matemáticas Tres UCES</title>
+  <title>Capítulo 5 Integrales simples | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 6 Integrales simples | Curso de Matemáticas Tres UCES" />
+  <meta property="og:title" content="Capítulo 5 Integrales simples | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
   
   
@@ -16,15 +16,15 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 6 Integrales simples | Curso de Matemáticas Tres UCES" />
+  <meta name="twitter:title" content="Capítulo 5 Integrales simples | Curso de Matemáticas Tres UCES" />
   
   <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
 
-<meta name="author" content="John Jairo Estrada Álvarez" />
+<meta name="author" content="Carlos Andrés Escobar Guerra - Juan Alberto Arias Quiceno - John Jairo Estrada Alvarez" />
 
 
-<meta name="date" content="2022-01-13" />
+<meta name="date" content="2022-02-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,6 +33,7 @@
   
 <link rel="prev" href="métodos-para-máximos-y-mínimos.html"/>
 <link rel="next" href="integrales-dobles.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,7 +51,6 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
@@ -64,6 +64,28 @@
 
 
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -81,165 +103,183 @@
 <li><a href="./">Curso de Matemáticas Tres</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a><ul>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>1.1</b> Comportamentales</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>1.2</b> Evaluativos</a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#fechas-de-evaluación"><i class="fa fa-check"></i><b>1.3</b> Fechas de evaluación</a><ul>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#fechas-de-evaluación"><i class="fa fa-check"></i><b>1.3</b> Fechas de evaluación</a>
+<ul>
 <li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#talleres-evaluativos"><i class="fa fa-check"></i><b>1.3.1</b> Talleres evaluativos</a></li>
 </ul></li>
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>1.4</b> Video motivacional</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>1.5</b> Página para reforzar conceptos básicos</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html"><i class="fa fa-check"></i><b>2</b> Desarrollo temático</a><ul>
+<li class="chapter" data-level="2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html"><i class="fa fa-check"></i><b>2</b> Desarrollo temático</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#objetivo-general"><i class="fa fa-check"></i><b>2.1</b> Objetivo general</a></li>
 <li class="chapter" data-level="2.2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#objetivos-específicos"><i class="fa fa-check"></i><b>2.2</b> Objetivos específicos</a></li>
 <li class="chapter" data-level="2.3" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#clase-a-clase"><i class="fa fa-check"></i><b>2.3</b> <strong>Clase a clase</strong></a></li>
 <li class="chapter" data-level="2.4" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#bibliografía"><i class="fa fa-check"></i><b>2.4</b> Bibliografía</a></li>
-<li class="chapter" data-level="2.5" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#video-manejo-de-la-casio-f_x350ms"><i class="fa fa-check"></i><b>2.5</b> Video manejo de la Casio <span class="math inline">\(f_{x}350MS\)</span></a><ul>
+<li class="chapter" data-level="2.5" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#video-manejo-de-la-casio-f_x350ms"><i class="fa fa-check"></i><b>2.5</b> Video manejo de la Casio <span class="math inline">\(f_{x}350MS\)</span></a>
+<ul>
 <li class="chapter" data-level="2.5.1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-cramer-sistemas-2-por-2"><i class="fa fa-check"></i><b>2.5.1</b> Regla de Cramer sistemas <span class="math inline">\(2\)</span> por <span class="math inline">\(2\)</span></a></li>
 <li class="chapter" data-level="2.5.2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-cramer-sistemas-3-por-3"><i class="fa fa-check"></i><b>2.5.2</b> Regla de Cramer sistemas <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
 <li class="chapter" data-level="2.5.3" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-sarrus-determinante-3-por-3"><i class="fa fa-check"></i><b>2.5.3</b> Regla de Sarrus determinante <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
 <li class="chapter" data-level="2.5.4" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#solución-de-la-ecuación-cuadrática"><i class="fa fa-check"></i><b>2.5.4</b> Solución de la ecuación cuadrática</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>3</b> Introducción</a><ul>
+<li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>3</b> Introducción</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="intro.html"><a href="intro.html#punto-frontera-y-punto-interior-en-el-plano"><i class="fa fa-check"></i><b>3.1</b> Punto frontera y punto interior en el plano</a></li>
 <li class="chapter" data-level="3.2" data-path="intro.html"><a href="intro.html#función-de-dos-variables"><i class="fa fa-check"></i><b>3.2</b> Función de dos variables</a></li>
-<li class="chapter" data-level="3.3" data-path="intro.html"><a href="intro.html#punto-frontera-y-punto-interior-en-el-espacio"><i class="fa fa-check"></i><b>3.3</b> Punto frontera y punto interior en el espacio</a></li>
-<li class="chapter" data-level="3.4" data-path="intro.html"><a href="intro.html#detalles-de-una-superficie-en-el-espacio-xyz"><i class="fa fa-check"></i><b>3.4</b> Detalles de una superficie en el espacio <span class="math inline">\(XYZ\)</span></a></li>
-<li class="chapter" data-level="3.5" data-path="intro.html"><a href="intro.html#curvas-de-nivel-para-el-pueblito-paisa-de-medellín"><i class="fa fa-check"></i><b>3.5</b> Curvas de nivel para el Pueblito Paisa de Medellín</a></li>
-<li class="chapter" data-level="3.6" data-path="intro.html"><a href="intro.html#curvas-de-nivel-para-la-uces-de-medellín"><i class="fa fa-check"></i><b>3.6</b> Curvas de nivel para la UCES de Medellín</a></li>
+<li class="chapter" data-level="3.3" data-path="intro.html"><a href="intro.html#ejercicio-derivada-parcial-con-respecto-a-y"><i class="fa fa-check"></i><b>3.3</b> Ejercicio derivada parcial con respecto a <span class="math inline">\(y\)</span></a></li>
+<li class="chapter" data-level="3.4" data-path="intro.html"><a href="intro.html#notación-ó-simbología-de-la-derivada-parcial"><i class="fa fa-check"></i><b>3.4</b> Notación (ó simbología) de la derivada parcial</a></li>
+<li class="chapter" data-level="3.5" data-path="intro.html"><a href="intro.html#significado-geométrico-de-la-derivada-parcial-con-respecto-a-x-y-y"><i class="fa fa-check"></i><b>3.5</b> Significado geométrico de la derivada parcial con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span></a></li>
+<li class="chapter" data-level="3.6" data-path="intro.html"><a href="intro.html#ejercicio-pendiente-de-una-superficie"><i class="fa fa-check"></i><b>3.6</b> Ejercicio Pendiente de una superficie</a></li>
+<li class="chapter" data-level="3.7" data-path="intro.html"><a href="intro.html#herramienta-para-evaluar-primeras-derivadas-parciales-en-ab"><i class="fa fa-check"></i><b>3.7</b> Herramienta para evaluar primeras derivadas parciales en <span class="math inline">\((a,b)\)</span></a></li>
+<li class="chapter" data-level="3.8" data-path="intro.html"><a href="intro.html#derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>3.8</b> Derivadas parciales de orden superior</a></li>
+<li class="chapter" data-level="3.9" data-path="intro.html"><a href="intro.html#ejercicio-derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>3.9</b> Ejercicio derivadas parciales de orden superior</a></li>
+<li class="chapter" data-level="3.10" data-path="intro.html"><a href="intro.html#herramienta-para-evaluar-derivadas-parciales-de-orden-dos-en-ab"><i class="fa fa-check"></i><b>3.10</b> Herramienta para evaluar derivadas parciales de orden dos en <span class="math inline">\((a,b)\)</span></a></li>
+<li class="chapter" data-level="3.11" data-path="intro.html"><a href="intro.html#regla-de-la-cadena-para-funciones-de-varias-variables"><i class="fa fa-check"></i><b>3.11</b> Regla de la cadena para funciones de varias variables</a>
+<ul>
+<li class="chapter" data-level="3.11.1" data-path="intro.html"><a href="intro.html#una-variable-independiente"><i class="fa fa-check"></i><b>3.11.1</b> Una variable independiente</a></li>
+<li class="chapter" data-level="3.11.2" data-path="intro.html"><a href="intro.html#dos-variables-independientes"><i class="fa fa-check"></i><b>3.11.2</b> Dos variables independientes</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html"><i class="fa fa-check"></i><b>4</b> Métodos para derivar parcialmente</a><ul>
-<li class="chapter" data-level="4.1" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#definición-derivada-parcial"><i class="fa fa-check"></i><b>4.1</b> Definición derivada parcial</a></li>
-<li class="chapter" data-level="4.2" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-derivada-parcial-con-respecto-a-x"><i class="fa fa-check"></i><b>4.2</b> Ejercicio derivada parcial con respecto a <span class="math inline">\(x\)</span></a></li>
-<li class="chapter" data-level="4.3" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-derivada-parcial-con-respecto-a-y"><i class="fa fa-check"></i><b>4.3</b> Ejercicio derivada parcial con respecto a <span class="math inline">\(y\)</span></a></li>
-<li class="chapter" data-level="4.4" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#notación-ó-simbología-de-la-derivada-parcial"><i class="fa fa-check"></i><b>4.4</b> Notación (ó simbología) de la derivada parcial</a></li>
-<li class="chapter" data-level="4.5" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#significado-geométrico-de-la-derivada-parcial-con-respecto-a-x-y-y"><i class="fa fa-check"></i><b>4.5</b> Significado geométrico de la derivada parcial con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span></a></li>
-<li class="chapter" data-level="4.6" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-pendiente-de-una-superficie"><i class="fa fa-check"></i><b>4.6</b> Ejercicio Pendiente de una superficie</a></li>
-<li class="chapter" data-level="4.7" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#herramienta-para-evaluar-primeras-derivadas-parciales-en-ab"><i class="fa fa-check"></i><b>4.7</b> Herramienta para evaluar primeras derivadas parciales en <span class="math inline">\((a,b)\)</span></a></li>
-<li class="chapter" data-level="4.8" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>4.8</b> Derivadas parciales de orden superior</a></li>
-<li class="chapter" data-level="4.9" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>4.9</b> Ejercicio derivadas parciales de orden superior</a></li>
-<li class="chapter" data-level="4.10" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#herramienta-para-evaluar-derivadas-parciales-de-orden-dos-en-ab"><i class="fa fa-check"></i><b>4.10</b> Herramienta para evaluar derivadas parciales de orden dos en <span class="math inline">\((a,b)\)</span></a></li>
-<li class="chapter" data-level="4.11" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#regla-de-la-cadena-para-funciones-de-varias-variables"><i class="fa fa-check"></i><b>4.11</b> Regla de la cadena para funciones de varias variables</a><ul>
-<li class="chapter" data-level="4.11.1" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#una-variable-independiente"><i class="fa fa-check"></i><b>4.11.1</b> Una variable independiente</a></li>
-<li class="chapter" data-level="4.11.2" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#dos-variables-independientes"><i class="fa fa-check"></i><b>4.11.2</b> Dos variables independientes</a></li>
+<li class="chapter" data-level="3.12" data-path="intro.html"><a href="intro.html#herramienta-evalúa-rcadena2v-independientes"><i class="fa fa-check"></i><b>3.12</b> Herramienta evalúa RCadena2V independientes</a></li>
+<li class="chapter" data-level="3.13" data-path="intro.html"><a href="intro.html#derivación-parcial-implícita"><i class="fa fa-check"></i><b>3.13</b> Derivación parcial implícita</a></li>
+<li class="chapter" data-level="3.14" data-path="intro.html"><a href="intro.html#derivada-direccional"><i class="fa fa-check"></i><b>3.14</b> Derivada direccional</a></li>
+<li class="chapter" data-level="3.15" data-path="intro.html"><a href="intro.html#gradiente-de-una-función"><i class="fa fa-check"></i><b>3.15</b> Gradiente de una función</a></li>
 </ul></li>
-<li class="chapter" data-level="4.12" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#herramienta-evalúa-rcadena2v-independientes"><i class="fa fa-check"></i><b>4.12</b> Herramienta evalúa RCadena2V independientes</a></li>
-<li class="chapter" data-level="4.13" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#derivación-parcial-implícita"><i class="fa fa-check"></i><b>4.13</b> Derivación parcial implícita</a></li>
-<li class="chapter" data-level="4.14" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#derivada-direccional"><i class="fa fa-check"></i><b>4.14</b> Derivada direccional</a></li>
-<li class="chapter" data-level="4.15" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#gradiente-de-una-función"><i class="fa fa-check"></i><b>4.15</b> Gradiente de una función</a></li>
+<li class="chapter" data-level="4" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html"><i class="fa fa-check"></i><b>4</b> Métodos para máximos y mínimos</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#significado-geométrico-de-máximo-y-mínimo-local"><i class="fa fa-check"></i><b>4.1</b> Significado geométrico de máximo y mínimo local</a></li>
+<li class="chapter" data-level="4.2" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#herramienta-para-obtener-el-hessiano-2por2"><i class="fa fa-check"></i><b>4.2</b> Herramienta para obtener el Hessiano 2por2</a></li>
+<li class="chapter" data-level="4.3" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#método-de-los-multiplicadore-de-lagrange-para-determinar-máximos-o-mínimos"><i class="fa fa-check"></i><b>4.3</b> Método de los multiplicadore de Lagrange para determinar máximos o mínimos</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html"><i class="fa fa-check"></i><b>5</b> Métodos para máximos y mínimos</a><ul>
-<li class="chapter" data-level="5.1" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#significado-geométrico-de-máximo-y-mínimo-local"><i class="fa fa-check"></i><b>5.1</b> Significado geométrico de máximo y mínimo local</a></li>
-<li class="chapter" data-level="5.2" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#herramienta-para-obtener-el-hessiano-2por2"><i class="fa fa-check"></i><b>5.2</b> Herramienta para obtener el Hessiano 2por2</a></li>
-<li class="chapter" data-level="5.3" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#método-de-los-multiplicadore-de-lagrange-para-determinar-máximos-o-mínimos"><i class="fa fa-check"></i><b>5.3</b> Método de los multiplicadore de Lagrange para determinar máximos o mínimos</a></li>
+<li class="chapter" data-level="5" data-path="integrales-simples.html"><a href="integrales-simples.html"><i class="fa fa-check"></i><b>5</b> Integrales simples</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="integrales-simples.html"><a href="integrales-simples.html#primera-tabla-de-antiderivadas"><i class="fa fa-check"></i><b>5.1</b> Primera tabla de antiderivadas</a></li>
+<li class="chapter" data-level="5.2" data-path="integrales-simples.html"><a href="integrales-simples.html#herramienta-para-obtener-antiderivadas"><i class="fa fa-check"></i><b>5.2</b> Herramienta para obtener antiderivadas</a></li>
+<li class="chapter" data-level="5.3" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-las-antiderivadas"><i class="fa fa-check"></i><b>5.3</b> Propiedades de las antiderivadas</a></li>
+<li class="chapter" data-level="5.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-de-antiderivada"><i class="fa fa-check"></i><b>5.4</b> Ejemplo1 de antiderivada</a></li>
+<li class="chapter" data-level="5.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-de-antiderivada"><i class="fa fa-check"></i><b>5.5</b> Ejemplo2 de antiderivada</a></li>
+<li class="chapter" data-level="5.6" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-uno"><i class="fa fa-check"></i><b>5.6</b> Teorema fundamental del cálculo, caso Uno</a></li>
+<li class="chapter" data-level="5.7" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-dos"><i class="fa fa-check"></i><b>5.7</b> Teorema fundamental del cálculo, caso Dos</a></li>
+<li class="chapter" data-level="5.8" data-path="integrales-simples.html"><a href="integrales-simples.html#técnicas-de-integración"><i class="fa fa-check"></i><b>5.8</b> Técnicas de integración</a></li>
+<li class="chapter" data-level="5.9" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-sustitución-o-cambio-de-variable"><i class="fa fa-check"></i><b>5.9</b> Integración por sustitución o cambio de variable</a>
+<ul>
+<li class="chapter" data-level="5.9.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-por-sustitución"><i class="fa fa-check"></i><b>5.9.1</b> Ejemplo1 por sustitución</a></li>
+<li class="chapter" data-level="5.9.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-por-sustitución"><i class="fa fa-check"></i><b>5.9.2</b> Ejemplo2 por sustitución</a></li>
+<li class="chapter" data-level="5.9.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-por-sustitución"><i class="fa fa-check"></i><b>5.9.3</b> Ejemplo3 por sustitución</a></li>
+<li class="chapter" data-level="5.9.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-por-sustitución"><i class="fa fa-check"></i><b>5.9.4</b> Ejemplo4 por sustitución</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="integrales-simples.html"><a href="integrales-simples.html"><i class="fa fa-check"></i><b>6</b> Integrales simples</a><ul>
-<li class="chapter" data-level="6.1" data-path="integrales-simples.html"><a href="integrales-simples.html#primera-tabla-de-antiderivadas"><i class="fa fa-check"></i><b>6.1</b> Primera tabla de antiderivadas</a></li>
-<li class="chapter" data-level="6.2" data-path="integrales-simples.html"><a href="integrales-simples.html#herramienta-para-obtener-antiderivadas"><i class="fa fa-check"></i><b>6.2</b> Herramienta para obtener antiderivadas</a></li>
-<li class="chapter" data-level="6.3" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-las-antiderivadas"><i class="fa fa-check"></i><b>6.3</b> Propiedades de las antiderivadas</a></li>
-<li class="chapter" data-level="6.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-de-antiderivada"><i class="fa fa-check"></i><b>6.4</b> Ejemplo1 de antiderivada</a></li>
-<li class="chapter" data-level="6.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-de-antiderivada"><i class="fa fa-check"></i><b>6.5</b> Ejemplo2 de antiderivada</a></li>
-<li class="chapter" data-level="6.6" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-uno"><i class="fa fa-check"></i><b>6.6</b> Teorema fundamental del cálculo, caso Uno</a></li>
-<li class="chapter" data-level="6.7" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-dos"><i class="fa fa-check"></i><b>6.7</b> Teorema fundamental del cálculo, caso Dos</a></li>
-<li class="chapter" data-level="6.8" data-path="integrales-simples.html"><a href="integrales-simples.html#técnicas-de-integración"><i class="fa fa-check"></i><b>6.8</b> Técnicas de integración</a></li>
-<li class="chapter" data-level="6.9" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-sustitución-o-cambio-de-variable"><i class="fa fa-check"></i><b>6.9</b> Integración por sustitución o cambio de variable</a><ul>
-<li class="chapter" data-level="6.9.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-por-sustitución"><i class="fa fa-check"></i><b>6.9.1</b> Ejemplo1 por sustitución</a></li>
-<li class="chapter" data-level="6.9.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-por-sustitución"><i class="fa fa-check"></i><b>6.9.2</b> Ejemplo2 por sustitución</a></li>
-<li class="chapter" data-level="6.9.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-por-sustitución"><i class="fa fa-check"></i><b>6.9.3</b> Ejemplo3 por sustitución</a></li>
-<li class="chapter" data-level="6.9.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-por-sustitución"><i class="fa fa-check"></i><b>6.9.4</b> Ejemplo4 por sustitución</a></li>
+<li class="chapter" data-level="5.10" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-partes"><i class="fa fa-check"></i><b>5.10</b> Integración por partes</a>
+<ul>
+<li class="chapter" data-level="5.10.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-por-partes"><i class="fa fa-check"></i><b>5.10.1</b> Ejemplo1 por partes</a></li>
+<li class="chapter" data-level="5.10.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-por-partes"><i class="fa fa-check"></i><b>5.10.2</b> Ejemplo2 por partes</a></li>
+<li class="chapter" data-level="5.10.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-por-partes"><i class="fa fa-check"></i><b>5.10.3</b> Ejemplo3 por partes</a></li>
+<li class="chapter" data-level="5.10.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-por-partes"><i class="fa fa-check"></i><b>5.10.4</b> Ejemplo4 por partes</a></li>
+<li class="chapter" data-level="5.10.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo5-por-partes"><i class="fa fa-check"></i><b>5.10.5</b> Ejemplo5 por partes</a></li>
+<li class="chapter" data-level="5.10.6" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo6-por-partes"><i class="fa fa-check"></i><b>5.10.6</b> Ejemplo6 por partes</a></li>
 </ul></li>
-<li class="chapter" data-level="6.10" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-partes"><i class="fa fa-check"></i><b>6.10</b> Integración por partes</a><ul>
-<li class="chapter" data-level="6.10.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-por-partes"><i class="fa fa-check"></i><b>6.10.1</b> Ejemplo1 por partes</a></li>
-<li class="chapter" data-level="6.10.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-por-partes"><i class="fa fa-check"></i><b>6.10.2</b> Ejemplo2 por partes</a></li>
-<li class="chapter" data-level="6.10.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-por-partes"><i class="fa fa-check"></i><b>6.10.3</b> Ejemplo3 por partes</a></li>
-<li class="chapter" data-level="6.10.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-por-partes"><i class="fa fa-check"></i><b>6.10.4</b> Ejemplo4 por partes</a></li>
-<li class="chapter" data-level="6.10.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo5-por-partes"><i class="fa fa-check"></i><b>6.10.5</b> Ejemplo5 por partes</a></li>
-<li class="chapter" data-level="6.10.6" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo6-por-partes"><i class="fa fa-check"></i><b>6.10.6</b> Ejemplo6 por partes</a></li>
+<li class="chapter" data-level="5.11" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-sustitución-trigonométrica"><i class="fa fa-check"></i><b>5.11</b> Integración por sustitución trigonométrica</a>
+<ul>
+<li class="chapter" data-level="5.11.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1"><i class="fa fa-check"></i><b>5.11.1</b> Ejemplo1</a></li>
+<li class="chapter" data-level="5.11.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2"><i class="fa fa-check"></i><b>5.11.2</b> Ejemplo2</a></li>
+<li class="chapter" data-level="5.11.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3"><i class="fa fa-check"></i><b>5.11.3</b> Ejemplo3</a></li>
 </ul></li>
-<li class="chapter" data-level="6.11" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-sustitución-trigonométrica"><i class="fa fa-check"></i><b>6.11</b> Integración por sustitución trigonométrica</a><ul>
-<li class="chapter" data-level="6.11.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1"><i class="fa fa-check"></i><b>6.11.1</b> Ejemplo1</a></li>
-<li class="chapter" data-level="6.11.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2"><i class="fa fa-check"></i><b>6.11.2</b> Ejemplo2</a></li>
-<li class="chapter" data-level="6.11.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3"><i class="fa fa-check"></i><b>6.11.3</b> Ejemplo3</a></li>
+<li class="chapter" data-level="5.12" data-path="integrales-simples.html"><a href="integrales-simples.html#integación-por-fracciones-parciales"><i class="fa fa-check"></i><b>5.12</b> Integación por fracciones parciales</a>
+<ul>
+<li class="chapter" data-level="5.12.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-1"><i class="fa fa-check"></i><b>5.12.1</b> Ejemplo1</a></li>
+<li class="chapter" data-level="5.12.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-1"><i class="fa fa-check"></i><b>5.12.2</b> Ejemplo2</a></li>
+<li class="chapter" data-level="5.12.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-1"><i class="fa fa-check"></i><b>5.12.3</b> Ejemplo3</a></li>
+<li class="chapter" data-level="5.12.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4"><i class="fa fa-check"></i><b>5.12.4</b> Ejemplo4</a></li>
+<li class="chapter" data-level="5.12.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo5"><i class="fa fa-check"></i><b>5.12.5</b> Ejemplo5</a></li>
 </ul></li>
-<li class="chapter" data-level="6.12" data-path="integrales-simples.html"><a href="integrales-simples.html#integación-por-fracciones-parciales"><i class="fa fa-check"></i><b>6.12</b> Integación por fracciones parciales</a><ul>
-<li class="chapter" data-level="6.12.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-1"><i class="fa fa-check"></i><b>6.12.1</b> Ejemplo1</a></li>
-<li class="chapter" data-level="6.12.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-1"><i class="fa fa-check"></i><b>6.12.2</b> Ejemplo2</a></li>
-<li class="chapter" data-level="6.12.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-1"><i class="fa fa-check"></i><b>6.12.3</b> Ejemplo3</a></li>
-<li class="chapter" data-level="6.12.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4"><i class="fa fa-check"></i><b>6.12.4</b> Ejemplo4</a></li>
-<li class="chapter" data-level="6.12.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo5"><i class="fa fa-check"></i><b>6.12.5</b> Ejemplo5</a></li>
+<li class="chapter" data-level="5.13" data-path="integrales-simples.html"><a href="integrales-simples.html#fórmulas-de-reducción-para-integrar"><i class="fa fa-check"></i><b>5.13</b> Fórmulas de reducción para integrar</a></li>
+<li class="chapter" data-level="5.14" data-path="integrales-simples.html"><a href="integrales-simples.html#sustitución-de-karl-weierstrass-1815-1897"><i class="fa fa-check"></i><b>5.14</b> Sustitución de Karl Weierstrass (1815-1897)</a>
+<ul>
+<li class="chapter" data-level="5.14.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1karl"><i class="fa fa-check"></i><b>5.14.1</b> Ejemplo1(Karl)</a></li>
 </ul></li>
-<li class="chapter" data-level="6.13" data-path="integrales-simples.html"><a href="integrales-simples.html#fórmulas-de-reducción-para-integrar"><i class="fa fa-check"></i><b>6.13</b> Fórmulas de reducción para integrar</a></li>
-<li class="chapter" data-level="6.14" data-path="integrales-simples.html"><a href="integrales-simples.html#sustitución-de-karl-weierstrass-1815-1897"><i class="fa fa-check"></i><b>6.14</b> Sustitución de Karl Weierstrass (1815-1897)</a><ul>
-<li class="chapter" data-level="6.14.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1karl"><i class="fa fa-check"></i><b>6.14.1</b> Ejemplo1(Karl)</a></li>
+<li class="chapter" data-level="5.15" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>5.15</b> Integral definida</a>
+<ul>
+<li class="chapter" data-level="5.15.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>5.15.1</b> Propiedades de la integral definida</a></li>
+<li class="chapter" data-level="5.15.2" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-para-las-sumatorias"><i class="fa fa-check"></i><b>5.15.2</b> Propiedades para las sumatorias</a></li>
+<li class="chapter" data-level="5.15.3" data-path="integrales-simples.html"><a href="integrales-simples.html#sumatorias-para-evaluar-integrales-definidas"><i class="fa fa-check"></i><b>5.15.3</b> Sumatorias para evaluar integrales definidas</a></li>
+<li class="chapter" data-level="5.15.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-evaluación-por-sumatoria"><i class="fa fa-check"></i><b>5.15.4</b> Ejemplo evaluación por sumatoria</a></li>
 </ul></li>
-<li class="chapter" data-level="6.15" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>6.15</b> Integral definida</a><ul>
-<li class="chapter" data-level="6.15.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>6.15.1</b> Propiedades de la integral definida</a></li>
-<li class="chapter" data-level="6.15.2" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-para-las-sumatorias"><i class="fa fa-check"></i><b>6.15.2</b> Propiedades para las sumatorias</a></li>
-<li class="chapter" data-level="6.15.3" data-path="integrales-simples.html"><a href="integrales-simples.html#sumatorias-para-evaluar-integrales-definidas"><i class="fa fa-check"></i><b>6.15.3</b> Sumatorias para evaluar integrales definidas</a></li>
-<li class="chapter" data-level="6.15.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-evaluación-por-sumatoria"><i class="fa fa-check"></i><b>6.15.4</b> Ejemplo evaluación por sumatoria</a></li>
+<li class="chapter" data-level="5.16" data-path="integrales-simples.html"><a href="integrales-simples.html#integrales-impropias-tipo-1"><i class="fa fa-check"></i><b>5.16</b> Integrales impropias tipo 1</a>
+<ul>
+<li class="chapter" data-level="5.16.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>5.16.1</b> Ejemplo1 integral impropia tipo Uno</a></li>
+<li class="chapter" data-level="5.16.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>5.16.2</b> Ejemplo2 integral impropia tipo Uno</a></li>
+<li class="chapter" data-level="5.16.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>5.16.3</b> Ejemplo3 integral impropia tipo Uno</a></li>
+<li class="chapter" data-level="5.16.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>5.16.4</b> Ejemplo4 integral impropia tipo Uno</a></li>
 </ul></li>
-<li class="chapter" data-level="6.16" data-path="integrales-simples.html"><a href="integrales-simples.html#integrales-impropias-tipo-1"><i class="fa fa-check"></i><b>6.16</b> Integrales impropias tipo 1</a><ul>
-<li class="chapter" data-level="6.16.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>6.16.1</b> Ejemplo1 integral impropia tipo Uno</a></li>
-<li class="chapter" data-level="6.16.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>6.16.2</b> Ejemplo2 integral impropia tipo Uno</a></li>
-<li class="chapter" data-level="6.16.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>6.16.3</b> Ejemplo3 integral impropia tipo Uno</a></li>
-<li class="chapter" data-level="6.16.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>6.16.4</b> Ejemplo4 integral impropia tipo Uno</a></li>
+<li class="chapter" data-level="5.17" data-path="integrales-simples.html"><a href="integrales-simples.html#integrales-impropias-tipo-2"><i class="fa fa-check"></i><b>5.17</b> Integrales impropias tipo 2</a>
+<ul>
+<li class="chapter" data-level="5.17.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-integral-impropia-tipo-2-caso-b"><i class="fa fa-check"></i><b>5.17.1</b> Ejemplo1 Integral impropia tipo 2 caso (b)</a></li>
+<li class="chapter" data-level="5.17.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-integral-impropia-tipo-2-caso-a"><i class="fa fa-check"></i><b>5.17.2</b> Ejemplo2 Integral impropia tipo 2 caso (a)</a></li>
+<li class="chapter" data-level="5.17.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-integral-impropia-tipo-2-caso-c"><i class="fa fa-check"></i><b>5.17.3</b> Ejemplo3 Integral impropia tipo 2 caso (c)</a></li>
 </ul></li>
-<li class="chapter" data-level="6.17" data-path="integrales-simples.html"><a href="integrales-simples.html#integrales-impropias-tipo-2"><i class="fa fa-check"></i><b>6.17</b> Integrales impropias tipo 2</a><ul>
-<li class="chapter" data-level="6.17.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-integral-impropia-tipo-2-caso-b"><i class="fa fa-check"></i><b>6.17.1</b> Ejemplo1 Integral impropia tipo 2 caso (b)</a></li>
-<li class="chapter" data-level="6.17.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-integral-impropia-tipo-2-caso-a"><i class="fa fa-check"></i><b>6.17.2</b> Ejemplo2 Integral impropia tipo 2 caso (a)</a></li>
-<li class="chapter" data-level="6.17.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-integral-impropia-tipo-2-caso-c"><i class="fa fa-check"></i><b>6.17.3</b> Ejemplo3 Integral impropia tipo 2 caso (c)</a></li>
+<li class="chapter" data-level="5.18" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>5.18</b> Teorema de comparacion para integrales impropias</a>
+<ul>
+<li class="chapter" data-level="5.18.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>5.18.1</b> Ejemplo teorema de comparacion para integrales impropias</a></li>
 </ul></li>
-<li class="chapter" data-level="6.18" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>6.18</b> Teorema de comparacion para integrales impropias</a><ul>
-<li class="chapter" data-level="6.18.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>6.18.1</b> Ejemplo teorema de comparacion para integrales impropias</a></li>
-</ul></li>
-<li class="chapter" data-level="6.19" data-path="integrales-simples.html"><a href="integrales-simples.html#aproximación-numérica-de-la-integral-definida"><i class="fa fa-check"></i><b>6.19</b> Aproximación numérica de la integral definida</a><ul>
-<li class="chapter" data-level="6.19.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-regla-de-trapecios"><i class="fa fa-check"></i><b>6.19.1</b> Ejemplo Regla de Trapecios</a></li>
-<li class="chapter" data-level="6.19.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-regla-de-simpson-13"><i class="fa fa-check"></i><b>6.19.2</b> Ejemplo Regla de Simpson <span class="math inline">\(1/3\)</span></a></li>
+<li class="chapter" data-level="5.19" data-path="integrales-simples.html"><a href="integrales-simples.html#aproximación-numérica-de-la-integral-definida"><i class="fa fa-check"></i><b>5.19</b> Aproximación numérica de la integral definida</a>
+<ul>
+<li class="chapter" data-level="5.19.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-regla-de-trapecios"><i class="fa fa-check"></i><b>5.19.1</b> Ejemplo Regla de Trapecios</a></li>
+<li class="chapter" data-level="5.19.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-regla-de-simpson-13"><i class="fa fa-check"></i><b>5.19.2</b> Ejemplo Regla de Simpson <span class="math inline">\(1/3\)</span></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
-<li class="chapter" data-level="7.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>7.1</b> Definición de integral doble</a></li>
-<li class="chapter" data-level="7.2" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-volumen-para-una-región-sólida"><i class="fa fa-check"></i><b>7.2</b> Definición de volumen para una región sólida</a></li>
-<li class="chapter" data-level="7.3" data-path="integrales-dobles.html"><a href="integrales-dobles.html#propiedades-de-las-integrales-dobles"><i class="fa fa-check"></i><b>7.3</b> Propiedades de las integrales dobles</a></li>
-<li class="chapter" data-level="7.4" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejemplo-integral-doble-usando-geogebra"><i class="fa fa-check"></i><b>7.4</b> Ejemplo integral doble usando geogebra</a></li>
-<li class="chapter" data-level="7.5" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble"><i class="fa fa-check"></i><b>7.5</b> Ejercicio integral doble</a></li>
-<li class="chapter" data-level="7.6" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-1"><i class="fa fa-check"></i><b>7.6</b> Ejercicio integral doble</a></li>
-<li class="chapter" data-level="7.7" data-path="integrales-dobles.html"><a href="integrales-dobles.html#regiones-que-generan-dos-integrales-dobles"><i class="fa fa-check"></i><b>7.7</b> Regiones que generan dos integrales dobles</a></li>
-<li class="chapter" data-level="7.8" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-2"><i class="fa fa-check"></i><b>7.8</b> Ejercicio integral doble</a></li>
-<li class="chapter" data-level="7.9" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-3"><i class="fa fa-check"></i><b>7.9</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>6</b> Integrales dobles</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>6.1</b> Definición de integral doble</a></li>
+<li class="chapter" data-level="6.2" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-volumen-para-una-región-sólida"><i class="fa fa-check"></i><b>6.2</b> Definición de volumen para una región sólida</a></li>
+<li class="chapter" data-level="6.3" data-path="integrales-dobles.html"><a href="integrales-dobles.html#propiedades-de-las-integrales-dobles"><i class="fa fa-check"></i><b>6.3</b> Propiedades de las integrales dobles</a></li>
+<li class="chapter" data-level="6.4" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejemplo-integral-doble-usando-geogebra"><i class="fa fa-check"></i><b>6.4</b> Ejemplo integral doble usando geogebra</a></li>
+<li class="chapter" data-level="6.5" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble"><i class="fa fa-check"></i><b>6.5</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6.6" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-1"><i class="fa fa-check"></i><b>6.6</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6.7" data-path="integrales-dobles.html"><a href="integrales-dobles.html#regiones-que-generan-dos-integrales-dobles"><i class="fa fa-check"></i><b>6.7</b> Regiones que generan dos integrales dobles</a></li>
+<li class="chapter" data-level="6.8" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-2"><i class="fa fa-check"></i><b>6.8</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6.9" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-3"><i class="fa fa-check"></i><b>6.9</b> Ejercicio integral doble</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="integrales-triples.html"><a href="integrales-triples.html"><i class="fa fa-check"></i><b>8</b> Integrales triples</a><ul>
-<li class="chapter" data-level="8.1" data-path="integrales-triples.html"><a href="integrales-triples.html#definición-integral-triple"><i class="fa fa-check"></i><b>8.1</b> Definición integral triple</a></li>
-<li class="chapter" data-level="8.2" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple"><i class="fa fa-check"></i><b>8.2</b> Ejercicio integral triple</a></li>
-<li class="chapter" data-level="8.3" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-1"><i class="fa fa-check"></i><b>8.3</b> Ejercicio integral triple</a></li>
-<li class="chapter" data-level="8.4" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-2"><i class="fa fa-check"></i><b>8.4</b> Ejercicio integral triple</a></li>
-<li class="chapter" data-level="8.5" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-3"><i class="fa fa-check"></i><b>8.5</b> Ejercicio integral triple</a></li>
-<li class="chapter" data-level="8.6" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-4"><i class="fa fa-check"></i><b>8.6</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7" data-path="integrales-triples.html"><a href="integrales-triples.html"><i class="fa fa-check"></i><b>7</b> Integrales triples</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="integrales-triples.html"><a href="integrales-triples.html#definición-integral-triple"><i class="fa fa-check"></i><b>7.1</b> Definición integral triple</a></li>
+<li class="chapter" data-level="7.2" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple"><i class="fa fa-check"></i><b>7.2</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.3" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-1"><i class="fa fa-check"></i><b>7.3</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.4" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-2"><i class="fa fa-check"></i><b>7.4</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.5" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-3"><i class="fa fa-check"></i><b>7.5</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.6" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-4"><i class="fa fa-check"></i><b>7.6</b> Ejercicio integral triple</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><i class="fa fa-check"></i><b>9</b> Métodos de solución para Ecuaciones Diferenciales (EDO)</a><ul>
-<li class="chapter" data-level="9.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-para-una-ecuación-diferencial"><i class="fa fa-check"></i><b>9.1</b> Definición para una Ecuación Diferencial</a><ul>
-<li class="chapter" data-level="9.1.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplos-de-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>9.1.1</b> Ejemplos de ecuaciones diferenciales</a></li>
+<li class="chapter" data-level="8" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><i class="fa fa-check"></i><b>8</b> Métodos de solución para Ecuaciones Diferenciales (EDO)</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-para-una-ecuación-diferencial"><i class="fa fa-check"></i><b>8.1</b> Definición para una Ecuación Diferencial</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplos-de-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>8.1.1</b> Ejemplos de ecuaciones diferenciales</a></li>
 </ul></li>
-<li class="chapter" data-level="9.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-para-separar-variables"><i class="fa fa-check"></i><b>9.2</b> Método para separar variables</a><ul>
-<li class="chapter" data-level="9.2.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-ec-diferencial-separable"><i class="fa fa-check"></i><b>9.2.1</b> Ejemplo1 Ec Diferencial separable</a></li>
+<li class="chapter" data-level="8.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-para-separar-variables"><i class="fa fa-check"></i><b>8.2</b> Método para separar variables</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-ec-diferencial-separable"><i class="fa fa-check"></i><b>8.2.1</b> Ejemplo1 Ec Diferencial separable</a></li>
 </ul></li>
-<li class="chapter" data-level="9.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ec-diferencial-lineal"><i class="fa fa-check"></i><b>9.3</b> Ec Diferencial lineal</a><ul>
-<li class="chapter" data-level="9.3.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-mezclas"><i class="fa fa-check"></i><b>9.3.1</b> Ejemplo1 Mezclas</a></li>
-<li class="chapter" data-level="9.3.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-ec-dif-lineal"><i class="fa fa-check"></i><b>9.3.2</b> Ejemplo1 Ec Dif lineal</a></li>
-<li class="chapter" data-level="9.3.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-ec-dif-lineal"><i class="fa fa-check"></i><b>9.3.3</b> Ejemplo2 Ec Dif lineal</a></li>
+<li class="chapter" data-level="8.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ec-diferencial-lineal"><i class="fa fa-check"></i><b>8.3</b> Ec Diferencial lineal</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-mezclas"><i class="fa fa-check"></i><b>8.3.1</b> Ejemplo1 Mezclas</a></li>
+<li class="chapter" data-level="8.3.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-ec-dif-lineal"><i class="fa fa-check"></i><b>8.3.2</b> Ejemplo1 Ec Dif lineal</a></li>
+<li class="chapter" data-level="8.3.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-ec-dif-lineal"><i class="fa fa-check"></i><b>8.3.3</b> Ejemplo2 Ec Dif lineal</a></li>
 </ul></li>
-<li class="chapter" data-level="9.4" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-de-transformada"><i class="fa fa-check"></i><b>9.4</b> Definición de transformada</a><ul>
-<li class="chapter" data-level="9.4.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-transformada"><i class="fa fa-check"></i><b>9.4.1</b> Ejemplo1 Transformada</a></li>
-<li class="chapter" data-level="9.4.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-transformada"><i class="fa fa-check"></i><b>9.4.2</b> Ejemplo2 Transformada</a></li>
-<li class="chapter" data-level="9.4.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo3-transformada"><i class="fa fa-check"></i><b>9.4.3</b> Ejemplo3 Transformada</a></li>
+<li class="chapter" data-level="8.4" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-de-transformada"><i class="fa fa-check"></i><b>8.4</b> Definición de transformada</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-transformada"><i class="fa fa-check"></i><b>8.4.1</b> Ejemplo1 Transformada</a></li>
+<li class="chapter" data-level="8.4.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-transformada"><i class="fa fa-check"></i><b>8.4.2</b> Ejemplo2 Transformada</a></li>
+<li class="chapter" data-level="8.4.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo3-transformada"><i class="fa fa-check"></i><b>8.4.3</b> Ejemplo3 Transformada</a></li>
 </ul></li>
-<li class="chapter" data-level="9.5" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#tabla-de-transformadas"><i class="fa fa-check"></i><b>9.5</b> Tabla de transformadas</a></li>
-<li class="chapter" data-level="9.6" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#métodos-numéricos-para-resolver-edo"><i class="fa fa-check"></i><b>9.6</b> Métodos numéricos para resolver EDO</a><ul>
-<li class="chapter" data-level="9.6.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-de-euler"><i class="fa fa-check"></i><b>9.6.1</b> Método de Euler</a></li>
-<li class="chapter" data-level="9.6.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-de-euler-mejorado"><i class="fa fa-check"></i><b>9.6.2</b> Método de Euler Mejorado</a></li>
-<li class="chapter" data-level="9.6.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-de-runge-kutta-4-rk4"><i class="fa fa-check"></i><b>9.6.3</b> Método de Runge Kutta 4 (RK4)</a></li>
+<li class="chapter" data-level="8.5" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#tabla-de-transformadas"><i class="fa fa-check"></i><b>8.5</b> Tabla de transformadas</a></li>
+<li class="chapter" data-level="8.6" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#métodos-numéricos-para-resolver-edo"><i class="fa fa-check"></i><b>8.6</b> Métodos numéricos para resolver EDO</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-de-euler"><i class="fa fa-check"></i><b>8.6.1</b> Método de Euler</a></li>
+<li class="chapter" data-level="8.6.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-de-euler-mejorado"><i class="fa fa-check"></i><b>8.6.2</b> Método de Euler Mejorado</a></li>
+<li class="chapter" data-level="8.6.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-de-runge-kutta-4-rk4"><i class="fa fa-check"></i><b>8.6.3</b> Método de Runge Kutta 4 (RK4)</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
@@ -263,8 +303,8 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="integrales-simples" class="section level1">
-<h1><span class="header-section-number">Capítulo 6</span> Integrales simples</h1>
+<div id="integrales-simples" class="section level1" number="5">
+<h1><span class="header-section-number">Capítulo 5</span> Integrales simples</h1>
 <!-- https://www.lifeder.com/wp-content/uploads/2016/11/Blaise-Pascal.png -->
 <!-- <a href="https://www.lifeder.com/wp-content/uploads/2016/11/Blaise-Pascal.png"><div align="center"><img src="https://www.lifeder.com/wp-content/uploads/2016/11/Blaise-Pascal.png" width="350" height="460" alt="Buy from Amazon" class="cover" /></div></a> -->
 <div align="center">
@@ -282,24 +322,23 @@ Blaise Pascal (1623-1662).
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralSimpleA001"></span>
 <img src="images/DefIntegral_A1.png" alt="Concepto integral a partir del área bajo una curva [Imagen tomada de [@stewart2020single] pág $355$]" width="65%" />
 <p class="caption">
-Figura 6.1: Concepto integral a partir del área bajo una curva [Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a><a href="#ref-stewart2020single" role="doc-biblioref">b</a>)</span> pág <span class="math inline">\(355\)</span>]
+Figura 5.1: Concepto integral a partir del área bajo una curva [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(355\)</span>]
 </p>
 </div>
 <p>El cálculo integral se base en el concepto de la integral. La definición de integral es motivada por el problema de definir y calcular el área de la región que se encuentra entre la gráfica de una funcíón <span class="math inline">\(y=f(x)\)</span> con valores positivos <span class="math inline">\(f\)</span> y el eje <span class="math inline">\(x\)</span> en un intervalo cerrado <span class="math inline">\([a,b]\)</span>.</p>
 <p><br></br></p>
-
+ffalse{-91-65-110-116-105-100-101-114-105-118-97-100-97-32-111-32-112-114-105-109-105-116-105-118-97-93-}
 <div class="definition">
-<p><span id="def:unnamed-chunk-50" class="definition"><strong>Definición 6.1  (Antiderivada o primitiva)  </strong></span>Una antiderivada o primitiva de una función <span class="math inline">\(f\)</span> es una función <span class="math inline">\(F\)</span> tal que</p>
+<p><span id="def:unnamed-chunk-50" class="definition"><strong>Definición 5.1  \iffalse (Antiderivada o primitiva)  </strong></span>Una antiderivada o primitiva de una función <span class="math inline">\(f\)</span> es una función <span class="math inline">\(F\)</span> tal que</p>
 <span class="math display">\[
   F&#39;(x)=f(x)
 \]</span>
 siempre y cuando la función <span class="math inline">\(f(x)\)</span> esté bien definida.
 </div>
-
 <p><br></br></p>
-
+ffalse{-91-76-97-32-112-114-105-109-105-116-105-118-97-32-109-225-115-32-103-101-110-101-114-97-108-93-}
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-51" class="theorem"><strong>Teorema 6.1  (La primitiva más general)  </strong></span>Si <span class="math inline">\(F&#39;(x)=f(x)\)</span> en cada punto del intervalo abierto <span class="math inline">\(I\)</span>, entonces cada primitiva <span class="math inline">\(G\)</span> de <span class="math inline">\(f\)</span> en <span class="math inline">\(I\)</span> tiene la forma</p>
+<p><span id="thm:unnamed-chunk-51" class="theorem"><strong>Teorema 5.1  \iffalse (La primitiva más general)  </strong></span>Si <span class="math inline">\(F&#39;(x)=f(x)\)</span> en cada punto del intervalo abierto <span class="math inline">\(I\)</span>, entonces cada primitiva <span class="math inline">\(G\)</span> de <span class="math inline">\(f\)</span> en <span class="math inline">\(I\)</span> tiene la forma</p>
 <p><span class="math display">\[
 G(x)=F(x)+C
 \]</span></p>
@@ -314,11 +353,10 @@ G(x)=F(x)+C
 \displaystyle\int{f(x)dx}=F(x)+C \qquad \text{si y sólo si } \qquad F&#39;(x)=f(x)}
 \]</span>
 </div>
-
 <p><br></br></p>
 <p><br></br></p>
-<div id="primera-tabla-de-antiderivadas" class="section level2">
-<h2><span class="header-section-number">6.1</span> Primera tabla de antiderivadas</h2>
+<div id="primera-tabla-de-antiderivadas" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Primera tabla de antiderivadas</h2>
 <p><strong><span class="math display">\[\text{ Recordar como se deriva implica saber integrar }\]</span></strong>
 <span class="math display">\[
 \begin{matrix}
@@ -343,8 +381,8 @@ G(x)=F(x)+C
 \]</span>
 <br></br></p>
 </div>
-<div id="herramienta-para-obtener-antiderivadas" class="section level2">
-<h2><span class="header-section-number">6.2</span> Herramienta para obtener antiderivadas</h2>
+<div id="herramienta-para-obtener-antiderivadas" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Herramienta para obtener antiderivadas</h2>
 <p>Esta es una aplicación para obtener la antiderivada de <span class="math inline">\(f(x)\)</span>, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/b67q6hkq" class="uri">https://www.geogebra.org/classic/b67q6hkq</a>) la elaboro usando geogebra.</p>
 <div align="center">
 <meta name=viewport content="width=device-width,initial-scale=1">
@@ -369,27 +407,26 @@ G(x)=F(x)+C
 </div>
 <p><br></br></p>
 </div>
-<div id="propiedades-de-las-antiderivadas" class="section level2">
-<h2><span class="header-section-number">6.3</span> Propiedades de las antiderivadas</h2>
+<div id="propiedades-de-las-antiderivadas" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> Propiedades de las antiderivadas</h2>
 <span class="math display">\[\begin{matrix}
 (1.) &amp; \displaystyle\int{cf(x)dx}=c\displaystyle\int{f(x)dx} \\
 (2.) &amp; \displaystyle\int{\left[f(x) \pm g(x)\right]dx}=\displaystyle\int{f(x)dx}\pm \displaystyle\int{g(x)dx} 
 \end{matrix}\]</span>
 <p><br></br></p>
 </div>
-<div id="ejemplo1-de-antiderivada" class="section level2">
-<h2><span class="header-section-number">6.4</span> Ejemplo1 de antiderivada</h2>
-
+<div id="ejemplo1-de-antiderivada" class="section level2" number="5.4">
+<h2><span class="header-section-number">5.4</span> Ejemplo1 de antiderivada</h2>
+ffalse{-91-65-112-108-105-99-97-99-105-243-110-32-100-101-32-97-110-116-105-100-101-114-105-118-97-100-97-115-32-121-32-115-117-115-32-112-114-111-112-105-101-100-97-100-101-115-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-52" class="example"><strong>Ejemplo 6.1  (Aplicación de antiderivadas y sus propiedades)  </strong></span>Determinar</p>
+<p><span id="exm:unnamed-chunk-52" class="example"><strong>Ejemplo 5.1  \iffalse (Aplicación de antiderivadas y sus propiedades)  </strong></span>Determinar</p>
 <span class="math display">\[
 \displaystyle\int{\left(x^4+3\sqrt{x^5}-\dfrac{4}{x^3}\right)dx}  
 \]</span>
 </div>
 
-
 <div class="solution">
- <span class="solution"><em>Solución. </em></span> <span class="math display">\[\begin{equation} \label{eq1}
+\iffalse{} <span class="solution"><em>Solución. </em></span> <span class="math display">\[\begin{equation} \label{eq1}
 \begin{split}
 \displaystyle\int{\left(x^4+3\sqrt{x^5}-\dfrac{4}{x^3}\right)dx} &amp; = \displaystyle\int{x^4dx}+ \displaystyle\int{3\sqrt{x^5}dx}-\displaystyle\int{\dfrac{4}{x^3}dx}\\
 &amp;=\displaystyle\int{x^4dx}+ \displaystyle\int{3x^{5/2}dx}-\displaystyle\int{4{x^{-3}}dx}\\
@@ -402,22 +439,20 @@ G(x)=F(x)+C
 \end{split}
 \end{equation}\]</span>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo2-de-antiderivada" class="section level2">
-<h2><span class="header-section-number">6.5</span> Ejemplo2 de antiderivada</h2>
-
+<div id="ejemplo2-de-antiderivada" class="section level2" number="5.5">
+<h2><span class="header-section-number">5.5</span> Ejemplo2 de antiderivada</h2>
+ffalse{-91-65-112-108-105-99-97-99-105-243-110-32-100-101-32-97-110-116-105-100-101-114-105-118-97-100-97-115-32-121-32-115-117-115-32-112-114-111-112-105-101-100-97-100-101-115-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-54" class="example"><strong>Ejemplo 6.2  (Aplicación de antiderivadas y sus propiedades)  </strong></span>Determinar</p>
+<p><span id="exm:unnamed-chunk-54" class="example"><strong>Ejemplo 5.2  \iffalse (Aplicación de antiderivadas y sus propiedades)  </strong></span>Determinar</p>
 <span class="math display">\[
 \displaystyle\int{(2cos(3x)+5sen(4x))dx}
 \]</span>
 </div>
-
-
+ffalse{-91-65-112-108-105-99-97-99-105-243-110-32-100-101-32-97-110-116-105-100-101-114-105-118-97-100-97-115-32-121-32-115-117-115-32-112-114-111-112-105-101-100-97-100-101-115-93-}
 <div class="solution">
- <span class="solution"><em>Solución</em> (Aplicación de antiderivadas y sus propiedades). </span> <span class="math display">\[\begin{equation} \label{eq2}
+\iffalse{} <span class="solution"><em>Solución</em> (Aplicación de antiderivadas y sus propiedades). </span> <span class="math display">\[\begin{equation} \label{eq2}
 \begin{split}
 
 \displaystyle\int{(2cos(3x)+5sen(4x))dx} &amp;=\displaystyle\int{2cos(3x)dx}+\displaystyle\int{5sen(4x)dx}\\
@@ -427,40 +462,37 @@ G(x)=F(x)+C
 \end{split}
 \end{equation}\]</span>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="teorema-fundamental-del-cálculo-caso-uno" class="section level2">
-<h2><span class="header-section-number">6.6</span> Teorema fundamental del cálculo, caso Uno</h2>
-
+<div id="teorema-fundamental-del-cálculo-caso-uno" class="section level2" number="5.6">
+<h2><span class="header-section-number">5.6</span> Teorema fundamental del cálculo, caso Uno</h2>
+ffalse{-91-84-101-111-114-101-109-97-32-102-117-110-100-97-109-101-110-116-97-108-32-100-101-108-32-99-225-108-99-117-108-111-44-32-112-97-114-116-101-32-85-110-111-93-}
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-56" class="theorem"><strong>Teorema 6.2  (Teorema fundamental del cálculo, parte Uno)  </strong></span>
+<p><span id="thm:unnamed-chunk-56" class="theorem"><strong>Teorema 5.2  \iffalse (Teorema fundamental del cálculo, parte Uno)  </strong></span>
 Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces la función <span class="math inline">\(g\)</span> definida por</p>
 <p><span class="math display">\[
 g(x)=\displaystyle\int_{a}^{x}f(t)dt, \qquad a \leq x \leq b
 \]</span></p>
 <p>es continua en <span class="math inline">\([a,b]\)</span>, derivable en <span class="math inline">\((a,b)\)</span>, y <span class="math inline">\(g&#39;(x)=f(x)\)</span>.</p>
-tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a><a href="#ref-stewart2020single" role="doc-biblioref">b</a>)</span> pág <span class="math inline">\(381\)</span>]
+tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(381\)</span>]
 </div>
-
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralSimpleA002"></span>
 <img src="images/DefIntegral_A2.png" alt="Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de [@stewart2020single] pág $380$]" width="65%" />
 <p class="caption">
-Figura 6.2: Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a><a href="#ref-stewart2020single" role="doc-biblioref">b</a>)</span> pág <span class="math inline">\(380\)</span>]
+Figura 5.2: Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(380\)</span>]
 </p>
 </div>
 <p><br></br></p>
-
+ffalse{-91-65-112-108-105-99-97-99-105-243-110-32-84-70-67-49-32-121-32-114-101-103-108-97-32-100-101-32-108-97-32-99-97-100-101-110-97-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-57" class="example"><strong>Ejemplo 6.3  (Aplicación TFC1 y regla de la cadena)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-57" class="example"><strong>Ejemplo 5.3  \iffalse (Aplicación TFC1 y regla de la cadena)  </strong></span>Encuentre</p>
 <p><span class="math display">\[
   \dfrac{d}{dx}\left[\displaystyle\int_{a}^{x^4}sec(t)dt\right]
 \]</span></p>
 </div>
-
-
+ffalse{-91-65-112-108-105-99-97-99-105-243-110-32-84-70-67-49-32-121-32-114-101-103-108-97-32-100-101-32-108-97-32-99-97-100-101-110-97-93-}
 <div class="solution">
-<p> <span class="solution"><em>Solución</em> (Aplicación TFC1 y regla de la cadena). </span> En este caso debe ser cuidadoso al usar la regla de la cadena junto con TFC1. Sea <span class="math inline">\(u=x^4\)</span>. Por lo tanto</p>
+<p>\iffalse{} <span class="solution"><em>Solución</em> (Aplicación TFC1 y regla de la cadena). </span> En este caso debe ser cuidadoso al usar la regla de la cadena junto con TFC1. Sea <span class="math inline">\(u=x^4\)</span>. Por lo tanto</p>
 <p><span class="math display">\[\begin{equation} \label{eqdSS0}
 \begin{split} 
 \dfrac{d}{dx}\left[\displaystyle\int_{a}^{x^4}sec(t)dt\right] &amp; = \dfrac{d}{dx}\left[\displaystyle\int_{a}^{u}sec(t)dt\right]\\
@@ -469,58 +501,54 @@ Figura 6.2: Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de <s
 &amp; = sec(x^4).4x^3
 \end{split}
 \end{equation}\]</span></p>
-tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a><a href="#ref-stewart2020single" role="doc-biblioref">b</a>)</span> pág 384
+tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág 384
 </div>
-
 <p><br></br></p>
 </div>
-<div id="teorema-fundamental-del-cálculo-caso-dos" class="section level2">
-<h2><span class="header-section-number">6.7</span> Teorema fundamental del cálculo, caso Dos</h2>
-
+<div id="teorema-fundamental-del-cálculo-caso-dos" class="section level2" number="5.7">
+<h2><span class="header-section-number">5.7</span> Teorema fundamental del cálculo, caso Dos</h2>
+ffalse{-91-84-101-111-114-101-109-97-32-102-117-110-100-97-109-101-110-116-97-108-32-100-101-108-32-99-225-108-99-117-108-111-44-32-112-97-114-116-101-32-68-111-115-93-}
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-59" class="theorem"><strong>Teorema 6.3  (Teorema fundamental del cálculo, parte Dos)  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces</p>
+<p><span id="thm:unnamed-chunk-59" class="theorem"><strong>Teorema 5.3  \iffalse (Teorema fundamental del cálculo, parte Dos)  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces</p>
 <p><span class="math display">\[
 \int_{a}^{b}{f(x)dx}=F(b)-F(a)
 \]</span></p>
 <p>donde <span class="math inline">\(F\)</span> es la antiderivada de <span class="math inline">\(f\)</span>, es decir, una función tal que <span class="math inline">\(F&#39;=f\)</span>.</p>
-tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a><a href="#ref-stewart2020single" role="doc-biblioref">b</a>)</span> pág <span class="math inline">\(384\)</span>]
+tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(384\)</span>]
 </div>
-
 <p><br></br></p>
 <p><br></br></p>
 </div>
-<div id="técnicas-de-integración" class="section level2">
-<h2><span class="header-section-number">6.8</span> Técnicas de integración</h2>
+<div id="técnicas-de-integración" class="section level2" number="5.8">
+<h2><span class="header-section-number">5.8</span> Técnicas de integración</h2>
 </div>
-<div id="integración-por-sustitución-o-cambio-de-variable" class="section level2">
-<h2><span class="header-section-number">6.9</span> Integración por sustitución o cambio de variable</h2>
+<div id="integración-por-sustitución-o-cambio-de-variable" class="section level2" number="5.9">
+<h2><span class="header-section-number">5.9</span> Integración por sustitución o cambio de variable</h2>
 <p>En general la técnica de sustitución funciona siempre que se tiene una integral que se pueda escribir en la forma:</p>
 <p><span class="math display">\[
 \boxed{
 \displaystyle\int{f(g(x))g&#39;(x)dx}}
 \]</span></p>
-
+ffalse{-91-82-101-103-108-97-32-100-101-32-115-117-115-116-105-116-117-99-105-243-110-93-}
 <div class="remark">
-<p> <span class="remark"><em>Nota</em> (Regla de sustitución): </span> Si <span class="math inline">\(u=g(x)\)</span> es una función derivable cuyo alcance es un intervalo <span class="math inline">\(I\)</span>, y <span class="math inline">\(f\)</span> es continua sobre <span class="math inline">\(I\)</span>, entonces</p>
+<p>\iffalse{} <span class="remark"><em>Nota</em> (Regla de sustitución): </span> Si <span class="math inline">\(u=g(x)\)</span> es una función derivable cuyo alcance es un intervalo <span class="math inline">\(I\)</span>, y <span class="math inline">\(f\)</span> es continua sobre <span class="math inline">\(I\)</span>, entonces</p>
 <p><span class="math display">\[
   \displaystyle\int{f(g(x))g&#39;(x)dx}=\displaystyle\int{f(u)du}
 \]</span></p>
 </div>
-
 <p><br></br></p>
-<div id="ejemplo1-por-sustitución" class="section level3">
-<h3><span class="header-section-number">6.9.1</span> Ejemplo1 por sustitución</h3>
-
+<div id="ejemplo1-por-sustitución" class="section level3" number="5.9.1">
+<h3><span class="header-section-number">5.9.1</span> Ejemplo1 por sustitución</h3>
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-115-117-115-116-105-116-117-99-105-243-110-32-99-97-115-111-49-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-61" class="example"><strong>Ejemplo 6.4  (Integración por sustitución caso1)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-61" class="example"><strong>Ejemplo 5.4  \iffalse (Integración por sustitución caso1)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{2x\sqrt{1+x^2}dx} 
 \]</span>
 </div>
-
-
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-115-117-115-116-105-116-117-99-105-243-110-32-99-97-115-111-49-93-}
 <div class="solution">
-<p> <span class="solution"><em>Solución</em> (Integración por sustitución caso1). </span> Tomando el cambio de variable <span class="math inline">\(\boxed{w^2=1+x^2}\)</span> (1), se genera que <span class="math inline">\(2wdw=2xdx\)</span>; simplificando por <span class="math inline">\(2\)</span> en ambos lados de la igualdad se obtiene que <span class="math inline">\(\boxed{wdw=xdx}\)</span> (2).
+<p>\iffalse{} <span class="solution"><em>Solución</em> (Integración por sustitución caso1). </span> Tomando el cambio de variable <span class="math inline">\(\boxed{w^2=1+x^2}\)</span> (1), se genera que <span class="math inline">\(2wdw=2xdx\)</span>; simplificando por <span class="math inline">\(2\)</span> en ambos lados de la igualdad se obtiene que <span class="math inline">\(\boxed{wdw=xdx}\)</span> (2).
 Realizando la sustitución de (1) y (2). Se obtiene que:</p>
 <p><span class="math display">\[\begin{equation} \label{eqdSS1}
 \begin{split}  
@@ -535,22 +563,20 @@ I &amp; =\left(\dfrac{2}{3}\right)w^3+C
   \displaystyle\int{2x\sqrt{1+x^2}dx}  = \left(\dfrac{2}{3}\right)\left(\sqrt{1+x^2}\right)^{3}+C
 \]</span></p>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo2-por-sustitución" class="section level3">
-<h3><span class="header-section-number">6.9.2</span> Ejemplo2 por sustitución</h3>
-
+<div id="ejemplo2-por-sustitución" class="section level3" number="5.9.2">
+<h3><span class="header-section-number">5.9.2</span> Ejemplo2 por sustitución</h3>
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-115-117-115-116-105-116-117-99-105-243-110-32-99-97-115-111-50-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-63" class="example"><strong>Ejemplo 6.5  (Integración por sustitución caso2)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-63" class="example"><strong>Ejemplo 5.5  \iffalse (Integración por sustitución caso2)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{\sqrt{2x+1}dx} 
 \]</span>
 </div>
-
-
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-115-117-115-116-105-116-117-99-105-243-110-32-99-97-115-111-50-93-}
 <div class="solution">
-<p> <span class="solution"><em>Solución</em> (Integración por sustitución caso2). </span> Tomaremos el cambio <span class="math inline">\(\boxed{w^2=2x+1}\)</span> (1), entonces <span class="math inline">\(2wdw=2dx\)</span>, simplificando en ambos lados de la igualdad por <span class="math inline">\(2\)</span>, se obtiene que: <span class="math inline">\(\boxed{wdw=dx}\)</span> (2).</p>
+<p>\iffalse{} <span class="solution"><em>Solución</em> (Integración por sustitución caso2). </span> Tomaremos el cambio <span class="math inline">\(\boxed{w^2=2x+1}\)</span> (1), entonces <span class="math inline">\(2wdw=2dx\)</span>, simplificando en ambos lados de la igualdad por <span class="math inline">\(2\)</span>, se obtiene que: <span class="math inline">\(\boxed{wdw=dx}\)</span> (2).</p>
 <p>Realizando la sustitución de (1), y (2) en la integral obtenemos:</p>
 <p><span class="math display">\[\begin{equation} \label{eqdSS2}
 \begin{split} 
@@ -563,22 +589,20 @@ I &amp; = \displaystyle\int{\sqrt{2x+1}dx} \qquad \longleftrightarrow  \quad \di
   \displaystyle\int{\sqrt{2x+1}dx}   = \dfrac{1}{3}\left(\sqrt{2x+1}\right)^{3}+C
 \]</span></p>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo3-por-sustitución" class="section level3">
-<h3><span class="header-section-number">6.9.3</span> Ejemplo3 por sustitución</h3>
-
+<div id="ejemplo3-por-sustitución" class="section level3" number="5.9.3">
+<h3><span class="header-section-number">5.9.3</span> Ejemplo3 por sustitución</h3>
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-115-117-115-116-105-116-117-99-105-243-110-32-99-97-115-111-51-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-65" class="example"><strong>Ejemplo 6.6  (Integración por sustitución caso3)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-65" class="example"><strong>Ejemplo 5.6  \iffalse (Integración por sustitución caso3)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{x^3cos(x^4+2)dx} 
 \]</span>
 </div>
-
-
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-115-117-115-116-105-116-117-99-105-243-110-32-99-97-115-111-51-93-}
 <div class="solution">
-<p> <span class="solution"><em>Solución</em> (Integración por sustitución caso3). </span> Tomaremos el cambio <span class="math inline">\(\boxed{w=x^4+2}\)</span> (1), entonces <span class="math inline">\(dw=4x^3dx\)</span>, simplificando en ambos lados de la igualdad por <span class="math inline">\(4\)</span>, se obtiene que: <span class="math inline">\(\boxed{dw/4=x^3dx}\)</span> (2).</p>
+<p>\iffalse{} <span class="solution"><em>Solución</em> (Integración por sustitución caso3). </span> Tomaremos el cambio <span class="math inline">\(\boxed{w=x^4+2}\)</span> (1), entonces <span class="math inline">\(dw=4x^3dx\)</span>, simplificando en ambos lados de la igualdad por <span class="math inline">\(4\)</span>, se obtiene que: <span class="math inline">\(\boxed{dw/4=x^3dx}\)</span> (2).</p>
 <p>Realizando la sustitución de (1), y (2) en la integral obtenemos:</p>
 <p><span class="math display">\[\begin{equation} \label{eqdSS3}
 \begin{split} 
@@ -593,22 +617,20 @@ I = \displaystyle\int{x^3cos(x^4+2)dx} =\displaystyle\int{cos(x^4+2)x^3dx} \ \lo
  \displaystyle\int{x^3cos(x^4+2)dx}   = \dfrac{sen(x^4+2)}{4}+C
 \]</span></p>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo4-por-sustitución" class="section level3">
-<h3><span class="header-section-number">6.9.4</span> Ejemplo4 por sustitución</h3>
-
+<div id="ejemplo4-por-sustitución" class="section level3" number="5.9.4">
+<h3><span class="header-section-number">5.9.4</span> Ejemplo4 por sustitución</h3>
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-115-117-115-116-105-116-117-99-105-243-110-32-99-97-115-111-52-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-67" class="example"><strong>Ejemplo 6.7  (Integración por sustitución caso4)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-67" class="example"><strong>Ejemplo 5.7  \iffalse (Integración por sustitución caso4)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{x^5\sqrt{x^2+1}dx} 
 \]</span>
 </div>
-
-
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-115-117-115-116-105-116-117-99-105-243-110-32-99-97-115-111-51-93-}
 <div class="solution">
-<p> <span class="solution"><em>Solución</em> (Integración por sustitución caso3). </span> Tomaremos el cambio <span class="math inline">\(\boxed{w^2=x^2+1}\)</span> (1), entonces <span class="math inline">\(2wdw=2xdx\)</span>, simplificando en ambos lados de la igualdad por <span class="math inline">\(2\)</span>, se obtiene que: <span class="math inline">\(\boxed{wdw=xdx}\)</span> (2). Además <span class="math inline">\(\boxed{w^2-1=x^2}\)</span> (3).</p>
+<p>\iffalse{} <span class="solution"><em>Solución</em> (Integración por sustitución caso3). </span> Tomaremos el cambio <span class="math inline">\(\boxed{w^2=x^2+1}\)</span> (1), entonces <span class="math inline">\(2wdw=2xdx\)</span>, simplificando en ambos lados de la igualdad por <span class="math inline">\(2\)</span>, se obtiene que: <span class="math inline">\(\boxed{wdw=xdx}\)</span> (2). Además <span class="math inline">\(\boxed{w^2-1=x^2}\)</span> (3).</p>
 <p>Realizando la sustitución de (1), (2), y (3) en la integral obtenemos:</p>
 <p><span class="math display">\[\begin{equation} \label{eqdSS4}
 \begin{split} 
@@ -627,12 +649,11 @@ I &amp; = \displaystyle\int{x^5\sqrt{x^2+1}dx} =\displaystyle\int{\left(x^2\righ
  \displaystyle\int{x^5\sqrt{x^2+1}dx}    = \dfrac{\left(x^2+1\right)^{7/2}}{7}-\dfrac{2\left(x^2+1\right)^{5/2}}{5}+\dfrac{\left(x^2+1\right)^{3/2}}{3}+C
 \]</span></p>
 </div>
-
 <p><br></br></p>
 </div>
 </div>
-<div id="integración-por-partes" class="section level2">
-<h2><span class="header-section-number">6.10</span> Integración por partes</h2>
+<div id="integración-por-partes" class="section level2" number="5.10">
+<h2><span class="header-section-number">5.10</span> Integración por partes</h2>
 <p><span class="math display">\[
 \boxed{
 \displaystyle\int{f(x)g&#39;(x)dx}=f(x)g(x)- \displaystyle\int{g(x)f&#39;(x)dx}}
@@ -644,19 +665,18 @@ I &amp; = \displaystyle\int{x^5\sqrt{x^2+1}dx} =\displaystyle\int{\left(x^2\righ
 \displaystyle\int{udv}=uv- \displaystyle\int{vdu}}
 \]</span></p>
 <p><br></br></p>
-<div id="ejemplo1-por-partes" class="section level3">
-<h3><span class="header-section-number">6.10.1</span> Ejemplo1 por partes</h3>
-
+<div id="ejemplo1-por-partes" class="section level3" number="5.10.1">
+<h3><span class="header-section-number">5.10.1</span> Ejemplo1 por partes</h3>
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-112-97-114-116-101-115-32-99-97-115-111-49-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-69" class="example"><strong>Ejemplo 6.8  (Integración por partes caso1)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-69" class="example"><strong>Ejemplo 5.8  \iffalse (Integración por partes caso1)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{xsen(x)dx} 
 \]</span>
 </div>
-
-
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-112-97-114-116-101-115-32-99-97-115-111-49-93-}
 <div class="solution">
-<p> <span class="solution"><em>Solución</em> (Integración por partes caso1). </span> Sabemos que <span class="math inline">\(D_{x}\left[-cos(x)\right]=sen(x)\)</span>, ó equivalentemente</p>
+<p>\iffalse{} <span class="solution"><em>Solución</em> (Integración por partes caso1). </span> Sabemos que <span class="math inline">\(D_{x}\left[-cos(x)\right]=sen(x)\)</span>, ó equivalentemente</p>
 <p><span class="math display">\[
   \dfrac{d}{dx}\left[-cos(x)\right]=sen(x)   \qquad  \text{ ó  equivalentemente } \qquad d\left[-cos(x)\right]=sen(x)dx
 \]</span></p>
@@ -673,22 +693,20 @@ I &amp; = \displaystyle\int{x^5\sqrt{x^2+1}dx} =\displaystyle\int{\left(x^2\righ
   \displaystyle\int{xsen(x)dx} = -xcos(x)+sen(x)+C
 \]</span>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo2-por-partes" class="section level3">
-<h3><span class="header-section-number">6.10.2</span> Ejemplo2 por partes</h3>
-
+<div id="ejemplo2-por-partes" class="section level3" number="5.10.2">
+<h3><span class="header-section-number">5.10.2</span> Ejemplo2 por partes</h3>
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-112-97-114-116-101-115-32-99-97-115-111-50-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-71" class="example"><strong>Ejemplo 6.9  (Integración por partes caso2)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-71" class="example"><strong>Ejemplo 5.9  \iffalse (Integración por partes caso2)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{xe^{x}dx} 
 \]</span>
 </div>
-
-
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-112-97-114-116-101-115-32-99-97-115-111-50-93-}
 <div class="solution">
-<p> <span class="solution"><em>Solución</em> (Integración por partes caso2). </span> Para realizar la integración por partes lo haremos usando la fórmula:
+<p>\iffalse{} <span class="solution"><em>Solución</em> (Integración por partes caso2). </span> Para realizar la integración por partes lo haremos usando la fórmula:
 <span class="math display">\[
 \boxed{
 \displaystyle\int{udv}=uv- \displaystyle\int{vdu}}
@@ -711,22 +729,20 @@ Por lo tanto</p>
   \displaystyle\int{xe^{x}dx} = xe^{x}-e^{x}+C
 \]</span>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo3-por-partes" class="section level3">
-<h3><span class="header-section-number">6.10.3</span> Ejemplo3 por partes</h3>
-
+<div id="ejemplo3-por-partes" class="section level3" number="5.10.3">
+<h3><span class="header-section-number">5.10.3</span> Ejemplo3 por partes</h3>
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-112-97-114-116-101-115-32-99-97-115-111-51-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-73" class="example"><strong>Ejemplo 6.10  (Integración por partes caso3)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-73" class="example"><strong>Ejemplo 5.10  \iffalse (Integración por partes caso3)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{x^2e^{x}dx} 
 \]</span>
 </div>
-
-
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-112-97-114-116-101-115-32-99-97-115-111-51-93-}
 <div class="solution">
-<p> <span class="solution"><em>Solución</em> (Integración por partes caso3). </span> En el proceso de solución vamos a usar parte de la notación de antiderivada</p>
+<p>\iffalse{} <span class="solution"><em>Solución</em> (Integración por partes caso3). </span> En el proceso de solución vamos a usar parte de la notación de antiderivada</p>
 <p>Sabemos que</p>
 <p><span class="math display">\[
   D_{x}\left[e^{x}\right]=e^{x} \qquad \text{ es equivalente a } \qquad D\left[e^{x}\right]=e^{x}dx
@@ -750,23 +766,21 @@ Aplicando esta notación a la integral propuesta tenemos:</p>
   \displaystyle\int{x^2e^{x}dx} = e^{x}\left(x^2-2x+2\right)+C
 \]</span>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo4-por-partes" class="section level3">
-<h3><span class="header-section-number">6.10.4</span> Ejemplo4 por partes</h3>
-
+<div id="ejemplo4-por-partes" class="section level3" number="5.10.4">
+<h3><span class="header-section-number">5.10.4</span> Ejemplo4 por partes</h3>
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-112-97-114-116-101-115-32-99-97-115-111-52-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-75" class="example"><strong>Ejemplo 6.11  (Integración por partes caso4)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-75" class="example"><strong>Ejemplo 5.11  \iffalse (Integración por partes caso4)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{(ax^2+bx+c)e^{x}dx} 
 \]</span>
 donde <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, y <span class="math inline">\(c\)</span> son constantes
 </div>
-
-
+ffalse{-91-73-110-116-101-103-114-97-99-105-243-110-32-112-111-114-32-112-97-114-116-101-115-32-99-97-115-111-52-93-}
 <div class="solution">
-<p> <span class="solution"><em>Solución</em> (Integración por partes caso4). </span> </p>
+<p>\iffalse{} <span class="solution"><em>Solución</em> (Integración por partes caso4). </span> </p>
 <p><span class="math display">\[\begin{equation} \label{eqdpp4}
 \begin{split}
 \displaystyle\int{(ax^2+bx+c)e^{x}dx} &amp; =  a\displaystyle\int{x^2e^{x}dx}+b\displaystyle\int{xe^{x}dx}+c\displaystyle\int{e^{x}dx}\\
@@ -781,22 +795,20 @@ donde <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</s
   \displaystyle\int{(ax^2+bx+c)e^{x}dx} = e^{x}\left[ax^2+(b-2a)x+(2a-1b+c)\right]+C
 \]</span></p>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo5-por-partes" class="section level3">
-<h3><span class="header-section-number">6.10.5</span> Ejemplo5 por partes</h3>
-
+<div id="ejemplo5-por-partes" class="section level3" number="5.10.5">
+<h3><span class="header-section-number">5.10.5</span> Ejemplo5 por partes</h3>
+ffalse{-91-73-110-116-101-103-114-97-108-32-112-111-114-32-112-97-114-116-101-115-32-99-105-99-108-105-99-97-32-99-97-115-111-49-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-77" class="example"><strong>Ejemplo 6.12  (Integral por partes ciclica caso1)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-77" class="example"><strong>Ejemplo 5.12  \iffalse (Integral por partes ciclica caso1)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{sen(x)e^{x}dx} 
 \]</span>
 </div>
-
-
+ffalse{-91-73-110-116-101-103-114-97-108-32-112-111-114-32-112-97-114-116-101-115-32-99-105-99-108-105-99-97-32-99-97-115-111-49-93-}
 <div class="solution">
-<p> <span class="solution"><em>Solución</em> (Integral por partes ciclica caso1). </span> 
+<p>\iffalse{} <span class="solution"><em>Solución</em> (Integral por partes ciclica caso1). </span> 
 <span class="math display">\[\begin{equation} \label{eqdpp5}
 \begin{split}
 I_{1} &amp; =\displaystyle\int{sen(x)e^{x}dx}  = \\
@@ -818,22 +830,20 @@ I_{1} &amp; = \dfrac{e^{x}}{2}\left[sen(x)-cos(x)\right]+C\\
   \displaystyle\int{sen(x)e^{x}dx}  = \dfrac{e^{x}}{2}\left[sen(x)-cos(x)\right]+C\\
 \]</span></p>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo6-por-partes" class="section level3">
-<h3><span class="header-section-number">6.10.6</span> Ejemplo6 por partes</h3>
-
+<div id="ejemplo6-por-partes" class="section level3" number="5.10.6">
+<h3><span class="header-section-number">5.10.6</span> Ejemplo6 por partes</h3>
+ffalse{-91-73-110-116-101-103-114-97-108-32-112-111-114-32-112-97-114-116-101-115-32-102-117-110-99-105-243-110-32-105-110-118-101-114-115-97-32-99-97-115-111-49-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-79" class="example"><strong>Ejemplo 6.13  (Integral por partes función inversa caso1)  </strong></span>Encuentre</p>
+<p><span id="exm:unnamed-chunk-79" class="example"><strong>Ejemplo 5.13  \iffalse (Integral por partes función inversa caso1)  </strong></span>Encuentre</p>
 <span class="math display">\[
 \displaystyle\int{arcsen(x)dx} 
 \]</span>
 </div>
-
-
+ffalse{-91-73-110-116-101-103-114-97-108-32-112-111-114-32-112-97-114-116-101-115-32-102-117-110-99-105-243-110-32-105-110-118-101-114-115-97-32-99-97-115-111-49-93-}
 <div class="solution">
-<p> <span class="solution"><em>Solución</em> (Integral por partes función inversa caso1). </span> 
+<p>\iffalse{} <span class="solution"><em>Solución</em> (Integral por partes función inversa caso1). </span> 
 <span class="math display">\[\begin{equation} \label{eqdpp6}
 \begin{split}
 I &amp; =\displaystyle\int{arcsen(x)dx}  = \displaystyle\int{arcsen(x)1dx} \\
@@ -856,11 +866,10 @@ I &amp; = xarcsen(x)+\sqrt{1-x^2}+C
   \displaystyle\int{arcsen(x)dx}  = xarcsen(x)+\sqrt{1-x^2}+C\\
 \]</span></p>
 </div>
-
 </div>
 </div>
-<div id="integración-por-sustitución-trigonométrica" class="section level2">
-<h2><span class="header-section-number">6.11</span> Integración por sustitución trigonométrica</h2>
+<div id="integración-por-sustitución-trigonométrica" class="section level2" number="5.11">
+<h2><span class="header-section-number">5.11</span> Integración por sustitución trigonométrica</h2>
 <p><span class="math display">\[
 \boxed{
 \begin{matrix}
@@ -868,19 +877,18 @@ I &amp; = xarcsen(x)+\sqrt{1-x^2}+C
 \sqrt{a^2-x^2}; &amp; x=asen(\theta); &amp; -\dfrac{\pi}{2} \leq \theta \leq \dfrac{\pi}{2}; &amp; 1-sen^2(\theta)=cos^2(\theta)\\
  \end{matrix}}
 \]</span></p>
-<div id="ejemplo1" class="section level3">
-<h3><span class="header-section-number">6.11.1</span> Ejemplo1</h3>
-
+<div id="ejemplo1" class="section level3" number="5.11.1">
+<h3><span class="header-section-number">5.11.1</span> Ejemplo1</h3>
+ffalse{-91-83-117-115-116-105-116-117-99-105-243-110-32-116-114-105-103-111-110-111-109-233-116-114-105-99-97-32-117-110-111-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-81" class="example"><strong>Ejemplo 6.14  (Sustitución trigonométrica uno)  </strong></span>Determine</p>
+<p><span id="exm:unnamed-chunk-81" class="example"><strong>Ejemplo 5.14  \iffalse (Sustitución trigonométrica uno)  </strong></span>Determine</p>
 <p><span class="math display">\[
 \displaystyle{\int{\dfrac{\sqrt{9-x^2}}{x^2}dx}}
 \]</span></p>
 </div>
 
-
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> 
+<p>\iffalse{} <span class="solution"><em>Solución. </em></span> 
 Primero:</p>
 <p>Asumir que <span class="math inline">\(a^2=9\)</span>, entonces <span class="math inline">\(a=3\)</span> y <span class="math inline">\(x=asen(\theta)\)</span> es equivalente a <span class="math inline">\(x=3sen(\theta)\)</span> (1).
 <span class="math inline">\(dx=3cos(\theta)d\theta\)</span> (2).</p>
@@ -902,11 +910,10 @@ I &amp; =\displaystyle{\int{\dfrac{\sqrt{9-\left(3sen(\theta)\right)^2}}{\left(3
 \end{split}
 \end{equation}\]</span></p>
 </div>
-
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigSustitucionTG1"></span>
 <img src="images/SustitucionTG1.png" alt="Triángulo rectángulo para la sustitución trigonométrica uno [Imagen tomada de [@stewart2009calculus] pág $468$]" width="35%" />
 <p class="caption">
-Figura 6.3: Triángulo rectángulo para la sustitución trigonométrica uno [Imagen tomada de <span class="citation">(Stewart <a href="#ref-stewart2009calculus" role="doc-biblioref">2009</a>)</span> pág <span class="math inline">\(468\)</span>]
+Figura 5.3: Triángulo rectángulo para la sustitución trigonométrica uno [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus" role="doc-biblioref">Stewart 2009</a>)</span> pág <span class="math inline">\(468\)</span>]
 </p>
 </div>
 <p>Respuesta:</p>
@@ -924,19 +931,18 @@ Figura 6.3: Triángulo rectángulo para la sustitución trigonométrica uno [Ima
  \end{matrix}}
 \]</span></p>
 </div>
-<div id="ejemplo2" class="section level3">
-<h3><span class="header-section-number">6.11.2</span> Ejemplo2</h3>
-
+<div id="ejemplo2" class="section level3" number="5.11.2">
+<h3><span class="header-section-number">5.11.2</span> Ejemplo2</h3>
+ffalse{-91-83-117-115-116-105-116-117-99-105-243-110-32-116-114-105-103-111-110-111-109-233-116-114-105-99-97-32-100-111-115-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-83" class="example"><strong>Ejemplo 6.15  (Sustitución trigonométrica dos)  </strong></span>Determine</p>
+<p><span id="exm:unnamed-chunk-83" class="example"><strong>Ejemplo 5.15  \iffalse (Sustitución trigonométrica dos)  </strong></span>Determine</p>
 <p><span class="math display">\[
 \displaystyle{\int{\dfrac{1}{x^2\sqrt{x^2+4}}dx}}
 \]</span></p>
 </div>
 
-
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> 
+<p>\iffalse{} <span class="solution"><em>Solución. </em></span> 
 Primero:</p>
 <p>Asumir que <span class="math inline">\(a^2=4\)</span>, entonces <span class="math inline">\(a=2\)</span> y <span class="math inline">\(x=atan(\theta)\)</span> es equivalente a <span class="math inline">\(x=2tan(\theta)\)</span> (1).
 <span class="math inline">\(dx=2sec^2(\theta)d\theta\)</span> (2).</p>
@@ -961,11 +967,10 @@ I &amp; = \displaystyle{\int{\dfrac{2sec^2(\theta)d\theta}{4tan^2(\theta)\sqrt{4
   \dfrac{1}{4}\displaystyle{\int{\dfrac{cos(\theta)d\theta}{sen^2(\theta)}}}  = -\dfrac{1}{4sen(\theta)}+C=\dfrac{-csc(\theta)}{4}+C\\
 \]</span></p>
 </div>
-
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigSustitucionTG2"></span>
 <img src="images/SustitucionTG2.png" alt="Triángulo rectángulo para la sustitución trigonométrica dos [Imagen tomada de [@stewart2009calculus] pág $469$]" width="35%" />
 <p class="caption">
-Figura 6.4: Triángulo rectángulo para la sustitución trigonométrica dos [Imagen tomada de <span class="citation">(Stewart <a href="#ref-stewart2009calculus" role="doc-biblioref">2009</a>)</span> pág <span class="math inline">\(469\)</span>]
+Figura 5.4: Triángulo rectángulo para la sustitución trigonométrica dos [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus" role="doc-biblioref">Stewart 2009</a>)</span> pág <span class="math inline">\(469\)</span>]
 </p>
 </div>
 <p>Respuesta en la variable <span class="math inline">\(x\)</span>:</p>
@@ -983,19 +988,18 @@ Figura 6.4: Triángulo rectángulo para la sustitución trigonométrica dos [Ima
  \end{matrix}}
 \]</span></p>
 </div>
-<div id="ejemplo3" class="section level3">
-<h3><span class="header-section-number">6.11.3</span> Ejemplo3</h3>
-
+<div id="ejemplo3" class="section level3" number="5.11.3">
+<h3><span class="header-section-number">5.11.3</span> Ejemplo3</h3>
+ffalse{-91-83-117-115-116-105-116-117-99-105-243-110-32-116-114-105-103-111-110-111-109-233-116-114-105-99-97-32-116-114-101-115-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-85" class="example"><strong>Ejemplo 6.16  (Sustitución trigonométrica tres)  </strong></span>Determine</p>
+<p><span id="exm:unnamed-chunk-85" class="example"><strong>Ejemplo 5.16  \iffalse (Sustitución trigonométrica tres)  </strong></span>Determine</p>
 <p><span class="math display">\[
 \displaystyle{\int{\dfrac{1}{\sqrt{x^2-4}}dx}}
 \]</span></p>
 </div>
 
-
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> 
+<p>\iffalse{} <span class="solution"><em>Solución. </em></span> 
 Primero:</p>
 <p>Asumir que <span class="math inline">\(a^2=4\)</span>, entonces <span class="math inline">\(a=2\)</span> y <span class="math inline">\(x=asec(\theta)\)</span> es equivalente a <span class="math inline">\(x=2sec(\theta)\)</span> (1).
 <span class="math inline">\(dx=2sec(\theta)tan(\theta)d\theta\)</span> (2).</p>
@@ -1012,11 +1016,10 @@ I &amp; =\displaystyle{\int{\dfrac{1}{\sqrt{\left(4sec^2(\theta)-4\right)}}2sec(
 \end{split}
 \end{equation}\]</span>
 </div>
-
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigSustitucionTG3"></span>
 <img src="images/SustitucionTG3.png" alt="Triángulo rectángulo para la sustitución trigonométrica tres [Imagen tomada de [@stewart2009calculus] pág $469$]" width="35%" />
 <p class="caption">
-Figura 6.5: Triángulo rectángulo para la sustitución trigonométrica tres [Imagen tomada de <span class="citation">(Stewart <a href="#ref-stewart2009calculus" role="doc-biblioref">2009</a>)</span> pág <span class="math inline">\(469\)</span>]
+Figura 5.5: Triángulo rectángulo para la sustitución trigonométrica tres [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus" role="doc-biblioref">Stewart 2009</a>)</span> pág <span class="math inline">\(469\)</span>]
 </p>
 </div>
 <p>Respuesta en la variable <span class="math inline">\(x\)</span>:</p>
@@ -1028,11 +1031,11 @@ Figura 6.5: Triángulo rectángulo para la sustitución trigonométrica tres [Im
 <p><br></br></p>
 </div>
 </div>
-<div id="integación-por-fracciones-parciales" class="section level2">
-<h2><span class="header-section-number">6.12</span> Integación por fracciones parciales</h2>
-
+<div id="integación-por-fracciones-parciales" class="section level2" number="5.12">
+<h2><span class="header-section-number">5.12</span> Integación por fracciones parciales</h2>
+ffalse{-91-70-114-97-99-99-105-243-110-32-112-114-111-112-105-97-93-}
 <div class="definition">
-<p><span id="def:unnamed-chunk-87" class="definition"><strong>Definición 6.2  (Fracción propia)  </strong></span>Una fracción racional se dice fracción propia, si y sólo si el grado del numerador es menor que el grado del denominador, donde tanto el numerador como el denominador no tienen factores comunes.</p>
+<p><span id="def:unnamed-chunk-87" class="definition"><strong>Definición 5.2  \iffalse (Fracción propia)  </strong></span>Una fracción racional se dice fracción propia, si y sólo si el grado del numerador es menor que el grado del denominador, donde tanto el numerador como el denominador no tienen factores comunes.</p>
 <p><span class="math display">\[
   f(x)=\dfrac{P(x)}{Q(x)}, \qquad \text{ es fracción propia si y sólo si } \qquad grado(P) &lt; grado(Q)
 \]</span></p>
@@ -1045,22 +1048,20 @@ Figura 6.5: Triángulo rectángulo para la sustitución trigonométrica tres [Im
   f(x)=\dfrac{P(x)}{Q(x)}=S(x)+\dfrac{R(x)}{Q(x)}, \qquad \text{ tal que } \qquad grado(R) &lt; grado(Q)
 \]</span>
 </div>
-
 <p><br></br></p>
-<div id="ejemplo1-1" class="section level3">
-<h3><span class="header-section-number">6.12.1</span> Ejemplo1</h3>
-
+<div id="ejemplo1-1" class="section level3" number="5.12.1">
+<h3><span class="header-section-number">5.12.1</span> Ejemplo1</h3>
+ffalse{-91-70-114-97-99-99-105-243-110-32-105-109-112-114-111-112-105-97-32-99-97-115-111-32-117-110-111-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-88" class="example"><strong>Ejemplo 6.17  (Fracción impropia caso uno)  </strong></span>Determinar</p>
+<p><span id="exm:unnamed-chunk-88" class="example"><strong>Ejemplo 5.17  \iffalse (Fracción impropia caso uno)  </strong></span>Determinar</p>
 <span class="math display">\[
 \displaystyle\int{\dfrac{x^3+x}{x-1}dx} 
 \]</span>
-tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a><a href="#ref-stewart2020single" role="doc-biblioref">b</a>)</span> pág <span class="math inline">\(474\)</span>.
+tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(474\)</span>.
 </div>
-
-
+ffalse{-91-70-114-97-99-99-105-243-110-32-105-109-112-114-111-112-105-97-32-99-97-115-111-32-117-110-111-93-}
 <div class="solution">
-<p> <span class="solution"><em>Solución</em> (Fracción impropia caso uno). </span> Realizando la división de ambos polinomios se obtiene que:</p>
+<p>\iffalse{} <span class="solution"><em>Solución</em> (Fracción impropia caso uno). </span> Realizando la división de ambos polinomios se obtiene que:</p>
 <p><span class="math display">\[
 \dfrac{x^3+x}{x-1}=x^2+x+2+\dfrac{2}{x-1}
 \]</span><br />
@@ -1072,11 +1073,10 @@ Entonces</p>
 \end{split}
 \end{equation}\]</span>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo2-1" class="section level3">
-<h3><span class="header-section-number">6.12.2</span> Ejemplo2</h3>
+<div id="ejemplo2-1" class="section level3" number="5.12.2">
+<h3><span class="header-section-number">5.12.2</span> Ejemplo2</h3>
 <p><strong>El denominador <span class="math inline">\(Q(x)\)</span> es un producto de factores lineales distintos</strong></p>
 <p><span class="math display">\[
 Q(x)=(a_1x+b_1)(a_2x+b_2)...(a_kx+b_k)
@@ -1085,18 +1085,17 @@ Q(x)=(a_1x+b_1)(a_2x+b_2)...(a_kx+b_k)
 <p><span class="math display">\[
 f(x)=\dfrac{P(x)}{Q(x)}=\dfrac{A_1}{a_1x+b_1}+\dfrac{A_2}{a_2x+b_2}+...+\dfrac{A_k}{a_kx+b_k}, \ \ \ \text{ donde } \ \ \ grado(P(x))&lt;grado(Q(x))
 \]</span></p>
-
+ffalse{-91-69-108-32-100-101-110-111-109-105-110-97-100-111-114-32-101-115-32-112-114-111-100-117-99-116-111-32-100-101-32-102-97-99-116-111-114-101-115-32-108-105-110-101-97-108-101-115-32-100-105-115-116-105-110-116-111-115-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-90" class="example"><strong>Ejemplo 6.18  (El denominador es producto de factores lineales distintos)  </strong></span>Determine</p>
+<p><span id="exm:unnamed-chunk-90" class="example"><strong>Ejemplo 5.18  \iffalse (El denominador es producto de factores lineales distintos)  </strong></span>Determine</p>
 <span class="math display">\[
 \displaystyle\int{\dfrac{1x^2+2x-1}{2x^3+3x^2-2x}dx} 
 \]</span>
-tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a><a href="#ref-stewart2020single" role="doc-biblioref">b</a>)</span> pág <span class="math inline">\(475\)</span>
+tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(475\)</span>
 </div>
-
-
+ffalse{-91-69-108-32-100-101-110-111-109-105-110-97-100-111-114-32-101-115-32-112-114-111-100-117-99-116-111-32-100-101-32-102-97-99-116-111-114-101-115-32-108-105-110-101-97-108-101-115-32-100-105-115-116-105-110-116-111-115-93-}
 <div class="solution">
-<p> <span class="solution"><em>Solución</em> (El denominador es producto de factores lineales distintos). </span> Sabemos que por factorización el denominador <span class="math inline">\(Q(x)\)</span> puede ser expresado equivalentemente como:</p>
+<p>\iffalse{} <span class="solution"><em>Solución</em> (El denominador es producto de factores lineales distintos). </span> Sabemos que por factorización el denominador <span class="math inline">\(Q(x)\)</span> puede ser expresado equivalentemente como:</p>
 <p><span class="math display">\[
 Q(x)  =2x^3+3x^2-2x=x(2x^2+3x-2)=x(2x-1)(x+2)
 \]</span></p>
@@ -1115,7 +1114,6 @@ de lo cual obtenemos:</p>
 \]</span></p>
 <p>Aplicando la definición de polinomios iguales, recordemos que dos polinomios son iguales, si y sólo si poseen el mismo grado y sus coeficientes correspondientes son iguales, entonces aplicando esto a la igualdad de polinomios expresada en (c), se obtiene el sistema <span class="math inline">\(3\times 3\)</span>:</p>
 </div>
-
 <p><span class="math display">\[
 \begin{matrix} 2A +B+2C &amp; = &amp; 1\\
 3A +2B-C &amp; = &amp; 2\\
@@ -1142,8 +1140,8 @@ A=\dfrac{1}{2}, \qquad B=\dfrac{1}{5}, \qquad C=\dfrac{-1}{10}
 \]</span></p>
 <p><br></br></p>
 </div>
-<div id="ejemplo3-1" class="section level3">
-<h3><span class="header-section-number">6.12.3</span> Ejemplo3</h3>
+<div id="ejemplo3-1" class="section level3" number="5.12.3">
+<h3><span class="header-section-number">5.12.3</span> Ejemplo3</h3>
 <p><strong>El denominador <span class="math inline">\(Q(x)\)</span> es un producto de factores lineales, algunos de los cuales se repiten</strong></p>
 <p><span class="math display">\[
 Q(x)=(a_1x+b_1)^r(a_2x+b_2)^s...(a_kx+b_k)^t
@@ -1154,16 +1152,15 @@ Q(x)=(a_1x+b_1)^r(a_2x+b_2)^s...(a_kx+b_k)^t
 \]</span></p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-92" class="example"><strong>Ejemplo 6.19  </strong></span>Determinar</p>
+<p><span id="exm:unnamed-chunk-92" class="example"><strong>Ejemplo 5.19  </strong></span>Determinar</p>
 <p><span class="math display">\[
 \displaystyle\int{\dfrac{x^4-2x^2+4x+1}{x^3-x^2-x+1}dx}
 \]</span></p>
-tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a><a href="#ref-stewart2020single" role="doc-biblioref">b</a>)</span> pág <span class="math inline">\(477\)</span>
+tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(477\)</span>
 </div>
 
-
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> Primero debe verse que <span class="math inline">\(grado(P(x))\geq grado(Q(x))\)</span>, lo que significa que se debe realizar la división entre ambos polinomios, obteniendo:</p>
+<p>\iffalse{} <span class="solution"><em>Solución. </em></span> Primero debe verse que <span class="math inline">\(grado(P(x))\geq grado(Q(x))\)</span>, lo que significa que se debe realizar la división entre ambos polinomios, obteniendo:</p>
 <p><span class="math display">\[
   \dfrac{x^4-2x^2+4x+1}{x^3-x^2-x+1}=x+1+\dfrac{4x}{x^3-x^2-x+1}
 \]</span></p>
@@ -1196,7 +1193,6 @@ I &amp; =\displaystyle\int{\dfrac{x^4-2x^2+4x+1}{x^3-x^2-x+1}dx}\\
 \]</span></p>
 Como ambos polinomios en (3) son de igual grado, entonces podemos igualar coeficiente a coeficiente, asi:
 </div>
-
 <p><span class="math display">\[
 \begin{matrix} 
 A + C &amp; = &amp; 0\\
@@ -1218,22 +1214,21 @@ A=1, \qquad B=2, \qquad C=-1
 \]</span></p>
 <p><br></br></p>
 </div>
-<div id="ejemplo4" class="section level3">
-<h3><span class="header-section-number">6.12.4</span> Ejemplo4</h3>
+<div id="ejemplo4" class="section level3" number="5.12.4">
+<h3><span class="header-section-number">5.12.4</span> Ejemplo4</h3>
 <p><strong>El denominador <span class="math inline">\(Q(x)\)</span> contiene factores cuadráticos irreducibles, ninguno de los cuales se repite</strong></p>
 <p>Una expresión cuadrática de la forma <span class="math inline">\(ax^2+bx+c\)</span> se dice irreducible en el conjunto de los número reales, si <span class="math inline">\(D=b^2-4ac&lt;0\)</span></p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-94" class="example"><strong>Ejemplo 6.20  </strong></span>Determinar</p>
+<p><span id="exm:unnamed-chunk-94" class="example"><strong>Ejemplo 5.20  </strong></span>Determinar</p>
 <p><span class="math display">\[
 \displaystyle\int{\dfrac{x^2-x+4}{x^3+4x}dx}
 \]</span></p>
-tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a><a href="#ref-stewart2020single" role="doc-biblioref">b</a>)</span> pág <span class="math inline">\(478\)</span>
+tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(478\)</span>
 </div>
 
-
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> 
+<p>\iffalse{} <span class="solution"><em>Solución. </em></span> 
 Como el denominador <span class="math inline">\(Q(x)=x^3+4x\)</span>, se puede factorizar en la forma: <span class="math inline">\(Q(x)=x(x^2+4)\)</span> donde <span class="math inline">\(x^2+4\)</span> es una expresión cuadrática irreducible. Entonces</p>
 <p><span class="math display">\[
 \dfrac{x^2-x+4}{x^3+4x}=\dfrac{x^2-x+4}{x(x^2+4)} =\dfrac{A}{x}+\dfrac{Bx+C}{x^2+4} \ \ \ (1)
@@ -1250,7 +1245,6 @@ Como el denominador <span class="math inline">\(Q(x)=x^3+4x\)</span>, se puede f
 \]</span></p>
 Para determinar los valores de <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, y <span class="math inline">\(C\)</span>, se procede de la igualdad (1), multiplicando en ambos lados por <span class="math inline">\(x(x^2+4)\)</span> dando como resultado:
 </div>
-
 <p><span class="math display">\[
 2x^2-x+4=A(x^2+4)+(Bx+C)x=(A+B)x^2+Cx+4A
 \]</span></p>
@@ -1276,8 +1270,8 @@ A=1, \qquad B=1, \qquad C=-1
 \]</span></p>
 <p><br></br></p>
 </div>
-<div id="ejemplo5" class="section level3">
-<h3><span class="header-section-number">6.12.5</span> Ejemplo5</h3>
+<div id="ejemplo5" class="section level3" number="5.12.5">
+<h3><span class="header-section-number">5.12.5</span> Ejemplo5</h3>
 <p><strong>El denominador <span class="math inline">\(Q(x)\)</span> contiene un factor cuadrático irreducibles que se repitte</strong></p>
 <p>Si <span class="math inline">\(Q(x)\)</span> tiene un factor cuadrático que tiene multiplicidad <span class="math inline">\(r\)</span> <span class="math inline">\((ax^2+bx+c)^r\)</span>, entonces la descomposición parcial es de la forma:</p>
 <p><span class="math display">\[
@@ -1285,16 +1279,15 @@ A=1, \qquad B=1, \qquad C=-1
 \]</span></p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-96" class="example"><strong>Ejemplo 6.21  </strong></span>Determinar</p>
+<p><span id="exm:unnamed-chunk-96" class="example"><strong>Ejemplo 5.21  </strong></span>Determinar</p>
 <p><span class="math display">\[
 \displaystyle\int{\dfrac{1-x+x^2-x^3}{x(x^2+1)^2}dx}
 \]</span></p>
-tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a><a href="#ref-stewart2020single" role="doc-biblioref">b</a>)</span> pág <span class="math inline">\(480\)</span>
+tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(480\)</span>
 </div>
 
-
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> La descomposición de la fracción propia del integrando es:</p>
+<p>\iffalse{} <span class="solution"><em>Solución. </em></span> La descomposición de la fracción propia del integrando es:</p>
 <p><span class="math display">\[
 \dfrac{1-x+x^2-x^3}{x(x^2+1)^2}=\dfrac{A}{x}+\dfrac{Bx+C}{x^2+1}+\dfrac{Dx+E}{(x^2+1)^2} \ \ \ (a)
 \]</span></p>
@@ -1332,12 +1325,11 @@ A=1, \qquad B=-1, \qquad C=-1, \qquad D=1, \qquad E=0
 \end{equation}
 \]</span>
 </div>
-
 <p><br></br></p>
 </div>
 </div>
-<div id="fórmulas-de-reducción-para-integrar" class="section level2">
-<h2><span class="header-section-number">6.13</span> Fórmulas de reducción para integrar</h2>
+<div id="fórmulas-de-reducción-para-integrar" class="section level2" number="5.13">
+<h2><span class="header-section-number">5.13</span> Fórmulas de reducción para integrar</h2>
 <p><span class="math display">\[
 \begin{matrix} 
 (1.) &amp; \displaystyle\int{\left(ln(x)\right)^ndx}=x\left(ln(x)\right)^n -n\displaystyle\int{\left(ln(x)\right)^{n-1}dx}\\
@@ -1350,8 +1342,8 @@ A=1, \qquad B=-1, \qquad C=-1, \qquad D=1, \qquad E=0
 \]</span></p>
 <p><br></br></p>
 </div>
-<div id="sustitución-de-karl-weierstrass-1815-1897" class="section level2">
-<h2><span class="header-section-number">6.14</span> Sustitución de Karl Weierstrass (1815-1897)</h2>
+<div id="sustitución-de-karl-weierstrass-1815-1897" class="section level2" number="5.14">
+<h2><span class="header-section-number">5.14</span> Sustitución de Karl Weierstrass (1815-1897)</h2>
 <p>El matemático Karl Weierstrass observó que el sustitución:</p>
 <p><span class="math display">\[t=tan\left(\dfrac{x}{2}\right)\]</span></p>
 <p>convierte cualquier función racional de <span class="math inline">\(sen(x)\)</span> y <span class="math inline">\(cos(x)\)</span> en una función racional de la variable <span class="math inline">\(t\)</span>.
@@ -1364,19 +1356,18 @@ cos(x)=\dfrac{1-t^2}{1+t^2}; &amp; sen(x)=\dfrac{2t}{1+t^2}\\
 \end{matrix}
 \]</span></p>
 <p><br></br></p>
-<div id="ejemplo1karl" class="section level3">
-<h3><span class="header-section-number">6.14.1</span> Ejemplo1(Karl)</h3>
+<div id="ejemplo1karl" class="section level3" number="5.14.1">
+<h3><span class="header-section-number">5.14.1</span> Ejemplo1(Karl)</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-98" class="example"><strong>Ejemplo 6.22  </strong></span>Determinar</p>
+<p><span id="exm:unnamed-chunk-98" class="example"><strong>Ejemplo 5.22  </strong></span>Determinar</p>
 <span class="math display">\[
 \displaystyle\int{\dfrac{dx}{3-5sen(x)}}
 \]</span>
 </div>
 
-
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> Realizando las sustituciones apropiadas según Karl, se tiene:</p>
+<p>\iffalse{} <span class="solution"><em>Solución. </em></span> Realizando las sustituciones apropiadas según Karl, se tiene:</p>
 <p><span class="math display">\[
 \begin{equation} \label{eqFP9}
 \begin{split}  
@@ -1410,25 +1401,23 @@ I &amp;= \displaystyle\int{\dfrac{\dfrac{2dt}{1+t^2}}{3-5\dfrac{2t}{1+t^2}}}\\
 \displaystyle\int{\dfrac{dx}{3-5sen(x)}}=\dfrac{1}{4}ln|tan\left(\dfrac{x}{2}\right)-3|-\dfrac{1}{4}ln|3tan\left(\dfrac{x}{2}\right)-1|+C 
 \]</span></p>
 </div>
-
 <p><br></br></p>
 <p><br></br></p>
 <p><br></br></p>
 <p><br></br></p>
 </div>
 </div>
-<div id="integral-definida" class="section level2">
-<h2><span class="header-section-number">6.15</span> Integral definida</h2>
-
+<div id="integral-definida" class="section level2" number="5.15">
+<h2><span class="header-section-number">5.15</span> Integral definida</h2>
+ffalse{-91-73-110-116-101-103-114-97-108-32-100-101-102-105-110-105-100-97-93-}
 <div class="definition">
-<p><span id="def:unnamed-chunk-100" class="definition"><strong>Definición 6.3  (Integral definida)  </strong></span>Si <span class="math inline">\(f\)</span> es una función continua definida para <span class="math inline">\(a \leq x \leq b\)</span>, divida el intervalo <span class="math inline">\([a,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos de igual ancho <span class="math inline">\(\bigtriangleup{x}=(b-a)/n\)</span>. Haga que <span class="math inline">\(x_0(=a),x_1,x_2,...,x_n(=b)\)</span> sean los puntos extremos de estos subintervalos y elija <span class="math inline">\(x_{1}^{*},x_{2}^{*},...,x_{n}^{*}\)</span> como los puntos muestra en estos subintervalos, de modo que <span class="math inline">\(x_{i}^{*}\)</span> se encuentre en el i-ésimo subintervalo <span class="math inline">\([x_{i-1},x_{i}]\)</span>. Entonces la integral definida de <span class="math inline">\(f\)</span>, desde <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>, es</p>
+<p><span id="def:unnamed-chunk-100" class="definition"><strong>Definición 5.3  \iffalse (Integral definida)  </strong></span>Si <span class="math inline">\(f\)</span> es una función continua definida para <span class="math inline">\(a \leq x \leq b\)</span>, divida el intervalo <span class="math inline">\([a,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos de igual ancho <span class="math inline">\(\bigtriangleup{x}=(b-a)/n\)</span>. Haga que <span class="math inline">\(x_0(=a),x_1,x_2,...,x_n(=b)\)</span> sean los puntos extremos de estos subintervalos y elija <span class="math inline">\(x_{1}^{*},x_{2}^{*},...,x_{n}^{*}\)</span> como los puntos muestra en estos subintervalos, de modo que <span class="math inline">\(x_{i}^{*}\)</span> se encuentre en el i-ésimo subintervalo <span class="math inline">\([x_{i-1},x_{i}]\)</span>. Entonces la integral definida de <span class="math inline">\(f\)</span>, desde <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>, es</p>
 <p><span class="math display">\[
   \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i}^{*})\bigtriangleup{x}}
 \]</span>
 Siempre que exista este límite, <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>.</p>
-tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a><a href="#ref-stewart2020single" role="doc-biblioref">b</a>)</span> pág 366
+tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág 366
 </div>
-
 <p><br></br></p>
 <p>Esta es una aplicación para generar el área bajo una curva usando sumas de Riemann, el Autor:José Alejandro López Rentería (<a href="https://www.geogebra.org/classic/ex9zdr7e" class="uri">https://www.geogebra.org/classic/ex9zdr7e</a>) lo elaboro usando geogebra.</p>
 <meta name=viewport content="width=device-width,initial-scale=1">
@@ -1451,31 +1440,29 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
       });
 </script>
 <p><br></br></p>
-
+ffalse{-91-68-101-102-105-110-105-99-105-243-110-32-102-111-114-109-97-108-32-100-101-32-108-97-32-105-110-116-101-103-114-97-108-32-100-101-102-105-110-105-100-97-93-}
 <div class="definition">
-<p><span id="def:unnamed-chunk-101" class="definition"><strong>Definición 6.4  (Definición formal de la integral definida)  </strong></span>Sea <span class="math inline">\(f(x)\)</span> una función definida en un intervalo cerrado <span class="math inline">\([a,b]\)</span>. Dicimos que un número <span class="math inline">\(J\)</span> es la integral definida de <span class="math inline">\(f\)</span> en <span class="math inline">\([a,b]\)</span> y que <span class="math inline">\(J\)</span> es el límite de las sumas de Riemann <span class="math inline">\(\sum_{k=1}^{n}f(c_{k})\bigtriangleup{x_k}\)</span> si se satisface la siguiente condición:</p>
+<p><span id="def:unnamed-chunk-101" class="definition"><strong>Definición 5.4  \iffalse (Definición formal de la integral definida)  </strong></span>Sea <span class="math inline">\(f(x)\)</span> una función definida en un intervalo cerrado <span class="math inline">\([a,b]\)</span>. Dicimos que un número <span class="math inline">\(J\)</span> es la integral definida de <span class="math inline">\(f\)</span> en <span class="math inline">\([a,b]\)</span> y que <span class="math inline">\(J\)</span> es el límite de las sumas de Riemann <span class="math inline">\(\sum_{k=1}^{n}f(c_{k})\bigtriangleup{x_k}\)</span> si se satisface la siguiente condición:</p>
 <p>Dado cualquier número <span class="math inline">\(\epsilon &gt;0\)</span> existe un número correspondiente <span class="math inline">\(\delta &gt;0\)</span>, tal que para toda partición <span class="math inline">\(P=\{x_0,x_1,...,x_n\}\)</span> de <span class="math inline">\([a,b]\)</span> con <span class="math inline">\(\left \| P \right \|&lt;\delta\)</span> y cualquier elección de <span class="math inline">\(c_k\)</span> en <span class="math inline">\([x_{k-1},x_k]\)</span>, tenemos</p>
 <p><span class="math display">\[
   \left|\displaystyle{\sum_{k=1}^{n}f(c_k)\bigtriangleup{x_k}}-J\right|&lt; \epsilon.
 \]</span></p>
 <p>donde <span class="math inline">\(J=\displaystyle\int_{a}^{b}{f(x)dx}\)</span>.</p>
-tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág 366
+tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág 366
 </div>
-
 <p><br></br></p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-102" class="theorem"><strong>Teorema 6.4  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, o si <span class="math inline">\(f\)</span> tiene únicamente un número finito de saltos discontinuos, entonces <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>; es decir, la integral definida</p>
+<p><span id="thm:unnamed-chunk-102" class="theorem"><strong>Teorema 5.4  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, o si <span class="math inline">\(f\)</span> tiene únicamente un número finito de saltos discontinuos, entonces <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>; es decir, la integral definida</p>
 <p><span class="math display">\[
 \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i})\bigtriangleup{x}}, \qquad \text{ existe.}
 \]</span>
 donde <span class="math inline">\(\bigtriangleup{x}=\dfrac{b-a}{n} \qquad \text{ y } \qquad x_{i}=a+i\bigtriangleup{x}\)</span></p>
-tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020single" role="doc-biblioref">2020</a><a href="#ref-stewart2020single" role="doc-biblioref">b</a>)</span> pág 368
+tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág 368
 </div>
-
 <p><br></br></p>
-<div id="propiedades-de-la-integral-definida" class="section level3">
-<h3><span class="header-section-number">6.15.1</span> Propiedades de la integral definida</h3>
+<div id="propiedades-de-la-integral-definida" class="section level3" number="5.15.1">
+<h3><span class="header-section-number">5.15.1</span> Propiedades de la integral definida</h3>
 <p><span class="math display">\[
 \begin{matrix}
  (1.) &amp; \displaystyle\int_{a}^{b}{cdx}=c(b-a) &amp; c\in R\\
@@ -1490,19 +1477,19 @@ tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEvSumasA00"></span>
 <img src="images/PropIntegralDefinida_A1.png" alt="Propiedades de la integral definida [Imagen tomada de [@thomas2003thomas] pág $268$]" width="85%" />
 <p class="caption">
-Figura 6.6: Propiedades de la integral definida [Imagen tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(268\)</span>]
+Figura 5.6: Propiedades de la integral definida [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]
 </p>
 </div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEvSumasA01"></span>
 <img src="images/PropIntegralDefinida_A2.png" alt="Propiedades de la integral definida [Imagen tomada de [@thomas2003thomas] pág $268$]" width="85%" />
 <p class="caption">
-Figura 6.7: Propiedades de la integral definida [Imagen tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(268\)</span>]
+Figura 5.7: Propiedades de la integral definida [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]
 </p>
 </div>
 <p><br></br></p>
 </div>
-<div id="propiedades-para-las-sumatorias" class="section level3">
-<h3><span class="header-section-number">6.15.2</span> Propiedades para las sumatorias</h3>
+<div id="propiedades-para-las-sumatorias" class="section level3" number="5.15.2">
+<h3><span class="header-section-number">5.15.2</span> Propiedades para las sumatorias</h3>
 <p><span class="math display">\[
 \begin{matrix} 
 (1.) &amp; \displaystyle{\sum_{i=1}^{n}{c}}=cn \\
@@ -1513,8 +1500,8 @@ Figura 6.7: Propiedades de la integral definida [Imagen tomada de <span class="c
 \]</span></p>
 <p><br></br></p>
 </div>
-<div id="sumatorias-para-evaluar-integrales-definidas" class="section level3">
-<h3><span class="header-section-number">6.15.3</span> Sumatorias para evaluar integrales definidas</h3>
+<div id="sumatorias-para-evaluar-integrales-definidas" class="section level3" number="5.15.3">
+<h3><span class="header-section-number">5.15.3</span> Sumatorias para evaluar integrales definidas</h3>
 <p><span class="math display">\[
 \begin{matrix} 
 \text{ Sumatoria } &amp; \text{ Fórmula } \\
@@ -1525,27 +1512,26 @@ Figura 6.7: Propiedades de la integral definida [Imagen tomada de <span class="c
 \]</span></p>
 <p><br></br></p>
 </div>
-<div id="ejemplo-evaluación-por-sumatoria" class="section level3">
-<h3><span class="header-section-number">6.15.4</span> Ejemplo evaluación por sumatoria</h3>
+<div id="ejemplo-evaluación-por-sumatoria" class="section level3" number="5.15.4">
+<h3><span class="header-section-number">5.15.4</span> Ejemplo evaluación por sumatoria</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-103" class="example"><strong>Ejemplo 6.23  </strong></span>Determinar la integral definida</p>
+<p><span id="exm:unnamed-chunk-103" class="example"><strong>Ejemplo 5.23  </strong></span>Determinar la integral definida</p>
 <p><span class="math display">\[
 \displaystyle\int_{0}^{b}xdx  
 \]</span></p>
 <p>usando las sumatorias de evaluación.</p>
-tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(268\)</span>]
+tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]
 </div>
-
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEvSumasA02"></span>
 <img src="images/EjEvaluaPorSumas_A1.png" alt="Área bajo la recta $y=x$ en el intervalo $[0,b]$ [Imagen tomada de [@thomas2003thomas] pág $268$]" width="25%" />
 <p class="caption">
-Figura 6.8: Área bajo la recta <span class="math inline">\(y=x\)</span> en el intervalo <span class="math inline">\([0,b]\)</span> [Imagen tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(268\)</span>]
+Figura 5.8: Área bajo la recta <span class="math inline">\(y=x\)</span> en el intervalo <span class="math inline">\([0,b]\)</span> [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]
 </p>
 </div>
 
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> Para calcular la integral definida como el limite para sumas de Riemann, calulamos</p>
+<p>\iffalse{} <span class="solution"><em>Solución. </em></span> Para calcular la integral definida como el limite para sumas de Riemann, calulamos</p>
 <p><span class="math display">\[
 \displaystyle\lim_{\left\|P\right\| \to 0}\sum_{i=1}^{n}f(c_i)\triangle{x_i}=\displaystyle\int_{0}^{b}xdx 
 \]</span></p>
@@ -1573,15 +1559,14 @@ P=\left\{0,\dfrac{b}{n},\dfrac{2b}{n},\dfrac{3b}{n},\dfrac{4b}{n},,...,\dfrac{nb
 \displaystyle\lim_{\left\|P\right\| \to 0}\sum_{i=1}^{n}f(c_i)\triangle{x_i}=\displaystyle\int_{0}^{b}xdx =\dfrac{b^2}{2} \ \ \text{U.A.}
 \]</span></p>
 </div>
-
 <p><br></br></p>
 </div>
 </div>
-<div id="integrales-impropias-tipo-1" class="section level2">
-<h2><span class="header-section-number">6.16</span> Integrales impropias tipo 1</h2>
-
+<div id="integrales-impropias-tipo-1" class="section level2" number="5.16">
+<h2><span class="header-section-number">5.16</span> Integrales impropias tipo 1</h2>
+ffalse{-91-73-110-116-101-103-114-97-108-32-105-109-112-114-111-112-105-97-32-116-105-112-111-32-49-93-}
 <div class="definition">
-<p><span id="def:unnamed-chunk-105" class="definition"><strong>Definición 6.5  (Integral impropia tipo 1)  </strong></span>
+<p><span id="def:unnamed-chunk-105" class="definition"><strong>Definición 5.5  \iffalse (Integral impropia tipo 1)  </strong></span>
 (a) Si existe</p>
 <p><span class="math display">\[
 \displaystyle\int_{a}^{t}{f(x)dx}
@@ -1614,35 +1599,33 @@ son convergentes, entonces por definición</p>
 \displaystyle\int_{-\infty}^{\infty}{f(x)dx}=\displaystyle\int_{-\infty}^{a}{f(x)dx}+\displaystyle\int_{a}^{\infty}{f(x)dx}
 \]</span></p>
 <p>se puede emplear cualquier número real <span class="math inline">\(a\)</span> en la parte (c).</p>
-Tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(429\)</span>
+Tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(429\)</span>
 </div>
-
 <p><strong>Interpretación geométrica de la integral impropia tipo Uno</strong></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA01"></span>
 <img src="images/IntImpropiaTipoUno_A1.png" alt="Interpretación geométrica Área bajo la curva de una integral impropia [Imagen tomada de [@stewart2020calculus] pág $429$]" width="60%" />
 <p class="caption">
-Figura 6.9: Interpretación geométrica Área bajo la curva de una integral impropia [Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(429\)</span>]
+Figura 5.9: Interpretación geométrica Área bajo la curva de una integral impropia [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(429\)</span>]
 </p>
 </div>
-<div id="ejemplo1-integral-impropia-tipo-uno" class="section level3">
-<h3><span class="header-section-number">6.16.1</span> Ejemplo1 integral impropia tipo Uno</h3>
-
+<div id="ejemplo1-integral-impropia-tipo-uno" class="section level3" number="5.16.1">
+<h3><span class="header-section-number">5.16.1</span> Ejemplo1 integral impropia tipo Uno</h3>
+ffalse{-91-73-110-116-101-103-114-97-108-32-105-109-112-114-111-112-105-97-32-116-105-112-111-32-85-110-111-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-106" class="example"><strong>Ejemplo 6.24  (Integral impropia tipo Uno)  </strong></span>Evalúe la integral
+<p><span id="exm:unnamed-chunk-106" class="example"><strong>Ejemplo 5.24  \iffalse (Integral impropia tipo Uno)  </strong></span>Evalúe la integral
 <span class="math display">\[
 \displaystyle\int_{-\infty}^{\infty}{\dfrac{1}{1+x^2}dx}
 \]</span></p>
 </div>
-
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA02"></span>
 <img src="images/IntImpropiaTipoUno_A2.png" alt="Ejemplo área bajo la curva de una integral impropia [Imagen tomada de [@stewart2020calculus] pág $431$]" width="45%" />
 <p class="caption">
-Figura 6.10: Ejemplo área bajo la curva de una integral impropia [Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(431\)</span>]
+Figura 5.10: Ejemplo área bajo la curva de una integral impropia [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(431\)</span>]
 </p>
 </div>
 
 <div class="solution">
- <span class="solution"><em>Solución. </em></span> 
+\iffalse{} <span class="solution"><em>Solución. </em></span> 
 <span class="math display">\[
 \begin{equation} \label{eqIntImpropiaA0}
 \begin{split}
@@ -1666,22 +1649,20 @@ Figura 6.10: Ejemplo área bajo la curva de una integral impropia [Imagen tomada
 \end{equation} 
 \]</span>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo2-integral-impropia-tipo-uno" class="section level3">
-<h3><span class="header-section-number">6.16.2</span> Ejemplo2 integral impropia tipo Uno</h3>
-
+<div id="ejemplo2-integral-impropia-tipo-uno" class="section level3" number="5.16.2">
+<h3><span class="header-section-number">5.16.2</span> Ejemplo2 integral impropia tipo Uno</h3>
+ffalse{-91-73-110-116-101-103-114-97-108-32-105-109-112-114-111-112-105-97-32-116-105-112-111-32-85-110-111-93-}
 <div class="example">
-<span id="exm:unnamed-chunk-108" class="example"><strong>Ejemplo 6.25  (Integral impropia tipo Uno)  </strong></span>Evalúe para que valores de <span class="math inline">\(p\)</span> la integral converge y en que valores de <span class="math inline">\(p\)</span> diverge
+<span id="exm:unnamed-chunk-108" class="example"><strong>Ejemplo 5.25  \iffalse (Integral impropia tipo Uno)  </strong></span>Evalúe para que valores de <span class="math inline">\(p\)</span> la integral converge y en que valores de <span class="math inline">\(p\)</span> diverge
 <span class="math display">\[
 \displaystyle\int_{1}^{\infty}{\dfrac{1}{x^p}dx}
 \]</span>
 </div>
 
-
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> Supongamos que <span class="math inline">\(p\neq 1\)</span>. Entonces</p>
+<p>\iffalse{} <span class="solution"><em>Solución. </em></span> Supongamos que <span class="math inline">\(p\neq 1\)</span>. Entonces</p>
 <span class="math display">\[
 \begin{equation} \label{eqIntImpropiaA1}
 \begin{split}
@@ -1700,22 +1681,20 @@ Figura 6.10: Ejemplo área bajo la curva de una integral impropia [Imagen tomada
 \end{equation} 
 \]</span>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo3-integral-impropia-tipo-uno" class="section level3">
-<h3><span class="header-section-number">6.16.3</span> Ejemplo3 integral impropia tipo Uno</h3>
-
+<div id="ejemplo3-integral-impropia-tipo-uno" class="section level3" number="5.16.3">
+<h3><span class="header-section-number">5.16.3</span> Ejemplo3 integral impropia tipo Uno</h3>
+ffalse{-91-73-110-116-101-103-114-97-108-32-105-109-112-114-111-112-105-97-32-116-105-112-111-32-85-110-111-32-112-97-114-97-32-108-97-32-102-117-110-99-105-243-110-32-108-108-97-109-97-100-97-32-98-114-117-106-97-93-}
 <div class="example">
-<span id="exm:unnamed-chunk-110" class="example"><strong>Ejemplo 6.26  (Integral impropia tipo Uno para la función llamada bruja)  </strong></span>Evalúe la integral
+<span id="exm:unnamed-chunk-110" class="example"><strong>Ejemplo 5.26  \iffalse (Integral impropia tipo Uno para la función llamada bruja)  </strong></span>Evalúe la integral
 <span class="math display">\[
 \displaystyle\int_{0}^{\infty}{\dfrac{8a^2dx}{x^2+4a^2}}
 \]</span>
 </div>
 
-
 <div class="solution">
- <span class="solution"><em>Solución. </em></span> <span class="math display">\[
+\iffalse{} <span class="solution"><em>Solución. </em></span> <span class="math display">\[
 \begin{equation} \label{eqIntImpropiaA2}
 \begin{split}
 \displaystyle\int_{0}^{\infty}{\dfrac{8a^2dx}{x^2+4a^2}} &amp; =\lim_{t \to +\infty}{\int_{0}^{t}{\dfrac{8a^2dx}{x^2+4a^2}}}\\
@@ -1725,22 +1704,20 @@ Figura 6.10: Ejemplo área bajo la curva de una integral impropia [Imagen tomada
 \end{equation} 
 \]</span>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo4-integral-impropia-tipo-uno" class="section level3">
-<h3><span class="header-section-number">6.16.4</span> Ejemplo4 integral impropia tipo Uno</h3>
+<div id="ejemplo4-integral-impropia-tipo-uno" class="section level3" number="5.16.4">
+<h3><span class="header-section-number">5.16.4</span> Ejemplo4 integral impropia tipo Uno</h3>
 
 <div class="example">
-<span id="exm:unnamed-chunk-112" class="example"><strong>Ejemplo 6.27  </strong></span>Evalúe la integral <span class="math inline">\((p=1)\)</span>.
+<span id="exm:unnamed-chunk-112" class="example"><strong>Ejemplo 5.27  </strong></span>Evalúe la integral <span class="math inline">\((p=1)\)</span>.
 <span class="math display">\[
 \displaystyle\int_{1}^{\infty}{\dfrac{1dx}{x}}
 \]</span>
 </div>
 
-
 <div class="solution">
- <span class="solution"><em>Solución. </em></span> <span class="math display">\[
+\iffalse{} <span class="solution"><em>Solución. </em></span> <span class="math display">\[
 \begin{equation} \label{eqIntImpropiaA3}
 \begin{split}
 \displaystyle\int_{1}^{\infty}{\dfrac{1dx}{x}} &amp; = \lim_{t \to +\infty}{\int_{1}^{t}{\dfrac{1dx}{x}}}\\
@@ -1750,22 +1727,21 @@ Figura 6.10: Ejemplo área bajo la curva de una integral impropia [Imagen tomada
 \]</span>
 No existe el límite de <span class="math inline">\(ln|t|\)</span> cuando <span class="math inline">\(t\)</span> aumenta sin límite. Entonces se concluye que la integral impropia diverge.
 </div>
-
 <p><br></br></p>
 </div>
 </div>
-<div id="integrales-impropias-tipo-2" class="section level2">
-<h2><span class="header-section-number">6.17</span> Integrales impropias tipo 2</h2>
+<div id="integrales-impropias-tipo-2" class="section level2" number="5.17">
+<h2><span class="header-section-number">5.17</span> Integrales impropias tipo 2</h2>
 <p><strong>Interpretación geométrica de la integral impropia tipo Dos</strong></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA03"></span>
 <img src="images/IntImpropiaTipoDos_A1.png" alt="Interpretación geométrica área bajo la curva de una integral impropia tipo II [Imagen tomada de [@stewart2020calculus] pág $432$]" width="85%" />
 <p class="caption">
-Figura 6.11: Interpretación geométrica área bajo la curva de una integral impropia tipo II [Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(432\)</span>]
+Figura 5.11: Interpretación geométrica área bajo la curva de una integral impropia tipo II [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(432\)</span>]
 </p>
 </div>
-
+ffalse{-91-73-110-116-101-103-114-97-108-32-105-109-112-114-111-112-105-97-32-116-105-112-111-32-50-93-}
 <div class="definition">
-<p><span id="def:unnamed-chunk-114" class="definition"><strong>Definición 6.6  (Integral impropia tipo 2)  </strong></span>
+<p><span id="def:unnamed-chunk-114" class="definition"><strong>Definición 5.6  \iffalse (Integral impropia tipo 2)  </strong></span>
 (a.) Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b)\)</span> y discontinua en <span class="math inline">\(x=b\)</span>, entonces</p>
 <p><span class="math display">\[
 \displaystyle\int_{a}^{b}{f(x)dx}=\lim_{t \to b^{-}}{\int_{a}^{t}{f(x)dx}}
@@ -1784,30 +1760,28 @@ por definición</p>
 <p><span class="math display">\[
 \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\int_{a}^{c}{f(x)dx}+\displaystyle\int_{c}^{b}{f(x)dx}
 \]</span></p>
-Tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(432\)</span>
+Tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(432\)</span>
 </div>
-
 <p><br></br></p>
-<div id="ejemplo1-integral-impropia-tipo-2-caso-b" class="section level3">
-<h3><span class="header-section-number">6.17.1</span> Ejemplo1 Integral impropia tipo 2 caso (b)</h3>
-
+<div id="ejemplo1-integral-impropia-tipo-2-caso-b" class="section level3" number="5.17.1">
+<h3><span class="header-section-number">5.17.1</span> Ejemplo1 Integral impropia tipo 2 caso (b)</h3>
+ffalse{-91-73-110-116-101-103-114-97-108-32-105-109-112-114-111-112-105-97-32-116-105-112-111-32-50-32-99-97-115-111-32-40-98-41-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-115" class="example"><strong>Ejemplo 6.28  (Integral impropia tipo 2 caso (b))  </strong></span>Evalúe la integral</p>
+<p><span id="exm:unnamed-chunk-115" class="example"><strong>Ejemplo 5.28  \iffalse (Integral impropia tipo 2 caso (b))  </strong></span>Evalúe la integral</p>
 <span class="math display">\[
 \displaystyle\int_{2}^{5}{\dfrac{1dx}{\sqrt{x-2}}}
 \]</span>
-Tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(433\)</span>
+Tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(433\)</span>
 </div>
-
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA04"></span>
 <img src="images/EjIntImpropiaTipo2_A1.png" alt="Interpretación geométrica área bajo la curva. Integral impropia tipo II parte (b)[Imagen tomada de [@stewart2020calculus] pág $433$]" width="45%" />
 <p class="caption">
-Figura 6.12: Interpretación geométrica área bajo la curva. Integral impropia tipo II parte (b)[Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(433\)</span>]
+Figura 5.12: Interpretación geométrica área bajo la curva. Integral impropia tipo II parte (b)[Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(433\)</span>]
 </p>
 </div>
 
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> Es bueno resaltar que <span class="math inline">\(f(x)=1/\sqrt{x-2}\)</span> tiene una asíntota en <span class="math inline">\(x=2\)</span>. Es decir <span class="math inline">\(f\)</span> es discontinua en <span class="math inline">\((2,5]\)</span>. Entonces aplicando el caso (b) se tiene</p>
+<p>\iffalse{} <span class="solution"><em>Solución. </em></span> Es bueno resaltar que <span class="math inline">\(f(x)=1/\sqrt{x-2}\)</span> tiene una asíntota en <span class="math inline">\(x=2\)</span>. Es decir <span class="math inline">\(f\)</span> es discontinua en <span class="math inline">\((2,5]\)</span>. Entonces aplicando el caso (b) se tiene</p>
 <span class="math display">\[
 \begin{equation} \label{eqIntImpropiaA4}
 \begin{split}
@@ -1818,23 +1792,21 @@ Figura 6.12: Interpretación geométrica área bajo la curva. Integral impropia 
 \end{equation} 
 \]</span>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo2-integral-impropia-tipo-2-caso-a" class="section level3">
-<h3><span class="header-section-number">6.17.2</span> Ejemplo2 Integral impropia tipo 2 caso (a)</h3>
-
+<div id="ejemplo2-integral-impropia-tipo-2-caso-a" class="section level3" number="5.17.2">
+<h3><span class="header-section-number">5.17.2</span> Ejemplo2 Integral impropia tipo 2 caso (a)</h3>
+ffalse{-91-73-110-116-101-103-114-97-108-32-105-109-112-114-111-112-105-97-32-116-105-112-111-32-50-32-99-97-115-111-32-40-97-41-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-117" class="example"><strong>Ejemplo 6.29  (Integral impropia tipo 2 caso (a))  </strong></span>Evalúe la integral</p>
+<p><span id="exm:unnamed-chunk-117" class="example"><strong>Ejemplo 5.29  \iffalse (Integral impropia tipo 2 caso (a))  </strong></span>Evalúe la integral</p>
 <span class="math display">\[
 \displaystyle\int_{0}^{1}{\dfrac{1dx}{\sqrt{1-x^2}}}
 \]</span>
-Tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(485\)</span>
+Tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(485\)</span>
 </div>
 
-
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> Es bueno resaltar que <span class="math inline">\(f(x)=1/\sqrt{1-x^2}\)</span> tiene una asíntota en <span class="math inline">\(x=1\)</span>. Es decir <span class="math inline">\(f\)</span> es discontinua en <span class="math inline">\([0,1)\)</span>. Entonces aplicando el caso (a) se tiene</p>
+<p>\iffalse{} <span class="solution"><em>Solución. </em></span> Es bueno resaltar que <span class="math inline">\(f(x)=1/\sqrt{1-x^2}\)</span> tiene una asíntota en <span class="math inline">\(x=1\)</span>. Es decir <span class="math inline">\(f\)</span> es discontinua en <span class="math inline">\([0,1)\)</span>. Entonces aplicando el caso (a) se tiene</p>
 <span class="math display">\[
 \begin{equation} \label{eqIntImpropiaA5}
 \begin{split}
@@ -1845,22 +1817,20 @@ Tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewa
 \end{equation} 
 \]</span>
 </div>
-
 <p><br></br></p>
 </div>
-<div id="ejemplo3-integral-impropia-tipo-2-caso-c" class="section level3">
-<h3><span class="header-section-number">6.17.3</span> Ejemplo3 Integral impropia tipo 2 caso (c)</h3>
-
+<div id="ejemplo3-integral-impropia-tipo-2-caso-c" class="section level3" number="5.17.3">
+<h3><span class="header-section-number">5.17.3</span> Ejemplo3 Integral impropia tipo 2 caso (c)</h3>
+ffalse{-91-73-110-116-101-103-114-97-108-32-105-109-112-114-111-112-105-97-32-116-105-112-111-32-50-32-99-97-115-111-32-40-99-41-93-}
 <div class="example">
-<p><span id="exm:unnamed-chunk-119" class="example"><strong>Ejemplo 6.30  (Integral impropia tipo 2 caso (c))  </strong></span>Evalúe la integral</p>
+<p><span id="exm:unnamed-chunk-119" class="example"><strong>Ejemplo 5.30  \iffalse (Integral impropia tipo 2 caso (c))  </strong></span>Evalúe la integral</p>
 <p><span class="math display">\[
 \displaystyle\int_{0}^{3}{\dfrac{1dx}{x-1}}
 \]</span></p>
 </div>
 
-
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> Es bueno resaltar que <span class="math inline">\(f(x)=1/(x-1)\)</span> tiene una asíntota en <span class="math inline">\(x=1\)</span>. Es decir <span class="math inline">\(f\)</span> es discontinua en <span class="math inline">\([0,3]\)</span>. Entonces aplicando el caso (c) se tiene</p>
+<p>\iffalse{} <span class="solution"><em>Solución. </em></span> Es bueno resaltar que <span class="math inline">\(f(x)=1/(x-1)\)</span> tiene una asíntota en <span class="math inline">\(x=1\)</span>. Es decir <span class="math inline">\(f\)</span> es discontinua en <span class="math inline">\([0,3]\)</span>. Entonces aplicando el caso (c) se tiene</p>
 <p><span class="math display">\[
 \begin{equation} \label{eqIntImpropiaA6}
 \begin{split}
@@ -1879,21 +1849,20 @@ Por lo tanto la integral planteada</p>
 \]</span>
 Es divergente y no es necesario evaluar la inegral <span class="math inline">\(\displaystyle\int_{1}^{3}{\dfrac{1dx}{x-1}}\)</span>
 </div>
-
 <p><br></br></p>
 </div>
 </div>
-<div id="teorema-de-comparacion-para-integrales-impropias" class="section level2">
-<h2><span class="header-section-number">6.18</span> Teorema de comparacion para integrales impropias</h2>
+<div id="teorema-de-comparacion-para-integrales-impropias" class="section level2" number="5.18">
+<h2><span class="header-section-number">5.18</span> Teorema de comparacion para integrales impropias</h2>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA05"></span>
 <img src="images/IntImpropiaTmaCOMPARACION.png" alt="Teorema de comparación de integrales impropias [Imagen tomada de [@stewart2020calculus] pág $434$]" width="45%" />
 <p class="caption">
-Figura 6.13: Teorema de comparación de integrales impropias [Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(434\)</span>]
+Figura 5.13: Teorema de comparación de integrales impropias [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(434\)</span>]
 </p>
 </div>
-
+ffalse{-91-84-101-111-114-101-109-97-32-100-101-32-99-111-109-112-97-114-97-99-105-243-110-32-112-97-114-97-32-105-110-116-101-103-114-97-108-101-115-32-105-109-112-114-111-112-105-97-115-93-}
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-121" class="theorem"><strong>Teorema 6.5  (Teorema de comparación para integrales impropias)  </strong></span>Supongamos que <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> son funciones continuas con la propiedad de que <span class="math inline">\(f(x) \geq g(x) \geq 0\)</span> para <span class="math inline">\(x \geq a\)</span>.</p>
+<p><span id="thm:unnamed-chunk-121" class="theorem"><strong>Teorema 5.5  \iffalse (Teorema de comparación para integrales impropias)  </strong></span>Supongamos que <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> son funciones continuas con la propiedad de que <span class="math inline">\(f(x) \geq g(x) \geq 0\)</span> para <span class="math inline">\(x \geq a\)</span>.</p>
 <p>(a.) Si</p>
 <p><span class="math display">\[
 \displaystyle\int_{a}^{\infty}{f(x)dx}
@@ -1913,28 +1882,26 @@ es convergente.</p>
 \]</span></p>
 es divergente.
 </div>
-
 <p><br></br></p>
-<div id="ejemplo-teorema-de-comparacion-para-integrales-impropias" class="section level3">
-<h3><span class="header-section-number">6.18.1</span> Ejemplo teorema de comparacion para integrales impropias</h3>
+<div id="ejemplo-teorema-de-comparacion-para-integrales-impropias" class="section level3" number="5.18.1">
+<h3><span class="header-section-number">5.18.1</span> Ejemplo teorema de comparacion para integrales impropias</h3>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA06"></span>
 <img src="images/EjIntPorComparacion_A1.png" alt="Ejemplo teorema de comparación de integrales impropias [Imagen tomada de [@stewart2020calculus] pág $435$]" width="45%" />
 <p class="caption">
-Figura 6.14: Ejemplo teorema de comparación de integrales impropias [Imagen tomada de <span class="citation">(Stewart, Clegg, and Watson <a href="#ref-stewart2020calculus" role="doc-biblioref">2020</a><a href="#ref-stewart2020calculus" role="doc-biblioref">a</a>)</span> pág <span class="math inline">\(435\)</span>]
+Figura 5.14: Ejemplo teorema de comparación de integrales impropias [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(435\)</span>]
 </p>
 </div>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-122" class="example"><strong>Ejemplo 6.31  </strong></span>Mostrar que la integral impropia</p>
+<p><span id="exm:unnamed-chunk-122" class="example"><strong>Ejemplo 5.31  </strong></span>Mostrar que la integral impropia</p>
 <p><span class="math display">\[
 \displaystyle\int_{0}^{\infty}{e^{-x^2}dx}
 \]</span></p>
 es convergente para toda <span class="math inline">\(x \geq 1\)</span>
 </div>
 
-
 <div class="solution">
-<p> <span class="solution"><em>Solución. </em></span> Sabemos que</p>
+<p>\iffalse{} <span class="solution"><em>Solución. </em></span> Sabemos que</p>
 <span class="math display">\[
 \displaystyle\int_{0}^{\infty}{e^{-x^2}dx}=\displaystyle\int_{0}^{1}{e^{-x^2}dx}+\displaystyle\int_{1}^{\infty}{e^{-x^2}dx}
 \]</span>
@@ -1943,7 +1910,6 @@ Además sabemos que para <span class="math inline">\(f(x)=e^{-x}\)</span>
 \displaystyle\int_{1}^{\infty}{e^{-x}dx}=\lim_{t \to \infty}\int_{1}^{t}{e^{-x}dx}=\lim_{t \to \infty}\left(e^{-1}-e^{-t}\right)=e^{-1}, \ \ \text{es decir converge}
 \]</span>
 </div>
-
 <p>Así que para aplicar el teorma de comparación para dos integrales impropias tomaremos:</p>
 <p><span class="math inline">\(f(x)=e^{-x}\)</span> y <span class="math inline">\(g(x)=e^{-x^2}\)</span>. Vemos que se cumple:</p>
 <p><span class="math display">\[
@@ -1957,16 +1923,16 @@ f(x)=e^{-x} \geq g(x)=e^{-x^2} \geq 0 \quad  \text{ para } x \geq 1
 es convergente para <span class="math inline">\(x \geq 1\)</span></p>
 </div>
 </div>
-<div id="aproximación-numérica-de-la-integral-definida" class="section level2">
-<h2><span class="header-section-number">6.19</span> Aproximación numérica de la integral definida</h2>
-<div id="ejemplo-regla-de-trapecios" class="section level3">
-<h3><span class="header-section-number">6.19.1</span> Ejemplo Regla de Trapecios</h3>
+<div id="aproximación-numérica-de-la-integral-definida" class="section level2" number="5.19">
+<h2><span class="header-section-number">5.19</span> Aproximación numérica de la integral definida</h2>
+<div id="ejemplo-regla-de-trapecios" class="section level3" number="5.19.1">
+<h3><span class="header-section-number">5.19.1</span> Ejemplo Regla de Trapecios</h3>
 <p><br></br></p>
 <iframe src="https://johneaces2021agosto.shinyapps.io/ReglaAproxIntegralUnoA_3/?showcase=0" width="672" height="1200px" data-external="1">
 </iframe>
 </div>
-<div id="ejemplo-regla-de-simpson-13" class="section level3">
-<h3><span class="header-section-number">6.19.2</span> Ejemplo Regla de Simpson <span class="math inline">\(1/3\)</span></h3>
+<div id="ejemplo-regla-de-simpson-13" class="section level3" number="5.19.2">
+<h3><span class="header-section-number">5.19.2</span> Ejemplo Regla de Simpson <span class="math inline">\(1/3\)</span></h3>
 <p><br></br></p>
 <iframe src="https://johneaces2021agosto.shinyapps.io/ReglaAproxIntegralUnoA_4/?showcase=0" width="672" height="1200px" data-external="1">
 </iframe>
@@ -1975,18 +1941,18 @@ es convergente para <span class="math inline">\(x \geq 1\)</span></p>
 </div>
 </div>
 <h3>Referencias</h3>
-<div id="refs" class="references">
-<div id="ref-stewart2009calculus">
-<p>Stewart, James. 2009. <em>Calculus: Concepts and Contexts</em>. Cengage Learning.</p>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-stewart2009calculus" class="csl-entry">
+Stewart, James. 2009. <em>Calculus: Concepts and Contexts</em>. Cengage Learning.
 </div>
-<div id="ref-stewart2020calculus">
-<p>Stewart, James, Daniel K Clegg, and Saleem Watson. 2020a. <em>Calculus: Early Transcendentals</em>. Cengage Learning.</p>
+<div id="ref-stewart2020calculus" class="csl-entry">
+Stewart, James, Daniel K Clegg, and Saleem Watson. 2020a. <em>Calculus: Early Transcendentals</em>. Cengage Learning.
 </div>
-<div id="ref-stewart2020single">
-<p>Stewart, James, Daniel K Clegg, and Saleem Watson. 2020b. <em>Single Variable Calculus: Early Transcendentals</em>. Cengage Learning.</p>
+<div id="ref-stewart2020single" class="csl-entry">
+———. 2020b. <em>Single Variable Calculus: Early Transcendentals</em>. Cengage Learning.
 </div>
-<div id="ref-thomas2003thomas">
-<p>Thomas, George Brinton, Ross L Finney, Maurice D Weir, and Frank R Giordano. 2003. <em>Thomas’ Calculus</em>. Addison-Wesley Reading.</p>
+<div id="ref-thomas2003thomas" class="csl-entry">
+Thomas, George Brinton, Ross L Finney, Maurice D Weir, and Frank R Giordano. 2003. <em>Thomas’ Calculus</em>. Addison-Wesley Reading.
 </div>
 </div>
             </section>

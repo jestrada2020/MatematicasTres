@@ -21,10 +21,10 @@
   <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
 
-<meta name="author" content="John Jairo Estrada Álvarez" />
+<meta name="author" content="Carlos Andrés Escobar Guerra - Juan Alberto Arias Quiceno - John Jairo Estrada Alvarez" />
 
 
-<meta name="date" content="2022-01-13" />
+<meta name="date" content="2022-02-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,8 @@
   
   
 <link rel="prev" href="desarrollo-temático.html"/>
-<link rel="next" href="métodos-para-derivar-parcialmente.html"/>
+<link rel="next" href="métodos-para-máximos-y-mínimos.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,7 +51,6 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
@@ -64,6 +64,28 @@
 
 
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -81,165 +103,183 @@
 <li><a href="./">Curso de Matemáticas Tres</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a><ul>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>1.1</b> Comportamentales</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>1.2</b> Evaluativos</a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#fechas-de-evaluación"><i class="fa fa-check"></i><b>1.3</b> Fechas de evaluación</a><ul>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#fechas-de-evaluación"><i class="fa fa-check"></i><b>1.3</b> Fechas de evaluación</a>
+<ul>
 <li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#talleres-evaluativos"><i class="fa fa-check"></i><b>1.3.1</b> Talleres evaluativos</a></li>
 </ul></li>
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>1.4</b> Video motivacional</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>1.5</b> Página para reforzar conceptos básicos</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html"><i class="fa fa-check"></i><b>2</b> Desarrollo temático</a><ul>
+<li class="chapter" data-level="2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html"><i class="fa fa-check"></i><b>2</b> Desarrollo temático</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#objetivo-general"><i class="fa fa-check"></i><b>2.1</b> Objetivo general</a></li>
 <li class="chapter" data-level="2.2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#objetivos-específicos"><i class="fa fa-check"></i><b>2.2</b> Objetivos específicos</a></li>
 <li class="chapter" data-level="2.3" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#clase-a-clase"><i class="fa fa-check"></i><b>2.3</b> <strong>Clase a clase</strong></a></li>
 <li class="chapter" data-level="2.4" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#bibliografía"><i class="fa fa-check"></i><b>2.4</b> Bibliografía</a></li>
-<li class="chapter" data-level="2.5" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#video-manejo-de-la-casio-f_x350ms"><i class="fa fa-check"></i><b>2.5</b> Video manejo de la Casio <span class="math inline">\(f_{x}350MS\)</span></a><ul>
+<li class="chapter" data-level="2.5" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#video-manejo-de-la-casio-f_x350ms"><i class="fa fa-check"></i><b>2.5</b> Video manejo de la Casio <span class="math inline">\(f_{x}350MS\)</span></a>
+<ul>
 <li class="chapter" data-level="2.5.1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-cramer-sistemas-2-por-2"><i class="fa fa-check"></i><b>2.5.1</b> Regla de Cramer sistemas <span class="math inline">\(2\)</span> por <span class="math inline">\(2\)</span></a></li>
 <li class="chapter" data-level="2.5.2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-cramer-sistemas-3-por-3"><i class="fa fa-check"></i><b>2.5.2</b> Regla de Cramer sistemas <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
 <li class="chapter" data-level="2.5.3" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-sarrus-determinante-3-por-3"><i class="fa fa-check"></i><b>2.5.3</b> Regla de Sarrus determinante <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
 <li class="chapter" data-level="2.5.4" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#solución-de-la-ecuación-cuadrática"><i class="fa fa-check"></i><b>2.5.4</b> Solución de la ecuación cuadrática</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>3</b> Introducción</a><ul>
+<li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>3</b> Introducción</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="intro.html"><a href="intro.html#punto-frontera-y-punto-interior-en-el-plano"><i class="fa fa-check"></i><b>3.1</b> Punto frontera y punto interior en el plano</a></li>
 <li class="chapter" data-level="3.2" data-path="intro.html"><a href="intro.html#función-de-dos-variables"><i class="fa fa-check"></i><b>3.2</b> Función de dos variables</a></li>
-<li class="chapter" data-level="3.3" data-path="intro.html"><a href="intro.html#punto-frontera-y-punto-interior-en-el-espacio"><i class="fa fa-check"></i><b>3.3</b> Punto frontera y punto interior en el espacio</a></li>
-<li class="chapter" data-level="3.4" data-path="intro.html"><a href="intro.html#detalles-de-una-superficie-en-el-espacio-xyz"><i class="fa fa-check"></i><b>3.4</b> Detalles de una superficie en el espacio <span class="math inline">\(XYZ\)</span></a></li>
-<li class="chapter" data-level="3.5" data-path="intro.html"><a href="intro.html#curvas-de-nivel-para-el-pueblito-paisa-de-medellín"><i class="fa fa-check"></i><b>3.5</b> Curvas de nivel para el Pueblito Paisa de Medellín</a></li>
-<li class="chapter" data-level="3.6" data-path="intro.html"><a href="intro.html#curvas-de-nivel-para-la-uces-de-medellín"><i class="fa fa-check"></i><b>3.6</b> Curvas de nivel para la UCES de Medellín</a></li>
+<li class="chapter" data-level="3.3" data-path="intro.html"><a href="intro.html#ejercicio-derivada-parcial-con-respecto-a-y"><i class="fa fa-check"></i><b>3.3</b> Ejercicio derivada parcial con respecto a <span class="math inline">\(y\)</span></a></li>
+<li class="chapter" data-level="3.4" data-path="intro.html"><a href="intro.html#notación-ó-simbología-de-la-derivada-parcial"><i class="fa fa-check"></i><b>3.4</b> Notación (ó simbología) de la derivada parcial</a></li>
+<li class="chapter" data-level="3.5" data-path="intro.html"><a href="intro.html#significado-geométrico-de-la-derivada-parcial-con-respecto-a-x-y-y"><i class="fa fa-check"></i><b>3.5</b> Significado geométrico de la derivada parcial con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span></a></li>
+<li class="chapter" data-level="3.6" data-path="intro.html"><a href="intro.html#ejercicio-pendiente-de-una-superficie"><i class="fa fa-check"></i><b>3.6</b> Ejercicio Pendiente de una superficie</a></li>
+<li class="chapter" data-level="3.7" data-path="intro.html"><a href="intro.html#herramienta-para-evaluar-primeras-derivadas-parciales-en-ab"><i class="fa fa-check"></i><b>3.7</b> Herramienta para evaluar primeras derivadas parciales en <span class="math inline">\((a,b)\)</span></a></li>
+<li class="chapter" data-level="3.8" data-path="intro.html"><a href="intro.html#derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>3.8</b> Derivadas parciales de orden superior</a></li>
+<li class="chapter" data-level="3.9" data-path="intro.html"><a href="intro.html#ejercicio-derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>3.9</b> Ejercicio derivadas parciales de orden superior</a></li>
+<li class="chapter" data-level="3.10" data-path="intro.html"><a href="intro.html#herramienta-para-evaluar-derivadas-parciales-de-orden-dos-en-ab"><i class="fa fa-check"></i><b>3.10</b> Herramienta para evaluar derivadas parciales de orden dos en <span class="math inline">\((a,b)\)</span></a></li>
+<li class="chapter" data-level="3.11" data-path="intro.html"><a href="intro.html#regla-de-la-cadena-para-funciones-de-varias-variables"><i class="fa fa-check"></i><b>3.11</b> Regla de la cadena para funciones de varias variables</a>
+<ul>
+<li class="chapter" data-level="3.11.1" data-path="intro.html"><a href="intro.html#una-variable-independiente"><i class="fa fa-check"></i><b>3.11.1</b> Una variable independiente</a></li>
+<li class="chapter" data-level="3.11.2" data-path="intro.html"><a href="intro.html#dos-variables-independientes"><i class="fa fa-check"></i><b>3.11.2</b> Dos variables independientes</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html"><i class="fa fa-check"></i><b>4</b> Métodos para derivar parcialmente</a><ul>
-<li class="chapter" data-level="4.1" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#definición-derivada-parcial"><i class="fa fa-check"></i><b>4.1</b> Definición derivada parcial</a></li>
-<li class="chapter" data-level="4.2" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-derivada-parcial-con-respecto-a-x"><i class="fa fa-check"></i><b>4.2</b> Ejercicio derivada parcial con respecto a <span class="math inline">\(x\)</span></a></li>
-<li class="chapter" data-level="4.3" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-derivada-parcial-con-respecto-a-y"><i class="fa fa-check"></i><b>4.3</b> Ejercicio derivada parcial con respecto a <span class="math inline">\(y\)</span></a></li>
-<li class="chapter" data-level="4.4" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#notación-ó-simbología-de-la-derivada-parcial"><i class="fa fa-check"></i><b>4.4</b> Notación (ó simbología) de la derivada parcial</a></li>
-<li class="chapter" data-level="4.5" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#significado-geométrico-de-la-derivada-parcial-con-respecto-a-x-y-y"><i class="fa fa-check"></i><b>4.5</b> Significado geométrico de la derivada parcial con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span></a></li>
-<li class="chapter" data-level="4.6" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-pendiente-de-una-superficie"><i class="fa fa-check"></i><b>4.6</b> Ejercicio Pendiente de una superficie</a></li>
-<li class="chapter" data-level="4.7" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#herramienta-para-evaluar-primeras-derivadas-parciales-en-ab"><i class="fa fa-check"></i><b>4.7</b> Herramienta para evaluar primeras derivadas parciales en <span class="math inline">\((a,b)\)</span></a></li>
-<li class="chapter" data-level="4.8" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>4.8</b> Derivadas parciales de orden superior</a></li>
-<li class="chapter" data-level="4.9" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#ejercicio-derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>4.9</b> Ejercicio derivadas parciales de orden superior</a></li>
-<li class="chapter" data-level="4.10" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#herramienta-para-evaluar-derivadas-parciales-de-orden-dos-en-ab"><i class="fa fa-check"></i><b>4.10</b> Herramienta para evaluar derivadas parciales de orden dos en <span class="math inline">\((a,b)\)</span></a></li>
-<li class="chapter" data-level="4.11" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#regla-de-la-cadena-para-funciones-de-varias-variables"><i class="fa fa-check"></i><b>4.11</b> Regla de la cadena para funciones de varias variables</a><ul>
-<li class="chapter" data-level="4.11.1" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#una-variable-independiente"><i class="fa fa-check"></i><b>4.11.1</b> Una variable independiente</a></li>
-<li class="chapter" data-level="4.11.2" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#dos-variables-independientes"><i class="fa fa-check"></i><b>4.11.2</b> Dos variables independientes</a></li>
+<li class="chapter" data-level="3.12" data-path="intro.html"><a href="intro.html#herramienta-evalúa-rcadena2v-independientes"><i class="fa fa-check"></i><b>3.12</b> Herramienta evalúa RCadena2V independientes</a></li>
+<li class="chapter" data-level="3.13" data-path="intro.html"><a href="intro.html#derivación-parcial-implícita"><i class="fa fa-check"></i><b>3.13</b> Derivación parcial implícita</a></li>
+<li class="chapter" data-level="3.14" data-path="intro.html"><a href="intro.html#derivada-direccional"><i class="fa fa-check"></i><b>3.14</b> Derivada direccional</a></li>
+<li class="chapter" data-level="3.15" data-path="intro.html"><a href="intro.html#gradiente-de-una-función"><i class="fa fa-check"></i><b>3.15</b> Gradiente de una función</a></li>
 </ul></li>
-<li class="chapter" data-level="4.12" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#herramienta-evalúa-rcadena2v-independientes"><i class="fa fa-check"></i><b>4.12</b> Herramienta evalúa RCadena2V independientes</a></li>
-<li class="chapter" data-level="4.13" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#derivación-parcial-implícita"><i class="fa fa-check"></i><b>4.13</b> Derivación parcial implícita</a></li>
-<li class="chapter" data-level="4.14" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#derivada-direccional"><i class="fa fa-check"></i><b>4.14</b> Derivada direccional</a></li>
-<li class="chapter" data-level="4.15" data-path="métodos-para-derivar-parcialmente.html"><a href="métodos-para-derivar-parcialmente.html#gradiente-de-una-función"><i class="fa fa-check"></i><b>4.15</b> Gradiente de una función</a></li>
+<li class="chapter" data-level="4" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html"><i class="fa fa-check"></i><b>4</b> Métodos para máximos y mínimos</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#significado-geométrico-de-máximo-y-mínimo-local"><i class="fa fa-check"></i><b>4.1</b> Significado geométrico de máximo y mínimo local</a></li>
+<li class="chapter" data-level="4.2" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#herramienta-para-obtener-el-hessiano-2por2"><i class="fa fa-check"></i><b>4.2</b> Herramienta para obtener el Hessiano 2por2</a></li>
+<li class="chapter" data-level="4.3" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#método-de-los-multiplicadore-de-lagrange-para-determinar-máximos-o-mínimos"><i class="fa fa-check"></i><b>4.3</b> Método de los multiplicadore de Lagrange para determinar máximos o mínimos</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html"><i class="fa fa-check"></i><b>5</b> Métodos para máximos y mínimos</a><ul>
-<li class="chapter" data-level="5.1" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#significado-geométrico-de-máximo-y-mínimo-local"><i class="fa fa-check"></i><b>5.1</b> Significado geométrico de máximo y mínimo local</a></li>
-<li class="chapter" data-level="5.2" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#herramienta-para-obtener-el-hessiano-2por2"><i class="fa fa-check"></i><b>5.2</b> Herramienta para obtener el Hessiano 2por2</a></li>
-<li class="chapter" data-level="5.3" data-path="métodos-para-máximos-y-mínimos.html"><a href="métodos-para-máximos-y-mínimos.html#método-de-los-multiplicadore-de-lagrange-para-determinar-máximos-o-mínimos"><i class="fa fa-check"></i><b>5.3</b> Método de los multiplicadore de Lagrange para determinar máximos o mínimos</a></li>
+<li class="chapter" data-level="5" data-path="integrales-simples.html"><a href="integrales-simples.html"><i class="fa fa-check"></i><b>5</b> Integrales simples</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="integrales-simples.html"><a href="integrales-simples.html#primera-tabla-de-antiderivadas"><i class="fa fa-check"></i><b>5.1</b> Primera tabla de antiderivadas</a></li>
+<li class="chapter" data-level="5.2" data-path="integrales-simples.html"><a href="integrales-simples.html#herramienta-para-obtener-antiderivadas"><i class="fa fa-check"></i><b>5.2</b> Herramienta para obtener antiderivadas</a></li>
+<li class="chapter" data-level="5.3" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-las-antiderivadas"><i class="fa fa-check"></i><b>5.3</b> Propiedades de las antiderivadas</a></li>
+<li class="chapter" data-level="5.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-de-antiderivada"><i class="fa fa-check"></i><b>5.4</b> Ejemplo1 de antiderivada</a></li>
+<li class="chapter" data-level="5.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-de-antiderivada"><i class="fa fa-check"></i><b>5.5</b> Ejemplo2 de antiderivada</a></li>
+<li class="chapter" data-level="5.6" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-uno"><i class="fa fa-check"></i><b>5.6</b> Teorema fundamental del cálculo, caso Uno</a></li>
+<li class="chapter" data-level="5.7" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-dos"><i class="fa fa-check"></i><b>5.7</b> Teorema fundamental del cálculo, caso Dos</a></li>
+<li class="chapter" data-level="5.8" data-path="integrales-simples.html"><a href="integrales-simples.html#técnicas-de-integración"><i class="fa fa-check"></i><b>5.8</b> Técnicas de integración</a></li>
+<li class="chapter" data-level="5.9" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-sustitución-o-cambio-de-variable"><i class="fa fa-check"></i><b>5.9</b> Integración por sustitución o cambio de variable</a>
+<ul>
+<li class="chapter" data-level="5.9.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-por-sustitución"><i class="fa fa-check"></i><b>5.9.1</b> Ejemplo1 por sustitución</a></li>
+<li class="chapter" data-level="5.9.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-por-sustitución"><i class="fa fa-check"></i><b>5.9.2</b> Ejemplo2 por sustitución</a></li>
+<li class="chapter" data-level="5.9.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-por-sustitución"><i class="fa fa-check"></i><b>5.9.3</b> Ejemplo3 por sustitución</a></li>
+<li class="chapter" data-level="5.9.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-por-sustitución"><i class="fa fa-check"></i><b>5.9.4</b> Ejemplo4 por sustitución</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="integrales-simples.html"><a href="integrales-simples.html"><i class="fa fa-check"></i><b>6</b> Integrales simples</a><ul>
-<li class="chapter" data-level="6.1" data-path="integrales-simples.html"><a href="integrales-simples.html#primera-tabla-de-antiderivadas"><i class="fa fa-check"></i><b>6.1</b> Primera tabla de antiderivadas</a></li>
-<li class="chapter" data-level="6.2" data-path="integrales-simples.html"><a href="integrales-simples.html#herramienta-para-obtener-antiderivadas"><i class="fa fa-check"></i><b>6.2</b> Herramienta para obtener antiderivadas</a></li>
-<li class="chapter" data-level="6.3" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-las-antiderivadas"><i class="fa fa-check"></i><b>6.3</b> Propiedades de las antiderivadas</a></li>
-<li class="chapter" data-level="6.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-de-antiderivada"><i class="fa fa-check"></i><b>6.4</b> Ejemplo1 de antiderivada</a></li>
-<li class="chapter" data-level="6.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-de-antiderivada"><i class="fa fa-check"></i><b>6.5</b> Ejemplo2 de antiderivada</a></li>
-<li class="chapter" data-level="6.6" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-uno"><i class="fa fa-check"></i><b>6.6</b> Teorema fundamental del cálculo, caso Uno</a></li>
-<li class="chapter" data-level="6.7" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-fundamental-del-cálculo-caso-dos"><i class="fa fa-check"></i><b>6.7</b> Teorema fundamental del cálculo, caso Dos</a></li>
-<li class="chapter" data-level="6.8" data-path="integrales-simples.html"><a href="integrales-simples.html#técnicas-de-integración"><i class="fa fa-check"></i><b>6.8</b> Técnicas de integración</a></li>
-<li class="chapter" data-level="6.9" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-sustitución-o-cambio-de-variable"><i class="fa fa-check"></i><b>6.9</b> Integración por sustitución o cambio de variable</a><ul>
-<li class="chapter" data-level="6.9.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-por-sustitución"><i class="fa fa-check"></i><b>6.9.1</b> Ejemplo1 por sustitución</a></li>
-<li class="chapter" data-level="6.9.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-por-sustitución"><i class="fa fa-check"></i><b>6.9.2</b> Ejemplo2 por sustitución</a></li>
-<li class="chapter" data-level="6.9.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-por-sustitución"><i class="fa fa-check"></i><b>6.9.3</b> Ejemplo3 por sustitución</a></li>
-<li class="chapter" data-level="6.9.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-por-sustitución"><i class="fa fa-check"></i><b>6.9.4</b> Ejemplo4 por sustitución</a></li>
+<li class="chapter" data-level="5.10" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-partes"><i class="fa fa-check"></i><b>5.10</b> Integración por partes</a>
+<ul>
+<li class="chapter" data-level="5.10.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-por-partes"><i class="fa fa-check"></i><b>5.10.1</b> Ejemplo1 por partes</a></li>
+<li class="chapter" data-level="5.10.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-por-partes"><i class="fa fa-check"></i><b>5.10.2</b> Ejemplo2 por partes</a></li>
+<li class="chapter" data-level="5.10.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-por-partes"><i class="fa fa-check"></i><b>5.10.3</b> Ejemplo3 por partes</a></li>
+<li class="chapter" data-level="5.10.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-por-partes"><i class="fa fa-check"></i><b>5.10.4</b> Ejemplo4 por partes</a></li>
+<li class="chapter" data-level="5.10.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo5-por-partes"><i class="fa fa-check"></i><b>5.10.5</b> Ejemplo5 por partes</a></li>
+<li class="chapter" data-level="5.10.6" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo6-por-partes"><i class="fa fa-check"></i><b>5.10.6</b> Ejemplo6 por partes</a></li>
 </ul></li>
-<li class="chapter" data-level="6.10" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-partes"><i class="fa fa-check"></i><b>6.10</b> Integración por partes</a><ul>
-<li class="chapter" data-level="6.10.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-por-partes"><i class="fa fa-check"></i><b>6.10.1</b> Ejemplo1 por partes</a></li>
-<li class="chapter" data-level="6.10.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-por-partes"><i class="fa fa-check"></i><b>6.10.2</b> Ejemplo2 por partes</a></li>
-<li class="chapter" data-level="6.10.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-por-partes"><i class="fa fa-check"></i><b>6.10.3</b> Ejemplo3 por partes</a></li>
-<li class="chapter" data-level="6.10.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-por-partes"><i class="fa fa-check"></i><b>6.10.4</b> Ejemplo4 por partes</a></li>
-<li class="chapter" data-level="6.10.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo5-por-partes"><i class="fa fa-check"></i><b>6.10.5</b> Ejemplo5 por partes</a></li>
-<li class="chapter" data-level="6.10.6" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo6-por-partes"><i class="fa fa-check"></i><b>6.10.6</b> Ejemplo6 por partes</a></li>
+<li class="chapter" data-level="5.11" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-sustitución-trigonométrica"><i class="fa fa-check"></i><b>5.11</b> Integración por sustitución trigonométrica</a>
+<ul>
+<li class="chapter" data-level="5.11.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1"><i class="fa fa-check"></i><b>5.11.1</b> Ejemplo1</a></li>
+<li class="chapter" data-level="5.11.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2"><i class="fa fa-check"></i><b>5.11.2</b> Ejemplo2</a></li>
+<li class="chapter" data-level="5.11.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3"><i class="fa fa-check"></i><b>5.11.3</b> Ejemplo3</a></li>
 </ul></li>
-<li class="chapter" data-level="6.11" data-path="integrales-simples.html"><a href="integrales-simples.html#integración-por-sustitución-trigonométrica"><i class="fa fa-check"></i><b>6.11</b> Integración por sustitución trigonométrica</a><ul>
-<li class="chapter" data-level="6.11.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1"><i class="fa fa-check"></i><b>6.11.1</b> Ejemplo1</a></li>
-<li class="chapter" data-level="6.11.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2"><i class="fa fa-check"></i><b>6.11.2</b> Ejemplo2</a></li>
-<li class="chapter" data-level="6.11.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3"><i class="fa fa-check"></i><b>6.11.3</b> Ejemplo3</a></li>
+<li class="chapter" data-level="5.12" data-path="integrales-simples.html"><a href="integrales-simples.html#integación-por-fracciones-parciales"><i class="fa fa-check"></i><b>5.12</b> Integación por fracciones parciales</a>
+<ul>
+<li class="chapter" data-level="5.12.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-1"><i class="fa fa-check"></i><b>5.12.1</b> Ejemplo1</a></li>
+<li class="chapter" data-level="5.12.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-1"><i class="fa fa-check"></i><b>5.12.2</b> Ejemplo2</a></li>
+<li class="chapter" data-level="5.12.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-1"><i class="fa fa-check"></i><b>5.12.3</b> Ejemplo3</a></li>
+<li class="chapter" data-level="5.12.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4"><i class="fa fa-check"></i><b>5.12.4</b> Ejemplo4</a></li>
+<li class="chapter" data-level="5.12.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo5"><i class="fa fa-check"></i><b>5.12.5</b> Ejemplo5</a></li>
 </ul></li>
-<li class="chapter" data-level="6.12" data-path="integrales-simples.html"><a href="integrales-simples.html#integación-por-fracciones-parciales"><i class="fa fa-check"></i><b>6.12</b> Integación por fracciones parciales</a><ul>
-<li class="chapter" data-level="6.12.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-1"><i class="fa fa-check"></i><b>6.12.1</b> Ejemplo1</a></li>
-<li class="chapter" data-level="6.12.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-1"><i class="fa fa-check"></i><b>6.12.2</b> Ejemplo2</a></li>
-<li class="chapter" data-level="6.12.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-1"><i class="fa fa-check"></i><b>6.12.3</b> Ejemplo3</a></li>
-<li class="chapter" data-level="6.12.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4"><i class="fa fa-check"></i><b>6.12.4</b> Ejemplo4</a></li>
-<li class="chapter" data-level="6.12.5" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo5"><i class="fa fa-check"></i><b>6.12.5</b> Ejemplo5</a></li>
+<li class="chapter" data-level="5.13" data-path="integrales-simples.html"><a href="integrales-simples.html#fórmulas-de-reducción-para-integrar"><i class="fa fa-check"></i><b>5.13</b> Fórmulas de reducción para integrar</a></li>
+<li class="chapter" data-level="5.14" data-path="integrales-simples.html"><a href="integrales-simples.html#sustitución-de-karl-weierstrass-1815-1897"><i class="fa fa-check"></i><b>5.14</b> Sustitución de Karl Weierstrass (1815-1897)</a>
+<ul>
+<li class="chapter" data-level="5.14.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1karl"><i class="fa fa-check"></i><b>5.14.1</b> Ejemplo1(Karl)</a></li>
 </ul></li>
-<li class="chapter" data-level="6.13" data-path="integrales-simples.html"><a href="integrales-simples.html#fórmulas-de-reducción-para-integrar"><i class="fa fa-check"></i><b>6.13</b> Fórmulas de reducción para integrar</a></li>
-<li class="chapter" data-level="6.14" data-path="integrales-simples.html"><a href="integrales-simples.html#sustitución-de-karl-weierstrass-1815-1897"><i class="fa fa-check"></i><b>6.14</b> Sustitución de Karl Weierstrass (1815-1897)</a><ul>
-<li class="chapter" data-level="6.14.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1karl"><i class="fa fa-check"></i><b>6.14.1</b> Ejemplo1(Karl)</a></li>
+<li class="chapter" data-level="5.15" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>5.15</b> Integral definida</a>
+<ul>
+<li class="chapter" data-level="5.15.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>5.15.1</b> Propiedades de la integral definida</a></li>
+<li class="chapter" data-level="5.15.2" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-para-las-sumatorias"><i class="fa fa-check"></i><b>5.15.2</b> Propiedades para las sumatorias</a></li>
+<li class="chapter" data-level="5.15.3" data-path="integrales-simples.html"><a href="integrales-simples.html#sumatorias-para-evaluar-integrales-definidas"><i class="fa fa-check"></i><b>5.15.3</b> Sumatorias para evaluar integrales definidas</a></li>
+<li class="chapter" data-level="5.15.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-evaluación-por-sumatoria"><i class="fa fa-check"></i><b>5.15.4</b> Ejemplo evaluación por sumatoria</a></li>
 </ul></li>
-<li class="chapter" data-level="6.15" data-path="integrales-simples.html"><a href="integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>6.15</b> Integral definida</a><ul>
-<li class="chapter" data-level="6.15.1" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>6.15.1</b> Propiedades de la integral definida</a></li>
-<li class="chapter" data-level="6.15.2" data-path="integrales-simples.html"><a href="integrales-simples.html#propiedades-para-las-sumatorias"><i class="fa fa-check"></i><b>6.15.2</b> Propiedades para las sumatorias</a></li>
-<li class="chapter" data-level="6.15.3" data-path="integrales-simples.html"><a href="integrales-simples.html#sumatorias-para-evaluar-integrales-definidas"><i class="fa fa-check"></i><b>6.15.3</b> Sumatorias para evaluar integrales definidas</a></li>
-<li class="chapter" data-level="6.15.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-evaluación-por-sumatoria"><i class="fa fa-check"></i><b>6.15.4</b> Ejemplo evaluación por sumatoria</a></li>
+<li class="chapter" data-level="5.16" data-path="integrales-simples.html"><a href="integrales-simples.html#integrales-impropias-tipo-1"><i class="fa fa-check"></i><b>5.16</b> Integrales impropias tipo 1</a>
+<ul>
+<li class="chapter" data-level="5.16.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>5.16.1</b> Ejemplo1 integral impropia tipo Uno</a></li>
+<li class="chapter" data-level="5.16.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>5.16.2</b> Ejemplo2 integral impropia tipo Uno</a></li>
+<li class="chapter" data-level="5.16.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>5.16.3</b> Ejemplo3 integral impropia tipo Uno</a></li>
+<li class="chapter" data-level="5.16.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>5.16.4</b> Ejemplo4 integral impropia tipo Uno</a></li>
 </ul></li>
-<li class="chapter" data-level="6.16" data-path="integrales-simples.html"><a href="integrales-simples.html#integrales-impropias-tipo-1"><i class="fa fa-check"></i><b>6.16</b> Integrales impropias tipo 1</a><ul>
-<li class="chapter" data-level="6.16.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>6.16.1</b> Ejemplo1 integral impropia tipo Uno</a></li>
-<li class="chapter" data-level="6.16.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>6.16.2</b> Ejemplo2 integral impropia tipo Uno</a></li>
-<li class="chapter" data-level="6.16.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>6.16.3</b> Ejemplo3 integral impropia tipo Uno</a></li>
-<li class="chapter" data-level="6.16.4" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo4-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>6.16.4</b> Ejemplo4 integral impropia tipo Uno</a></li>
+<li class="chapter" data-level="5.17" data-path="integrales-simples.html"><a href="integrales-simples.html#integrales-impropias-tipo-2"><i class="fa fa-check"></i><b>5.17</b> Integrales impropias tipo 2</a>
+<ul>
+<li class="chapter" data-level="5.17.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-integral-impropia-tipo-2-caso-b"><i class="fa fa-check"></i><b>5.17.1</b> Ejemplo1 Integral impropia tipo 2 caso (b)</a></li>
+<li class="chapter" data-level="5.17.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-integral-impropia-tipo-2-caso-a"><i class="fa fa-check"></i><b>5.17.2</b> Ejemplo2 Integral impropia tipo 2 caso (a)</a></li>
+<li class="chapter" data-level="5.17.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-integral-impropia-tipo-2-caso-c"><i class="fa fa-check"></i><b>5.17.3</b> Ejemplo3 Integral impropia tipo 2 caso (c)</a></li>
 </ul></li>
-<li class="chapter" data-level="6.17" data-path="integrales-simples.html"><a href="integrales-simples.html#integrales-impropias-tipo-2"><i class="fa fa-check"></i><b>6.17</b> Integrales impropias tipo 2</a><ul>
-<li class="chapter" data-level="6.17.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo1-integral-impropia-tipo-2-caso-b"><i class="fa fa-check"></i><b>6.17.1</b> Ejemplo1 Integral impropia tipo 2 caso (b)</a></li>
-<li class="chapter" data-level="6.17.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo2-integral-impropia-tipo-2-caso-a"><i class="fa fa-check"></i><b>6.17.2</b> Ejemplo2 Integral impropia tipo 2 caso (a)</a></li>
-<li class="chapter" data-level="6.17.3" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo3-integral-impropia-tipo-2-caso-c"><i class="fa fa-check"></i><b>6.17.3</b> Ejemplo3 Integral impropia tipo 2 caso (c)</a></li>
+<li class="chapter" data-level="5.18" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>5.18</b> Teorema de comparacion para integrales impropias</a>
+<ul>
+<li class="chapter" data-level="5.18.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>5.18.1</b> Ejemplo teorema de comparacion para integrales impropias</a></li>
 </ul></li>
-<li class="chapter" data-level="6.18" data-path="integrales-simples.html"><a href="integrales-simples.html#teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>6.18</b> Teorema de comparacion para integrales impropias</a><ul>
-<li class="chapter" data-level="6.18.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>6.18.1</b> Ejemplo teorema de comparacion para integrales impropias</a></li>
-</ul></li>
-<li class="chapter" data-level="6.19" data-path="integrales-simples.html"><a href="integrales-simples.html#aproximación-numérica-de-la-integral-definida"><i class="fa fa-check"></i><b>6.19</b> Aproximación numérica de la integral definida</a><ul>
-<li class="chapter" data-level="6.19.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-regla-de-trapecios"><i class="fa fa-check"></i><b>6.19.1</b> Ejemplo Regla de Trapecios</a></li>
-<li class="chapter" data-level="6.19.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-regla-de-simpson-13"><i class="fa fa-check"></i><b>6.19.2</b> Ejemplo Regla de Simpson <span class="math inline">\(1/3\)</span></a></li>
+<li class="chapter" data-level="5.19" data-path="integrales-simples.html"><a href="integrales-simples.html#aproximación-numérica-de-la-integral-definida"><i class="fa fa-check"></i><b>5.19</b> Aproximación numérica de la integral definida</a>
+<ul>
+<li class="chapter" data-level="5.19.1" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-regla-de-trapecios"><i class="fa fa-check"></i><b>5.19.1</b> Ejemplo Regla de Trapecios</a></li>
+<li class="chapter" data-level="5.19.2" data-path="integrales-simples.html"><a href="integrales-simples.html#ejemplo-regla-de-simpson-13"><i class="fa fa-check"></i><b>5.19.2</b> Ejemplo Regla de Simpson <span class="math inline">\(1/3\)</span></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>7</b> Integrales dobles</a><ul>
-<li class="chapter" data-level="7.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>7.1</b> Definición de integral doble</a></li>
-<li class="chapter" data-level="7.2" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-volumen-para-una-región-sólida"><i class="fa fa-check"></i><b>7.2</b> Definición de volumen para una región sólida</a></li>
-<li class="chapter" data-level="7.3" data-path="integrales-dobles.html"><a href="integrales-dobles.html#propiedades-de-las-integrales-dobles"><i class="fa fa-check"></i><b>7.3</b> Propiedades de las integrales dobles</a></li>
-<li class="chapter" data-level="7.4" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejemplo-integral-doble-usando-geogebra"><i class="fa fa-check"></i><b>7.4</b> Ejemplo integral doble usando geogebra</a></li>
-<li class="chapter" data-level="7.5" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble"><i class="fa fa-check"></i><b>7.5</b> Ejercicio integral doble</a></li>
-<li class="chapter" data-level="7.6" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-1"><i class="fa fa-check"></i><b>7.6</b> Ejercicio integral doble</a></li>
-<li class="chapter" data-level="7.7" data-path="integrales-dobles.html"><a href="integrales-dobles.html#regiones-que-generan-dos-integrales-dobles"><i class="fa fa-check"></i><b>7.7</b> Regiones que generan dos integrales dobles</a></li>
-<li class="chapter" data-level="7.8" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-2"><i class="fa fa-check"></i><b>7.8</b> Ejercicio integral doble</a></li>
-<li class="chapter" data-level="7.9" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-3"><i class="fa fa-check"></i><b>7.9</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6" data-path="integrales-dobles.html"><a href="integrales-dobles.html"><i class="fa fa-check"></i><b>6</b> Integrales dobles</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>6.1</b> Definición de integral doble</a></li>
+<li class="chapter" data-level="6.2" data-path="integrales-dobles.html"><a href="integrales-dobles.html#definición-de-volumen-para-una-región-sólida"><i class="fa fa-check"></i><b>6.2</b> Definición de volumen para una región sólida</a></li>
+<li class="chapter" data-level="6.3" data-path="integrales-dobles.html"><a href="integrales-dobles.html#propiedades-de-las-integrales-dobles"><i class="fa fa-check"></i><b>6.3</b> Propiedades de las integrales dobles</a></li>
+<li class="chapter" data-level="6.4" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejemplo-integral-doble-usando-geogebra"><i class="fa fa-check"></i><b>6.4</b> Ejemplo integral doble usando geogebra</a></li>
+<li class="chapter" data-level="6.5" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble"><i class="fa fa-check"></i><b>6.5</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6.6" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-1"><i class="fa fa-check"></i><b>6.6</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6.7" data-path="integrales-dobles.html"><a href="integrales-dobles.html#regiones-que-generan-dos-integrales-dobles"><i class="fa fa-check"></i><b>6.7</b> Regiones que generan dos integrales dobles</a></li>
+<li class="chapter" data-level="6.8" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-2"><i class="fa fa-check"></i><b>6.8</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6.9" data-path="integrales-dobles.html"><a href="integrales-dobles.html#ejercicio-integral-doble-3"><i class="fa fa-check"></i><b>6.9</b> Ejercicio integral doble</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="integrales-triples.html"><a href="integrales-triples.html"><i class="fa fa-check"></i><b>8</b> Integrales triples</a><ul>
-<li class="chapter" data-level="8.1" data-path="integrales-triples.html"><a href="integrales-triples.html#definición-integral-triple"><i class="fa fa-check"></i><b>8.1</b> Definición integral triple</a></li>
-<li class="chapter" data-level="8.2" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple"><i class="fa fa-check"></i><b>8.2</b> Ejercicio integral triple</a></li>
-<li class="chapter" data-level="8.3" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-1"><i class="fa fa-check"></i><b>8.3</b> Ejercicio integral triple</a></li>
-<li class="chapter" data-level="8.4" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-2"><i class="fa fa-check"></i><b>8.4</b> Ejercicio integral triple</a></li>
-<li class="chapter" data-level="8.5" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-3"><i class="fa fa-check"></i><b>8.5</b> Ejercicio integral triple</a></li>
-<li class="chapter" data-level="8.6" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-4"><i class="fa fa-check"></i><b>8.6</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7" data-path="integrales-triples.html"><a href="integrales-triples.html"><i class="fa fa-check"></i><b>7</b> Integrales triples</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="integrales-triples.html"><a href="integrales-triples.html#definición-integral-triple"><i class="fa fa-check"></i><b>7.1</b> Definición integral triple</a></li>
+<li class="chapter" data-level="7.2" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple"><i class="fa fa-check"></i><b>7.2</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.3" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-1"><i class="fa fa-check"></i><b>7.3</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.4" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-2"><i class="fa fa-check"></i><b>7.4</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.5" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-3"><i class="fa fa-check"></i><b>7.5</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.6" data-path="integrales-triples.html"><a href="integrales-triples.html#ejercicio-integral-triple-4"><i class="fa fa-check"></i><b>7.6</b> Ejercicio integral triple</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><i class="fa fa-check"></i><b>9</b> Métodos de solución para Ecuaciones Diferenciales (EDO)</a><ul>
-<li class="chapter" data-level="9.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-para-una-ecuación-diferencial"><i class="fa fa-check"></i><b>9.1</b> Definición para una Ecuación Diferencial</a><ul>
-<li class="chapter" data-level="9.1.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplos-de-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>9.1.1</b> Ejemplos de ecuaciones diferenciales</a></li>
+<li class="chapter" data-level="8" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><i class="fa fa-check"></i><b>8</b> Métodos de solución para Ecuaciones Diferenciales (EDO)</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-para-una-ecuación-diferencial"><i class="fa fa-check"></i><b>8.1</b> Definición para una Ecuación Diferencial</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplos-de-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>8.1.1</b> Ejemplos de ecuaciones diferenciales</a></li>
 </ul></li>
-<li class="chapter" data-level="9.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-para-separar-variables"><i class="fa fa-check"></i><b>9.2</b> Método para separar variables</a><ul>
-<li class="chapter" data-level="9.2.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-ec-diferencial-separable"><i class="fa fa-check"></i><b>9.2.1</b> Ejemplo1 Ec Diferencial separable</a></li>
+<li class="chapter" data-level="8.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-para-separar-variables"><i class="fa fa-check"></i><b>8.2</b> Método para separar variables</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-ec-diferencial-separable"><i class="fa fa-check"></i><b>8.2.1</b> Ejemplo1 Ec Diferencial separable</a></li>
 </ul></li>
-<li class="chapter" data-level="9.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ec-diferencial-lineal"><i class="fa fa-check"></i><b>9.3</b> Ec Diferencial lineal</a><ul>
-<li class="chapter" data-level="9.3.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-mezclas"><i class="fa fa-check"></i><b>9.3.1</b> Ejemplo1 Mezclas</a></li>
-<li class="chapter" data-level="9.3.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-ec-dif-lineal"><i class="fa fa-check"></i><b>9.3.2</b> Ejemplo1 Ec Dif lineal</a></li>
-<li class="chapter" data-level="9.3.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-ec-dif-lineal"><i class="fa fa-check"></i><b>9.3.3</b> Ejemplo2 Ec Dif lineal</a></li>
+<li class="chapter" data-level="8.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ec-diferencial-lineal"><i class="fa fa-check"></i><b>8.3</b> Ec Diferencial lineal</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-mezclas"><i class="fa fa-check"></i><b>8.3.1</b> Ejemplo1 Mezclas</a></li>
+<li class="chapter" data-level="8.3.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-ec-dif-lineal"><i class="fa fa-check"></i><b>8.3.2</b> Ejemplo1 Ec Dif lineal</a></li>
+<li class="chapter" data-level="8.3.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-ec-dif-lineal"><i class="fa fa-check"></i><b>8.3.3</b> Ejemplo2 Ec Dif lineal</a></li>
 </ul></li>
-<li class="chapter" data-level="9.4" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-de-transformada"><i class="fa fa-check"></i><b>9.4</b> Definición de transformada</a><ul>
-<li class="chapter" data-level="9.4.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-transformada"><i class="fa fa-check"></i><b>9.4.1</b> Ejemplo1 Transformada</a></li>
-<li class="chapter" data-level="9.4.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-transformada"><i class="fa fa-check"></i><b>9.4.2</b> Ejemplo2 Transformada</a></li>
-<li class="chapter" data-level="9.4.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo3-transformada"><i class="fa fa-check"></i><b>9.4.3</b> Ejemplo3 Transformada</a></li>
+<li class="chapter" data-level="8.4" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#definición-de-transformada"><i class="fa fa-check"></i><b>8.4</b> Definición de transformada</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo1-transformada"><i class="fa fa-check"></i><b>8.4.1</b> Ejemplo1 Transformada</a></li>
+<li class="chapter" data-level="8.4.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo2-transformada"><i class="fa fa-check"></i><b>8.4.2</b> Ejemplo2 Transformada</a></li>
+<li class="chapter" data-level="8.4.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#ejemplo3-transformada"><i class="fa fa-check"></i><b>8.4.3</b> Ejemplo3 Transformada</a></li>
 </ul></li>
-<li class="chapter" data-level="9.5" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#tabla-de-transformadas"><i class="fa fa-check"></i><b>9.5</b> Tabla de transformadas</a></li>
-<li class="chapter" data-level="9.6" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#métodos-numéricos-para-resolver-edo"><i class="fa fa-check"></i><b>9.6</b> Métodos numéricos para resolver EDO</a><ul>
-<li class="chapter" data-level="9.6.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-de-euler"><i class="fa fa-check"></i><b>9.6.1</b> Método de Euler</a></li>
-<li class="chapter" data-level="9.6.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-de-euler-mejorado"><i class="fa fa-check"></i><b>9.6.2</b> Método de Euler Mejorado</a></li>
-<li class="chapter" data-level="9.6.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-de-runge-kutta-4-rk4"><i class="fa fa-check"></i><b>9.6.3</b> Método de Runge Kutta 4 (RK4)</a></li>
+<li class="chapter" data-level="8.5" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#tabla-de-transformadas"><i class="fa fa-check"></i><b>8.5</b> Tabla de transformadas</a></li>
+<li class="chapter" data-level="8.6" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#métodos-numéricos-para-resolver-edo"><i class="fa fa-check"></i><b>8.6</b> Métodos numéricos para resolver EDO</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-de-euler"><i class="fa fa-check"></i><b>8.6.1</b> Método de Euler</a></li>
+<li class="chapter" data-level="8.6.2" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-de-euler-mejorado"><i class="fa fa-check"></i><b>8.6.2</b> Método de Euler Mejorado</a></li>
+<li class="chapter" data-level="8.6.3" data-path="métodos-de-solución-para-ecuaciones-diferenciales-edo.html"><a href="métodos-de-solución-para-ecuaciones-diferenciales-edo.html#método-de-runge-kutta-4-rk4"><i class="fa fa-check"></i><b>8.6.3</b> Método de Runge Kutta 4 (RK4)</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
@@ -263,7 +303,7 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="intro" class="section level1">
+<div id="intro" class="section level1" number="3">
 <h1><span class="header-section-number">Capítulo 3</span> Introducción</h1>
 <!-- https://www.lifeder.com/wp-content/uploads/2017/01/alan-turing.jpg -->
 <!-- https://www.lifeder.com/wp-content/uploads/2016/11/Ren%C3%A9-Descartes.jpg -->
@@ -282,173 +322,430 @@ René Descartes (1596-1650).
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntruccionA001"></span>
 <img src="images/PuntoInteriorYFrontera2V_A1.png" alt="Gráfica punto frontera y punto interior de una región en el plano $XY$ [Imagen tomada de [@thomas2003thomas] pág $967$]" width="65%" />
 <p class="caption">
-Figura 3.1: Gráfica punto frontera y punto interior de una región en el plano <span class="math inline">\(XY\)</span> [Imagen tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(967\)</span>]
+Figura 3.1: Gráfica punto frontera y punto interior de una región en el plano <span class="math inline">\(XY\)</span> [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(967\)</span>]
 </p>
 </div>
-<div id="punto-frontera-y-punto-interior-en-el-plano" class="section level2">
+<div id="punto-frontera-y-punto-interior-en-el-plano" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Punto frontera y punto interior en el plano</h2>
 
 <div class="definition">
 <p><span id="def:unnamed-chunk-8" class="definition"><strong>Definición 3.1  </strong></span>Un punto <span class="math inline">\((x_0,y_0)\)</span> en una región (conjunto) <span class="math inline">\(R\)</span> del plano <span class="math inline">\(XY\)</span> es un punto interior de <span class="math inline">\(R\)</span> si es el centro de un disco de radio positivo que está completamente dentro de <span class="math inline">\(R\)</span>. Un punto <span class="math inline">\((x_0,y_0)\)</span> es un punto frontera de <span class="math inline">\(R\)</span> si cada disco con centro en <span class="math inline">\((x_0,y_0)\)</span> contiene puntos que están fuera de <span class="math inline">\(R\)</span> y puntos que están en <span class="math inline">\(R\)</span>. (El punto frontera no tiene que pertenecer a <span class="math inline">\(R\)</span>).</p>
 <p>Los puntos interiores de una región conforman (como conjunto) el interior de la región. Los puntos frontera de una región conforman su frontera. Una región es abierta si consta sólo de puntos interiores. Una región es cerrada si contiene todos sus puntos frontera.</p>
-tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(967\)</span>
+tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(967\)</span>
 </div>
-
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntruccionA002"></span>
 <img src="images/EjPuntoFronteraYInterior_A1.png" alt="Puntos interiores y puntos frontera del disco unitario en el plano $XY$ [Imagen tomada de [@thomas2003thomas] pág $967$]" width="65%" />
 <p class="caption">
-Figura 3.2: Puntos interiores y puntos frontera del disco unitario en el plano <span class="math inline">\(XY\)</span> [Imagen tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(967\)</span>]
+Figura 3.2: Puntos interiores y puntos frontera del disco unitario en el plano <span class="math inline">\(XY\)</span> [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(967\)</span>]
 </p>
 </div>
-
+ffalse{-91-82-101-103-105-111-110-101-115-32-97-99-111-116-97-100-97-115-32-121-32-110-111-32-97-99-111-116-97-100-97-115-32-101-110-32-101-108-32-112-108-97-110-111-32-36-88-89-36-93-}
 <div class="definition">
-<p><span id="def:unnamed-chunk-9" class="definition"><strong>Definición 3.2  (Regiones acotadas y no acotadas en el plano <span class="math inline">\(XY\)</span>)  </strong></span>Una región en el plano está acotada si está dentro de un disco de radio fijo. Una región es no acotada si no tiene fronteras.</p>
-tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(967\)</span>
+<p><span id="def:unnamed-chunk-9" class="definition"><strong>Definición 3.2  \iffalse (Regiones acotadas y no acotadas en el plano <span class="math inline">\(XY\)</span>)  </strong></span>Una región en el plano está acotada si está dentro de un disco de radio fijo. Una región es no acotada si no tiene fronteras.</p>
+tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(967\)</span>
 </div>
-
 </div>
-<div id="función-de-dos-variables" class="section level2">
+<div id="función-de-dos-variables" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Función de dos variables</h2>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntruccionB001"></span>
 <img src="images/GraficaDominiofuncion2V.png" alt="Gráfica de una función de dos variables en el espacio $XYZ$ [Imagen tomada de [@larson1999calculo] pág $888$ y [@stewart2009calculus] pág $277$" width="65%" />
 <p class="caption">
-Figura 3.3: Gráfica de una función de dos variables en el espacio <span class="math inline">\(XYZ\)</span> [Imagen tomada de <span class="citation">(Larson et al. <a href="#ref-larson1999calculo" role="doc-biblioref">1999</a>)</span> pág <span class="math inline">\(888\)</span> y <span class="citation">(Stewart <a href="#ref-stewart2009calculus" role="doc-biblioref">2009</a>)</span> pág <span class="math inline">\(277\)</span>
-</p>
+Figura 3.3: Gráfica de una función de dos variables en el espacio <span class="math inline">\(XYZ\)</span> [Imagen tomada de <span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(888\)</span> y <span class="citation">(<a href="#ref-stewart2009calculus" role="doc-biblioref">Stewart 2009</a>)</span> pág <span class="math inline">\(277\)</span>]
 </div>
-
-<div class="definition">
-<span id="def:unnamed-chunk-10" class="definition"><strong>Definición 3.3  </strong></span>Sea <span class="math inline">\(D\)</span> un conjunto de pares ordenados donde cada par ordenado esta compuesto de números reales. Si a cada par ordenado <span class="math inline">\((x,y)\)</span> en <span class="math inline">\(D\)</span> le corresponde un único real <span class="math inline">\(f(x,y)\)</span>, entonces se dice que <span class="math inline">\(f\)</span> es una <strong>función</strong> de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>. El conjunto <span class="math inline">\(D\)</span> es el dominio de <span class="math inline">\(f\)</span>, y el correspondiente conjunto de valores <span class="math inline">\(f(x,y)\)</span> es el <strong>rango</strong> de <span class="math inline">\(f\)</span> [Tomado de <span class="citation">(Larson <a href="#ref-larson2006calculo" role="doc-biblioref">2006</a>)</span> pág <span class="math inline">\(886\)</span>]
-</div>
-
-<p><span class="math display">\[
-D\subseteq R^2 \longrightarrow R\\
-\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (x,y) \ \ \longmapsto \ z=f(x,y)
-\]</span></p>
-
-<div class="example">
-<p><span id="exm:unnamed-chunk-11" class="example"><strong>Ejemplo 3.1  (Dominio de una función)  </strong></span>Describa el dominio de la función</p>
-<p><span class="math display">\[
-f(x,y)=2\sqrt{y-x^2}  
-\]</span></p>
-</div>
-
-
-<div class="solution">
- <span class="solution"><em>Solución</em> (Dominio de una función). </span> Como <span class="math inline">\(f\)</span> esta definidad sólo cuando <span class="math inline">\(y-x^2 \geq 0\)</span>, el dominio es la región cerrada, no acotada, que aparece en la gráfica parte inferior. La parábola es la frontera del dominio. Los puntos sobre la parábola son parte del dominio y conforman la frontera.
-</div>
-
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntruccionA003"></span>
-<img src="images/EjDominioDef_A1.png" alt="Gráfica dominio de una función con dos variables en el plano $XY$ [Imagen tomada de [@thomas2003thomas] pág $968$]" width="45%" />
-<p class="caption">
-Figura 3.4: Gráfica dominio de una función con dos variables en el plano <span class="math inline">\(XY\)</span> [Imagen tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(968\)</span>]
-</p>
-</div>
-</div>
-<div id="punto-frontera-y-punto-interior-en-el-espacio" class="section level2">
-<h2><span class="header-section-number">3.3</span> Punto frontera y punto interior en el espacio</h2>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntruccionA004"></span>
-<img src="images/DefEspacioPuntoFronteraYInterior_A1.png" alt="Gráfica punto frontera y punto interior de una región en el espacio $XYZ$ [Imagen tomada de [@thomas2003thomas] pág $970$]" width="65%" />
-<p class="caption">
-Figura 3.5: Gráfica punto frontera y punto interior de una región en el espacio <span class="math inline">\(XYZ\)</span> [Imagen tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(970\)</span>]
-</p>
-</div>
-
-<div class="definition">
-<p><span id="def:unnamed-chunk-13" class="definition"><strong>Definición 3.4  </strong></span>Un punto <span class="math inline">\((x_0,y_0,z_0)\)</span> en una región (conjunto) <span class="math inline">\(R\)</span> del espacio <span class="math inline">\(XYZ\)</span> es un punto interior de <span class="math inline">\(R\)</span> si es el centro de una bola sólida de radio positivo que está completamente dentro de <span class="math inline">\(R\)</span>. Un punto <span class="math inline">\((x_0,y_0,z_0)\)</span> es un punto frontera de <span class="math inline">\(R\)</span> si toda esfera con centro en <span class="math inline">\((x_0,y_0,z_0)\)</span> contiene puntos que están fuera de <span class="math inline">\(R\)</span> y puntos que están en <span class="math inline">\(R\)</span>. (El punto frontera no tiene que pertenecer a <span class="math inline">\(R\)</span>).</p>
-<p>Los puntos interiores de una región conforman (como conjunto) el interior de la región. Los puntos frontera de una región conforman su frontera. Una región es abierta si consta sólo de puntos interiores. Una región es cerrada si contiene todos sus puntos frontera.</p>
-tomada de <span class="citation">(Thomas et al. <a href="#ref-thomas2003thomas" role="doc-biblioref">2003</a>)</span> pág <span class="math inline">\(970\)</span>
-</div>
-
-</div>
-<div id="detalles-de-una-superficie-en-el-espacio-xyz" class="section level2">
-<h2><span class="header-section-number">3.4</span> Detalles de una superficie en el espacio <span class="math inline">\(XYZ\)</span></h2>
-
-<div class="definition">
-<span id="def:unnamed-chunk-14" class="definition"><strong>Definición 3.5  (Traza de una superficie)  </strong></span>La traza de una superficie en cualquier plano es la curva formada por la intersección de la superficie con el plano correspondiente.
-</div>
-
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta charset="utf-8"/>
-<script src="https://www.geogebra.org/apps/deployggb.js"></script>
-<div id="ggb-elementSuperficie03">
-
-</div>
-<script>  
-       var ggbAppSuperficie03 = new GGBApplet({"material_id":"eavcyd2y",
-       "width": 1400,
-       "height": 600,
-       "showToolBar": false,
-       "showAlgebraInput": false,
-       "showMenuBar": false },
-       true);
-       
-         window.addEventListener("load", function() {  
-           ggbAppSuperficie03.inject('ggb-elementSuperficie03');
-      });
-</script>
 <p><br></br></p>
-
-<div class="definition">
-<p><span id="def:unnamed-chunk-15" class="definition"><strong>Definición 3.6  (Curva de nivel para una superficie)  </strong></span>El conjunto de puntos <span class="math inline">\((x,y,z)\)</span> en el espacio donde una función de tres variables independientes tiene un valor constante <span class="math inline">\(f(x,y,z)=c\)</span>, es una superficie de nivel de <span class="math inline">\(f\)</span></p>
-NOTA: También se puede definir como la proyección perpendicular de una traza en uno de los planos coordenados del espacio <span class="math inline">\(XYZ\)</span>.
 </div>
-
-<p>Esta es una aplicación para generar una esfera, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/jermjgqh" class="uri">https://www.geogebra.org/classic/jermjgqh</a>) la elaboro usando geogebra.</p>
+<div id="ejercicio-derivada-parcial-con-respecto-a-y" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Ejercicio derivada parcial con respecto a <span class="math inline">\(y\)</span></h2>
+ffalse{-91-68-101-114-105-118-97-114-32-112-97-114-99-105-97-108-109-101-110-116-101-32-99-111-110-32-114-101-115-112-101-99-116-111-32-97-32-121-93-}
+<div class="exercise">
+<span id="exr:unnamed-chunk-19" class="exercise"><strong>Ejercicio 3.1  \iffalse (Derivar parcialmente con respecto a y)  </strong></span>Sea
+<span class="math display">\[
+f(x,y)=5x-4x^3y^2-4sen(x)
+\]</span>
+Obtener la derivada parcial de <span class="math inline">\(f\)</span> con respecto a <span class="math inline">\(y\)</span>.
+</div>
+<p><br></br></p>
+ffalse{-91-68-101-114-105-118-97-100-97-32-112-97-114-99-105-97-108-32-99-111-110-32-114-101-115-112-101-99-116-111-32-97-32-121-93-}
+<div class="solution">
+<p>\iffalse{} <span class="solution"><em>Solución</em> (Derivada parcial con respecto a y). </span> Importante, y clave para realizar la derivada parcial con respecto a <span class="math inline">\(y\)</span> es que se debe, considerar que las expresiones en <span class="math inline">\(x\)</span> se comportan como constantes
+<span class="math display">\[
+f_x(x,y)=-8x^3y^1
+\]</span></p>
+Puede también ver la respuesta de este ejercicio en <span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(908\)</span>]
+</div>
+<p><br></br></p>
+</div>
+<div id="notación-ó-simbología-de-la-derivada-parcial" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Notación (ó simbología) de la derivada parcial</h2>
+ffalse{-91-78-111-116-97-99-105-243-110-32-100-101-32-108-97-115-32-100-101-114-105-118-97-100-97-115-32-112-97-114-99-105-97-108-101-115-93-}
+<div class="remark">
+<p>\iffalse{} <span class="remark"><em>Nota</em> (Notación de las derivadas parciales): </span> La derivadas parciales tienen la siguiente simbología (ó notación)</p>
+<p><span class="math display">\[
+f_x(x,y)=z_x=\dfrac{\partial z}{\partial x}=\dfrac{\partial}{\partial x}f(x,y)
+\]</span>
+<span class="math display">\[
+f_y(x,y)=z_y=\dfrac{\partial z}{\partial y}=\dfrac{\partial}{\partial y}f(x,y)
+\]</span></p>
+<p>Las primeras derivadas parciales evaluadas en el punto <span class="math inline">\((a,b)\)</span> se denotan por:</p>
+<span class="math display">\[
+\left.\dfrac{\partial z}{\partial x}\right|_{(a,b)}=f_{x}(a,b)
+\]</span>
+<span class="math display">\[
+\left.\dfrac{\partial z}{\partial y}\right|_{(a,b)}=f_{y}(a,b)
+\]</span>
+</div>
+<p><br></br></p>
+</div>
+<div id="significado-geométrico-de-la-derivada-parcial-con-respecto-a-x-y-y" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Significado geométrico de la derivada parcial con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span></h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigDerivadaParcialA1"></span>
+<img src="images/DefDerivadaP_A1.png" alt="Significado de la derivada parcial [Imagen tomada de [@thomas2003thomas] pág $995$ y $996$]" width="85%" />
+<p class="caption">
+Figura 3.4: Significado de la derivada parcial [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(995\)</span> y <span class="math inline">\(996\)</span>]
+</p>
+</div>
+<p><br></br></p>
+</div>
+<div id="ejercicio-pendiente-de-una-superficie" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Ejercicio Pendiente de una superficie</h2>
+ffalse{-91-80-101-110-100-105-101-110-116-101-32-100-101-32-117-110-97-32-115-117-112-101-114-102-105-99-105-101-32-101-110-32-108-97-32-100-105-114-101-99-99-105-243-110-32-100-101-32-36-120-36-32-121-32-32-36-121-36-93-}
+<div class="exercise">
+<span id="exr:unnamed-chunk-22" class="exercise"><strong>Ejercicio 3.2  \iffalse (Pendiente de una superficie en la dirección de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>)  </strong></span>Sea
+<span class="math display">\[
+f(x,y)=-\dfrac{x^2}{2}-y^2+\dfrac{25}{8}
+\]</span>
+Hallar las pendientes en las direcciones de <span class="math inline">\(x\)</span> y de <span class="math inline">\(y\)</span> para la superficie dada por <span class="math inline">\(z=f(x,y)\)</span> en el punto <span class="math inline">\(\left(\dfrac{1}{2},1,2\right)\)</span>.
+</div>
+<p><br></br></p>
+ffalse{-91-80-101-110-100-105-101-110-116-101-32-100-101-32-117-110-97-32-115-117-112-101-114-102-105-99-105-101-32-101-110-32-108-97-32-100-105-114-101-99-99-105-243-110-32-100-101-32-36-120-36-32-121-32-32-36-121-36-93-}
+<div class="solution">
+\iffalse{} <span class="solution"><em>Solución</em> (Pendiente de una superficie en la dirección de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>). </span> Las derivadas parciales de <span class="math inline">\(f\)</span> con respecto a <span class="math inline">\(x\)</span>, y a <span class="math inline">\(y\)</span> son:
+<span class="math display">\[
+f_{x}(x,y)=-x \ \ \ \ \ \ \text{ y } \ \ \ \ \ \ f_{y}(x,y)=-2y 
+\]</span>
+Las pendientes con respecto a <span class="math inline">\(x\)</span>, y a <span class="math inline">\(y\)</span> son:
+<span class="math display">\[
+f_{x}\left(\dfrac{1}{2},1\right)=-\dfrac{1}{2} \ \ \ \ \ \ \text{ y } \ \ \ \ \ \ f_{y}\left(\dfrac{1}{2},1\right)=-2 
+\]</span>
+Puede también ver la respuesta de este ejercicio en <span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(908\)</span>]
+</div>
+<p><br></br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigPendienteDerivadaParcialA1"></span>
+<img src="images/EjemploDerivadaParcialPendientes_XY1.png" alt="Ejemplo de pendientes y significado de la derivada parcial [Imagen tomada de [@larson2006calculo] pág $910$]" width="75%" />
+<p class="caption">
+Figura 3.5: Ejemplo de pendientes y significado de la derivada parcial [Imagen tomada de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(910\)</span>]
+</p>
+</div>
+<p><br></br></p>
+</div>
+<div id="herramienta-para-evaluar-primeras-derivadas-parciales-en-ab" class="section level2" number="3.7">
+<h2><span class="header-section-number">3.7</span> Herramienta para evaluar primeras derivadas parciales en <span class="math inline">\((a,b)\)</span></h2>
+<p>Esta es una aplicación para generar derivadas parciales en un punto del plano <span class="math inline">\(XY\)</span>, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/vevfbdws" class="uri">https://www.geogebra.org/classic/vevfbdws</a>) la elaboro usando geogebra.</p>
+<div align='center'>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta charset="utf-8"/>
 <script src="https://www.geogebra.org/apps/deployggb.js"></script>
-<div id="ggb-elementSuperficie06">
+<div id="ggb-elementDerivaParcialA01">
 
 </div>
 <script>  
-       var ggbAppSuperficie06 = new GGBApplet({"material_id":"jermjgqh",
-       "width": 900,
-       "height": 600,
+       var ggbAppDerivaParcialA01 = new GGBApplet({"material_id":"vevfbdws",
+       "width": 400,
+       "height": 300,
        "showToolBar": false,
        "showAlgebraInput": false,
        "showMenuBar": false },
        true);
        
          window.addEventListener("load", function() {  
-           ggbAppSuperficie06.inject('ggb-elementSuperficie06');
+           ggbAppDerivaParcialA01.inject('ggb-elementDerivaParcialA01');
       });
 </script>
 </div>
-<div id="curvas-de-nivel-para-el-pueblito-paisa-de-medellín" class="section level2">
-<h2><span class="header-section-number">3.5</span> Curvas de nivel para el Pueblito Paisa de Medellín</h2>
-<div class="figure" style="text-align: center">
-<div id="htmlwidget-bed55f9a28c843405940" style="width:80%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bed55f9a28c843405940">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.opentopomap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addMarkers","args":[6.236098766,-75.580085754,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Pueblito Paisa de Medellín",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[6.236098766,6.236098766],"lng":[-75.580085754,-75.580085754]}},"evals":[],"jsHooks":[]}</script>
+<p><br></br></p>
+ffalse{-91-84-101-111-114-101-109-97-32-100-101-108-32-105-110-99-114-101-109-101-110-116-111-32-112-97-114-97-32-102-117-110-99-105-111-110-101-115-32-100-101-32-100-111-115-32-118-97-114-105-97-98-108-101-115-93-}
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-24" class="theorem"><strong>Teorema 3.1  \iffalse (Teorema del incremento para funciones de dos variables)  </strong></span>Suponga que las primeras derivadas parciales de <span class="math inline">\(f(x,y)\)</span> están definidas en una región abierta <span class="math inline">\(D\)</span> que contiene el punto <span class="math inline">\((x_0,y_0)\)</span> y que <span class="math inline">\(f_x\)</span> y <span class="math inline">\(f_y\)</span> son continuas en <span class="math inline">\((x_0,y_0)\)</span>. Entonces el cambio</p>
+<p><span class="math display">\[
+\bigtriangleup{z}=f(x_0+\bigtriangleup{x},y_0+\bigtriangleup{y})-f(x_0,y_0)  
+\]</span>
+en el valor de <span class="math inline">\(f\)</span>, resultante de moverse de <span class="math inline">\((x_0,y_0)\)</span> a otro punto <span class="math inline">\((x_0+\bigtriangleup{x},y_0+\bigtriangleup{y})\)</span> en <span class="math inline">\(D\)</span>, satisface una ecuación de la forma</p>
+<span class="math display">\[
+\bigtriangleup{z}=f_{x}(x_0,y_0)\bigtriangleup{x}+f_{y}(x_0,y_0)\bigtriangleup{y}+{\epsilon}_{1}\bigtriangleup{x}+{\epsilon}_{2}\bigtriangleup{y}
+\]</span>
+donde cada <span class="math inline">\({\epsilon}_1\)</span>,<span class="math inline">\({\epsilon}_2 \to 0\)</span>, cuando <span class="math inline">\(\bigtriangleup{x}\)</span>, <span class="math inline">\({\bigtriangleup{y} \to 0}\)</span>.
+<span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(993\)</span>]
+</div>
+<p><br></br></p>
+ffalse{-91-70-117-110-99-105-243-110-32-100-105-102-101-114-101-110-99-105-97-98-108-101-93-}
+<div class="definition">
+<p><span id="def:unnamed-chunk-25" class="definition"><strong>Definición 3.3  \iffalse (Función diferenciable)  </strong></span>Una función <span class="math inline">\(z=f(x,y)\)</span> es diferenciable en <span class="math inline">\((x_0,y_0)\)</span> si <span class="math inline">\(f_{x}(x_0,y_0)\)</span> y <span class="math inline">\(f_{y}(x_0,y_0)\)</span> existen y <span class="math inline">\(\bigtriangleup{z}\)</span> satisface una ecuación de la forma</p>
+<p><span class="math display">\[
+\bigtriangleup{z}=f_{x}(x_0,y_0)\bigtriangleup{x}+f_{y}(x_0,y_0)\bigtriangleup{y}+{\epsilon}_{1}\bigtriangleup{x}+{\epsilon}_{2}\bigtriangleup{y}
+\]</span>
+donde cada <span class="math inline">\({\epsilon}_1\)</span>,<span class="math inline">\({\epsilon}_2 \to 0\)</span>, cuando <span class="math inline">\(\bigtriangleup{x}\)</span>, <span class="math inline">\({\bigtriangleup{y} \to 0}\)</span>. Decimos que <span class="math inline">\(f\)</span> es diferenciable si es diferenciable en cada punto de su dominio.</p>
+<span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(993\)</span>]
+</div>
+<br></br>
+ffalse{-91-76-97-32-99-111-110-116-105-110-117-105-100-97-100-32-100-101-32-108-97-115-32-100-101-114-105-118-97-100-97-115-32-112-97-114-99-105-97-108-101-115-93-}
+<div class="corollary">
+<span id="cor:unnamed-chunk-26" class="corollary"><strong>Corolario 3.1  \iffalse (La continuidad de las derivadas parciales)  </strong></span>Si las derivadas parciales de primer orden de una funcón <span class="math inline">\(f\)</span> en las variables <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> son continuas en toda una región abierta <span class="math inline">\(D\)</span>, entonces <span class="math inline">\(f\)</span> es diferenciable en cada punto de <span class="math inline">\(D\)</span>.
+</div>
+<p><br></br></p>
+ffalse{-91-76-97-32-100-105-102-101-114-101-110-99-105-97-98-105-108-105-100-97-100-32-105-109-112-108-105-99-97-32-99-111-110-116-105-110-117-105-100-97-100-93-}
+<div class="theorem">
+<span id="thm:unnamed-chunk-27" class="theorem"><strong>Teorema 3.2  \iffalse (La diferenciabilidad implica continuidad)  </strong></span>Si una función <span class="math inline">\(f(x,y)\)</span> es diferenciable en <span class="math inline">\((x_0,y_0)\)</span>, entonces <span class="math inline">\(f\)</span> es continua en <span class="math inline">\((x_0,y_0)\)</span>.
+</div>
+<p><br></br></p>
+</div>
+<div id="derivadas-parciales-de-orden-superior" class="section level2" number="3.8">
+<h2><span class="header-section-number">3.8</span> Derivadas parciales de orden superior</h2>
+ffalse{-91-68-101-114-105-118-97-100-97-115-32-112-97-114-99-105-97-108-101-115-32-100-101-32-111-114-100-101-110-32-115-117-112-101-114-105-111-114-93-}
+<div class="remark">
+<p>\iffalse{} <span class="remark"><em>Nota</em> (Derivadas parciales de orden superior): </span> Como sucede con las derivadas ordinarias, es posible hallar las segundas, terceras, etc., derivadas parciales de una función de varias variables, siempre que tales derivadas existan. Las derivadas de orden superior se denotan por el orden al que se hace la derivación.</p>
+<span class="math display">\[
+\dfrac{\partial}{\partial x}\left(\dfrac{\partial f}{\partial x}\right)=\dfrac{{\partial}^2f}{\partial x^2}=f_{xx} \ \ \ \ \ \ \text{ ; } \ \ \ \ \ \ \dfrac{\partial}{\partial y}\left(\dfrac{\partial f}{\partial y}\right)=\dfrac{{\partial}^2f}{\partial y^2}=f_{yy} 
+\]</span>
+<span class="math display">\[
+\dfrac{\partial}{\partial y}\left(\dfrac{\partial f}{\partial x}\right)=\dfrac{{\partial}^2f}{\partial{y}\partial{x} }=f_{xy} \ \ \ \ \ \ \text{ ; } \ \ \ \ \ \ \dfrac{\partial}{\partial x}\left(\dfrac{\partial f}{\partial y}\right)=\dfrac{{\partial}^2f}{\partial{x}\partial{y}}=f_{yx} 
+\]</span>
+</div>
+<p><br></br></p>
+</div>
+<div id="ejercicio-derivadas-parciales-de-orden-superior" class="section level2" number="3.9">
+<h2><span class="header-section-number">3.9</span> Ejercicio derivadas parciales de orden superior</h2>
+ffalse{-91-68-101-114-105-118-97-100-97-115-32-112-97-114-99-105-97-108-101-115-32-100-101-32-111-114-100-101-110-32-115-117-112-101-114-105-111-114-93-}
+<div class="exercise">
+<span id="exr:unnamed-chunk-29" class="exercise"><strong>Ejercicio 3.3  \iffalse (Derivadas parciales de orden superior)  </strong></span>Sea
+<span class="math display">\[
+f(x,y)=3xy^2-2y+5x^2y^2
+\]</span>
+Hallar las derivadas parciales de orden uno y dos para <span class="math inline">\(z=f(x,y)\)</span> en el punto <span class="math inline">\(\left(-1,2\right)\)</span>.
+</div>
+<p><br></br></p>
+ffalse{-91-68-101-114-105-118-97-100-97-115-32-112-97-114-99-105-97-108-101-115-32-100-101-32-111-114-100-101-110-32-115-117-112-101-114-105-111-114-93-}
+<div class="solution">
+\iffalse{} <span class="solution"><em>Solución</em> (Derivadas parciales de orden superior). </span> Las derivadas parciales de primer orden para <span class="math inline">\(f\)</span> con respecto a <span class="math inline">\(x\)</span>, y a <span class="math inline">\(y\)</span> son:
+<span class="math display">\[
+f_{x}(x,y)=3y^2+10xy^2 \ \ \ \ \ \ \text{ y } \ \ \ \ \ \ f_{y}(x,y)=6xy-2+10x^2y 
+\]</span>
+Las derivadas parciales de orden dos para <span class="math inline">\(f\)</span> con respecto a <span class="math inline">\(x\)</span>, y a <span class="math inline">\(y\)</span> son:
+<span class="math display">\[
+f_{xx}(x,y)=10y^2 \ \ \ \ \ \ \text{ y } \ \ \ \ \ \ f_{yy}(x,y)=6x+10x^2 
+\]</span>
+<span class="math display">\[
+f_{xy}(x,y)=6y+20xy \ \ \ \ \ \ \text{ y } \ \ \ \ \ \ f_{yx}(x,y)=6y+20xy 
+\]</span>
+Puede también ver la respuesta de este ejercicio en <span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(908\)</span>]
+</div>
+<p><br></br></p>
+</div>
+<div id="herramienta-para-evaluar-derivadas-parciales-de-orden-dos-en-ab" class="section level2" number="3.10">
+<h2><span class="header-section-number">3.10</span> Herramienta para evaluar derivadas parciales de orden dos en <span class="math inline">\((a,b)\)</span></h2>
+<p>Esta es una aplicación para generar derivadas parciales de segundo orden en un punto del plano <span class="math inline">\(XY\)</span>, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/derwhqkk" class="uri">https://www.geogebra.org/classic/derwhqkk</a>) la elaboro usando geogebra.</p>
+<div align='center'>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementDerivaParcialA02">
+
+</div>
+<script>  
+       var ggbAppDerivaParcialA02 = new GGBApplet({"material_id":"derwhqkk",
+       "width": 600,
+       "height": 300,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppDerivaParcialA02.inject('ggb-elementDerivaParcialA02');
+      });
+</script>
+</div>
+<p><br></br></p>
+ffalse{-91-73-103-117-97-108-100-97-100-32-100-101-32-108-97-115-32-100-101-114-105-118-97-100-97-115-32-112-97-114-99-105-97-108-101-115-32-109-105-120-116-97-115-93-}
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-31" class="theorem"><strong>Teorema 3.3  \iffalse (Igualdad de las derivadas parciales mixtas)  </strong></span>Si <span class="math inline">\(f\)</span> es una función de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> tal que <span class="math inline">\(f_{xy}\)</span> y <span class="math inline">\(f_{yx}\)</span> son continuas en un disco abierto <span class="math inline">\(D\)</span>, entonces, para toda pareja <span class="math inline">\(()x,y\)</span> en <span class="math inline">\(D\)</span>,</p>
+<p><span class="math display">\[
+f_{xy}(x,y)=f_{yx}(x,y)  
+\]</span></p>
+[Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(913\)</span>]
+</div>
+<p><br></br></p>
+</div>
+<div id="regla-de-la-cadena-para-funciones-de-varias-variables" class="section level2" number="3.11">
+<h2><span class="header-section-number">3.11</span> Regla de la cadena para funciones de varias variables</h2>
+<div id="una-variable-independiente" class="section level3" number="3.11.1">
+<h3><span class="header-section-number">3.11.1</span> Una variable independiente</h3>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigPendienteDerivadaParcialA2"></span>
+<img src="images/ReglaCadenaCasoUno.png" alt="Esquema regla de la cadena: una variable independiente [Imagen tomada de [@larson2006calculo] pág $925$]" width="25%" />
 <p class="caption">
-(#fig:pueblito paisa de medellín)Carta topografica del Pueblito Paisa Medellín
+Figura 3.6: Esquema regla de la cadena: una variable independiente [Imagen tomada de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(925\)</span>]
 </p>
 </div>
+ffalse{-91-82-101-103-108-97-32-100-101-32-108-97-32-99-97-100-101-110-97-58-32-85-110-97-32-118-97-114-105-97-98-108-101-32-105-110-100-101-112-101-110-100-105-101-110-116-101-93-}
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-32" class="theorem"><strong>Teorema 3.4  \iffalse (Regla de la cadena: Una variable independiente)  </strong></span>Sea <span class="math inline">\(w=f(x,y)\)</span>, donde <span class="math inline">\(f\)</span> es una función derivable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>. Si <span class="math inline">\(x=g(t)\)</span> y <span class="math inline">\(y=h(t)\)</span>, donde <span class="math inline">\(g\)</span> y <span class="math inline">\(h\)</span> son funciones derivables en <span class="math inline">\(t\)</span>, entonces <span class="math inline">\(w\)</span> es una función diferenciable de <span class="math inline">\(t\)</span>, y</p>
+<p><span class="math display">\[
+\dfrac{dw}{dt}=\dfrac{\partial{w}}{\partial{x}}\dfrac{dx}{dt}+\dfrac{\partial{w}}{\partial{y}}\dfrac{dy}{dy}
+\]</span></p>
+[Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(925\)</span>]
 </div>
-<div id="curvas-de-nivel-para-la-uces-de-medellín" class="section level2">
-<h2><span class="header-section-number">3.6</span> Curvas de nivel para la UCES de Medellín</h2>
-<div class="figure" style="text-align: center">
-<div id="htmlwidget-56548e2586ae7d97b8fb" style="width:80%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-56548e2586ae7d97b8fb">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.opentopomap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addMarkers","args":[6.20859975,-75.5526154108008,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Pueblito Paisa de Medellín",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[6.20859975,6.20859975],"lng":[-75.5526154108008,-75.5526154108008]}},"evals":[],"jsHooks":[]}</script>
+<br></br>
+ffalse{-91-69-120-116-101-110-115-105-111-110-32-100-101-108-32-99-97-115-111-32-117-110-97-32-118-97-114-105-97-98-108-101-32-105-110-100-101-112-101-110-100-105-101-110-116-101-93-}
+<div class="remark">
+<p>\iffalse{} <span class="remark"><em>Nota</em> (Extension del caso una variable independiente): </span> Si <span class="math inline">\(w\)</span> es una función diferenciable de <span class="math inline">\(n\)</span> variables <span class="math inline">\(x_1,x_2,...,x_n\)</span>, y si cada <span class="math inline">\(x_i\)</span> es una función de una sola variable <span class="math inline">\(t\)</span>, entonces para <span class="math inline">\(w=f(x_1,x_2,...,x_n)\)</span> se tiene:</p>
+<span class="math display">\[
+\dfrac{dw}{dt}=\dfrac{\partial{w}}{\partial{x_1}}\dfrac{dx_1}{dt}+\dfrac{\partial{w}}{\partial{x_2}}\dfrac{dx_2}{dt}+...+\dfrac{\partial{w}}{\partial{x_n}}\dfrac{dx_n}{dt}
+\]</span>
+</div>
+<p><br></br></p>
+</div>
+<div id="dos-variables-independientes" class="section level3" number="3.11.2">
+<h3><span class="header-section-number">3.11.2</span> Dos variables independientes</h3>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigPendienteDerivadaParcialA3"></span>
+<img src="images/EsquemaReglaDeCadenaCaso2VInd_A1.png" alt="Esquema regla de la cadena: dos variables independientes [Imagen tomada de [@larson2006calculo] pág $927$]" width="45%" />
 <p class="caption">
-(#fig:Universidad CES de medellín)Carta topografica de la Universidad CES de Medellín
+Figura 3.7: Esquema regla de la cadena: dos variables independientes [Imagen tomada de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(927\)</span>]
 </p>
+</div>
+ffalse{-91-82-101-103-108-97-32-100-101-32-108-97-32-99-97-100-101-110-97-58-32-68-111-115-32-118-97-114-105-97-98-108-101-115-32-105-110-100-101-112-101-110-100-105-101-110-116-101-115-93-}
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-34" class="theorem"><strong>Teorema 3.5  \iffalse (Regla de la cadena: Dos variables independientes)  </strong></span>Sea <span class="math inline">\(w=f(x,y)\)</span>, donde <span class="math inline">\(f\)</span> es una función derivable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>. Si <span class="math inline">\(x=g(s,t)\)</span> y <span class="math inline">\(y=h(s,t)\)</span>, donde <span class="math inline">\(g\)</span> y <span class="math inline">\(h\)</span> son funciones tales que las derivadas parciales de primer orden con respecto a <span class="math inline">\(s\)</span> y <span class="math inline">\(t\)</span> existen, entonces <span class="math inline">\(\partial{w}/\partial{s}\)</span>,<span class="math inline">\(\partial{w}/\partial{t}\)</span> existen y estan dadas por:</p>
+<p><span class="math display">\[
+\dfrac{\partial{w}}{\partial{s}}=\dfrac{\partial{w}}{\partial{x}}\dfrac{\partial{x}}{\partial{s}}+\dfrac{\partial{w}}{\partial{y}}\dfrac{\partial{y}}{\partial{s}}
+\]</span>
+<span class="math display">\[
+\dfrac{\partial{w}}{\partial{t}}=\dfrac{\partial{w}}{\partial{x}}\dfrac{\partial{x}}{\partial{t}}+\dfrac{\partial{w}}{\partial{y}}\dfrac{\partial{y}}{\partial{t}}
+\]</span></p>
+[Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(925\)</span>]
+</div>
+<p><br></br></p>
+ffalse{-91-69-120-116-101-110-115-105-243-110-32-100-101-108-32-99-97-115-111-32-100-111-115-32-118-97-114-105-97-98-108-101-115-32-105-110-100-101-112-101-110-100-105-101-110-116-101-115-93-}
+<div class="remark">
+<p>\iffalse{} <span class="remark"><em>Nota</em> (Extensión del caso dos variables independientes): </span> Si <span class="math inline">\(w\)</span> es una función diferenciable de <span class="math inline">\(n\)</span> variables <span class="math inline">\(x_1,x_2,...,x_n\)</span>, donde cada <span class="math inline">\(x_i\)</span> es una función diferenciable de <span class="math inline">\(m\)</span> variables <span class="math inline">\(t_1,t_2,...,t_m\)</span>, entonces para <span class="math inline">\(w=f(x_1,x_2,...,x_n)\)</span> se tiene:</p>
+<p><span class="math display">\[
+\dfrac{dw}{dt_1}=\dfrac{\partial{w}}{\partial{x_1}}\dfrac{dx_1}{dt_1}+\dfrac{\partial{w}}{\partial{x_2}}\dfrac{dx_2}{dt_1}+...+\dfrac{\partial{w}}{\partial{x_n}}\dfrac{dx_n}{dt_1}
+\]</span>
+<span class="math display">\[
+\dfrac{dw}{dt_2}=\dfrac{\partial{w}}{\partial{x_2}}\dfrac{dx_1}{dt_2}+\dfrac{\partial{w}}{\partial{x_2}}\dfrac{dx_2}{dt_2}+...+\dfrac{\partial{w}}{\partial{x_n}}\dfrac{dx_n}{dt_2}
+\]</span>
+<span class="math display">\[
+\vdots
+\]</span></p>
+<span class="math display">\[
+\dfrac{dw}{dt_m}=\dfrac{\partial{w}}{\partial{x_2}}\dfrac{dx_1}{dt_m}+\dfrac{\partial{w}}{\partial{x_2}}\dfrac{dx_2}{dt_m}+...+\dfrac{\partial{w}}{\partial{x_n}}\dfrac{dx_n}{dt_m}
+\]</span>
+</div>
+<p><br></br></p>
+</div>
+</div>
+<div id="herramienta-evalúa-rcadena2v-independientes" class="section level2" number="3.12">
+<h2><span class="header-section-number">3.12</span> Herramienta evalúa RCadena2V independientes</h2>
+<!-- https://www.geogebra.org/classic/qr3hhmx4 -->
+<p>Esta es una aplicación para evaluar en un punto <span class="math inline">\((a,b)\)</span> en la regla de la cadena con dos variables independientes, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/qr3hhmx4" class="uri">https://www.geogebra.org/classic/qr3hhmx4</a>) la elaboro usando geogebra.</p>
+<div align='center'>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementDerivaParcialA03">
+
+</div>
+<script>  
+       var ggbAppDerivaParcialA03 = new GGBApplet({"material_id":"qr3hhmx4",
+       "width": 900,
+       "height": 450,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppDerivaParcialA03.inject('ggb-elementDerivaParcialA03');
+      });
+</script>
+</div>
+<p><br></br></p>
+</div>
+<div id="derivación-parcial-implícita" class="section level2" number="3.13">
+<h2><span class="header-section-number">3.13</span> Derivación parcial implícita</h2>
+ffalse{-91-82-101-103-108-97-32-100-101-32-108-97-32-99-97-100-101-110-97-58-32-68-101-114-105-118-97-99-105-243-110-32-105-109-112-108-237-99-105-116-97-93-}
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-36" class="theorem"><strong>Teorema 3.6  \iffalse (Regla de la cadena: Derivación implícita)  </strong></span>Si la ecuación <span class="math inline">\(F(x,y)=0\)</span> define a <span class="math inline">\(y\)</span> implícitamente como función de <span class="math inline">\(x\)</span>, entonces</p>
+<p><span class="math display">\[
+\dfrac{dy}{dx}=-\dfrac{F_{x}(x,y)}{F_{y}(x,y)}, \ \ \ \ \ F_{y}(x,y) \neq 0
+\]</span></p>
+<p>Si la ecuación <span class="math inline">\(F(x,y,z)=0\)</span> define a <span class="math inline">\(z\)</span> implícitamente como una función diferenciable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, entonces<br />
+<span class="math display">\[
+\dfrac{\partial{z}}{\partial{x}}=-\dfrac{F_{x}(x,y,z)}{F_{z}(x,y,z)}, \ \ \ \text{ y } \ \ \ \ \dfrac{\partial{z}}{\partial{y}}=-\dfrac{F_{y}(x,y,z)}{F_{z}(x,y,z)},\ \ \ \ F_{z}(x,y,z) \neq 0
+\]</span></p>
+[Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(930\)</span>]
+</div>
+<p><br></br></p>
+</div>
+<div id="derivada-direccional" class="section level2" number="3.14">
+<h2><span class="header-section-number">3.14</span> Derivada direccional</h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigPendienteDerivadaParcialA4"></span>
+<img src="images/DefDerivadaDireccional1.png" alt="Definición derivada direccional [Imagen tomada de [@larson2006calculo] pág $933$]" width="75%" />
+<p class="caption">
+Figura 3.8: Definición derivada direccional [Imagen tomada de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(933\)</span>]
+</p>
+</div>
+ffalse{-91-68-101-114-105-118-97-100-97-32-100-105-114-101-99-99-105-111-110-97-108-93-}
+<div class="definition">
+<p><span id="def:unnamed-chunk-37" class="definition"><strong>Definición 3.4  \iffalse (Derivada direccional)  </strong></span>Sea <span class="math inline">\(f\)</span> una función de dos variables <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, y sea <span class="math inline">\(u=cos(\theta)i+sen(\theta)j\)</span> un vector unitario. Entonces la derivada direccional de f en la dirección del vector u, que se denota <span class="math inline">\(D_{u}f\)</span> es</p>
+<p><span class="math display">\[
+D_{u}f(x,y)=\displaystyle{\lim_{t \to 0}{\dfrac{f(x+tcos(\theta),y+tsen(\theta))-f(x,y)}{t}}}
+\]</span>
+siempre que este límite exista.</p>
+[Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(934\)</span>]
+</div>
+<p><br></br></p>
+ffalse{-91-68-101-114-105-118-97-100-97-32-100-105-114-101-99-99-105-111-110-97-108-93-}
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-38" class="theorem"><strong>Teorema 3.7  \iffalse (Derivada direccional)  </strong></span>Si <span class="math inline">\(f\)</span> es una función diferenciable de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, entonces la derivada direcional de <span class="math inline">\(f\)</span> con la dirección del vector unitrario <span class="math inline">\(u=cos(\theta)i+sen(\theta)j\)</span> es</p>
+<p><span class="math display">\[
+  D_{u}f(x,y)=f_{x}(x,y)cos(\theta)+f_{y}(x,y)sen(\theta)
+\]</span></p>
+[Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(934\)</span>]
+</div>
+<p><br></br></p>
+</div>
+<div id="gradiente-de-una-función" class="section level2" number="3.15">
+<h2><span class="header-section-number">3.15</span> Gradiente de una función</h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigPendienteDerivadaParcialA6"></span>
+<img src="images/DefGradienteDeUnaf1.png" alt="Definición gradiente de una función [Imagen tomada de [@larson2006calculo] pág $938$]" width="75%" />
+<p class="caption">
+Figura 3.9: Definición gradiente de una función [Imagen tomada de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(938\)</span>]
+</p>
+</div>
+ffalse{-91-68-101-102-105-110-105-99-105-243-110-32-103-114-97-100-105-101-110-116-101-32-100-101-32-117-110-97-32-102-117-110-99-105-243-110-32-99-111-110-32-100-111-115-32-118-97-114-105-97-98-108-101-115-93-}
+<div class="definition">
+<p><span id="def:unnamed-chunk-39" class="definition"><strong>Definición 3.5  \iffalse (Definición gradiente de una función con dos variables)  </strong></span>Sea <span class="math inline">\(z=f(x,y)\)</span> una función de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span>, tal que <span class="math inline">\(f_{x}\)</span> y <span class="math inline">\(f_{y}\)</span> existen. Entonces el gradiente de <span class="math inline">\(f\)</span>, denotado por <span class="math inline">\(\nabla{f(x,y)}\)</span> es el vector:</p>
+<p><span class="math display">\[
+\nabla{f(x,y)}=f_{x}(x,y)i+f_{y}(x,y)j
+\]</span></p>
+<p>El gradiente es un vector en el plano <span class="math inline">\(XY\)</span></p>
+[Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(936\)</span>]
 </div>
 
 </div>
 </div>
 <h3>Referencias</h3>
-<div id="refs" class="references">
-<div id="ref-larson1999calculo">
-<p>Larson, Roland E, Robert P Hostetler, Bruce H Edwars, Lorenzo Abellanas Rapún, and others. 1999. <em>Cálculo Y Geometrı́a Analı́tica</em>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-larson1999calculo" class="csl-entry">
+Larson, Roland E, Robert P Hostetler, Bruce H Edwars, Lorenzo Abellanas Rapún, et al. 1999. <em>C<span>á</span>lculo y Geometr<span>ı́</span>a Anal<span>ı́</span>tica</em>.
 </div>
-<div id="ref-larson2006calculo">
-<p>Larson, Ron. 2006. <em>Cálculo de Varias Variables</em>. QA303. l3718 2004.</p>
+<div id="ref-larson2006calculo" class="csl-entry">
+Larson, Ron. 2006. <em>C<span>á</span>lculo de Varias Variables</em>. QA303. l3718 2004.
 </div>
-<div id="ref-stewart2009calculus">
-<p>Stewart, James. 2009. <em>Calculus: Concepts and Contexts</em>. Cengage Learning.</p>
+<div id="ref-stewart2009calculus" class="csl-entry">
+Stewart, James. 2009. <em>Calculus: Concepts and Contexts</em>. Cengage Learning.
 </div>
-<div id="ref-thomas2003thomas">
-<p>Thomas, George Brinton, Ross L Finney, Maurice D Weir, and Frank R Giordano. 2003. <em>Thomas’ Calculus</em>. Addison-Wesley Reading.</p>
+<div id="ref-thomas2003thomas" class="csl-entry">
+Thomas, George Brinton, Ross L Finney, Maurice D Weir, and Frank R Giordano. 2003. <em>Thomas’ Calculus</em>. Addison-Wesley Reading.
 </div>
 </div>
             </section>
@@ -457,7 +754,7 @@ NOTA: También se puede definir como la proyección perpendicular de una traza e
         </div>
       </div>
 <a href="desarrollo-temático.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="métodos-para-derivar-parcialmente.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="métodos-para-máximos-y-mínimos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
