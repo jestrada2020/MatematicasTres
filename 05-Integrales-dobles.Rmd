@@ -127,7 +127,7 @@ knitr::include_graphics("images/Imagen_PdeIntegralDoble1.png")
 
 
 
-```{example name="Volumen de un solido con región rectángular"}
+```{example}
 Sea $D$ el rectángulo definido como $\left[0,1\right] \times \left[-3,3\right]$ y $f(x,y)=\dfrac{xy^2}{x^2+1}$ una función integrable en $D$. Obtener usando geogebra el volumén limitado arriba por $f$, y abajo por el rectángulo $D$. Observe que $f(x,y) \geq 0$ para todo $(x,y) \in D$   [Tomado de [@larson2006calculo] pág $994$]
 ```
 
@@ -159,7 +159,7 @@ Esta es una aplicación que generar un sólido y proporciona su volumen, inicial
 
 ## Ejercicio integral doble
 
-```{exercise name="Volumen de un solido con región rectángular"}
+```{exercise}
 Sea $D$ el rectángulo definido como $\left[0,1\right] \times \left[0,1\right]$ y $f(x,y)=1-\dfrac{1}{2}x^2-\dfrac{1}{2}y^2$ una función integrable en $D$. Además
 $$
 \left[0,1\right] \times \left[0,1\right]  \ \ \ \text{significa que:}  \ \ \  0\leq x \leq 1 \ \ \text{y} \ \ 0\leq y \leq 1
@@ -178,8 +178,9 @@ knitr::include_graphics("images/EjercicioIntDoble1.png")
 ```
 
 
+<br></br>
 
-```{solution name="Volumen de un solido con región rectángular"}
+
 $$
   \int_{D}\int{1-\dfrac{1}{2}x^2-\dfrac{1}{2}y^2)dA}=\\
 \int_{0}^{1}\int_{0}^{1}\left(1-\dfrac{1}{2}x^2-\dfrac{1}{2}y^2)\right)dydx=\\
@@ -190,7 +191,7 @@ $$
 $$
 
 El ejercicio se puede ver solucionado en [@larson2006calculo] pág $996$]
-```
+
 
 
 <br></br>
@@ -202,7 +203,7 @@ knitr::include_graphics("images/TiposDeRegionesIntDoble_A1.png")
 
 
 
-```{theorem name="Región verticalmente simple"}
+```{theorem}
 Supongamos que $f(x,y)$ es continuas en una región cerrada y acotada $D$ del plano $XY$. Si $D$ es una región verticalmente simple, entonces $D$ se puede describir en términos de desigualdades de la forma:
 
 $$
@@ -224,7 +225,7 @@ $$
 
 <br></br>
 
-```{theorem name="Región horizontalmente simple"}
+```{theorem}
 Supongamos que $f(x,y)$ es continuas en una región cerrada y acotada $D$ del plano $XY$. Si $D$ es una región verticalmente simple, entonces $D$ se puede describir en términos de desigualdades de la forma:
 
 $$
@@ -255,7 +256,7 @@ $$
 
 ## Ejercicio integral doble
 
-```{exercise name="Volumen de un solido con región no rectángular"}
+```{exercise}
 Sea $D$ la región no rectángular definida como:
   
 $$  
@@ -301,13 +302,13 @@ Está es una aplicación de geogebra que realizó John Jairo Estrada (https://ww
 
 ## Ejercicio integral doble
 
-```{exercise name="Área entre dos curvas"}
+```{exercise}
 Determinar el área usando integrales dobles para la región $D$ limitada por las curvas $x=-2$, $x=2$, $y=-x^2+2x$, y $y=3x^3-x^2-10x$. [Tomado de [@larson2006calculo] pág $997$]
 ```
 
 <br></br>
 
-```{solution name="Área de una región que requiere de dos integrales dobles"}
+
 
 $$
 D_1=\left\lbrace (x,y) \in R^2, \ \ \text{tal que } \ \ -2 \leq x \leq 0; \ \ -x^2+2x \leq y \leq 3x^3-x^2-10x \right\rbrace 
@@ -334,7 +335,7 @@ A(\text{Región }D_1 \cup D_2)=\int_{-2}^{0}\int_{-x^2+2x}^{ 3x^3-x^2-10x}{1dydx
 $$  
 
 El ejercicio se puede ver solucionado en [@larson2006calculo] pág $996$]
-```
+
 
 <br></br>
 
@@ -391,7 +392,7 @@ Está es una aplicación de geogebra que realizó John Jairo Estrada (https://ww
 
 ## Ejercicio integral doble
 
-```{exercise name="Volumen de un solido generado por la intersección de superficies"}
+```{exercise}
 Obtener la gráfica del sólido generado en el primer octante, por la intersección de las superficies en el espacio $XYZ$:
 
 \begin{equation}

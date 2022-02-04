@@ -54,7 +54,7 @@ knitr::include_graphics("images/EsquemaModeladoEDO_A1.png")
 
 ## Definición para una Ecuación Diferencial
 
-```{definition name="Definición de ecuación diferencial"}
+```{definition}
 Es una ecuación que contiene una función desconocida $y$ y algunas de sus derivadas.
 Un ejemplo de ecuación diferencial es el modelado matemático que con frecuencia toma está forma. Esto no es sorprendente, porque en los problemas del mundo real, es común observar que ocurran cambios y se desea predecir el comportamiento futuro con respecto a como cambian los valores actuales.
 
@@ -171,7 +171,7 @@ $$
 ## Método para separar variables
 
 
-```{definition name="Ec diferencial separable"}
+```{definition}
 Una ecuación diferencial de la forma:
 
 \[
@@ -195,7 +195,7 @@ Además
 
 ### Ejemplo1 Ec Diferencial separable
 
-```{example name="Ec Diferencial separable"}
+```{example}
 Resuelva la ecuación diferencial
 
 \[
@@ -206,7 +206,9 @@ y determine el valor de la constante $C$ bajo la condición inicial $y(0)=2$.
 ```
 
 
-```{solution}
+<br></br>
+
+
 Como la ecuación diferencial es separable, ya que $f(x,y)=\dfrac{x^2}{y^2}$ tiene la forma $f(x,y)=\dfrac{g(x)}{h(y)}$, entonces se puede separar o reescribir en la forma:
   
 $$
@@ -265,14 +267,14 @@ x^3+8 & = y^3\\
 \end{split}
 \end{equation} 
 \] 
-```
+
 
 
 <br></br>
 
 ## Ec Diferencial lineal
 
-```{definition name="Ecuación diferencial lineal"}
+```{definition}
 Una ecuación diferencial se dice lineal si tiene la forma:
   
 \[
@@ -311,7 +313,7 @@ tomada de [@zill2014calculo] pág $599$ ejercicio $13$
 ```
 
 
-```{solution}
+<br></br>
 
 \begin{equation} \label{eqDifA04}
 \begin{split}
@@ -331,7 +333,7 @@ P_0-\dfrac{m}{k} & = C
 \end{split}
 \end{equation} 
 
-```
+
 
 
 <br></br>
@@ -350,7 +352,9 @@ tomada de [@zill2014calculo] pág $607$ ejercicio $31$
 ```
 
 
-```{solution}
+<br></br>
+
+
 
 \begin{equation} \label{eqDifA05}
 \begin{split}
@@ -368,7 +372,7 @@ P(t)= &  M+C_1 \qquad \text{Presentación de la solución en forma explícita}\\
 \end{split}
 \end{equation} 
 
-```
+
 
 
 
@@ -413,7 +417,7 @@ P(t)= &  M+C_1 \qquad \text{Presentación de la solución en forma explícita}\\
 ## Definición de transformada
 
 
-```{theorem  name="Definición de transformada de Laplace"}
+```{theorem}
 Sea $f$ una función definida para $t \geq 0$. Entonces se dice que la integral
 
 $$
@@ -449,7 +453,10 @@ tomada [@zill2002ecuaciones] pág $257$
 
 
 
-```{solution}
+<br></br>
+
+
+
 Por definición de transformada se tiene:
   
   
@@ -465,7 +472,7 @@ Por definición de transformada se tiene:
 
 Ya que $e^{-st} \to 0$ conforme $t \to \infty$ para $s>0$.
 
-```
+
 
 <br></br>
 
@@ -483,7 +490,10 @@ tomada [@zill2002ecuaciones] pág $257$
 
 
 
-```{solution}
+<br></br>
+
+
+
 Por definición de transformada se tiene:
   
   
@@ -499,7 +509,6 @@ Por definición de transformada se tiene:
 
 Ya que $\displaystyle\lim_{t \to \infty}{te^{-st}}=0$, para $s>0$.
 
-```
 
 
 
@@ -519,7 +528,10 @@ tomada [@zill2002ecuaciones] pág $257$
 
 
 
-```{solution}
+<br></br>
+
+
+
 Por definición de transformada se tiene:
   
   
@@ -535,7 +547,7 @@ Por definición de transformada se tiene:
 
 Ya que $\displaystyle\lim_{t \to \infty}{e^{-(s+3)t}}=0$, para $s+3>0$.
 
-```
+
 
 
 ## Tabla de transformadas

@@ -37,7 +37,7 @@ $$
 <br></br>
 
 
-```{theorem name="Evaluación mediante integrales iteradas"}
+```{theorem}
 Sea $f$ continua en una región sólida definida por $Q$
 $$
 Q=\left\{ \begin{array}{lcc}
@@ -63,7 +63,7 @@ $$
 ## Ejercicio integral triple
 
 
-```{exercise name="Evaluación de una integral triple iterada"}
+```{exercise}
 Evaluar la integral iterada triple
   
 $$
@@ -79,7 +79,7 @@ $$
 
 
 
-```{solution name="Evaluación de una integral triple iterada"}
+
 $$
 \int_{0}^{2}\int_{0}^{x}\int_{0}^{x+y}{e^{x}(y+2z)dzdydx} = \\
 \int_{0}^{2}\int_{0}^{x}\left[e^{x}(yz+z^2)\right]_{0}^{x+y}dydx =\\
@@ -92,7 +92,7 @@ $$
 $$
 
 Puede también ver la respuesta de este ejercicio en [@larson1999calculo] pág $1025$]
-```
+
 
 
 <br></br>
@@ -100,7 +100,7 @@ Puede también ver la respuesta de este ejercicio en [@larson1999calculo] pág $
 ## Ejercicio integral triple
 
 
-```{exercise name="Obtener el volumen usando integral triple iterada"}
+```{exercise}
 Hallar el volumen del elipsoide dado por $4x^2+4y^2+z^2=16$
 
 $$
@@ -115,7 +115,7 @@ $$
 
 
 
-```{solution name="Volumen de un sólido integral iterada"}
+
 $$
 8\int_{0}^{2}\int_{0}^{\sqrt{4-x^2}}\int_{0}^{2\sqrt{4-x^2-y^2}}{1dzdydx} =\\
 8\int_{0}^{2}\int_{0}^{\sqrt{4-x^2}}\left. z\right]_{0}^{2\sqrt{4-x^2-y^2}}dydx=\\
@@ -128,7 +128,7 @@ $$
 $$
 
 Puede también ver la respuesta de este ejercicio en [@larson1999calculo] pág $1026$]
-```
+
 
 
 
@@ -162,7 +162,7 @@ Esta es una aplicación para calular una integral triple con limites variables y
 
 ## Ejercicio integral triple
 
-```{exercise name="Volumen de un solido generado por la intersección de superficies"}
+```{exercise}
 Obtener la gráfica del sólido generado en el primer octante, por la intersección de las superficies en el espacio $XYZ$:
 
 \begin{equation}
@@ -200,7 +200,7 @@ Esta es una aplicación para generar un sólido límitado por varias superficies
 
 ## Ejercicio integral triple
 
-```{exercise name="Volumen de un solido generado por la intersección de superficies"}
+```{exercise}
 Obtener la gráfica del sólido generado a partir de la intersección de las superficies en el espacio $XYZ$:
 
 \begin{equation}
@@ -239,7 +239,7 @@ Esta es una aplicación para generar un sólido límitado por varias superficies
 
 ## Ejercicio integral triple
 
-```{exercise name="Volumen de un solido generado por la intersección de superficies"}
+```{exercise}
 Determine el volumen del segmento oblicuo de paraboloide acotado por el paraboloide $z=x^2+y^2$ y el plano $z=y+2$ en el espacio $XYZ$:
 
  [Tomado de [@larson2006calculo] pág $872$]
