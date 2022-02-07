@@ -135,7 +135,7 @@ Sea $D$ el rectángulo definido como $\left[0,1\right] \times \left[-3,3\right]$
 <br></br>
 
 
-Esta es una aplicación que generar un sólido y proporciona su volumen, inicialmente la realizó en youtube Matemática y Geogebra (https://www.youtube.com/watch?v=GfhDeC2lN88&t=857s), y posteriormente la realizó John Jairo Estrada (https://www.geogebra.org/classic/f6guccy3).
+Esta es una aplicación que genera un sólido y proporciona su volumen, inicialmente la realizó en youtube Matemática y Geogebra (https://www.youtube.com/watch?v=GfhDeC2lN88&t=857s), y posteriormente la realizó John Jairo Estrada (https://www.geogebra.org/classic/f6guccy3).
 
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta charset="utf-8"/>
@@ -396,7 +396,7 @@ Está es una aplicación de geogebra que realizó John Jairo Estrada (https://ww
 Obtener la gráfica del sólido generado en el primer octante, por la intersección de las superficies en el espacio $XYZ$:
 
 \begin{equation}
-z^2+y^2=9 \ \ \ \   : \text{Cilíndro}  \ \ \ \\
+z^2+x^2=9 \ \ \ \   : \text{Cilíndro}  \ \ \ \\
 y=2, \ \ y=4 \ \ \ \   : \text{Planos paralelos al plano } \ XZ  \ \ \ \\
 z=0, \ \ \ \   : \text{Plano} \ XY  \ \ \ \\
 \end{equation}. [Tomado de [@larson2006calculo] pág $997$]
@@ -451,4 +451,38 @@ Esta es una aplicación para generar un sólido límitado por varias superficies
            ggbAppSuperficieB01.inject('ggb-elementSuperficieB01');
       });
 </script>
+
+
+**Solución**
+
+Realice la sustitución que se indica para obtener el volumen del sólido
+
+$$
+D_1=\left\lbrace (x,y) \in R^2, \ \ \text{tal que } \ \ 0 \leq x \leq 3; \ \ 2 \leq y \leq 4; \ \  \ \ z=f(x,y)=\sqrt{9-x^2} \right\rbrace 
+$$
+
+
+<br></br>
+
+
+Esta es una aplicación que genera un sólido y proporciona su volumen, inicialmente la realizó en youtube Matemática y Geogebra (https://www.youtube.com/watch?v=GfhDeC2lN88&t=857s), y posteriormente la realizó John Jairo Estrada (https://www.geogebra.org/classic/f6guccy3).
+
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementSuperficieCJ01"></div> 
+<script>  
+       var ggbAppSuperficieCJ01 = new GGBApplet({"material_id":"f6guccy3",
+       "width": 900,
+       "height": 600,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppSuperficieC01.inject('ggb-elementSuperficieCJ01');
+      });
+</script>
+
 
