@@ -182,6 +182,7 @@ ejemplo1-de-antiderivada
 ejemplo2-de-antiderivada
 teorema-fundamental-del-cálculo-caso-uno
 teorema-fundamental-del-cálculo-caso-dos
+integral-definida-riemann
 técnicas-de-integración
 integración-por-sustitución-o-cambio-de-variable
 ejemplo1-por-sustitución
