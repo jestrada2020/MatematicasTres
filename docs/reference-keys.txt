@@ -130,7 +130,6 @@ thm:unnamed-chunk-104
 exm:unnamed-chunk-105
 exm:unnamed-chunk-106
 exm:unnamed-chunk-107
-prerrequisitos
 comportamentales
 evaluativos
 video-motivacional
@@ -152,7 +151,7 @@ punto-frontera-y-punto-interior-en-el-espacio
 detalles-de-una-superficie-en-el-espacio-xyz
 curvas-de-nivel-para-el-pueblito-paisa-de-medellín
 curvas-de-nivel-para-la-uces-de-medellín
-métodos-para-derivar-parcialmente
+metodos-derivacion
 definición-derivada-parcial
 ejercicio-derivada-parcial-con-respecto-a-x
 ejercicio-derivada-parcial-con-respecto-a-y
@@ -170,7 +169,7 @@ herramienta-evalúa-rcadena2v-independientes
 derivación-parcial-implícita
 derivada-direccional
 gradiente-de-una-función
-métodos-para-máximos-y-mínimos
+metodos-maximosYminimos
 significado-geométrico-de-máximo-y-mínimo-local
 herramienta-para-obtener-el-hessiano-2por2
 método-de-los-multiplicadore-de-lagrange-para-determinar-máximos-o-mínimos
@@ -246,7 +245,7 @@ ejercicio-integral-triple-1
 ejercicio-integral-triple-2
 ejercicio-integral-triple-3
 ejercicio-integral-triple-4
-métodos-de-solución-para-ecuaciones-diferenciales-edo
+metodos-EDO
 definición-para-una-ecuación-diferencial
 ejemplos-de-ecuaciones-diferenciales
 método-para-separar-variables

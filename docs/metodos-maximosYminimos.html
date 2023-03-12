@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Curso de Matemáticas Tres UCES</title>
+  <title>Capítulo 4 Métodos para máximos y mínimos | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Curso de Matemáticas Tres UCES" />
+  <meta property="og:title" content="Capítulo 4 Métodos para máximos y mínimos | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Curso de Matemáticas Tres UCES" />
+  <meta name="twitter:title" content="Capítulo 4 Métodos para máximos y mínimos | Curso de Matemáticas Tres UCES" />
   
   <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="desarrollo-temático.html"/>
+<link rel="prev" href="metodos-derivacion.html"/>
+<link rel="next" href="integrales-simples.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -309,173 +309,170 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Curso de Matemáticas Tres UCES</h1>
-<p class="author"><em>Carlos Andrés Escobar Guerra - Juan Alberto Arias Quiceno - John Jairo Estrada Alvarez</em></p>
-<p class="date"><em>2023-03-11</em></p>
+<div id="metodos-maximosYminimos" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Capítulo 4</span> Métodos para máximos y mínimos<a href="metodos-maximosYminimos.html#metodos-maximosYminimos" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<!-- <a href="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg"><div align="center"><img src="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg" width="350" height="460" alt="Buy from Amazon" class="cover" /></div></a> -->
+<div align="center">
+<figure>
+<p><img src="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg"
+       alt="Srinivasa Ramanujan (1887-1920);
+           nacionalidad india famoso por la constante de Landau-Ramanujan" width="400"
+       height="341"></p>
+<figcaption>
+Srinivasa Ramanujan (1887-1920).
+</figcaption>
+</figure>
 </div>
-<div id="prerrequisitos" class="section level1 unnumbered hasAnchor">
-<h1>Prerrequisitos<a href="index.html#prerrequisitos" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<!-- https://www.geogebra.org/classic/yxwbfgbk -->
-<!-- https://www.geogebra.org/classic/py3nxdwq -->
-<p>El curso de matemáticas tres sólo tiene los siguientes prerrequisitios</p>
-<p><img src="MatematicasTres_files/figure-html/Mate3A0-1.png" width="36%" style="display: block; margin: auto;" /></p>
-<!-- <img src="images/GImagen1.png" width="350" height="460" alt="Buy from Amazon" class="cover" /> -->
-<!-- <div align="center"><img src="images/cover.png" width="350" height="460" alt="Buy from Amazon" class="cover" /></div> -->
-<!-- <meta name=viewport content="width=device-width,initial-scale=1"> -->
-<!-- <meta charset="utf-8"/> -->
-<!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
-<!-- <div id="ggb-elementSuperficieJJA01"></div> -->
-<!-- <script> -->
-<!--        var ggbAppSuperficieJJA01 = new GGBApplet({"material_id":"yxwbfgbk", -->
-<!--        "width": 700, -->
-<!--        "height": 460, -->
-<!--        "showToolBar": false, -->
-<!--        "showAlgebraInput": false, -->
-<!--        "showMenuBar": false }, -->
-<!--        true); -->
-<!--          window.addEventListener("load", function() { -->
-<!--            ggbAppSuperficieJJA01.inject('ggb-elementSuperficieJJA01'); -->
-<!--       }); -->
-<!-- </script> -->
-<div id="comportamentales" class="section level2 hasAnchor" number="0.1">
-<h2><span class="header-section-number">0.1</span> Comportamentales<a href="index.html#comportamentales" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li><p>Tener disposición para hacer silencio y generar un buen ambiente de escucha en el aula de clase.</p></li>
-<li><p>Tener la capacidad de acatar sugerencias para mejorar las técnicas de estudio ya adquiridas en procesos educativos pasados.</p></li>
-<li><p>Saber tomar nota mientras el profesor explica los temas de ese día.</p></li>
-<li><p>Repasar las notas de clase y complementar con la lectura del texto guía
-según se avanza en el desarrollo temático del curso.</p></li>
-</ul>
+<p><br></br></p>
+<div id="significado-geométrico-de-máximo-y-mínimo-local" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Significado geométrico de máximo y mínimo local<a href="metodos-maximosYminimos.html#significado-geométrico-de-máximo-y-mínimo-local" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigMaxMinA01"></span>
+<img src="images/GrafMaxMin_A1.png" alt="Concepto de máximo y mínimo local geometricamente [Imagen tomada de [@thomas2003thomas] pág $1028$]" width="65%" />
+<p class="caption">
+Figura 4.1: Concepto de máximo y mínimo local geometricamente [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1028\)</span>]
+</p>
 </div>
-<div id="evaluativos" class="section level2 hasAnchor" number="0.2">
-<h2><span class="header-section-number">0.2</span> Evaluativos<a href="index.html#evaluativos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Tener los implementos básicos para una evaluación:</p>
-<ul>
-<li><p>Lapicero.</p></li>
-<li><p>Lapiz.</p></li>
-<li><p>Borrador.</p></li>
-<li><p>Calculadora.</p></li>
-<li><p>Todos los celulares apagados.</p></li>
-<li><p>Ir al baño antes de iniciar la evalualción.</p></li>
-<li><p>No hay preguntas en el desarrollo de la evaluación.</p></li>
-<li><p>Todas la maletas deben estar adelante.</p></li>
-</ul>
-<!-- ## Fechas de evaluación  -->
-<!-- * Evaluación de entrada **Virtual** (10 $\%$) - **Fecha: Lunes $07$ de Febrero** -->
-<!-- * Primer parcial **Presencial** (17.5 $\%$) - **Fecha: Viernes $25$ de Febrero** -->
-<!-- * Segundo Parcial **Virtual** (17.5 $\%$) - **Fecha: Viernes $25$ de Marzo** -->
-<!-- * Tercer Parcial **Presencial** (17.5 $\%$) - **Fecha: Viernes $29$ de Abril** -->
-<!-- * Fin de clases 29 de Mayo -->
-<!-- * Cuarto Parcial **Virtual** (ó Parcial Final) (17.5 $\%$) - **Fecha: Viernes $03$ de Junio** -->
-<!-- ### Talleres evaluativos -->
-<!-- * Primer Taller (5 $\%$) - **Fecha: Viernes $18$ de Febrero** -->
-<!-- * Segundo Taller (5 $\%$) - **Fecha: Viernes $18$ de Marzo** -->
-<!-- * Tercer Taller (5 $\%$) - **Fecha: Viernes $22$ de Abril** -->
-<!-- * Cuarto Taller (5 $\%$) - **Fecha: Viernes $28$ de Mayo** -->
-<!-- ```{r echo=FALSE, message=FALSE} -->
-<!-- library(calendR) -->
-<!-- # calendR() -->
-<!-- # calendR(year = 2020, month =8) -->
-<!-- calendR(year = 2022, month = 02,        # Año y mes -->
-<!--         start = "M",                   # Empezar la semana en lunes -->
-<!--         text = c("Ev-Entrada","Fec íímite del taller","1Parcial"), -->
-<!--         text.pos = c(07,18,25),       # Días en los que poner los textos -->
-<!--         text.size = 3.5,               # Tamaño de fuente de los textos -->
-<!--         text.col = 2, -->
-<!--         special.days =  c(07,18,25), -->
-<!--         special.col = rgb(0, 0, 1,  alpha = 0.25),) -->
-<!-- ``` -->
-<!-- ```{r echo=FALSE, message=FALSE} -->
-<!-- library(calendR) -->
-<!-- # calendR() -->
-<!-- # calendR(year = 2020, month =8) -->
-<!-- calendR(year = 2022, month = 03,        # Año y mes -->
-<!--         start = "M",                   # Empezar la semana en lunes -->
-<!--         text = c("Fec íímite del taller","2Parcial"), -->
-<!--         text.pos = c(18,25),       # Días en los que poner los textos -->
-<!--         text.size = 3.5,               # Tamaño de fuente de los textos -->
-<!--         text.col = 2, -->
-<!--         special.days =  c(18,25), -->
-<!--         special.col = rgb(0, 0, 1,  alpha = 0.25),) -->
-<!-- ``` -->
-<!-- ```{r echo=FALSE, message=FALSE} -->
-<!-- library(calendR) -->
-<!-- # calendR() -->
-<!-- # calendR(year = 2020, month =8) -->
-<!-- calendR(year = 2022, month = 04,        # Año y mes -->
-<!--         start = "M",                   # Empezar la semana en lunes -->
-<!--         text = c("Fec íímite del taller","3Parcial"), -->
-<!--         text.pos = c(22,29),       # Días en los que poner los textos -->
-<!--         text.size = 3.5,               # Tamaño de fuente de los textos -->
-<!--         text.col = 2, -->
-<!--         special.days =  c(22,29), -->
-<!--         special.col = rgb(0, 0, 1,  alpha = 0.25),) -->
-<!-- ``` -->
-<!-- ```{r echo=FALSE, message=FALSE} -->
-<!-- library(calendR) -->
-<!-- # calendR() -->
-<!-- # calendR(year = 2020, month =8) -->
-<!-- calendR(year = 2022, month = 05,        # Año y mes -->
-<!--         start = "M",                   # Empezar la semana en lunes -->
-<!--         text = c("Fec íímite del taller"), -->
-<!--         text.pos = c(28),       # Días en los que poner los textos -->
-<!--         text.size = 3.5,               # Tamaño de fuente de los textos -->
-<!--         text.col = 2, -->
-<!--         special.days =  c(28), -->
-<!--         special.col = rgb(0, 0, 1,  alpha = 0.25),) -->
-<!-- ``` -->
-<!-- ```{r echo=FALSE, message=FALSE} -->
-<!-- library(calendR) -->
-<!-- # calendR() -->
-<!-- # calendR(year = 2020, month =8) -->
-<!-- calendR(year = 2022, month = 06,        # Año y mes -->
-<!--         start = "M",                   # Empezar la semana en lunes -->
-<!--         text = c("4Pacial"), -->
-<!--         text.pos = c(03),       # Días en los que poner los textos -->
-<!--         text.size = 3.5,               # Tamaño de fuente de los textos -->
-<!--         text.col = 2, -->
-<!--         special.days =  c(03), -->
-<!--         special.col = rgb(0, 0, 1,  alpha = 0.25),) -->
-<!-- ``` -->
+<p><br></br></p>
+<div class="definition">
+<p><span id="def:unnamed-chunk-27" class="definition"><strong>Definición 4.1  </strong></span>Sea <span class="math inline">\(f(x,y)\)</span> definida en una región <span class="math inline">\(D\)</span> que contiene al punto <span class="math inline">\((a,b)\)</span>. Entonces</p>
+<p>(1.) <span class="math inline">\(f(a,b)\)</span> es un valor máximo local de <span class="math inline">\(f\)</span> si <span class="math inline">\(f(a,b) \geq f(x,y)\)</span> para todos los puntos del dominio <span class="math inline">\((x,y)\)</span> un disco abirto con centro en <span class="math inline">\((a,b)\)</span></p>
+<p>(2.) <span class="math inline">\(f(a,b)\)</span> es un valor mínimo local de <span class="math inline">\(f\)</span> si <span class="math inline">\(f(a,b) \leq f(x,y)\)</span> para todos los puntos del dominio <span class="math inline">\((x,y)\)</span> un disco abirto con centro en <span class="math inline">\((a,b)\)</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1028\)</span></p>
 </div>
-<div id="video-motivacional" class="section level2 hasAnchor" number="0.3">
-<h2><span class="header-section-number">0.3</span> Video motivacional<a href="index.html#video-motivacional" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>Todos tenemos un matemático interno</strong></p>
-<p>Título del video en <strong>youTube</strong>:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BbA5dpS4CcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p>Las matemáticas nos hacen libres y menos manipulables. <a href="https://www.youtube.com/watch?v=BbA5dpS4CcI">Página Web</a>.</p>
 <p><br></br></p>
-<p><strong>Así ve el mundo un matemático</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eAcf73ulv9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p>Así ve el mundo un matemático <a href="https://www.youtube.com/watch?v=eAcf73ulv9E">Página Web</a></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigMaxMinA02"></span>
+<img src="images/GrafMaxMin_A2.png" alt="Criterio para determinar  máximo y mínimo local geometricamente [Imagen tomada de [@thomas2003thomas] pág $1028$]" width="65%" />
+<p class="caption">
+Figura 4.2: Criterio para determinar máximo y mínimo local geometricamente [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1028\)</span>]
+</p>
+</div>
 <p><br></br></p>
-<p><strong>El tipo que te convencerá de que las matemáticas son la profesión del futuro</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NILudp6hti8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-28" class="theorem"><strong>Teorema 4.1  </strong></span>Si <span class="math inline">\(f(x,y)\)</span> tiene un valor máximo o mínimo local en un punto interior <span class="math inline">\((a,b)\)</span> de su dominio, y si las primeras derivadas parciales existen en el punto, entonces</p>
+<p><span class="math display">\[
+f_{x}(a,b)=0 \qquad  \qquad \text{ y } \qquad  \qquad f_{y}(a,b)=0
+\]</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1028\)</span></p>
+</div>
 <p><br></br></p>
-<p><strong>Neil Degrasse: Los responsables de enseñar ciencia a los niños no tienen ni idea de lo que es</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CVe8narE2PI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<div class="definition">
+<p><span id="def:unnamed-chunk-29" class="definition"><strong>Definición 4.2  </strong></span>Un punto interior del dominio de una función <span class="math inline">\(f(x,y)\)</span> donde <span class="math inline">\(f_x\)</span> y <span class="math inline">\(f_y\)</span> se anulan, o bien donde alguna de estas derivadas no existen, es un punto crítico de <span class="math inline">\(f\)</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1029\)</span></p>
+</div>
 <p><br></br></p>
-<p><strong>Cuando ya no esté: Neil Degrasse</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MmHsKnjgGC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<div class="definition">
+<p><span id="def:unnamed-chunk-30" class="definition"><strong>Definición 4.3  </strong></span>Una función diferenciable <span class="math inline">\(f(x,y)\)</span> tiene un punto silla en un punto crítico <span class="math inline">\((a,b)\)</span> si en cada disco abierto con centro en <span class="math inline">\((a,b)\)</span> existen punto del dominio <span class="math inline">\((x,y)\)</span> donde <span class="math inline">\(f(x,y)&gt;f(a,b)\)</span>, y puntos del dominio <span class="math inline">\((x,y)\)</span> donde <span class="math inline">\(f(x,y)&lt;f(a,b)\)</span>. El punto correspondiente <span class="math inline">\((a,b,f(a,b))\)</span> sobre la superficie <span class="math inline">\(z=f(x,y)\)</span> se conoce como punto silla de la superficie.</p>
+<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1029\)</span></p>
+</div>
 <p><br></br></p>
-<p><strong>Jack Andraka - Ingredientes clave para innovar</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lFgQszLE6vM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p><br></br></p>
-<p><strong>Dan Kaminski: En internet hay siete llaves de seguridad y yo tengo una de ellas</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B-icPvF3RG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-31" class="theorem"><strong>Teorema 4.2  </strong></span>Suponga que <span class="math inline">\(f(x,y)\)</span> y sus primeras y segundas derivadas parciales son continuas en un disco con centro en <span class="math inline">\((a,b)\)</span> y que <span class="math inline">\(f_{x}(a,b)=f_{y}(a,b)=0\)</span>. Entonces</p>
+<p>(1.) <span class="math inline">\(f\)</span> tiene un máximo local en <span class="math inline">\((a,b)\)</span>, si <span class="math inline">\(f_{xx}&lt;0\)</span> y <span class="math inline">\(f_{xx}f_{yy}-\left(f_{xy}\right)^2&gt;0\)</span> en <span class="math inline">\((a,b)\)</span></p>
+<p>(2.) <span class="math inline">\(f\)</span> tiene un mínimo local en <span class="math inline">\((a,b)\)</span>, si <span class="math inline">\(f_{xx}&gt;0\)</span> y <span class="math inline">\(f_{xx}f_{yy}-\left(f_{xy}\right)^2&gt;0\)</span> en <span class="math inline">\((a,b)\)</span></p>
+<p>(3.) <span class="math inline">\(f\)</span> tiene un punto silla en <span class="math inline">\((a,b)\)</span>, si <span class="math inline">\(f_{xx}f_{yy}-\left(f_{xy}\right)^2&lt;0\)</span> en <span class="math inline">\((a,b)\)</span></p>
+<p>(4.) El criterio no es concluyente en <span class="math inline">\((a,b)\)</span>, si <span class="math inline">\(f_{xx}f_{yy}-\left(f_{xy}\right)^2=0\)</span> en <span class="math inline">\((a,b)\)</span>. En este caso, debemos buscar otra forma de determinar el comportamiento de <span class="math inline">\(f\)</span> en <span class="math inline">\((a,b)\)</span>.</p>
+</div>
 <p><br></br></p>
 </div>
-<div id="página-para-reforzar-conceptos-básicos" class="section level2 hasAnchor" number="0.4">
-<h2><span class="header-section-number">0.4</span> Página para reforzar conceptos básicos<a href="index.html#página-para-reforzar-conceptos-básicos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>El siguiente link es una página para repasar conceptos basicos que requieras en tu formación. <a href="https://www.thatquiz.org/">Página Web</a></p>
+<div id="herramienta-para-obtener-el-hessiano-2por2" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Herramienta para obtener el Hessiano 2por2<a href="metodos-maximosYminimos.html#herramienta-para-obtener-el-hessiano-2por2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Esta es una aplicación para obtener el valor de el Hessiano en un punto <span class="math inline">\((a,b)\)</span> de una función <span class="math inline">\(f(x,y)\)</span>, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/ebw5zjfr" class="uri">https://www.geogebra.org/classic/ebw5zjfr</a>) la elaboro usando geogebra.</p>
+<div align="center">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementMaxMinA01">
+
+</div>
+<script>  
+       var ggbAppMaxMinA01 = new GGBApplet({"material_id":"ebw5zjfr",
+       "width": 800,
+       "height": 600,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppMaxMinA01.inject('ggb-elementMaxMinA01');
+      });
+</script>
+</div>
+<p><br></br></p>
+<p><a href="https://estradajohncasa16feb2023.shinyapps.io/PlanoTangenteSuperficieVa1/">Superficie y plano tangente con criterio de segundas derivadas parciales</a></p>
+<p><br></br></p>
+</div>
+<div id="método-de-los-multiplicadore-de-lagrange-para-determinar-máximos-o-mínimos" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Método de los multiplicadore de Lagrange para determinar máximos o mínimos<a href="metodos-maximosYminimos.html#método-de-los-multiplicadore-de-lagrange-para-determinar-máximos-o-mínimos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-32" class="theorem"><strong>Teorema 4.3  </strong></span>Sean <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> funciones con primeras derivadas parciales continuas, y tales que <span class="math inline">\(f\)</span> tiene un extremo en un punto <span class="math inline">\((x_0,y_0)\)</span> sobre la curva suave de restricción <span class="math inline">\(g(x,y)=c\)</span>. Si <span class="math inline">\(\nabla{g(x_0,y_0)} \neq 0\)</span>, entonces existe un número real <span class="math inline">\(\lambda\)</span> tal que</p>
+<p><span class="math display">\[
+\nabla{f(x_0,y_0)}=\lambda \nabla{g(x_0,y_0)}
+\]</span></p>
+<p>Tomada de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(971\)</span></p>
+</div>
+<p><br></br></p>
+<p>Sean <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> funciones que satisfecen las hipótesis del teorema de Lagrange, y sea <span class="math inline">\(f\)</span> una función que tiene un mínimo o un máximo sujeto a la restircción <span class="math inline">\(g(x,y)=c\)</span>. Para hallar el mínimo o el máximo de <span class="math inline">\(f\)</span>, seguir los pasos descritos a continuación</p>
+<p>(1.) Resolver simultáneamente las ecuaciones</p>
+<p><span class="math display">\[
+  \ \ \ \nabla{f(x,y)}=\lambda \nabla{g(x,y)} \ \qquad \ \text{ y } \ \qquad \ g(x,y)=c
+\]</span></p>
+<p>En otros términos resolver el sistema de ecuaciones no lineales siguiente:</p>
+<p><span class="math display">\[
+(a) \ \ f_{x}(x,y)={\lambda}g_{x}(x,y)\\
+(b) \ \ f_{y}(x,y)={\lambda}g_{y}(x,y)\\
+(c) \ \ \ \qquad \ \ \ \ \ \ g(x,y)=c
+\]</span></p>
+<p>(2.) Evaluar <span class="math inline">\(f\)</span> en cada punto solución obtenido en el primer paso. El valor mayor da el máximo de <span class="math inline">\(f\)</span> sujeto a la restricción <span class="math inline">\(g(x,y)=c\)</span>, y el valor menor da el mínimo de <span class="math inline">\(f\)</span> sujeto a la restricción <span class="math inline">\(g(x,y)=c\)</span></p>
+<p>Tomada de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(971\)</span></p>
+<p><br></br></p>
+<div class="example">
+<p><span id="exm:unnamed-chunk-33" class="example"><strong>Ejemplo 4.1  </strong></span>Hallar el valor máximo de <span class="math inline">\(f(x,y)=4xy\)</span> donde <span class="math inline">\(x&gt;0\)</span> y <span class="math inline">\(y&gt;0\)</span>, sujeto a la restricción <span class="math inline">\(x^2/9+y^2/16=1\)</span></p>
+</div>
+<p><br></br></p>
+<p>Sea</p>
+<p><span class="math display">\[
+g(x,y)=\dfrac{x^2}{9}+\dfrac{y^2}{16}=1
+\]</span></p>
+<p>Igualando <span class="math inline">\(\nabla{f(x,y)}=4yi+4xj\)</span>, y <span class="math inline">\(\lambda \nabla{g(x,y)}=(2{\lambda}x/9)i+({\lambda}y/8)j\)</span>, se puede obtener el sistema de ecuaciones siguiente:</p>
+<span class="math display">\[\begin{matrix} (1) &amp; 4y=\dfrac{2x\lambda}{9} \\ (2) &amp; 4x=\dfrac{y\lambda}{8} \\ (3) &amp; \dfrac{x^2}{9}+\dfrac{y^2}{16}=1 \end{matrix}\]</span>
+<p>De la primera ecuación, se obtiene <span class="math inline">\(\lambda=18y/x\)</span>, que sustituido en la segunda ecuación da:</p>
+<p><span class="math display">\[
+4x=\dfrac{1}{8}\left(\dfrac{18y}{x}\right)y\\
+x^2=\dfrac{9}{16}y^2
+\]</span></p>
+<p>Sustituyendo en la tercera ecuación <span class="math inline">\(x^2\)</span> por este valor se tiene:</p>
+<p><span class="math display">\[
+\dfrac{1}{9}\left(\dfrac{9}{16}y^2\right)+\dfrac{1}{16}y^2=1\\
+y^2=8\\
+y=\pm 2\sqrt(2)
+\]</span></p>
+<p>Como se requiere que <span class="math inline">\(y&gt;0\)</span>, se elige el valor positivo para <span class="math inline">\(y\)</span>. Ahora se halla el valor para <span class="math inline">\(x\)</span> como:</p>
+<p><span class="math display">\[
+x^2=\dfrac{9}{16}y^2\\
+x^2=\dfrac{9}{16}(8)=\dfrac{9}{2}\\
+x=\dfrac{3}{\sqrt{2}}
+\]</span></p>
+<p>Por lo tanto, el valor máximo de <span class="math inline">\(f\)</span> es</p>
+<p><span class="math display">\[
+\left. f(x,y)=4xy \right]_{(3/{\sqrt{2}},2\sqrt{2})} \qquad   \Longleftrightarrow \qquad  f\left(\dfrac{3}{\sqrt{2}},2\sqrt{2}\right)=4\left(\dfrac{3}{\sqrt{2}}\right)(2\sqrt{2})=24
+\]</span></p>
+<p>Esta solución puede verse en <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(973\)</span></p>
+<p><br></br></p>
+<div class="example">
+<p><span id="exm:unnamed-chunk-34" class="example"><strong>Ejemplo 4.2  </strong></span>Sea <span class="math inline">\(T(x,y,z)=20+2x+2y+z^2\)</span> la temperatura en cada punto en una esfera <span class="math inline">\(x^2+y^2+z^2=11\)</span>. Hallar las temperaturas extremas en la curva formada por la intersección del plano <span class="math inline">\(x+y+z=3\)</span> y la esfera.</p>
+</div>
+<p><br></br></p>
+
+</div>
+</div>
+<h3>Referencias<a href="referencias.html#referencias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-larson2006calculo" class="csl-entry">
+Larson, Ron. 2006. <em>C<span>á</span>lculo de Varias Variables</em>. QA303. l3718 2004.
+</div>
+<div id="ref-thomas2003thomas" class="csl-entry">
+Thomas, George Brinton, Ross L Finney, Maurice D Weir, and Frank R Giordano. 2003. <em>Thomas’ Calculus</em>. Addison-Wesley Reading.
 </div>
 </div>
             </section>
@@ -483,8 +480,8 @@ según se avanza en el desarrollo temático del curso.</p></li>
           </div>
         </div>
       </div>
-
-<a href="desarrollo-temático.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="metodos-derivacion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="integrales-simples.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

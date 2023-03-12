@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Curso de Matemáticas Tres UCES</title>
+  <title>Capítulo 8 Métodos de solución para Ecuaciones Diferenciales (EDO) | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Curso de Matemáticas Tres UCES" />
+  <meta property="og:title" content="Capítulo 8 Métodos de solución para Ecuaciones Diferenciales (EDO) | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Curso de Matemáticas Tres UCES" />
+  <meta name="twitter:title" content="Capítulo 8 Métodos de solución para Ecuaciones Diferenciales (EDO) | Curso de Matemáticas Tres UCES" />
   
   <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="desarrollo-temático.html"/>
+<link rel="prev" href="integrales-triples.html"/>
+<link rel="next" href="referencias.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -309,173 +309,415 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Curso de Matemáticas Tres UCES</h1>
-<p class="author"><em>Carlos Andrés Escobar Guerra - Juan Alberto Arias Quiceno - John Jairo Estrada Alvarez</em></p>
-<p class="date"><em>2023-03-11</em></p>
-</div>
-<div id="prerrequisitos" class="section level1 unnumbered hasAnchor">
-<h1>Prerrequisitos<a href="index.html#prerrequisitos" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<!-- https://www.geogebra.org/classic/yxwbfgbk -->
-<!-- https://www.geogebra.org/classic/py3nxdwq -->
-<p>El curso de matemáticas tres sólo tiene los siguientes prerrequisitios</p>
-<p><img src="MatematicasTres_files/figure-html/Mate3A0-1.png" width="36%" style="display: block; margin: auto;" /></p>
-<!-- <img src="images/GImagen1.png" width="350" height="460" alt="Buy from Amazon" class="cover" /> -->
-<!-- <div align="center"><img src="images/cover.png" width="350" height="460" alt="Buy from Amazon" class="cover" /></div> -->
+<div id="metodos-EDO" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">Capítulo 8</span> Métodos de solución para Ecuaciones Diferenciales (EDO)<a href="metodos-EDO.html#metodos-EDO" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<!-- <a href="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg"><div align="center"><img src="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg" width="350" height="460" alt="Buy from Amazon" class="cover" /></div></a> -->
+<!-- <div align="center"> -->
+<!-- <figure> -->
+<!--   <img src="https://www.lifeder.com/wp-content/uploads/2017/01/Srinivasa-Ramanujan.jpg" -->
+<!--        alt="Srinivasa Ramanujan (1887-1920); -->
+<!--            nacionalidad india famoso por la constante de Landau-Ramanujan" width="400" -->
+<!--        height="341"> -->
+<!--   <figcaption>Srinivasa Ramanujan (1887-1920).</figcaption> -->
+<!-- </figure> -->
+<!-- </div> -->
+<p><br></br></p>
+<!-- ## Significado geométrico de máximo y mínimo local -->
+<!-- ```{r FigMaxMinA01, fig.cap="Concepto de máximo y mínimo local geometricamente [Imagen tomada de [@thomas2003thomas] pág $1028$]", fig.align='center' ,echo=FALSE, message=FALSE,  warning=FALSE, out.width = "65%"} -->
+<!-- knitr::include_graphics("images/GrafMaxMin_A1.png") -->
+<!-- ``` -->
+<!-- Esta es una aplicación para obtener el valor de el Hessiano en un punto $(a,b)$ de una función $f(x,y)$, el Autor:John Jairo Estrada (https://www.geogebra.org/classic/ebw5zjfr) la elaboro usando geogebra. -->
+<!-- <div align="center"> -->
 <!-- <meta name=viewport content="width=device-width,initial-scale=1"> -->
 <!-- <meta charset="utf-8"/> -->
 <!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
-<!-- <div id="ggb-elementSuperficieJJA01"></div> -->
-<!-- <script> -->
-<!--        var ggbAppSuperficieJJA01 = new GGBApplet({"material_id":"yxwbfgbk", -->
-<!--        "width": 700, -->
-<!--        "height": 460, -->
+<!-- <div id="ggb-elementMaxMinA01"></div>  -->
+<!-- <script>   -->
+<!--        var ggbAppMaxMinA01 = new GGBApplet({"material_id":"ebw5zjfr", -->
+<!--        "width": 800, -->
+<!--        "height": 600, -->
 <!--        "showToolBar": false, -->
 <!--        "showAlgebraInput": false, -->
 <!--        "showMenuBar": false }, -->
 <!--        true); -->
-<!--          window.addEventListener("load", function() { -->
-<!--            ggbAppSuperficieJJA01.inject('ggb-elementSuperficieJJA01'); -->
+<!--          window.addEventListener("load", function() {   -->
+<!--            ggbAppMaxMinA01.inject('ggb-elementMaxMinA01'); -->
 <!--       }); -->
 <!-- </script> -->
-<div id="comportamentales" class="section level2 hasAnchor" number="0.1">
-<h2><span class="header-section-number">0.1</span> Comportamentales<a href="index.html#comportamentales" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li><p>Tener disposición para hacer silencio y generar un buen ambiente de escucha en el aula de clase.</p></li>
-<li><p>Tener la capacidad de acatar sugerencias para mejorar las técnicas de estudio ya adquiridas en procesos educativos pasados.</p></li>
-<li><p>Saber tomar nota mientras el profesor explica los temas de ese día.</p></li>
-<li><p>Repasar las notas de clase y complementar con la lectura del texto guía
-según se avanza en el desarrollo temático del curso.</p></li>
-</ul>
+<!-- </div> -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEDOA01"></span>
+<img src="images/EsquemaModeladoEDO_A1.png" alt="Modelado matemático [Imagen tomada de [@stewart2020calculus] pág $24$]" width="110%" />
+<p class="caption">
+Figura 8.1: Modelado matemático [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(24\)</span>]
+</p>
 </div>
-<div id="evaluativos" class="section level2 hasAnchor" number="0.2">
-<h2><span class="header-section-number">0.2</span> Evaluativos<a href="index.html#evaluativos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Tener los implementos básicos para una evaluación:</p>
-<ul>
-<li><p>Lapicero.</p></li>
-<li><p>Lapiz.</p></li>
-<li><p>Borrador.</p></li>
-<li><p>Calculadora.</p></li>
-<li><p>Todos los celulares apagados.</p></li>
-<li><p>Ir al baño antes de iniciar la evalualción.</p></li>
-<li><p>No hay preguntas en el desarrollo de la evaluación.</p></li>
-<li><p>Todas la maletas deben estar adelante.</p></li>
-</ul>
-<!-- ## Fechas de evaluación  -->
-<!-- * Evaluación de entrada **Virtual** (10 $\%$) - **Fecha: Lunes $07$ de Febrero** -->
-<!-- * Primer parcial **Presencial** (17.5 $\%$) - **Fecha: Viernes $25$ de Febrero** -->
-<!-- * Segundo Parcial **Virtual** (17.5 $\%$) - **Fecha: Viernes $25$ de Marzo** -->
-<!-- * Tercer Parcial **Presencial** (17.5 $\%$) - **Fecha: Viernes $29$ de Abril** -->
-<!-- * Fin de clases 29 de Mayo -->
-<!-- * Cuarto Parcial **Virtual** (ó Parcial Final) (17.5 $\%$) - **Fecha: Viernes $03$ de Junio** -->
-<!-- ### Talleres evaluativos -->
-<!-- * Primer Taller (5 $\%$) - **Fecha: Viernes $18$ de Febrero** -->
-<!-- * Segundo Taller (5 $\%$) - **Fecha: Viernes $18$ de Marzo** -->
-<!-- * Tercer Taller (5 $\%$) - **Fecha: Viernes $22$ de Abril** -->
-<!-- * Cuarto Taller (5 $\%$) - **Fecha: Viernes $28$ de Mayo** -->
-<!-- ```{r echo=FALSE, message=FALSE} -->
-<!-- library(calendR) -->
-<!-- # calendR() -->
-<!-- # calendR(year = 2020, month =8) -->
-<!-- calendR(year = 2022, month = 02,        # Año y mes -->
-<!--         start = "M",                   # Empezar la semana en lunes -->
-<!--         text = c("Ev-Entrada","Fec íímite del taller","1Parcial"), -->
-<!--         text.pos = c(07,18,25),       # Días en los que poner los textos -->
-<!--         text.size = 3.5,               # Tamaño de fuente de los textos -->
-<!--         text.col = 2, -->
-<!--         special.days =  c(07,18,25), -->
-<!--         special.col = rgb(0, 0, 1,  alpha = 0.25),) -->
-<!-- ``` -->
-<!-- ```{r echo=FALSE, message=FALSE} -->
-<!-- library(calendR) -->
-<!-- # calendR() -->
-<!-- # calendR(year = 2020, month =8) -->
-<!-- calendR(year = 2022, month = 03,        # Año y mes -->
-<!--         start = "M",                   # Empezar la semana en lunes -->
-<!--         text = c("Fec íímite del taller","2Parcial"), -->
-<!--         text.pos = c(18,25),       # Días en los que poner los textos -->
-<!--         text.size = 3.5,               # Tamaño de fuente de los textos -->
-<!--         text.col = 2, -->
-<!--         special.days =  c(18,25), -->
-<!--         special.col = rgb(0, 0, 1,  alpha = 0.25),) -->
-<!-- ``` -->
-<!-- ```{r echo=FALSE, message=FALSE} -->
-<!-- library(calendR) -->
-<!-- # calendR() -->
-<!-- # calendR(year = 2020, month =8) -->
-<!-- calendR(year = 2022, month = 04,        # Año y mes -->
-<!--         start = "M",                   # Empezar la semana en lunes -->
-<!--         text = c("Fec íímite del taller","3Parcial"), -->
-<!--         text.pos = c(22,29),       # Días en los que poner los textos -->
-<!--         text.size = 3.5,               # Tamaño de fuente de los textos -->
-<!--         text.col = 2, -->
-<!--         special.days =  c(22,29), -->
-<!--         special.col = rgb(0, 0, 1,  alpha = 0.25),) -->
-<!-- ``` -->
-<!-- ```{r echo=FALSE, message=FALSE} -->
-<!-- library(calendR) -->
-<!-- # calendR() -->
-<!-- # calendR(year = 2020, month =8) -->
-<!-- calendR(year = 2022, month = 05,        # Año y mes -->
-<!--         start = "M",                   # Empezar la semana en lunes -->
-<!--         text = c("Fec íímite del taller"), -->
-<!--         text.pos = c(28),       # Días en los que poner los textos -->
-<!--         text.size = 3.5,               # Tamaño de fuente de los textos -->
-<!--         text.col = 2, -->
-<!--         special.days =  c(28), -->
-<!--         special.col = rgb(0, 0, 1,  alpha = 0.25),) -->
-<!-- ``` -->
-<!-- ```{r echo=FALSE, message=FALSE} -->
-<!-- library(calendR) -->
-<!-- # calendR() -->
-<!-- # calendR(year = 2020, month =8) -->
-<!-- calendR(year = 2022, month = 06,        # Año y mes -->
-<!--         start = "M",                   # Empezar la semana en lunes -->
-<!--         text = c("4Pacial"), -->
-<!--         text.pos = c(03),       # Días en los que poner los textos -->
-<!--         text.size = 3.5,               # Tamaño de fuente de los textos -->
-<!--         text.col = 2, -->
-<!--         special.days =  c(03), -->
-<!--         special.col = rgb(0, 0, 1,  alpha = 0.25),) -->
-<!-- ``` -->
+<div id="definición-para-una-ecuación-diferencial" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Definición para una Ecuación Diferencial<a href="metodos-EDO.html#definición-para-una-ecuación-diferencial" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="definition">
+<p><span id="def:unnamed-chunk-98" class="definition"><strong>Definición 8.1  </strong></span>Es una ecuación que contiene una función desconocida <span class="math inline">\(y\)</span> y algunas de sus derivadas.
+Un ejemplo de ecuación diferencial es el modelado matemático que con frecuencia toma está forma. Esto no es sorprendente, porque en los problemas del mundo real, es común observar que ocurran cambios y se desea predecir el comportamiento futuro con respecto a como cambian los valores actuales.</p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(24\)</span> y <span class="math inline">\(567\)</span></p>
 </div>
-<div id="video-motivacional" class="section level2 hasAnchor" number="0.3">
-<h2><span class="header-section-number">0.3</span> Video motivacional<a href="index.html#video-motivacional" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>Todos tenemos un matemático interno</strong></p>
-<p>Título del video en <strong>youTube</strong>:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BbA5dpS4CcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p>Las matemáticas nos hacen libres y menos manipulables. <a href="https://www.youtube.com/watch?v=BbA5dpS4CcI">Página Web</a>.</p>
+<div id="ejemplos-de-ecuaciones-diferenciales" class="section level3 hasAnchor" number="8.1.1">
+<h3><span class="header-section-number">8.1.1</span> Ejemplos de ecuaciones diferenciales<a href="metodos-EDO.html#ejemplos-de-ecuaciones-diferenciales" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Modelos de crecimiento poblacional</strong></p>
+<p><span class="math display">\[
+\boxed{
+\dfrac{dP}{dt}=kP}
+\]</span>
+donde <span class="math inline">\(t\)</span> represente al tiempo (variable independiente), y <span class="math inline">\(P\)</span> representa el número de individuos en la población (variable dependiente).</p>
 <p><br></br></p>
-<p><strong>Así ve el mundo un matemático</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eAcf73ulv9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p>Así ve el mundo un matemático <a href="https://www.youtube.com/watch?v=eAcf73ulv9E">Página Web</a></p>
+<p><strong>Modelo logístico</strong></p>
+<p>Existe evidencia considerable para apoyar la teoría de que para <strong>algunas especies</strong> hay una población mínima <span class="math inline">\(m\)</span> tal que las especies se extinguirán si el tamaño de la población cae por debajo de <span class="math inline">\(m\)</span>.</p>
+<p><span class="math display">\[
+\boxed{
+\dfrac{dP}{dt}=kP\left(1-\dfrac{Ṕ}{K}\right)\left(1-\dfrac{m}{P}\right)}
+\]</span></p>
+<p>donde <span class="math inline">\(P\)</span> es creciente si <span class="math inline">\(m&lt;P&lt;K\)</span>, y <span class="math inline">\(P\)</span> es decreciente si <span class="math inline">\(0&lt;P&lt;m\)</span>. Recordar que su <strong>capacidad de soporte</strong> es <span class="math inline">\(K\)</span>.</p>
 <p><br></br></p>
-<p><strong>El tipo que te convencerá de que las matemáticas son la profesión del futuro</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NILudp6hti8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<p><strong>Modelo de la pesca para el hipogloso del Pacífico</strong></p>
+<p>Esta pesca ha sido representada por</p>
+<p><span class="math display">\[
+\boxed{
+\dfrac{dy}{dt}=ky\left(1-\dfrac{y}{K}\right)}
+\]</span></p>
+<p>donde <span class="math inline">\(y(t)\)</span> es la biomasa (la masa total de los integrantes de la población) en kilogramos en el tiempo <span class="math inline">\(t\)</span> (medido en años), la capacidad de soporte se estima como <span class="math inline">\(K=8 \times 10^{7}kg\)</span>, y <span class="math inline">\(k=0.71\)</span> por año.</p>
 <p><br></br></p>
-<p><strong>Neil Degrasse: Los responsables de enseñar ciencia a los niños no tienen ni idea de lo que es</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CVe8narE2PI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<p><strong>Modelo depredador presa</strong></p>
+<p>Aquí <span class="math inline">\(R\)</span> respresenta la población de conejos, y <span class="math inline">\(W\)</span> representa la población de depredadores. El sistema de ecuaciones diferenciales que modela ambas poblaciones es:</p>
+<p><span class="math display">\[
+\begin{matrix}
+(1.) &amp;  \dfrac{dR}{dt}=kR-aRW \\
+(2.) &amp; \dfrac{dW}{dt}=-rW+bRW
+\end{matrix}
+\]</span></p>
+<p>donde <span class="math inline">\(k,r,a,b\)</span> son constantes positivas. Observe que el término <span class="math inline">\(-aRW\)</span> disminuye la rapidez de crecimiento natural de la presa, y el término <span class="math inline">\(bRW\)</span> incrementa la rapidez de crecimiento natural de los depredadores</p>
 <p><br></br></p>
-<p><strong>Cuando ya no esté: Neil Degrasse</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MmHsKnjgGC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<p><strong>Modelos de mezclas</strong></p>
+<p><span class="math display">\[
+\boxed{
+\dfrac{dy}{dt}=(\text{ proporción de entrada})-(\text{proporción de salida})}
+\]</span></p>
+<p><strong>Proporción de entrada</strong> es la relación a la que la sal entra al recipiente y <strong>proporción de salida</strong> es la relación a la que la sal sale del recipiente.</p>
 <p><br></br></p>
-<p><strong>Jack Andraka - Ingredientes clave para innovar</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lFgQszLE6vM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<p><strong>Modelos de la química</strong></p>
+<p>En una reacción química elemental, las moléculas simples de dos reactivos <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> forman una molécula del producto <span class="math inline">\(C\)</span>:</p>
+<p><span class="math display">\[
+A+B \ \longmapsto \ C
+\]</span>
+La ley de acción de masas establece que la velocidad de reacción es proporcional al producto de las concentraciones de <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span>:</p>
+<p><span class="math display">\[
+\boxed{
+\dfrac{d[C]}{dt}=k[A][B]}
+\]</span></p>
 <p><br></br></p>
-<p><strong>Dan Kaminski: En internet hay siete llaves de seguridad y yo tengo una de ellas</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B-icPvF3RG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<p><strong>Modelos de la ley de Newton para la gravitación universal</strong></p>
+<p>Sabemos que la <span class="math inline">\(F\)</span> sobre un objeto de masa <span class="math inline">\(m\)</span> que ha sido proyectado verticalmente hacia arriba desde l superficie terrestre es:</p>
+<p><span class="math display">\[
+F=\dfrac{mgR^2}{(x+R)^2}
+\]</span></p>
+<p>donde <span class="math inline">\(x=x(t)\)</span> es la distancia del objeto arriba de la superficie en el tiempo <span class="math inline">\(t\)</span>, <span class="math inline">\(R\)</span> es el radio de la Tierra y <span class="math inline">\(g\)</span> es la aceleración debida a la gravedad. Por la segundo ley de Newton <span class="math inline">\(F=ma=m(dv/dt)\)</span> y, por lo tanto,</p>
+<p><span class="math display">\[
+\boxed{
+m\dfrac{dv}{dt}=-\dfrac{mgR^2}{(x+R)^2}}
+\]</span></p>
 <p><br></br></p>
 </div>
-<div id="página-para-reforzar-conceptos-básicos" class="section level2 hasAnchor" number="0.4">
-<h2><span class="header-section-number">0.4</span> Página para reforzar conceptos básicos<a href="index.html#página-para-reforzar-conceptos-básicos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>El siguiente link es una página para repasar conceptos basicos que requieras en tu formación. <a href="https://www.thatquiz.org/">Página Web</a></p>
+</div>
+<div id="método-para-separar-variables" class="section level2 hasAnchor" number="8.2">
+<h2><span class="header-section-number">8.2</span> Método para separar variables<a href="metodos-EDO.html#método-para-separar-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="definition">
+<p><span id="def:unnamed-chunk-99" class="definition"><strong>Definición 8.2  </strong></span>Una ecuación diferencial de la forma:</p>
+<p><span class="math display">\[
+\dfrac{dy}{dx}=f(x,y)
+\]</span>
+Se dice separable si <span class="math inline">\(f\)</span> puede ser expresado como</p>
+<p><span class="math display">\[
+f(x,y)=\dfrac{g(x)}{h(y)} \qquad \text{ ó } \qquad f(x,y)=g(x).h(y)
+\]</span></p>
+<p>Además</p>
+<p><span class="math display">\[
+\dfrac{dy}{dx}=f(x,y) \qquad \text{ es equivalente a } \qquad H(y)dy=G(x)dx
+\]</span></p>
+</div>
+<p><br></br></p>
+<div id="ejemplo1-ec-diferencial-separable" class="section level3 hasAnchor" number="8.2.1">
+<h3><span class="header-section-number">8.2.1</span> Ejemplo1 Ec Diferencial separable<a href="metodos-EDO.html#ejemplo1-ec-diferencial-separable" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-100" class="example"><strong>Ejemplo 8.1  </strong></span>Resuelva la ecuación diferencial</p>
+<p><span class="math display">\[
+\dfrac{dy}{dx}=\dfrac{x^2}{y^2}
+\]</span></p>
+<p>y determine el valor de la constante <span class="math inline">\(C\)</span> bajo la condición inicial <span class="math inline">\(y(0)=2\)</span>.</p>
+</div>
+<p><br></br></p>
+<p>Como la ecuación diferencial es separable, ya que <span class="math inline">\(f(x,y)=\dfrac{x^2}{y^2}\)</span> tiene la forma <span class="math inline">\(f(x,y)=\dfrac{g(x)}{h(y)}\)</span>, entonces se puede separar o reescribir en la forma:</p>
+<p><span class="math display">\[
+H(y)dy=G(x)dx  
+\]</span>
+Es decir:</p>
+<p><span class="math display">\[
+y^2dy=x^2dx  \qquad \text{ Se ve que la variable} \ \ y \ \ \text{ quedo del lado izquierdo,}\\
+\qquad \qquad \text{y a la} \ \ x \ \ \text{del lado derecho}
+\]</span><br />
+Integramos en ambos lados así:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqDifA01}
+\begin{split}
+\int{y^2dy} &amp;= \int{x^2dx}+ C\\
+\dfrac{x^3}{3} &amp; = \dfrac{y^3}{3}+C
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Esta forma de presentación para la solución de la EDO se conoce como:
+<span class="math display">\[
+\boxed{
+  \dfrac{x^3}{3} = \dfrac{y^3}{3}+C} \quad \text{Solución implícita}
+\]</span>
+Ahora se determinará el valor de <span class="math inline">\(C\)</span> usando la condición inicial <span class="math inline">\(y((0)=2\)</span>. Importante dar interpretación a la condición inicial así:</p>
+<p><span class="math display">\[
+y(0)=2 \qquad \text{ es equivalente a afirmar que } \qquad x=0, \quad \text{ y } \quad y=2
+\]</span></p>
+<p>Reemplazando estos valores de <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span> en la solución implícita se obtiene:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqDifA02}
+\begin{split}
+\dfrac{(0)^3}{3} &amp; = \dfrac{(2)^3}{3}+C\\
+0 &amp; =\dfrac{8}{3}+C\\
+\dfrac{-8}{3} &amp; =C
+\end{split}
+\end{equation}
+\]</span>
+Reemplazando en la solución implícita el valor obtenido para la constante <span class="math inline">\(C\)</span> tenemos:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqDifA03}
+\begin{split}
+\dfrac{x^3}{3} &amp; = \dfrac{y^3}{3}-\dfrac{8}{3}\\
+3.\left(\dfrac{x^3}{3}\right) &amp; =3.\left(\dfrac{y^3}{3}-\dfrac{8}{3}\right)\\
+x^3 &amp; = y^3-8\\
+x^3+8 &amp; = y^3\\
+\sqrt[3]{x^3+8} &amp; = y  \quad \text{esta presentación se conoce como solución explícita}
+\end{split}
+\end{equation}
+\]</span></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="ec-diferencial-lineal" class="section level2 hasAnchor" number="8.3">
+<h2><span class="header-section-number">8.3</span> Ec Diferencial lineal<a href="metodos-EDO.html#ec-diferencial-lineal" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="definition">
+<p><span id="def:unnamed-chunk-101" class="definition"><strong>Definición 8.3  </strong></span>Una ecuación diferencial se dice lineal si tiene la forma:</p>
+<p><span class="math display">\[
+\dfrac{dy}{dx}+P(x)y=Q(x)
+\]</span>
+donde <span class="math inline">\(P\)</span> y <span class="math inline">\(Q\)</span> son funciones continuas en un intervalo <span class="math inline">\(I\)</span>.</p>
+<p>Además la solución de toda ecuación lineal tiene la forma:</p>
+<p><span class="math display">\[
+y(x)=\dfrac{1}{F(x)}\left[\int{F(x)Q(x)dx+C}\right], \quad \text{ donde }  \quad F(x)=e^{\int{P(x)dx}}\\
+F \ \text{ se conoce como factor de integración. }
+\]</span></p>
+</div>
+<p><br></br></p>
+<div id="ejemplo1-mezclas" class="section level3 hasAnchor" number="8.3.1">
+<h3><span class="header-section-number">8.3.1</span> Ejemplo1 Mezclas<a href="metodos-EDO.html#ejemplo1-mezclas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://septiembreestradajohnjairo2021uces.shinyapps.io/EqDifUno/">Aplicación para resolver Mezclas</a></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo1-ec-dif-lineal" class="section level3 hasAnchor" number="8.3.2">
+<h3><span class="header-section-number">8.3.2</span> Ejemplo1 Ec Dif lineal<a href="metodos-EDO.html#ejemplo1-ec-dif-lineal" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-102" class="example"><strong>Ejemplo 8.2  </strong></span>Considere una población <span class="math inline">\(P=P(t)\)</span> con rapidez de nacimiento y de mortalidad constante <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(\beta\)</span>, respectivamente y una relación <span class="math inline">\(m\)</span> de migración constante, donde <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span>, y <span class="math inline">\(m\)</span> son constantes positivas. Considere que <span class="math inline">\(\alpha &gt; \beta\)</span>. En tal caso la relación de cambio de la población en el tiempo <span class="math inline">\(t\)</span> se representa mediante la ecuación diferencial lineal:
+<span class="math display">\[
+\dfrac{dP}{dt}=kP-m \qquad \text{donde } \qquad k=\alpha-\beta  
+\]</span></p>
+<p>Hallar la solución de esta ecuación que satisface la condición inicial <span class="math inline">\(P(0)=P_0\)</span>.</p>
+<p>tomada de <span class="citation">(<a href="#ref-zill2014calculo" role="doc-biblioref">Zill and Wright 2014</a>)</span> pág <span class="math inline">\(599\)</span> ejercicio <span class="math inline">\(13\)</span></p>
+</div>
+<p><br></br></p>
+<p><span class="math display">\[\begin{equation} \label{eqDifA04}
+\begin{split}
+\dfrac{dP}{dt} &amp; =kP-m\\
+\dfrac{dP}{dt}-kP &amp; =-m, \qquad \text{de donde}
+&amp;\\
+F(t)=e^{\int{-kdt}}=e^{-kt}; &amp; \qquad \qquad Q(t)=-m
+&amp; \\
+\text{Entonces} \qquad \qquad &amp; \qquad \qquad  \\
+P(t)= &amp;  \dfrac{1}{e^{-kt}}\left[\int{-e^{-kt}mdt}+C\right]\\
+P(t)= &amp;  \dfrac{me^{-kt}}{ke^{-kt}}+e^{kt}C\\
+P(t)= &amp;  \dfrac{m}{k}+e^{kt}C \qquad \text{Forma explícita}\\
+&amp; \\
+\text{Aplicando la condición inicial, se obtiene:} \qquad \qquad &amp; \qquad \qquad  \\
+P_0= &amp;  \dfrac{m}{k}+C\\
+P_0-\dfrac{m}{k} &amp; = C
+\end{split}
+\end{equation}\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo2-ec-dif-lineal" class="section level3 hasAnchor" number="8.3.3">
+<h3><span class="header-section-number">8.3.3</span> Ejemplo2 Ec Dif lineal<a href="metodos-EDO.html#ejemplo2-ec-dif-lineal" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-103" class="example"><strong>Ejemplo 8.3  </strong></span>Sea <span class="math inline">\(P(t)\)</span> el nivel de desempeño de alguien que aprende una habilidad como función de tiempo de capacitación <span class="math inline">\(t\)</span>. La gráfica de <span class="math inline">\(P\)</span> se llama curva de aprendizaje. Resolver la ecuación diferencial lineal</p>
+<p><span class="math display">\[
+\dfrac{dP}{dt}=k\left[M-P(t)\right], \qquad \text{Modelo razonable para el aprendizaje}
+\]</span>
+donde <span class="math inline">\(k\)</span> es una constante positiva.</p>
+<p>tomada de <span class="citation">(<a href="#ref-zill2014calculo" role="doc-biblioref">Zill and Wright 2014</a>)</span> pág <span class="math inline">\(607\)</span> ejercicio <span class="math inline">\(31\)</span></p>
+</div>
+<p><br></br></p>
+<p><span class="math display">\[\begin{equation} \label{eqDifA05}
+\begin{split}
+\dfrac{dP}{dt} &amp; =k\left[M-P(t)\right]\\
+&amp; = kM-kP(t)\\
+\dfrac{dP}{dt}+kP &amp; =kM, \qquad \text{de donde}
+&amp;\\
+F(t)=e^{\int{kdt}}=e^{kt}; &amp; \qquad \qquad Q(t)=kM
+&amp; \\
+\text{Entonces} \qquad \qquad &amp; \qquad \qquad  \\
+P(t)= &amp;  \dfrac{1}{e^{kt}}\left[\int{e^{kt}kMdt}+C\right]\\
+P(t)= &amp;  \dfrac{kM}{e^{kt}}\left[\int{e^{kt}dt}+C\right]\\
+P(t)= &amp;  \dfrac{kM}{e^{kt}}\left[\dfrac{e^{kt}}{k}+C\right]\\
+P(t)= &amp;  M+C_1 \qquad \text{Presentación de la solución en forma explícita}\\
+\end{split}
+\end{equation}\]</span></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="definición-de-transformada" class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> Definición de transformada<a href="metodos-EDO.html#definición-de-transformada" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-104" class="theorem"><strong>Teorema 8.1  </strong></span>Sea <span class="math inline">\(f\)</span> una función definida para <span class="math inline">\(t \geq 0\)</span>. Entonces se dice que la integral</p>
+<p><span class="math display">\[
+\mathscr{L}\{f(t)\}=F(s)=\int_{0}^{\infty}{e^{-st}f(t)dt}
+\]</span></p>
+<p>es la transformada de Laplace de <span class="math inline">\(f\)</span>, siempre que la integral converja.</p>
+<p>tomada <span class="citation">(<a href="#ref-zill2002ecuaciones" role="doc-biblioref">Zill, Hernández, and López 2002</a>)</span> pág <span class="math inline">\(256\)</span></p>
+</div>
+<p><br></br></p>
+<p><strong>NOTA:</strong> La transformada es una transformación lineal.</p>
+<p><span class="math display">\[
+\mathscr{L}\{\alpha f(t)+\beta g(t)\}=\alpha \mathscr{L}\{f(t)\} + \beta \mathscr{L}\{g(t)\}
+\]</span></p>
+<p><br></br></p>
+<div id="ejemplo1-transformada" class="section level3 hasAnchor" number="8.4.1">
+<h3><span class="header-section-number">8.4.1</span> Ejemplo1 Transformada<a href="metodos-EDO.html#ejemplo1-transformada" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-105" class="example"><strong>Ejemplo 8.4  </strong></span>Obtener</p>
+<p><span class="math display">\[
+  \mathscr{L}\{1\}
+\]</span></p>
+<p>tomada <span class="citation">(<a href="#ref-zill2002ecuaciones" role="doc-biblioref">Zill, Hernández, and López 2002</a>)</span> pág <span class="math inline">\(257\)</span></p>
+</div>
+<p><br></br></p>
+<p>Por definición de transformada se tiene:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqTLA1}
+\begin{split}
+\mathscr{L}\{1\} &amp;= \int_{0}^{\infty}{e^{-st}1dt}=\displaystyle\lim_{b \to \infty}{\int_{0}^{b}{e^{-st}1dt}}\\
+&amp; = \displaystyle\lim_{b \to \infty}{\left. \dfrac{-e^{-st}}{s}\right|_{0}^{b}}\\
+&amp; = \displaystyle\lim_{b \to \infty}{\dfrac{-e^{-sb}+1}{s}}=\dfrac{1}{s}, \quad \text{siempre que } \ s&gt;0
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Ya que <span class="math inline">\(e^{-st} \to 0\)</span> conforme <span class="math inline">\(t \to \infty\)</span> para <span class="math inline">\(s&gt;0\)</span>.</p>
+<p><br></br></p>
+</div>
+<div id="ejemplo2-transformada" class="section level3 hasAnchor" number="8.4.2">
+<h3><span class="header-section-number">8.4.2</span> Ejemplo2 Transformada<a href="metodos-EDO.html#ejemplo2-transformada" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-106" class="example"><strong>Ejemplo 8.5  </strong></span>Obtener</p>
+<p><span class="math display">\[
+  \mathscr{L}\{t\}
+\]</span></p>
+<p>tomada <span class="citation">(<a href="#ref-zill2002ecuaciones" role="doc-biblioref">Zill, Hernández, and López 2002</a>)</span> pág <span class="math inline">\(257\)</span></p>
+</div>
+<p><br></br></p>
+<p>Por definición de transformada se tiene:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqTLA2}
+\begin{split}
+\mathscr{L}\{t\} &amp;= \int_{0}^{\infty}{e^{-st}tdt}=\displaystyle\lim_{b \to \infty}{\int_{0}^{b}{e^{-st}tdt}}\\
+&amp; = \displaystyle\lim_{b \to \infty}{\left. \dfrac{-te^{-st}}{s}\right|_{0}^{b}}+\dfrac{1}{s}\int_{0}^{\infty}{e^{-st}dt}\\
+&amp; = \dfrac{1}{s}\mathscr{L}\{1\}=\dfrac{1}{s}\left(\dfrac{1}{s}\right)=\dfrac{1}{s^2}, \quad \text{siempre que } \ s&gt;0
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Ya que <span class="math inline">\(\displaystyle\lim_{t \to \infty}{te^{-st}}=0\)</span>, para <span class="math inline">\(s&gt;0\)</span>.</p>
+<p><br></br></p>
+</div>
+<div id="ejemplo3-transformada" class="section level3 hasAnchor" number="8.4.3">
+<h3><span class="header-section-number">8.4.3</span> Ejemplo3 Transformada<a href="metodos-EDO.html#ejemplo3-transformada" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-107" class="example"><strong>Ejemplo 8.6  </strong></span>Obtener</p>
+<p><span class="math display">\[
+  \mathscr{L}\{e^{-3t}\}
+\]</span></p>
+<p>tomada <span class="citation">(<a href="#ref-zill2002ecuaciones" role="doc-biblioref">Zill, Hernández, and López 2002</a>)</span> pág <span class="math inline">\(257\)</span></p>
+</div>
+<p><br></br></p>
+<p>Por definición de transformada se tiene:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqTLA3}
+\begin{split}
+\mathscr{L}\{e^{-3t}\} &amp;= \int_{0}^{\infty}{e^{-st}e^{-3t}dt}=\displaystyle\lim_{b \to \infty}{\int_{0}^{b}{e^{-(s+3)t}dt}}\\
+&amp; = \left.\dfrac{-e^{-(s+3)t}}{s+3}\right|_{0}^{\infty}\\
+&amp; = \dfrac{1}{s+3}, \quad s&gt;-3.
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Ya que <span class="math inline">\(\displaystyle\lim_{t \to \infty}{e^{-(s+3)t}}=0\)</span>, para <span class="math inline">\(s+3&gt;0\)</span>.</p>
+</div>
+</div>
+<div id="tabla-de-transformadas" class="section level2 hasAnchor" number="8.5">
+<h2><span class="header-section-number">8.5</span> Tabla de transformadas<a href="metodos-EDO.html#tabla-de-transformadas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><span class="math display">\[
+\begin{matrix}
+\text{Función} \ f(t) &amp; \text{Transformada} &amp; \\
+1 &amp; \dfrac{1}{s} &amp; \\
+t &amp; \dfrac{1}{s^2} &amp; \\
+t^{n} &amp; \dfrac{n!}{s^{n+1}} &amp; \\
+e^{at} &amp; \dfrac{1}{s-a} &amp; \\
+sen(kt) &amp; \dfrac{k}{s^2+k^2} &amp; \\
+cos(kt) &amp; \dfrac{s}{s^2+k^2} &amp; \\
+senh(kt) &amp; \dfrac{k}{s^2-k^2} &amp; \\
+cosh(kt) &amp; \dfrac{s}{s^2-k^2} &amp; \\
+f&#39;(t) &amp; sF(s)-f(0) &amp; \\
+f&#39;&#39;(t) &amp; s^2F(s)-sf(0)-f&#39;(0) &amp; \\
+e^{at}f(t) &amp; F(s-a) &amp; \\
+t^{n}f(t) &amp; (-1)^{n}\dfrac{d^n}{ds^n}{F(s)} &amp; \\
+\end{matrix}
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="métodos-numéricos-para-resolver-edo" class="section level2 hasAnchor" number="8.6">
+<h2><span class="header-section-number">8.6</span> Métodos numéricos para resolver EDO<a href="metodos-EDO.html#métodos-numéricos-para-resolver-edo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></br></p>
+<div id="método-de-euler" class="section level3 hasAnchor" number="8.6.1">
+<h3><span class="header-section-number">8.6.1</span> Método de Euler<a href="metodos-EDO.html#método-de-euler" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://johnjairoestradaalvarezuce2021sep.shinyapps.io/SolucionNumericaEulerBaseUnoA_1/">Técnica general de Euler</a></p>
+<p><br></br></p>
+</div>
+<div id="método-de-euler-mejorado" class="section level3 hasAnchor" number="8.6.2">
+<h3><span class="header-section-number">8.6.2</span> Método de Euler Mejorado<a href="metodos-EDO.html#método-de-euler-mejorado" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://johnjairoestradaalvarezuce2021sep.shinyapps.io/SolucionNumericaEulerMejoradoBaseUnoA_1/">Técnica general y mejorada de Euler</a></p>
+<p><br></br></p>
+</div>
+<div id="método-de-runge-kutta-4-rk4" class="section level3 hasAnchor" number="8.6.3">
+<h3><span class="header-section-number">8.6.3</span> Método de Runge Kutta 4 (RK4)<a href="metodos-EDO.html#método-de-runge-kutta-4-rk4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><a href="https://johnjairoestradaalvarezuce2021sep.shinyapps.io/SolNumRungeKutta4UnoA_1/">Técnica general de Runge Kutta cuatro</a></p>
+
+</div>
+</div>
+</div>
+<h3>Referencias<a href="referencias.html#referencias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-stewart2020calculus" class="csl-entry">
+Stewart, James, Daniel K Clegg, and Saleem Watson. 2020a. <em>Calculus: Early Transcendentals</em>. Cengage Learning.
+</div>
+<div id="ref-zill2002ecuaciones" class="csl-entry">
+Zill, Dennis G, Ana Elizabeth Garcı́a Hernández, and Ernesto Filio López. 2002. <em>Ecuaciones Diferenciales Con Aplicaciones de Modelado</em>. 970-686-487-3. Thomson Learning M<span>é</span>xico.
+</div>
+<div id="ref-zill2014calculo" class="csl-entry">
+———. 2014. <em>C<span>á</span>lculo de Una Variable: Trascendentes Tempranas</em>. 515.33 Z651c Ej. 1 025039. McGraw-Hill,.
 </div>
 </div>
             </section>
@@ -483,8 +725,8 @@ según se avanza en el desarrollo temático del curso.</p></li>
           </div>
         </div>
       </div>
-
-<a href="desarrollo-temático.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="integrales-triples.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="referencias.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
