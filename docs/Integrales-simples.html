@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 5 Integrales simples | Curso de Matemáticas Tres UCES</title>
+  <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 5 Integrales simples | Curso de Matemáticas Tres UCES" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Este texto se realizo usando bookdown package para escribir libros." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 5 Integrales simples | Curso de Matemáticas Tres UCES" />
+  
+  <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
+  
+
+<meta name="author" content="Carlos Andrés Escobar Guerra - Juan Alberto Arias Quiceno - John Jairo Estrada Alvarez" />
+
+
+<meta name="date" content="2023-03-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="Metodos-maximosYminimos.html"/>
+<link rel="next" href="Integrales-dobles.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.1.2/leaflet.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Curso de Matemáticas Tres</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prerrequisitos</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>0.1</b> Comportamentales</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>0.2</b> Evaluativos</a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>0.3</b> Video motivacional</a></li>
+<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>0.4</b> Página para reforzar conceptos básicos</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html"><i class="fa fa-check"></i><b>1</b> Desarrollo temático</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#objetivo-general"><i class="fa fa-check"></i><b>1.1</b> Objetivo general</a></li>
+<li class="chapter" data-level="1.2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#objetivos-específicos"><i class="fa fa-check"></i><b>1.2</b> Objetivos específicos</a></li>
+<li class="chapter" data-level="1.3" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#clase-a-clase"><i class="fa fa-check"></i><b>1.3</b> <strong>Clase a clase</strong></a></li>
+<li class="chapter" data-level="1.4" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#bibliografía"><i class="fa fa-check"></i><b>1.4</b> Bibliografía</a></li>
+<li class="chapter" data-level="1.5" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#video-manejo-de-la-casio-f_x350ms"><i class="fa fa-check"></i><b>1.5</b> Video manejo de la Casio <span class="math inline">\(f_{x}350MS\)</span></a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-cramer-sistemas-2-por-2"><i class="fa fa-check"></i><b>1.5.1</b> Regla de Cramer sistemas <span class="math inline">\(2\)</span> por <span class="math inline">\(2\)</span></a></li>
+<li class="chapter" data-level="1.5.2" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-cramer-sistemas-3-por-3"><i class="fa fa-check"></i><b>1.5.2</b> Regla de Cramer sistemas <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="1.5.3" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#regla-de-sarrus-determinante-3-por-3"><i class="fa fa-check"></i><b>1.5.3</b> Regla de Sarrus determinante <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="1.5.4" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html#solución-de-la-ecuación-cuadrática"><i class="fa fa-check"></i><b>1.5.4</b> Solución de la ecuación cuadrática</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="Introduccion.html"><a href="Introduccion.html"><i class="fa fa-check"></i><b>2</b> Introducción</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="Introduccion.html"><a href="Introduccion.html#punto-frontera-y-punto-interior-en-el-plano"><i class="fa fa-check"></i><b>2.1</b> Punto frontera y punto interior en el plano</a></li>
+<li class="chapter" data-level="2.2" data-path="Introduccion.html"><a href="Introduccion.html#función-de-dos-variables"><i class="fa fa-check"></i><b>2.2</b> Función de dos variables</a></li>
+<li class="chapter" data-level="2.3" data-path="Introduccion.html"><a href="Introduccion.html#punto-frontera-y-punto-interior-en-el-espacio"><i class="fa fa-check"></i><b>2.3</b> Punto frontera y punto interior en el espacio</a></li>
+<li class="chapter" data-level="2.4" data-path="Introduccion.html"><a href="Introduccion.html#detalles-de-una-superficie-en-el-espacio-xyz"><i class="fa fa-check"></i><b>2.4</b> Detalles de una superficie en el espacio <span class="math inline">\(XYZ\)</span></a></li>
+<li class="chapter" data-level="2.5" data-path="Introduccion.html"><a href="Introduccion.html#curvas-de-nivel-para-el-pueblito-paisa-de-medellín"><i class="fa fa-check"></i><b>2.5</b> Curvas de nivel para el Pueblito Paisa de Medellín</a></li>
+<li class="chapter" data-level="2.6" data-path="Introduccion.html"><a href="Introduccion.html#curvas-de-nivel-para-la-uces-de-medellín"><i class="fa fa-check"></i><b>2.6</b> Curvas de nivel para la UCES de Medellín</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html"><i class="fa fa-check"></i><b>3</b> Métodos para derivar parcialmente</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#definición-derivada-parcial"><i class="fa fa-check"></i><b>3.1</b> Definición derivada parcial</a></li>
+<li class="chapter" data-level="3.2" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#ejercicio-derivada-parcial-con-respecto-a-x"><i class="fa fa-check"></i><b>3.2</b> Ejercicio derivada parcial con respecto a <span class="math inline">\(x\)</span></a></li>
+<li class="chapter" data-level="3.3" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#ejercicio-derivada-parcial-con-respecto-a-y"><i class="fa fa-check"></i><b>3.3</b> Ejercicio derivada parcial con respecto a <span class="math inline">\(y\)</span></a></li>
+<li class="chapter" data-level="3.4" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#notación-ó-simbología-de-la-derivada-parcial"><i class="fa fa-check"></i><b>3.4</b> Notación (ó simbología) de la derivada parcial</a></li>
+<li class="chapter" data-level="3.5" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#significado-geométrico-de-la-derivada-parcial-con-respecto-a-x-y-y"><i class="fa fa-check"></i><b>3.5</b> Significado geométrico de la derivada parcial con respecto a <span class="math inline">\(x\)</span> y <span class="math inline">\(y\)</span></a></li>
+<li class="chapter" data-level="3.6" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#ejercicio-pendiente-de-una-superficie"><i class="fa fa-check"></i><b>3.6</b> Ejercicio Pendiente de una superficie</a></li>
+<li class="chapter" data-level="3.7" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#herramienta-para-evaluar-primeras-derivadas-parciales-en-ab"><i class="fa fa-check"></i><b>3.7</b> Herramienta para evaluar primeras derivadas parciales en <span class="math inline">\((a,b)\)</span></a></li>
+<li class="chapter" data-level="3.8" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>3.8</b> Derivadas parciales de orden superior</a></li>
+<li class="chapter" data-level="3.9" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#ejercicio-derivadas-parciales-de-orden-superior"><i class="fa fa-check"></i><b>3.9</b> Ejercicio derivadas parciales de orden superior</a></li>
+<li class="chapter" data-level="3.10" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#herramienta-para-evaluar-derivadas-parciales-de-orden-dos-en-ab"><i class="fa fa-check"></i><b>3.10</b> Herramienta para evaluar derivadas parciales de orden dos en <span class="math inline">\((a,b)\)</span></a></li>
+<li class="chapter" data-level="3.11" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#regla-de-la-cadena-para-funciones-de-varias-variables"><i class="fa fa-check"></i><b>3.11</b> Regla de la cadena para funciones de varias variables</a>
+<ul>
+<li class="chapter" data-level="3.11.1" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#una-variable-independiente"><i class="fa fa-check"></i><b>3.11.1</b> Una variable independiente</a></li>
+<li class="chapter" data-level="3.11.2" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#dos-variables-independientes"><i class="fa fa-check"></i><b>3.11.2</b> Dos variables independientes</a></li>
+</ul></li>
+<li class="chapter" data-level="3.12" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#herramienta-evalúa-rcadena2v-independientes"><i class="fa fa-check"></i><b>3.12</b> Herramienta evalúa RCadena2V independientes</a></li>
+<li class="chapter" data-level="3.13" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#derivación-parcial-implícita"><i class="fa fa-check"></i><b>3.13</b> Derivación parcial implícita</a></li>
+<li class="chapter" data-level="3.14" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#derivada-direccional"><i class="fa fa-check"></i><b>3.14</b> Derivada direccional</a></li>
+<li class="chapter" data-level="3.15" data-path="Metodos-derivacion.html"><a href="Metodos-derivacion.html#gradiente-de-una-función"><i class="fa fa-check"></i><b>3.15</b> Gradiente de una función</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="Metodos-maximosYminimos.html"><a href="Metodos-maximosYminimos.html"><i class="fa fa-check"></i><b>4</b> Métodos para máximos y mínimos</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="Metodos-maximosYminimos.html"><a href="Metodos-maximosYminimos.html#significado-geométrico-de-máximo-y-mínimo-local"><i class="fa fa-check"></i><b>4.1</b> Significado geométrico de máximo y mínimo local</a></li>
+<li class="chapter" data-level="4.2" data-path="Metodos-maximosYminimos.html"><a href="Metodos-maximosYminimos.html#herramienta-para-obtener-el-hessiano-2por2"><i class="fa fa-check"></i><b>4.2</b> Herramienta para obtener el Hessiano 2por2</a></li>
+<li class="chapter" data-level="4.3" data-path="Metodos-maximosYminimos.html"><a href="Metodos-maximosYminimos.html#método-de-los-multiplicadore-de-lagrange-para-determinar-máximos-o-mínimos"><i class="fa fa-check"></i><b>4.3</b> Método de los multiplicadore de Lagrange para determinar máximos o mínimos</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="Integrales-simples.html"><a href="Integrales-simples.html"><i class="fa fa-check"></i><b>5</b> Integrales simples</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="Integrales-simples.html"><a href="Integrales-simples.html#primera-tabla-de-antiderivadas"><i class="fa fa-check"></i><b>5.1</b> Primera tabla de antiderivadas</a></li>
+<li class="chapter" data-level="5.2" data-path="Integrales-simples.html"><a href="Integrales-simples.html#herramienta-para-obtener-antiderivadas"><i class="fa fa-check"></i><b>5.2</b> Herramienta para obtener antiderivadas</a></li>
+<li class="chapter" data-level="5.3" data-path="Integrales-simples.html"><a href="Integrales-simples.html#propiedades-de-las-antiderivadas"><i class="fa fa-check"></i><b>5.3</b> Propiedades de las antiderivadas</a></li>
+<li class="chapter" data-level="5.4" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo1-de-antiderivada"><i class="fa fa-check"></i><b>5.4</b> Ejemplo1 de antiderivada</a></li>
+<li class="chapter" data-level="5.5" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo2-de-antiderivada"><i class="fa fa-check"></i><b>5.5</b> Ejemplo2 de antiderivada</a></li>
+<li class="chapter" data-level="5.6" data-path="Integrales-simples.html"><a href="Integrales-simples.html#teorema-fundamental-del-cálculo-caso-uno"><i class="fa fa-check"></i><b>5.6</b> Teorema fundamental del cálculo, caso Uno</a></li>
+<li class="chapter" data-level="5.7" data-path="Integrales-simples.html"><a href="Integrales-simples.html#teorema-fundamental-del-cálculo-caso-dos"><i class="fa fa-check"></i><b>5.7</b> Teorema fundamental del cálculo, caso Dos</a></li>
+<li class="chapter" data-level="5.8" data-path="Integrales-simples.html"><a href="Integrales-simples.html#integral-definida-riemann"><i class="fa fa-check"></i><b>5.8</b> Integral definida (Riemann)</a></li>
+<li class="chapter" data-level="5.9" data-path="Integrales-simples.html"><a href="Integrales-simples.html#técnicas-de-integración"><i class="fa fa-check"></i><b>5.9</b> Técnicas de integración</a></li>
+<li class="chapter" data-level="5.10" data-path="Integrales-simples.html"><a href="Integrales-simples.html#integración-por-sustitución-o-cambio-de-variable"><i class="fa fa-check"></i><b>5.10</b> Integración por sustitución o cambio de variable</a>
+<ul>
+<li class="chapter" data-level="5.10.1" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo1-por-sustitución"><i class="fa fa-check"></i><b>5.10.1</b> Ejemplo1 por sustitución</a></li>
+<li class="chapter" data-level="5.10.2" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo2-por-sustitución"><i class="fa fa-check"></i><b>5.10.2</b> Ejemplo2 por sustitución</a></li>
+<li class="chapter" data-level="5.10.3" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo3-por-sustitución"><i class="fa fa-check"></i><b>5.10.3</b> Ejemplo3 por sustitución</a></li>
+<li class="chapter" data-level="5.10.4" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo4-por-sustitución"><i class="fa fa-check"></i><b>5.10.4</b> Ejemplo4 por sustitución</a></li>
+</ul></li>
+<li class="chapter" data-level="5.11" data-path="Integrales-simples.html"><a href="Integrales-simples.html#integración-por-partes"><i class="fa fa-check"></i><b>5.11</b> Integración por partes</a>
+<ul>
+<li class="chapter" data-level="5.11.1" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo1-por-partes"><i class="fa fa-check"></i><b>5.11.1</b> Ejemplo1 por partes</a></li>
+<li class="chapter" data-level="5.11.2" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo2-por-partes"><i class="fa fa-check"></i><b>5.11.2</b> Ejemplo2 por partes</a></li>
+<li class="chapter" data-level="5.11.3" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo3-por-partes"><i class="fa fa-check"></i><b>5.11.3</b> Ejemplo3 por partes</a></li>
+<li class="chapter" data-level="5.11.4" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo4-por-partes"><i class="fa fa-check"></i><b>5.11.4</b> Ejemplo4 por partes</a></li>
+<li class="chapter" data-level="5.11.5" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo5-por-partes"><i class="fa fa-check"></i><b>5.11.5</b> Ejemplo5 por partes</a></li>
+<li class="chapter" data-level="5.11.6" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo6-por-partes"><i class="fa fa-check"></i><b>5.11.6</b> Ejemplo6 por partes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.12" data-path="Integrales-simples.html"><a href="Integrales-simples.html#integración-por-sustitución-trigonométrica"><i class="fa fa-check"></i><b>5.12</b> Integración por sustitución trigonométrica</a>
+<ul>
+<li class="chapter" data-level="5.12.1" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo1"><i class="fa fa-check"></i><b>5.12.1</b> Ejemplo1</a></li>
+<li class="chapter" data-level="5.12.2" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo2"><i class="fa fa-check"></i><b>5.12.2</b> Ejemplo2</a></li>
+<li class="chapter" data-level="5.12.3" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo3"><i class="fa fa-check"></i><b>5.12.3</b> Ejemplo3</a></li>
+</ul></li>
+<li class="chapter" data-level="5.13" data-path="Integrales-simples.html"><a href="Integrales-simples.html#integación-por-fracciones-parciales"><i class="fa fa-check"></i><b>5.13</b> Integación por fracciones parciales</a>
+<ul>
+<li class="chapter" data-level="5.13.1" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo1-1"><i class="fa fa-check"></i><b>5.13.1</b> Ejemplo1</a></li>
+<li class="chapter" data-level="5.13.2" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo2-1"><i class="fa fa-check"></i><b>5.13.2</b> Ejemplo2</a></li>
+<li class="chapter" data-level="5.13.3" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo3-1"><i class="fa fa-check"></i><b>5.13.3</b> Ejemplo3</a></li>
+<li class="chapter" data-level="5.13.4" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo4"><i class="fa fa-check"></i><b>5.13.4</b> Ejemplo4</a></li>
+<li class="chapter" data-level="5.13.5" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo5"><i class="fa fa-check"></i><b>5.13.5</b> Ejemplo5</a></li>
+</ul></li>
+<li class="chapter" data-level="5.14" data-path="Integrales-simples.html"><a href="Integrales-simples.html#fórmulas-de-reducción-para-integrar"><i class="fa fa-check"></i><b>5.14</b> Fórmulas de reducción para integrar</a></li>
+<li class="chapter" data-level="5.15" data-path="Integrales-simples.html"><a href="Integrales-simples.html#sustitución-de-karl-weierstrass-1815-1897"><i class="fa fa-check"></i><b>5.15</b> Sustitución de Karl Weierstrass (1815-1897)</a>
+<ul>
+<li class="chapter" data-level="5.15.1" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo1karl"><i class="fa fa-check"></i><b>5.15.1</b> Ejemplo1(Karl)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.16" data-path="Integrales-simples.html"><a href="Integrales-simples.html#integral-definida"><i class="fa fa-check"></i><b>5.16</b> Integral definida</a></li>
+<li class="chapter" data-level="5.17" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplos-de-integral-definida-en-un-intervalo-real"><i class="fa fa-check"></i><b>5.17</b> Ejemplos de integral definida en un intervalo real</a>
+<ul>
+<li class="chapter" data-level="5.17.1" data-path="Integrales-simples.html"><a href="Integrales-simples.html#propiedades-de-la-integral-definida"><i class="fa fa-check"></i><b>5.17.1</b> Propiedades de la integral definida</a></li>
+<li class="chapter" data-level="5.17.2" data-path="Integrales-simples.html"><a href="Integrales-simples.html#propiedades-para-las-sumatorias"><i class="fa fa-check"></i><b>5.17.2</b> Propiedades para las sumatorias</a></li>
+<li class="chapter" data-level="5.17.3" data-path="Integrales-simples.html"><a href="Integrales-simples.html#sumatorias-para-evaluar-integrales-definidas"><i class="fa fa-check"></i><b>5.17.3</b> Sumatorias para evaluar integrales definidas</a></li>
+<li class="chapter" data-level="5.17.4" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo-evaluación-por-sumatoria"><i class="fa fa-check"></i><b>5.17.4</b> Ejemplo evaluación por sumatoria</a></li>
+</ul></li>
+<li class="chapter" data-level="5.18" data-path="Integrales-simples.html"><a href="Integrales-simples.html#integrales-impropias-tipo-1"><i class="fa fa-check"></i><b>5.18</b> Integrales impropias tipo 1</a>
+<ul>
+<li class="chapter" data-level="5.18.1" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo1-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>5.18.1</b> Ejemplo1 integral impropia tipo Uno</a></li>
+<li class="chapter" data-level="5.18.2" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo2-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>5.18.2</b> Ejemplo2 integral impropia tipo Uno</a></li>
+<li class="chapter" data-level="5.18.3" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo3-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>5.18.3</b> Ejemplo3 integral impropia tipo Uno</a></li>
+<li class="chapter" data-level="5.18.4" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo4-integral-impropia-tipo-uno"><i class="fa fa-check"></i><b>5.18.4</b> Ejemplo4 integral impropia tipo Uno</a></li>
+</ul></li>
+<li class="chapter" data-level="5.19" data-path="Integrales-simples.html"><a href="Integrales-simples.html#integrales-impropias-tipo-2"><i class="fa fa-check"></i><b>5.19</b> Integrales impropias tipo 2</a>
+<ul>
+<li class="chapter" data-level="5.19.1" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo1-integral-impropia-tipo-2-caso-b"><i class="fa fa-check"></i><b>5.19.1</b> Ejemplo1 Integral impropia tipo 2 caso (b)</a></li>
+<li class="chapter" data-level="5.19.2" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo2-integral-impropia-tipo-2-caso-a"><i class="fa fa-check"></i><b>5.19.2</b> Ejemplo2 Integral impropia tipo 2 caso (a)</a></li>
+<li class="chapter" data-level="5.19.3" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo3-integral-impropia-tipo-2-caso-c"><i class="fa fa-check"></i><b>5.19.3</b> Ejemplo3 Integral impropia tipo 2 caso (c)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.20" data-path="Integrales-simples.html"><a href="Integrales-simples.html#teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>5.20</b> Teorema de comparacion para integrales impropias</a>
+<ul>
+<li class="chapter" data-level="5.20.1" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo-teorema-de-comparacion-para-integrales-impropias"><i class="fa fa-check"></i><b>5.20.1</b> Ejemplo teorema de comparacion para integrales impropias</a></li>
+</ul></li>
+<li class="chapter" data-level="5.21" data-path="Integrales-simples.html"><a href="Integrales-simples.html#aproximación-numérica-de-la-integral-definida"><i class="fa fa-check"></i><b>5.21</b> Aproximación numérica de la integral definida</a>
+<ul>
+<li class="chapter" data-level="5.21.1" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo-regla-de-trapecios"><i class="fa fa-check"></i><b>5.21.1</b> Ejemplo Regla de Trapecios</a></li>
+<li class="chapter" data-level="5.21.2" data-path="Integrales-simples.html"><a href="Integrales-simples.html#ejemplo-regla-de-simpson-13"><i class="fa fa-check"></i><b>5.21.2</b> Ejemplo Regla de Simpson <span class="math inline">\(1/3\)</span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="Integrales-dobles.html"><a href="Integrales-dobles.html"><i class="fa fa-check"></i><b>6</b> Integrales dobles</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="Integrales-dobles.html"><a href="Integrales-dobles.html#definición-de-integral-doble"><i class="fa fa-check"></i><b>6.1</b> Definición de integral doble</a></li>
+<li class="chapter" data-level="6.2" data-path="Integrales-dobles.html"><a href="Integrales-dobles.html#definición-de-volumen-para-una-región-sólida"><i class="fa fa-check"></i><b>6.2</b> Definición de volumen para una región sólida</a></li>
+<li class="chapter" data-level="6.3" data-path="Integrales-dobles.html"><a href="Integrales-dobles.html#propiedades-de-las-integrales-dobles"><i class="fa fa-check"></i><b>6.3</b> Propiedades de las integrales dobles</a></li>
+<li class="chapter" data-level="6.4" data-path="Integrales-dobles.html"><a href="Integrales-dobles.html#ejemplo-integral-doble-usando-geogebra"><i class="fa fa-check"></i><b>6.4</b> Ejemplo integral doble usando geogebra</a></li>
+<li class="chapter" data-level="6.5" data-path="Integrales-dobles.html"><a href="Integrales-dobles.html#ejercicio-integral-doble"><i class="fa fa-check"></i><b>6.5</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6.6" data-path="Integrales-dobles.html"><a href="Integrales-dobles.html#ejercicio-integral-doble-1"><i class="fa fa-check"></i><b>6.6</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6.7" data-path="Integrales-dobles.html"><a href="Integrales-dobles.html#regiones-que-generan-dos-integrales-dobles"><i class="fa fa-check"></i><b>6.7</b> Regiones que generan dos integrales dobles</a></li>
+<li class="chapter" data-level="6.8" data-path="Integrales-dobles.html"><a href="Integrales-dobles.html#ejercicio-integral-doble-2"><i class="fa fa-check"></i><b>6.8</b> Ejercicio integral doble</a></li>
+<li class="chapter" data-level="6.9" data-path="Integrales-dobles.html"><a href="Integrales-dobles.html#ejercicio-integral-doble-3"><i class="fa fa-check"></i><b>6.9</b> Ejercicio integral doble</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="Integrales-triples.html"><a href="Integrales-triples.html"><i class="fa fa-check"></i><b>7</b> Integrales triples</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="Integrales-triples.html"><a href="Integrales-triples.html#definición-integral-triple"><i class="fa fa-check"></i><b>7.1</b> Definición integral triple</a></li>
+<li class="chapter" data-level="7.2" data-path="Integrales-triples.html"><a href="Integrales-triples.html#ejercicio-integral-triple"><i class="fa fa-check"></i><b>7.2</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.3" data-path="Integrales-triples.html"><a href="Integrales-triples.html#ejercicio-integral-triple-1"><i class="fa fa-check"></i><b>7.3</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.4" data-path="Integrales-triples.html"><a href="Integrales-triples.html#ejercicio-integral-triple-2"><i class="fa fa-check"></i><b>7.4</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.5" data-path="Integrales-triples.html"><a href="Integrales-triples.html#ejercicio-integral-triple-3"><i class="fa fa-check"></i><b>7.5</b> Ejercicio integral triple</a></li>
+<li class="chapter" data-level="7.6" data-path="Integrales-triples.html"><a href="Integrales-triples.html#ejercicio-integral-triple-4"><i class="fa fa-check"></i><b>7.6</b> Ejercicio integral triple</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html"><i class="fa fa-check"></i><b>8</b> Métodos de solución para Ecuaciones Diferenciales (EDO)</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#definición-para-una-ecuación-diferencial"><i class="fa fa-check"></i><b>8.1</b> Definición para una Ecuación Diferencial</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#ejemplos-de-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>8.1.1</b> Ejemplos de ecuaciones diferenciales</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#método-para-separar-variables"><i class="fa fa-check"></i><b>8.2</b> Método para separar variables</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#ejemplo1-ec-diferencial-separable"><i class="fa fa-check"></i><b>8.2.1</b> Ejemplo1 Ec Diferencial separable</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#ec-diferencial-lineal"><i class="fa fa-check"></i><b>8.3</b> Ec Diferencial lineal</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#ejemplo1-mezclas"><i class="fa fa-check"></i><b>8.3.1</b> Ejemplo1 Mezclas</a></li>
+<li class="chapter" data-level="8.3.2" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#ejemplo1-ec-dif-lineal"><i class="fa fa-check"></i><b>8.3.2</b> Ejemplo1 Ec Dif lineal</a></li>
+<li class="chapter" data-level="8.3.3" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#ejemplo2-ec-dif-lineal"><i class="fa fa-check"></i><b>8.3.3</b> Ejemplo2 Ec Dif lineal</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#definición-de-transformada"><i class="fa fa-check"></i><b>8.4</b> Definición de transformada</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#ejemplo1-transformada"><i class="fa fa-check"></i><b>8.4.1</b> Ejemplo1 Transformada</a></li>
+<li class="chapter" data-level="8.4.2" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#ejemplo2-transformada"><i class="fa fa-check"></i><b>8.4.2</b> Ejemplo2 Transformada</a></li>
+<li class="chapter" data-level="8.4.3" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#ejemplo3-transformada"><i class="fa fa-check"></i><b>8.4.3</b> Ejemplo3 Transformada</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#tabla-de-transformadas"><i class="fa fa-check"></i><b>8.5</b> Tabla de transformadas</a></li>
+<li class="chapter" data-level="8.6" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#métodos-numéricos-para-resolver-edo"><i class="fa fa-check"></i><b>8.6</b> Métodos numéricos para resolver EDO</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#método-de-euler"><i class="fa fa-check"></i><b>8.6.1</b> Método de Euler</a></li>
+<li class="chapter" data-level="8.6.2" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#método-de-euler-mejorado"><i class="fa fa-check"></i><b>8.6.2</b> Método de Euler Mejorado</a></li>
+<li class="chapter" data-level="8.6.3" data-path="Metodos-EDO.html"><a href="Metodos-EDO.html#método-de-runge-kutta-4-rk4"><i class="fa fa-check"></i><b>8.6.3</b> Método de Runge Kutta 4 (RK4)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Curso de Matemáticas Tres UCES</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="Integrales-simples" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Capítulo 5</span> Integrales simples<a href="Integrales-simples.html#Integrales-simples" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<!-- https://www.lifeder.com/wp-content/uploads/2016/11/Blaise-Pascal.png -->
+<!-- <a href="https://www.lifeder.com/wp-content/uploads/2016/11/Blaise-Pascal.png"><div align="center"><img src="https://www.lifeder.com/wp-content/uploads/2016/11/Blaise-Pascal.png" width="350" height="460" alt="Buy from Amazon" class="cover" /></div></a> -->
+<div align="center">
+<figure>
+<p><img src="https://www.lifeder.com/wp-content/uploads/2016/11/Blaise-Pascal.png"
+       alt="Blaise Pascal (1623-1662);
+           nacionalidad francesa famoso por El triángulo de Pascal" width="350"
+       height="460"></p>
+<figcaption>
+Blaise Pascal (1623-1662).
+</figcaption>
+</figure>
+</div>
+<p><br></br></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralSimpleA001"></span>
+<img src="images/DefIntegral_A1.png" alt="Concepto integral a partir del área bajo una curva [Imagen tomada de [@stewart2020single] pág $355$]" width="65%" />
+<p class="caption">
+Figura 5.1: Concepto integral a partir del área bajo una curva [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(355\)</span>]
+</p>
+</div>
+<p>El cálculo integral se base en el concepto de la integral. La definición de integral es motivada por el problema de definir y calcular el área de la región que se encuentra entre la gráfica de una funcíón <span class="math inline">\(y=f(x)\)</span> con valores positivos <span class="math inline">\(f\)</span> y el eje <span class="math inline">\(x\)</span> en un intervalo cerrado <span class="math inline">\([a,b]\)</span>.</p>
+<p><br></br></p>
+<div class="definition">
+<p><span id="def:unnamed-chunk-35" class="definition"><strong>Definición 5.1  </strong></span>Una antiderivada o primitiva de una función <span class="math inline">\(f\)</span> es una función <span class="math inline">\(F\)</span> tal que</p>
+<p><span class="math display">\[
+  F&#39;(x)=f(x)
+\]</span>
+siempre y cuando la función <span class="math inline">\(f(x)\)</span> esté bien definida.</p>
+</div>
+<p><br></br></p>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-36" class="theorem"><strong>Teorema 5.1  </strong></span>Si <span class="math inline">\(F&#39;(x)=f(x)\)</span> en cada punto del intervalo abierto <span class="math inline">\(I\)</span>, entonces cada primitiva <span class="math inline">\(G\)</span> de <span class="math inline">\(f\)</span> en <span class="math inline">\(I\)</span> tiene la forma</p>
+<p><span class="math display">\[
+G(x)=F(x)+C
+\]</span></p>
+<p>donde <span class="math inline">\(C\)</span> es una constante.</p>
+<p>La colección de todas las primitivas de la función <span class="math inline">\(f(x)\)</span> es conocida como la integral indefinida de <span class="math inline">\(f\)</span> con respecto de <span class="math inline">\(x\)</span> y se denota por</p>
+<p><span class="math display">\[
+\displaystyle\int{f(x)dx}=F(x)+C
+\]</span></p>
+<p>donde <span class="math inline">\(F(x)\)</span> es una primitiva particular de <span class="math inline">\(f(x)\)</span>. Por lo tanto se cumple que:</p>
+<p><span class="math display">\[
+\boxed{
+\displaystyle\int{f(x)dx}=F(x)+C \qquad \text{si y sólo si } \qquad F&#39;(x)=f(x)}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p><br></br></p>
+<div id="primera-tabla-de-antiderivadas" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Primera tabla de antiderivadas<a href="Integrales-simples.html#primera-tabla-de-antiderivadas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong><span class="math display">\[\text{ Recordar como se deriva implica saber integrar }\]</span></strong>
+<span class="math display">\[
+\begin{matrix}
+&amp; D_{x}\left[F(x)+C\right]=f(x) &amp; \Longrightarrow &amp; \displaystyle\int{f(x)dx}=F(x)+C\\
+(1.) &amp; D_{x}\left[x+C\right]=1 &amp; \Longrightarrow &amp; \displaystyle\int{1dx}=x+C\\
+(2.) &amp; D_{x}\left[\dfrac{x^{n+1}}{n+1}+C\right]=x^n, \ \ n\neq -1 &amp; \Longrightarrow &amp; \displaystyle\int{x^ndx}=\dfrac{x^{n+1}}{n+1}+C, \ \ n\neq -1\\
+(3.) &amp; D_{x}\left[e^{x}+C\right]=e^{x} &amp; \Longrightarrow &amp; \displaystyle\int{e^{x}dx}=e^{x}+C\\
+(4.) &amp; D_{x}\left[\dfrac{e^{cx}}{c}+C\right]=e^{cx} &amp; \Longrightarrow &amp; \displaystyle\int{e^{cx}dx}=\dfrac{1}{c}e^{cx}+C\\
+(5.) &amp; D_{x}\left[sen(x)+C\right]=cos(x) &amp; \Longrightarrow &amp; \displaystyle\int{cos(x)dx}=sen(x)+C\\
+(6.) &amp; D_{x}\left[-cos(x)+C\right]=sen(x) &amp; \Longrightarrow &amp; \displaystyle\int{sen(x)dx}=-cos(x)+C\\
+(7.) &amp; D_{x}\left[tan(x)+C\right]=sec^2(x) &amp; \Longrightarrow &amp; \displaystyle\int{sec^2(x)dx}=tan(x)+C\\
+(8.) &amp; D_{x}\left[sec(x)+C\right]=se(x)tan(x) &amp; \Longrightarrow &amp; \displaystyle\int{sec(x)tan(x)dx}=sec(x)+C\\
+(9.) &amp; D_{x}\left[-csc(x)+C\right]=csc(x)cot(x) &amp; \Longrightarrow &amp; \displaystyle\int{csc(x)cot(x)dx}=-csc(x)+C\\
+(10.) &amp; D_{x}\left[-cot(x)+C\right]=csc^2(x) &amp; \Longrightarrow &amp; \displaystyle\int{csc^2(x)dx}=-cot(x)+C\\
+(11.) &amp; D_{x}\left[ln(|sec(x)|)+C\right]=tan(x) &amp; \Longrightarrow &amp; \displaystyle\int{tan(x)dx}=ln(|sec(x)|)+C\\
+(12.) &amp; D_{x}\left[ln(|sen(x)|)+C\right]=cot(x) &amp; \Longrightarrow &amp; \displaystyle\int{cot(x)dx}=ln(|sen(x)|)+C\\
+(13.) &amp; D_{x}\left[arcsen(x)+C\right]=\dfrac{1}{\sqrt{1-x^2}} &amp; \Longrightarrow &amp; \displaystyle\int{\dfrac{1dx}{\sqrt{1-x^2}}}=arcsen(x)+C\\
+(14.) &amp; D_{x}\left[arctan(x)+C\right]=\dfrac{1}{1+x^2} &amp; \Longrightarrow &amp; \displaystyle \int{\dfrac{1dx}{1+x^2}}=arctan(x)+C\\
+(15.) &amp; D_{x}\left[ln(x)+C\right]=\dfrac{1}{x} &amp; \Longrightarrow &amp; \displaystyle\int{x^{-1}dx}=\displaystyle\int{\dfrac{1}{x}dx}=ln(|x|)+C\\
+(16.) &amp; D_{x}\left[\dfrac{a^x}{ln(a)}+C\right]=a^{x} &amp; \Longrightarrow &amp; \displaystyle\int{a^{x}dx}=\dfrac{a^{x}}{ln(a)}+C\\
+\end{matrix}
+\]</span>
+<br></br></p>
+</div>
+<div id="herramienta-para-obtener-antiderivadas" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Herramienta para obtener antiderivadas<a href="Integrales-simples.html#herramienta-para-obtener-antiderivadas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Esta es una aplicación para obtener la antiderivada de <span class="math inline">\(f(x)\)</span>, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/b67q6hkq" class="uri">https://www.geogebra.org/classic/b67q6hkq</a>) la elaboro usando geogebra.</p>
+<div align="center">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementAntiDA01">
+
+</div>
+<script>  
+       var ggbAppAntiDA01 = new GGBApplet({"material_id":"b67q6hkq",
+       "width": 900,
+       "height": 200,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppAntiDA01.inject('ggb-elementAntiDA01');
+      });
+</script>
+</div>
+<p><br></br></p>
+</div>
+<div id="propiedades-de-las-antiderivadas" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Propiedades de las antiderivadas<a href="Integrales-simples.html#propiedades-de-las-antiderivadas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<span class="math display">\[\begin{matrix}
+(1.) &amp; \displaystyle\int{cf(x)dx}=c\displaystyle\int{f(x)dx} \\
+(2.) &amp; \displaystyle\int{\left[f(x) \pm g(x)\right]dx}=\displaystyle\int{f(x)dx}\pm \displaystyle\int{g(x)dx}
+\end{matrix}\]</span>
+<p><br></br></p>
+</div>
+<div id="ejemplo1-de-antiderivada" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Ejemplo1 de antiderivada<a href="Integrales-simples.html#ejemplo1-de-antiderivada" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="example">
+<p><span id="exm:unnamed-chunk-37" class="example"><strong>Ejemplo 5.1  </strong></span>Determinar</p>
+<p><span class="math display">\[
+\displaystyle\int{\left(x^4+3\sqrt{x^5}-\dfrac{4}{x^3}\right)dx}  
+\]</span></p>
+</div>
+<div class="solution">
+<p><span id="unlabeled-div-2" class="solution"><em>Solución</em>. </span><span class="math display">\[\begin{equation} \label{eq1}
+\begin{split}
+\displaystyle\int{\left(x^4+3\sqrt{x^5}-\dfrac{4}{x^3}\right)dx} &amp; = \displaystyle\int{x^4dx}+ \displaystyle\int{3\sqrt{x^5}dx}-\displaystyle\int{\dfrac{4}{x^3}dx}\\
+&amp;=\displaystyle\int{x^4dx}+ \displaystyle\int{3x^{5/2}dx}-\displaystyle\int{4{x^{-3}}dx}\\
+&amp;=\dfrac{x^{4+1}}{4+1}+3\displaystyle\int{x^{5/2}dx}-4\displaystyle\int{{x^{-3}}dx}\\
+&amp;=\dfrac{x^{4+1}}{4+1}+3\left(\dfrac{x^{5/2+1}}{5/2+1}\right)-4\left(\dfrac{x^{-3+1}}{-3+1}\right)+C\\
+&amp;=\dfrac{x^{5}}{5}+\left(\dfrac{3x^{7/2}}{7/2}\right)-4\left(\dfrac{x^{-2}}{-2}\right)+C\\
+&amp;=\dfrac{x^{5}}{5}+\left(\dfrac{6x^{7/2}}{7}\right)+2\left(\dfrac{x^{-2}}{1}\right)+C\\
+&amp;=\dfrac{x^{5}}{5}+\left(\dfrac{6}{7}\right)x^{7/2}+2\left(\dfrac{1}{x^{2}}\right)+C\\
+&amp;=\dfrac{1}{5}x^{5}+\dfrac{6}{7}\sqrt{x^{7}}+\dfrac{2}{x^{2}}+C\\
+\end{split}
+\end{equation}\]</span></p>
+</div>
+<p><br></br></p>
+</div>
+<div id="ejemplo2-de-antiderivada" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Ejemplo2 de antiderivada<a href="Integrales-simples.html#ejemplo2-de-antiderivada" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="example">
+<p><span id="exm:unnamed-chunk-39" class="example"><strong>Ejemplo 5.2  </strong></span>Determinar</p>
+<p><span class="math display">\[
+\displaystyle\int{(2cos(3x)+5sen(4x))dx}
+\]</span></p>
+</div>
+<div class="solution">
+<p><span id="unlabeled-div-3" class="solution"><em>Solución</em>. </span><span class="math display">\[\begin{equation} \label{eq2}
+\begin{split}
+
+\displaystyle\int{(2cos(3x)+5sen(4x))dx} &amp;=\displaystyle\int{2cos(3x)dx}+\displaystyle\int{5sen(4x)dx}\\
+&amp;=2\displaystyle\int{cos(3x)dx}+5\displaystyle\int{sen(4x)dx}\\
+&amp;=2\left(\dfrac{sen(3x)}{3}\right)+5\left(\dfrac{-cos(4x)}{4}\right)+C\\
+&amp;=\dfrac{2}{3}sen(3x)-\dfrac{5}{4}cos(4x)+C\\
+\end{split}
+\end{equation}\]</span></p>
+</div>
+<p><br></br></p>
+</div>
+<div id="teorema-fundamental-del-cálculo-caso-uno" class="section level2 hasAnchor" number="5.6">
+<h2><span class="header-section-number">5.6</span> Teorema fundamental del cálculo, caso Uno<a href="Integrales-simples.html#teorema-fundamental-del-cálculo-caso-uno" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-41" class="theorem"><strong>Teorema 5.2  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces la función <span class="math inline">\(g\)</span> definida por</p>
+<p><span class="math display">\[
+g(x)=\displaystyle\int_{a}^{x}f(t)dt, \qquad a \leq x \leq b
+\]</span></p>
+<p>es continua en <span class="math inline">\([a,b]\)</span>, derivable en <span class="math inline">\((a,b)\)</span>, y <span class="math inline">\(g&#39;(x)=f(x)\)</span>.</p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(381\)</span>]</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralSimpleA002"></span>
+<img src="images/DefIntegral_A2.png" alt="Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de [@stewart2020single] pág $380$]" width="65%" />
+<p class="caption">
+Figura 5.2: Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(380\)</span>]
+</p>
+</div>
+<p><br></br></p>
+<div class="example">
+<p><span id="exm:unnamed-chunk-42" class="example"><strong>Ejemplo 5.3  </strong></span>Encuentre</p>
+<p><span class="math display">\[
+  \dfrac{d}{dx}\left[\displaystyle\int_{a}^{x^4}sec(t)dt\right]
+\]</span></p>
+</div>
+<p><br></br></p>
+<p>En este caso debe ser cuidadoso al usar la regla de la cadena junto con TFC1. Sea <span class="math inline">\(u=x^4\)</span>. Por lo tanto</p>
+<p><span class="math display">\[\begin{equation} \label{eqdSS0}
+\begin{split}
+\dfrac{d}{dx}\left[\displaystyle\int_{a}^{x^4}sec(t)dt\right] &amp; = \dfrac{d}{dx}\left[\displaystyle\int_{a}^{u}sec(t)dt\right]\\
+&amp; = \dfrac{d}{du}\left[\displaystyle\int_{a}^{u}sec(t)dt\right]\dfrac{du}{dx}\\
+&amp; = sec(u)\dfrac{du}{dx}\\
+&amp; = sec(x^4).4x^3
+\end{split}
+\end{equation}\]</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág 384</p>
+<p><br></br></p>
+</div>
+<div id="teorema-fundamental-del-cálculo-caso-dos" class="section level2 hasAnchor" number="5.7">
+<h2><span class="header-section-number">5.7</span> Teorema fundamental del cálculo, caso Dos<a href="Integrales-simples.html#teorema-fundamental-del-cálculo-caso-dos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-43" class="theorem"><strong>Teorema 5.3  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, entonces</p>
+<p><span class="math display">\[
+\int_{a}^{b}{f(x)dx}=F(b)-F(a)
+\]</span></p>
+<p>donde <span class="math inline">\(F\)</span> es la antiderivada de <span class="math inline">\(f\)</span>, es decir, una función tal que <span class="math inline">\(F&#39;=f\)</span>.</p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(384\)</span>]</p>
+</div>
+<p><br></br></p>
+</div>
+<div id="integral-definida-riemann" class="section level2 hasAnchor" number="5.8">
+<h2><span class="header-section-number">5.8</span> Integral definida (Riemann)<a href="Integrales-simples.html#integral-definida-riemann" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Author:
+J. Cayetano Rodríguez (Formación Instituto GeoGebra Extremeño)</p>
+<iframe scrolling="no" title="Integral definida (Riemann)" src="https://www.geogebra.org/material/iframe/id/x8aeczfs/width/675/height/417/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="675px" height="417px" style="border:0px;">
+</iframe>
+<p><br></br></p>
+</div>
+<div id="técnicas-de-integración" class="section level2 hasAnchor" number="5.9">
+<h2><span class="header-section-number">5.9</span> Técnicas de integración<a href="Integrales-simples.html#técnicas-de-integración" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="integración-por-sustitución-o-cambio-de-variable" class="section level2 hasAnchor" number="5.10">
+<h2><span class="header-section-number">5.10</span> Integración por sustitución o cambio de variable<a href="Integrales-simples.html#integración-por-sustitución-o-cambio-de-variable" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>En general la técnica de sustitución funciona siempre que se tiene una integral que se pueda escribir en la forma:</p>
+<p><span class="math display">\[
+\boxed{
+\displaystyle\int{f(g(x))g&#39;(x)dx}}
+\]</span></p>
+<p>Si <span class="math inline">\(u=g(x)\)</span> es una función derivable cuyo alcance es un intervalo <span class="math inline">\(I\)</span>, y <span class="math inline">\(f\)</span> es continua sobre <span class="math inline">\(I\)</span>, entonces</p>
+<p><span class="math display">\[
+  \displaystyle\int{f(g(x))g&#39;(x)dx}=\displaystyle\int{f(u)du}
+\]</span></p>
+<p><br></br></p>
+<div id="ejemplo1-por-sustitución" class="section level3 hasAnchor" number="5.10.1">
+<h3><span class="header-section-number">5.10.1</span> Ejemplo1 por sustitución<a href="Integrales-simples.html#ejemplo1-por-sustitución" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-44" class="example"><strong>Ejemplo 5.4  </strong></span>Encuentre</p>
+<p><span class="math display">\[
+\displaystyle\int{2x\sqrt{1+x^2}dx}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p>Tomando el cambio de variable <span class="math inline">\(\boxed{w^2=1+x^2}\)</span> (1), se genera que <span class="math inline">\(2wdw=2xdx\)</span>; simplificando por <span class="math inline">\(2\)</span> en ambos lados de la igualdad se obtiene que <span class="math inline">\(\boxed{wdw=xdx}\)</span> (2).
+Realizando la sustitución de (1) y (2). Se obtiene que:</p>
+<p><span class="math display">\[\begin{equation} \label{eqdSS1}
+\begin{split}  
+I &amp; =\displaystyle\int{2x\sqrt{1+x^2}dx} =2\displaystyle\int{x\sqrt{1+x^2}dx}=2\displaystyle\int{\sqrt{1+x^2}xdx}\\
+I &amp; =2\displaystyle\int{\sqrt{w^2}wdw}2\displaystyle\int{wwdw}=2\displaystyle\int{w^2dw}\\
+I &amp; =2\left(\dfrac{w^3}{3}\right)+C\\
+I &amp; =\left(\dfrac{2}{3}\right)w^3+C
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta en la variable <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+  \displaystyle\int{2x\sqrt{1+x^2}dx}  = \left(\dfrac{2}{3}\right)\left(\sqrt{1+x^2}\right)^{3}+C
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo2-por-sustitución" class="section level3 hasAnchor" number="5.10.2">
+<h3><span class="header-section-number">5.10.2</span> Ejemplo2 por sustitución<a href="Integrales-simples.html#ejemplo2-por-sustitución" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-45" class="example"><strong>Ejemplo 5.5  </strong></span>Encuentre</p>
+<p><span class="math display">\[
+\displaystyle\int{\sqrt{2x+1}dx}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p>Tomaremos el cambio <span class="math inline">\(\boxed{w^2=2x+1}\)</span> (1), entonces <span class="math inline">\(2wdw=2dx\)</span>, simplificando en ambos lados de la igualdad por <span class="math inline">\(2\)</span>, se obtiene que: <span class="math inline">\(\boxed{wdw=dx}\)</span> (2).</p>
+<p>Realizando la sustitución de (1), y (2) en la integral obtenemos:</p>
+<p><span class="math display">\[\begin{equation} \label{eqdSS2}
+\begin{split}
+I &amp; = \displaystyle\int{\sqrt{2x+1}dx} \qquad \longleftrightarrow  \quad \displaystyle\int{\sqrt{w^2}w}dw=  \displaystyle\int{w.wdw}=  \displaystyle\int{w^2dw} = \dfrac{w^3}{3}+C\\
+
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta en la variable <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+  \displaystyle\int{\sqrt{2x+1}dx}   = \dfrac{1}{3}\left(\sqrt{2x+1}\right)^{3}+C
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo3-por-sustitución" class="section level3 hasAnchor" number="5.10.3">
+<h3><span class="header-section-number">5.10.3</span> Ejemplo3 por sustitución<a href="Integrales-simples.html#ejemplo3-por-sustitución" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-46" class="example"><strong>Ejemplo 5.6  </strong></span>Encuentre</p>
+<p><span class="math display">\[
+\displaystyle\int{x^3cos(x^4+2)dx}
+\]</span></p>
+</div>
+<p>Tomaremos el cambio <span class="math inline">\(\boxed{w=x^4+2}\)</span> (1), entonces <span class="math inline">\(dw=4x^3dx\)</span>, simplificando en ambos lados de la igualdad por <span class="math inline">\(4\)</span>, se obtiene que: <span class="math inline">\(\boxed{dw/4=x^3dx}\)</span> (2).</p>
+<p>Realizando la sustitución de (1), y (2) en la integral obtenemos:</p>
+<p><span class="math display">\[\begin{equation} \label{eqdSS3}
+\begin{split}
+
+I = \displaystyle\int{x^3cos(x^4+2)dx} =\displaystyle\int{cos(x^4+2)x^3dx} \ \longleftrightarrow  \ \displaystyle\int{cos(w)\dfrac{dw}{4}} &amp; =  \dfrac{1}{4}\displaystyle\int{cos(w)dw}=\\
+&amp; = \dfrac{sen(w)}{4}+C\\
+
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta en la variable <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+\displaystyle\int{x^3cos(x^4+2)dx}   = \dfrac{sen(x^4+2)}{4}+C
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo4-por-sustitución" class="section level3 hasAnchor" number="5.10.4">
+<h3><span class="header-section-number">5.10.4</span> Ejemplo4 por sustitución<a href="Integrales-simples.html#ejemplo4-por-sustitución" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-47" class="example"><strong>Ejemplo 5.7  </strong></span>Encuentre</p>
+<p><span class="math display">\[
+\displaystyle\int{x^5\sqrt{x^2+1}dx}
+\]</span></p>
+</div>
+<p>Tomaremos el cambio <span class="math inline">\(\boxed{w^2=x^2+1}\)</span> (1), entonces <span class="math inline">\(2wdw=2xdx\)</span>, simplificando en ambos lados de la igualdad por <span class="math inline">\(2\)</span>, se obtiene que: <span class="math inline">\(\boxed{wdw=xdx}\)</span> (2). Además <span class="math inline">\(\boxed{w^2-1=x^2}\)</span> (3).</p>
+<p>Realizando la sustitución de (1), (2), y (3) en la integral obtenemos:</p>
+<p><span class="math display">\[\begin{equation} \label{eqdSS4}
+\begin{split}
+I &amp; = \displaystyle\int{x^5\sqrt{x^2+1}dx} =\displaystyle\int{\left(x^2\right)^2\left(\sqrt{x^2+1}\right)xdx}\\
+
+&amp; \longleftrightarrow  \ \displaystyle\int{(w^2-1)^2\sqrt{w^2}.wdw}\\
+&amp; = \displaystyle\int{(w^2-1)^2w.wdw}=\displaystyle\int{(w^2-1)^2.w^2}dw\\
+&amp; = \displaystyle\int{\left(\left(w^2\right)^2-2w^2+1\right).w^2dw}\\
+&amp; = \displaystyle\int{\left(w^4-2w^2+1\right).w^2dw}=\displaystyle\int{\left(w^6-2w^4+w^2\right).dw}\\
+&amp; =\dfrac{w^7}{7}-\dfrac{2w^5}{5}+\dfrac{w^3}{3}+C
+
+\end{split}
+\end{equation}\]</span></p>
+<p>Como sabemos que <span class="math inline">\(w^2=x^2+1\)</span>, entonces <span class="math inline">\(w=\sqrt{x^2+1}=\left(x^2+1\right)^{1/2}\)</span>. Y por tal motivo la respuesta en la variable <span class="math inline">\(x\)</span> es:</p>
+<p><span class="math display">\[
+\displaystyle\int{x^5\sqrt{x^2+1}dx}    = \dfrac{\left(x^2+1\right)^{7/2}}{7}-\dfrac{2\left(x^2+1\right)^{5/2}}{5}+\dfrac{\left(x^2+1\right)^{3/2}}{3}+C
+\]</span></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="integración-por-partes" class="section level2 hasAnchor" number="5.11">
+<h2><span class="header-section-number">5.11</span> Integración por partes<a href="Integrales-simples.html#integración-por-partes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><span class="math display">\[
+\boxed{
+\displaystyle\int{f(x)g&#39;(x)dx}=f(x)g(x)- \displaystyle\int{g(x)f&#39;(x)dx}}
+\]</span></p>
+<p>Una representación equivalente será haciendo el cambio de variable:</p>
+<p><span class="math inline">\(u=f(x)\)</span>, <span class="math inline">\(v=g(x)\)</span>, entonces <span class="math inline">\(du=f&#39;(x)dx\)</span>, y <span class="math inline">\(dv=g&#39;(x)dx\)</span></p>
+<p><span class="math display">\[
+\boxed{
+\displaystyle\int{udv}=uv- \displaystyle\int{vdu}}
+\]</span></p>
+<p><br></br></p>
+<div id="ejemplo1-por-partes" class="section level3 hasAnchor" number="5.11.1">
+<h3><span class="header-section-number">5.11.1</span> Ejemplo1 por partes<a href="Integrales-simples.html#ejemplo1-por-partes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-48" class="example"><strong>Ejemplo 5.8  </strong></span>Encuentre</p>
+<p><span class="math display">\[
+\displaystyle\int{xsen(x)dx}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p>Sabemos que <span class="math inline">\(D_{x}\left[-cos(x)\right]=sen(x)\)</span>, ó equivalentemente</p>
+<p><span class="math display">\[
+  \dfrac{d}{dx}\left[-cos(x)\right]=sen(x)   \qquad  \text{ ó  equivalentemente } \qquad d\left[-cos(x)\right]=sen(x)dx
+\]</span></p>
+<p>Entonces</p>
+<p><span class="math display">\[\begin{equation} \label{eqdpp1}
+\begin{split}
+\displaystyle\int{xsen(x)dx} &amp;=  \displaystyle\int{xd\left[-cos(x)\right]}=-xcos(x)-\displaystyle\int{-cos(x)d[x]}\\
+&amp;=-xcos(x)+\displaystyle\int{cos(x)dx} \qquad \text{Recordar: } \quad d[x]=1dx=dx  \qquad \\
+&amp; = -xcos(x)+sen(x)+C
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta:</p>
+<p><span class="math display">\[
+  \displaystyle\int{xsen(x)dx} = -xcos(x)+sen(x)+C
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo2-por-partes" class="section level3 hasAnchor" number="5.11.2">
+<h3><span class="header-section-number">5.11.2</span> Ejemplo2 por partes<a href="Integrales-simples.html#ejemplo2-por-partes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-49" class="example"><strong>Ejemplo 5.9  </strong></span>Encuentre</p>
+<p><span class="math display">\[
+\displaystyle\int{xe^{x}dx}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p>Para realizar la integración por partes lo haremos usando la fórmula:
+<span class="math display">\[
+\boxed{
+\displaystyle\int{udv}=uv- \displaystyle\int{vdu}}
+\]</span></p>
+<p>Aquí tomaremos <span class="math inline">\(u=x\)</span> y <span class="math inline">\(dv=e^{x}dx\)</span></p>
+<p>Sabemos que:</p>
+<p><span class="math display">\[
+\text{Como } \qquad dv=e^{x}dx \qquad \qquad \text{ entonces } \qquad  v=\displaystyle\int{e^{x}dx}=e^{x}  \qquad \text{ aquí la constante es } \ C=0.
+\]</span>
+Por lo tanto</p>
+<p><span class="math display">\[\begin{equation} \label{eqdpp2}
+\begin{split}
+\displaystyle\int{udv} &amp;= uv- \displaystyle\int{vdu} \\
+&amp; = xe^{x}-\displaystyle\int{e^{x}dx}  \qquad \qquad  \text{ a quí }  \quad du=1dx\\
+&amp; = xe^{x}-e^{x}+C
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta:</p>
+<p><span class="math display">\[
+  \displaystyle\int{xe^{x}dx} = xe^{x}-e^{x}+C
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo3-por-partes" class="section level3 hasAnchor" number="5.11.3">
+<h3><span class="header-section-number">5.11.3</span> Ejemplo3 por partes<a href="Integrales-simples.html#ejemplo3-por-partes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-50" class="example"><strong>Ejemplo 5.10  </strong></span>Encuentre</p>
+<p><span class="math display">\[
+\displaystyle\int{x^2e^{x}dx}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p>En el proceso de solución vamos a usar parte de la notación de antiderivada</p>
+<p>Sabemos que</p>
+<p><span class="math display">\[
+  D_{x}\left[e^{x}\right]=e^{x} \qquad \text{ es equivalente a } \qquad D\left[e^{x}\right]=e^{x}dx
+\]</span><br />
+Aplicando esta notación a la integral propuesta tenemos:</p>
+<p><span class="math display">\[\begin{equation} \label{eqdpp3}
+\begin{split}
+\displaystyle\int{x^2e^{x}dx} &amp;=\displaystyle\int{x^2D\left[e^{x}\right]}\\
+&amp; =x^2e^{x}-\displaystyle\int{e^{x}D\left[x^2\right]}\\
+&amp; =x^2e^{x}-2\displaystyle\int{xe^{x}dx}\\
+&amp; =x^2e^{x}-2\left[\displaystyle\int{xD\left[e^{x}\right]}\right]\\
+&amp; =x^2e^{x}-2\left[xe^{x}-\displaystyle\int{e^{x}D\left[x\right]}\right]\\
+&amp; =x^2e^{x}-2\left[xe^{x}-\displaystyle\int{e^{x}dx}\right]\\
+&amp; =x^2e^{x}-2\left[xe^{x}-e^{x}\right]+C\\
+&amp; =x^2e^{x}-2xe^{x}+2e^{x}+C\\
+&amp; =e^{x}\left(x^2-2x+2\right)+C
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta:</p>
+<p><span class="math display">\[
+  \displaystyle\int{x^2e^{x}dx} = e^{x}\left(x^2-2x+2\right)+C
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo4-por-partes" class="section level3 hasAnchor" number="5.11.4">
+<h3><span class="header-section-number">5.11.4</span> Ejemplo4 por partes<a href="Integrales-simples.html#ejemplo4-por-partes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-51" class="example"><strong>Ejemplo 5.11  </strong></span>Encuentre</p>
+<p><span class="math display">\[
+\displaystyle\int{(ax^2+bx+c)e^{x}dx}
+\]</span>
+donde <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, y <span class="math inline">\(c\)</span> son constantes</p>
+</div>
+<p><br></br></p>
+<p><span class="math display">\[\begin{equation} \label{eqdpp4}
+\begin{split}
+\displaystyle\int{(ax^2+bx+c)e^{x}dx} &amp; =  a\displaystyle\int{x^2e^{x}dx}+b\displaystyle\int{xe^{x}dx}+c\displaystyle\int{e^{x}dx}\\
+&amp; =ae^{x}\left[x^2-2x+2\right]+be^{x}\left[x-1\right]+ce^{x}+C\\
+&amp; =e^{x}\left(a\left[x^2-2x+2\right]+b\left[x-1\right]+c\right)+C\\
+&amp; =e^{x}\left[ax^2+(b-2a)x+(2a-1b+c)\right]+C\\
+
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta:</p>
+<p><span class="math display">\[
+  \displaystyle\int{(ax^2+bx+c)e^{x}dx} = e^{x}\left[ax^2+(b-2a)x+(2a-1b+c)\right]+C
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo5-por-partes" class="section level3 hasAnchor" number="5.11.5">
+<h3><span class="header-section-number">5.11.5</span> Ejemplo5 por partes<a href="Integrales-simples.html#ejemplo5-por-partes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-52" class="example"><strong>Ejemplo 5.12  </strong></span>Encuentre</p>
+<p><span class="math display">\[
+\displaystyle\int{sen(x)e^{x}dx}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p><span class="math display">\[\begin{equation} \label{eqdpp5}
+\begin{split}
+I_{1} &amp; =\displaystyle\int{sen(x)e^{x}dx}  = \\
+&amp; =\displaystyle\int{sen(x)D\left[e^{x}\right]}\\
+&amp; = sen(x)e^{x}-\displaystyle\int{e^{x}D\left[sen(x)\right]}\\
+&amp; = sen(x)e^{x}-\displaystyle\int{e^{x}cos(x)dx}\\
+&amp; = sen(x)e^{x}-\displaystyle\int{cos(x)D\left[e^{x}\right]}\\
+&amp; = sen(x)e^{x}-\left(cos(x)e^{x}-\displaystyle\int{e^{x}D\left[cos(x)\right]}\right)\\
+&amp; = sen(x)e^{x}-cos(x)e^{x}+\displaystyle\int{e^{x}D\left[cos(x)\right]}\\
+&amp; = sen(x)e^{x}-cos(x)e^{x}-\displaystyle\int{sen(x)e^{x}dx}\\
+I_{1} &amp; = sen(x)e^{x}-cos(x)e^{x}-I_{1}\\
+2I_{1} &amp; =e^{x}\left[sen(x)-cos(x)\right]+C_{1}\\
+I_{1} &amp; = \dfrac{e^{x}}{2}\left[sen(x)-cos(x)\right]+\dfrac{C_{1}}{2}\\
+I_{1} &amp; = \dfrac{e^{x}}{2}\left[sen(x)-cos(x)\right]+C\\
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta:</p>
+<p><span class="math display">\[
+  \displaystyle\int{sen(x)e^{x}dx}  = \dfrac{e^{x}}{2}\left[sen(x)-cos(x)\right]+C\\
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo6-por-partes" class="section level3 hasAnchor" number="5.11.6">
+<h3><span class="header-section-number">5.11.6</span> Ejemplo6 por partes<a href="Integrales-simples.html#ejemplo6-por-partes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-53" class="example"><strong>Ejemplo 5.13  </strong></span>Encuentre</p>
+<p><span class="math display">\[
+\displaystyle\int{arcsen(x)dx}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p><span class="math display">\[\begin{equation} \label{eqdpp6}
+\begin{split}
+I &amp; =\displaystyle\int{arcsen(x)dx}  = \displaystyle\int{arcsen(x)1dx} \\
+&amp; = \displaystyle\int{arcsen(x)D\left[x\right]} \\
+&amp; = xarcsen(x)-\displaystyle\int{xD\left[arcsen(x)\right]} \\
+&amp; = xarcsen(x)-\displaystyle\int{x\left(\dfrac{dx}{\sqrt{1-x^2}}\right)} \\
+&amp; = xarcsen(x)-\displaystyle\int{\dfrac{xdx}{\sqrt{1-x^2}}} \\
+&amp; \text{Realizando el cambio } \quad \boxed{w^2=1-x^2} \ \ (1) \quad \text{ implica que } \quad 2wdw=-2xdx \\
+&amp; \text{Entonces } \quad \boxed{-wdw=xdx} \ \ (2) \\
+&amp; \text{Usando (1) y (2) en } \quad \displaystyle\int{\dfrac{xdx}{\sqrt{1-x^2}}} \quad   \longleftrightarrow  \quad \displaystyle\int{\dfrac{-wdw}{\sqrt{w^2}}} =-\displaystyle\int{\dfrac{wdw}{w}}=-\displaystyle\int{dw}=-w+C\\
+
+I &amp; = xarcsen(x)-\left(-\sqrt{1-x^2}\right)+C\\
+
+I &amp; = xarcsen(x)+\sqrt{1-x^2}+C
+
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta:</p>
+<p><span class="math display">\[
+  \displaystyle\int{arcsen(x)dx}  = xarcsen(x)+\sqrt{1-x^2}+C\\
+\]</span></p>
+</div>
+</div>
+<div id="integración-por-sustitución-trigonométrica" class="section level2 hasAnchor" number="5.12">
+<h2><span class="header-section-number">5.12</span> Integración por sustitución trigonométrica<a href="Integrales-simples.html#integración-por-sustitución-trigonométrica" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><span class="math display">\[
+\boxed{
+\begin{matrix}
+\text{Expresión} &amp; \text{Sustitución}&amp;\text{Cond para }\theta &amp; \text{Identidad}\\
+\sqrt{a^2-x^2}; &amp; x=asen(\theta); &amp; -\dfrac{\pi}{2} \leq \theta \leq \dfrac{\pi}{2}; &amp; 1-sen^2(\theta)=cos^2(\theta)\\
+\end{matrix}}
+\]</span></p>
+<div id="ejemplo1" class="section level3 hasAnchor" number="5.12.1">
+<h3><span class="header-section-number">5.12.1</span> Ejemplo1<a href="Integrales-simples.html#ejemplo1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-54" class="example"><strong>Ejemplo 5.14  </strong></span>Determine</p>
+<p><span class="math display">\[
+\displaystyle{\int{\dfrac{\sqrt{9-x^2}}{x^2}dx}}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p>Primero:</p>
+<p>Asumir que <span class="math inline">\(a^2=9\)</span>, entonces <span class="math inline">\(a=3\)</span> y <span class="math inline">\(x=asen(\theta)\)</span> es equivalente a <span class="math inline">\(x=3sen(\theta)\)</span> (1).
+<span class="math inline">\(dx=3cos(\theta)d\theta\)</span> (2).</p>
+<p>Segundo:</p>
+<p>Sustituir (1)y(2) en la integral, así:</p>
+<p><span class="math display">\[\begin{equation} \label{eqST1}
+\begin{split}
+I &amp; =\displaystyle{\int{\dfrac{\sqrt{9-\left(3sen(\theta)\right)^2}}{\left(3sen(\theta)\right)^2}3cos(\theta)d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{\sqrt{9-\left(9sen^2(\theta)\right)}}{9sen^2(\theta)}3cos(\theta)d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{\sqrt{9\left(1-sen^2(\theta)\right)}}{9sen^2(\theta)}3cos(\theta)d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{\sqrt{9\left(cos(\theta)\right)^2}}{9sen^2(\theta)}3cos(\theta)d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{3cos(\theta)}{9sen^2(\theta)}3cos(\theta)d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{9cos^2(\theta)}{9sen^2(\theta)}d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{cos^2(\theta)}{sen^2(\theta)}d\theta}}\\
+&amp; = \displaystyle{\int{\dfrac{1-sen^2(\theta)}{sen^2(\theta)}d\theta}}\\
+&amp; = \displaystyle{\int{\left[\dfrac{1}{sen^2(\theta)}-\dfrac{sen^2(\theta)}{sen^2(\theta)}\right]d\theta}}\\
+&amp; = \displaystyle{\int{\left[csc^2(\theta)-1\right]d\theta}}=\displaystyle{\int{csc^2(\theta)d\theta}}-\displaystyle{\int{1d\theta}}\\
+&amp; = -cot(\theta)- \theta +C
+\end{split}
+\end{equation}\]</span></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigSustitucionTG1"></span>
+<img src="images/SustitucionTG1.png" alt="Triángulo rectángulo para la sustitución trigonométrica uno [Imagen tomada de [@stewart2009calculus] pág $468$]" width="35%" />
+<p class="caption">
+Figura 5.3: Triángulo rectángulo para la sustitución trigonométrica uno [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus" role="doc-biblioref">Stewart 2009</a>)</span> pág <span class="math inline">\(468\)</span>]
+</p>
+</div>
+<p>Respuesta:</p>
+<p>(1.) Del triángulo rectángulo es claro que <span class="math inline">\(sen(\theta)=\dfrac{x}{3}\)</span>, entonces <span class="math inline">\(\theta=sen^{-1}\left(\dfrac{x}{3}\right)\)</span></p>
+<p>(2.) Del triángulo rectángulo es claro que <span class="math inline">\(cot(\theta)=\dfrac{\sqrt{9-x^2}}{x}\)</span></p>
+<p><span class="math display">\[
+\displaystyle{\int{\dfrac{\sqrt{9-x^2}}{x^2}dx}}=-\dfrac{\sqrt{9-x^2}}{x}-sen^{-1}\left(\dfrac{x}{3}\right)+C
+\]</span></p>
+<p><br></br></p>
+<p><span class="math display">\[
+\boxed{
+\begin{matrix}
+\text{Expresión} &amp; \text{Sustitución}&amp;\text{Cond para }\theta &amp; \text{Identidad}\\
+\sqrt{a^2+x^2}; &amp; x=atan(\theta); &amp; -\dfrac{\pi}{2} &lt; \theta &lt; \dfrac{\pi}{2}; &amp; 1+tan^2(\theta)=sec^2(\theta)\\
+\end{matrix}}
+\]</span></p>
+</div>
+<div id="ejemplo2" class="section level3 hasAnchor" number="5.12.2">
+<h3><span class="header-section-number">5.12.2</span> Ejemplo2<a href="Integrales-simples.html#ejemplo2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-55" class="example"><strong>Ejemplo 5.15  </strong></span>Determine</p>
+<p><span class="math display">\[
+\displaystyle{\int{\dfrac{1}{x^2\sqrt{x^2+4}}dx}}
+\]</span></p>
+</div>
+<p>Primero:</p>
+<p>Asumir que <span class="math inline">\(a^2=4\)</span>, entonces <span class="math inline">\(a=2\)</span> y <span class="math inline">\(x=atan(\theta)\)</span> es equivalente a <span class="math inline">\(x=2tan(\theta)\)</span> (1).
+<span class="math inline">\(dx=2sec^2(\theta)d\theta\)</span> (2).</p>
+<p>Segundo:</p>
+<p>Sustituir (1)y(2) en la integral, así:</p>
+<p><span class="math display">\[\begin{equation} \label{eqST2}
+\begin{split}
+
+I &amp; = \displaystyle{\int{\dfrac{2sec^2(\theta)d\theta}{4tan^2(\theta)\sqrt{4tan^2(\theta)+4}}}}\\
+&amp; = \displaystyle{\int{\dfrac{2sec^2(\theta)d\theta}{4tan^2(\theta)\sqrt{4\left(tan^2(\theta)+1\right)}}}}\\
+&amp; = \displaystyle{\int{\dfrac{2sec^2(\theta)d\theta}{4tan^2(\theta)\sqrt{4sec^2(\theta)}}}}\\
+&amp; = \displaystyle{\int{\dfrac{2sec^2(\theta)d\theta}{4tan^2(\theta)2sec(\theta)}}}\\
+&amp; = \displaystyle{\int{\dfrac{sec(\theta)d\theta}{4tan^2(\theta)}}}\\
+&amp; = \displaystyle{\int{\dfrac{sec(\theta)d\theta}{4tan^2(\theta)}}}; \  \ \ \text{Sabemos que: } \qquad  \dfrac{sec(\theta)}{tan^2(\theta)}=\dfrac{1}{cos(\theta)}.\dfrac{cos^2(\theta)}{sen^2(\theta)}=\dfrac{cos(\theta)}{sen^2(\theta)}\\
+&amp; = \displaystyle{\int{\dfrac{sec(\theta)d\theta}{4tan^2(\theta)}}}= \displaystyle{\int{\dfrac{cos(\theta)d\theta}{4sen^2(\theta)}}}\\
+&amp; = \dfrac{1}{4}\displaystyle{\int{\dfrac{cos(\theta)d\theta}{sen^2(\theta)}}}\quad \text{Realizando el cambio }  u=sen(\theta), \ \  \text{entonces } \ \ du=cos(\theta)d\theta\\
+&amp;  \qquad \longleftrightarrow \dfrac{1}{4}\displaystyle{\int{\dfrac{du}{u^2}}}=\dfrac{1}{4}\displaystyle{\int{u^{-2}du}}=\dfrac{-1}{4u}+C\\
+\end{split}
+\end{equation}\]</span></p>
+<p>Respuesta en la variable <span class="math inline">\(\theta\)</span>:</p>
+<p><span class="math display">\[
+  \dfrac{1}{4}\displaystyle{\int{\dfrac{cos(\theta)d\theta}{sen^2(\theta)}}}  = -\dfrac{1}{4sen(\theta)}+C=\dfrac{-csc(\theta)}{4}+C\\
+\]</span></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigSustitucionTG2"></span>
+<img src="images/SustitucionTG2.png" alt="Triángulo rectángulo para la sustitución trigonométrica dos [Imagen tomada de [@stewart2009calculus] pág $469$]" width="35%" />
+<p class="caption">
+Figura 5.4: Triángulo rectángulo para la sustitución trigonométrica dos [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus" role="doc-biblioref">Stewart 2009</a>)</span> pág <span class="math inline">\(469\)</span>]
+</p>
+</div>
+<p>Respuesta en la variable <span class="math inline">\(x\)</span>:</p>
+<p>Del triángulo rectángulo es claro que <span class="math inline">\(csc(\theta)=\dfrac{\sqrt{x^2+4}}{x}\)</span>, entonces</p>
+<p><span class="math display">\[
+\displaystyle{\int{\dfrac{1}{x^2\sqrt{x^2+4}}dx}}=-\dfrac{\sqrt{x^2+4}}{4x}+C
+\]</span></p>
+<p><br></br></p>
+<p><br></br></p>
+<p><span class="math display">\[
+\boxed{
+\begin{matrix}
+\text{Expresión} &amp; \text{Sustitución}&amp;\text{Cond para }\theta &amp; \text{Identidad}\\
+\sqrt{x^2-a^2}; &amp; x=asec(\theta); &amp; 0 \leq \theta &lt; \dfrac{\pi}{2} \text{ ó } \pi \leq \theta &lt; \dfrac{3\pi}{2}; &amp; sec^2(\theta)-1=tan^2(\theta)\\
+\end{matrix}}
+\]</span></p>
+</div>
+<div id="ejemplo3" class="section level3 hasAnchor" number="5.12.3">
+<h3><span class="header-section-number">5.12.3</span> Ejemplo3<a href="Integrales-simples.html#ejemplo3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-56" class="example"><strong>Ejemplo 5.16  </strong></span>Determine</p>
+<p><span class="math display">\[
+\displaystyle{\int{\dfrac{1}{\sqrt{x^2-4}}dx}}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p>Primero:</p>
+<p>Asumir que <span class="math inline">\(a^2=4\)</span>, entonces <span class="math inline">\(a=2\)</span> y <span class="math inline">\(x=asec(\theta)\)</span> es equivalente a <span class="math inline">\(x=2sec(\theta)\)</span> (1).
+<span class="math inline">\(dx=2sec(\theta)tan(\theta)d\theta\)</span> (2).</p>
+<p>Segundo:</p>
+<p>Sustituir (1)y(2) en la integral, así:</p>
+<p><span class="math display">\[\begin{equation} \label{eqST3}
+\begin{split}
+I &amp; =\displaystyle{\int{\dfrac{1}{\sqrt{\left(4sec^2(\theta)-4\right)}}2sec(\theta)tan(\theta)d\theta}}\\
+&amp; =\displaystyle{\int{\dfrac{1}{\sqrt{4(sec^2(\theta)-1)}}2sec(\theta)tan(\theta)d\theta}}\\
+&amp; =\displaystyle{\int{\dfrac{1}{\sqrt{4tan^2(\theta)}}2sec(\theta)tan(\theta)d\theta}}\\
+&amp; =\displaystyle{\int{\dfrac{1}{2tan(\theta)}2sec(\theta)tan(\theta)d\theta}}\\
+&amp; =\displaystyle{\int{sec(\theta)d\theta}}=ln|sec(\theta)+tan(\theta)|+C\\
+
+\end{split}
+\end{equation}\]</span></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigSustitucionTG3"></span>
+<img src="images/SustitucionTG3.png" alt="Triángulo rectángulo para la sustitución trigonométrica tres [Imagen tomada de [@stewart2009calculus] pág $469$]" width="35%" />
+<p class="caption">
+Figura 5.5: Triángulo rectángulo para la sustitución trigonométrica tres [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus" role="doc-biblioref">Stewart 2009</a>)</span> pág <span class="math inline">\(469\)</span>]
+</p>
+</div>
+<p>Respuesta en la variable <span class="math inline">\(x\)</span>:</p>
+<p>(1.) Del triángulo rectángulo es claro que si <span class="math inline">\(a=2\)</span>, entonces <span class="math inline">\(tan(\theta)=\dfrac{\sqrt{x^2-4}}{2}\)</span>.</p>
+<p>(2.) Del triángulo rectángulo es claro que si <span class="math inline">\(a=2\)</span>, entonces <span class="math inline">\(sec(\theta)=\dfrac{x}{2}\)</span>.</p>
+<p><span class="math display">\[
+\displaystyle{\int{\dfrac{1}{\sqrt{x^2-4}}dx}}=ln\left|\dfrac{x}{2}+\dfrac{\sqrt{x^2-4}}{2}\right|+C
+\]</span></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="integación-por-fracciones-parciales" class="section level2 hasAnchor" number="5.13">
+<h2><span class="header-section-number">5.13</span> Integación por fracciones parciales<a href="Integrales-simples.html#integación-por-fracciones-parciales" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="definition">
+<p><span id="def:unnamed-chunk-57" class="definition"><strong>Definición 5.2  </strong></span>Una fracción racional se dice fracción propia, si y sólo si el grado del numerador es menor que el grado del denominador, donde tanto el numerador como el denominador no tienen factores comunes.</p>
+<p><span class="math display">\[
+  f(x)=\dfrac{P(x)}{Q(x)}, \qquad \text{ es fracción propia si y sólo si } \qquad grado(P) &lt; grado(Q)
+\]</span></p>
+<p>Una fracción se dice impropia si no es propia. Más aún:</p>
+<p><span class="math display">\[
+  f(x)=\dfrac{P(x)}{Q(x)}, \qquad \text{ es fracción impropia si y sólo si } \qquad grado(P) \geq grado(Q)
+\]</span></p>
+<p>NOTA: Si <span class="math inline">\(f(x)\)</span> es una fracción racional impropia entonces es posible descomponer <span class="math inline">\(f(x)\)</span> como:</p>
+<p><span class="math display">\[
+  f(x)=\dfrac{P(x)}{Q(x)}=S(x)+\dfrac{R(x)}{Q(x)}, \qquad \text{ tal que } \qquad grado(R) &lt; grado(Q)
+\]</span></p>
+</div>
+<p><br></br></p>
+<div id="ejemplo1-1" class="section level3 hasAnchor" number="5.13.1">
+<h3><span class="header-section-number">5.13.1</span> Ejemplo1<a href="Integrales-simples.html#ejemplo1-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-58" class="example"><strong>Ejemplo 5.17  </strong></span>Determinar</p>
+<p><span class="math display">\[
+\displaystyle\int{\dfrac{x^3+x}{x-1}dx}
+\]</span>
+tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(474\)</span>.</p>
+</div>
+<p><br></br></p>
+<p>Realizando la división de ambos polinomios se obtiene que:</p>
+<p><span class="math display">\[
+\dfrac{x^3+x}{x-1}=x^2+x+2+\dfrac{2}{x-1}
+\]</span><br />
+Entonces</p>
+<p><span class="math display">\[\begin{equation} \label{eqFP1}
+\begin{split}
+\displaystyle\int{\dfrac{x^3+x}{x-1}dx} &amp; = \displaystyle\int{x^2dx}+\displaystyle\int{xdx}+\displaystyle\int{2dx}+\displaystyle\int{\dfrac{2}{x-1}dx}\\
+&amp; = \dfrac{x^3}{3}+\dfrac{x^2}{2}+2x+2ln|x-1|+C
+\end{split}
+\end{equation}\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo2-1" class="section level3 hasAnchor" number="5.13.2">
+<h3><span class="header-section-number">5.13.2</span> Ejemplo2<a href="Integrales-simples.html#ejemplo2-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>El denominador <span class="math inline">\(Q(x)\)</span> es un producto de factores lineales distintos</strong></p>
+<p><span class="math display">\[
+Q(x)=(a_1x+b_1)(a_2x+b_2)...(a_kx+b_k)
+\]</span></p>
+<p>donde ningún factor se repite. Entonces por teorema de facciones parciales existen constantes <span class="math inline">\(A_1,A_2,...,A_k\)</span>, tales que</p>
+<p><span class="math display">\[
+f(x)=\dfrac{P(x)}{Q(x)}=\dfrac{A_1}{a_1x+b_1}+\dfrac{A_2}{a_2x+b_2}+...+\dfrac{A_k}{a_kx+b_k}, \ \ \ \text{ donde } \ \ \ grado(P(x))&lt;grado(Q(x))
+\]</span></p>
+<div class="example">
+<p><span id="exm:unnamed-chunk-59" class="example"><strong>Ejemplo 5.18  </strong></span>Determine</p>
+<p><span class="math display">\[
+\displaystyle\int{\dfrac{1x^2+2x-1}{2x^3+3x^2-2x}dx}
+\]</span>
+tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(475\)</span></p>
+</div>
+<p><br></br></p>
+<p>Sabemos que por factorización el denominador <span class="math inline">\(Q(x)\)</span> puede ser expresado equivalentemente como:</p>
+<p><span class="math display">\[
+Q(x)  =2x^3+3x^2-2x=x(2x^2+3x-2)=x(2x-1)(x+2)
+\]</span></p>
+<p>Por lo tanto</p>
+<p><span class="math display">\[
+\dfrac{1x^2+2x-1}{2x^3+3x^2-2x}=\dfrac{1x^2+2x-1}{x(2x-1)(x+2)}=\dfrac{A}{x}+\dfrac{B}{2x-1}+\dfrac{C}{x+2} \ \ \ (a)
+\]</span></p>
+<p>Para determinar los valores correspondientes a <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, y <span class="math inline">\(C\)</span> multiplicamos al ecuación (a) por <span class="math inline">\(x(2x-1)(x+2)\)</span> en ambos lados el la igualdad
+de lo cual obtenemos:</p>
+<p><span class="math display">\[
+1x^2+2x-1= A(2x-1)(x+2)+Bx(x+2)+Cx(2x-1)  \ \ \ (b)
+\]</span></p>
+<p>Al desarrollar el lado izquierdo de (b) y reagrupar términos, se obtiene:</p>
+<p><span class="math display">\[
+1x^2+2x-1= (2A+B+2C)x^2+(3A+2B-C)x-2A  \ \ \ (c)
+\]</span></p>
+<p>Aplicando la definición de polinomios iguales, recordemos que dos polinomios son iguales, si y sólo si poseen el mismo grado y sus coeficientes correspondientes son iguales, entonces aplicando esto a la igualdad de polinomios expresada en (c), se obtiene el sistema <span class="math inline">\(3\times 3\)</span>:</p>
+<p><span class="math display">\[
+\begin{matrix} 2A +B+2C &amp; = &amp; 1\\
+3A +2B-C &amp; = &amp; 2\\
+-2A  &amp; = &amp; -1\\ \end{matrix}
+\]</span></p>
+<p>Usando cualquier técnica para obtener la solución del sistema <span class="math inline">\(3\times 3\)</span>, se llega a los resultados:</p>
+<p><span class="math display">\[
+A=\dfrac{1}{2}, \qquad B=\dfrac{1}{5}, \qquad C=\dfrac{-1}{10}
+\]</span></p>
+<p>Por lo tanto</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP2}
+\begin{split}
+\displaystyle\int{\dfrac{1x^2+2x-1}{2x^3+3x^2-2x}dx} &amp; = \displaystyle\int{\left[\dfrac{1}{2}\dfrac{1}{x}+\dfrac{1}{5}\dfrac{1}{2x-1}-\dfrac{1}{10}\dfrac{1}{x+2}\right]dx}\\
+&amp; = \displaystyle\int{\dfrac{1}{2}\dfrac{1}{x}dx}+\displaystyle\int{\dfrac{1}{5}\dfrac{1}{2x-1}dx}-\displaystyle\int{\dfrac{1}{10}\dfrac{1}{x+2}dx}\\
+&amp; = \dfrac{1}{2}\displaystyle\int{\dfrac{1}{x}dx}+\dfrac{1}{5}\displaystyle\int{\dfrac{1}{2x-1}dx}-\dfrac{1}{10}\displaystyle\int{\dfrac{1}{x+2}dx}\\
+&amp; = \dfrac{1}{2}ln|x|+\dfrac{1}{5}ln|2x-1|-\dfrac{1}{10}ln|x+2|+C
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Respuesta en la variable <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+\displaystyle\int{\dfrac{1x^2+2x-1}{2x^3+3x^2-2x}dx}=\dfrac{1}{2}ln|x|+\dfrac{1}{5}ln|2x-1|-\dfrac{1}{10}ln|x+2|+C
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo3-1" class="section level3 hasAnchor" number="5.13.3">
+<h3><span class="header-section-number">5.13.3</span> Ejemplo3<a href="Integrales-simples.html#ejemplo3-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>El denominador <span class="math inline">\(Q(x)\)</span> es un producto de factores lineales, algunos de los cuales se repiten</strong></p>
+<p><span class="math display">\[
+Q(x)=(a_1x+b_1)^r(a_2x+b_2)^s...(a_kx+b_k)^t
+\]</span></p>
+<p>Entonces por teorema de facciones parciales existen constantes <span class="math inline">\(A_1,A_2,...,A_r\)</span>, tales que para el factor <span class="math inline">\((a_1x+b_1)^r\)</span>, se tiene:</p>
+<p><span class="math display">\[
+\dfrac{A_1}{a_1x+b_1}+\dfrac{A_2}{(a_1x+b_1)^2}+...+\dfrac{A_r}{(a_1x+b_1)^r}, \ \ \ \text{ donde } \ \ \ r\geq 2
+\]</span></p>
+<div class="example">
+<p><span id="exm:unnamed-chunk-60" class="example"><strong>Ejemplo 5.19  </strong></span>Determinar</p>
+<p><span class="math display">\[
+\displaystyle\int{\dfrac{x^4-2x^2+4x+1}{x^3-x^2-x+1}dx}
+\]</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(477\)</span></p>
+</div>
+<p><br></br></p>
+<p>Primero debe verse que <span class="math inline">\(grado(P(x))\geq grado(Q(x))\)</span>, lo que significa que se debe realizar la división entre ambos polinomios, obteniendo:</p>
+<p><span class="math display">\[
+  \dfrac{x^4-2x^2+4x+1}{x^3-x^2-x+1}=x+1+\dfrac{4x}{x^3-x^2-x+1}
+\]</span></p>
+<p>Además por factorización se puede ver que <span class="math inline">\(Q(x)\)</span> puede expresarse como:</p>
+<p><span class="math display">\[
+Q(x)=x^3-x^2-x+1=(x-1)^2(x+1)
+\]</span></p>
+<p>Si la descomposición para la fracción propia con factor lineal repetido tiene la forma:</p>
+<p><span class="math display">\[
+\dfrac{4x}{(x-1)^2(x+1)}=\dfrac{A}{x-1}+\dfrac{B}{(x-1)^2}+\dfrac{C}{x+1}   \ \ \ (1).
+\]</span></p>
+<p>Entonces el enunciado queda representado como:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP3}
+\begin{split}
+I &amp; =\displaystyle\int{\dfrac{x^4-2x^2+4x+1}{x^3-x^2-x+1}dx}\\
+&amp; =\displaystyle\int{\left[x+1+\dfrac{4x}{(x-1)^2(x+1)}\right]dx}\\
+&amp; =\displaystyle\int{\left[x+1+A\left(\dfrac{1}{x-1}\right)+B\left(\dfrac{1}{(x-1)^2}\right)+C\left(\dfrac{1}{x+1}\right)\right]dx}\\
+&amp; =\displaystyle\int{(x+1)dx}+A\displaystyle\int{\dfrac{1}{x-1}dx}+B\displaystyle\int{\dfrac{1}{(x-1)^2}dx}+C\displaystyle\int{\dfrac{1}{x+1}dx}\\
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Para determinar los valores de <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, y <span class="math inline">\(C\)</span>, se procede de la igualdad (1), multiplicando por <span class="math inline">\((x-1)^2(x+1)\)</span> en ambos lados de la ecuación (1), se obtiene:</p>
+<p><span class="math display">\[
+0x^2+4x+0=A(x-1)(x+1)+B(x+1)+c(x-1)^2 \ \ \ (2).  
+\]</span></p>
+<p>Desarrollando el lado izquierdo de (2), y reagrupando se tiene:</p>
+<p><span class="math display">\[
+0x^2+4x+0=(A+C)x^2+(B-2C)x+(B+C-A)  \ \ \ (3).
+\]</span></p>
+<p>Como ambos polinomios en (3) son de igual grado, entonces podemos igualar coeficiente a coeficiente, asi:</p>
+<p><span class="math display">\[
+\begin{matrix}
+A + C &amp; = &amp; 0\\
+B - 2C &amp; = &amp; 4\\
+-A + B + C &amp; = &amp; 0\\ \end{matrix}
+\]</span></p>
+<p>Usando cualquier técnica para obtener la solución del sistema <span class="math inline">\(3\times 3\)</span>, se llega a los resultados:</p>
+<p><span class="math display">\[
+A=1, \qquad B=2, \qquad C=-1
+\]</span></p>
+<p>Por lo tanto</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP4}
+\begin{split}
+\displaystyle\int{\dfrac{x^4-2x^2+4x+1}{x^3-x^2-x+1}dx} &amp; = \displaystyle\int{(x+1)dx}+1\displaystyle\int{\dfrac{1}{x-1}dx}+2\displaystyle\int{\dfrac{1}{(x-1)^2}dx}+-1\displaystyle\int{\dfrac{1}{x+1}dx}\\
+&amp; =\dfrac{x^2}{2}+1x+ln|x-1|-\dfrac{2}{x-1}-ln|x+1|+C
+\end{split}
+\end{equation}
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo4" class="section level3 hasAnchor" number="5.13.4">
+<h3><span class="header-section-number">5.13.4</span> Ejemplo4<a href="Integrales-simples.html#ejemplo4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>El denominador <span class="math inline">\(Q(x)\)</span> contiene factores cuadráticos irreducibles, ninguno de los cuales se repite</strong></p>
+<p>Una expresión cuadrática de la forma <span class="math inline">\(ax^2+bx+c\)</span> se dice irreducible en el conjunto de los número reales, si <span class="math inline">\(D=b^2-4ac&lt;0\)</span></p>
+<div class="example">
+<p><span id="exm:unnamed-chunk-61" class="example"><strong>Ejemplo 5.20  </strong></span>Determinar</p>
+<p><span class="math display">\[
+\displaystyle\int{\dfrac{x^2-x+4}{x^3+4x}dx}
+\]</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(478\)</span></p>
+</div>
+<p><br></br></p>
+<p>Como el denominador <span class="math inline">\(Q(x)=x^3+4x\)</span>, se puede factorizar en la forma: <span class="math inline">\(Q(x)=x(x^2+4)\)</span> donde <span class="math inline">\(x^2+4\)</span> es una expresión cuadrática irreducible. Entonces</p>
+<p><span class="math display">\[
+\dfrac{x^2-x+4}{x^3+4x}=\dfrac{x^2-x+4}{x(x^2+4)} =\dfrac{A}{x}+\dfrac{Bx+C}{x^2+4} \ \ \ (1)
+\]</span></p>
+<p>de donde</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP5}
+\begin{split}
+\displaystyle\int{\dfrac{x^2-x+4}{x^3+4x}dx} &amp; =\displaystyle\int{\dfrac{A}{x}dx}+\displaystyle\int{\dfrac{Bx+C}{x^2+4}dx}\\
+&amp; =\displaystyle\int{\dfrac{A}{x}dx}+\displaystyle\int{\dfrac{Bx}{x^2+4}dx}+\displaystyle\int{\dfrac{C}{x^2+4}dx}\\
+&amp; =A\displaystyle\int{\dfrac{1}{x}dx}+B\displaystyle\int{\dfrac{x}{x^2+4}dx}+C\displaystyle\int{\dfrac{1}{x^2+4}dx}\\
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Para determinar los valores de <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, y <span class="math inline">\(C\)</span>, se procede de la igualdad (1), multiplicando en ambos lados por <span class="math inline">\(x(x^2+4)\)</span> dando como resultado:</p>
+<p><span class="math display">\[
+2x^2-x+4=A(x^2+4)+(Bx+C)x=(A+B)x^2+Cx+4A
+\]</span></p>
+<p>Al igualar los coeficientes correspondientes a sus respectivos grados se obtiene:</p>
+<p><span class="math display">\[
+\begin{matrix}
+A + B &amp; = &amp; 2\\
+C &amp; = &amp; -1\\
+4A &amp; = &amp; 4\\ \end{matrix}
+\]</span></p>
+<p>Usando cualquier técnica para obtener la solución del sistema <span class="math inline">\(3\times 3\)</span>, se llega a los resultados:</p>
+<p><span class="math display">\[
+A=1, \qquad B=1, \qquad C=-1
+\]</span></p>
+<p>Por lo tanto</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP6}
+\begin{split}
+\displaystyle\int{\dfrac{x^2-x+4}{x^3+4x}dx} &amp; =1\displaystyle\int{\dfrac{1}{x}dx}+1\displaystyle\int{\dfrac{x}{x^2+4}dx}-1\displaystyle\int{\dfrac{1}{x^2+4}dx}\\
+&amp; = ln|x|+\dfrac{1}{2}ln(x^2+4)-\dfrac{1}{2}arctan\left(\dfrac{x}{2}\right)+C
+\end{split}
+\end{equation}
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo5" class="section level3 hasAnchor" number="5.13.5">
+<h3><span class="header-section-number">5.13.5</span> Ejemplo5<a href="Integrales-simples.html#ejemplo5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>El denominador <span class="math inline">\(Q(x)\)</span> contiene un factor cuadrático irreducibles que se repitte</strong></p>
+<p>Si <span class="math inline">\(Q(x)\)</span> tiene un factor cuadrático que tiene multiplicidad <span class="math inline">\(r\)</span> <span class="math inline">\((ax^2+bx+c)^r\)</span>, entonces la descomposición parcial es de la forma:</p>
+<p><span class="math display">\[
+\dfrac{A_{1}x+B_{1}}{ax^2+bx+c}+\dfrac{A_{2}x+B_{2}}{(ax^2+bx+c)^2}+\dfrac{A_{3}x+B_{3}}{(ax^2+bx+c)^3}+...+\dfrac{A_{r}x+B_{r}}{(ax^2+bx+c)^r}
+\]</span></p>
+<div class="example">
+<p><span id="exm:unnamed-chunk-62" class="example"><strong>Ejemplo 5.21  </strong></span>Determinar</p>
+<p><span class="math display">\[
+\displaystyle\int{\dfrac{1-x+x^2-x^3}{x(x^2+1)^2}dx}
+\]</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(480\)</span></p>
+</div>
+<p><br></br></p>
+<p>La descomposición de la fracción propia del integrando es:</p>
+<p><span class="math display">\[
+\dfrac{1-x+x^2-x^3}{x(x^2+1)^2}=\dfrac{A}{x}+\dfrac{Bx+C}{x^2+1}+\dfrac{Dx+E}{(x^2+1)^2} \ \ \ (a)
+\]</span></p>
+<p>Multiplicando en ambos lados de (a) por <span class="math inline">\(x(x^2+1)^2\)</span>, se obtiene:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP7}
+\begin{split}
+0x^4-x^3+2x^2-x+1 &amp; =A(x^2+1)^2+(Bx+C)x(x^2+1)+(Dx+E)x \\
+&amp; = A(x^4+2x^2+1)+B(x^4+x^2)+C(x^3+x)+Dx^2+Ex\\
+&amp; = (A+B)x^4+Cx^3+(2A+B+D)x^2+(C+E)x+A
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Igualando los coeficientes de ambos lados según el grado correspondiente, tenemos el siguiente sistema:</p>
+<p><span class="math display">\[
+\begin{matrix}
+A + B &amp; = &amp; 0\\
+C &amp; = &amp; -1\\
+A &amp; = &amp; 1\\
+2A + B + D &amp; = &amp; 2\\
+C + E &amp; = &amp; -1\\
+\end{matrix}
+\]</span></p>
+<p>Usando cualquier técnica para obtener la solución del sistema, se llega a los resultados:</p>
+<p><span class="math display">\[
+A=1, \qquad B=-1, \qquad C=-1, \qquad D=1, \qquad E=0
+\]</span></p>
+<p>Entonces se tiene la integral en fracciones parciales, así:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP8}
+\begin{split}  
+\displaystyle\int{\dfrac{1-x+x^2-x^3}{x(x^2+1)^2}dx} &amp; =  \displaystyle\int{\left[\dfrac{1}{x}-\dfrac{x+1}{x^2+1}+\dfrac{x}{(x^2+1)^2}\right]dx}\\
+&amp; = ln|x|-\dfrac{1}{2}ln(x^2+1)-arctan(x)-\dfrac{1}{2(x^2+1)}+C
+\end{split}
+\end{equation}
+\]</span></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="fórmulas-de-reducción-para-integrar" class="section level2 hasAnchor" number="5.14">
+<h2><span class="header-section-number">5.14</span> Fórmulas de reducción para integrar<a href="Integrales-simples.html#fórmulas-de-reducción-para-integrar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><span class="math display">\[
+\begin{matrix}
+(1.) &amp; \displaystyle\int{\left(ln(x)\right)^ndx}=x\left(ln(x)\right)^n -n\displaystyle\int{\left(ln(x)\right)^{n-1}dx}\\
+(2.) &amp; \displaystyle\int{x^ne^xdx}=-n\displaystyle\int{x^{n-1}e^xdx} \\
+(3.) &amp; \displaystyle\int{tan^n(x)dx}=\dfrac{tan^{n-1}(x)}{n-1}-\displaystyle\int{tan^{n-2}(x)dx} \ \ \ n \neq 1  \\
+(4.) &amp; \displaystyle\int{sec^n(x)dx}=\dfrac{tan(x)sec^{n-2}(x)}{n-1}+\dfrac{n-2}{n-1}\displaystyle\int{sec^{n-2}(x)dx} \ \ \ n \neq 1  \\
+(5.) &amp; \displaystyle\int{sen^n(x)dx}=-\dfrac{1}{n}cos(x)sen^{n-1}(x)+\dfrac{n-1}{n}\displaystyle\int{sen^{n-2}(x)dx}\\
+(6.) &amp; \displaystyle\int{cos^n(x)dx}=\dfrac{1}{n}sen(x)cos^{n-1}(x)+\dfrac{n-1}{n}\displaystyle\int{cos^{n-2}(x)dx}\\
+\end{matrix}
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="sustitución-de-karl-weierstrass-1815-1897" class="section level2 hasAnchor" number="5.15">
+<h2><span class="header-section-number">5.15</span> Sustitución de Karl Weierstrass (1815-1897)<a href="Integrales-simples.html#sustitución-de-karl-weierstrass-1815-1897" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>El matemático Karl Weierstrass observó que el sustitución:</p>
+<p><span class="math display">\[t=tan\left(\dfrac{x}{2}\right)\]</span></p>
+<p>convierte cualquier función racional de <span class="math inline">\(sen(x)\)</span> y <span class="math inline">\(cos(x)\)</span> en una función racional de la variable <span class="math inline">\(t\)</span>.
+Además obtuvo las siguientes relaciones:</p>
+<p><span class="math display">\[
+\begin{matrix}
+cos\left(\dfrac{x}{2}\right)=\dfrac{1}{\sqrt{1+t^2}}; &amp; sen\left(\dfrac{x}{2}\right)=\dfrac{t}{\sqrt{1+t^2}} \\
+cos(x)=\dfrac{1-t^2}{1+t^2}; &amp; sen(x)=\dfrac{2t}{1+t^2}\\
+\text{donde se tiene que } &amp; dx=\dfrac{2dt}{1+t^2} \\
+\end{matrix}
+\]</span></p>
+<p><br></br></p>
+<div id="ejemplo1karl" class="section level3 hasAnchor" number="5.15.1">
+<h3><span class="header-section-number">5.15.1</span> Ejemplo1(Karl)<a href="Integrales-simples.html#ejemplo1karl" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-63" class="example"><strong>Ejemplo 5.22  </strong></span>Determinar</p>
+<p><span class="math display">\[
+\displaystyle\int{\dfrac{dx}{3-5sen(x)}}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p>Realizando las sustituciones apropiadas según Karl, se tiene:</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqFP9}
+\begin{split}  
+I &amp;= \displaystyle\int{\dfrac{\dfrac{2dt}{1+t^2}}{3-5\dfrac{2t}{1+t^2}}}\\
+&amp; =\displaystyle\int{\dfrac{\dfrac{2dt}{1+t^2}}{\dfrac{3(1+t^2)-10t}{1+t^2}}}\\
+&amp; = \displaystyle\int{\dfrac{2dt}{3t^2-10t+3}}= \displaystyle\int{\dfrac{2dt}{(t-3)(3t-1)}}\\
+&amp; = 2\displaystyle\int{\left[\dfrac{A}{t-3}+\dfrac{B}{3t-1}\right]dt}=2A\displaystyle\int{\dfrac{1dt}{t-3}}+2B\displaystyle\int{\dfrac{1dt}{3t-1}}\\
+&amp; = 2Aln|t-3|+\dfrac{2B}{3}ln|3t-1|+C
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Para obtener las variables <span class="math inline">\(A\)</span>, y <span class="math inline">\(B\)</span>, tenemos:</p>
+<p><span class="math display">\[
+0t+1=A(3t-1)+B(t-3)=(3A+B)t+(-A-3B)  
+\]</span></p>
+<p>El sistema <span class="math inline">\(2\times 2\)</span> generado es:</p>
+<p><span class="math display">\[
+(1) \ \ 3A+B=0\\
+(2) \ \ -A-3B=1
+\]</span></p>
+<p>Usando cualquier técnica para resolver un sistema <span class="math inline">\(2\times 2\)</span>, se obtiene los siguientes valores</p>
+<p><span class="math display">\[
+  A=\dfrac{1}{8}; \qquad B=\dfrac{-3}{8}
+\]</span></p>
+<p>Por lo tanto la respuesta en <span class="math inline">\(t\)</span> es:</p>
+<p><span class="math display">\[
+\displaystyle\int{\dfrac{2dt}{(t-3)(3t-1)}}=\dfrac{2}{8}ln|t-3|-\dfrac{2(3)}{3(8)}ln|3t-1|=\dfrac{1}{4}ln|t-3|-\dfrac{1}{4}ln|3t-1|+C
+\]</span></p>
+<p>La respuesta en <span class="math inline">\(x\)</span> es:</p>
+<p><span class="math display">\[
+\displaystyle\int{\dfrac{dx}{3-5sen(x)}}=\dfrac{1}{4}ln|tan\left(\dfrac{x}{2}\right)-3|-\dfrac{1}{4}ln|3tan\left(\dfrac{x}{2}\right)-1|+C
+\]</span></p>
+<p><br></br></p>
+<p><br></br></p>
+<p><br></br></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="integral-definida" class="section level2 hasAnchor" number="5.16">
+<h2><span class="header-section-number">5.16</span> Integral definida<a href="Integrales-simples.html#integral-definida" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="definition">
+<p><span id="def:unnamed-chunk-64" class="definition"><strong>Definición 5.3  </strong></span>Si <span class="math inline">\(f\)</span> es una función continua definida para <span class="math inline">\(a \leq x \leq b\)</span>, divida el intervalo <span class="math inline">\([a,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos de igual ancho <span class="math inline">\(\bigtriangleup{x}=(b-a)/n\)</span>. Haga que <span class="math inline">\(x_0(=a),x_1,x_2,...,x_n(=b)\)</span> sean los puntos extremos de estos subintervalos y elija <span class="math inline">\(x_{1}^{*},x_{2}^{*},...,x_{n}^{*}\)</span> como los puntos muestra en estos subintervalos, de modo que <span class="math inline">\(x_{i}^{*}\)</span> se encuentre en el i-ésimo subintervalo <span class="math inline">\([x_{i-1},x_{i}]\)</span>. Entonces la integral definida de <span class="math inline">\(f\)</span>, desde <span class="math inline">\(a\)</span> hasta <span class="math inline">\(b\)</span>, es</p>
+<p><span class="math display">\[
+  \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i}^{*})\bigtriangleup{x}}
+\]</span>
+Siempre que exista este límite, <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>.</p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág 366</p>
+</div>
+<p><br></br></p>
+<p>Esta es una aplicación para generar el área bajo una curva usando sumas de Riemann, el Autor:José Alejandro López Rentería (<a href="https://www.geogebra.org/classic/ex9zdr7e" class="uri">https://www.geogebra.org/classic/ex9zdr7e</a>) lo elaboro usando geogebra.</p>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementSumaRiemannA01">
+
+</div>
+<script>  
+       var ggbAppSumaRiemannA01 = new GGBApplet({"material_id":"ex9zdr7e",
+       "width": 1100,
+       "height": 800,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppSumaRiemannA01.inject('ggb-elementSumaRiemannA01');
+      });
+</script>
+<p><br></br></p>
+<div class="definition">
+<p><span id="def:unnamed-chunk-65" class="definition"><strong>Definición 5.4  </strong></span>Sea <span class="math inline">\(f(x)\)</span> una función definida en un intervalo cerrado <span class="math inline">\([a,b]\)</span>. Dicimos que un número <span class="math inline">\(J\)</span> es la integral definida de <span class="math inline">\(f\)</span> en <span class="math inline">\([a,b]\)</span> y que <span class="math inline">\(J\)</span> es el límite de las sumas de Riemann <span class="math inline">\(\sum_{k=1}^{n}f(c_{k})\bigtriangleup{x_k}\)</span> si se satisface la siguiente condición:</p>
+<p>Dado cualquier número <span class="math inline">\(\epsilon &gt;0\)</span> existe un número correspondiente <span class="math inline">\(\delta &gt;0\)</span>, tal que para toda partición <span class="math inline">\(P=\{x_0,x_1,...,x_n\}\)</span> de <span class="math inline">\([a,b]\)</span> con <span class="math inline">\(\left \| P \right \|&lt;\delta\)</span> y cualquier elección de <span class="math inline">\(c_k\)</span> en <span class="math inline">\([x_{k-1},x_k]\)</span>, tenemos</p>
+<p><span class="math display">\[
+  \left|\displaystyle{\sum_{k=1}^{n}f(c_k)\bigtriangleup{x_k}}-J\right|&lt; \epsilon.
+\]</span></p>
+<p>donde <span class="math inline">\(J=\displaystyle\int_{a}^{b}{f(x)dx}\)</span>.</p>
+<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág 366</p>
+</div>
+<p><br></br></p>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-66" class="theorem"><strong>Teorema 5.4  </strong></span>Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b]\)</span>, o si <span class="math inline">\(f\)</span> tiene únicamente un número finito de saltos discontinuos, entonces <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>; es decir, la integral definida</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i})\bigtriangleup{x}}, \qquad \text{ existe.}
+\]</span>
+donde <span class="math inline">\(\bigtriangleup{x}=\dfrac{b-a}{n} \qquad \text{ y } \qquad x_{i}=a+i\bigtriangleup{x}\)</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág 368</p>
+</div>
+<p><br></br></p>
+</div>
+<div id="ejemplos-de-integral-definida-en-un-intervalo-real" class="section level2 hasAnchor" number="5.17">
+<h2><span class="header-section-number">5.17</span> Ejemplos de integral definida en un intervalo real<a href="Integrales-simples.html#ejemplos-de-integral-definida-en-un-intervalo-real" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<!-- [Aplicación Shiny para graficar el área bajo la curva](https://jestrada06marzo2023casav1.shinyapps.io/AreaBajoCurvaVb2/) -->
+<iframe src="https://jestrada06marzo2023casav1.shinyapps.io/AreaBajoCurvaVb2/?showcase=0" width="672" height="1200px" data-external="1">
+</iframe>
+<p><br></br></p>
+<div id="propiedades-de-la-integral-definida" class="section level3 hasAnchor" number="5.17.1">
+<h3><span class="header-section-number">5.17.1</span> Propiedades de la integral definida<a href="Integrales-simples.html#propiedades-de-la-integral-definida" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span class="math display">\[
+\begin{matrix}
+(1.) &amp; \displaystyle\int_{a}^{b}{cdx}=c(b-a) &amp; c\in R\\
+(2.) &amp; \displaystyle\int_{a}^{b}{\left[f(x)\pm g(x)\right]dx}=\displaystyle\int_{a}^{b}{f(x)dx}\pm\displaystyle\int_{a}^{b}{g(x)dx} &amp;\\
+(3.) &amp; \displaystyle\int_{a}^{b}{cf(x)dx}=c\displaystyle\int_{a}^{b}{f(x)dx} &amp; c\in R\\
+(4.) &amp; \displaystyle\int_{a}^{c}{f(x)dx}+\displaystyle\int_{c}^{b}{f(x)dx}=\displaystyle\int_{a}^{b}{f(x)dx} &amp; \\
+(5.) &amp; \text{Si } f(x) \geq 0 \text{ para } a\leq x \leq b, \text{ entonces }  \displaystyle\int_{a}^{b}{f(x)dx}\geq 0. &amp; \\
+(6.) &amp; \text{Si } f(x) \geq g(x) \text{ para } a\leq x \leq b, \text{ entonces }  \displaystyle\int_{a}^{b}{f(x)dx}\geq \displaystyle\int_{a}^{b}{g(x)dx}. &amp; \\
+(7.) &amp; \text{Si } m \leq f(x) \leq M \text{ para } a\leq x \leq b, \text{ entonces }  m(b-a)\leq \displaystyle\int_{a}^{b}{f(x)dx}\leq M(b-a). &amp; \\
+\end{matrix}
+\]</span></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEvSumasA00"></span>
+<img src="images/PropIntegralDefinida_A1.png" alt="Propiedades de la integral definida [Imagen tomada de [@thomas2003thomas] pág $268$]" width="85%" />
+<p class="caption">
+Figura 5.6: Propiedades de la integral definida [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEvSumasA01"></span>
+<img src="images/PropIntegralDefinida_A2.png" alt="Propiedades de la integral definida [Imagen tomada de [@thomas2003thomas] pág $268$]" width="85%" />
+<p class="caption">
+Figura 5.7: Propiedades de la integral definida [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]
+</p>
+</div>
+<p><br></br></p>
+</div>
+<div id="propiedades-para-las-sumatorias" class="section level3 hasAnchor" number="5.17.2">
+<h3><span class="header-section-number">5.17.2</span> Propiedades para las sumatorias<a href="Integrales-simples.html#propiedades-para-las-sumatorias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span class="math display">\[
+\begin{matrix}
+(1.) &amp; \displaystyle{\sum_{i=1}^{n}{c}}=cn \\
+(2.) &amp; \displaystyle{\sum_{i=1}^{n}{ca_i}}=c\displaystyle{\sum_{i=1}^{n}{a_i}} \\
+(3.) &amp; \displaystyle{\sum_{i=1}^{n}{(a_i+b_i)}}\displaystyle{\sum_{i=1}^{n}{a_i}}+\displaystyle{\sum_{i=1}^{n}{b_i}} \\
+(4.) &amp; \displaystyle{\sum_{i=1}^{n}{(a_i-b_i)}}\displaystyle{\sum_{i=1}^{n}{a_i}}-\displaystyle{\sum_{i=1}^{n}{b_i}} \\
+\end{matrix}
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="sumatorias-para-evaluar-integrales-definidas" class="section level3 hasAnchor" number="5.17.3">
+<h3><span class="header-section-number">5.17.3</span> Sumatorias para evaluar integrales definidas<a href="Integrales-simples.html#sumatorias-para-evaluar-integrales-definidas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><span class="math display">\[
+\begin{matrix}
+\text{ Sumatoria } &amp; \text{ Fórmula } \\
+\displaystyle{\sum_{i=1}^{n}{i}} &amp; \dfrac{n(n+1)}{2} \\
+\displaystyle{\sum_{i=1}^{n}{i^2}} &amp; \dfrac{n(n+1)(2n+1)}{6} \\
+\displaystyle{\sum_{i=1}^{n}{i^3}} &amp; \left[\dfrac{n(n+1)}{2}\right]^2 \\
+\end{matrix}
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo-evaluación-por-sumatoria" class="section level3 hasAnchor" number="5.17.4">
+<h3><span class="header-section-number">5.17.4</span> Ejemplo evaluación por sumatoria<a href="Integrales-simples.html#ejemplo-evaluación-por-sumatoria" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-67" class="example"><strong>Ejemplo 5.23  </strong></span>Determinar la integral definida</p>
+<p><span class="math display">\[
+\displaystyle\int_{0}^{b}xdx  
+\]</span></p>
+<p>usando las sumatorias de evaluación.</p>
+<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEvSumasA02"></span>
+<img src="images/EjEvaluaPorSumas_A1.png" alt="Área bajo la recta $y=x$ en el intervalo $[0,b]$ [Imagen tomada de [@thomas2003thomas] pág $268$]" width="25%" />
+<p class="caption">
+Figura 5.8: Área bajo la recta <span class="math inline">\(y=x\)</span> en el intervalo <span class="math inline">\([0,b]\)</span> [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]
+</p>
+</div>
+<p><br></br></p>
+<p>Para calcular la integral definida como el limite para sumas de Riemann, calulamos</p>
+<p><span class="math display">\[
+\displaystyle\lim_{\left\|P\right\| \to 0}\sum_{i=1}^{n}f(c_i)\triangle{x_i}=\displaystyle\int_{0}^{b}xdx
+\]</span></p>
+<p>Así que consideremos la partición <span class="math inline">\(P\)</span> que divide el intervalo <span class="math inline">\([0,b]\)</span> en <span class="math inline">\(n\)</span> subintervalos del mismo ancho <span class="math inline">\(\triangle{x}=(b-a)/n=b/n\)</span> y elegimos <span class="math inline">\(c_i\)</span> como el extremo derecho de cada subintervalo. La partición es:</p>
+<p><span class="math display">\[
+P=\left\{0,\dfrac{b}{n},\dfrac{2b}{n},\dfrac{3b}{n},\dfrac{4b}{n},,...,\dfrac{nb}{n},\right\}
+\]</span></p>
+<p>y <span class="math inline">\(c_i=\dfrac{ib}{n}\)</span>, entonces tenemos</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqSRimannA1}
+\begin{split}
+\displaystyle\sum_{i=1}^{n}f(c_i)\triangle{x_i}&amp; =\sum_{i=1}^{n}\dfrac{ib}{n}.\dfrac{b}{n}\\
+&amp; =\sum_{i=1}^{n}\dfrac{ib^2}{n^2}=\dfrac{b^2}{n^2}\sum_{i=1}^{n}i\\
+&amp; = \dfrac{b^2}{n^2}\left[\dfrac{n(n+1)}{2}\right]\\
+&amp; = \dfrac{b^2}{2}\left(1+\dfrac{1}{n}\right)\\
+\displaystyle\lim_{\left\|P\right\| \to 0}\sum_{i=1}^{n}f(c_i)\triangle{x_i} &amp; =\lim_{n \to {+}\infty}\dfrac{b^2}{2}\left(1+\dfrac{1}{n}\right)\\
+&amp; =\dfrac{b^2}{2}\lim_{n \to {+}\infty}\left(1+\dfrac{1}{n}\right)\\
+&amp; = \dfrac{b^2}{2}.1\\
+&amp; = \dfrac{b^2}{2}
+\end{split}
+\end{equation}
+\]</span></p>
+<p>Se concluye que</p>
+<p><span class="math display">\[
+\displaystyle\lim_{\left\|P\right\| \to 0}\sum_{i=1}^{n}f(c_i)\triangle{x_i}=\displaystyle\int_{0}^{b}xdx =\dfrac{b^2}{2} \ \ \text{U.A.}
+\]</span></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="integrales-impropias-tipo-1" class="section level2 hasAnchor" number="5.18">
+<h2><span class="header-section-number">5.18</span> Integrales impropias tipo 1<a href="Integrales-simples.html#integrales-impropias-tipo-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="definition">
+<p><span id="def:unnamed-chunk-68" class="definition"><strong>Definición 5.5  </strong></span></p>
+<ol style="list-style-type: lower-alpha">
+<li>Si existe</li>
+</ol>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{t}{f(x)dx}
+\]</span>
+para todo número <span class="math inline">\(t\geq a\)</span>, entonces</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{\infty}{f(x)dx}=\lim_{t \to \infty}{\int_{a}^{t}{f(x)dx}}
+\]</span></p>
+<p>siempre y cuando existe este límite (como un número finito).</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Si existe</li>
+</ol>
+<p><span class="math display">\[
+\displaystyle\int_{t}^{b}{f(x)dx}
+\]</span>
+para todo número <span class="math inline">\(t\leq b\)</span>, entonces</p>
+<p><span class="math display">\[
+\displaystyle\int_{-\infty}^{b}{f(x)dx}=\lim_{t \to -\infty}{\int_{t}^{b}{f(x)dx}}
+\]</span></p>
+<p>siempre y cuando existe este límite (como un número finito).</p>
+<p>Las integrales impropias se llaman convergentes si hay tal límite y divergentes si no existe.</p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Si existe</li>
+</ol>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{\infty}{f(x)dx} \quad \text{ y } \quad \displaystyle\int_{-\infty}^{a}{f(x)dx}
+\]</span>
+son convergentes, entonces por definición</p>
+<p><span class="math display">\[
+\displaystyle\int_{-\infty}^{\infty}{f(x)dx}=\displaystyle\int_{-\infty}^{a}{f(x)dx}+\displaystyle\int_{a}^{\infty}{f(x)dx}
+\]</span></p>
+<p>se puede emplear cualquier número real <span class="math inline">\(a\)</span> en la parte (c).</p>
+<p>Tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(429\)</span></p>
+</div>
+<p><strong>Interpretación geométrica de la integral impropia tipo Uno</strong></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA01"></span>
+<img src="images/IntImpropiaTipoUno_A1.png" alt="Interpretación geométrica Área bajo la curva de una integral impropia [Imagen tomada de [@stewart2020calculus] pág $429$]" width="60%" />
+<p class="caption">
+Figura 5.9: Interpretación geométrica Área bajo la curva de una integral impropia [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(429\)</span>]
+</p>
+</div>
+<div id="ejemplo1-integral-impropia-tipo-uno" class="section level3 hasAnchor" number="5.18.1">
+<h3><span class="header-section-number">5.18.1</span> Ejemplo1 integral impropia tipo Uno<a href="Integrales-simples.html#ejemplo1-integral-impropia-tipo-uno" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-69" class="example"><strong>Ejemplo 5.24  </strong></span>Evalúe la integral
+<span class="math display">\[
+\displaystyle\int_{-\infty}^{\infty}{\dfrac{1}{1+x^2}dx}
+\]</span></p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA02"></span>
+<img src="images/IntImpropiaTipoUno_A2.png" alt="Ejemplo área bajo la curva de una integral impropia [Imagen tomada de [@stewart2020calculus] pág $431$]" width="45%" />
+<p class="caption">
+Figura 5.10: Ejemplo área bajo la curva de una integral impropia [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(431\)</span>]
+</p>
+</div>
+<p><br></br></p>
+<p><span class="math display">\[
+\begin{equation} \label{eqIntImpropiaA0}
+\begin{split}
+\displaystyle\int_{-\infty}^{\infty}{\dfrac{1}{1+x^2}dx}
+&amp; =\displaystyle\int_{-\infty}^{0}{\dfrac{1}{1+x^2}dx}+\displaystyle\int_{0}^{\infty}{\dfrac{1}{1+x^2}dx}\\
+&amp;  \\
+&amp;  \\
+\displaystyle\int_{-\infty}^{0}{\dfrac{1}{1+x^2}dx}
+&amp;=\lim_{t \to -\infty}{\int_{t}^{0}{\dfrac{1}{1+x^2}dx}}=\lim_{t \to -\infty}{\left. arctan(x)\right]_{t}^{0}}\\
+&amp; = \lim_{t \to -\infty}\left(arctan(0)-arctan(t)\right)=0-\left(\dfrac{-\pi}{2}\right)=\dfrac{\pi}{2}\\
+&amp;  \\
+&amp;  \\
+\displaystyle\int_{0}^{\infty}{\dfrac{1}{1+x^2}dx}
+&amp;=\lim_{t \to +\infty}{\int_{0}^{t}{\dfrac{1}{1+x^2}dx}}=\lim_{t \to +\infty}{\left. arctan(x)\right]_{0}^{t}}\\
+&amp; = \lim_{t \to +\infty}\left(arctan(t)-arctan(0)\right)=\lim_{t \to +\infty}{arctan(t)}=\dfrac{\pi}{2}\\
+&amp;  \\
+&amp;  \\
+&amp; \text{Se concluye que:}\\
+\displaystyle\int_{-\infty}^{\infty}{\dfrac{1}{1+x^2}dx} &amp; =\dfrac{\pi}{2}+\dfrac{\pi}{2}=\pi \quad \text{U.A.}
+\end{split}
+\end{equation}
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo2-integral-impropia-tipo-uno" class="section level3 hasAnchor" number="5.18.2">
+<h3><span class="header-section-number">5.18.2</span> Ejemplo2 integral impropia tipo Uno<a href="Integrales-simples.html#ejemplo2-integral-impropia-tipo-uno" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-70" class="example"><strong>Ejemplo 5.25  </strong></span>Evalúe para que valores de <span class="math inline">\(p\)</span> la integral converge y en que valores de <span class="math inline">\(p\)</span> diverge
+<span class="math display">\[
+\displaystyle\int_{1}^{\infty}{\dfrac{1}{x^p}dx}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p>Supongamos que <span class="math inline">\(p\neq 1\)</span>. Entonces</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqIntImpropiaA1}
+\begin{split}
+\displaystyle\int_{1}^{\infty}{\dfrac{1}{x^p}dx} &amp; = \lim_{t \to +\infty}{\int_{1}^{t}{\dfrac{1}{x^p}dx}}\\
+&amp; = \lim_{t \to +\infty}{\left. \dfrac{x^{1-p}}{1-p}\right]_{x=1}^{x=t}}\\
+&amp; = \lim_{t \to +\infty}{\left(\dfrac{1}{1-p}\right)\left[\dfrac{1}{t^{p-1}}-1\right]}\\
+&amp;  \\
+&amp;  \\
+&amp; \text{Si } \ \ p&gt;1, \quad \text{ entonces } \ \ p-1&gt;0. \quad \text{La integral converge} \\
+\displaystyle\int_{1}^{\infty}{\dfrac{1}{x^p}dx} &amp; = \lim_{t \to +\infty}{\left(\dfrac{1}{1-p}\right)\left[\dfrac{1}{t^{p-1}}-1\right]}=\dfrac{1}{p-1}\\
+&amp;  \\
+&amp;  \\
+&amp; \text{Si } \ \ p&lt;1, \quad \text{ entonces } \ \ p-1&lt;0. \quad \text{La integral diverge} \\
+\displaystyle\int_{1}^{\infty}{\dfrac{1}{x^p}dx} &amp; = \lim_{t \to +\infty}{\left(\dfrac{1}{1-p}\right)\left[\dfrac{1}{t^{p-1}}-1\right]}=\infty\\
+\end{split}
+\end{equation}
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo3-integral-impropia-tipo-uno" class="section level3 hasAnchor" number="5.18.3">
+<h3><span class="header-section-number">5.18.3</span> Ejemplo3 integral impropia tipo Uno<a href="Integrales-simples.html#ejemplo3-integral-impropia-tipo-uno" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-71" class="example"><strong>Ejemplo 5.26  </strong></span>Evalúe la integral
+<span class="math display">\[
+\displaystyle\int_{0}^{\infty}{\dfrac{8a^2dx}{x^2+4a^2}}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p><span class="math display">\[
+\begin{equation} \label{eqIntImpropiaA2}
+\begin{split}
+\displaystyle\int_{0}^{\infty}{\dfrac{8a^2dx}{x^2+4a^2}} &amp; =\lim_{t \to +\infty}{\int_{0}^{t}{\dfrac{8a^2dx}{x^2+4a^2}}}\\
+&amp; =\lim_{t \to +\infty}{\int_{0}^{t}{\dfrac{8a^2dx}{x^2+4a^2}}}=\lim_{t \to +\infty}{\left. 4a^2arctan\left(\dfrac{x}{2a}\right)\right]_{0}^{t}}\\
+&amp; =4a^2\lim_{t \to +\infty}{\left[arctan\left(\dfrac{t}{2a}\right)\right]}=4a^2.\dfrac{\pi}{2}=2a^2\pi
+\end{split}
+\end{equation}
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo4-integral-impropia-tipo-uno" class="section level3 hasAnchor" number="5.18.4">
+<h3><span class="header-section-number">5.18.4</span> Ejemplo4 integral impropia tipo Uno<a href="Integrales-simples.html#ejemplo4-integral-impropia-tipo-uno" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-72" class="example"><strong>Ejemplo 5.27  </strong></span>Evalúe la integral <span class="math inline">\((p=1)\)</span>.
+<span class="math display">\[
+\displaystyle\int_{1}^{\infty}{\dfrac{1dx}{x}}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p><span class="math display">\[
+\begin{equation} \label{eqIntImpropiaA3}
+\begin{split}
+\displaystyle\int_{1}^{\infty}{\dfrac{1dx}{x}} &amp; = \lim_{t \to +\infty}{\int_{1}^{t}{\dfrac{1dx}{x}}}\\
+&amp; = \lim_{t \to +\infty}\left(ln|t|-ln(1)\right)=\lim_{t \to +\infty}ln|t|=\infty
+\end{split}
+\end{equation}
+\]</span>
+No existe el límite de <span class="math inline">\(ln|t|\)</span> cuando <span class="math inline">\(t\)</span> aumenta sin límite. Entonces se concluye que la integral impropia diverge.</p>
+<p><br></br></p>
+</div>
+</div>
+<div id="integrales-impropias-tipo-2" class="section level2 hasAnchor" number="5.19">
+<h2><span class="header-section-number">5.19</span> Integrales impropias tipo 2<a href="Integrales-simples.html#integrales-impropias-tipo-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Interpretación geométrica de la integral impropia tipo Dos</strong></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA03"></span>
+<img src="images/IntImpropiaTipoDos_A1.png" alt="Interpretación geométrica área bajo la curva de una integral impropia tipo II [Imagen tomada de [@stewart2020calculus] pág $432$]" width="85%" />
+<p class="caption">
+Figura 5.11: Interpretación geométrica área bajo la curva de una integral impropia tipo II [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(432\)</span>]
+</p>
+</div>
+<div class="definition">
+<p><span id="def:unnamed-chunk-73" class="definition"><strong>Definición 5.6  </strong></span>(a.) Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\([a,b)\)</span> y discontinua en <span class="math inline">\(x=b\)</span>, entonces</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{b}{f(x)dx}=\lim_{t \to b^{-}}{\int_{a}^{t}{f(x)dx}}
+\]</span>
+Si este límite existe, como un número finito.</p>
+<p>(b.) Si <span class="math inline">\(f\)</span> es continua en <span class="math inline">\((a,b]\)</span> y discontinua en <span class="math inline">\(x=a\)</span>, entonces</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{b}{f(x)dx}=\lim_{t \to a^{+}}{\int_{t}^{b}{f(x)dx}}
+\]</span>
+Si este límite existe, como un número finito. Las integrales impropias se llaman convergentes si hay tal límite y divergentes si no existe.</p>
+<p>(c.) Si <span class="math inline">\(f\)</span> tiene una discontinuidad en <span class="math inline">\(x=c\)</span> y <span class="math inline">\(a&lt;c&lt;b\)</span>, y si son convergentes tanto</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{c}{f(x)dx} \quad \text{ como } \quad \displaystyle\int_{c}^{b}{f(x)dx}
+\]</span>
+por definición</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\int_{a}^{c}{f(x)dx}+\displaystyle\int_{c}^{b}{f(x)dx}
+\]</span></p>
+<p>Tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(432\)</span></p>
+</div>
+<p><br></br></p>
+<div id="ejemplo1-integral-impropia-tipo-2-caso-b" class="section level3 hasAnchor" number="5.19.1">
+<h3><span class="header-section-number">5.19.1</span> Ejemplo1 Integral impropia tipo 2 caso (b)<a href="Integrales-simples.html#ejemplo1-integral-impropia-tipo-2-caso-b" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-74" class="example"><strong>Ejemplo 5.28  </strong></span>Evalúe la integral</p>
+<p><span class="math display">\[
+\displaystyle\int_{2}^{5}{\dfrac{1dx}{\sqrt{x-2}}}
+\]</span>
+Tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(433\)</span></p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA04"></span>
+<img src="images/EjIntImpropiaTipo2_A1.png" alt="Interpretación geométrica área bajo la curva. Integral impropia tipo II parte (b)[Imagen tomada de [@stewart2020calculus] pág $433$]" width="45%" />
+<p class="caption">
+Figura 5.12: Interpretación geométrica área bajo la curva. Integral impropia tipo II parte (b)[Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(433\)</span>]
+</p>
+</div>
+<p><br></br></p>
+<p>Es bueno resaltar que <span class="math inline">\(f(x)=1/\sqrt{x-2}\)</span> tiene una asíntota en <span class="math inline">\(x=2\)</span>. Es decir <span class="math inline">\(f\)</span> es discontinua en <span class="math inline">\((2,5]\)</span>. Entonces aplicando el caso (b) se tiene</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqIntImpropiaA4}
+\begin{split}
+\displaystyle\int_{2}^{5}{\dfrac{1dx}{\sqrt{x-2}}} &amp; =\lim_{t \to 2^{+}}\int_{t}^{5}{\dfrac{1dx}{\sqrt{x-2}}}=\lim_{t \to 2^{+}}\left. 2\sqrt{x-2} \right]_{t}^{5} \\
+&amp; = 2\lim_{t \to 2^{+}}\left(\sqrt{3}-\sqrt{t-2}\right)\\
+&amp; = 2\sqrt{3}
+\end{split}
+\end{equation}
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo2-integral-impropia-tipo-2-caso-a" class="section level3 hasAnchor" number="5.19.2">
+<h3><span class="header-section-number">5.19.2</span> Ejemplo2 Integral impropia tipo 2 caso (a)<a href="Integrales-simples.html#ejemplo2-integral-impropia-tipo-2-caso-a" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-75" class="example"><strong>Ejemplo 5.29  </strong></span>Evalúe la integral</p>
+<p><span class="math display">\[
+\displaystyle\int_{0}^{1}{\dfrac{1dx}{\sqrt{1-x^2}}}
+\]</span>
+Tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(485\)</span></p>
+</div>
+<p><br></br></p>
+<p>Es bueno resaltar que <span class="math inline">\(f(x)=1/\sqrt{1-x^2}\)</span> tiene una asíntota en <span class="math inline">\(x=1\)</span>. Es decir <span class="math inline">\(f\)</span> es discontinua en <span class="math inline">\([0,1)\)</span>. Entonces aplicando el caso (a) se tiene</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqIntImpropiaA5}
+\begin{split}
+\displaystyle\int_{0}^{1}{\dfrac{1dx}{\sqrt{1-x^2}}} &amp; =\lim_{t \to 1^{-}}\int_{0}^{t}{\dfrac{1dx}{\sqrt{1-x^2}}}=\lim_{t \to 1^{-}}\left[arcsen(x) \right]_{0}^{t}\\
+&amp; = \lim_{t \to 1^{-}}\left(arcsen(t)-arcsen(0)\right)\\
+&amp; = \dfrac{\pi}{2}-0=\dfrac{\pi}{2}
+\end{split}
+\end{equation}
+\]</span></p>
+<p><br></br></p>
+</div>
+<div id="ejemplo3-integral-impropia-tipo-2-caso-c" class="section level3 hasAnchor" number="5.19.3">
+<h3><span class="header-section-number">5.19.3</span> Ejemplo3 Integral impropia tipo 2 caso (c)<a href="Integrales-simples.html#ejemplo3-integral-impropia-tipo-2-caso-c" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="example">
+<p><span id="exm:unnamed-chunk-76" class="example"><strong>Ejemplo 5.30  </strong></span>Evalúe la integral</p>
+<p><span class="math display">\[
+\displaystyle\int_{0}^{3}{\dfrac{1dx}{x-1}}
+\]</span></p>
+</div>
+<p><br></br></p>
+<p>Es bueno resaltar que <span class="math inline">\(f(x)=1/(x-1)\)</span> tiene una asíntota en <span class="math inline">\(x=1\)</span>. Es decir <span class="math inline">\(f\)</span> es discontinua en <span class="math inline">\([0,3]\)</span>. Entonces aplicando el caso (c) se tiene</p>
+<p><span class="math display">\[
+\begin{equation} \label{eqIntImpropiaA6}
+\begin{split}
+\displaystyle\int_{0}^{3}{\dfrac{1dx}{x-1}} &amp;=\displaystyle\int_{0}^{1}{\dfrac{1dx}{x-1}}+\displaystyle\int_{1}^{3}{\dfrac{1dx}{x-1}}\\
+&amp; \\
+\text{Resolviendo la primera integral así:} &amp;\\
+\displaystyle\int_{0}^{1}{\dfrac{1dx}{x-1}} &amp; =\lim_{t \to 1^{-}}\int_{0}^{t}{\dfrac{1dx}{x-1}}=\lim_{t \to 1^{-}}\left[ln|x-1| \right]_{0}^{t}\\
+&amp; = \lim_{t \to 1^{-}}\left(ln|t-1|-ln|-1|\right) = \lim_{t \to 1^{-}}\left(ln|t-1|\right) =-\infty\\
+\text{Se concluye que la primera integral diverge} &amp;\\
+\end{split}
+\end{equation}
+\]</span>
+Por lo tanto la integral planteada</p>
+<p><span class="math display">\[
+\displaystyle\int_{0}^{3}{\dfrac{1dx}{x-1}}
+\]</span>
+Es divergente y no es necesario evaluar la inegral <span class="math inline">\(\displaystyle\int_{1}^{3}{\dfrac{1dx}{x-1}}\)</span></p>
+<p><br></br></p>
+</div>
+</div>
+<div id="teorema-de-comparacion-para-integrales-impropias" class="section level2 hasAnchor" number="5.20">
+<h2><span class="header-section-number">5.20</span> Teorema de comparacion para integrales impropias<a href="Integrales-simples.html#teorema-de-comparacion-para-integrales-impropias" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA05"></span>
+<img src="images/IntImpropiaTmaCOMPARACION.png" alt="Teorema de comparación de integrales impropias [Imagen tomada de [@stewart2020calculus] pág $434$]" width="45%" />
+<p class="caption">
+Figura 5.13: Teorema de comparación de integrales impropias [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(434\)</span>]
+</p>
+</div>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-77" class="theorem"><strong>Teorema 5.5  </strong></span>Supongamos que <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> son funciones continuas con la propiedad de que <span class="math inline">\(f(x) \geq g(x) \geq 0\)</span> para <span class="math inline">\(x \geq a\)</span>.</p>
+<p>(a.) Si</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{\infty}{f(x)dx}
+\]</span></p>
+<p>es convergente, entonces</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{\infty}{g(x)dx}
+\]</span>
+es convergente.</p>
+<p>(b.) Si</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{\infty}{g(x)dx}
+\]</span></p>
+<p>es divergente, entonces</p>
+<p><span class="math display">\[
+\displaystyle\int_{a}^{\infty}{f(x)dx}
+\]</span></p>
+<p>es divergente.</p>
+</div>
+<p><br></br></p>
+<div id="ejemplo-teorema-de-comparacion-para-integrales-impropias" class="section level3 hasAnchor" number="5.20.1">
+<h3><span class="header-section-number">5.20.1</span> Ejemplo teorema de comparacion para integrales impropias<a href="Integrales-simples.html#ejemplo-teorema-de-comparacion-para-integrales-impropias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA06"></span>
+<img src="images/EjIntPorComparacion_A1.png" alt="Ejemplo teorema de comparación de integrales impropias [Imagen tomada de [@stewart2020calculus] pág $435$]" width="45%" />
+<p class="caption">
+Figura 5.14: Ejemplo teorema de comparación de integrales impropias [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(435\)</span>]
+</p>
+</div>
+<div class="example">
+<p><span id="exm:unnamed-chunk-78" class="example"><strong>Ejemplo 5.31  </strong></span>Mostrar que la integral impropia</p>
+<p><span class="math display">\[
+\displaystyle\int_{0}^{\infty}{e^{-x^2}dx}
+\]</span></p>
+<p>es convergente para toda <span class="math inline">\(x \geq 1\)</span></p>
+</div>
+<p><br></br></p>
+<p>Sabemos que</p>
+<p><span class="math display">\[
+\displaystyle\int_{0}^{\infty}{e^{-x^2}dx}=\displaystyle\int_{0}^{1}{e^{-x^2}dx}+\displaystyle\int_{1}^{\infty}{e^{-x^2}dx}
+\]</span>
+Además sabemos que para <span class="math inline">\(f(x)=e^{-x}\)</span>
+<span class="math display">\[
+\displaystyle\int_{1}^{\infty}{e^{-x}dx}=\lim_{t \to \infty}\int_{1}^{t}{e^{-x}dx}=\lim_{t \to \infty}\left(e^{-1}-e^{-t}\right)=e^{-1}, \ \ \text{es decir converge}
+\]</span></p>
+<p>Así que para aplicar el teorma de comparación para dos integrales impropias tomaremos:</p>
+<p><span class="math inline">\(f(x)=e^{-x}\)</span> y <span class="math inline">\(g(x)=e^{-x^2}\)</span>. Vemos que se cumple:</p>
+<p><span class="math display">\[
+f(x)=e^{-x} \geq g(x)=e^{-x^2} \geq 0 \quad  \text{ para } x \geq 1
+\]</span></p>
+<p>Se puede ver de la gráfica arriba.</p>
+<p>Entonces por el teorema de comparación se concluye que:</p>
+<p><span class="math display">\[
+\displaystyle\int_{0}^{\infty}{e^{-x^2}dx}
+\]</span>
+es convergente para <span class="math inline">\(x \geq 1\)</span></p>
+</div>
+</div>
+<div id="aproximación-numérica-de-la-integral-definida" class="section level2 hasAnchor" number="5.21">
+<h2><span class="header-section-number">5.21</span> Aproximación numérica de la integral definida<a href="Integrales-simples.html#aproximación-numérica-de-la-integral-definida" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="ejemplo-regla-de-trapecios" class="section level3 hasAnchor" number="5.21.1">
+<h3><span class="header-section-number">5.21.1</span> Ejemplo Regla de Trapecios<a href="Integrales-simples.html#ejemplo-regla-de-trapecios" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><br></br></p>
+<iframe src="https://johneaces2021agosto.shinyapps.io/ReglaAproxIntegralUnoA_3/?showcase=0" width="672" height="1200px" data-external="1">
+</iframe>
+</div>
+<div id="ejemplo-regla-de-simpson-13" class="section level3 hasAnchor" number="5.21.2">
+<h3><span class="header-section-number">5.21.2</span> Ejemplo Regla de Simpson <span class="math inline">\(1/3\)</span><a href="Integrales-simples.html#ejemplo-regla-de-simpson-13" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><br></br></p>
+<iframe src="https://johneaces2021agosto.shinyapps.io/ReglaAproxIntegralUnoA_4/?showcase=0" width="672" height="1200px" data-external="1">
+</iframe>
+
+</div>
+</div>
+</div>
+<h3>Referencias<a href="referencias.html#referencias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-stewart2009calculus" class="csl-entry">
+Stewart, James. 2009. <em>Calculus: Concepts and Contexts</em>. Cengage Learning.
+</div>
+<div id="ref-stewart2020calculus" class="csl-entry">
+Stewart, James, Daniel K Clegg, and Saleem Watson. 2020a. <em>Calculus: Early Transcendentals</em>. Cengage Learning.
+</div>
+<div id="ref-stewart2020single" class="csl-entry">
+———. 2020b. <em>Single Variable Calculus: Early Transcendentals</em>. Cengage Learning.
+</div>
+<div id="ref-thomas2003thomas" class="csl-entry">
+Thomas, George Brinton, Ross L Finney, Maurice D Weir, and Frank R Giordano. 2003. <em>Thomas’ Calculus</em>. Addison-Wesley Reading.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Metodos-maximosYminimos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Integrales-dobles.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["MatematicasTres.pdf", "MatematicasTres.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

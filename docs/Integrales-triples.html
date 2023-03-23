@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Curso de Matemáticas Tres UCES</title>
+  <title>Capítulo 7 Integrales triples | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Curso de Matemáticas Tres UCES" />
+  <meta property="og:title" content="Capítulo 7 Integrales triples | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Curso de Matemáticas Tres UCES" />
+  <meta name="twitter:title" content="Capítulo 7 Integrales triples | Curso de Matemáticas Tres UCES" />
   
   <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="Integrales-dobles.html"/>
+<link rel="next" href="Metodos-EDO.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -309,19 +309,231 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="Integrales-triples" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Capítulo 7</span> Integrales triples<a href="Integrales-triples.html#Integrales-triples" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<!-- <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFjspnPiGSo-sEto1GQIQkejSy3eYD5pMueQ&usqp=CAU"><div align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFjspnPiGSo-sEto1GQIQkejSy3eYD5pMueQ&usqp=CAU" width="350" height="460" alt="Buy from Amazon" class="cover" /></div></a> -->
+<div align="center">
+<figure>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFjspnPiGSo-sEto1GQIQkejSy3eYD5pMueQ&usqp=CAU"
+       alt="Evariste Galois (1811-1832);
+           nacionalidad francesa famoso por la solución de ecuaciones algebraicas" width="350"
+       height="460"></p>
+<figcaption>
+Evariste Galois (1811-1832).
+</figcaption>
+</figure>
+</div>
+<div id="definición-integral-triple" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Definición integral triple<a href="Integrales-triples.html#definición-integral-triple" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="definition">
+<p><span id="def:unnamed-chunk-91" class="definition"><strong>Definición 7.1  </strong></span>Si <span class="math inline">\(f\)</span> es continua sobre una región sólida acotada <span class="math inline">\(Q\)</span> del espacio <span class="math inline">\(XYZ\)</span>, entonces la integral tripe de f sobre <span class="math inline">\(Q\)</span> se define como:</p>
+<p><span class="math display">\[
+\displaystyle{{\int\int\int}_{Q}}{f(x,y,z)dV}=\displaystyle\lim_{{\parallel{\bigtriangleup}\parallel} \to 0}{\sum_{i=1}^{n}{f(x_i,y_i,z_i){\bigtriangleup}V_i}}
+\]</span></p>
+<p>Siempre que el límite exista. El volumen de la región sólida <span class="math inline">\(Q\)</span> esta dado por:</p>
+<p><span class="math display">\[
+  V(\text{sólido  }Q)={\int\int\int}_{Q}{1dV}
+\]</span></p>
+<p>[Tomado de <span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1024\)</span>]</p>
+</div>
+<p><br></br></p>
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-92" class="theorem"><strong>Teorema 7.1  </strong></span>Sea <span class="math inline">\(f\)</span> continua en una región sólida definida por <span class="math inline">\(Q\)</span>
+<span class="math display">\[
+Q=\left\{ \begin{array}{lcc}
+         \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ a \leq  x \leq b \\
+          \ \ \ \ \ \ \ \ \ g_1(x) \leq  y  \leq g_2(x)\\
+             \ \ \ \ \ h_1(x,y) \leq  z  \leq h_2(x,y)
+             \end{array}
+   \right.
+\]</span></p>
+<p>donde <span class="math inline">\(h_1\)</span>, <span class="math inline">\(h_2\)</span>, <span class="math inline">\(g_1\)</span>, <span class="math inline">\(g_2\)</span> son funciones continuas. Entonces</p>
+<p><span class="math display">\[
+  {\int\int\int}_{Q}{f(x,y,z)dV}=\int_{a}^{b}\int_{g_1(x)}^{g_2(x)}\int_{h_1(x,y)}^{h_2(x,y)}{f(x,y,z)dzdydx}
+\]</span></p>
+<p>[Tomado de <span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1025\)</span>]</p>
+</div>
+<p><br></br></p>
+</div>
+<div id="ejercicio-integral-triple" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Ejercicio integral triple<a href="Integrales-triples.html#ejercicio-integral-triple" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-93" class="exercise"><strong>Ejercicio 7.1  </strong></span>Evaluar la integral iterada triple</p>
+<p><span class="math display">\[
+\int_{0}^{2}\int_{0}^{x}\int_{0}^{x+y}{e^{x}(y+2z)dzdydx}
+\]</span></p>
+<p><span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1025\)</span>]</p>
+</div>
+<p><br></br></p>
+<p><span class="math display">\[
+\int_{0}^{2}\int_{0}^{x}\int_{0}^{x+y}{e^{x}(y+2z)dzdydx} = \\
+\int_{0}^{2}\int_{0}^{x}\left[e^{x}(yz+z^2)\right]_{0}^{x+y}dydx =\\
+\int_{0}^{2}\int_{0}^{x}\left[e^{x}(x^2+3xy+2y^2)\right]dydx=\\
+\int_{0}^{2}\left[e^{x}\left(x^2y+\dfrac{3xy^2}{2}+\dfrac{2y^3}{3}\right)\right]_{0}^{x}dx=\\
+\dfrac{19}{6}\int_{0}^{2}x^3e^{x}dx=\\
+\dfrac{19}{6}\left[e^{x}(x^3-3x^2+6x-6)\right]_{0}^{2}=\\
+19\left(\dfrac{e^2}{3}+1\right)=\\
+\approx 65.797
+\]</span></p>
+<p>Puede también ver la respuesta de este ejercicio en <span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1025\)</span>]</p>
+<p><br></br></p>
+</div>
+<div id="ejercicio-integral-triple-1" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> Ejercicio integral triple<a href="Integrales-triples.html#ejercicio-integral-triple-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-94" class="exercise"><strong>Ejercicio 7.2  </strong></span>Hallar el volumen del elipsoide dado por <span class="math inline">\(4x^2+4y^2+z^2=16\)</span></p>
+<p><span class="math display">\[
+  V(\text{sólido  }Q)={\int\int\int}_{Q}{1dV}
+\]</span></p>
+<p><span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1026\)</span>]</p>
+</div>
+<p><br></br></p>
+<p><span class="math display">\[
+8\int_{0}^{2}\int_{0}^{\sqrt{4-x^2}}\int_{0}^{2\sqrt{4-x^2-y^2}}{1dzdydx} =\\
+8\int_{0}^{2}\int_{0}^{\sqrt{4-x^2}}\left. z\right]_{0}^{2\sqrt{4-x^2-y^2}}dydx=\\
+16\int_{0}^{2}\int_{0}^{\sqrt{4-x^2}}\sqrt{(4-x^2)-y^2}dydx=\\
+8\int_{0}^{2}\left[y\sqrt{4-x^2-y^2}+(4-x^2)arcsen\left(\dfrac{y}{4-x^2}\right)\right]_{0}^{\sqrt{4-x^2}}dx=\\
+8\int_{0}^{2}[0+(4-x^2)arcsen(1)-0-0]dx=\\
+8\int_{0}^{2}(4-x^2)\left(\dfrac{\pi}{2}\right)dx=\\
+4\pi\left[4x-\dfrac{x^3}{3}\right]_{0}^{2}=\\
+=\dfrac{64\pi}{3} \ \ \ \text{Unidades de volumen}
+\]</span></p>
+<p>Puede también ver la respuesta de este ejercicio en <span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1026\)</span>]</p>
+<p><br></br></p>
+<p>Esta es una aplicación para calular una integral triple con limites variables y obtener su valor, la realizó John Jairo Estrada (<a href="https://www.geogebra.org/classic/ywbjuqjv" class="uri">https://www.geogebra.org/classic/ywbjuqjv</a>) usando geogebra.</p>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementSuperficieAC05">
+
+</div>
+<script>  
+       var ggbAppSuperficieAC05 = new GGBApplet({"material_id":"ywbjuqjv",
+       "width": 1100,
+       "height": 600,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppSuperficieAC05.inject('ggb-elementSuperficieAC05');
+      });
+</script>
+<p><br></br></p>
+</div>
+<div id="ejercicio-integral-triple-2" class="section level2 hasAnchor" number="7.4">
+<h2><span class="header-section-number">7.4</span> Ejercicio integral triple<a href="Integrales-triples.html#ejercicio-integral-triple-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-95" class="exercise"><strong>Ejercicio 7.3  </strong></span>Obtener la gráfica del sólido generado en el primer octante, por la intersección de las superficies en el espacio <span class="math inline">\(XYZ\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+z^2+y^2=9 \ \ \ \   : \text{Cilíndro}  \ \ \ \\
+y=2, \ \ y=4 \ \ \ \   : \text{Planos paralelos al plano } \ XZ  \ \ \ \\
+z=0, \ \ \ \   : \text{Plano} \ XY  \ \ \ \\
+\end{equation}\]</span>. [Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(997\)</span>]</p>
+</div>
+<p><br></br></p>
+<p>Esta es una aplicación para generar un sólido límitado por varias superficies, realizado inicialmente por Mate.Math-University en youtube (<a href="https://www.youtube.com/watch?v=cqSPDNFZZ9U" class="uri">https://www.youtube.com/watch?v=cqSPDNFZZ9U</a>) el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/baxbk5pz" class="uri">https://www.geogebra.org/classic/baxbk5pz</a>) la elaboro usando geogebra.</p>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementSuperficieEB01">
+
+</div>
+<script>  
+       var ggbAppSuperficieEB01 = new GGBApplet({"material_id":"baxbk5pz",
+       "width": 600,
+       "height": 600,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppSuperficieEB01.inject('ggb-elementSuperficieEB01');
+      });
+</script>
+<p><br></br></p>
+</div>
+<div id="ejercicio-integral-triple-3" class="section level2 hasAnchor" number="7.5">
+<h2><span class="header-section-number">7.5</span> Ejercicio integral triple<a href="Integrales-triples.html#ejercicio-integral-triple-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-96" class="exercise"><strong>Ejercicio 7.4  </strong></span>Obtener la gráfica del sólido generado a partir de la intersección de las superficies en el espacio <span class="math inline">\(XYZ\)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+x^2+z^2+y^2=8 \ \ \ \   : \text{Esfera}  \ \ \ \\
+y^2+x^2=z^2, \ \ \ \   : \text{Cono arribal del plano } \ XY  \ \ \ \\
+\end{equation}\]</span>. [Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(997\)</span>]</p>
+</div>
+<p><br></br></p>
+<p>Esta es una aplicación para generar un sólido límitado por varias superficies, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/baxbk5pz" class="uri">https://www.geogebra.org/classic/baxbk5pz</a>) lo elaboro usando geogebra.</p>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementSuperficieEB02">
+
+</div>
+<script>  
+       var ggbAppSuperficieEB02 = new GGBApplet({"material_id":"fehhh7ng",
+       "width": 600,
+       "height": 600,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppSuperficieEB02.inject('ggb-elementSuperficieEB02');
+      });
+</script>
+<p><br></br></p>
+</div>
+<div id="ejercicio-integral-triple-4" class="section level2 hasAnchor" number="7.6">
+<h2><span class="header-section-number">7.6</span> Ejercicio integral triple<a href="Integrales-triples.html#ejercicio-integral-triple-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="exercise">
+<p><span id="exr:unnamed-chunk-97" class="exercise"><strong>Ejercicio 7.5  </strong></span>Determine el volumen del segmento oblicuo de paraboloide acotado por el paraboloide <span class="math inline">\(z=x^2+y^2\)</span> y el plano <span class="math inline">\(z=y+2\)</span> en el espacio <span class="math inline">\(XYZ\)</span>:</p>
+<p>[Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(872\)</span>]</p>
+</div>
+<p>Esta es una aplicación para generar un sólido límitado por varias superficies, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/gdeckh2x" class="uri">https://www.geogebra.org/classic/gdeckh2x</a>) lo elaboro usando geogebra.</p>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementSuperficieEB03">
+
+</div>
+<script>  
+       var ggbAppSuperficieEB03 = new GGBApplet({"material_id":"gdeckh2x",
+       "width": 600,
+       "height": 600,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppSuperficieEB03.inject('ggb-elementSuperficieEB03');
+      });
+</script>
+<p><br></br></p>
+<p><a href="https://johnucesoficina2022.shinyapps.io/IntegralTripleOFFICEVa1/">Integral Triple en una región cúbica</a></p>
+
+</div>
+</div>
+<h3>Referencias<a href="referencias.html#referencias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-larson1999calculo" class="csl-entry">
+Larson, Roland E, Robert P Hostetler, Bruce H Edwars, Lorenzo Abellanas Rapún, et al. 1999. <em>C<span>á</span>lculo y Geometr<span>ı́</span>a Anal<span>ı́</span>tica</em>.
+</div>
+<div id="ref-larson2006calculo" class="csl-entry">
+Larson, Ron. 2006. <em>C<span>á</span>lculo de Varias Variables</em>. QA303. l3718 2004.
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="Integrales-dobles.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Metodos-EDO.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
