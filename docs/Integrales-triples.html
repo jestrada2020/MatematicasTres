@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 7 Integrales triples | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
-  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 7 Integrales triples | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
-  
+  <meta property="og:image" content="/images/PortadaMateTres.png" />
   <meta property="og:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
 
@@ -18,12 +18,12 @@
   <meta name="twitter:title" content="Capítulo 7 Integrales triples | Curso de Matemáticas Tres UCES" />
   
   <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
-  
+  <meta name="twitter:image" content="/images/PortadaMateTres.png" />
 
 <meta name="author" content="Carlos Andrés Escobar Guerra - Juan Alberto Arias Quiceno - John Jairo Estrada Alvarez" />
 
 
-<meta name="date" content="2023-07-20" />
+<meta name="date" content="2024-09-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,14 +52,15 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
 <script src="libs/leaflet-1.3.1/leaflet.js"></script>
 <link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
 <script src="libs/proj4-2.6.2/proj4.min.js"></script>
 <script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.1.2/leaflet.js"></script>
+<script src="libs/leaflet-binding-2.2.2/leaflet.js"></script>
 
 
 
@@ -72,6 +73,7 @@
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -106,12 +108,13 @@ div.csl-indent {
 <li><a href="./">Curso de Matemáticas Tres</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prerrequisitos</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio</a></li>
+<li class="chapter" data-level="" data-path="prerrequisitos.html"><a href="prerrequisitos.html"><i class="fa fa-check"></i>Prerrequisitos</a>
 <ul>
-<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>0.1</b> Comportamentales</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>0.2</b> Evaluativos</a></li>
-<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>0.3</b> Video motivacional</a></li>
-<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>0.4</b> Página para reforzar conceptos básicos</a></li>
+<li class="chapter" data-level="0.1" data-path="prerrequisitos.html"><a href="prerrequisitos.html#comportamentales"><i class="fa fa-check"></i><b>0.1</b> Comportamentales</a></li>
+<li class="chapter" data-level="0.2" data-path="prerrequisitos.html"><a href="prerrequisitos.html#evaluativos"><i class="fa fa-check"></i><b>0.2</b> Evaluativos</a></li>
+<li class="chapter" data-level="0.3" data-path="prerrequisitos.html"><a href="prerrequisitos.html#video-motivacional"><i class="fa fa-check"></i><b>0.3</b> Video motivacional</a></li>
+<li class="chapter" data-level="0.4" data-path="prerrequisitos.html"><a href="prerrequisitos.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>0.4</b> Página para reforzar conceptos básicos</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html"><i class="fa fa-check"></i><b>1</b> Desarrollo temático</a>
 <ul>
@@ -338,7 +341,7 @@ Evariste Galois (1811-1832).
 <p><span class="math display">\[
   V(\text{sólido  }Q)={\int\int\int}_{Q}{1dV}
 \]</span></p>
-<p>[Tomado de <span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1024\)</span>]</p>
+<p>[Tomado de <span class="citation">(<a href="#ref-larson1999calculo">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1024\)</span>]</p>
 </div>
 <p><br></br></p>
 <div class="theorem">
@@ -355,7 +358,7 @@ Q=\left\{ \begin{array}{lcc}
 <p><span class="math display">\[
   {\int\int\int}_{Q}{f(x,y,z)dV}=\int_{a}^{b}\int_{g_1(x)}^{g_2(x)}\int_{h_1(x,y)}^{h_2(x,y)}{f(x,y,z)dzdydx}
 \]</span></p>
-<p>[Tomado de <span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1025\)</span>]</p>
+<p>[Tomado de <span class="citation">(<a href="#ref-larson1999calculo">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1025\)</span>]</p>
 </div>
 <p><br></br></p>
 </div>
@@ -366,7 +369,7 @@ Q=\left\{ \begin{array}{lcc}
 <p><span class="math display">\[
 \int_{0}^{2}\int_{0}^{x}\int_{0}^{x+y}{e^{x}(y+2z)dzdydx}
 \]</span></p>
-<p><span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1025\)</span>]</p>
+<p><span class="citation">(<a href="#ref-larson1999calculo">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1025\)</span>]</p>
 </div>
 <p><br></br></p>
 <p><span class="math display">\[
@@ -379,7 +382,7 @@ Q=\left\{ \begin{array}{lcc}
 19\left(\dfrac{e^2}{3}+1\right)=\\
 \approx 65.797
 \]</span></p>
-<p>Puede también ver la respuesta de este ejercicio en <span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1025\)</span>]</p>
+<p>Puede también ver la respuesta de este ejercicio en <span class="citation">(<a href="#ref-larson1999calculo">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1025\)</span>]</p>
 <p><br></br></p>
 </div>
 <div id="ejercicio-integral-triple-1" class="section level2 hasAnchor" number="7.3">
@@ -389,7 +392,7 @@ Q=\left\{ \begin{array}{lcc}
 <p><span class="math display">\[
   V(\text{sólido  }Q)={\int\int\int}_{Q}{1dV}
 \]</span></p>
-<p><span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1026\)</span>]</p>
+<p><span class="citation">(<a href="#ref-larson1999calculo">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1026\)</span>]</p>
 </div>
 <p><br></br></p>
 <p><span class="math display">\[
@@ -402,7 +405,7 @@ Q=\left\{ \begin{array}{lcc}
 4\pi\left[4x-\dfrac{x^3}{3}\right]_{0}^{2}=\\
 =\dfrac{64\pi}{3} \ \ \ \text{Unidades de volumen}
 \]</span></p>
-<p>Puede también ver la respuesta de este ejercicio en <span class="citation">(<a href="#ref-larson1999calculo" role="doc-biblioref">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1026\)</span>]</p>
+<p>Puede también ver la respuesta de este ejercicio en <span class="citation">(<a href="#ref-larson1999calculo">R. E. Larson et al. 1999</a>)</span> pág <span class="math inline">\(1026\)</span>]</p>
 <p><br></br></p>
 <p>Esta es una aplicación para calular una integral triple con limites variables y obtener su valor, la realizó John Jairo Estrada (<a href="https://www.geogebra.org/classic/ywbjuqjv" class="uri">https://www.geogebra.org/classic/ywbjuqjv</a>) usando geogebra.</p>
 <meta name=viewport content="width=device-width,initial-scale=1">
@@ -434,7 +437,7 @@ Q=\left\{ \begin{array}{lcc}
 z^2+y^2=9 \ \ \ \   : \text{Cilíndro}  \ \ \ \\
 y=2, \ \ y=4 \ \ \ \   : \text{Planos paralelos al plano } \ XZ  \ \ \ \\
 z=0, \ \ \ \   : \text{Plano} \ XY  \ \ \ \\
-\end{equation}\]</span>. [Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(997\)</span>]</p>
+\end{equation}\]</span>. [Tomado de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(997\)</span>]</p>
 </div>
 <p><br></br></p>
 <p>Esta es una aplicación para generar un sólido límitado por varias superficies, realizado inicialmente por Mate.Math-University en youtube (<a href="https://www.youtube.com/watch?v=cqSPDNFZZ9U" class="uri">https://www.youtube.com/watch?v=cqSPDNFZZ9U</a>) el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/baxbk5pz" class="uri">https://www.geogebra.org/classic/baxbk5pz</a>) la elaboro usando geogebra.</p>
@@ -466,7 +469,7 @@ z=0, \ \ \ \   : \text{Plano} \ XY  \ \ \ \\
 <p><span class="math display">\[\begin{equation}
 x^2+z^2+y^2=8 \ \ \ \   : \text{Esfera}  \ \ \ \\
 y^2+x^2=z^2, \ \ \ \   : \text{Cono arribal del plano } \ XY  \ \ \ \\
-\end{equation}\]</span>. [Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(997\)</span>]</p>
+\end{equation}\]</span>. [Tomado de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(997\)</span>]</p>
 </div>
 <p><br></br></p>
 <p>Esta es una aplicación para generar un sólido límitado por varias superficies, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/baxbk5pz" class="uri">https://www.geogebra.org/classic/baxbk5pz</a>) lo elaboro usando geogebra.</p>
@@ -495,7 +498,7 @@ y^2+x^2=z^2, \ \ \ \   : \text{Cono arribal del plano } \ XY  \ \ \ \\
 <h2><span class="header-section-number">7.6</span> Ejercicio integral triple<a href="Integrales-triples.html#ejercicio-integral-triple-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="exercise">
 <p><span id="exr:unnamed-chunk-97" class="exercise"><strong>Ejercicio 7.5  </strong></span>Determine el volumen del segmento oblicuo de paraboloide acotado por el paraboloide <span class="math inline">\(z=x^2+y^2\)</span> y el plano <span class="math inline">\(z=y+2\)</span> en el espacio <span class="math inline">\(XYZ\)</span>:</p>
-<p>[Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(872\)</span>]</p>
+<p>[Tomado de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(872\)</span>]</p>
 </div>
 <p>Esta es una aplicación para generar un sólido límitado por varias superficies, el Autor:John Jairo Estrada (<a href="https://www.geogebra.org/classic/gdeckh2x" class="uri">https://www.geogebra.org/classic/gdeckh2x</a>) lo elaboro usando geogebra.</p>
 <meta name=viewport content="width=device-width,initial-scale=1">
@@ -523,7 +526,7 @@ y^2+x^2=z^2, \ \ \ \   : \text{Cono arribal del plano } \ XY  \ \ \ \\
 </div>
 </div>
 <h3>Referencias<a href="referencias.html#referencias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div id="ref-larson1999calculo" class="csl-entry">
 Larson, Roland E, Robert P Hostetler, Bruce H Edwars, Lorenzo Abellanas Rapún, et al. 1999. <em>C<span>á</span>lculo y Geometr<span>ı́</span>a Anal<span>ı́</span>tica</em>.
 </div>

@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 6 Integrales dobles | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
-  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 6 Integrales dobles | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
-  
+  <meta property="og:image" content="/images/PortadaMateTres.png" />
   <meta property="og:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
 
@@ -18,12 +18,12 @@
   <meta name="twitter:title" content="Capítulo 6 Integrales dobles | Curso de Matemáticas Tres UCES" />
   
   <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
-  
+  <meta name="twitter:image" content="/images/PortadaMateTres.png" />
 
 <meta name="author" content="Carlos Andrés Escobar Guerra - Juan Alberto Arias Quiceno - John Jairo Estrada Alvarez" />
 
 
-<meta name="date" content="2023-07-20" />
+<meta name="date" content="2024-09-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,14 +52,15 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
 <script src="libs/leaflet-1.3.1/leaflet.js"></script>
 <link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
 <script src="libs/proj4-2.6.2/proj4.min.js"></script>
 <script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.1.2/leaflet.js"></script>
+<script src="libs/leaflet-binding-2.2.2/leaflet.js"></script>
 
 
 
@@ -72,6 +73,7 @@
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -106,12 +108,13 @@ div.csl-indent {
 <li><a href="./">Curso de Matemáticas Tres</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prerrequisitos</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio</a></li>
+<li class="chapter" data-level="" data-path="prerrequisitos.html"><a href="prerrequisitos.html"><i class="fa fa-check"></i>Prerrequisitos</a>
 <ul>
-<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>0.1</b> Comportamentales</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>0.2</b> Evaluativos</a></li>
-<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>0.3</b> Video motivacional</a></li>
-<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>0.4</b> Página para reforzar conceptos básicos</a></li>
+<li class="chapter" data-level="0.1" data-path="prerrequisitos.html"><a href="prerrequisitos.html#comportamentales"><i class="fa fa-check"></i><b>0.1</b> Comportamentales</a></li>
+<li class="chapter" data-level="0.2" data-path="prerrequisitos.html"><a href="prerrequisitos.html#evaluativos"><i class="fa fa-check"></i><b>0.2</b> Evaluativos</a></li>
+<li class="chapter" data-level="0.3" data-path="prerrequisitos.html"><a href="prerrequisitos.html#video-motivacional"><i class="fa fa-check"></i><b>0.3</b> Video motivacional</a></li>
+<li class="chapter" data-level="0.4" data-path="prerrequisitos.html"><a href="prerrequisitos.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>0.4</b> Página para reforzar conceptos básicos</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html"><i class="fa fa-check"></i><b>1</b> Desarrollo temático</a>
 <ul>
@@ -330,7 +333,7 @@ Alan Turing (1912-1954).
 <div id="definición-de-integral-doble" class="section level2 hasAnchor" number="6.1">
 <h2><span class="header-section-number">6.1</span> Definición de integral doble<a href="Integrales-dobles.html#definición-de-integral-doble" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="definition">
-<p><span id="def:unnamed-chunk-81" class="definition"><strong>Definición 6.1  </strong></span>Si <span class="math inline">\(f\)</span> esta definida en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>, entonces la integral doble de f sobre <span class="math inline">\(D\)</span> esta dada por[Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(994\)</span>]</p>
+<p><span id="def:unnamed-chunk-81" class="definition"><strong>Definición 6.1  </strong></span>Si <span class="math inline">\(f\)</span> esta definida en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>, entonces la integral doble de f sobre <span class="math inline">\(D\)</span> esta dada por[Tomado de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(994\)</span>]</p>
 </div>
 <p><span class="math display">\[
 \int_{D}\int{f(x,y)dA} =\lim_{{\parallel{\bigtriangleup}\parallel} \to 0}\sum_{i=1}^{n}f(x_i,y_i){\bigtriangleup}A_i
@@ -339,7 +342,7 @@ Alan Turing (1912-1954).
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigDefVolumenA2"></span>
 <img src="images/VolumenIntegralDobleDef_A2.png" alt="Partición regular para obtener el volumen de un sólido [Imagen tomada de [@larson2006calculo] pág $992$]" width="95%" />
 <p class="caption">
-Figura 6.1: Partición regular para obtener el volumen de un sólido [Imagen tomada de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(992\)</span>]
+Figura 6.1: Partición regular para obtener el volumen de un sólido [Imagen tomada de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(992\)</span>]
 </p>
 </div>
 <p><br></br></p>
@@ -370,7 +373,7 @@ Figura 6.1: Partición regular para obtener el volumen de un sólido [Imagen tom
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigDefVolumenAN1"></span>
 <img src="images/DefVolIntegralDoble_A1.png" alt="Definición de volumen como integral doble [Imagen tomada de [@stewart2009calculus] pág $850$ y $851$]" width="95%" />
 <p class="caption">
-Figura 6.2: Definición de volumen como integral doble [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus" role="doc-biblioref">Stewart 2009</a>)</span> pág <span class="math inline">\(850\)</span> y <span class="math inline">\(851\)</span>]
+Figura 6.2: Definición de volumen como integral doble [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus">Stewart 2009</a>)</span> pág <span class="math inline">\(850\)</span> y <span class="math inline">\(851\)</span>]
 </p>
 </div>
 <div class="definition">
@@ -383,18 +386,18 @@ A(x)=\int_{c}^{d}{f(x,y)dy}
 V(\text{región sólida})=\int_{D}\int{f(x,y)dA}=\int_{a}^{b}{A(x)dx}=\int_{a}^{b}{\int_{c}^{d}{f(x,y)dy}dx}
 \]</span></p>
 <p>donde <span class="math inline">\(D=[a,b]\times [c,d]\)</span>
-[Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(994\)</span>]</p>
+[Tomado de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(994\)</span>]</p>
 </div>
 </div>
 <div id="propiedades-de-las-integrales-dobles" class="section level2 hasAnchor" number="6.3">
 <h2><span class="header-section-number">6.3</span> Propiedades de las integrales dobles<a href="Integrales-dobles.html#propiedades-de-las-integrales-dobles" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-83" class="theorem"><strong>Teorema 6.1  </strong></span>Sean <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> continuas en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>, y sea <span class="math inline">\(c\)</span> una constante. Cada una de las siguientes afirmaciones es verdadera: [Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(994\)</span>]</p>
+<p><span id="thm:unnamed-chunk-83" class="theorem"><strong>Teorema 6.1  </strong></span>Sean <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> continuas en una región cerrada y acotada <span class="math inline">\(D\)</span> del plano <span class="math inline">\(XY\)</span>, y sea <span class="math inline">\(c\)</span> una constante. Cada una de las siguientes afirmaciones es verdadera: [Tomado de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(994\)</span>]</p>
 </div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralDoble1"></span>
 <img src="images/Imagen_PdeIntegralDoble1.png" alt="Dos regiones no se sobreponen si su intersección es un conjunto de área cero. [Imagen tomada de [@larson2006calculo] pág $994$]" width="201" />
 <p class="caption">
-Figura 6.3: Dos regiones no se sobreponen si su intersección es un conjunto de área cero. [Imagen tomada de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(994\)</span>]
+Figura 6.3: Dos regiones no se sobreponen si su intersección es un conjunto de área cero. [Imagen tomada de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(994\)</span>]
 </p>
 </div>
 <p>(1.) <span class="math inline">\(\int_{D}\int{cf(x,y)dA}=c\int_{D}\int{f(x,y)dA}\)</span></p>
@@ -406,7 +409,7 @@ Figura 6.3: Dos regiones no se sobreponen si su intersección es un conjunto de 
 <div id="ejemplo-integral-doble-usando-geogebra" class="section level2 hasAnchor" number="6.4">
 <h2><span class="header-section-number">6.4</span> Ejemplo integral doble usando geogebra<a href="Integrales-dobles.html#ejemplo-integral-doble-usando-geogebra" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="example">
-<p><span id="exm:unnamed-chunk-84" class="example"><strong>Ejemplo 6.1  </strong></span>Sea <span class="math inline">\(D\)</span> el rectángulo definido como <span class="math inline">\(\left[0,1\right] \times \left[-3,3\right]\)</span> y <span class="math inline">\(f(x,y)=\dfrac{xy^2}{x^2+1}\)</span> una función integrable en <span class="math inline">\(D\)</span>. Obtener usando geogebra el volumén limitado arriba por <span class="math inline">\(f\)</span>, y abajo por el rectángulo <span class="math inline">\(D\)</span>. Observe que <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span> [Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(994\)</span>]</p>
+<p><span id="exm:unnamed-chunk-84" class="example"><strong>Ejemplo 6.1  </strong></span>Sea <span class="math inline">\(D\)</span> el rectángulo definido como <span class="math inline">\(\left[0,1\right] \times \left[-3,3\right]\)</span> y <span class="math inline">\(f(x,y)=\dfrac{xy^2}{x^2+1}\)</span> una función integrable en <span class="math inline">\(D\)</span>. Obtener usando geogebra el volumén limitado arriba por <span class="math inline">\(f\)</span>, y abajo por el rectángulo <span class="math inline">\(D\)</span>. Observe que <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span> [Tomado de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(994\)</span>]</p>
 </div>
 <p><br></br></p>
 <p>Esta es una aplicación que genera un sólido y proporciona su volumen, inicialmente la realizó en youtube Matemática y Geogebra (<a href="https://www.youtube.com/watch?v=GfhDeC2lN88&amp;t=857s" class="uri">https://www.youtube.com/watch?v=GfhDeC2lN88&amp;t=857s</a>), y posteriormente la realizó John Jairo Estrada (<a href="https://www.geogebra.org/classic/f6guccy3" class="uri">https://www.geogebra.org/classic/f6guccy3</a>).</p>
@@ -437,12 +440,12 @@ Figura 6.3: Dos regiones no se sobreponen si su intersección es un conjunto de 
 <span class="math display">\[
 \left[0,1\right] \times \left[0,1\right]  \ \ \ \text{significa que:}  \ \ \  0\leq x \leq 1 \ \ \text{y} \ \ 0\leq y \leq 1
 \]</span></p>
-<p>el volumén limitado arriba por <span class="math inline">\(f\)</span>, y abajo por el rectángulo <span class="math inline">\(D\)</span>. Observe que <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span> [Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(996\)</span>]</p>
+<p>el volumén limitado arriba por <span class="math inline">\(f\)</span>, y abajo por el rectángulo <span class="math inline">\(D\)</span>. Observe que <span class="math inline">\(f(x,y) \geq 0\)</span> para todo <span class="math inline">\((x,y) \in D\)</span> [Tomado de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(996\)</span>]</p>
 </div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralDoble2"></span>
 <img src="images/EjercicioIntDoble1.png" alt="El volumen de la región rectángular. [Imagen tomada de [@larson2006calculo] pág $996$]" width="50%" />
 <p class="caption">
-Figura 6.4: El volumen de la región rectángular. [Imagen tomada de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(996\)</span>]
+Figura 6.4: El volumen de la región rectángular. [Imagen tomada de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(996\)</span>]
 </p>
 </div>
 <p><br></br></p>
@@ -454,12 +457,12 @@ Figura 6.4: El volumen de la región rectángular. [Imagen tomada de <span class
 \left[\dfrac{5}{6}x-\dfrac{x^3}{6}\right]_{0}^{1}=\\
 =\dfrac{2}{3}
 \]</span></p>
-<p>El ejercicio se puede ver solucionado en <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(996\)</span>]</p>
+<p>El ejercicio se puede ver solucionado en <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(996\)</span>]</p>
 <p><br></br></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralDobleAA1"></span>
 <img src="images/TiposDeRegionesIntDoble_A1.png" alt="Tipo de regiones en el plano cartesiano $XY$. [Imagen tomada de [@zill2011matematicas] pág $755$]" width="80%" />
 <p class="caption">
-Figura 6.5: Tipo de regiones en el plano cartesiano <span class="math inline">\(XY\)</span>. [Imagen tomada de <span class="citation">(<a href="#ref-zill2011matematicas" role="doc-biblioref">Zill and Wright 2011</a>)</span> pág <span class="math inline">\(755\)</span>]
+Figura 6.5: Tipo de regiones en el plano cartesiano <span class="math inline">\(XY\)</span>. [Imagen tomada de <span class="citation">(<a href="#ref-zill2011matematicas">Zill and Wright 2011</a>)</span> pág <span class="math inline">\(755\)</span>]
 </p>
 </div>
 <div class="theorem">
@@ -475,7 +478,7 @@ D=\left\{ \begin{array}{lcc}
 <p><span class="math display">\[
 \int_{D}\int{f(x,y)dA}=\int_{a}^{b}\int_{g_1(x)}^{g_2(x)}{f(x,y)dydx}  
 \]</span></p>
-<p>[Tomado de <span class="citation">(<a href="#ref-edwards1996calculo" role="doc-biblioref">Edwards, Penney, and Velasco 1996</a>)</span> pág <span class="math inline">\(838\)</span>]</p>
+<p>[Tomado de <span class="citation">(<a href="#ref-edwards1996calculo">Edwards, Penney, and Velasco 1996</a>)</span> pág <span class="math inline">\(838\)</span>]</p>
 </div>
 <p><br></br></p>
 <div class="theorem">
@@ -491,7 +494,7 @@ D=\left\{ \begin{array}{lcc}
 <p><span class="math display">\[
 \int_{D}\int{f(x,y)dA}=\int_{a}^{b}\int_{h_1(y)}^{h_2(y)}{f(x,y)dxdy}  
 \]</span></p>
-<p>[Tomado de <span class="citation">(<a href="#ref-edwards1996calculo" role="doc-biblioref">Edwards, Penney, and Velasco 1996</a>)</span> pág <span class="math inline">\(838\)</span>]</p>
+<p>[Tomado de <span class="citation">(<a href="#ref-edwards1996calculo">Edwards, Penney, and Velasco 1996</a>)</span> pág <span class="math inline">\(838\)</span>]</p>
 </div>
 <p><br></br></p>
 </div>
@@ -503,7 +506,7 @@ D=\left\{ \begin{array}{lcc}
 0\leq x \leq 1 \\
 -\sqrt(\dfrac{4-x^2}{2}) \leq y \leq \sqrt(\dfrac{4-x^2}{2})
 \]</span></p>
-<p>y <span class="math inline">\(f(x,y)=4-x^2-2y^2\)</span> una función integrable en <span class="math inline">\(D\)</span>. Hallar el volumen del sólido limitado por abajo de la superficie <span class="math inline">\(f(x,y)\)</span>, y por arriba de la región <span class="math inline">\(D\)</span> usando integrales dobles. [Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(997\)</span>]</p>
+<p>y <span class="math inline">\(f(x,y)=4-x^2-2y^2\)</span> una función integrable en <span class="math inline">\(D\)</span>. Hallar el volumen del sólido limitado por abajo de la superficie <span class="math inline">\(f(x,y)\)</span>, y por arriba de la región <span class="math inline">\(D\)</span> usando integrales dobles. [Tomado de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(997\)</span>]</p>
 </div>
 <p><br></br></p>
 <p><strong>NOTA:</strong> Use la aplicación de geogebra para verificar su resultado.</p>
@@ -535,7 +538,7 @@ Está es una aplicación de geogebra que realizó John Jairo Estrada (<a href="h
 <div id="ejercicio-integral-doble-2" class="section level2 hasAnchor" number="6.8">
 <h2><span class="header-section-number">6.8</span> Ejercicio integral doble<a href="Integrales-dobles.html#ejercicio-integral-doble-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="exercise">
-<p><span id="exr:unnamed-chunk-89" class="exercise"><strong>Ejercicio 6.3  </strong></span>Determinar el área usando integrales dobles para la región <span class="math inline">\(D\)</span> limitada por las curvas <span class="math inline">\(x=-2\)</span>, <span class="math inline">\(x=2\)</span>, <span class="math inline">\(y=-x^2+2x\)</span>, y <span class="math inline">\(y=3x^3-x^2-10x\)</span>. [Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(997\)</span>]</p>
+<p><span id="exr:unnamed-chunk-89" class="exercise"><strong>Ejercicio 6.3  </strong></span>Determinar el área usando integrales dobles para la región <span class="math inline">\(D\)</span> limitada por las curvas <span class="math inline">\(x=-2\)</span>, <span class="math inline">\(x=2\)</span>, <span class="math inline">\(y=-x^2+2x\)</span>, y <span class="math inline">\(y=3x^3-x^2-10x\)</span>. [Tomado de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(997\)</span>]</p>
 </div>
 <p><br></br></p>
 <p><span class="math display">\[
@@ -556,7 +559,7 @@ De donde el área total de la región <span class="math inline">\(D_1 \cup D_2\)
 <p><span class="math display">\[
 A(\text{Región }D_1 \cup D_2)=\int_{-2}^{0}\int_{-x^2+2x}^{ 3x^3-x^2-10x}{1dydx}+\int_{0}^{2}\int_{ 3x^3-x^2-10x}^{-x^2+2x}{1dydx}=24 \ \ \text{Unidades de área}
 \]</span></p>
-<p>El ejercicio se puede ver solucionado en <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(996\)</span>]</p>
+<p>El ejercicio se puede ver solucionado en <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(996\)</span>]</p>
 <p><br></br></p>
 <p><br></br></p>
 Está es una aplicación de geogebra que realizó John Jairo Estrada (<a href="https://www.geogebra.org/classic/xbamdegy" class="uri">https://www.geogebra.org/classic/xbamdegy</a>).
@@ -612,7 +615,7 @@ Está es una aplicación de geogebra que realizó John Jairo Estrada (<a href="h
 z^2+x^2=9 \ \ \ \   : \text{Cilíndro}  \ \ \ \\
 y=2, \ \ y=4 \ \ \ \   : \text{Planos paralelos al plano } \ XZ  \ \ \ \\
 z=0, \ \ \ \   : \text{Plano} \ XY  \ \ \ \\
-\end{equation}\]</span>. [Tomado de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(997\)</span>]</p>
+\end{equation}\]</span>. [Tomado de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(997\)</span>]</p>
 </div>
 <p><br></br></p>
 <p>Esta es una aplicación para generar las gráficas de cada una de las superficies que plantea el ejemplo, realizado inicialmente por Mate.Math-University en youtube (<a href="https://www.youtube.com/watch?v=cqSPDNFZZ9U" class="uri">https://www.youtube.com/watch?v=cqSPDNFZZ9U</a>) el Autor en este ejemplo:John Jairo Estrada (<a href="https://www.geogebra.org/classic/rrswnzgr" class="uri">https://www.geogebra.org/classic/rrswnzgr</a>) la elaboro usando geogebra.</p>
@@ -689,7 +692,7 @@ D_1=\left\lbrace (x,y) \in R^2, \ \ \text{tal que } \ \ 0 \leq x \leq 3; \ \ 2 \
 </div>
 </div>
 <h3>Referencias<a href="referencias.html#referencias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div id="ref-edwards1996calculo" class="csl-entry">
 Edwards, Charles Henry, David E Penney, and Oscar Alfredo Palmas Velasco. 1996. <em>C<span>á</span>lculo Con Geometr<span>ı́</span>a Anal<span>ı́</span>tica</em>. QA303 E3818. Prentice Hall Hispanoamericana.
 </div>

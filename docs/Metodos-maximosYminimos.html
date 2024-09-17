@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 4 Métodos para máximos y mínimos | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
-  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 4 Métodos para máximos y mínimos | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
-  
+  <meta property="og:image" content="/images/PortadaMateTres.png" />
   <meta property="og:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
 
@@ -18,12 +18,12 @@
   <meta name="twitter:title" content="Capítulo 4 Métodos para máximos y mínimos | Curso de Matemáticas Tres UCES" />
   
   <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
-  
+  <meta name="twitter:image" content="/images/PortadaMateTres.png" />
 
 <meta name="author" content="Carlos Andrés Escobar Guerra - Juan Alberto Arias Quiceno - John Jairo Estrada Alvarez" />
 
 
-<meta name="date" content="2023-07-20" />
+<meta name="date" content="2024-09-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,14 +52,15 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
 <script src="libs/leaflet-1.3.1/leaflet.js"></script>
 <link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
 <script src="libs/proj4-2.6.2/proj4.min.js"></script>
 <script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.1.2/leaflet.js"></script>
+<script src="libs/leaflet-binding-2.2.2/leaflet.js"></script>
 
 
 
@@ -72,6 +73,7 @@
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -106,12 +108,13 @@ div.csl-indent {
 <li><a href="./">Curso de Matemáticas Tres</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prerrequisitos</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio</a></li>
+<li class="chapter" data-level="" data-path="prerrequisitos.html"><a href="prerrequisitos.html"><i class="fa fa-check"></i>Prerrequisitos</a>
 <ul>
-<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>0.1</b> Comportamentales</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>0.2</b> Evaluativos</a></li>
-<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>0.3</b> Video motivacional</a></li>
-<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>0.4</b> Página para reforzar conceptos básicos</a></li>
+<li class="chapter" data-level="0.1" data-path="prerrequisitos.html"><a href="prerrequisitos.html#comportamentales"><i class="fa fa-check"></i><b>0.1</b> Comportamentales</a></li>
+<li class="chapter" data-level="0.2" data-path="prerrequisitos.html"><a href="prerrequisitos.html#evaluativos"><i class="fa fa-check"></i><b>0.2</b> Evaluativos</a></li>
+<li class="chapter" data-level="0.3" data-path="prerrequisitos.html"><a href="prerrequisitos.html#video-motivacional"><i class="fa fa-check"></i><b>0.3</b> Video motivacional</a></li>
+<li class="chapter" data-level="0.4" data-path="prerrequisitos.html"><a href="prerrequisitos.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>0.4</b> Página para reforzar conceptos básicos</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html"><i class="fa fa-check"></i><b>1</b> Desarrollo temático</a>
 <ul>
@@ -333,7 +336,7 @@ Srinivasa Ramanujan (1887-1920).
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigMaxMinA01"></span>
 <img src="images/GrafMaxMin_A1.png" alt="Concepto de máximo y mínimo local geometricamente [Imagen tomada de [@thomas2003thomas] pág $1028$]" width="65%" />
 <p class="caption">
-Figura 4.1: Concepto de máximo y mínimo local geometricamente [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1028\)</span>]
+Figura 4.1: Concepto de máximo y mínimo local geometricamente [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1028\)</span>]
 </p>
 </div>
 <p><br></br></p>
@@ -341,13 +344,13 @@ Figura 4.1: Concepto de máximo y mínimo local geometricamente [Imagen tomada d
 <p><span id="def:unnamed-chunk-27" class="definition"><strong>Definición 4.1  </strong></span>Sea <span class="math inline">\(f(x,y)\)</span> definida en una región <span class="math inline">\(D\)</span> que contiene al punto <span class="math inline">\((a,b)\)</span>. Entonces</p>
 <p>(1.) <span class="math inline">\(f(a,b)\)</span> es un valor máximo local de <span class="math inline">\(f\)</span> si <span class="math inline">\(f(a,b) \geq f(x,y)\)</span> para todos los puntos del dominio <span class="math inline">\((x,y)\)</span> un disco abirto con centro en <span class="math inline">\((a,b)\)</span></p>
 <p>(2.) <span class="math inline">\(f(a,b)\)</span> es un valor mínimo local de <span class="math inline">\(f\)</span> si <span class="math inline">\(f(a,b) \leq f(x,y)\)</span> para todos los puntos del dominio <span class="math inline">\((x,y)\)</span> un disco abirto con centro en <span class="math inline">\((a,b)\)</span></p>
-<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1028\)</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1028\)</span></p>
 </div>
 <p><br></br></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigMaxMinA02"></span>
 <img src="images/GrafMaxMin_A2.png" alt="Criterio para determinar  máximo y mínimo local geometricamente [Imagen tomada de [@thomas2003thomas] pág $1028$]" width="65%" />
 <p class="caption">
-Figura 4.2: Criterio para determinar máximo y mínimo local geometricamente [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1028\)</span>]
+Figura 4.2: Criterio para determinar máximo y mínimo local geometricamente [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1028\)</span>]
 </p>
 </div>
 <p><br></br></p>
@@ -356,17 +359,17 @@ Figura 4.2: Criterio para determinar máximo y mínimo local geometricamente [Im
 <p><span class="math display">\[
 f_{x}(a,b)=0 \qquad  \qquad \text{ y } \qquad  \qquad f_{y}(a,b)=0
 \]</span></p>
-<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1028\)</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1028\)</span></p>
 </div>
 <p><br></br></p>
 <div class="definition">
 <p><span id="def:unnamed-chunk-29" class="definition"><strong>Definición 4.2  </strong></span>Un punto interior del dominio de una función <span class="math inline">\(f(x,y)\)</span> donde <span class="math inline">\(f_x\)</span> y <span class="math inline">\(f_y\)</span> se anulan, o bien donde alguna de estas derivadas no existen, es un punto crítico de <span class="math inline">\(f\)</span></p>
-<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1029\)</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1029\)</span></p>
 </div>
 <p><br></br></p>
 <div class="definition">
 <p><span id="def:unnamed-chunk-30" class="definition"><strong>Definición 4.3  </strong></span>Una función diferenciable <span class="math inline">\(f(x,y)\)</span> tiene un punto silla en un punto crítico <span class="math inline">\((a,b)\)</span> si en cada disco abierto con centro en <span class="math inline">\((a,b)\)</span> existen punto del dominio <span class="math inline">\((x,y)\)</span> donde <span class="math inline">\(f(x,y)&gt;f(a,b)\)</span>, y puntos del dominio <span class="math inline">\((x,y)\)</span> donde <span class="math inline">\(f(x,y)&lt;f(a,b)\)</span>. El punto correspondiente <span class="math inline">\((a,b,f(a,b))\)</span> sobre la superficie <span class="math inline">\(z=f(x,y)\)</span> se conoce como punto silla de la superficie.</p>
-<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1029\)</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(1029\)</span></p>
 </div>
 <p><br></br></p>
 <div class="theorem">
@@ -413,7 +416,7 @@ f_{x}(a,b)=0 \qquad  \qquad \text{ y } \qquad  \qquad f_{y}(a,b)=0
 <p><span class="math display">\[
 \nabla{f(x_0,y_0)}=\lambda \nabla{g(x_0,y_0)}
 \]</span></p>
-<p>Tomada de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(971\)</span></p>
+<p>Tomada de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(971\)</span></p>
 </div>
 <p><br></br></p>
 <p>Sean <span class="math inline">\(f\)</span> y <span class="math inline">\(g\)</span> funciones que satisfecen las hipótesis del teorema de Lagrange, y sea <span class="math inline">\(f\)</span> una función que tiene un mínimo o un máximo sujeto a la restircción <span class="math inline">\(g(x,y)=c\)</span>. Para hallar el mínimo o el máximo de <span class="math inline">\(f\)</span>, seguir los pasos descritos a continuación</p>
@@ -428,7 +431,7 @@ f_{x}(a,b)=0 \qquad  \qquad \text{ y } \qquad  \qquad f_{y}(a,b)=0
 (c) \ \ \ \qquad \ \ \ \ \ \ g(x,y)=c
 \]</span></p>
 <p>(2.) Evaluar <span class="math inline">\(f\)</span> en cada punto solución obtenido en el primer paso. El valor mayor da el máximo de <span class="math inline">\(f\)</span> sujeto a la restricción <span class="math inline">\(g(x,y)=c\)</span>, y el valor menor da el mínimo de <span class="math inline">\(f\)</span> sujeto a la restricción <span class="math inline">\(g(x,y)=c\)</span></p>
-<p>Tomada de <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(971\)</span></p>
+<p>Tomada de <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(971\)</span></p>
 <p><br></br></p>
 <div class="example">
 <p><span id="exm:unnamed-chunk-33" class="example"><strong>Ejemplo 4.1  </strong></span>Hallar el valor máximo de <span class="math inline">\(f(x,y)=4xy\)</span> donde <span class="math inline">\(x&gt;0\)</span> y <span class="math inline">\(y&gt;0\)</span>, sujeto a la restricción <span class="math inline">\(x^2/9+y^2/16=1\)</span></p>
@@ -461,7 +464,7 @@ x=\dfrac{3}{\sqrt{2}}
 <p><span class="math display">\[
 \left. f(x,y)=4xy \right]_{(3/{\sqrt{2}},2\sqrt{2})} \qquad   \Longleftrightarrow \qquad  f\left(\dfrac{3}{\sqrt{2}},2\sqrt{2}\right)=4\left(\dfrac{3}{\sqrt{2}}\right)(2\sqrt{2})=24
 \]</span></p>
-<p>Esta solución puede verse en <span class="citation">(<a href="#ref-larson2006calculo" role="doc-biblioref">R. Larson 2006</a>)</span> pág <span class="math inline">\(973\)</span></p>
+<p>Esta solución puede verse en <span class="citation">(<a href="#ref-larson2006calculo">R. Larson 2006</a>)</span> pág <span class="math inline">\(973\)</span></p>
 <p><br></br></p>
 <div class="example">
 <p><span id="exm:unnamed-chunk-34" class="example"><strong>Ejemplo 4.2  </strong></span>Sea <span class="math inline">\(T(x,y,z)=20+2x+2y+z^2\)</span> la temperatura en cada punto en una esfera <span class="math inline">\(x^2+y^2+z^2=11\)</span>. Hallar las temperaturas extremas en la curva formada por la intersección del plano <span class="math inline">\(x+y+z=3\)</span> y la esfera.</p>
@@ -471,7 +474,7 @@ x=\dfrac{3}{\sqrt{2}}
 </div>
 </div>
 <h3>Referencias<a href="referencias.html#referencias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div id="ref-larson2006calculo" class="csl-entry">
 Larson, Ron. 2006. <em>C<span>á</span>lculo de Varias Variables</em>. QA303. l3718 2004.
 </div>

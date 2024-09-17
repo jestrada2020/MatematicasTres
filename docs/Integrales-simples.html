@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 5 Integrales simples | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
-  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 5 Integrales simples | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
-  
+  <meta property="og:image" content="/images/PortadaMateTres.png" />
   <meta property="og:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
 
@@ -18,12 +18,12 @@
   <meta name="twitter:title" content="Capítulo 5 Integrales simples | Curso de Matemáticas Tres UCES" />
   
   <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
-  
+  <meta name="twitter:image" content="/images/PortadaMateTres.png" />
 
 <meta name="author" content="Carlos Andrés Escobar Guerra - Juan Alberto Arias Quiceno - John Jairo Estrada Alvarez" />
 
 
-<meta name="date" content="2023-07-20" />
+<meta name="date" content="2024-09-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,14 +52,15 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
 <script src="libs/leaflet-1.3.1/leaflet.js"></script>
 <link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
 <script src="libs/proj4-2.6.2/proj4.min.js"></script>
 <script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.1.2/leaflet.js"></script>
+<script src="libs/leaflet-binding-2.2.2/leaflet.js"></script>
 
 
 
@@ -72,6 +73,7 @@
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -106,12 +108,13 @@ div.csl-indent {
 <li><a href="./">Curso de Matemáticas Tres</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prerrequisitos</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio</a></li>
+<li class="chapter" data-level="" data-path="prerrequisitos.html"><a href="prerrequisitos.html"><i class="fa fa-check"></i>Prerrequisitos</a>
 <ul>
-<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>0.1</b> Comportamentales</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>0.2</b> Evaluativos</a></li>
-<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>0.3</b> Video motivacional</a></li>
-<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>0.4</b> Página para reforzar conceptos básicos</a></li>
+<li class="chapter" data-level="0.1" data-path="prerrequisitos.html"><a href="prerrequisitos.html#comportamentales"><i class="fa fa-check"></i><b>0.1</b> Comportamentales</a></li>
+<li class="chapter" data-level="0.2" data-path="prerrequisitos.html"><a href="prerrequisitos.html#evaluativos"><i class="fa fa-check"></i><b>0.2</b> Evaluativos</a></li>
+<li class="chapter" data-level="0.3" data-path="prerrequisitos.html"><a href="prerrequisitos.html#video-motivacional"><i class="fa fa-check"></i><b>0.3</b> Video motivacional</a></li>
+<li class="chapter" data-level="0.4" data-path="prerrequisitos.html"><a href="prerrequisitos.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>0.4</b> Página para reforzar conceptos básicos</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html"><i class="fa fa-check"></i><b>1</b> Desarrollo temático</a>
 <ul>
@@ -332,7 +335,7 @@ Blaise Pascal (1623-1662).
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralSimpleA001"></span>
 <img src="images/DefIntegral_A1.png" alt="Concepto integral a partir del área bajo una curva [Imagen tomada de [@stewart2020single] pág $355$]" width="65%" />
 <p class="caption">
-Figura 5.1: Concepto integral a partir del área bajo una curva [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(355\)</span>]
+Figura 5.1: Concepto integral a partir del área bajo una curva [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020single">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(355\)</span>]
 </p>
 </div>
 <p>El cálculo integral se base en el concepto de la integral. La definición de integral es motivada por el problema de definir y calcular el área de la región que se encuentra entre la gráfica de una funcíón <span class="math inline">\(y=f(x)\)</span> con valores positivos <span class="math inline">\(f\)</span> y el eje <span class="math inline">\(x\)</span> en un intervalo cerrado <span class="math inline">\([a,b]\)</span>.</p>
@@ -476,12 +479,12 @@ G(x)=F(x)+C
 g(x)=\displaystyle\int_{a}^{x}f(t)dt, \qquad a \leq x \leq b
 \]</span></p>
 <p>es continua en <span class="math inline">\([a,b]\)</span>, derivable en <span class="math inline">\((a,b)\)</span>, y <span class="math inline">\(g&#39;(x)=f(x)\)</span>.</p>
-<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(381\)</span>]</p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(381\)</span>]</p>
 </div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralSimpleA002"></span>
 <img src="images/DefIntegral_A2.png" alt="Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de [@stewart2020single] pág $380$]" width="65%" />
 <p class="caption">
-Figura 5.2: Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(380\)</span>]
+Figura 5.2: Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020single">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(380\)</span>]
 </p>
 </div>
 <p><br></br></p>
@@ -501,7 +504,7 @@ Figura 5.2: Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de <s
 &amp; = sec(x^4).4x^3
 \end{split}
 \end{equation}\]</span></p>
-<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág 384</p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single">Stewart, Clegg, and Watson 2020b</a>)</span> pág 384</p>
 <p><br></br></p>
 </div>
 <div id="teorema-fundamental-del-cálculo-caso-dos" class="section level2 hasAnchor" number="5.7">
@@ -512,7 +515,7 @@ Figura 5.2: Grafica TMA fundamental del cálculo parte, uno [Imagen tomada de <s
 \int_{a}^{b}{f(x)dx}=F(b)-F(a)
 \]</span></p>
 <p>donde <span class="math inline">\(F\)</span> es la antiderivada de <span class="math inline">\(f\)</span>, es decir, una función tal que <span class="math inline">\(F&#39;=f\)</span>.</p>
-<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(384\)</span>]</p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(384\)</span>]</p>
 </div>
 <p><br></br></p>
 </div>
@@ -876,7 +879,7 @@ I &amp; =\displaystyle{\int{\dfrac{\sqrt{9-\left(3sen(\theta)\right)^2}}{\left(3
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigSustitucionTG1"></span>
 <img src="images/SustitucionTG1.png" alt="Triángulo rectángulo para la sustitución trigonométrica uno [Imagen tomada de [@stewart2009calculus] pág $468$]" width="35%" />
 <p class="caption">
-Figura 5.3: Triángulo rectángulo para la sustitución trigonométrica uno [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus" role="doc-biblioref">Stewart 2009</a>)</span> pág <span class="math inline">\(468\)</span>]
+Figura 5.3: Triángulo rectángulo para la sustitución trigonométrica uno [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus">Stewart 2009</a>)</span> pág <span class="math inline">\(468\)</span>]
 </p>
 </div>
 <p>Respuesta:</p>
@@ -928,7 +931,7 @@ I &amp; = \displaystyle{\int{\dfrac{2sec^2(\theta)d\theta}{4tan^2(\theta)\sqrt{4
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigSustitucionTG2"></span>
 <img src="images/SustitucionTG2.png" alt="Triángulo rectángulo para la sustitución trigonométrica dos [Imagen tomada de [@stewart2009calculus] pág $469$]" width="35%" />
 <p class="caption">
-Figura 5.4: Triángulo rectángulo para la sustitución trigonométrica dos [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus" role="doc-biblioref">Stewart 2009</a>)</span> pág <span class="math inline">\(469\)</span>]
+Figura 5.4: Triángulo rectángulo para la sustitución trigonométrica dos [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus">Stewart 2009</a>)</span> pág <span class="math inline">\(469\)</span>]
 </p>
 </div>
 <p>Respuesta en la variable <span class="math inline">\(x\)</span>:</p>
@@ -973,7 +976,7 @@ I &amp; =\displaystyle{\int{\dfrac{1}{\sqrt{\left(4sec^2(\theta)-4\right)}}2sec(
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigSustitucionTG3"></span>
 <img src="images/SustitucionTG3.png" alt="Triángulo rectángulo para la sustitución trigonométrica tres [Imagen tomada de [@stewart2009calculus] pág $469$]" width="35%" />
 <p class="caption">
-Figura 5.5: Triángulo rectángulo para la sustitución trigonométrica tres [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus" role="doc-biblioref">Stewart 2009</a>)</span> pág <span class="math inline">\(469\)</span>]
+Figura 5.5: Triángulo rectángulo para la sustitución trigonométrica tres [Imagen tomada de <span class="citation">(<a href="#ref-stewart2009calculus">Stewart 2009</a>)</span> pág <span class="math inline">\(469\)</span>]
 </p>
 </div>
 <p>Respuesta en la variable <span class="math inline">\(x\)</span>:</p>
@@ -1009,7 +1012,7 @@ Figura 5.5: Triángulo rectángulo para la sustitución trigonométrica tres [Im
 <p><span class="math display">\[
 \displaystyle\int{\dfrac{x^3+x}{x-1}dx}
 \]</span>
-tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(474\)</span>.</p>
+tomada de <span class="citation">(<a href="#ref-stewart2020single">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(474\)</span>.</p>
 </div>
 <p><br></br></p>
 <p>Realizando la división de ambos polinomios se obtiene que:</p>
@@ -1040,7 +1043,7 @@ f(x)=\dfrac{P(x)}{Q(x)}=\dfrac{A_1}{a_1x+b_1}+\dfrac{A_2}{a_2x+b_2}+...+\dfrac{A
 <p><span class="math display">\[
 \displaystyle\int{\dfrac{1x^2+2x-1}{2x^3+3x^2-2x}dx}
 \]</span>
-tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(475\)</span></p>
+tomada de <span class="citation">(<a href="#ref-stewart2020single">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(475\)</span></p>
 </div>
 <p><br></br></p>
 <p>Sabemos que por factorización el denominador <span class="math inline">\(Q(x)\)</span> puede ser expresado equivalentemente como:</p>
@@ -1102,7 +1105,7 @@ Q(x)=(a_1x+b_1)^r(a_2x+b_2)^s...(a_kx+b_k)^t
 <p><span class="math display">\[
 \displaystyle\int{\dfrac{x^4-2x^2+4x+1}{x^3-x^2-x+1}dx}
 \]</span></p>
-<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(477\)</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(477\)</span></p>
 </div>
 <p><br></br></p>
 <p>Primero debe verse que <span class="math inline">\(grado(P(x))\geq grado(Q(x))\)</span>, lo que significa que se debe realizar la división entre ambos polinomios, obteniendo:</p>
@@ -1167,7 +1170,7 @@ A=1, \qquad B=2, \qquad C=-1
 <p><span class="math display">\[
 \displaystyle\int{\dfrac{x^2-x+4}{x^3+4x}dx}
 \]</span></p>
-<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(478\)</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(478\)</span></p>
 </div>
 <p><br></br></p>
 <p>Como el denominador <span class="math inline">\(Q(x)=x^3+4x\)</span>, se puede factorizar en la forma: <span class="math inline">\(Q(x)=x(x^2+4)\)</span> donde <span class="math inline">\(x^2+4\)</span> es una expresión cuadrática irreducible. Entonces</p>
@@ -1222,7 +1225,7 @@ A=1, \qquad B=1, \qquad C=-1
 <p><span class="math display">\[
 \displaystyle\int{\dfrac{1-x+x^2-x^3}{x(x^2+1)^2}dx}
 \]</span></p>
-<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(480\)</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single">Stewart, Clegg, and Watson 2020b</a>)</span> pág <span class="math inline">\(480\)</span></p>
 </div>
 <p><br></br></p>
 <p>La descomposición de la fracción propia del integrando es:</p>
@@ -1349,7 +1352,7 @@ I &amp;= \displaystyle\int{\dfrac{\dfrac{2dt}{1+t^2}}{3-5\dfrac{2t}{1+t^2}}}\\
   \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i}^{*})\bigtriangleup{x}}
 \]</span>
 Siempre que exista este límite, <span class="math inline">\(f\)</span> es integrable en <span class="math inline">\([a,b]\)</span>.</p>
-<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág 366</p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single">Stewart, Clegg, and Watson 2020b</a>)</span> pág 366</p>
 </div>
 <p><br></br></p>
 <p>Esta es una aplicación para generar el área bajo una curva usando sumas de Riemann, el Autor:José Alejandro López Rentería (<a href="https://www.geogebra.org/classic/ex9zdr7e" class="uri">https://www.geogebra.org/classic/ex9zdr7e</a>) lo elaboro usando geogebra.</p>
@@ -1380,7 +1383,7 @@ Siempre que exista este límite, <span class="math inline">\(f\)</span> es integ
   \left|\displaystyle{\sum_{k=1}^{n}f(c_k)\bigtriangleup{x_k}}-J\right|&lt; \epsilon.
 \]</span></p>
 <p>donde <span class="math inline">\(J=\displaystyle\int_{a}^{b}{f(x)dx}\)</span>.</p>
-<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág 366</p>
+<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas">Thomas et al. 2003</a>)</span> pág 366</p>
 </div>
 <p><br></br></p>
 <div class="theorem">
@@ -1389,7 +1392,7 @@ Siempre que exista este límite, <span class="math inline">\(f\)</span> es integ
 \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\lim_{n \to{+}\infty}{\sum_{i=1}^{n}f(x_{i})\bigtriangleup{x}}, \qquad \text{ existe.}
 \]</span>
 donde <span class="math inline">\(\bigtriangleup{x}=\dfrac{b-a}{n} \qquad \text{ y } \qquad x_{i}=a+i\bigtriangleup{x}\)</span></p>
-<p>tomada de <span class="citation">(<a href="#ref-stewart2020single" role="doc-biblioref">Stewart, Clegg, and Watson 2020b</a>)</span> pág 368</p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020single">Stewart, Clegg, and Watson 2020b</a>)</span> pág 368</p>
 </div>
 <p><br></br></p>
 </div>
@@ -1415,13 +1418,13 @@ donde <span class="math inline">\(\bigtriangleup{x}=\dfrac{b-a}{n} \qquad \text{
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEvSumasA00"></span>
 <img src="images/PropIntegralDefinida_A1.png" alt="Propiedades de la integral definida [Imagen tomada de [@thomas2003thomas] pág $268$]" width="85%" />
 <p class="caption">
-Figura 5.6: Propiedades de la integral definida [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]
+Figura 5.6: Propiedades de la integral definida [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]
 </p>
 </div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEvSumasA01"></span>
 <img src="images/PropIntegralDefinida_A2.png" alt="Propiedades de la integral definida [Imagen tomada de [@thomas2003thomas] pág $268$]" width="85%" />
 <p class="caption">
-Figura 5.7: Propiedades de la integral definida [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]
+Figura 5.7: Propiedades de la integral definida [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]
 </p>
 </div>
 <p><br></br></p>
@@ -1458,12 +1461,12 @@ Figura 5.7: Propiedades de la integral definida [Imagen tomada de <span class="c
 \displaystyle\int_{0}^{b}xdx  
 \]</span></p>
 <p>usando las sumatorias de evaluación.</p>
-<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]</p>
+<p>tomada de <span class="citation">(<a href="#ref-thomas2003thomas">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]</p>
 </div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEvSumasA02"></span>
 <img src="images/EjEvaluaPorSumas_A1.png" alt="Área bajo la recta $y=x$ en el intervalo $[0,b]$ [Imagen tomada de [@thomas2003thomas] pág $268$]" width="25%" />
 <p class="caption">
-Figura 5.8: Área bajo la recta <span class="math inline">\(y=x\)</span> en el intervalo <span class="math inline">\([0,b]\)</span> [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas" role="doc-biblioref">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]
+Figura 5.8: Área bajo la recta <span class="math inline">\(y=x\)</span> en el intervalo <span class="math inline">\([0,b]\)</span> [Imagen tomada de <span class="citation">(<a href="#ref-thomas2003thomas">Thomas et al. 2003</a>)</span> pág <span class="math inline">\(268\)</span>]
 </p>
 </div>
 <p><br></br></p>
@@ -1535,13 +1538,13 @@ son convergentes, entonces por definición</p>
 \displaystyle\int_{-\infty}^{\infty}{f(x)dx}=\displaystyle\int_{-\infty}^{a}{f(x)dx}+\displaystyle\int_{a}^{\infty}{f(x)dx}
 \]</span></p>
 <p>se puede emplear cualquier número real <span class="math inline">\(a\)</span> en la parte (c).</p>
-<p>Tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(429\)</span></p>
+<p>Tomada de <span class="citation">(<a href="#ref-stewart2020calculus">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(429\)</span></p>
 </div>
 <p><strong>Interpretación geométrica de la integral impropia tipo Uno</strong></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA01"></span>
 <img src="images/IntImpropiaTipoUno_A1.png" alt="Interpretación geométrica Área bajo la curva de una integral impropia [Imagen tomada de [@stewart2020calculus] pág $429$]" width="60%" />
 <p class="caption">
-Figura 5.9: Interpretación geométrica Área bajo la curva de una integral impropia [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(429\)</span>]
+Figura 5.9: Interpretación geométrica Área bajo la curva de una integral impropia [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(429\)</span>]
 </p>
 </div>
 <div id="ejemplo1-integral-impropia-tipo-uno" class="section level3 hasAnchor" number="5.18.1">
@@ -1555,7 +1558,7 @@ Figura 5.9: Interpretación geométrica Área bajo la curva de una integral impr
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA02"></span>
 <img src="images/IntImpropiaTipoUno_A2.png" alt="Ejemplo área bajo la curva de una integral impropia [Imagen tomada de [@stewart2020calculus] pág $431$]" width="45%" />
 <p class="caption">
-Figura 5.10: Ejemplo área bajo la curva de una integral impropia [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(431\)</span>]
+Figura 5.10: Ejemplo área bajo la curva de una integral impropia [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(431\)</span>]
 </p>
 </div>
 <p><br></br></p>
@@ -1659,7 +1662,7 @@ No existe el límite de <span class="math inline">\(ln|t|\)</span> cuando <span 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA03"></span>
 <img src="images/IntImpropiaTipoDos_A1.png" alt="Interpretación geométrica área bajo la curva de una integral impropia tipo II [Imagen tomada de [@stewart2020calculus] pág $432$]" width="85%" />
 <p class="caption">
-Figura 5.11: Interpretación geométrica área bajo la curva de una integral impropia tipo II [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(432\)</span>]
+Figura 5.11: Interpretación geométrica área bajo la curva de una integral impropia tipo II [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(432\)</span>]
 </p>
 </div>
 <div class="definition">
@@ -1681,7 +1684,7 @@ por definición</p>
 <p><span class="math display">\[
 \displaystyle\int_{a}^{b}{f(x)dx}=\displaystyle\int_{a}^{c}{f(x)dx}+\displaystyle\int_{c}^{b}{f(x)dx}
 \]</span></p>
-<p>Tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(432\)</span></p>
+<p>Tomada de <span class="citation">(<a href="#ref-stewart2020calculus">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(432\)</span></p>
 </div>
 <p><br></br></p>
 <div id="ejemplo1-integral-impropia-tipo-2-caso-b" class="section level3 hasAnchor" number="5.19.1">
@@ -1691,12 +1694,12 @@ por definición</p>
 <p><span class="math display">\[
 \displaystyle\int_{2}^{5}{\dfrac{1dx}{\sqrt{x-2}}}
 \]</span>
-Tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(433\)</span></p>
+Tomada de <span class="citation">(<a href="#ref-stewart2020calculus">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(433\)</span></p>
 </div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA04"></span>
 <img src="images/EjIntImpropiaTipo2_A1.png" alt="Interpretación geométrica área bajo la curva. Integral impropia tipo II parte (b)[Imagen tomada de [@stewart2020calculus] pág $433$]" width="45%" />
 <p class="caption">
-Figura 5.12: Interpretación geométrica área bajo la curva. Integral impropia tipo II parte (b)[Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(433\)</span>]
+Figura 5.12: Interpretación geométrica área bajo la curva. Integral impropia tipo II parte (b)[Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(433\)</span>]
 </p>
 </div>
 <p><br></br></p>
@@ -1719,7 +1722,7 @@ Figura 5.12: Interpretación geométrica área bajo la curva. Integral impropia 
 <p><span class="math display">\[
 \displaystyle\int_{0}^{1}{\dfrac{1dx}{\sqrt{1-x^2}}}
 \]</span>
-Tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(485\)</span></p>
+Tomada de <span class="citation">(<a href="#ref-stewart2020calculus">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(485\)</span></p>
 </div>
 <p><br></br></p>
 <p>Es bueno resaltar que <span class="math inline">\(f(x)=1/\sqrt{1-x^2}\)</span> tiene una asíntota en <span class="math inline">\(x=1\)</span>. Es decir <span class="math inline">\(f\)</span> es discontinua en <span class="math inline">\([0,1)\)</span>. Entonces aplicando el caso (a) se tiene</p>
@@ -1769,7 +1772,7 @@ Es divergente y no es necesario evaluar la inegral <span class="math inline">\(\
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA05"></span>
 <img src="images/IntImpropiaTmaCOMPARACION.png" alt="Teorema de comparación de integrales impropias [Imagen tomada de [@stewart2020calculus] pág $434$]" width="45%" />
 <p class="caption">
-Figura 5.13: Teorema de comparación de integrales impropias [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(434\)</span>]
+Figura 5.13: Teorema de comparación de integrales impropias [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(434\)</span>]
 </p>
 </div>
 <div class="theorem">
@@ -1799,7 +1802,7 @@ es convergente.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigIntegralImpropiaA06"></span>
 <img src="images/EjIntPorComparacion_A1.png" alt="Ejemplo teorema de comparación de integrales impropias [Imagen tomada de [@stewart2020calculus] pág $435$]" width="45%" />
 <p class="caption">
-Figura 5.14: Ejemplo teorema de comparación de integrales impropias [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(435\)</span>]
+Figura 5.14: Ejemplo teorema de comparación de integrales impropias [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(435\)</span>]
 </p>
 </div>
 <div class="example">
@@ -1849,7 +1852,7 @@ es convergente para <span class="math inline">\(x \geq 1\)</span></p>
 </div>
 </div>
 <h3>Referencias<a href="referencias.html#referencias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div id="ref-stewart2009calculus" class="csl-entry">
 Stewart, James. 2009. <em>Calculus: Concepts and Contexts</em>. Cengage Learning.
 </div>

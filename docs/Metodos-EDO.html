@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 8 Métodos de solución para Ecuaciones Diferenciales (EDO) | Curso de Matemáticas Tres UCES</title>
   <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
-  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 8 Métodos de solución para Ecuaciones Diferenciales (EDO) | Curso de Matemáticas Tres UCES" />
   <meta property="og:type" content="book" />
-  
+  <meta property="og:image" content="/images/PortadaMateTres.png" />
   <meta property="og:description" content="Este texto se realizo usando bookdown package para escribir libros." />
   
 
@@ -18,12 +18,12 @@
   <meta name="twitter:title" content="Capítulo 8 Métodos de solución para Ecuaciones Diferenciales (EDO) | Curso de Matemáticas Tres UCES" />
   
   <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
-  
+  <meta name="twitter:image" content="/images/PortadaMateTres.png" />
 
 <meta name="author" content="Carlos Andrés Escobar Guerra - Juan Alberto Arias Quiceno - John Jairo Estrada Alvarez" />
 
 
-<meta name="date" content="2023-07-20" />
+<meta name="date" content="2024-09-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,14 +52,15 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
 <script src="libs/leaflet-1.3.1/leaflet.js"></script>
 <link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
 <script src="libs/proj4-2.6.2/proj4.min.js"></script>
 <script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.1.2/leaflet.js"></script>
+<script src="libs/leaflet-binding-2.2.2/leaflet.js"></script>
 
 
 
@@ -72,6 +73,7 @@
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -106,12 +108,13 @@ div.csl-indent {
 <li><a href="./">Curso de Matemáticas Tres</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prerrequisitos</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefacio</a></li>
+<li class="chapter" data-level="" data-path="prerrequisitos.html"><a href="prerrequisitos.html"><i class="fa fa-check"></i>Prerrequisitos</a>
 <ul>
-<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>0.1</b> Comportamentales</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>0.2</b> Evaluativos</a></li>
-<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>0.3</b> Video motivacional</a></li>
-<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>0.4</b> Página para reforzar conceptos básicos</a></li>
+<li class="chapter" data-level="0.1" data-path="prerrequisitos.html"><a href="prerrequisitos.html#comportamentales"><i class="fa fa-check"></i><b>0.1</b> Comportamentales</a></li>
+<li class="chapter" data-level="0.2" data-path="prerrequisitos.html"><a href="prerrequisitos.html#evaluativos"><i class="fa fa-check"></i><b>0.2</b> Evaluativos</a></li>
+<li class="chapter" data-level="0.3" data-path="prerrequisitos.html"><a href="prerrequisitos.html#video-motivacional"><i class="fa fa-check"></i><b>0.3</b> Video motivacional</a></li>
+<li class="chapter" data-level="0.4" data-path="prerrequisitos.html"><a href="prerrequisitos.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>0.4</b> Página para reforzar conceptos básicos</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="desarrollo-temático.html"><a href="desarrollo-temático.html"><i class="fa fa-check"></i><b>1</b> Desarrollo temático</a>
 <ul>
@@ -352,7 +355,7 @@ div.csl-indent {
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEDOA01"></span>
 <img src="images/EsquemaModeladoEDO_A1.png" alt="Modelado matemático [Imagen tomada de [@stewart2020calculus] pág $24$]" width="110%" />
 <p class="caption">
-Figura 8.1: Modelado matemático [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(24\)</span>]
+Figura 8.1: Modelado matemático [Imagen tomada de <span class="citation">(<a href="#ref-stewart2020calculus">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(24\)</span>]
 </p>
 </div>
 <div id="definición-para-una-ecuación-diferencial" class="section level2 hasAnchor" number="8.1">
@@ -360,7 +363,7 @@ Figura 8.1: Modelado matemático [Imagen tomada de <span class="citation">(<a hr
 <div class="definition">
 <p><span id="def:unnamed-chunk-98" class="definition"><strong>Definición 8.1  </strong></span>Es una ecuación que contiene una función desconocida <span class="math inline">\(y\)</span> y algunas de sus derivadas.
 Un ejemplo de ecuación diferencial es el modelado matemático que con frecuencia toma está forma. Esto no es sorprendente, porque en los problemas del mundo real, es común observar que ocurran cambios y se desea predecir el comportamiento futuro con respecto a como cambian los valores actuales.</p>
-<p>tomada de <span class="citation">(<a href="#ref-stewart2020calculus" role="doc-biblioref">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(24\)</span> y <span class="math inline">\(567\)</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-stewart2020calculus">Stewart, Clegg, and Watson 2020a</a>)</span> pág <span class="math inline">\(24\)</span> y <span class="math inline">\(567\)</span></p>
 </div>
 <div id="ejemplos-de-ecuaciones-diferenciales" class="section level3 hasAnchor" number="8.1.1">
 <h3><span class="header-section-number">8.1.1</span> Ejemplos de ecuaciones diferenciales<a href="Metodos-EDO.html#ejemplos-de-ecuaciones-diferenciales" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -535,7 +538,7 @@ F \ \text{ se conoce como factor de integración. }
 \dfrac{dP}{dt}=kP-m \qquad \text{donde } \qquad k=\alpha-\beta  
 \]</span></p>
 <p>Hallar la solución de esta ecuación que satisface la condición inicial <span class="math inline">\(P(0)=P_0\)</span>.</p>
-<p>tomada de <span class="citation">(<a href="#ref-zill2014calculo" role="doc-biblioref">Zill and Wright 2014</a>)</span> pág <span class="math inline">\(599\)</span> ejercicio <span class="math inline">\(13\)</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-zill2014calculo">Zill and Wright 2014</a>)</span> pág <span class="math inline">\(599\)</span> ejercicio <span class="math inline">\(13\)</span></p>
 </div>
 <p><br></br></p>
 <p><span class="math display">\[\begin{equation} \label{eqDifA04}
@@ -565,7 +568,7 @@ P_0-\dfrac{m}{k} &amp; = C
 \dfrac{dP}{dt}=k\left[M-P(t)\right], \qquad \text{Modelo razonable para el aprendizaje}
 \]</span>
 donde <span class="math inline">\(k\)</span> es una constante positiva.</p>
-<p>tomada de <span class="citation">(<a href="#ref-zill2014calculo" role="doc-biblioref">Zill and Wright 2014</a>)</span> pág <span class="math inline">\(607\)</span> ejercicio <span class="math inline">\(31\)</span></p>
+<p>tomada de <span class="citation">(<a href="#ref-zill2014calculo">Zill and Wright 2014</a>)</span> pág <span class="math inline">\(607\)</span> ejercicio <span class="math inline">\(31\)</span></p>
 </div>
 <p><br></br></p>
 <p><span class="math display">\[\begin{equation} \label{eqDifA05}
@@ -594,7 +597,7 @@ P(t)= &amp;  M+C_1 \qquad \text{Presentación de la solución en forma explícit
 \mathscr{L}\{f(t)\}=F(s)=\int_{0}^{\infty}{e^{-st}f(t)dt}
 \]</span></p>
 <p>es la transformada de Laplace de <span class="math inline">\(f\)</span>, siempre que la integral converja.</p>
-<p>tomada <span class="citation">(<a href="#ref-zill2002ecuaciones" role="doc-biblioref">Zill, Hernández, and López 2002</a>)</span> pág <span class="math inline">\(256\)</span></p>
+<p>tomada <span class="citation">(<a href="#ref-zill2002ecuaciones">Zill, Hernández, and López 2002</a>)</span> pág <span class="math inline">\(256\)</span></p>
 </div>
 <p><br></br></p>
 <p><strong>NOTA:</strong> La transformada es una transformación lineal.</p>
@@ -609,7 +612,7 @@ P(t)= &amp;  M+C_1 \qquad \text{Presentación de la solución en forma explícit
 <p><span class="math display">\[
   \mathscr{L}\{1\}
 \]</span></p>
-<p>tomada <span class="citation">(<a href="#ref-zill2002ecuaciones" role="doc-biblioref">Zill, Hernández, and López 2002</a>)</span> pág <span class="math inline">\(257\)</span></p>
+<p>tomada <span class="citation">(<a href="#ref-zill2002ecuaciones">Zill, Hernández, and López 2002</a>)</span> pág <span class="math inline">\(257\)</span></p>
 </div>
 <p><br></br></p>
 <p>Por definición de transformada se tiene:</p>
@@ -632,7 +635,7 @@ P(t)= &amp;  M+C_1 \qquad \text{Presentación de la solución en forma explícit
 <p><span class="math display">\[
   \mathscr{L}\{t\}
 \]</span></p>
-<p>tomada <span class="citation">(<a href="#ref-zill2002ecuaciones" role="doc-biblioref">Zill, Hernández, and López 2002</a>)</span> pág <span class="math inline">\(257\)</span></p>
+<p>tomada <span class="citation">(<a href="#ref-zill2002ecuaciones">Zill, Hernández, and López 2002</a>)</span> pág <span class="math inline">\(257\)</span></p>
 </div>
 <p><br></br></p>
 <p>Por definición de transformada se tiene:</p>
@@ -655,7 +658,7 @@ P(t)= &amp;  M+C_1 \qquad \text{Presentación de la solución en forma explícit
 <p><span class="math display">\[
   \mathscr{L}\{e^{-3t}\}
 \]</span></p>
-<p>tomada <span class="citation">(<a href="#ref-zill2002ecuaciones" role="doc-biblioref">Zill, Hernández, and López 2002</a>)</span> pág <span class="math inline">\(257\)</span></p>
+<p>tomada <span class="citation">(<a href="#ref-zill2002ecuaciones">Zill, Hernández, and López 2002</a>)</span> pág <span class="math inline">\(257\)</span></p>
 </div>
 <p><br></br></p>
 <p>Por definición de transformada se tiene:</p>
@@ -713,7 +716,7 @@ t^{n}f(t) &amp; (-1)^{n}\dfrac{d^n}{ds^n}{F(s)} &amp; \\
 </div>
 </div>
 <h3>Referencias<a href="referencias.html#referencias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div id="ref-stewart2020calculus" class="csl-entry">
 Stewart, James, Daniel K Clegg, and Saleem Watson. 2020a. <em>Calculus: Early Transcendentals</em>. Cengage Learning.
 </div>
